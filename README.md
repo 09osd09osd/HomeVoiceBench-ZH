@@ -11,6 +11,7 @@
 - [交互讲解网页](docs/index.html)：下载后双击HTML，浏览50场景、1000题、链路图和真实语音。
 
 - [在线讲解网页](https://09osd09osd.github.io/HomeVoiceBench-ZH/docs/index.html)。
+- [完整数据和测评证据下载](https://github.com/09osd09osd/HomeVoiceBench-ZH/releases/tag/v0.3.0)。
 - [历史 v0.2 发布](https://github.com/09osd09osd/HomeVoiceBench-ZH/releases/tag/v0.2.0)：保留原题目、录音与成绩。
 - [本地人工听音评审台](docs/LOCAL_REVIEW.md)：双击根目录的“启动人工评审.cmd”，逐题对照三组语音、工具轨迹与评分。
 - [v0.3修订说明](docs/REVISION_v0.3.md)：原始证据保留、重跑范围和新旧成绩差异。

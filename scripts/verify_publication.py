@@ -1,4 +1,5 @@
 """Check the real public release, Pages deployment and served delivery bytes."""
+import argparse
 import datetime
 import hashlib
 import json
@@ -10,6 +11,9 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser()
+parser.add_argument('--read-only', action='store_true', help='Verify without rewriting the committed receipt')
+args = parser.parse_args()
 def read(path):
     return json.loads((ROOT / path).read_text('utf-8'))
 
@@ -64,6 +68,17 @@ for entry in expected:
     if item['state'] != 'uploaded' or item['size'] != entry['bytes'] or item.get('digest') != 'sha256:' + entry['sha256']:
         raise ValueError('Release checksum mismatch: ' + entry['name'])
 
+old_publication = read('reports/revision/v0.2_publication.json')
+old_release = api(repo_path + '/releases/tags/v0.2.0')
+old_assets = {x['name']: x for x in api(repo_path + '/releases/' + str(old_release['id']) + '/assets?per_page=100')}
+old_expected = old_publication['uploaded_assets']
+if old_release['id'] != old_publication['release_id'] or set(old_assets) != {x['name'] for x in old_expected}:
+    raise ValueError('Historical v0.2 release asset set changed')
+for entry in old_expected:
+    item = old_assets[entry['name']]
+    if item['id'] != entry['asset_id'] or item['size'] != entry['bytes'] or item.get('digest') != 'sha256:' + entry['sha256']:
+        raise ValueError('Historical v0.2 release asset changed: ' + entry['name'])
+
 deadline = time.monotonic() + 300
 while True:
     pages = api(repo_path + '/pages')
@@ -98,6 +113,7 @@ for name in ['SHA256SUMS.txt', 'README.md']:
         raise ValueError('Public release download mismatch: ' + name)
     http_checks.append({'path': 'release/' + name, 'status': status, 'bytes': len(content), 'matches_local': True})
 
-report = {'status': 'passed', 'verified_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'repository_url': repo['html_url'], 'visibility': 'public', 'verified_code_commit': local_commit, 'release_url': release['html_url'], 'release_assets': len(expected), 'release_bytes': sum(x['bytes'] for x in expected), 'all_server_sha256_match': True, 'pages_url': site, 'pages_build': {'status': build['status'], 'commit': build['commit']}, 'public_http_checks': http_checks, 'browser_note': 'This report verifies public HTTP bytes and deployment metadata. Browser interaction checks are reported separately.'}
-(ROOT / 'reports/publication_verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', 'utf-8')
-print(json.dumps({k: report[k] for k in ['status', 'visibility', 'release_assets', 'all_server_sha256_match', 'pages_url']}), flush=True)
+report = {'status': 'passed', 'verified_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'repository_url': repo['html_url'], 'visibility': 'public', 'verified_code_commit': local_commit, 'release_url': release['html_url'], 'release_assets': len(expected), 'release_bytes': sum(x['bytes'] for x in expected), 'all_server_sha256_match': True, 'historical_v0.2_release': {'release_id': old_release['id'], 'assets': len(old_expected), 'all_asset_ids_sizes_and_sha256_unchanged': True}, 'pages_url': site, 'pages_build': {'status': build['status'], 'commit': build['commit']}, 'public_http_checks': http_checks, 'browser_note': 'This report verifies public HTTP bytes and deployment metadata. Browser interaction checks are reported separately.'}
+if not args.read_only:
+    (ROOT / 'reports/publication_verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', 'utf-8')
+print(json.dumps({k: report[k] for k in ['status', 'visibility', 'verified_code_commit', 'release_assets', 'all_server_sha256_match', 'historical_v0.2_release', 'pages_url']}), flush=True)

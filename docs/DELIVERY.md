@@ -1,6 +1,6 @@
 # 交付包与使用说明
 
-公开仓库：[09osd09osd/HomeVoiceBench-ZH](https://github.com/09osd09osd/HomeVoiceBench-ZH)。v0.3本地交付已完成，公开发布尚未完成；最终状态以reports/publication.json和GitHub Release为准。
+已发布：[09osd09osd/HomeVoiceBench-ZH](https://github.com/09osd09osd/HomeVoiceBench-ZH)。完整资产见[GitHub Release](https://github.com/09osd09osd/HomeVoiceBench-ZH/releases/tag/v0.3.0)。
 
 数据规模：50场景、1,000题、1650段去重输入语音；三个系统共3,000条最终运行记录，其中2637题有实际回答音频并接受听音评分。其余无回答音频的执行失败计入严格通过率分母，维度分数留空。
 
