@@ -1,41 +1,58 @@
 {
   "status": "passed",
-  "verified_at": "2026-11-17T02:28:49.243888+00:00",
+  "verified_at": "2026-11-17T08:27:42.074039+00:00",
   "repository_url": "https://github.com/09osd09osd/HomeVoiceBench-ZH",
   "visibility": "public",
-  "verified_code_commit": "cd73e14068e57e7509ac2c14b50372d146d74a47",
-  "release_url": "https://github.com/09osd09osd/HomeVoiceBench-ZH/releases/tag/v0.2.0",
-  "release_assets": 23,
-  "release_bytes": 5898077169,
+  "verified_code_commit": "c9cc08c7291d8e76aaf9893b58e2ab34fbaf2281",
+  "release_url": "https://github.com/09osd09osd/HomeVoiceBench-ZH/releases/tag/v0.3.0",
+  "release_assets": 25,
+  "release_bytes": 6312649910,
   "all_server_sha256_match": true,
+  "historical_v0.2_release": {
+    "release_id": 447968424,
+    "assets": 23,
+    "all_asset_ids_sizes_and_sha256_unchanged": true
+  },
   "pages_url": "https://09osd09osd.github.io/HomeVoiceBench-ZH/",
   "pages_build": {
-    "status": "built",
-    "commit": "cd73e14068e57e7509ac2c14b50372d146d74a47"
+    "status": "errored",
+    "commit": "c9cc08c7291d8e76aaf9893b58e2ab34fbaf2281",
+    "deployment_verification": {
+      "method": "current_commit_actions_and_deployment_success",
+      "deployment_id": 7847869209,
+      "deployment_status_id": 22389369039,
+      "workflow_run_id": 44045722737,
+      "successful_jobs": {
+        "build": 133910822255,
+        "deploy": 133911006216,
+        "report-build-status": 133911006256
+      },
+      "legacy_metadata_status": "errored"
+    }
   },
   "public_http_checks": [
     {
       "path": "docs/index.html",
       "url": "https://09osd09osd.github.io/HomeVoiceBench-ZH/docs/index.html",
       "status": 200,
-      "bytes": 623720,
-      "sha256": "dc1678514b81c4d6a6cb077a80548a5be1022a4df047c93d20fe3233a829a2cf",
+      "bytes": 662402,
+      "sha256": "be599be6714e082c834fefff57850c6ef9ffec66b1eef6b9c2a0be60243f08c3",
       "matches_local": true
     },
     {
-      "path": "outputs/homevoicebench-20261117/HomeVoiceBench-ZH.xlsx",
-      "url": "https://09osd09osd.github.io/HomeVoiceBench-ZH/outputs/homevoicebench-20261117/HomeVoiceBench-ZH.xlsx",
+      "path": "outputs/homevoicebench-v030-20261117/HomeVoiceBench-ZH.xlsx",
+      "url": "https://09osd09osd.github.io/HomeVoiceBench-ZH/outputs/homevoicebench-v030-20261117/HomeVoiceBench-ZH.xlsx",
       "status": 200,
-      "bytes": 354594,
-      "sha256": "c8349ef81582b98706148d3e565075ddef2d7951513d413648d1a503175b2451",
+      "bytes": 402925,
+      "sha256": "664030b58400d20041a504d1befc710f6c656014de92b5fd07aea8793a3bdb06",
       "matches_local": true
     },
     {
       "path": "data/cases/T06_003.json",
       "url": "https://09osd09osd.github.io/HomeVoiceBench-ZH/data/cases/T06_003.json",
       "status": 200,
-      "bytes": 74966,
-      "sha256": "1b00b84378a10af53966cc6b83162d366c9d26a28713a950e20961275f54a832",
+      "bytes": 78110,
+      "sha256": "10b326260e84d19b9fd23b984e6aaf121573f97ebbc5a492aef694bab9da7948",
       "matches_local": true
     },
     {
@@ -49,15 +66,15 @@
     {
       "path": "release/SHA256SUMS.txt",
       "status": 200,
-      "bytes": 2277,
+      "bytes": 2495,
       "matches_local": true
     },
     {
       "path": "release/README.md",
       "status": 200,
-      "bytes": 4227,
+      "bytes": 4582,
       "matches_local": true
     }
   ],
-  "browser_note": "Public browser automation timed out. Served HTML matches the local page previously checked visually; no additional public-browser playback claim."
+  "browser_note": "This report verifies public HTTP bytes and deployment metadata. Browser interaction checks are reported separately."
 }

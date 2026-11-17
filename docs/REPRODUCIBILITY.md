@@ -81,3 +81,5 @@ Excel成品随仓库分发，可直接打开。重新运行 `build_workbook.mjs`
 一次Windows共享占用使进度文件的原子替换返回WinError 5，调度器在等待在途请求结束时心跳中断。所有在途结果完成落盘后，用resume_revision_judging.py仅恢复云端评分；新增带退避的原子替换重试及回归测试，未改变模型输出、判官提示或通过标准。原异常与恢复依据见reports/revision/judge_windows_lock_recovery.json。
 
 生成最终Excel前运行 `python scripts/audit_story_duration.py`。该脚本按预先划分的全部7道压力题检查真实WAV时长，输出21条诊断记录及STORY_DURATION_AUDIT.md，不写入题目、执行记录或判官分数。C02_013的后续时间更正与C13_020的简短收尾有单独阶段边界；完整音频总长包含非故事回复，不能代替内容验证。Excel的StoryDuration页公开实际时长与判官通过的分歧。
+
+发布验证见 `scripts/verify_publication.py`：检查新版全部附件、旧版附件未被修改，以及公开HTML、Excel、题目、示例音频和下载清单的实际字节。本次GitHub的旧Pages状态接口报错，但同一提交的build/deploy任务、deployment状态均成功且公开文件一致；验证报告同时保留这两类状态，不将旧接口状态直接改写为成功。使用 `--read-only` 可再次核验而不重写已提交的验证记录。源码ZIP保留发布时的Git树快照；后续发布验证记录与验证工具改进在仓库main中保留。

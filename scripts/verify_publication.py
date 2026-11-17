@@ -80,10 +80,39 @@ for entry in old_expected:
         raise ValueError('Historical v0.2 release asset changed: ' + entry['name'])
 
 deadline = time.monotonic() + 300
+deployment_evidence = None
 while True:
     pages = api(repo_path + '/pages')
     build = api(repo_path + '/pages/builds/latest')
     if build.get('status') == 'built' and build.get('commit') == local_commit:
+        deployment_evidence = {'method': 'current_commit_pages_build_metadata'}
+        break
+    # The legacy Pages status can disagree with the successful Actions deploy.
+    # Require independent same-commit deployment and job evidence, then still
+    # compare every served delivery file byte-for-byte below.
+    deployments = api(repo_path + '/deployments?environment=github-pages&sha=' + local_commit + '&per_page=5')
+    workflow_runs = api(repo_path + '/actions/runs?per_page=20')['workflow_runs']
+    matching_runs = [r for r in workflow_runs if r['head_sha'] == local_commit
+                     and r['name'] == 'pages build and deployment'
+                     and r['status'] == 'completed' and r['conclusion'] == 'success']
+    for deployment in deployments:
+        if deployment['sha'] != local_commit or deployment['environment'] != 'github-pages':
+            continue
+        statuses = api(repo_path + '/deployments/' + str(deployment['id']) + '/statuses')
+        if not statuses or statuses[0]['state'] != 'success':
+            continue
+        for workflow in matching_runs:
+            jobs = api(repo_path + '/actions/runs/' + str(workflow['id']) + '/jobs')['jobs']
+            successful = {j['name']: j['id'] for j in jobs if j['status'] == 'completed' and j['conclusion'] == 'success'}
+            if 'build' in successful and 'deploy' in successful:
+                deployment_evidence = {'method': 'current_commit_actions_and_deployment_success',
+                                       'deployment_id': deployment['id'], 'deployment_status_id': statuses[0]['id'],
+                                       'workflow_run_id': workflow['id'], 'successful_jobs': successful,
+                                       'legacy_metadata_status': build.get('status')}
+                break
+        if deployment_evidence:
+            break
+    if deployment_evidence:
         break
     if time.monotonic() > deadline:
         raise TimeoutError('Latest Pages deployment has not finished')
@@ -113,7 +142,7 @@ for name in ['SHA256SUMS.txt', 'README.md']:
         raise ValueError('Public release download mismatch: ' + name)
     http_checks.append({'path': 'release/' + name, 'status': status, 'bytes': len(content), 'matches_local': True})
 
-report = {'status': 'passed', 'verified_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'repository_url': repo['html_url'], 'visibility': 'public', 'verified_code_commit': local_commit, 'release_url': release['html_url'], 'release_assets': len(expected), 'release_bytes': sum(x['bytes'] for x in expected), 'all_server_sha256_match': True, 'historical_v0.2_release': {'release_id': old_release['id'], 'assets': len(old_expected), 'all_asset_ids_sizes_and_sha256_unchanged': True}, 'pages_url': site, 'pages_build': {'status': build['status'], 'commit': build['commit']}, 'public_http_checks': http_checks, 'browser_note': 'This report verifies public HTTP bytes and deployment metadata. Browser interaction checks are reported separately.'}
+report = {'status': 'passed', 'verified_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'repository_url': repo['html_url'], 'visibility': 'public', 'verified_code_commit': local_commit, 'release_url': release['html_url'], 'release_assets': len(expected), 'release_bytes': sum(x['bytes'] for x in expected), 'all_server_sha256_match': True, 'historical_v0.2_release': {'release_id': old_release['id'], 'assets': len(old_expected), 'all_asset_ids_sizes_and_sha256_unchanged': True}, 'pages_url': site, 'pages_build': {'status': build['status'], 'commit': build['commit'], 'deployment_verification': deployment_evidence}, 'public_http_checks': http_checks, 'browser_note': 'This report verifies public HTTP bytes and deployment metadata. Browser interaction checks are reported separately.'}
 if not args.read_only:
     (ROOT / 'reports/publication_verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', 'utf-8')
 print(json.dumps({k: report[k] for k in ['status', 'visibility', 'verified_code_commit', 'release_assets', 'all_server_sha256_match', 'historical_v0.2_release', 'pages_url']}), flush=True)
