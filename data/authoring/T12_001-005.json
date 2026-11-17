@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "2d5562752fb89051f0c77b447e1bae6af841e8a2234d4b4acc8339ff128876fd",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-f0f4fa0d-b2dd-9cdf-9f2c-865447402c0e",
+  "usage": {
+    "prompt_tokens": 12903,
+    "total_tokens": 13782,
+    "completion_tokens": 879,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 12903
+    },
+    "completion_tokens_details": {
+      "text_tokens": 879
+    }
+  },
+  "review_request_id": "chatcmpl-db14c311-856a-935b-8e3d-e7a8cd8d80b5",
+  "review_usage": {
+    "prompt_tokens": 13407,
+    "total_tokens": 13493,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13407
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T12_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T12_001",
+        "title": "客厅音箱开20%音量",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱打开，音量调到20%。",
+            "reference_text": "客厅音箱已经打开，音量设成20%了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_002",
+        "title": "客厅音箱音量降到10%",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱打开，音量调到20%。",
+            "reference_text": "客厅音箱已打开，音量调到20%了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "音量再降到10%，其他设置不要动。",
+            "reference_text": "音量已经改成10%，其他设置没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_003",
+        "title": "客厅音箱音量调整并核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开客厅音箱，音量设成20%。",
+            "reference_text": "客厅音箱打开了，音量是20%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "音量改成10%，别的不要改。",
+            "reference_text": "音量已经调到10%，其他没改。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅音箱现在音量和开关是什么状态，别调整。",
+            "reference_text": "客厅音箱现在是开着的，音量10%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_004",
+        "title": "客厅音箱调音量后关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱打开，音量调到20%。",
+            "reference_text": "客厅音箱已打开，音量设成20%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "音量改成10%，其他设置别动。",
+            "reference_text": "音量已经改成10%，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下客厅音箱现在的音量和开关，不要调整。",
+            "reference_text": "客厅音箱现在开着，音量是10%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅音箱关掉，音量设置保留。",
+            "reference_text": "客厅音箱已关闭，音量还是10%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_005",
+        "title": "客厅音箱音量设置与关闭后复查",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开客厅音箱，音量调到20%。",
+            "reference_text": "客厅音箱已打开，音量20%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "音量改成10%，其他不要动。",
+            "reference_text": "音量已经调到10%，其他没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "看看客厅音箱现在的音量和开关，别调整。",
+            "reference_text": "客厅音箱现在开着，音量10%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅音箱关掉，音量设置留着。",
+            "reference_text": "客厅音箱已经关了，音量还是10%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅音箱的开关状态，别的设备不要改。",
+            "reference_text": "客厅音箱现在是关着的，音量还是10%。"
+          }
+        ]
+      }
+    ]
+  }
+}

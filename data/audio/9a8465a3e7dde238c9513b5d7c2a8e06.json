@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9a8465a3e7dde238c9513b5d7c2a8e06.wav",
+  "sha256": "867235bbd420da4123b99a98586954d09a470481278c20f83bda616b113817e5",
+  "duration_seconds": 6.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "75cd2bf5-6dc2-968b-9245-b4461abebefc",
+  "usage": {
+    "input_tokens": 207,
+    "output_tokens": 1208,
+    "total_tokens": 1415,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我现在不想听什么复盘啊、下次怎么改啊，你就陪我聊聊，让我把心里这口气顺一顺。",
+  "spoken_text": "我现在不想听什么复盘啊、下次怎么改啊，你就陪我聊聊，让我把心里这口气顺一顺。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我现在不想听什么复盘啊，下次怎么改啊？你就陪我聊聊，让我把心里这口气顺一顺。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我现在不想听什么复盘啊，下次怎么改啊？你就陪我聊聊，让我把心里这口气顺一顺。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8bf14bbc-74b6-98d5-b338-2c9b4033e05d",
+    "usage": {
+      "prompt_tokens": 258,
+      "total_tokens": 309,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "867235bbd420da4123b99a98586954d09a470481278c20f83bda616b113817e5"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "53888e66750c68c61f83cdfe27fe3fb59f3d138bf0376b4e9023c11d9bca8e8b",
+    "canonical_sha256": "867235bbd420da4123b99a98586954d09a470481278c20f83bda616b113817e5",
+    "pcm_sha256": "9725cac0f1795b8dd4e48b11f7524686fb1abc871234c5b7fcb5770658faab58",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 144960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我现在不想听什么复盘啊，下次怎么改啊？你就陪我聊聊，让我把心里这口气顺一顺。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c913b2a8-31e9-9f44-adbb-993db3ce7309",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 225,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "53888e66750c68c61f83cdfe27fe3fb59f3d138bf0376b4e9023c11d9bca8e8b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "53888e66750c68c61f83cdfe27fe3fb59f3d138bf0376b4e9023c11d9bca8e8b",
+        "canonical_audio_sha256": "867235bbd420da4123b99a98586954d09a470481278c20f83bda616b113817e5",
+        "pcm_sha256": "9725cac0f1795b8dd4e48b11f7524686fb1abc871234c5b7fcb5770658faab58",
+        "same_samples": true
+      }
+    }
+  ]
+}

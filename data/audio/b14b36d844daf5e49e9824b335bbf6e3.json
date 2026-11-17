@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b14b36d844daf5e49e9824b335bbf6e3.wav",
+  "sha256": "852e7048205d3bff64e56cb45bc297fc45f64a00e0b073d90eace4951e465d9f",
+  "duration_seconds": 2.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8555b998-f307-9b26-a198-f174134a13fd",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 440,
+    "total_tokens": 619,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "明天8点自动关掉卧室灯。",
+  "spoken_text": "明天八点自动关掉卧室灯。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "明天八点自动关掉卧室灯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "明天八点自动关掉卧室灯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8b184373-84d3-90fc-9bfe-52c6b581e106",
+    "usage": {
+      "prompt_tokens": 213,
+      "total_tokens": 246,
+      "completion_tokens": 33,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 33
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "852e7048205d3bff64e56cb45bc297fc45f64a00e0b073d90eace4951e465d9f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "183a53b66e6842a16a8f130ce0c9bcb7238cb39b63dbb9ed0c24d3916610cf64",
+    "canonical_sha256": "852e7048205d3bff64e56cb45bc297fc45f64a00e0b073d90eace4951e465d9f",
+    "pcm_sha256": "a4d02271726c99d454ba60e97662c8e5ab8625ff4e2cab0de8de15b4caf76584",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 52800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "明天八点自动关掉卧室灯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "明天八点自动关掉卧室灯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-72074292-2ca4-9678-8d75-eeecdf23b60b",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 185,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 33
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "183a53b66e6842a16a8f130ce0c9bcb7238cb39b63dbb9ed0c24d3916610cf64",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "183a53b66e6842a16a8f130ce0c9bcb7238cb39b63dbb9ed0c24d3916610cf64",
+        "canonical_audio_sha256": "852e7048205d3bff64e56cb45bc297fc45f64a00e0b073d90eace4951e465d9f",
+        "pcm_sha256": "a4d02271726c99d454ba60e97662c8e5ab8625ff4e2cab0de8de15b4caf76584",
+        "same_samples": true
+      }
+    }
+  ]
+}

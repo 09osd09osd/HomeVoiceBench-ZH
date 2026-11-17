@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a073088d00eb5372ae727072eb6341fc.wav",
+  "sha256": "b7458f4cdcf2c934c01d2bf97160aea364dcbe69c482c694733f4c5f8dde093c",
+  "duration_seconds": 4.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "728d691b-bf8d-9672-bf53-c1508117c72a",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 944,
+    "total_tokens": 1133,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想下楼，外面太晒了。在家里有什么不费脑子的事能做？",
+  "spoken_text": "我不想下楼，外面太晒了。在家里有什么不费脑子的事能做？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不想下楼，外面太晒了。在家里有什么不费脑子的事能做？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想下楼，外面太晒了。在家里有什么不费脑子的事能做？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-74a63869-3768-9952-acd2-9f6df15af375",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b7458f4cdcf2c934c01d2bf97160aea364dcbe69c482c694733f4c5f8dde093c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "29440f2d3c3b8c8746b90d8ff546cc5051e979e7392ebd5cbe83dd98252b79cc",
+    "canonical_sha256": "b7458f4cdcf2c934c01d2bf97160aea364dcbe69c482c694733f4c5f8dde093c",
+    "pcm_sha256": "120934453bd7495f9fc595a90b473f1f5bc524f2a5ff515b1b0478fd7519b6f5",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 113280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想下楼，外面太晒了。在家里有什么不费脑子的事能做？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0596646b-9015-99a8-adae-d8833c9d9725",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "29440f2d3c3b8c8746b90d8ff546cc5051e979e7392ebd5cbe83dd98252b79cc",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "29440f2d3c3b8c8746b90d8ff546cc5051e979e7392ebd5cbe83dd98252b79cc",
+        "canonical_audio_sha256": "b7458f4cdcf2c934c01d2bf97160aea364dcbe69c482c694733f4c5f8dde093c",
+        "pcm_sha256": "120934453bd7495f9fc595a90b473f1f5bc524f2a5ff515b1b0478fd7519b6f5",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "58f1c7a8e006e7d1597abf6eb9bfb6db1c1237bcc78396912ae0abd463864bb2",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-caa2a645-ec7d-98ad-ae0d-70358f9728d6",
+  "usage": {
+    "prompt_tokens": 4182,
+    "total_tokens": 5342,
+    "completion_tokens": 1160,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4182
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1160
+    }
+  },
+  "review_request_id": "chatcmpl-add2ddf8-06f9-9e12-aa61-41d37cc15a19",
+  "review_usage": {
+    "prompt_tokens": 4964,
+    "total_tokens": 5050,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4964
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T19_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T19_001",
+        "title": "查询客厅是否有人",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "客厅当前没有检测到人，读数是无人，测量时间是2026年12月1日18点00分。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_002",
+        "title": "先后查询客厅和厨房是否有人",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "客厅当前检测到有人，读数是有人，测量时间是2026年12月1日18点00分。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房有没有人。",
+            "reference_text": "厨房当前没有检测到人，读数是无人，测量时间也是2026年12月1日18点00分。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_003",
+        "title": "比较客厅与厨房的有人读数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "客厅当前没有检测到人，读数是无人，测量时间是2026年12月1日18点00分。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房有没有人。",
+            "reference_text": "厨房当前检测到有人，读数是有人，测量时间也是2026年12月1日18点00分。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才这两个房间的读数，别调任何设备。",
+            "reference_text": "客厅是无人，厨房是有人，两个读数测量时间都是2026年12月1日18点00分，没有调整任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_004",
+        "title": "确认有人读数能否代表全部现场",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "客厅当前检测到有人，读数是有人，测量时间是2026年12月1日18点00分。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房有没有人。",
+            "reference_text": "厨房当前没有检测到人，读数是无人，测量时间也是2026年12月1日18点00分。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才这两个房间的读数，别调任何设备。",
+            "reference_text": "客厅是有人，厨房是无人，两个读数测量时间都是2026年12月1日18点00分，没有调整任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。这些读数只反映测量那一刻传感器范围内有没有人，不能识别是谁，也不代表温度或设备设定值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_005",
+        "title": "多次查询客厅有人状态并解释局限",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "客厅当前没有检测到人，读数是无人，测量时间是2026年12月1日18点00分。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房有没有人。",
+            "reference_text": "厨房当前检测到有人，读数是有人，测量时间也是2026年12月1日18点00分。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才这两个房间的读数，别调任何设备。",
+            "reference_text": "客厅是无人，厨房是有人，两个读数测量时间都是2026年12月1日18点00分，没有调整任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。这些读数只反映测量那一刻传感器范围内有没有人，不能识别是谁，也不代表温度或设备设定值。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再重新查一下客厅的同一个指标。",
+            "reference_text": "客厅重新查询的结果还是无人，测量时间是2026年12月1日18点00分。"
+          }
+        ]
+      }
+    ]
+  }
+}

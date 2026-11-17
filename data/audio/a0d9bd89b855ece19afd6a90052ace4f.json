@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a0d9bd89b855ece19afd6a90052ace4f.wav",
+  "sha256": "742de9a010ed5ec161c79617cc065cd2352376354e203f45dbe7db01685701dd",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d09b3433-d029-9301-aeaa-ac9920ed6ca9",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 640,
+    "total_tokens": 828,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "行，那你简短说两句让我安心的话，我就去睡了。",
+  "spoken_text": "行，那你简短说两句让我安心的话，我就去睡了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "行，那你简短说两句让我安心的话，我就去睡了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "行，那你简短说两句让我安心的话，我就去睡了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-eb912e84-200f-9d22-b10b-e63fe184eb38",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "742de9a010ed5ec161c79617cc065cd2352376354e203f45dbe7db01685701dd"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7dd8bf738b84fbc610ae8b06e0b3298af9942a635d7d3d316d4463a0e9afd5af",
+    "canonical_sha256": "742de9a010ed5ec161c79617cc065cd2352376354e203f45dbe7db01685701dd",
+    "pcm_sha256": "65a8b4890bb3e1fb5ca35c990df49f3fe17f558e439019fa067607b17a7be12d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "行，那你简短说两句让我安心的话，我就去睡了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3e74dc09-ca48-9963-ad13-063c6f00be87",
+      "usage": {
+        "prompt_tokens": 142,
+        "total_tokens": 182,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7dd8bf738b84fbc610ae8b06e0b3298af9942a635d7d3d316d4463a0e9afd5af",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7dd8bf738b84fbc610ae8b06e0b3298af9942a635d7d3d316d4463a0e9afd5af",
+        "canonical_audio_sha256": "742de9a010ed5ec161c79617cc065cd2352376354e203f45dbe7db01685701dd",
+        "pcm_sha256": "65a8b4890bb3e1fb5ca35c990df49f3fe17f558e439019fa067607b17a7be12d",
+        "same_samples": true
+      }
+    }
+  ]
+}

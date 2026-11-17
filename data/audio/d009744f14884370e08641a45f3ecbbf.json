@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/d009744f14884370e08641a45f3ecbbf.wav",
+  "sha256": "4e9066f150ecc7771372d25af8bef84aeaca4933b7514c81cea29ecfd9151067",
+  "duration_seconds": 3.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "87dbcd84-b2b5-97ee-8ccc-83dd4f212b81",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 664,
+    "total_tokens": 856,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我改过的那件事吗？就是老人复查的时间。",
+  "spoken_text": "你还记得我改过的那件事吗？就是老人复查的时间。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我改过的那件事吗？就是老人复查的时间。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我改过的那件事吗？就是老人复查的时间。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-01bc68e2-ef1f-9876-ad94-54d960a6ecc2",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4e9066f150ecc7771372d25af8bef84aeaca4933b7514c81cea29ecfd9151067"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6474f00dd1ee1958c525d4cde046857e7d06f623ad31a3cc57d867e558ae02ba",
+    "canonical_sha256": "4e9066f150ecc7771372d25af8bef84aeaca4933b7514c81cea29ecfd9151067",
+    "pcm_sha256": "91ceda1141de1f0c887fb080a62eb1c1efd6fb09b99803481bb90fc79acee1ca",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 79680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我改过的那件事吗？就是老人复查的时间。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-13cb3faf-b7eb-9110-92c7-f576342211f1",
+      "usage": {
+        "prompt_tokens": 142,
+        "total_tokens": 182,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6474f00dd1ee1958c525d4cde046857e7d06f623ad31a3cc57d867e558ae02ba",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6474f00dd1ee1958c525d4cde046857e7d06f623ad31a3cc57d867e558ae02ba",
+        "canonical_audio_sha256": "4e9066f150ecc7771372d25af8bef84aeaca4933b7514c81cea29ecfd9151067",
+        "pcm_sha256": "91ceda1141de1f0c887fb080a62eb1c1efd6fb09b99803481bb90fc79acee1ca",
+        "same_samples": true
+      }
+    }
+  ]
+}

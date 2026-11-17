@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c9ccb5bd8d5b59c9be136c3a9cb192e4.wav",
+  "sha256": "278b40c070c44fde08d1f479c0849a588a90d7c1b249dc1feaf16178cba232d0",
+  "duration_seconds": 7.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0c5f50c3-d849-96e1-9653-d66d840887fc",
+  "usage": {
+    "input_tokens": 224,
+    "output_tokens": 1536,
+    "total_tokens": 1760,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我爸这人吃软不吃硬，你别给我那种特别正式的话，像平时家里人聊天那样，两三句就行，也别让我一遍遍认错。",
+  "spoken_text": "我爸这人吃软不吃硬，你别给我那种特别正式的话，像平时家里人聊天那样，两三句就行，也别让我一遍遍认错。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我爸这人吃软不吃硬，你别给我那种特别正式的话，像平时家里人聊天那样，两三句就行，也别让我一遍遍认错。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我爸这人吃软不吃硬，你别给我那种特别正式的话，像平时家里人聊天那样，两三句就行，也别让我一遍遍认错。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-40635602-b832-93b6-af8d-cb4a39330d14",
+    "usage": {
+      "prompt_tokens": 270,
+      "total_tokens": 326,
+      "completion_tokens": 56,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 219
+      },
+      "completion_tokens_details": {
+        "text_tokens": 56
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "278b40c070c44fde08d1f479c0849a588a90d7c1b249dc1feaf16178cba232d0"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "289c9b5a1000007f172339eb364a18468ce2af7d4f425b513db2e6be7267da49",
+    "canonical_sha256": "278b40c070c44fde08d1f479c0849a588a90d7c1b249dc1feaf16178cba232d0",
+    "pcm_sha256": "a62edc907b6e2d1fb6048c08e6657bfcf487fc24c7396a2f928444696af56f53",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 184320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我爸这人吃软不吃硬，你别给我那种特别正式的话，像平时家里人聊天那样，两三句就行，也别让我一遍遍认错。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ef969906-0495-9098-ac70-81021e8cc426",
+      "usage": {
+        "prompt_tokens": 186,
+        "total_tokens": 242,
+        "completion_tokens": 56,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 135
+        },
+        "completion_tokens_details": {
+          "text_tokens": 56
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "289c9b5a1000007f172339eb364a18468ce2af7d4f425b513db2e6be7267da49",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "289c9b5a1000007f172339eb364a18468ce2af7d4f425b513db2e6be7267da49",
+        "canonical_audio_sha256": "278b40c070c44fde08d1f479c0849a588a90d7c1b249dc1feaf16178cba232d0",
+        "pcm_sha256": "a62edc907b6e2d1fb6048c08e6657bfcf487fc24c7396a2f928444696af56f53",
+        "same_samples": true
+      }
+    }
+  ]
+}

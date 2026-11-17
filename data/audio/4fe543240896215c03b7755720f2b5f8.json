@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/4fe543240896215c03b7755720f2b5f8.wav",
+  "sha256": "adcafa4d7268ecc980596886a22d505ce06e35b4f5e0811c16a712a642883071",
+  "duration_seconds": 4.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "752a95c4-b8c1-9b9e-9d44-ed8c9aeb719b",
+  "usage": {
+    "input_tokens": 227,
+    "output_tokens": 848,
+    "total_tokens": 1075,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "陪我妈来医院做检查，排号排到三十多号，还得等好久，我有点焦。",
+  "spoken_text": "陪我妈来医院做检查，排号排到三十多号，还得等好久，我有点焦。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "陪我妈来医院做检查，排号排到三十多号，还得等好久，我有点焦。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "陪我妈来医院做检查，排号排到三十多号，还得等好久，我有点焦。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-635a4881-ff76-94f1-bcbd-d48572d7deae",
+    "usage": {
+      "prompt_tokens": 242,
+      "total_tokens": 291,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "adcafa4d7268ecc980596886a22d505ce06e35b4f5e0811c16a712a642883071"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "18aabb7899c751a1974e689a007e3647ec03581d97b0de61bb52678670acecda",
+    "canonical_sha256": "adcafa4d7268ecc980596886a22d505ce06e35b4f5e0811c16a712a642883071",
+    "pcm_sha256": "0cebf86e4650e21742d225cdf8e1e12960b78915222b2375e8b1de771a8bc92a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 101760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "陪我妈来医院做检查，排号排到三十多号，还得等好久，我有点焦。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-18affb9c-e3ce-9bec-89df-1a8321e3c4f0",
+      "usage": {
+        "prompt_tokens": 158,
+        "total_tokens": 207,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "18aabb7899c751a1974e689a007e3647ec03581d97b0de61bb52678670acecda",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "18aabb7899c751a1974e689a007e3647ec03581d97b0de61bb52678670acecda",
+        "canonical_audio_sha256": "adcafa4d7268ecc980596886a22d505ce06e35b4f5e0811c16a712a642883071",
+        "pcm_sha256": "0cebf86e4650e21742d225cdf8e1e12960b78915222b2375e8b1de771a8bc92a",
+        "same_samples": true
+      }
+    }
+  ]
+}

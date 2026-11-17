@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "d8a5d9c65a3451f932af4fb3c6897e0e17623f8cec01784eed523d03df08a000",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-a6beb1e5-f853-99d5-914b-07f63afdfbb9",
+  "usage": {
+    "prompt_tokens": 1825,
+    "total_tokens": 3097,
+    "completion_tokens": 1272,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1825
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1272
+    }
+  },
+  "review_request_id": "chatcmpl-3fb58753-c6f2-91b5-bbbd-f5cf551598c3",
+  "review_usage": {
+    "prompt_tokens": 2719,
+    "total_tokens": 2805,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2719
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C20_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C20_001",
+        "title": "聊周末计划时区分假设与授权",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我周末想带孩子去动物园，但只是先聊聊，别帮我订票。你帮我看看上午去还是下午去更好？",
+            "reference_text": "好的，只是聊聊，我不订票。上午动物更活跃，下午人可能少些，看您更看重哪一点。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_002",
+        "title": "聊换沙发时补充预算限制",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我在考虑把客厅沙发换掉，先跟你讨论一下款式，不用帮我下单。你觉得布艺和皮沙发各有什么优缺点？",
+            "reference_text": "布艺透气、颜色多，但打理麻烦；皮沙发好擦但价格高、夏天可能粘。先不涉及下单，咱只聊特点。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "补充一下，我家有小孩和猫，预算不超过5000块，你按这个再帮我分析。",
+            "reference_text": "有小孩和猫，布艺要选可拆洗的，皮沙发要防抓。5000块内建议看耐磨可拆洗布艺，别急着买。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_003",
+        "title": "聊旅行路线时更正出发地",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想五一去杭州玩三天，先聊聊路线，不用帮我订酒店。你建议怎么安排比较轻松？",
+            "reference_text": "三天可以一天西湖周边，一天灵隐寺和龙井，一天河坊街。只是聊路线，不订酒店。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我带着老人，走路不能太多，每天最好只安排一个主要景点。",
+            "reference_text": "那每天一个主景点更合适，西湖可以坐船少走路，灵隐寺注意台阶，河坊街慢慢逛。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，我不是从上海出发，是从南京出发，高铁时间会不一样。",
+            "reference_text": "明白，从南京出发高铁到杭州约一个多小时，比上海稍长，行程仍可按每天一个主景点安排。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_004",
+        "title": "聊孩子生日会时记住更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想给孩子办个生日会，先聊聊怎么办，不用帮我订蛋糕。你觉得在家办还是出去办好？",
+            "reference_text": "在家办更随意省钱，出去办省事但花销大。只是聊方案，不订蛋糕。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "孩子六岁，大概请8个小朋友，最好别太吵，家长也能坐得下。",
+            "reference_text": "六岁8个孩子，在家的话可以分游戏区和休息区，控制音量，给家长留座位。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是8个小朋友，是6个，刚才说多了。",
+            "reference_text": "好的，更正为6个小朋友，那家里空间更宽裕，游戏和休息区更好安排。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得是几个小朋友吗？按这个人数继续帮我看看在家办怎么布置。",
+            "reference_text": "记得，是6个小朋友。在家布置可以设一个小游戏角、一个手工桌，家长区靠边留座。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_005",
+        "title": "聊家庭聚餐时简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "下周想请爸妈来家里吃顿饭，先聊聊菜单，不用帮我买菜。你觉得做几个菜合适？",
+            "reference_text": "四到五个菜加一个汤就够，荤素搭配。只是聊菜单，不买菜。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我爸不吃辣，我妈爱吃鱼，最好少油一点。",
+            "reference_text": "那可以做清蒸鱼、少油的青菜、炖汤，辣菜不放或单独做。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是下周，是这周六晚上，时间提前了。",
+            "reference_text": "好的，改成本周六晚上，菜单可以提前一天想好，当天买新鲜食材。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得是周六晚上吗？按这个时间帮我排个简单的准备顺序。",
+            "reference_text": "记得，是周六晚上。可以周五定菜单，周六上午买菜，下午备菜，傍晚做鱼和汤。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好，就聊到这儿，你用一两句话帮我总结一下重点就行。",
+            "reference_text": "重点是周六晚请爸妈，四菜一汤，少油不辣，有清蒸鱼；只是聊天，没有买菜或订餐。"
+          }
+        ]
+      }
+    ]
+  }
+}

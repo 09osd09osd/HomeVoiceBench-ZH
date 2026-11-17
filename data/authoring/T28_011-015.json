@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "7794ac30d8015f2d4810fe85bb3817880a26034dc1b78b17d1a9c68d3becb40a",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-8a020b31-628a-99e5-89e5-28e8562bc65b",
+  "usage": {
+    "prompt_tokens": 2600,
+    "total_tokens": 3631,
+    "completion_tokens": 1031,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 2600
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1031
+    }
+  },
+  "review_request_id": "chatcmpl-0fe44950-ee10-9974-97a1-4b11553b3b52",
+  "review_usage": {
+    "prompt_tokens": 3253,
+    "total_tokens": 3339,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 3253
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T28_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T28_011",
+        "title": "查找不存在的蓝色月球音乐",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就放，没有就直接告诉我。",
+            "reference_text": "我查了《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_012",
+        "title": "查找不存在的蓝色月球后搜索小熊找月亮",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就放，没有就直接告诉我。",
+            "reference_text": "我查了《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《小熊找月亮》，先不要播放。",
+            "reference_text": "好，我搜到了《小熊找月亮》，先不播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_013",
+        "title": "查找不存在的蓝色月球后询问小熊找月亮详情",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就放，没有就直接告诉我。",
+            "reference_text": "我查了《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《小熊找月亮》，先不要播放。",
+            "reference_text": "好，我搜到了《小熊找月亮》，先不播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "告诉我刚才找到的内容类型和长度。",
+            "reference_text": "刚才找到的《小熊找月亮》是故事，长度大约420秒，也就是7分钟。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_014",
+        "title": "查找不存在的蓝色月球后询问详情并停止播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就放，没有就直接告诉我。",
+            "reference_text": "我查了《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《小熊找月亮》，先不要播放。",
+            "reference_text": "好，我搜到了《小熊找月亮》，先不播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "告诉我刚才找到的内容类型和长度。",
+            "reference_text": "刚才找到的《小熊找月亮》是故事，长度大约420秒，也就是7分钟。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "先别放任何内容。",
+            "reference_text": "好的，我不会播放任何内容。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_015",
+        "title": "查找不存在的蓝色月球后确认未播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就放，没有就直接告诉我。",
+            "reference_text": "我查了《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《小熊找月亮》，先不要播放。",
+            "reference_text": "好，我搜到了《小熊找月亮》，先不播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "告诉我刚才找到的内容类型和长度。",
+            "reference_text": "刚才找到的《小熊找月亮》是故事，长度大约420秒，也就是7分钟。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "先别放任何内容。",
+            "reference_text": "好的，我不会播放任何内容。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认刚才有没有开始播放，别编造播放成功。",
+            "reference_text": "我确认过了，刚才没有开始播放任何内容，也不会编造播放成功。"
+          }
+        ]
+      }
+    ]
+  }
+}

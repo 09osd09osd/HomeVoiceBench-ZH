@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/2cf6152b41b5f7b36db1aa403721894e.wav",
+  "sha256": "8bb3d5ea74c3a439dbaff3a4576446f61110f363ea130af04514843060c340e1",
+  "duration_seconds": 6.36,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "45101a02-681b-9183-a8ff-3cb2a9d8de28",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 1272,
+    "total_tokens": 1457,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我刚刚更正的时间吗？我想确认一下，然后接着说孩子后来主动来找我。",
+  "spoken_text": "你还记得我刚刚更正的时间吗？我想确认一下，然后接着说孩子后来主动来找我。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我刚刚更正的时间吗？我想确认一下，然后接着说孩子后来主动来找我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我刚刚更正的时间吗？我想确认一下，然后接着说孩子后来主动来找我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e7489cdf-8cd3-991f-afcd-60052058611d",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 301,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8bb3d5ea74c3a439dbaff3a4576446f61110f363ea130af04514843060c340e1"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b95f0737fc80fed0ee38b57c36f25b16ef48f20a1bdfbd5b8e79b8ee5df226b0",
+    "canonical_sha256": "8bb3d5ea74c3a439dbaff3a4576446f61110f363ea130af04514843060c340e1",
+    "pcm_sha256": "7f21ccab8977978698c2b6ac6a5ec1abe51ead52ff5112891c1cba35fc7122ff",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 152640,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我刚刚更正的时间吗？我想确认一下，然后接着说孩子后来主动来找我。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-72569fb8-79c3-9305-b199-8af1aeb0ec51",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 217,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b95f0737fc80fed0ee38b57c36f25b16ef48f20a1bdfbd5b8e79b8ee5df226b0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b95f0737fc80fed0ee38b57c36f25b16ef48f20a1bdfbd5b8e79b8ee5df226b0",
+        "canonical_audio_sha256": "8bb3d5ea74c3a439dbaff3a4576446f61110f363ea130af04514843060c340e1",
+        "pcm_sha256": "7f21ccab8977978698c2b6ac6a5ec1abe51ead52ff5112891c1cba35fc7122ff",
+        "same_samples": true
+      }
+    }
+  ]
+}

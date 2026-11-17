@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/3973af567f40780ed3efad439a9821b0.wav",
+  "sha256": "6603be85b3dbd923ff0a2356cb895de6761c2cf7b58b25ff1514c6aaaa1f395a",
+  "duration_seconds": 4.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "56827dea-2b76-9836-8148-4cefc3cf23d6",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 832,
+    "total_tokens": 1029,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "上周面试完说这周给通知，今天都周四了还没消息，我有点坐不住。",
+  "spoken_text": "上周面试完说这周给通知，今天都周四了还没消息，我有点坐不住。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "上周面试完说这周给通知，今天都周四了还没消息，我有点坐不住。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "上周面试完说这周给通知，今天都周四了还没消息，我有点坐不住。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d055c634-c9c8-9fa6-bef6-4ec4f27c0b5d",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 287,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6603be85b3dbd923ff0a2356cb895de6761c2cf7b58b25ff1514c6aaaa1f395a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c9ee86b9e3f275e39699adb6c5593782ff139b82488e31f23a733f8d18e03fbe",
+    "canonical_sha256": "6603be85b3dbd923ff0a2356cb895de6761c2cf7b58b25ff1514c6aaaa1f395a",
+    "pcm_sha256": "581d8c7dcf5824c794d1eba313b9171ad3134203c5e696bacc1a51a040ba28ac",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 99840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "上周面试完说这周给通知，今天都周四了还没消息，我有点坐不住。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2511968a-5fcd-92c9-a067-bea9c81ed335",
+      "usage": {
+        "prompt_tokens": 156,
+        "total_tokens": 203,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c9ee86b9e3f275e39699adb6c5593782ff139b82488e31f23a733f8d18e03fbe",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c9ee86b9e3f275e39699adb6c5593782ff139b82488e31f23a733f8d18e03fbe",
+        "canonical_audio_sha256": "6603be85b3dbd923ff0a2356cb895de6761c2cf7b58b25ff1514c6aaaa1f395a",
+        "pcm_sha256": "581d8c7dcf5824c794d1eba313b9171ad3134203c5e696bacc1a51a040ba28ac",
+        "same_samples": true
+      }
+    }
+  ]
+}

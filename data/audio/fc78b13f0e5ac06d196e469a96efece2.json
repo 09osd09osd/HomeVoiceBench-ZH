@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/fc78b13f0e5ac06d196e469a96efece2.wav",
+  "sha256": "ac656d1502f7d4b8acb6b9f7962412d1c7d264c2576453e6f9db1060d4d76820",
+  "duration_seconds": 3.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d73673c5-3bc5-9e45-ac52-3beb1251279c",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 664,
+    "total_tokens": 863,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说错了，不是金属的，是塑料的，你按塑料的来提示。",
+  "spoken_text": "我刚才说错了，不是金属的，是塑料的，你按塑料的来提示。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说错了，不是金属的，是塑料的。你按塑料的来提示。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说错了，不是金属的，是塑料的。你按塑料的来提示。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-59e4dd56-35f8-927a-a4d8-d9d3961f8d8d",
+    "usage": {
+      "prompt_tokens": 232,
+      "total_tokens": 278,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ac656d1502f7d4b8acb6b9f7962412d1c7d264c2576453e6f9db1060d4d76820"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9e97adff7be19a204f33bbaca610eeea20ff61e38bf12be3b7cfc30637848ead",
+    "canonical_sha256": "ac656d1502f7d4b8acb6b9f7962412d1c7d264c2576453e6f9db1060d4d76820",
+    "pcm_sha256": "056adc9b377f89ceecd391bd7444489666e60628ee958f333dd0c06c5cc38836",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 79680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说错了，不是金属的，是塑料的。你按塑料的来提示。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我刚才说错了，不是金属的，是塑料的。你按塑料的来提示。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-67237430-716c-9da0-be05-5dceae4f31a6",
+      "usage": {
+        "prompt_tokens": 171,
+        "total_tokens": 217,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 148
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9e97adff7be19a204f33bbaca610eeea20ff61e38bf12be3b7cfc30637848ead",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9e97adff7be19a204f33bbaca610eeea20ff61e38bf12be3b7cfc30637848ead",
+        "canonical_audio_sha256": "ac656d1502f7d4b8acb6b9f7962412d1c7d264c2576453e6f9db1060d4d76820",
+        "pcm_sha256": "056adc9b377f89ceecd391bd7444489666e60628ee958f333dd0c06c5cc38836",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a2808c949af2f538cfa7f375e70f11bd.wav",
+  "sha256": "cf4d2ddd4e9394616c8ca67d9b93de13766def6e8e9bb499526d35318893c7e6",
+  "duration_seconds": 3.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "08e1cc8c-396e-9704-bfb6-7a1e40c8a325",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 704,
+    "total_tokens": 901,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "晚上想吃点清淡的，别弄太油腻，我胃不太舒服。",
+  "spoken_text": "晚上想吃点清淡的，别弄太油腻，我胃不太舒服。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "晚上想吃点清淡的，别弄太油腻，我胃不太舒服。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "晚上想吃点清淡的，别弄太油腻，我胃不太舒服。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-64d45f7f-f707-90e6-b88e-6910d412e140",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cf4d2ddd4e9394616c8ca67d9b93de13766def6e8e9bb499526d35318893c7e6"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cb8051775632631980c9f70cb5413f4e2d97bf683366921133fe8fb604eb4f85",
+    "canonical_sha256": "cf4d2ddd4e9394616c8ca67d9b93de13766def6e8e9bb499526d35318893c7e6",
+    "pcm_sha256": "7ff6a64af8e1ecf185afab54bd5fe2ecd9de65701a910059f16940d24f7e9856",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 84480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "晚上想吃点清淡的，别弄太油腻，我胃不太舒服。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1b041bcb-7a2a-9c22-8495-6497df7b84fa",
+      "usage": {
+        "prompt_tokens": 144,
+        "total_tokens": 186,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cb8051775632631980c9f70cb5413f4e2d97bf683366921133fe8fb604eb4f85",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cb8051775632631980c9f70cb5413f4e2d97bf683366921133fe8fb604eb4f85",
+        "canonical_audio_sha256": "cf4d2ddd4e9394616c8ca67d9b93de13766def6e8e9bb499526d35318893c7e6",
+        "pcm_sha256": "7ff6a64af8e1ecf185afab54bd5fe2ecd9de65701a910059f16940d24f7e9856",
+        "same_samples": true
+      }
+    }
+  ]
+}

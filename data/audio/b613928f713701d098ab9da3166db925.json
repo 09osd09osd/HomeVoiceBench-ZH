@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b613928f713701d098ab9da3166db925.wav",
+  "sha256": "91522fefe3511792eabaf91ecb9d679ad90ba677985aa0f47804ff0867e7e607",
+  "duration_seconds": 4.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5d70a06f-255d-9ef9-9d5a-b07643d4c4a6",
+  "usage": {
+    "input_tokens": 202,
+    "output_tokens": 864,
+    "total_tokens": 1066,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我改一下，是5个词，不是4个，你再加一个词吧，就加“水杯”。",
+  "spoken_text": "我改一下，是五个词，不是四个，你再加一个词吧，就加“水杯”。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我改一下，是五个词，不是四个。你再加一个词吧，就加水杯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我改一下，是五个词，不是四个。你再加一个词吧，就加水杯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5fb58d9a-2d81-9e94-9a7b-870193bf7ef8",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 290,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "91522fefe3511792eabaf91ecb9d679ad90ba677985aa0f47804ff0867e7e607"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6b5524d1786d7494396141641215bec4323d4ee5e0f22c1eaa4d94bdee5b640c",
+    "canonical_sha256": "91522fefe3511792eabaf91ecb9d679ad90ba677985aa0f47804ff0867e7e607",
+    "pcm_sha256": "8237567b74a0e145058c9d6dbde3064f8a6b5eebe1066a522f263c5532565534",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 103680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我改一下，是五个词，不是四个，你再加一个词吧，就加水杯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我改一下，是五个词，不是四个，你再加一个词吧，就加水杯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e96d36e4-f38a-909d-aaa4-81b38da9d405",
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 229,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6b5524d1786d7494396141641215bec4323d4ee5e0f22c1eaa4d94bdee5b640c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6b5524d1786d7494396141641215bec4323d4ee5e0f22c1eaa4d94bdee5b640c",
+        "canonical_audio_sha256": "91522fefe3511792eabaf91ecb9d679ad90ba677985aa0f47804ff0867e7e607",
+        "pcm_sha256": "8237567b74a0e145058c9d6dbde3064f8a6b5eebe1066a522f263c5532565534",
+        "same_samples": true
+      }
+    }
+  ]
+}

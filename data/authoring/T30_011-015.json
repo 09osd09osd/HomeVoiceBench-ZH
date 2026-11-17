@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "c016bb4dde449f77bfdab38e6848c809a54bbd57d3947a34ea338231cfc67270",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-ddbc4ab1-2304-9b42-aa46-b4418ff0888c",
+  "usage": {
+    "prompt_tokens": 13527,
+    "total_tokens": 14824,
+    "completion_tokens": 1297,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13527
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1297
+    }
+  },
+  "review_request_id": "chatcmpl-e84d129d-80f6-9bde-bf9f-becd412879e6",
+  "review_usage": {
+    "prompt_tokens": 14446,
+    "total_tokens": 14532,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14446
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T30_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T30_011",
+        "title": "书房灯调到六成亮度并报告状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%，弄好了告诉我一声。",
+            "reference_text": "好的，已经帮你把书房灯打开并调到60%亮度。现在还在处理中，等一会儿我看下结果再告诉你。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_012",
+        "title": "书房灯调亮后反悔想取消任务",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%，弄好了告诉我一声。",
+            "reference_text": "好的，已经帮你把书房灯打开并调到60%亮度。现在还在处理中，等一会儿我看下结果再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，刚才那个任务取消掉吧。要是已经完成了就告诉我，别自动再关灯。",
+            "reference_text": "抱歉，这个任务已经提交了，没法取消，也不会自动回滚。所以书房灯现在可能已经按60%亮度打开了，你可以自己再手动关掉。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_013",
+        "title": "取消不成再核对灯和任务状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%，弄好了告诉我一声。",
+            "reference_text": "好的，已经帮你把书房灯打开并调到60%亮度。现在还在处理中，等一会儿我看下结果再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，刚才那个任务取消掉吧。要是已经完成了就告诉我，别自动再关灯。",
+            "reference_text": "抱歉，这个任务已经提交了，没法取消，也不会自动回滚。所以书房灯现在可能已经按60%亮度打开了，你可以自己再手动关掉。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你帮我核对一下，那个任务到底完成没有，书房灯现在实际是什么状态？",
+            "reference_text": "我查了一下，那个任务已经完成了，进度100%。书房灯现在是开着的，亮度60%，色温4000K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_014",
+        "title": "确认灯已开再明确要求关灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%，弄好了告诉我一声。",
+            "reference_text": "好的，已经帮你把书房灯打开并调到60%亮度。现在还在处理中，等一会儿我看下结果再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，刚才那个任务取消掉吧。要是已经完成了就告诉我，别自动再关灯。",
+            "reference_text": "抱歉，这个任务已经提交了，没法取消，也不会自动回滚。所以书房灯现在可能已经按60%亮度打开了，你可以自己再手动关掉。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你帮我核对一下，那个任务到底完成没有，书房灯现在实际是什么状态？",
+            "reference_text": "我查了一下，那个任务已经完成了，进度100%。书房灯现在是开着的，亮度60%，色温4000K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "行，那现在我明确要求，把这盏书房灯关掉。",
+            "reference_text": "好的，书房灯已经关掉了，亮度设置还是60%留着没变。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_015",
+        "title": "关灯后再确认状态和是否回滚",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%，弄好了告诉我一声。",
+            "reference_text": "好的，已经帮你把书房灯打开并调到60%亮度。现在还在处理中，等一会儿我看下结果再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，刚才那个任务取消掉吧。要是已经完成了就告诉我，别自动再关灯。",
+            "reference_text": "抱歉，这个任务已经提交了，没法取消，也不会自动回滚。所以书房灯现在可能已经按60%亮度打开了，你可以自己再手动关掉。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你帮我核对一下，那个任务到底完成没有，书房灯现在实际是什么状态？",
+            "reference_text": "我查了一下，那个任务已经完成了，进度100%。书房灯现在是开着的，亮度60%，色温4000K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "行，那现在我明确要求，把这盏书房灯关掉。",
+            "reference_text": "好的，书房灯已经关掉了，亮度设置还是60%留着没变。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再帮我确认一下书房灯确实关了吧，还有刚才那个取消任务到底有没有发生回滚？",
+            "reference_text": "确认过了，书房灯现在是关着的，亮度设置还是60%。刚才那个取消没有成功，所以没有发生回滚，灯不会自己再亮回去。"
+          }
+        ]
+      }
+    ]
+  }
+}

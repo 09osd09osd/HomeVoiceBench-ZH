@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9e5bbf6a77ebf7f2e8611129964ce899.wav",
+  "sha256": "e83b97c6851510c95e1452d15be82aa736f9112ac2ff42d62efd2657896e402d",
+  "duration_seconds": 4.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c187601b-38fd-9f66-8edb-d7938511ca1a",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 984,
+    "total_tokens": 1179,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "鱼我想买鲈鱼，不是草鱼，草鱼刺太多了。",
+  "spoken_text": "鱼我想买鲈鱼，不是草鱼，草鱼刺太多了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "鱼，我想买鲈鱼，不是草鱼，草鱼刺太多了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "鱼，我想买鲈鱼，不是草鱼，草鱼刺太多了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8bd6b2e0-e000-9f48-b6ac-f338b5ec06ab",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 278,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e83b97c6851510c95e1452d15be82aa736f9112ac2ff42d62efd2657896e402d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d5887db390f8515e6073de325a8f267011b837c8eec935351569d14714a2c0e0",
+    "canonical_sha256": "e83b97c6851510c95e1452d15be82aa736f9112ac2ff42d62efd2657896e402d",
+    "pcm_sha256": "bf1c4612872a0eaf97830786d8fc51099801e9ff06d765adb25bc2d22e2e9ea6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 118080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "鱼我想买鲈鱼，不是草鱼，草鱼刺太多了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7212dc33-e0e6-90be-b2a4-56dd5f059c15",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d5887db390f8515e6073de325a8f267011b837c8eec935351569d14714a2c0e0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d5887db390f8515e6073de325a8f267011b837c8eec935351569d14714a2c0e0",
+        "canonical_audio_sha256": "e83b97c6851510c95e1452d15be82aa736f9112ac2ff42d62efd2657896e402d",
+        "pcm_sha256": "bf1c4612872a0eaf97830786d8fc51099801e9ff06d765adb25bc2d22e2e9ea6",
+        "same_samples": true
+      }
+    }
+  ]
+}

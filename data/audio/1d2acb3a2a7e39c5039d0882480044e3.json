@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1d2acb3a2a7e39c5039d0882480044e3.wav",
+  "sha256": "26a7a9e3e15eef368dd76158b99b8b98da107c0fd19f809a4fce178557fe7057",
+  "duration_seconds": 3.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2058d7fa-2c00-9477-8ea1-e4e91030c4b2",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 656,
+    "total_tokens": 846,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+  "spoken_text": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6606e16a-e1c4-991b-846a-c29d56f8f863",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "26a7a9e3e15eef368dd76158b99b8b98da107c0fd19f809a4fce178557fe7057"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f82b41cc42ac5d70a08888a14c330879406b4b423a956cccce444c5bdb882ec3",
+    "canonical_sha256": "26a7a9e3e15eef368dd76158b99b8b98da107c0fd19f809a4fce178557fe7057",
+    "pcm_sha256": "29eb1efc2b4935ccfcb136bc80fec84935e62c8a7c7912455dba5c56da2b7505",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 78720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-95eaa3b4-2587-9c33-8783-7ddad00ce964",
+      "usage": {
+        "prompt_tokens": 166,
+        "total_tokens": 207,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f82b41cc42ac5d70a08888a14c330879406b4b423a956cccce444c5bdb882ec3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f82b41cc42ac5d70a08888a14c330879406b4b423a956cccce444c5bdb882ec3",
+        "canonical_audio_sha256": "26a7a9e3e15eef368dd76158b99b8b98da107c0fd19f809a4fce178557fe7057",
+        "pcm_sha256": "29eb1efc2b4935ccfcb136bc80fec84935e62c8a7c7912455dba5c56da2b7505",
+        "same_samples": true
+      }
+    }
+  ]
+}

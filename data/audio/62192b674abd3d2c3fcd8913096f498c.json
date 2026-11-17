@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/62192b674abd3d2c3fcd8913096f498c.wav",
+  "sha256": "b3651899e8ea1dc0871ef9d5135c3ae8e6b2cc31f16237a20ef7e6d1d349a74e",
+  "duration_seconds": 4.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0d051cfc-c78e-97d5-8e8c-935fa0f70e2d",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 888,
+    "total_tokens": 1073,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想说得太啰嗦，能不能再短一点，但原因和请假时间都保留？",
+  "spoken_text": "我不想说得太啰嗦，能不能再短一点，但原因和请假时间都保留？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不想说得太啰嗦，能不能再短一点？但原因和请假时间都保留。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想说得太啰嗦，能不能再短一点？但原因和请假时间都保留。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-42fdb705-bff2-9846-9de9-2600d142cc5a",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b3651899e8ea1dc0871ef9d5135c3ae8e6b2cc31f16237a20ef7e6d1d349a74e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2c1bbbb9bd2f9da4a612504cffaf021fc6b3bf7c4732830780bfa9a83946803f",
+    "canonical_sha256": "b3651899e8ea1dc0871ef9d5135c3ae8e6b2cc31f16237a20ef7e6d1d349a74e",
+    "pcm_sha256": "49e437e681242d03fd5fb24786e7320ca65163444fe2d4d4321f956b3da1d953",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 106560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想说得太啰嗦，能不能再短一点？但原因和请假时间都保留。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我不想说得太啰嗦，能不能再短一点？但原因和请假时间都保留。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-dccba8c1-70fd-9a00-893f-3127fddba9b1",
+      "usage": {
+        "prompt_tokens": 177,
+        "total_tokens": 222,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2c1bbbb9bd2f9da4a612504cffaf021fc6b3bf7c4732830780bfa9a83946803f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2c1bbbb9bd2f9da4a612504cffaf021fc6b3bf7c4732830780bfa9a83946803f",
+        "canonical_audio_sha256": "b3651899e8ea1dc0871ef9d5135c3ae8e6b2cc31f16237a20ef7e6d1d349a74e",
+        "pcm_sha256": "49e437e681242d03fd5fb24786e7320ca65163444fe2d4d4321f956b3da1d953",
+        "same_samples": true
+      }
+    }
+  ]
+}

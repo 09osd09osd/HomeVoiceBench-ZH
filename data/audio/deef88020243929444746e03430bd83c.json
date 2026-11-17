@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/deef88020243929444746e03430bd83c.wav",
+  "sha256": "c0e45ab232bbe33ae6eb5017f9b3d600c58a797194db2f2717858909b3774e76",
+  "duration_seconds": 3.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0a46c501-886d-9085-aa27-c5779463ebb6",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 792,
+    "total_tokens": 981,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "好，那我准备睡了，你用一句话简短收个尾吧。",
+  "spoken_text": "好，那我准备睡了，你用一句话简短收个尾吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "好，那我准备睡了，你用一句话简短收个尾吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "好，那我准备睡了，你用一句话简短收个尾吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-30af9207-5b98-9c3a-9326-65a74ea9b9c2",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c0e45ab232bbe33ae6eb5017f9b3d600c58a797194db2f2717858909b3774e76"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "561090d7bf61b5fc7f14240aad97c1f1a46e8bc3cfb57c5c6f6a8fafebc8f39c",
+    "canonical_sha256": "c0e45ab232bbe33ae6eb5017f9b3d600c58a797194db2f2717858909b3774e76",
+    "pcm_sha256": "e1230a8e7f42d41b90c316e5465d44c3827dd77f95b78684b078f9faa289357e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 95040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "好，那我准备睡了，你用一句话简短收个尾吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c1ec704c-cb9e-96c6-a2c4-4f61dcd15cd2",
+      "usage": {
+        "prompt_tokens": 142,
+        "total_tokens": 182,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "561090d7bf61b5fc7f14240aad97c1f1a46e8bc3cfb57c5c6f6a8fafebc8f39c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "561090d7bf61b5fc7f14240aad97c1f1a46e8bc3cfb57c5c6f6a8fafebc8f39c",
+        "canonical_audio_sha256": "c0e45ab232bbe33ae6eb5017f9b3d600c58a797194db2f2717858909b3774e76",
+        "pcm_sha256": "e1230a8e7f42d41b90c316e5465d44c3827dd77f95b78684b078f9faa289357e",
+        "same_samples": true
+      }
+    }
+  ]
+}

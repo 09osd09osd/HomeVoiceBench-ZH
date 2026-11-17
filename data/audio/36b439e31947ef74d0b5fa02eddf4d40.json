@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/36b439e31947ef74d0b5fa02eddf4d40.wav",
+  "sha256": "a44f06d7688444cf30cf35d3340d0701ecc5aee73b78ddace31b827356686930",
+  "duration_seconds": 6.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9e950bf8-532a-970e-8eef-46109153165d",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 1368,
+    "total_tokens": 1554,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "早上好，我起床后习惯先拉开窗帘，再喝半杯温水，然后做几分钟拉伸。",
+  "spoken_text": "早上好，我起床后习惯先拉开窗帘，再喝半杯温水，然后做几分钟拉伸。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "早上好，我起床后习惯先拉开窗帘，再喝半杯温水，然后做几分钟拉伸。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "早上好，我起床后习惯先拉开窗帘，再喝半杯温水，然后做几分钟拉伸。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f35a0349-034d-9488-b992-b453586eb71f",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 301,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a44f06d7688444cf30cf35d3340d0701ecc5aee73b78ddace31b827356686930"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "286dc01e204fc9f759ba9bff33906cc9c4db41bce366ed7e6db5cb0d7e7e13fb",
+    "canonical_sha256": "a44f06d7688444cf30cf35d3340d0701ecc5aee73b78ddace31b827356686930",
+    "pcm_sha256": "9683f61f3311c1dcbd0494ec54c576d7fdd90cac2527559fdbabae2db986df47",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 164160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "早上好，我起床后习惯先拉开窗帘，再喝半杯温水，然后做几分钟拉伸。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2690c3aa-bbbe-9fef-a8b7-1164d50d8fce",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 217,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "286dc01e204fc9f759ba9bff33906cc9c4db41bce366ed7e6db5cb0d7e7e13fb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "286dc01e204fc9f759ba9bff33906cc9c4db41bce366ed7e6db5cb0d7e7e13fb",
+        "canonical_audio_sha256": "a44f06d7688444cf30cf35d3340d0701ecc5aee73b78ddace31b827356686930",
+        "pcm_sha256": "9683f61f3311c1dcbd0494ec54c576d7fdd90cac2527559fdbabae2db986df47",
+        "same_samples": true
+      }
+    }
+  ]
+}

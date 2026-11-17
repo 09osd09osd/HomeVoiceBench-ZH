@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/f1ddde280b7989436b6c3b0211eb6c8a.wav",
+  "sha256": "ed8d5936b860bb674443d48d7df1d9fb88d288717072d07862d424c4f9311d82",
+  "duration_seconds": 5.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d1fd2d41-6fd9-9bc1-a9b0-b6ddbd873dd6",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 1040,
+    "total_tokens": 1241,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚说短篇小说不太对，其实我更想读散文，短篇散文就行。",
+  "spoken_text": "我刚说短篇小说不太对，其实我更想读散文，短篇散文就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚说短篇小说不太对，其实我更想读散文，短篇散文就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚说短篇小说不太对，其实我更想读散文，短篇散文就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-47aaeef4-7f84-9d53-85d4-8185a9852bd5",
+    "usage": {
+      "prompt_tokens": 242,
+      "total_tokens": 284,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ed8d5936b860bb674443d48d7df1d9fb88d288717072d07862d424c4f9311d82"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "790baffca7e03176dab25ad796852f35c18c14e65b27d4e63bee8a2f51087535",
+    "canonical_sha256": "ed8d5936b860bb674443d48d7df1d9fb88d288717072d07862d424c4f9311d82",
+    "pcm_sha256": "6477142fc341442528e970d8403fcd5ae67bf13a07c7ab8cb2dc696643c5f727",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 124800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚说短篇小说不太对，其实我更想读散文。短篇散文就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我刚说短篇小说不太对，其实我更想读散文。短篇散文就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9a84a940-8ae7-9614-96e0-ef10499d6e9b",
+      "usage": {
+        "prompt_tokens": 181,
+        "total_tokens": 223,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "790baffca7e03176dab25ad796852f35c18c14e65b27d4e63bee8a2f51087535",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "790baffca7e03176dab25ad796852f35c18c14e65b27d4e63bee8a2f51087535",
+        "canonical_audio_sha256": "ed8d5936b860bb674443d48d7df1d9fb88d288717072d07862d424c4f9311d82",
+        "pcm_sha256": "6477142fc341442528e970d8403fcd5ae67bf13a07c7ab8cb2dc696643c5f727",
+        "same_samples": true
+      }
+    }
+  ]
+}

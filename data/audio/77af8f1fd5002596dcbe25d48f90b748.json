@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/77af8f1fd5002596dcbe25d48f90b748.wav",
+  "sha256": "1b5e162017086b3d4006b5783314cecf497144c6abe50631e5886f9ffcef06df",
+  "duration_seconds": 3.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b4c10ebb-d46f-96d7-82cd-0526c8c9206e",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 792,
+    "total_tokens": 988,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想加一句请对方说慢一点，因为怕听不清。你觉得怎么说好？",
+  "spoken_text": "我想加一句请对方说慢一点，因为怕听不清。你觉得怎么说好？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想加一句，请对方说慢一点，因为怕听不清。你觉得怎么说好？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想加一句，请对方说慢一点，因为怕听不清。你觉得怎么说好？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d3ddb095-d0a0-9334-8dbc-a1279d9ed811",
+    "usage": {
+      "prompt_tokens": 230,
+      "total_tokens": 275,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1b5e162017086b3d4006b5783314cecf497144c6abe50631e5886f9ffcef06df"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5cbbea6050a9af9a4332c1324c38142aa2de4f164ae63b24cea6e7d8a1659e62",
+    "canonical_sha256": "1b5e162017086b3d4006b5783314cecf497144c6abe50631e5886f9ffcef06df",
+    "pcm_sha256": "d56a7ee82e49d8ccc5d66f6941f341bebe2969a38ead915feb261e148b375630",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 95040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想加一句请对方说慢一点，因为怕听不清。你觉得怎么说好？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想加一句请对方说慢一点，因为怕听不清。你觉得怎么说好？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-57cb6910-0d17-9d4b-9a0d-af207f292c66",
+      "usage": {
+        "prompt_tokens": 169,
+        "total_tokens": 213,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 146
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5cbbea6050a9af9a4332c1324c38142aa2de4f164ae63b24cea6e7d8a1659e62",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5cbbea6050a9af9a4332c1324c38142aa2de4f164ae63b24cea6e7d8a1659e62",
+        "canonical_audio_sha256": "1b5e162017086b3d4006b5783314cecf497144c6abe50631e5886f9ffcef06df",
+        "pcm_sha256": "d56a7ee82e49d8ccc5d66f6941f341bebe2969a38ead915feb261e148b375630",
+        "same_samples": true
+      }
+    }
+  ]
+}

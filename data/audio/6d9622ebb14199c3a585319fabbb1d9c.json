@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6d9622ebb14199c3a585319fabbb1d9c.wav",
+  "sha256": "99681d9b844c7ecb34ff80d218e9de022ee4801f97e6af418454f960d639bc30",
+  "duration_seconds": 4.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7d7bbfcf-6dd5-9c56-b6a2-c0ac2b2688be",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 880,
+    "total_tokens": 1075,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "行，我就去洗菜。你最后简单跟我说一句就行，别太长。",
+  "spoken_text": "行，我就去洗菜。你最后简单跟我说一句就行，别太长。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "行，我就去洗菜。你最后简单跟我说一句就行，别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "行，我就去洗菜。你最后简单跟我说一句就行，别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-efb1f23a-f238-9bd6-a12f-55b2e0496b2f",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "99681d9b844c7ecb34ff80d218e9de022ee4801f97e6af418454f960d639bc30"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "82cbefd556d818ee6e7c405b5aea40b4f335ba239b9cbdebf780fe5f12970019",
+    "canonical_sha256": "99681d9b844c7ecb34ff80d218e9de022ee4801f97e6af418454f960d639bc30",
+    "pcm_sha256": "6cbf2b1f2db698e9822d2a1f30ca77a65c6e2485b418b94982eb41b2019d536b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 105600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "行，我就去洗菜。你最后简单跟我说一句就行，别太长。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a1384225-f6d8-902b-b353-91d70686d280",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "82cbefd556d818ee6e7c405b5aea40b4f335ba239b9cbdebf780fe5f12970019",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "82cbefd556d818ee6e7c405b5aea40b4f335ba239b9cbdebf780fe5f12970019",
+        "canonical_audio_sha256": "99681d9b844c7ecb34ff80d218e9de022ee4801f97e6af418454f960d639bc30",
+        "pcm_sha256": "6cbf2b1f2db698e9822d2a1f30ca77a65c6e2485b418b94982eb41b2019d536b",
+        "same_samples": true
+      }
+    }
+  ]
+}

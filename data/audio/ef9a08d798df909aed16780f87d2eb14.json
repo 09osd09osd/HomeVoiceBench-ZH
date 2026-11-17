@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/ef9a08d798df909aed16780f87d2eb14.wav",
+  "sha256": "de8dcc98661536e8d39aa978caaa653b85e89447e4a61c300263ed8647597f25",
+  "duration_seconds": 2.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a277601a-31e1-9397-84e8-bbc9feb2a6a7",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 512,
+    "total_tokens": 688,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "查一下这两盏灯分别是什么状态。",
+  "spoken_text": "查一下这两盏灯分别是什么状态。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "查一下这两盏灯分别是什么状态？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "查一下这两盏灯分别是什么状态？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8d51555f-5f70-955a-8411-1446d48f30b6",
+    "usage": {
+      "prompt_tokens": 214,
+      "total_tokens": 249,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "de8dcc98661536e8d39aa978caaa653b85e89447e4a61c300263ed8647597f25"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7d2832ba26e7209aeb16f7c70e34a0f73e341dc436e5ad954458b0e6e373821d",
+    "canonical_sha256": "de8dcc98661536e8d39aa978caaa653b85e89447e4a61c300263ed8647597f25",
+    "pcm_sha256": "1aae3e19cc9d549cbf06398f6339072b23bbb0e9929f536954980e91487b6a25",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 61440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "查一下这两盏灯分别是什么状态。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "查一下这两盏灯分别是什么状态。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9332f09b-7937-9822-b040-c27fd3ac9f30",
+      "usage": {
+        "prompt_tokens": 153,
+        "total_tokens": 188,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 137
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7d2832ba26e7209aeb16f7c70e34a0f73e341dc436e5ad954458b0e6e373821d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7d2832ba26e7209aeb16f7c70e34a0f73e341dc436e5ad954458b0e6e373821d",
+        "canonical_audio_sha256": "de8dcc98661536e8d39aa978caaa653b85e89447e4a61c300263ed8647597f25",
+        "pcm_sha256": "1aae3e19cc9d549cbf06398f6339072b23bbb0e9929f536954980e91487b6a25",
+        "same_samples": true
+      }
+    }
+  ]
+}

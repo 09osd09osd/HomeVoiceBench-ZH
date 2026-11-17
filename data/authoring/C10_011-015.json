@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "414d0a837899cda021344d779d890040fc8e0824098049c6d5b8dd1225715c19",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-ca4af0a6-bf96-937d-a4c1-c79a802b26d7",
+  "usage": {
+    "prompt_tokens": 1830,
+    "total_tokens": 3307,
+    "completion_tokens": 1477,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1830
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1477
+    }
+  },
+  "review_request_id": "chatcmpl-c472c8f3-7a88-9b4b-84ba-3e74f617f8a0",
+  "review_usage": {
+    "prompt_tokens": 2933,
+    "total_tokens": 3019,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2933
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C10_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C10_011",
+        "title": "疲惫夜晚安排家务与休息",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今晚有点累，家里还有洗碗、叠衣服和准备明天早饭三件事，你帮我看看先做哪个后做哪个，就是聊聊，不用设提醒。",
+            "reference_text": "好的，我们只聊聊怎么安排。考虑到你有点累，可以先做最不费神的叠衣服，再洗碗，准备早饭放最后，或者留到明早。你觉得这样行吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_012",
+        "title": "疲惫时安排学习与家务的先后",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今晚有点累，但还有报告要写、衣服要洗、明天午饭要准备，你帮我排排先后，只讨论不设提醒。",
+            "reference_text": "好的，我们只聊聊先后。你有点累，可以先做最不费脑的洗衣服，再准备午饭，最后写报告，或者把报告留到明早。你觉得呢？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "对了，我十点以后就不想再动锅碗了，所以准备午饭最好在十点前弄完。",
+            "reference_text": "明白，准备午饭放在十点前。那可以先洗衣服，同时把午饭备好，十点后专心写报告。这样安排你觉得合适吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_013",
+        "title": "修正截止时间后的晚间安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今晚有点累，但有三件事：写周报、收拾厨房、给猫铲屎，你帮我安排下先后，只聊不设提醒。",
+            "reference_text": "好的，只讨论。你有点累，可以先做最不费神的给猫铲屎，再收拾厨房，最后写周报。或者把周报留到明早。你觉得呢？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "周报明天上午十点前要交，所以今晚最好写掉，不能拖到明早。",
+            "reference_text": "明白，周报今晚必须写掉。那可以先给猫铲屎、收拾厨房，然后集中精力写周报。这样安排你觉得行吗？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，周报是明天下午两点前交，不是上午十点。",
+            "reference_text": "好的，更正为明天下午两点前交。那周报不用今晚硬赶，可以先做铲屎和收拾厨房，周报看精力，明早再写也来得及。你觉得呢？"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_014",
+        "title": "记住更正后的家务与报告安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚有点累，但得处理三件事：擦桌子、给花浇水、改PPT，你帮我排下先后，只讨论不设提醒。",
+            "reference_text": "好的，只讨论。你有点累，可以先做最不费神的擦桌子和浇花，再改PPT。或者把PPT留到明早。你觉得呢？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "PPT明天一早就要用，所以今晚必须改完，不能留到明早。",
+            "reference_text": "明白，PPT今晚必须改完。那可以先快速擦桌子、浇花，然后集中精力改PPT。这样安排你觉得行吗？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，PPT是后天一早才用，不是明天。",
+            "reference_text": "好的，更正为后天一早用。那今晚不用硬赶PPT，可以先擦桌子、浇花，PPT看精力，明晚再改也来得及。你觉得呢？"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得PPT是什么时候要用的吗？现在按这个再帮我顺一下先后。",
+            "reference_text": "记得，PPT是后天一早用。那今晚可以先擦桌子、浇花，PPT不着急，明晚再改也行。这样顺下来你觉得可以吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_015",
+        "title": "多次更正后简短收尾晚间安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚有点累，有三件事：拖地、整理明天要带的包、回几封邮件，你帮我排排先后，只聊不设提醒。",
+            "reference_text": "好的，只讨论。你有点累，可以先整理明天要带的包，再拖地，最后回邮件。或者把邮件留到明早。你觉得呢？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "邮件里有一封领导等着回复，所以今晚必须回掉，不能拖到明早。",
+            "reference_text": "明白，领导那封邮件今晚必须回。那可以先整理包，再回邮件，最后拖地，或者拖地留到明早。这样安排你觉得行吗？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，领导是明天下午才要，不是今晚必须回。",
+            "reference_text": "好的，更正为领导明天下午才要。那邮件不用今晚硬赶，可以先整理包、拖地，邮件看精力，明早再回也来得及。你觉得呢？"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得邮件是什么时候要吗？按更正后的再帮我顺一下先后。",
+            "reference_text": "记得，邮件是明天下午才要。那今晚可以先整理包、拖地，邮件不着急，明早再回也行。这样顺下来你觉得可以吗？"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，那你就用一两句话简单收个尾吧，不用再设提醒。",
+            "reference_text": "好，简单收尾：今晚先整理包，再拖地，邮件明早回。不设提醒，你早点休息。"
+          }
+        ]
+      }
+    ]
+  }
+}

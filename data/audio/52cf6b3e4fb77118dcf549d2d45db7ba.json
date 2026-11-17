@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/52cf6b3e4fb77118dcf549d2d45db7ba.wav",
+  "sha256": "3e211bcb29680d85ea8302bc565ed62586710df01780b2c06f0170180c9fa3db",
+  "duration_seconds": 4.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "03d47284-e15f-9acf-9ecb-a274ed689db6",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 840,
+    "total_tokens": 1021,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我看看客厅空调现在温度多少，开着还是关着，别调整。",
+  "spoken_text": "帮我看看客厅空调现在温度多少，开着还是关着，别调整。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我看看客厅空调现在温度多少？开着还是关着？别调整。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我看看客厅空调现在温度多少？开着还是关着？别调整。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ff90da88-40f4-9500-b89b-df6f480530b5",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3e211bcb29680d85ea8302bc565ed62586710df01780b2c06f0170180c9fa3db"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "50843c74c4c3bfc467ffd98d8cdc3d877468c3c190f59b272d08930db5f74125",
+    "canonical_sha256": "3e211bcb29680d85ea8302bc565ed62586710df01780b2c06f0170180c9fa3db",
+    "pcm_sha256": "9336b50a9dffd52aa278fa4bb8a65bf88dd8d6ee45d77ae741ea36fe2e1cc703",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 100800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我看看客厅空调现在温度多少？开着还是关着？别调整。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我看看客厅空调现在温度多少？开着还是关着？别调整。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e6f59762-1375-9436-ad6e-e289397dd314",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 216,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "50843c74c4c3bfc467ffd98d8cdc3d877468c3c190f59b272d08930db5f74125",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "50843c74c4c3bfc467ffd98d8cdc3d877468c3c190f59b272d08930db5f74125",
+        "canonical_audio_sha256": "3e211bcb29680d85ea8302bc565ed62586710df01780b2c06f0170180c9fa3db",
+        "pcm_sha256": "9336b50a9dffd52aa278fa4bb8a65bf88dd8d6ee45d77ae741ea36fe2e1cc703",
+        "same_samples": true
+      }
+    }
+  ]
+}

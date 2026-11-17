@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "a9af328848fb5c0276d8b0d5cbe85abe810b4f4e4b43a2c755cb5203547136ec",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-de9c60f1-6ec5-945f-b146-d548584bc0e8",
+  "usage": {
+    "prompt_tokens": 11725,
+    "total_tokens": 13082,
+    "completion_tokens": 1357,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11725
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1357
+    }
+  },
+  "review_request_id": "chatcmpl-c868f239-7c83-9ade-bdc0-ebb219fac1ee",
+  "review_usage": {
+    "prompt_tokens": 12704,
+    "total_tokens": 12790,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12704
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T02_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T02_006",
+        "title": "客厅空调能力查询（单轮）",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅空调都能调什么，范围是多少？",
+            "reference_text": "客厅空调可以开关，温度能设在16到30摄氏度，模式有制冷、制热、除湿、送风和自动，风速能调0到3档。现在它是关着的，温度设定在26度，模式是制冷，风速0档。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_007",
+        "title": "客厅空调能力查询与颜色功能确认（两轮）",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅空调都能调什么，范围是多少？",
+            "reference_text": "客厅空调可以开关，温度能设在16到30摄氏度，模式有制冷、制热、除湿、送风和自动，风速能调0到3档。现在它是关着的，温度设定在26度，模式是制冷，风速0档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它能调颜色吗？我就问问，别动手。",
+            "reference_text": "客厅空调不支持调颜色，它能调的就是开关、温度、模式和风速这些。我不会去做任何调整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_008",
+        "title": "客厅空调能力查询、颜色功能与超范围处理（三轮）",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅空调都能调什么，范围是多少？",
+            "reference_text": "客厅空调可以开关，温度能设在16到30摄氏度，模式有制冷、制热、除湿、送风和自动，风速能调0到3档。现在它是关着的，温度设定在26度，模式是制冷，风速0档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它能调颜色吗？我就问问，别动手。",
+            "reference_text": "客厅空调不支持调颜色，它能调的就是开关、温度、模式和风速这些。我不会去做任何调整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "要是有人让我设个超出范围的值，你打算怎么办？",
+            "reference_text": "我不会自己把数值截到范围内，也不会偷偷改成别的值。我会先告诉你这台空调支持的范围，比如温度是16到30摄氏度，然后问清楚你到底想怎么设。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_009",
+        "title": "客厅空调能力查询、颜色功能、超范围处理与暂不调整（四轮）",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅空调都能调什么，范围是多少？",
+            "reference_text": "客厅空调可以开关，温度能设在16到30摄氏度，模式有制冷、制热、除湿、送风和自动，风速能调0到3档。现在它是关着的，温度设定在26度，模式是制冷，风速0档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它能调颜色吗？我就问问，别动手。",
+            "reference_text": "客厅空调不支持调颜色，它能调的就是开关、温度、模式和风速这些。我不会去做任何调整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "要是有人让我设个超出范围的值，你打算怎么办？",
+            "reference_text": "我不会自己把数值截到范围内，也不会偷偷改成别的值。我会先告诉你这台空调支持的范围，比如温度是16到30摄氏度，然后问清楚你到底想怎么设。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我就是了解一下。",
+            "reference_text": "好的，我不会做任何调整，客厅空调保持现在的状态。你想了解什么随时问我。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_010",
+        "title": "客厅空调能力查询、颜色功能、超范围处理、暂不调整与能力总结（五轮）",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅空调都能调什么，范围是多少？",
+            "reference_text": "客厅空调可以开关，温度能设在16到30摄氏度，模式有制冷、制热、除湿、送风和自动，风速能调0到3档。现在它是关着的，温度设定在26度，模式是制冷，风速0档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它能调颜色吗？我就问问，别动手。",
+            "reference_text": "客厅空调不支持调颜色，它能调的就是开关、温度、模式和风速这些。我不会去做任何调整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "要是有人让我设个超出范围的值，你打算怎么办？",
+            "reference_text": "我不会自己把数值截到范围内，也不会偷偷改成别的值。我会先告诉你这台空调支持的范围，比如温度是16到30摄氏度，然后问清楚你到底想怎么设。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我就是了解一下。",
+            "reference_text": "好的，我不会做任何调整，客厅空调保持现在的状态。你想了解什么随时问我。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "简单说说这台空调有哪些能力限制吧。",
+            "reference_text": "客厅空调能开关，温度范围16到30摄氏度，模式只有制冷、制热、除湿、送风和自动，风速0到3档，不支持调颜色。超出这些范围的话，我不会自己改数值，会先告诉你范围再问清楚。"
+          }
+        ]
+      }
+    ]
+  }
+}

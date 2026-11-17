@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/04893d29a9742c3d0adcbfe2f5337aa8.wav",
+  "sha256": "072a6276ea104704087373bf4119ec3833eea996b055e7ed9f287ec52ceb9ba7",
+  "duration_seconds": 3.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "bc3158e5-9f21-9d24-96f2-494f4b978d23",
+  "usage": {
+    "input_tokens": 173,
+    "output_tokens": 600,
+    "total_tokens": 773,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把客厅音箱正在放的《雨后散步》暂停一下。",
+  "spoken_text": "把客厅音箱正在放的《雨后散步》暂停一下。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把客厅音箱正在放的《雨后散步》暂停一下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把客厅音箱正在放的《雨后散步》暂停一下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-cc8cec38-2e15-95c9-b0a6-dc7f22e51fb4",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 262,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "072a6276ea104704087373bf4119ec3833eea996b055e7ed9f287ec52ceb9ba7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "eaef61e98c3cda759501c13cea817228be1b827ce003744f92aa9b4c024ddfdd",
+    "canonical_sha256": "072a6276ea104704087373bf4119ec3833eea996b055e7ed9f287ec52ceb9ba7",
+    "pcm_sha256": "dec1d2822a99362385eb0bd596687b1d03d54a5506ba9ddf5b784d6ca3ba1673",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 72000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把客厅音箱正在放的雨后散步暂停一下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把客厅音箱正在放的雨后散步暂停一下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9709cd31-d0af-9154-aa39-2922451d047d",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 199,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "eaef61e98c3cda759501c13cea817228be1b827ce003744f92aa9b4c024ddfdd",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "eaef61e98c3cda759501c13cea817228be1b827ce003744f92aa9b4c024ddfdd",
+        "canonical_audio_sha256": "072a6276ea104704087373bf4119ec3833eea996b055e7ed9f287ec52ceb9ba7",
+        "pcm_sha256": "dec1d2822a99362385eb0bd596687b1d03d54a5506ba9ddf5b784d6ca3ba1673",
+        "same_samples": true
+      }
+    }
+  ]
+}

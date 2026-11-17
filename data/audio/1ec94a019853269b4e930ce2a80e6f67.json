@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/1ec94a019853269b4e930ce2a80e6f67.wav",
+  "sha256": "0e3cd392b75e566063c327a7ea399b27cd84eb31ce0305dcbce98da87564ce45",
+  "duration_seconds": 5.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0ec0b415-5113-91d6-84dc-6c06f86dd837",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 1120,
+    "total_tokens": 1311,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是写作业，是练琴的事。昨晚因为练琴争的。别的照旧。",
+  "spoken_text": "更正一下，不是写作业，是练琴的事。昨晚因为练琴争的。别的照旧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是写作业，是练琴的事。昨晚因为练琴争的，别的照旧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是写作业，是练琴的事。昨晚因为练琴争的，别的照旧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-13619153-96f4-9896-bec8-6b910e397072",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 296,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0e3cd392b75e566063c327a7ea399b27cd84eb31ce0305dcbce98da87564ce45"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "18684317aa6543d365a90b0d1597a9b13fa0bc01cacc467979223783c0e7b1de",
+    "canonical_sha256": "0e3cd392b75e566063c327a7ea399b27cd84eb31ce0305dcbce98da87564ce45",
+    "pcm_sha256": "173d492b3be8569b8a58b01a4835139b617f76b4c29f9d21537b877999afd048",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 134400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是写作业，是练琴的事。昨晚因为练琴争的，别的照旧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-14c3cf3d-8913-9901-a6c0-d58103ee557f",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 212,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "18684317aa6543d365a90b0d1597a9b13fa0bc01cacc467979223783c0e7b1de",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "18684317aa6543d365a90b0d1597a9b13fa0bc01cacc467979223783c0e7b1de",
+        "canonical_audio_sha256": "0e3cd392b75e566063c327a7ea399b27cd84eb31ce0305dcbce98da87564ce45",
+        "pcm_sha256": "173d492b3be8569b8a58b01a4835139b617f76b4c29f9d21537b877999afd048",
+        "same_samples": true
+      }
+    }
+  ]
+}

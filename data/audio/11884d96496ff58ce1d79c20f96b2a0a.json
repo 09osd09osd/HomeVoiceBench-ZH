@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/11884d96496ff58ce1d79c20f96b2a0a.wav",
+  "sha256": "a710c3a8402088f48a74afa663c1da95eac16a3dfe5399f317ad5ea517a518e6",
+  "duration_seconds": 12.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6dec5641-46a6-92b2-9db0-59bec0983548",
+  "usage": {
+    "input_tokens": 273,
+    "output_tokens": 2568,
+    "total_tokens": 2841,
+    "duration": 13
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我今天跟妈妈因为洗碗的事闹得有点不愉快，现在心里挺累的。你能帮我想一句能说出口的话，让我去跟她缓和一下吗？我今晚就想跟她说，不想再拖了。",
+  "spoken_text": "我今天跟妈妈因为洗碗的事闹得有点不愉快，现在心里挺累的。你能帮我想一句能说出口的话，让我去跟她缓和一下吗？我今晚就想跟她说，不想再拖了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我今天跟妈妈因为洗碗的事闹得有点不愉快，现在心里挺累的。你能帮我想一句能说出口的话，让我去跟她缓和一下吗？我今晚就想跟她说，不想再拖了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我今天跟妈妈因为洗碗的事闹得有点不愉快，现在心里挺累的。你能帮我想一句能说出口的话，让我去跟她缓和一下吗？我今晚就想跟她说，不想再拖了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4ec4e4e4-9b3d-9160-95a4-53847800d39c",
+    "usage": {
+      "prompt_tokens": 318,
+      "total_tokens": 387,
+      "completion_tokens": 69,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 86,
+        "text_tokens": 232
+      },
+      "completion_tokens_details": {
+        "text_tokens": 69
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a710c3a8402088f48a74afa663c1da95eac16a3dfe5399f317ad5ea517a518e6"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "63902bc9acd46c720274fc8f18531cc9e3ed19ebf98113dbd5326a437adabe98",
+    "canonical_sha256": "a710c3a8402088f48a74afa663c1da95eac16a3dfe5399f317ad5ea517a518e6",
+    "pcm_sha256": "0311d7d48b3a8f169082b8d58fbfd1a3bdecdfb1ec821ce88b8918d31401f533",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 308160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我今天跟妈妈因为洗碗的事儿闹得有点不愉快，现在心里挺累的。你能帮我想一句能说出口的话，让我去跟她缓和一下吗？我今晚就想跟她说，不想再拖了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-93f58097-6916-9ff8-a8f8-2687340febbf",
+      "usage": {
+        "prompt_tokens": 234,
+        "total_tokens": 303,
+        "completion_tokens": 69,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 86,
+          "text_tokens": 148
+        },
+        "completion_tokens_details": {
+          "text_tokens": 69
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "63902bc9acd46c720274fc8f18531cc9e3ed19ebf98113dbd5326a437adabe98",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "63902bc9acd46c720274fc8f18531cc9e3ed19ebf98113dbd5326a437adabe98",
+        "canonical_audio_sha256": "a710c3a8402088f48a74afa663c1da95eac16a3dfe5399f317ad5ea517a518e6",
+        "pcm_sha256": "0311d7d48b3a8f169082b8d58fbfd1a3bdecdfb1ec821ce88b8918d31401f533",
+        "same_samples": true
+      }
+    }
+  ]
+}

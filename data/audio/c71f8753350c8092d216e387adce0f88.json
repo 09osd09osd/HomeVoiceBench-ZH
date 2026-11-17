@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c71f8753350c8092d216e387adce0f88.wav",
+  "sha256": "2f9d2c4c13a28ecd2275387aef40ff3a1a81d7d3a552180575810f6a9e784a5b",
+  "duration_seconds": 3.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6e7d7bf4-2740-968f-ac00-9b084aa4fa42",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 784,
+    "total_tokens": 980,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你别劝我辞职啊，我就是想发发牢骚，说完心里能松快点。",
+  "spoken_text": "你别劝我辞职啊，我就是想发发牢骚，说完心里能松快点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你别劝我辞职啊，我就是想发发牢骚，说完心里能松快点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你别劝我辞职啊，我就是想发发牢骚，说完心里能松快点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7b3148cd-893c-9567-b29d-6690038952b3",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 276,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2f9d2c4c13a28ecd2275387aef40ff3a1a81d7d3a552180575810f6a9e784a5b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ebeb3368605593c9156307517f981daa8df7b3054780c98632eb9369a32c3c24",
+    "canonical_sha256": "2f9d2c4c13a28ecd2275387aef40ff3a1a81d7d3a552180575810f6a9e784a5b",
+    "pcm_sha256": "988065a48a83c5dac389a79705025bf51d6d897842588ba9e8d802e489e682a0",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 94080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你别劝我辞职啊！我就是想发发牢骚，说完心里能松快点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-8c346f8b-2a74-91d0-a3fd-dcda4e485b2c",
+      "usage": {
+        "prompt_tokens": 147,
+        "total_tokens": 192,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ebeb3368605593c9156307517f981daa8df7b3054780c98632eb9369a32c3c24",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ebeb3368605593c9156307517f981daa8df7b3054780c98632eb9369a32c3c24",
+        "canonical_audio_sha256": "2f9d2c4c13a28ecd2275387aef40ff3a1a81d7d3a552180575810f6a9e784a5b",
+        "pcm_sha256": "988065a48a83c5dac389a79705025bf51d6d897842588ba9e8d802e489e682a0",
+        "same_samples": true
+      }
+    }
+  ]
+}

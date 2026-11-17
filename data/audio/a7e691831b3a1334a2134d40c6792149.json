@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a7e691831b3a1334a2134d40c6792149.wav",
+  "sha256": "51f27e4a55c408b8d40286836c48b1849111d1d6ed24b86369f8a91e77b71327",
+  "duration_seconds": 7.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d56637b6-7990-9d1a-a636-8e378ef6badb",
+  "usage": {
+    "input_tokens": 202,
+    "output_tokens": 1408,
+    "total_tokens": 1610,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我把客厅灯和卧室灯都打开，亮度都调到20%；要是哪台离线了，告诉我具体是哪台没弄成。",
+  "spoken_text": "帮我把客厅灯和卧室灯都打开，亮度都调到百分之二十；要是哪台离线了，告诉我具体是哪台没弄成。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我把客厅灯和卧室灯都打开，亮度都调到20%。要是哪台离线了，告诉我具体是哪台没弄成。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我把客厅灯和卧室灯都打开，亮度都调到20%。要是哪台离线了，告诉我具体是哪台没弄成。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2ca18cbc-4936-9ae3-ba54-f65ce08a0f79",
+    "usage": {
+      "prompt_tokens": 271,
+      "total_tokens": 328,
+      "completion_tokens": 57,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 220
+      },
+      "completion_tokens_details": {
+        "text_tokens": 57
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "51f27e4a55c408b8d40286836c48b1849111d1d6ed24b86369f8a91e77b71327"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1ce83f4a5ee5faf89c9ac99c3a089acb5f9f854299ad0bd52eb13cf8477f4782",
+    "canonical_sha256": "51f27e4a55c408b8d40286836c48b1849111d1d6ed24b86369f8a91e77b71327",
+    "pcm_sha256": "1a83d51a10ae67ba54f854edab0299152943439bcdeeb7b46f485a1c0b4e7576",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 168960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我把客厅灯和卧室灯都打开，亮度都调到百分之二十。要是哪台离线了，告诉我具体是哪台没弄成。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我把客厅灯和卧室灯都打开，亮度都调到百分之二十。要是哪台离线了，告诉我具体是哪台没弄成。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-22c9db78-5b61-9713-a73d-d646149bd160",
+      "usage": {
+        "prompt_tokens": 210,
+        "total_tokens": 266,
+        "completion_tokens": 56,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 159
+        },
+        "completion_tokens_details": {
+          "text_tokens": 56
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1ce83f4a5ee5faf89c9ac99c3a089acb5f9f854299ad0bd52eb13cf8477f4782",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1ce83f4a5ee5faf89c9ac99c3a089acb5f9f854299ad0bd52eb13cf8477f4782",
+        "canonical_audio_sha256": "51f27e4a55c408b8d40286836c48b1849111d1d6ed24b86369f8a91e77b71327",
+        "pcm_sha256": "1a83d51a10ae67ba54f854edab0299152943439bcdeeb7b46f485a1c0b4e7576",
+        "same_samples": true
+      }
+    }
+  ]
+}

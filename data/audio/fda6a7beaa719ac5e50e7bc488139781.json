@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/fda6a7beaa719ac5e50e7bc488139781.wav",
+  "sha256": "bdd199f0d4360d14b9e5247e74d1d3766243fdc5b1ff49e1a08bcc2e4fa9ed93",
+  "duration_seconds": 4.36,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c1dd4123-eec1-9346-9a39-6201352eb417",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 872,
+    "total_tokens": 1065,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说每人负责一天，其实改成每人负责两天更合适，因为一天太频繁了。",
+  "spoken_text": "我刚才说每人负责一天，其实改成每人负责两天更合适，因为一天太频繁了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说每人负责一天，其实改成每人负责两天更合适，因为一天太频繁了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说每人负责一天，其实改成每人负责两天更合适，因为一天太频繁了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6483582a-6d83-97d0-b0e2-4bff9848be90",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 287,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "bdd199f0d4360d14b9e5247e74d1d3766243fdc5b1ff49e1a08bcc2e4fa9ed93"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c77349c011df2a6df2c42529befe4e18690e0d4eb1c117751c81e151e5cf145f",
+    "canonical_sha256": "bdd199f0d4360d14b9e5247e74d1d3766243fdc5b1ff49e1a08bcc2e4fa9ed93",
+    "pcm_sha256": "e36f5f7a2649dd19bcc91a36ab3ba75c193cf8d9b35f3a4cfc861dc285b71ed7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 104640,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说每人负责一天，其实改成每人负责两天更合适，因为一天太频繁了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7c839aee-09fb-97e5-9ff0-4266c7381aca",
+      "usage": {
+        "prompt_tokens": 156,
+        "total_tokens": 203,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c77349c011df2a6df2c42529befe4e18690e0d4eb1c117751c81e151e5cf145f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c77349c011df2a6df2c42529befe4e18690e0d4eb1c117751c81e151e5cf145f",
+        "canonical_audio_sha256": "bdd199f0d4360d14b9e5247e74d1d3766243fdc5b1ff49e1a08bcc2e4fa9ed93",
+        "pcm_sha256": "e36f5f7a2649dd19bcc91a36ab3ba75c193cf8d9b35f3a4cfc861dc285b71ed7",
+        "same_samples": true
+      }
+    }
+  ]
+}

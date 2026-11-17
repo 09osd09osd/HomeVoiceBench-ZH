@@ -1,0 +1,641 @@
+{
+  "type": "object",
+  "description": "完整基础用例；运行结果另存，避免把真实结果和参考答案混在一起。",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "数据结构版本。",
+      "enum": [
+        "0.2.0"
+      ]
+    },
+    "identity": {
+      "type": "object",
+      "description": "题目标识。",
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "description": "全局唯一题目 ID。"
+        },
+        "case_version": {
+          "type": "string",
+          "description": "题目内容版本；修改需升版。"
+        },
+        "title": {
+          "type": "string",
+          "description": "题目名。"
+        },
+        "language": {
+          "type": "string",
+          "description": "语言。",
+          "enum": [
+            "zh-CN"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "description": "题目生命周期。",
+          "enum": [
+            "draft",
+            "reviewed",
+            "frozen"
+          ]
+        }
+      },
+      "required": [
+        "case_id",
+        "case_version",
+        "title",
+        "language",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "classification": {
+      "type": "object",
+      "description": "分类与划分，仅评测器使用。",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "一级分类。",
+          "enum": [
+            "tool",
+            "chat"
+          ]
+        },
+        "subcategory": {
+          "type": "string",
+          "description": "固定子类标识。",
+          "enum": [
+            "home_query",
+            "device_control",
+            "environment_query",
+            "schedule_management",
+            "media_management",
+            "task_management",
+            "daily_companionship",
+            "emotional_support",
+            "family_communication",
+            "home_advice",
+            "joint_planning",
+            "learning",
+            "story_roleplay",
+            "games",
+            "interest_discussion",
+            "assistant_boundaries"
+          ]
+        },
+        "scene_id": {
+          "type": "string",
+          "description": "所属场景卡 ID。"
+        },
+        "scene_title": {
+          "type": "string",
+          "description": "场景名称。"
+        },
+        "difficulty": {
+          "type": "string",
+          "description": "难度。",
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "description": "可多选。",
+          "items": {
+            "type": "string",
+            "description": "能力标签。"
+          },
+          "minItems": 0
+        },
+        "split": {
+          "type": "string",
+          "description": "数据划分。",
+          "enum": [
+            "development",
+            "regression",
+            "test"
+          ]
+        },
+        "group_id": {
+          "type": "string",
+          "description": "同源题组；改写和模态变体必须同组同划分。"
+        }
+      },
+      "required": [
+        "category",
+        "subcategory",
+        "scene_id",
+        "scene_title",
+        "difficulty",
+        "tags",
+        "split",
+        "group_id"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Generation",
+      "description": "生成记录。"
+    },
+    "model_context": {
+      "type": "object",
+      "description": "唯一可整体投影给模型的上下文区。",
+      "properties": {
+        "system_prompt": {
+          "type": "string",
+          "description": "对所有被测模型语义一致的家庭助手指令。"
+        },
+        "actor": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Actor",
+          "description": "可信用户上下文。"
+        },
+        "public_facts": {
+          "type": "array",
+          "description": "允许可见的场景背景。",
+          "items": {
+            "type": "string",
+            "description": "明确提供给模型的事实。"
+          },
+          "minItems": 0
+        },
+        "tool_names": {
+          "type": "array",
+          "description": "两类都提供同一工具集合。",
+          "items": {
+            "type": "string",
+            "description": "启用工具名。",
+            "enum": [
+              "home_get",
+              "device_list",
+              "clock_get",
+              "policy_get",
+              "device_get",
+              "device_set",
+              "sensor_read",
+              "schedule_list",
+              "schedule_create",
+              "schedule_update",
+              "schedule_cancel",
+              "media_search",
+              "media_play",
+              "media_control",
+              "task_get",
+              "task_cancel"
+            ]
+          },
+          "minItems": 16,
+          "maxItems": 16,
+          "uniqueItems": true
+        },
+        "history_policy": {
+          "type": "string",
+          "description": "只回填待测模型自己的真实历史及真实工具响应。",
+          "enum": [
+            "actual_model_history"
+          ]
+        },
+        "audio_transcript_visible": {
+          "const": false,
+          "description": "音频输入不附标准转录。"
+        }
+      },
+      "required": [
+        "system_prompt",
+        "actor",
+        "public_facts",
+        "tool_names",
+        "history_policy",
+        "audio_transcript_visible"
+      ],
+      "additionalProperties": false
+    },
+    "environment": {
+      "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Fixture",
+      "description": "私有环境夹具。"
+    },
+    "interaction": {
+      "type": "object",
+      "description": "对话编排。",
+      "properties": {
+        "start_node_id": {
+          "type": "string",
+          "description": "起始节点。"
+        },
+        "nodes": {
+          "type": "array",
+          "description": "正常节点与备用分支节点，最多32个；限制的是每条实际交互路径最多5轮，不是整个节点库只能有5项。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Node",
+            "description": "对话节点。"
+          },
+          "minItems": 1,
+          "maxItems": 32
+        },
+        "clarification": {
+          "type": "object",
+          "description": "澄清协议。",
+          "properties": {
+            "mode": {
+              "type": "string",
+              "description": "先匹配预定义分支，无匹配时使用有次数上限的固定回退。",
+              "enum": [
+                "predefined_branches_with_bounded_fallback"
+              ]
+            },
+            "fallback_text": {
+              "type": "string",
+              "description": "未预设有效澄清分支时的用户回复，不补充隐藏事实。"
+            },
+            "max_uses": {
+              "type": "integer",
+              "description": "允许回退次数。",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "counts_as_user_turn": {
+              "type": "boolean",
+              "description": "必须计入五轮预算。"
+            },
+            "resume": {
+              "type": "string",
+              "description": "收到正常回答后继续当前节点的 next；回退期间不提前推进。",
+              "enum": [
+                "resume_current_node_then_next"
+              ]
+            },
+            "router_profile": {
+              "type": "string",
+              "description": "冻结的分支识别器版本，只看可见对话，不看答案。"
+            }
+          },
+          "required": [
+            "mode",
+            "fallback_text",
+            "max_uses",
+            "counts_as_user_turn",
+            "resume",
+            "router_profile"
+          ],
+          "additionalProperties": false
+        },
+        "budget": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Budget",
+          "description": "运行预算。"
+        },
+        "termination": {
+          "type": "string",
+          "description": "最后节点回答完、预算耗尽或致命运行错误时结束。"
+        }
+      },
+      "required": [
+        "start_node_id",
+        "nodes",
+        "clarification",
+        "budget",
+        "termination"
+      ],
+      "additionalProperties": false
+    },
+    "variants": {
+      "type": "array",
+      "description": "变体不增加基础题数。",
+      "items": {
+        "type": "object",
+        "description": "同一道题的不同输入方式。",
+        "properties": {
+          "variant_id": {
+            "type": "string",
+            "description": "输入变体 ID。"
+          },
+          "modality": {
+            "type": "string",
+            "description": "输入形式。",
+            "enum": [
+              "audio"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "description": "可用状态。",
+            "enum": [
+              "ready",
+              "planned",
+              "failed"
+            ]
+          },
+          "source_text_variant_id": {
+            "type": "null",
+            "description": "无可运行文字变体。user_text仅为作者原稿与评分真值。"
+          },
+          "audio_assets": {
+            "type": "array",
+            "description": "音频变体按节点登记，含澄清回退。",
+            "items": {
+              "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/AudioAsset",
+              "description": "音频登记。"
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "variant_id",
+          "modality",
+          "status",
+          "source_text_variant_id",
+          "audio_assets"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "evaluation": {
+      "type": "object",
+      "description": "隐藏评分标准。",
+      "properties": {
+        "rubric_version": {
+          "type": "string",
+          "description": "评分规则版本。"
+        },
+        "checks": {
+          "type": "array",
+          "description": "必要条件和诊断条件。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Check",
+            "description": "检查项。"
+          },
+          "minItems": 1
+        },
+        "dimensions": {
+          "type": "array",
+          "description": "逐项评分。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Dimension",
+            "description": "维度。"
+          },
+          "minItems": 1
+        },
+        "pass_policy": {
+          "type": "object",
+          "description": "整题通过规则。",
+          "properties": {
+            "required_checks_all_true": {
+              "type": "boolean",
+              "description": "所有 required 检查必须满足。"
+            },
+            "require_no_critical_failure": {
+              "type": "boolean",
+              "description": "严重错误直接不通过。"
+            },
+            "require_budget_respected": {
+              "type": "boolean",
+              "description": "预算必须满足。"
+            },
+            "require_normal_completion": {
+              "type": "boolean",
+              "description": "必须正常走完规定交互。"
+            },
+            "min_applicable_dimension_score": {
+              "description": "聊天初始门槛为 3；工具主要按必要条件判定，为 null。",
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "description": "聊天初始门槛为 3；工具主要按必要条件判定，为 null。",
+                  "minimum": 0,
+                  "maximum": 5
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "required_checks_all_true",
+            "require_no_critical_failure",
+            "require_budget_respected",
+            "require_normal_completion",
+            "min_applicable_dimension_score"
+          ],
+          "additionalProperties": false
+        },
+        "task_achieved_definition": {
+          "description": "工具任务实际达成的定义；聊天为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "工具任务实际达成的定义；聊天为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "critical_failure_definitions": {
+          "type": "array",
+          "description": "提前定义；尝试与实际执行分开。",
+          "items": {
+            "type": "string",
+            "description": "严重错误及范围。"
+          },
+          "minItems": 0
+        },
+        "judge_profile": {
+          "type": "string",
+          "description": "语义评分器配置版本，实际模型版本写入运行记录。"
+        }
+      },
+      "required": [
+        "rubric_version",
+        "checks",
+        "dimensions",
+        "pass_policy",
+        "task_achieved_definition",
+        "critical_failure_definitions",
+        "judge_profile"
+      ],
+      "additionalProperties": false
+    },
+    "reference": {
+      "type": "object",
+      "description": "隐藏参考过程。",
+      "properties": {
+        "record_kind": {
+          "type": "string",
+          "description": "明确这是示范而非模型测试。",
+          "enum": [
+            "authored_reference_not_model_run"
+          ]
+        },
+        "unique_answer": {
+          "const": false,
+          "description": "参考答案不唯一。"
+        },
+        "turns": {
+          "type": "array",
+          "description": "完整正常路径。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/ReferenceTurn",
+            "description": "参考回合。"
+          },
+          "minItems": 1,
+          "maxItems": 5
+        },
+        "acceptable_alternatives": {
+          "type": "array",
+          "description": "不能把单一措辞/轨迹当成唯一答案。",
+          "items": {
+            "type": "string",
+            "description": "允许的合理替代。"
+          },
+          "minItems": 0
+        },
+        "expected_case_pass": {
+          "type": "boolean",
+          "description": "参考过程按设计应通过；不是实测成绩。"
+        }
+      },
+      "required": [
+        "record_kind",
+        "unique_answer",
+        "turns",
+        "acceptable_alternatives",
+        "expected_case_pass"
+      ],
+      "additionalProperties": false
+    },
+    "quality": {
+      "type": "object",
+      "description": "数据质量状态。",
+      "properties": {
+        "schema_validation": {
+          "type": "string",
+          "description": "结构校验状态。",
+          "enum": [
+            "pending",
+            "passed",
+            "failed"
+          ]
+        },
+        "reference_rule_validation": {
+          "type": "string",
+          "description": "参考轨迹的规则断言校验。",
+          "enum": [
+            "pending",
+            "passed",
+            "failed"
+          ]
+        },
+        "independent_review": {
+          "type": "string",
+          "description": "独立模型或人员审题状态。",
+          "enum": [
+            "pending",
+            "passed",
+            "failed"
+          ]
+        },
+        "human_review": {
+          "type": "string",
+          "description": "人工审核状态。",
+          "enum": [
+            "pending",
+            "passed",
+            "failed"
+          ]
+        },
+        "known_limitations": {
+          "type": "array",
+          "description": "与此题有关的限制。",
+          "items": {
+            "type": "string",
+            "description": "限制。"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "schema_validation",
+        "reference_rule_validation",
+        "independent_review",
+        "human_review",
+        "known_limitations"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "identity",
+    "classification",
+    "provenance",
+    "model_context",
+    "environment",
+    "interaction",
+    "variants",
+    "evaluation",
+    "reference",
+    "quality"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://homebench.example/spec/0.2/case.schema.json",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "classification": {
+            "properties": {
+              "category": {
+                "const": "tool"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "classification": {
+            "properties": {
+              "subcategory": {
+                "enum": [
+                  "home_query",
+                  "device_control",
+                  "environment_query",
+                  "schedule_management",
+                  "media_management",
+                  "task_management"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "classification": {
+            "properties": {
+              "subcategory": {
+                "enum": [
+                  "daily_companionship",
+                  "emotional_support",
+                  "family_communication",
+                  "home_advice",
+                  "joint_planning",
+                  "learning",
+                  "story_roleplay",
+                  "games",
+                  "interest_discussion",
+                  "assistant_boundaries"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

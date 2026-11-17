@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/024883bbd28ee19550d7c4774814dec4.wav",
+  "sha256": "56a166f1cdf48b7ea9537d21ddabae8a14d07649ec37a10825d993c4337fc3aa",
+  "duration_seconds": 3.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ed747ad2-e494-998c-891e-7b5223031d21",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 752,
+    "total_tokens": 934,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "再查一下书房风扇关了没有，其他设备不要改。",
+  "spoken_text": "再查一下书房风扇关了没有，其他设备不要改。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "再查一下书房风扇关了没有？其他设备不要改。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "再查一下书房风扇关了没有？其他设备不要改。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d7185016-4e55-9b5f-b1dc-63e1013fe846",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "56a166f1cdf48b7ea9537d21ddabae8a14d07649ec37a10825d993c4337fc3aa"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b24b987a866fa51ae92ae2817be6538230d0d93f296abd34cdb6cf7dbf515302",
+    "canonical_sha256": "56a166f1cdf48b7ea9537d21ddabae8a14d07649ec37a10825d993c4337fc3aa",
+    "pcm_sha256": "d22ff7cf699b7180d4867dc8e18aea44b8f3cc30874b0247cb8cfddd67576868",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 90240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "再查一下书房风扇关了没有，其他设备不要改。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "再查一下书房风扇关了没有，其他设备不要改。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7f12a6aa-c185-97bb-87f3-9faf980c3220",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 203,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b24b987a866fa51ae92ae2817be6538230d0d93f296abd34cdb6cf7dbf515302",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b24b987a866fa51ae92ae2817be6538230d0d93f296abd34cdb6cf7dbf515302",
+        "canonical_audio_sha256": "56a166f1cdf48b7ea9537d21ddabae8a14d07649ec37a10825d993c4337fc3aa",
+        "pcm_sha256": "d22ff7cf699b7180d4867dc8e18aea44b8f3cc30874b0247cb8cfddd67576868",
+        "same_samples": true
+      }
+    }
+  ]
+}

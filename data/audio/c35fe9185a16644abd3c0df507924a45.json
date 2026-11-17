@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c35fe9185a16644abd3c0df507924a45.wav",
+  "sha256": "c44234877672ad5a0063a23ad3f1eb4f98a4f84c71917dfbc76892584e3c104c",
+  "duration_seconds": 11.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "72ffb725-af50-9829-af6e-1f60257a1d34",
+  "usage": {
+    "input_tokens": 303,
+    "output_tokens": 2304,
+    "total_tokens": 2607,
+    "duration": 12
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "昨天我因为妈妈没经过同意就整理我房间，冲她发了脾气，现在想跟她道歉，但又不想让她觉得我以后就完全不要她帮忙了。你能帮我想几句能说出口的话吗？",
+  "spoken_text": "昨天我因为妈妈没经过同意就整理我房间，冲她发了脾气，现在想跟她道歉，但又不想让她觉得我以后就完全不要她帮忙了。你能帮我想几句能说出口的话吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "昨天我因为妈妈没经过同意就整理我房间，冲她发了脾气，现在想跟她道歉，但又不想让她觉得我以后就完全不要她帮忙了。你能帮我想几句能说出口的话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "昨天我因为妈妈没经过同意就整理我房间，冲她发了脾气，现在想跟她道歉，但又不想让她觉得我以后就完全不要她帮忙了。你能帮我想几句能说出口的话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0b9c6c35-79cb-902d-86e4-2c7909c95fdf",
+    "usage": {
+      "prompt_tokens": 312,
+      "total_tokens": 382,
+      "completion_tokens": 70,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 79,
+        "text_tokens": 233
+      },
+      "completion_tokens_details": {
+        "text_tokens": 70
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c44234877672ad5a0063a23ad3f1eb4f98a4f84c71917dfbc76892584e3c104c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9a472f48d184ce45de53063e3660e3a3c56144d04c4dfd11daefb66d219775f0",
+    "canonical_sha256": "c44234877672ad5a0063a23ad3f1eb4f98a4f84c71917dfbc76892584e3c104c",
+    "pcm_sha256": "ea41148a1ba7c7d43d05b49a3f4cebc353a40a2e85e2de160d4debeffea12295",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 276480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "昨天我因为妈妈没经过同意就整理我房间，冲她发了脾气。现在想跟她道歉，但又不想让她觉得我以后就完全不要她帮忙了。你能帮我想几句能说出口的话吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-90429a22-8334-9f88-9f6d-0a487f683ace",
+      "usage": {
+        "prompt_tokens": 228,
+        "total_tokens": 298,
+        "completion_tokens": 70,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 79,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 70
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9a472f48d184ce45de53063e3660e3a3c56144d04c4dfd11daefb66d219775f0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9a472f48d184ce45de53063e3660e3a3c56144d04c4dfd11daefb66d219775f0",
+        "canonical_audio_sha256": "c44234877672ad5a0063a23ad3f1eb4f98a4f84c71917dfbc76892584e3c104c",
+        "pcm_sha256": "ea41148a1ba7c7d43d05b49a3f4cebc353a40a2e85e2de160d4debeffea12295",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/60f276303856c470ffb1f3c1ae5b5f37.wav",
+  "sha256": "2ecaa029f8e6de13a777d4e06cbf8e86adcb690a867b57e6c1a2668b8fced4b4",
+  "duration_seconds": 3.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "23ab7a9a-e885-983f-9a47-6ae502bf8adc",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 760,
+    "total_tokens": 953,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我改喝热牛奶了，不喝咖啡了，你提醒我泡牛奶吧。",
+  "spoken_text": "我改喝热牛奶了，不喝咖啡了，你提醒我泡牛奶吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我改喝热牛奶了，不喝咖啡了。你提醒我泡牛奶吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我改喝热牛奶了，不喝咖啡了。你提醒我泡牛奶吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ed973797-b7c2-9e8d-8a95-bec744f47c7e",
+    "usage": {
+      "prompt_tokens": 230,
+      "total_tokens": 274,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2ecaa029f8e6de13a777d4e06cbf8e86adcb690a867b57e6c1a2668b8fced4b4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a3dc9726d92dd80f79dca4642fb93af9ba3849f702bb29df3749aafa5657ba51",
+    "canonical_sha256": "2ecaa029f8e6de13a777d4e06cbf8e86adcb690a867b57e6c1a2668b8fced4b4",
+    "pcm_sha256": "ef53d8043607b36d2c1f2f9da9f048e680023c3450a4397bcba760b52cf671c6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 91200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我改喝热牛奶了，不喝咖啡了，你提醒我泡牛奶吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b582cbe1-3648-9208-bd06-1e51c152b947",
+      "usage": {
+        "prompt_tokens": 146,
+        "total_tokens": 190,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 123
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a3dc9726d92dd80f79dca4642fb93af9ba3849f702bb29df3749aafa5657ba51",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a3dc9726d92dd80f79dca4642fb93af9ba3849f702bb29df3749aafa5657ba51",
+        "canonical_audio_sha256": "2ecaa029f8e6de13a777d4e06cbf8e86adcb690a867b57e6c1a2668b8fced4b4",
+        "pcm_sha256": "ef53d8043607b36d2c1f2f9da9f048e680023c3450a4397bcba760b52cf671c6",
+        "same_samples": true
+      }
+    }
+  ]
+}

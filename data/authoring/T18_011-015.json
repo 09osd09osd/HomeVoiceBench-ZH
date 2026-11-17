@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "a4a9d4f7d6920350750b71c05388cd8bb88b06a80db828e9b94f3a6e79118469",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-f33fd993-0641-9b09-835c-0d988f0271ac",
+  "usage": {
+    "prompt_tokens": 4279,
+    "total_tokens": 5571,
+    "completion_tokens": 1292,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4279
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1292
+    }
+  },
+  "review_request_id": "chatcmpl-ccda6031-f02f-9bb0-aeb7-532c86cc7ba8",
+  "review_usage": {
+    "prompt_tokens": 5193,
+    "total_tokens": 5279,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 5193
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T18_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T18_011",
+        "title": "查询书房照度读数与时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我看看书房现在的照度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "书房当前照度是767勒克斯，测量时间是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_012",
+        "title": "先后查询书房与厨房照度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我看看书房现在的照度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "书房当前照度是104勒克斯，测量时间是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房的照度吧。",
+            "reference_text": "厨房当前照度是244勒克斯，测量时间也是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_013",
+        "title": "书房厨房照度读数比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我看看书房现在的照度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "书房当前照度是141勒克斯，测量时间是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房的照度吧。",
+            "reference_text": "厨房当前照度是281勒克斯，测量时间也是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才这两个房间的读数，不要调任何设备。",
+            "reference_text": "刚才书房是141勒克斯，厨房是281勒克斯，厨房比书房亮140勒克斯，大约是书房的两倍。没有调整任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_014",
+        "title": "照度比较并追问读数局限性",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我看看书房现在的照度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "书房当前照度是178勒克斯，测量时间是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房的照度吧。",
+            "reference_text": "厨房当前照度是318勒克斯，测量时间也是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才这两个房间的读数，不要调任何设备。",
+            "reference_text": "刚才书房是178勒克斯，厨房是318勒克斯，厨房比书房亮140勒克斯。没有调整任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能说明全部情况。这些只是那一刻的照度测量，传感器有覆盖范围，不能代表整个房间每个角落；有人存在也不能识别具体是谁；温度也不是设备的设定值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_015",
+        "title": "照度比较、局限说明与重查书房",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我看看书房现在的照度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "书房当前照度是215勒克斯，测量时间是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房的照度吧。",
+            "reference_text": "厨房当前照度是355勒克斯，测量时间也是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才这两个房间的读数，不要调任何设备。",
+            "reference_text": "刚才书房是215勒克斯，厨房是355勒克斯，厨房比书房亮140勒克斯。没有调整任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能说明全部情况。这些只是那一刻的照度测量，传感器有覆盖范围，不能代表整个房间每个角落；有人存在也不能识别具体是谁；温度也不是设备的设定值。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再重新查一下书房同一个指标吧。",
+            "reference_text": "重新查了书房照度，还是215勒克斯，测量时间是2026年12月1日18点整。只做了查询，没有调整任何设备。"
+          }
+        ]
+      }
+    ]
+  }
+}

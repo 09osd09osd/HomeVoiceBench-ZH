@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a8aa5fde5fcffee4097024c069ed8d3a.wav",
+  "sha256": "1286353b544493b4d74d4e667171906ec316322f1bd0c41c9adc5e7b96248d90",
+  "duration_seconds": 4.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "cdaf8b7a-6992-9476-8ab4-68087cb144b1",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 960,
+    "total_tokens": 1146,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我查一下客厅现在的照度，告诉我读数和测量时间，只查询就行。",
+  "spoken_text": "帮我查一下客厅现在的照度，告诉我读数和测量时间，只查询就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我查一下客厅现在的照度，告诉我读数和测量时间，只查询就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我查一下客厅现在的照度，告诉我读数和测量时间，只查询就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7a0cf376-74ca-9b58-b5e1-2c02c7bde560",
+    "usage": {
+      "prompt_tokens": 237,
+      "total_tokens": 281,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1286353b544493b4d74d4e667171906ec316322f1bd0c41c9adc5e7b96248d90"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b1f53b2086c37872b0fd8718bf7a9d07340cb8198e14839636cb2037d6929d41",
+    "canonical_sha256": "1286353b544493b4d74d4e667171906ec316322f1bd0c41c9adc5e7b96248d90",
+    "pcm_sha256": "89a01ee8577d463a860e1d7df9c5feffda4b78cf8d7fe535bab76d525e5fe282",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 115200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我查一下客厅现在的照度，告诉我读数和测量时间，只查询就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我查一下客厅现在的照度，告诉我读数和测量时间，只查询就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-93879e70-60c3-9a82-a2d9-77d97b1e52a1",
+      "usage": {
+        "prompt_tokens": 176,
+        "total_tokens": 220,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 146
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b1f53b2086c37872b0fd8718bf7a9d07340cb8198e14839636cb2037d6929d41",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b1f53b2086c37872b0fd8718bf7a9d07340cb8198e14839636cb2037d6929d41",
+        "canonical_audio_sha256": "1286353b544493b4d74d4e667171906ec316322f1bd0c41c9adc5e7b96248d90",
+        "pcm_sha256": "89a01ee8577d463a860e1d7df9c5feffda4b78cf8d7fe535bab76d525e5fe282",
+        "same_samples": true
+      }
+    }
+  ]
+}

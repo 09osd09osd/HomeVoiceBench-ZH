@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/548ca70d7c3caa6f31f2bce665d4a42a.wav",
+  "sha256": "19870e66e7a6a12bab5a0ec3e7f29140278cc67fc659107293dd37cdb1b47bde",
+  "duration_seconds": 3.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b0258167-f3cb-9c9b-8391-c9af4a5b0a96",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 624,
+    "total_tokens": 815,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我说错了，是喝大半杯温水，不是半杯。",
+  "spoken_text": "我说错了，是喝大半杯温水，不是半杯。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我说错了，是喝大半杯温水，不是半杯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我说错了，是喝大半杯温水，不是半杯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0d637fef-d45a-9932-89c5-a94fa3a2a360",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "19870e66e7a6a12bab5a0ec3e7f29140278cc67fc659107293dd37cdb1b47bde"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4f972bc1f3b4d930d13e73843e3ed41c92e0e2697949d6d644452a890697c493",
+    "canonical_sha256": "19870e66e7a6a12bab5a0ec3e7f29140278cc67fc659107293dd37cdb1b47bde",
+    "pcm_sha256": "26c1119c2368611ef96f5d2f4993b5ce8cd5927345846835fccb4cd989492d53",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 74880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我说错了，是喝大半杯温水，不是半杯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-48db1566-e18b-90ba-ad71-d41980d87024",
+      "usage": {
+        "prompt_tokens": 141,
+        "total_tokens": 180,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4f972bc1f3b4d930d13e73843e3ed41c92e0e2697949d6d644452a890697c493",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4f972bc1f3b4d930d13e73843e3ed41c92e0e2697949d6d644452a890697c493",
+        "canonical_audio_sha256": "19870e66e7a6a12bab5a0ec3e7f29140278cc67fc659107293dd37cdb1b47bde",
+        "pcm_sha256": "26c1119c2368611ef96f5d2f4993b5ce8cd5927345846835fccb4cd989492d53",
+        "same_samples": true
+      }
+    }
+  ]
+}

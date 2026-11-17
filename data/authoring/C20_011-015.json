@@ -1,0 +1,187 @@
+{
+  "blueprint_sha256": "3eac6f09d11b1d41485794a78295c73df963d99365d07dd20bebfe48cf9279aa",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-d0e9d99a-82d8-9acc-8c38-601f3ac59f56",
+  "usage": {
+    "prompt_tokens": 1860,
+    "total_tokens": 3352,
+    "completion_tokens": 1492,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1860
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1492
+    }
+  },
+  "review_request_id": "chatcmpl-9208d2f2-cacb-95e6-b38b-7d247c477214",
+  "review_usage": {
+    "prompt_tokens": 2963,
+    "total_tokens": 3049,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2963
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C20_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C20_011",
+        "title": "疲惫时讨论周末安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天有点累，想聊聊周末怎么安排。你能帮我想想吗？",
+            "reference_text": "听起来今天挺累的。周末想轻松一点还是安排点活动？我可以陪你聊，但不会擅自帮你订东西或改日程。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_012",
+        "title": "疲惫时聊聚会准备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "下周六我想在家请几个朋友吃饭，但今天太累了，先聊聊大概准备什么吧。",
+            "reference_text": "好的，先聊不操作。下周六在家请朋友吃饭，可以想想人数、菜式和提前准备的东西。需要我帮你列个简单清单吗？",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "对了，别搞太复杂，我不想做太多菜，最好四个菜以内。",
+            "reference_text": "明白，四个菜以内，尽量简单。我们可以围绕凉菜、一个热炒、一个炖菜和一个主食来想。只是聊天建议，不会替你做任何安排。",
+            "tone": "略疲惫"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_013",
+        "title": "聊家庭电影夜片单",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "周五晚上想在家搞个电影夜，你帮我聊聊选什么类型的片子吧，今天实在没精力细想。",
+            "reference_text": "周五家庭电影夜，先聊选片方向。想轻松喜剧、动画还是悬疑？我可以给建议，但不会自动打开电视或播放任何内容。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里有小孩，别选太吓人的，最好适合全家一起看。",
+            "reference_text": "明白，适合全家看，避开吓人的内容。可以优先考虑动画、温和喜剧或自然纪录片。我们只是讨论，不会替你播放。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是周五，是周六晚上，家里有小孩这条不变。",
+            "reference_text": "好的，改到周六晚上，仍然适合全家看、避开吓人内容。选片方向我们继续聊，不会实际操作电视。",
+            "tone": "略疲惫"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_014",
+        "title": "聊换季衣物整理",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "天气开始转凉了，我想聊聊怎么整理换季衣服，今天有点累，先不动手。",
+            "reference_text": "可以先聊整理思路，不动手。比如按常穿、暂存、待处理分三类。需要我陪你想个简单步骤吗？不会替你收纳或购买任何东西。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我家衣柜不大，别建议买收纳箱，尽量用现有的东西。",
+            "reference_text": "明白，不买收纳箱，尽量用现有物品。可以聊按频率分层、用旧袋子分装这些办法。只是讨论，不会实际整理。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是衣柜不大，是衣柜挺大但分区乱，还是别买收纳箱。",
+            "reference_text": "好的，更正为衣柜挺大但分区乱，仍然不买收纳箱。可以聊重新划分挂放和叠放区域。不会替你动手整理。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你记得我刚更正的衣柜情况吧？接着说说分区乱怎么弄。",
+            "reference_text": "记得，衣柜挺大但分区乱，不买收纳箱。可以先按长短衣、常穿和换季分开放，再调整层板位置。只是建议，不会实际整理。",
+            "tone": "略疲惫"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_015",
+        "title": "聊周末短途出行想法",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "这周末想带家人出去走走，但今天累得不想查太多东西，你先陪我聊聊方向吧。",
+            "reference_text": "可以先聊出行方向，不实际订票或导航。想近郊散步、公园野餐还是逛小镇？我陪你理思路，不会替你安排行程。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "别去太远，车程最好一小时内，也别推荐要门票的地方。",
+            "reference_text": "明白，车程一小时以内，不去要门票的地方。可以聊免费公园、河边步道这类方向。只是讨论，不会实际查询或预订。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是这周末，是下周末，车程和门票的限制不变。",
+            "reference_text": "好的，改到下周末，仍然车程一小时以内、不去要门票的地方。我们继续聊方向，不会实际安排。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得是下周末吧？那免费公园和河边步道哪个更适合带老人？",
+            "reference_text": "记得，下周末，免费、车程一小时以内。带老人可以优先考虑路面平的公园，河边步道要看有没有长椅和缓坡。只是建议，不会实际查路线。",
+            "tone": "略疲惫"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好，今天先聊到这儿，你用一两句话帮我收个尾吧。",
+            "reference_text": "收尾：下周末带老人出行，优先选车程一小时内的免费平缓公园，出发前再确认天气和休息点。今天只聊到这里，没有实际安排。",
+            "tone": "略疲惫"
+          }
+        ]
+      }
+    ]
+  }
+}

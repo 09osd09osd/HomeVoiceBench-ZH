@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/91a19234da2acd1073497e9b0de5a654.wav",
+  "sha256": "4305d7905bbb14e371e84eae7242cd048bbdc6b0ef4a8eb2884adf1bb9dbd5bf",
+  "duration_seconds": 2.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d8df3ba5-889f-9eef-be58-54e8bd2c38aa",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 584,
+    "total_tokens": 775,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "行，今天聊得差不多了，你简单说两句收个尾吧。",
+  "spoken_text": "行，今天聊得差不多了，你简单说两句收个尾吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "行，今天聊的差不多了，你简单说两句收个尾吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "行，今天聊的差不多了，你简单说两句收个尾吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c2fa8312-5c05-9e46-aeb2-0b303e746464",
+    "usage": {
+      "prompt_tokens": 221,
+      "total_tokens": 263,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4305d7905bbb14e371e84eae7242cd048bbdc6b0ef4a8eb2884adf1bb9dbd5bf"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c3b925772913dfdd02f03f82a4d74b0063d5e007d6a72e95252ab2f42fa1bd21",
+    "canonical_sha256": "4305d7905bbb14e371e84eae7242cd048bbdc6b0ef4a8eb2884adf1bb9dbd5bf",
+    "pcm_sha256": "054d61ef0b437ee3862bd7bf360785efa4d5dfd531da02a3c375063fea6cb3cd",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 70080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "行，今天聊得差不多了，你简单说两句收个尾吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4c648a9f-ed41-9e7e-99b7-189645ab84f5",
+      "usage": {
+        "prompt_tokens": 137,
+        "total_tokens": 179,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c3b925772913dfdd02f03f82a4d74b0063d5e007d6a72e95252ab2f42fa1bd21",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c3b925772913dfdd02f03f82a4d74b0063d5e007d6a72e95252ab2f42fa1bd21",
+        "canonical_audio_sha256": "4305d7905bbb14e371e84eae7242cd048bbdc6b0ef4a8eb2884adf1bb9dbd5bf",
+        "pcm_sha256": "054d61ef0b437ee3862bd7bf360785efa4d5dfd531da02a3c375063fea6cb3cd",
+        "same_samples": true
+      }
+    }
+  ]
+}

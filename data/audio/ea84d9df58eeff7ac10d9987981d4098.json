@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ea84d9df58eeff7ac10d9987981d4098.wav",
+  "sha256": "69bd76edac81f8079d4c0e6c526f5d7d609d95d704fa6183aaf26e6e2c7b06df",
+  "duration_seconds": 6.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0ce18fed-32d9-9c17-be31-e1ace5720777",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 1232,
+    "total_tokens": 1424,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是昨天，是上周五晚上。你按上周五帮我把话说顺，别把时间弄错了。",
+  "spoken_text": "更正一下，不是昨天，是上周五晚上。你按上周五帮我把话说顺，别把时间弄错了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是昨天，是上周五晚上。你按上周五帮我把话说顺，别把时间弄错了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是昨天，是上周五晚上。你按上周五帮我把话说顺，别把时间弄错了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1ea23394-9a50-936c-8497-138e473248fa",
+    "usage": {
+      "prompt_tokens": 257,
+      "total_tokens": 307,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "69bd76edac81f8079d4c0e6c526f5d7d609d95d704fa6183aaf26e6e2c7b06df"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9366d1718634eb2d19583ae8d1469165756fe5fa6a1cdc15b9f5ce135fef0046",
+    "canonical_sha256": "69bd76edac81f8079d4c0e6c526f5d7d609d95d704fa6183aaf26e6e2c7b06df",
+    "pcm_sha256": "eefd2eede3a7326c31e5988a06d536ddb14b006903b136c6330446a82b3df05b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 147840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是昨天，是上周五晚上。你按上周五帮我把话说顺，别把时间弄错了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2b07350c-6db2-9733-adc3-6786de25365d",
+      "usage": {
+        "prompt_tokens": 173,
+        "total_tokens": 223,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 129
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9366d1718634eb2d19583ae8d1469165756fe5fa6a1cdc15b9f5ce135fef0046",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9366d1718634eb2d19583ae8d1469165756fe5fa6a1cdc15b9f5ce135fef0046",
+        "canonical_audio_sha256": "69bd76edac81f8079d4c0e6c526f5d7d609d95d704fa6183aaf26e6e2c7b06df",
+        "pcm_sha256": "eefd2eede3a7326c31e5988a06d536ddb14b006903b136c6330446a82b3df05b",
+        "same_samples": true
+      }
+    }
+  ]
+}

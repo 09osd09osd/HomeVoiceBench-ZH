@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "afa0c0be0216fa860b33f69ad2f21e97131e8ffdec759c242cf2d35a09f7b3c4",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-3c43f695-c2de-9526-9793-0c4c73376fb7",
+  "usage": {
+    "prompt_tokens": 7554,
+    "total_tokens": 8724,
+    "completion_tokens": 1170,
+    "prompt_tokens_details": {
+      "cached_tokens": 7424,
+      "image_tokens": 0,
+      "text_tokens": 7554
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1170
+    }
+  },
+  "review_request_id": "chatcmpl-ceedb5d7-9d3b-9b42-ac0f-77a1c5d952b8",
+  "review_usage": {
+    "prompt_tokens": 8346,
+    "total_tokens": 8432,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 7168,
+      "image_tokens": 0,
+      "text_tokens": 8346
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T01_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T01_006",
+        "title": "查询家庭房间与卧室设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再帮我看看卧室里有什么设备，就查一下，别动它们。",
+            "reference_text": "咱们家一共有四个房间：客厅、卧室、书房和厨房。卧室里有三样设备：卧室灯、卧室窗帘和卧室音箱。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_007",
+        "title": "查询房间设备与全屋灯具分布",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再帮我看看卧室里有什么设备，就查一下，别动它们。",
+            "reference_text": "咱们家一共有四个房间：客厅、卧室、书房和厨房。卧室里有三样设备：卧室灯、卧室窗帘和卧室音箱。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那家里总共有几盏灯？分别都在哪儿？",
+            "reference_text": "家里一共有3盏灯，分别在客厅、卧室和书房。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_008",
+        "title": "查询房间设备、灯具分布与卧室灯参数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再帮我看看卧室里有什么设备，就查一下，别动它们。",
+            "reference_text": "咱们家一共有四个房间：客厅、卧室、书房和厨房。卧室里有三样设备：卧室灯、卧室窗帘和卧室音箱。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那家里总共有几盏灯？分别都在哪儿？",
+            "reference_text": "家里一共有3盏灯，分别在客厅、卧室和书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "卧室的灯能调哪些参数呀？",
+            "reference_text": "卧室灯能调开关、亮度百分比，还有色温，范围是2700K到6500K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_009",
+        "title": "查询房间设备、灯具、卧室灯参数与厨房空调",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再帮我看看卧室里有什么设备，就查一下，别动它们。",
+            "reference_text": "咱们家一共有四个房间：客厅、卧室、书房和厨房。卧室里有三样设备：卧室灯、卧室窗帘和卧室音箱。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那家里总共有几盏灯？分别都在哪儿？",
+            "reference_text": "家里一共有3盏灯，分别在客厅、卧室和书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "卧室的灯能调哪些参数呀？",
+            "reference_text": "卧室灯能调开关、亮度百分比，还有色温，范围是2700K到6500K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有的话就直接告诉我没有。",
+            "reference_text": "厨房没有空调。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_010",
+        "title": "查询房间设备、灯具、灯参数、厨房空调并汇总",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再帮我看看卧室里有什么设备，就查一下，别动它们。",
+            "reference_text": "咱们家一共有四个房间：客厅、卧室、书房和厨房。卧室里有三样设备：卧室灯、卧室窗帘和卧室音箱。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那家里总共有几盏灯？分别都在哪儿？",
+            "reference_text": "家里一共有3盏灯，分别在客厅、卧室和书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "卧室的灯能调哪些参数呀？",
+            "reference_text": "卧室灯能调开关、亮度百分比，还有色温，范围是2700K到6500K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有的话就直接告诉我没有。",
+            "reference_text": "厨房没有空调。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "把刚才查到的这些情况帮我整理一下，不用操作设备。",
+            "reference_text": "好的。咱们家有客厅、卧室、书房和厨房四个房间。卧室里有卧室灯、卧室窗帘和卧室音箱。全屋共有3盏灯，分别在客厅、卧室和书房。卧室灯能调开关、亮度和色温，色温范围是2700K到6500K。厨房没有空调。"
+          }
+        ]
+      }
+    ]
+  }
+}

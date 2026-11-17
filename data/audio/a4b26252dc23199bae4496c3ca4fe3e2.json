@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a4b26252dc23199bae4496c3ca4fe3e2.wav",
+  "sha256": "3237f40c4302d19ed2b895beacadd3df98a082296374d9c811d7b156cd6ed90e",
+  "duration_seconds": 2.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "804e18ae-cb15-9160-9ed6-a78e3341e90b",
+  "usage": {
+    "input_tokens": 174,
+    "output_tokens": 496,
+    "total_tokens": 670,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "在客厅音箱上放一下《雨后散步》。",
+  "spoken_text": "在客厅音箱上放一下《雨后散步》。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "在客厅音箱上放一下《雨后散步》。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "在客厅音箱上放一下《雨后散步》。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9585cde2-479a-90b5-8d95-039f78cc9287",
+    "usage": {
+      "prompt_tokens": 216,
+      "total_tokens": 253,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3237f40c4302d19ed2b895beacadd3df98a082296374d9c811d7b156cd6ed90e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "946a5d2b4f351e347d3fc53362ecccc2a0329d8890d1856487cde7923dfccfc1",
+    "canonical_sha256": "3237f40c4302d19ed2b895beacadd3df98a082296374d9c811d7b156cd6ed90e",
+    "pcm_sha256": "0dd7edec6fa35aef7c3b73a062dbafdbd6b0a77d680cc087833a74ba1e49dd0d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 59520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "在客厅音箱上放一下雨后散步。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "在客厅音箱上放一下雨后散步。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-83068d0b-8b1f-9750-b6ae-9fb8aba21dc2",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 190,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "946a5d2b4f351e347d3fc53362ecccc2a0329d8890d1856487cde7923dfccfc1",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "946a5d2b4f351e347d3fc53362ecccc2a0329d8890d1856487cde7923dfccfc1",
+        "canonical_audio_sha256": "3237f40c4302d19ed2b895beacadd3df98a082296374d9c811d7b156cd6ed90e",
+        "pcm_sha256": "0dd7edec6fa35aef7c3b73a062dbafdbd6b0a77d680cc087833a74ba1e49dd0d",
+        "same_samples": true
+      }
+    }
+  ]
+}

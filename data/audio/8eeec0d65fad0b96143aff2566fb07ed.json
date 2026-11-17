@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/8eeec0d65fad0b96143aff2566fb07ed.wav",
+  "sha256": "d91e0f96e2d36b229e344a1a09323be726ccbec86577eaf9faad0a2c8eeb024a",
+  "duration_seconds": 2.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dd62fb0f-ed41-99e7-a862-69e20b9a73b1",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 528,
+    "total_tokens": 704,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不太会用手机查航班，有没有简单点的办法？",
+  "spoken_text": "我不太会用手机查航班，有没有简单点的办法？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不太会用手机查航班，有没有简单点的办法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不太会用手机查航班，有没有简单点的办法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c7286aee-55b7-933c-bbe7-15b9f92c38c2",
+    "usage": {
+      "prompt_tokens": 217,
+      "total_tokens": 255,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d91e0f96e2d36b229e344a1a09323be726ccbec86577eaf9faad0a2c8eeb024a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c4f81cfbe81afa8066e2ac2f6daeac0f0b92468f4decd16b823b5854155436f6",
+    "canonical_sha256": "d91e0f96e2d36b229e344a1a09323be726ccbec86577eaf9faad0a2c8eeb024a",
+    "pcm_sha256": "36035fdf131ecacb24f902ecbb47c64baa1c57abdaccc3f52dec8936036d9227",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 63360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不太会用手机查航班，有没有简单点的办法？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-120f781d-931a-908a-958a-d23acff18083",
+      "usage": {
+        "prompt_tokens": 133,
+        "total_tokens": 171,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 117
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c4f81cfbe81afa8066e2ac2f6daeac0f0b92468f4decd16b823b5854155436f6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c4f81cfbe81afa8066e2ac2f6daeac0f0b92468f4decd16b823b5854155436f6",
+        "canonical_audio_sha256": "d91e0f96e2d36b229e344a1a09323be726ccbec86577eaf9faad0a2c8eeb024a",
+        "pcm_sha256": "36035fdf131ecacb24f902ecbb47c64baa1c57abdaccc3f52dec8936036d9227",
+        "same_samples": true
+      }
+    }
+  ]
+}

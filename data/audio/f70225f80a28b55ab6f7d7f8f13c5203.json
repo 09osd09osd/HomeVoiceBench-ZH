@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/f70225f80a28b55ab6f7d7f8f13c5203.wav",
+  "sha256": "64d33609f4d85429d30ee3934ec43b97169dafa0ea911aaeaf8f7636aa78e928",
+  "duration_seconds": 2.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "195b943d-0540-9fcc-ad56-7438b97106f2",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 568,
+    "total_tokens": 753,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "电视音量改成40%，其他设置别动。",
+  "spoken_text": "电视音量改成百分之四十，其他设置别动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "电视音量改成40%，其他设置别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "电视音量改成40%，其他设置别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f470d7de-31e4-98de-adc4-d9de159a2424",
+    "usage": {
+      "prompt_tokens": 216,
+      "total_tokens": 253,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "64d33609f4d85429d30ee3934ec43b97169dafa0ea911aaeaf8f7636aa78e928"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "338dfd9cda11321cf7e8b776ca19790078fe33d91e69469b805a3ea04cf079ac",
+    "canonical_sha256": "64d33609f4d85429d30ee3934ec43b97169dafa0ea911aaeaf8f7636aa78e928",
+    "pcm_sha256": "6c057db8ab76e7854387d2412284424de2393574ad015ad3b9942c9defb21804",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 68160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "电视音量改成百分之四十，其他设置别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "电视音量改成百分之四十，其他设置别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0fdaaadb-72ce-927e-ba19-516f8b552183",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 192,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "338dfd9cda11321cf7e8b776ca19790078fe33d91e69469b805a3ea04cf079ac",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "338dfd9cda11321cf7e8b776ca19790078fe33d91e69469b805a3ea04cf079ac",
+        "canonical_audio_sha256": "64d33609f4d85429d30ee3934ec43b97169dafa0ea911aaeaf8f7636aa78e928",
+        "pcm_sha256": "6c057db8ab76e7854387d2412284424de2393574ad015ad3b9942c9defb21804",
+        "same_samples": true
+      }
+    }
+  ]
+}

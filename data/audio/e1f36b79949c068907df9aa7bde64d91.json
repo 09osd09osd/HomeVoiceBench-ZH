@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e1f36b79949c068907df9aa7bde64d91.wav",
+  "sha256": "7d0ea80945979e59750626d2e129c738257925692d94c85e21e07676211a7f4f",
+  "duration_seconds": 5.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a670475e-8d84-94fc-add4-81cd3a291eb8",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 1048,
+    "total_tokens": 1242,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "工作日我下班晚，想跟家里人商量谁接孩子、谁做晚饭，你帮我组织一下说法。",
+  "spoken_text": "工作日我下班晚，想跟家里人商量谁接孩子、谁做晚饭，你帮我组织一下说法。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "工作日我下班晚，想跟家里人商量谁接孩子、谁做晚饭。你帮我组织一下说法。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "工作日我下班晚，想跟家里人商量谁接孩子、谁做晚饭。你帮我组织一下说法。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9bc73096-14fc-938b-8867-f47ffaac69c7",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 298,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7d0ea80945979e59750626d2e129c738257925692d94c85e21e07676211a7f4f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "be65a03c85be1ba4b3d9fa830d9aac7d2e58765f6c1b336bcf3db4430a0b5bf3",
+    "canonical_sha256": "7d0ea80945979e59750626d2e129c738257925692d94c85e21e07676211a7f4f",
+    "pcm_sha256": "305bb1f5a4c366c2a55c1cd1e2dda62b1e037bbe724495444c15ad9f7d95d469",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 125760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "工作日，我下班晚，想跟家里人商量谁接孩子、谁做晚饭。你帮我组织一下说法。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6e31f832-e0ab-9f84-8dd9-df9294852e53",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 215,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "be65a03c85be1ba4b3d9fa830d9aac7d2e58765f6c1b336bcf3db4430a0b5bf3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "be65a03c85be1ba4b3d9fa830d9aac7d2e58765f6c1b336bcf3db4430a0b5bf3",
+        "canonical_audio_sha256": "7d0ea80945979e59750626d2e129c738257925692d94c85e21e07676211a7f4f",
+        "pcm_sha256": "305bb1f5a4c366c2a55c1cd1e2dda62b1e037bbe724495444c15ad9f7d95d469",
+        "same_samples": true
+      }
+    }
+  ]
+}

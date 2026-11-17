@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/d48294d965dd97d6bb88633a568554b1.wav",
+  "sha256": "08b894c61ac82b40325433bd9282c26924747f5e9bd0637f85b7053d728e6ae4",
+  "duration_seconds": 4.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d9f7b191-0d9d-98f4-adbd-957f6d761c87",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 816,
+    "total_tokens": 1005,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我睡前听什么吗？然后陪我说一句放松的话。",
+  "spoken_text": "你还记得我睡前听什么吗？然后陪我说一句放松的话。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我睡前听什么吗？然后陪我说一句放松的话。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我睡前听什么吗？然后陪我说一句放松的话。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7846b1f4-77ec-9c8c-b014-059b80228db3",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "08b894c61ac82b40325433bd9282c26924747f5e9bd0637f85b7053d728e6ae4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cce02e9cf1ee6ecd2773e1afb0d5b6abd7e9c22cc21ccb3b09674d35d47f057c",
+    "canonical_sha256": "08b894c61ac82b40325433bd9282c26924747f5e9bd0637f85b7053d728e6ae4",
+    "pcm_sha256": "99e2957e7481a3d8518b2680b78a234ac02a54d21383862df781f5bef4bc1e8d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 97920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我睡前听什么吗？然后陪我说一句放松的话。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3ad0202a-12ce-95a4-bc54-9f11f43c0164",
+      "usage": {
+        "prompt_tokens": 150,
+        "total_tokens": 191,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cce02e9cf1ee6ecd2773e1afb0d5b6abd7e9c22cc21ccb3b09674d35d47f057c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cce02e9cf1ee6ecd2773e1afb0d5b6abd7e9c22cc21ccb3b09674d35d47f057c",
+        "canonical_audio_sha256": "08b894c61ac82b40325433bd9282c26924747f5e9bd0637f85b7053d728e6ae4",
+        "pcm_sha256": "99e2957e7481a3d8518b2680b78a234ac02a54d21383862df781f5bef4bc1e8d",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/72e7745163739bef0439b1708f26cc97.wav",
+  "sha256": "490562c257ab4a7daedf1b306ab780da7df26492f4451a5dedcf30b8937615ca",
+  "duration_seconds": 2.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6a6c92e7-7ea7-9b77-847b-11115a69fa73",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 576,
+    "total_tokens": 755,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我猜是猫。再给一个提示，要具体点的。",
+  "spoken_text": "我猜是猫。再给一个提示，要具体点的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我猜是猫，再给个提示，要具体点的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我猜是猫，再给个提示，要具体点的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4ab8324c-cdc6-969a-9fcc-dfefb50994a1",
+    "usage": {
+      "prompt_tokens": 219,
+      "total_tokens": 259,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "490562c257ab4a7daedf1b306ab780da7df26492f4451a5dedcf30b8937615ca"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e5085114100d7bb5f7fddeb85b105fac7d016dfbc6907d227eab0aef0b82cfa6",
+    "canonical_sha256": "490562c257ab4a7daedf1b306ab780da7df26492f4451a5dedcf30b8937615ca",
+    "pcm_sha256": "379e1629bd1e341b8f93f62eefa77da04b9abf3bb077d22c8cf2e8867c7b8f1a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 69120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我猜是猫。再给个提示，要具体点的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我猜是猫。再给个提示，要具体点的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-356424f1-3538-9f26-96f6-c6baf6546e4f",
+      "usage": {
+        "prompt_tokens": 158,
+        "total_tokens": 198,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e5085114100d7bb5f7fddeb85b105fac7d016dfbc6907d227eab0aef0b82cfa6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e5085114100d7bb5f7fddeb85b105fac7d016dfbc6907d227eab0aef0b82cfa6",
+        "canonical_audio_sha256": "490562c257ab4a7daedf1b306ab780da7df26492f4451a5dedcf30b8937615ca",
+        "pcm_sha256": "379e1629bd1e341b8f93f62eefa77da04b9abf3bb077d22c8cf2e8867c7b8f1a",
+        "same_samples": true
+      }
+    }
+  ]
+}

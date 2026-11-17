@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "88c1c54a3c29be5093dd34808bb27c52cb21470547c915e60ec1b260f3ff73af",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-6c9297fa-609d-98d5-9062-2a93452cd1be",
+  "usage": {
+    "prompt_tokens": 7135,
+    "total_tokens": 8080,
+    "completion_tokens": 945,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 7135
+    },
+    "completion_tokens_details": {
+      "text_tokens": 945
+    }
+  },
+  "review_request_id": "chatcmpl-914bc40b-b888-9531-9984-ab1df8a8f198",
+  "review_usage": {
+    "prompt_tokens": 7702,
+    "total_tokens": 7788,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 7702
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T20_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T20_001",
+        "title": "明天7点带钥匙提醒创建",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点提醒我带钥匙。",
+            "reference_text": "好的，已为你设置明天早上7点提醒带钥匙。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_002",
+        "title": "带钥匙提醒改时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点提醒我带钥匙。",
+            "reference_text": "好的，已设置明天早上7点提醒带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已将带钥匙提醒改为明天早上7点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_003",
+        "title": "查看当前提醒列表",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点提醒我带钥匙。",
+            "reference_text": "好的，已设置明天早上7点提醒带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已将带钥匙提醒改为明天早上7点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的提醒有两条：明天早上7点半带钥匙，后天中午12点晾衣服。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_004",
+        "title": "取消新增提醒保留原有提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点提醒我带钥匙。",
+            "reference_text": "好的，已设置明天早上7点提醒带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已将带钥匙提醒改为明天早上7点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的提醒有两条：明天早上7点半带钥匙，后天中午12点晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已取消带钥匙提醒，晾衣服提醒保留不变。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_005",
+        "title": "确认启用提醒与取消状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点提醒我带钥匙。",
+            "reference_text": "好的，已设置明天早上7点提醒带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已将带钥匙提醒改为明天早上7点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的提醒有两条：明天早上7点半带钥匙，后天中午12点晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已取消带钥匙提醒，晾衣服提醒保留。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "现在启用的只剩后天中午12点晾衣服的提醒；带钥匙那条已经取消。"
+          }
+        ]
+      }
+    ]
+  }
+}

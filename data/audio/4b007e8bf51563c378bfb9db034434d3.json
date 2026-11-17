@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/4b007e8bf51563c378bfb9db034434d3.wav",
+  "sha256": "90f2c3333e67e01ddd749bb859206979e9cb7826fe6938b7b7a42936cebfd917",
+  "duration_seconds": 2.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c9ae90c0-493e-9ccc-b9d1-3c1b1df75295",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 592,
+    "total_tokens": 783,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说错了，不是3楼，是4楼，你帮我改过来。",
+  "spoken_text": "我刚才说错了，不是三楼，是四楼，你帮我改过来。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说错了，不是三楼，是四楼，你帮我改过来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说错了，不是三楼，是四楼，你帮我改过来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-64d3f35c-7b06-9d8e-8877-b241e07ebd62",
+    "usage": {
+      "prompt_tokens": 223,
+      "total_tokens": 265,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "90f2c3333e67e01ddd749bb859206979e9cb7826fe6938b7b7a42936cebfd917"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6eaa4697b1601436db0da27c696af922b8d9c949715e9932c2f126ab16acce5b",
+    "canonical_sha256": "90f2c3333e67e01ddd749bb859206979e9cb7826fe6938b7b7a42936cebfd917",
+    "pcm_sha256": "bb5bfd778c1b75cde967f810da591088a5c6d8b2023e384d74b9a7f8b34f0fa6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 71040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说错了，不是三楼，是四楼，你帮我改过来。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我刚才说错了，不是三楼，是四楼，你帮我改过来。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-81403f6f-d097-979b-848a-92876fd6a81e",
+      "usage": {
+        "prompt_tokens": 162,
+        "total_tokens": 204,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 146
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6eaa4697b1601436db0da27c696af922b8d9c949715e9932c2f126ab16acce5b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6eaa4697b1601436db0da27c696af922b8d9c949715e9932c2f126ab16acce5b",
+        "canonical_audio_sha256": "90f2c3333e67e01ddd749bb859206979e9cb7826fe6938b7b7a42936cebfd917",
+        "pcm_sha256": "bb5bfd778c1b75cde967f810da591088a5c6d8b2023e384d74b9a7f8b34f0fa6",
+        "same_samples": true
+      }
+    }
+  ]
+}

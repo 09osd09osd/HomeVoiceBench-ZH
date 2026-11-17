@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/2ddc7b257f1d41c4c945f2c99f1dc4a5.wav",
+  "sha256": "a09c1371523ceb44dbe629e0caff408b0eab450a80d28f47ddad1ed86f837ce0",
+  "duration_seconds": 4.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8b775dbc-55a1-9841-a555-ace782c2ed1d",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 808,
+    "total_tokens": 997,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今晚想听着白噪音睡觉，帮我找个能放一晚上的那种。",
+  "spoken_text": "今晚想听着白噪音睡觉，帮我找个能放一晚上的那种。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今晚想听着白噪音睡觉，帮我找个能放一晚上的那种。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今晚想听着白噪音睡觉，帮我找个能放一晚上的那种。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d9afe6f5-e9a5-9c67-96a0-409ac0b813f1",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a09c1371523ceb44dbe629e0caff408b0eab450a80d28f47ddad1ed86f837ce0"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "fc5040af504221659110357bcc21a9986218d9d27bfa61cd601abb147927faf0",
+    "canonical_sha256": "a09c1371523ceb44dbe629e0caff408b0eab450a80d28f47ddad1ed86f837ce0",
+    "pcm_sha256": "a43e6283e0fc3a5994bdbc40a3d51c5ba23518b03b8bc19e6d1fbfcfeb83bb4c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 96960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今晚想听着白噪音睡觉，帮我找个能放一晚上的那种。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b2cbe7bb-01e2-94cd-a53f-b1b9f995c362",
+      "usage": {
+        "prompt_tokens": 150,
+        "total_tokens": 191,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "fc5040af504221659110357bcc21a9986218d9d27bfa61cd601abb147927faf0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "fc5040af504221659110357bcc21a9986218d9d27bfa61cd601abb147927faf0",
+        "canonical_audio_sha256": "a09c1371523ceb44dbe629e0caff408b0eab450a80d28f47ddad1ed86f837ce0",
+        "pcm_sha256": "a43e6283e0fc3a5994bdbc40a3d51c5ba23518b03b8bc19e6d1fbfcfeb83bb4c",
+        "same_samples": true
+      }
+    }
+  ]
+}

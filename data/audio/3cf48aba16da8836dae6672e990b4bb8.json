@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/3cf48aba16da8836dae6672e990b4bb8.wav",
+  "sha256": "9389eaae4b578a75f503e63687c32c7689d1af5cd4eebef7e9265cc72e3c3b39",
+  "duration_seconds": 2.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6865e2fd-9343-903e-a102-d11d93811f7a",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 520,
+    "total_tokens": 705,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+  "spoken_text": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b3b08934-8038-998a-9a91-2d992ba3c1f9",
+    "usage": {
+      "prompt_tokens": 220,
+      "total_tokens": 261,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9389eaae4b578a75f503e63687c32c7689d1af5cd4eebef7e9265cc72e3c3b39"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d469c28bf857f235b955b897c0a9e36f74cceea1363d297892978e0f7c08f8d0",
+    "canonical_sha256": "9389eaae4b578a75f503e63687c32c7689d1af5cd4eebef7e9265cc72e3c3b39",
+    "pcm_sha256": "42571ac56000257199f8df660f2093c14307efd569f131ee2119188fbdbc547a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 62400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-95b41d75-2c3e-9af2-b559-2024c4db03c6",
+      "usage": {
+        "prompt_tokens": 159,
+        "total_tokens": 200,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d469c28bf857f235b955b897c0a9e36f74cceea1363d297892978e0f7c08f8d0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d469c28bf857f235b955b897c0a9e36f74cceea1363d297892978e0f7c08f8d0",
+        "canonical_audio_sha256": "9389eaae4b578a75f503e63687c32c7689d1af5cd4eebef7e9265cc72e3c3b39",
+        "pcm_sha256": "42571ac56000257199f8df660f2093c14307efd569f131ee2119188fbdbc547a",
+        "same_samples": true
+      }
+    }
+  ]
+}

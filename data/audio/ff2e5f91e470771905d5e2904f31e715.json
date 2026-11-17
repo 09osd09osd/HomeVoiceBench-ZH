@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/ff2e5f91e470771905d5e2904f31e715.wav",
+  "sha256": "b764955a5981a4cd9e8da00f9c865b15946d4e06fbe3eb793116bc6854d50a4f",
+  "duration_seconds": 5.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9b576068-13ed-9550-b14e-a2261516bf9f",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 1192,
+    "total_tokens": 1395,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子玩具满地都是，客厅不大，晚上有20分钟，家里有几个塑料筐，怎么快速收一下？",
+  "spoken_text": "孩子玩具满地都是，客厅不大，晚上有二十分钟，家里有几个塑料筐，怎么快速收一下？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子玩具满地都是，客厅不大，晚上有20分钟，家里有几个塑料筐，怎么快速收一下？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子玩具满地都是，客厅不大，晚上有20分钟，家里有几个塑料筐，怎么快速收一下？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-412a9f51-423d-9e47-91d2-5340ef3ac048",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 300,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b764955a5981a4cd9e8da00f9c865b15946d4e06fbe3eb793116bc6854d50a4f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9198c0e4ec2b1ca41355a764d012bc9738c051ac36723eebf852891cfcccb5c7",
+    "canonical_sha256": "b764955a5981a4cd9e8da00f9c865b15946d4e06fbe3eb793116bc6854d50a4f",
+    "pcm_sha256": "7dc71c99b9b1189e9dfe85f7064d54bc54dd47533a2d2cb82962fc0b00a3113b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 143040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子玩具满地都是，客厅不大，晚上有二十分钟，家里有几个塑料筐，怎么快速收一下？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "孩子玩具满地都是，客厅不大，晚上有二十分钟，家里有几个塑料筐，怎么快速收一下？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-cf1e4696-1f6b-90b9-8b0a-0cb66ce886f5",
+      "usage": {
+        "prompt_tokens": 189,
+        "total_tokens": 238,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9198c0e4ec2b1ca41355a764d012bc9738c051ac36723eebf852891cfcccb5c7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9198c0e4ec2b1ca41355a764d012bc9738c051ac36723eebf852891cfcccb5c7",
+        "canonical_audio_sha256": "b764955a5981a4cd9e8da00f9c865b15946d4e06fbe3eb793116bc6854d50a4f",
+        "pcm_sha256": "7dc71c99b9b1189e9dfe85f7064d54bc54dd47533a2d2cb82962fc0b00a3113b",
+        "same_samples": true
+      }
+    }
+  ]
+}

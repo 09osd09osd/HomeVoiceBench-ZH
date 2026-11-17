@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f2f5a4f79b4d81aadb3af9971e44b966.wav",
+  "sha256": "91a3089db6dcceca7a0c2b90a61490df6466b9bf97c04a57d5f86effbb56c317",
+  "duration_seconds": 4.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f006c636-a5c9-9a65-9867-eba24ee26937",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 976,
+    "total_tokens": 1168,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "刚才说的时间我改一下，不要二十分钟了，十分钟以内就行。",
+  "spoken_text": "刚才说的时间我改一下，不要二十分钟了，十分钟以内就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才说的时间我改一下，不要二十分钟了，十分钟以内就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才说的时间我改一下，不要二十分钟了，十分钟以内就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-38f72ede-afac-94cc-bc61-e1134a99b905",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "91a3089db6dcceca7a0c2b90a61490df6466b9bf97c04a57d5f86effbb56c317"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d03f7e0548720b4e5729185ff11d0514b4d7fff2e02fa7710dc662b2ba5c6a0e",
+    "canonical_sha256": "91a3089db6dcceca7a0c2b90a61490df6466b9bf97c04a57d5f86effbb56c317",
+    "pcm_sha256": "de8c9ececc1b115504f159ca5a7e30595c8482ad698be80bb70c0b5202c0cae1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 117120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "刚才说的时间我改一下，不要二十分钟了，十分钟以内就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b81da3b3-c8a4-95f2-a848-6bdb78fb800a",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d03f7e0548720b4e5729185ff11d0514b4d7fff2e02fa7710dc662b2ba5c6a0e",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d03f7e0548720b4e5729185ff11d0514b4d7fff2e02fa7710dc662b2ba5c6a0e",
+        "canonical_audio_sha256": "91a3089db6dcceca7a0c2b90a61490df6466b9bf97c04a57d5f86effbb56c317",
+        "pcm_sha256": "de8c9ececc1b115504f159ca5a7e30595c8482ad698be80bb70c0b5202c0cae1",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/7caa449b0bb9f5daac5abd924903898d.wav",
+  "sha256": "74eadcced3401d5452fb556de3711f5e3a8f2f9421cc7cfa6d3d8ea17ab3a1fa",
+  "duration_seconds": 3.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5440de1a-96cb-909a-9ed2-6054e3ce9387",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 704,
+    "total_tokens": 897,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一个事，新家不是三楼，是五楼，而且没电梯。",
+  "spoken_text": "更正一个事，新家不是三楼，是五楼，而且没电梯。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一个事，新家不是三楼，是五楼，而且没电梯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一个事，新家不是三楼，是五楼，而且没电梯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2179fcfd-d7b8-9673-a185-a762cee2fdaf",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "74eadcced3401d5452fb556de3711f5e3a8f2f9421cc7cfa6d3d8ea17ab3a1fa"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "be3d57df393a680166718a419b06cb14e6fc2e35dc2616a198e2c5aa661b39fb",
+    "canonical_sha256": "74eadcced3401d5452fb556de3711f5e3a8f2f9421cc7cfa6d3d8ea17ab3a1fa",
+    "pcm_sha256": "247c7cab4a54400327e579ec79df034439499750d63d876052dc2aa7e57281b2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 84480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一个事儿，新家不是三楼，是五楼，而且没电梯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一个事儿，新家不是三楼，是五楼，而且没电梯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-39714571-65bf-91f7-bf32-14df084d3dfc",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 209,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "be3d57df393a680166718a419b06cb14e6fc2e35dc2616a198e2c5aa661b39fb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "be3d57df393a680166718a419b06cb14e6fc2e35dc2616a198e2c5aa661b39fb",
+        "canonical_audio_sha256": "74eadcced3401d5452fb556de3711f5e3a8f2f9421cc7cfa6d3d8ea17ab3a1fa",
+        "pcm_sha256": "247c7cab4a54400327e579ec79df034439499750d63d876052dc2aa7e57281b2",
+        "same_samples": true
+      }
+    }
+  ]
+}

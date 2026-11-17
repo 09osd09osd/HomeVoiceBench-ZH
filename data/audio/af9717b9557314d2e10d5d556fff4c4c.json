@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/af9717b9557314d2e10d5d556fff4c4c.wav",
+  "sha256": "9a40858c737b11f7a5c6dea599a8bc909c8aa77f2b4b42080ea1d6e0f6976242",
+  "duration_seconds": 5.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "83aeb29e-f733-9bb4-9290-ac172924d3ab",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 1040,
+    "total_tokens": 1221,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天去给孩子开家长会了，老师说了不少事，我脑子都装满了。",
+  "spoken_text": "今天去给孩子开家长会了，老师说了不少事，我脑子都装满了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天去给孩子开家长会了，老师说了不少事，我脑子都装满了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天去给孩子开家长会了，老师说了不少事，我脑子都装满了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-74169dbf-78fd-9e04-9ba4-8e8e0bd4c5db",
+    "usage": {
+      "prompt_tokens": 244,
+      "total_tokens": 288,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9a40858c737b11f7a5c6dea599a8bc909c8aa77f2b4b42080ea1d6e0f6976242"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0fcc72b3ba14bffbac13c8aa53d60ac250556386678fa1dd2d49acd46abb60fd",
+    "canonical_sha256": "9a40858c737b11f7a5c6dea599a8bc909c8aa77f2b4b42080ea1d6e0f6976242",
+    "pcm_sha256": "dc137b4aca618fb1dfba9f8695519ceaa26ba6ee43bc57767be82fd82cd4b09b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 124800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天去给孩子开家长会了，老师说了不少事，我脑子都装满了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-03d8fbb2-0900-95af-8671-2c4b3666e1fa",
+      "usage": {
+        "prompt_tokens": 160,
+        "total_tokens": 204,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 123
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0fcc72b3ba14bffbac13c8aa53d60ac250556386678fa1dd2d49acd46abb60fd",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0fcc72b3ba14bffbac13c8aa53d60ac250556386678fa1dd2d49acd46abb60fd",
+        "canonical_audio_sha256": "9a40858c737b11f7a5c6dea599a8bc909c8aa77f2b4b42080ea1d6e0f6976242",
+        "pcm_sha256": "dc137b4aca618fb1dfba9f8695519ceaa26ba6ee43bc57767be82fd82cd4b09b",
+        "same_samples": true
+      }
+    }
+  ]
+}

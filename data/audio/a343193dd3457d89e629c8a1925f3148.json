@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a343193dd3457d89e629c8a1925f3148.wav",
+  "sha256": "55b81d2cd54976cd0e459941ed3282ba36082463da3789f810bcbf89ce423044",
+  "duration_seconds": 2.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3b173b90-12b3-98aa-ab24-290b22bdad47",
+  "usage": {
+    "input_tokens": 178,
+    "output_tokens": 416,
+    "total_tokens": 594,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "检查一下客厅音箱是否在线。",
+  "spoken_text": "检查一下客厅音箱是否在线。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "检查一下客厅音箱是否在线。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "检查一下客厅音箱是否在线。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2e19b432-71e9-9cd9-a526-0bea076d9a26",
+    "usage": {
+      "prompt_tokens": 211,
+      "total_tokens": 243,
+      "completion_tokens": 32,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 195
+      },
+      "completion_tokens_details": {
+        "text_tokens": 32
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "55b81d2cd54976cd0e459941ed3282ba36082463da3789f810bcbf89ce423044"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "52db8f90605126ca0265f8b3cfe5cfe51e4ac5d466c2e45e432608569e7453a1",
+    "canonical_sha256": "55b81d2cd54976cd0e459941ed3282ba36082463da3789f810bcbf89ce423044",
+    "pcm_sha256": "a69a3f27e466769c105402799a6bc25878a04ddb6c8d76f250b49c4b302a9945",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 49920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "检查一下客厅音箱是否在线。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "检查一下客厅音箱是否在线。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c87dfcda-b29c-939d-8fdb-9e1900d61e02",
+      "usage": {
+        "prompt_tokens": 150,
+        "total_tokens": 182,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 134
+        },
+        "completion_tokens_details": {
+          "text_tokens": 32
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "52db8f90605126ca0265f8b3cfe5cfe51e4ac5d466c2e45e432608569e7453a1",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "52db8f90605126ca0265f8b3cfe5cfe51e4ac5d466c2e45e432608569e7453a1",
+        "canonical_audio_sha256": "55b81d2cd54976cd0e459941ed3282ba36082463da3789f810bcbf89ce423044",
+        "pcm_sha256": "a69a3f27e466769c105402799a6bc25878a04ddb6c8d76f250b49c4b302a9945",
+        "same_samples": true
+      }
+    }
+  ]
+}

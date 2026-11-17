@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/d9f6bd3700ec2530f80f90513b046c72.wav",
+  "sha256": "695a0216f951d3586ef208a6956275607c445eb471e489faea10e4a5abe660e7",
+  "duration_seconds": 5.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "635a8e12-70db-90c1-9dd0-457478aa682f",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 1184,
+    "total_tokens": 1384,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想把客厅灯的色温调到9000K，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+  "spoken_text": "我想把客厅灯的色温调到九千开尔文，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想把客厅灯的色温调到九千开尔文，你先看看支持不支持，不支持的话就告诉我范围，别动它。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想把客厅灯的色温调到九千开尔文，你先看看支持不支持，不支持的话就告诉我范围，别动它。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-dbc4bb41-09ad-96ea-aa91-1870f20439e5",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 308,
+      "completion_tokens": 54,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 217
+      },
+      "completion_tokens_details": {
+        "text_tokens": 54
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "695a0216f951d3586ef208a6956275607c445eb471e489faea10e4a5abe660e7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "746e3eebaa1e2e32913594bea944b84b4211efdd4fdac4d7f1e66c52ea66f1d0",
+    "canonical_sha256": "695a0216f951d3586ef208a6956275607c445eb471e489faea10e4a5abe660e7",
+    "pcm_sha256": "5a383a7d58ab0ee17722c21d466c9aa4d64403c7a76576dc82f8d212334c6a46",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 142080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想把客厅灯的色温调到九千K，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想把客厅灯的色温调到九千K，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c3714dff-229d-9fb6-bc5c-97ab5f721aa3",
+      "usage": {
+        "prompt_tokens": 193,
+        "total_tokens": 245,
+        "completion_tokens": 52,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 156
+        },
+        "completion_tokens_details": {
+          "text_tokens": 52
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "746e3eebaa1e2e32913594bea944b84b4211efdd4fdac4d7f1e66c52ea66f1d0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "746e3eebaa1e2e32913594bea944b84b4211efdd4fdac4d7f1e66c52ea66f1d0",
+        "canonical_audio_sha256": "695a0216f951d3586ef208a6956275607c445eb471e489faea10e4a5abe660e7",
+        "pcm_sha256": "5a383a7d58ab0ee17722c21d466c9aa4d64403c7a76576dc82f8d212334c6a46",
+        "same_samples": true
+      }
+    }
+  ]
+}

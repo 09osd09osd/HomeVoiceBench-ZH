@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/616e30b41d1a44333cbffcb3563d1a9e.wav",
+  "sha256": "e49295de904b3a8dd568472c65b44a2c7b5ed5275e1cec92479a716097198ac4",
+  "duration_seconds": 4.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b72487d6-cba2-9427-b929-558040353fdc",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 832,
+    "total_tokens": 1025,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "好，那以后就按这个来，现在用一句话简单跟我说下你记住了什么。",
+  "spoken_text": "好，那以后就按这个来，现在用一句话简单跟我说下你记住了什么。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "好，那以后就按这个来。现在用一句话简单跟我说下你记住了什么？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "好，那以后就按这个来。现在用一句话简单跟我说下你记住了什么？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0d444d5e-f738-9bb0-8292-f4db8aa38c50",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e49295de904b3a8dd568472c65b44a2c7b5ed5275e1cec92479a716097198ac4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0897573090d05771b089afaa5acb6edd52e3468558b58c410ac238b4dc79e7ad",
+    "canonical_sha256": "e49295de904b3a8dd568472c65b44a2c7b5ed5275e1cec92479a716097198ac4",
+    "pcm_sha256": "c77effe825c38103183a9a2d3c2243ce1735bcc15c28f195ffef608852c86737",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 99840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "好，那以后就按这个来。现在用一句话简单跟我说下你记住了什么？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0ca50322-9537-942b-aa59-656c81e02390",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 199,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0897573090d05771b089afaa5acb6edd52e3468558b58c410ac238b4dc79e7ad",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0897573090d05771b089afaa5acb6edd52e3468558b58c410ac238b4dc79e7ad",
+        "canonical_audio_sha256": "e49295de904b3a8dd568472c65b44a2c7b5ed5275e1cec92479a716097198ac4",
+        "pcm_sha256": "c77effe825c38103183a9a2d3c2243ce1735bcc15c28f195ffef608852c86737",
+        "same_samples": true
+      }
+    }
+  ]
+}

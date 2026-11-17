@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/87fa389d76a34c09a0e20845906736c3.wav",
+  "sha256": "70644b23967b36027598d6d1a448a4ea7139a946b5463e6d6eb0b99ae241fc3c",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "159adbb5-7110-956a-a307-7c81033de9d9",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 640,
+    "total_tokens": 819,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "明天10点提醒我整理书包。",
+  "spoken_text": "明天十点提醒我整理书包。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "明天十点提醒我整理书包。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "明天十点提醒我整理书包。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e1c8d1f1-0846-93e8-83bb-c208c126b9db",
+    "usage": {
+      "prompt_tokens": 221,
+      "total_tokens": 254,
+      "completion_tokens": 33,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 33
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "70644b23967b36027598d6d1a448a4ea7139a946b5463e6d6eb0b99ae241fc3c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4578491f3eaf573e883ea20f1d74977d9afa376bd218968adba9db47bc0b0a4e",
+    "canonical_sha256": "70644b23967b36027598d6d1a448a4ea7139a946b5463e6d6eb0b99ae241fc3c",
+    "pcm_sha256": "0fb3cc0ef2d4af6f661e938097ae491c311b45e6ddbf6490d4f64459711ee24f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "明天十点提醒我整理书包。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "明天十点提醒我整理书包。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0663bca7-f6e2-9059-9494-9969b68938cb",
+      "usage": {
+        "prompt_tokens": 160,
+        "total_tokens": 193,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 137
+        },
+        "completion_tokens_details": {
+          "text_tokens": 33
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4578491f3eaf573e883ea20f1d74977d9afa376bd218968adba9db47bc0b0a4e",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4578491f3eaf573e883ea20f1d74977d9afa376bd218968adba9db47bc0b0a4e",
+        "canonical_audio_sha256": "70644b23967b36027598d6d1a448a4ea7139a946b5463e6d6eb0b99ae241fc3c",
+        "pcm_sha256": "0fb3cc0ef2d4af6f661e938097ae491c311b45e6ddbf6490d4f64459711ee24f",
+        "same_samples": true
+      }
+    }
+  ]
+}

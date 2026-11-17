@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/8d7eb75ed6f0d779bb08536f248da68d.wav",
+  "sha256": "e9077d7e4430508e754a0361b69db1bc92a61c79e339667c58fc800c64f70be3",
+  "duration_seconds": 4.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "120bdebe-c556-9e8e-bc7a-2c0a66523d35",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 896,
+    "total_tokens": 1079,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子问影子是怎么来的，你能用简单的话解释吗？",
+  "spoken_text": "孩子问影子是怎么来的，你能用简单的话解释吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子问：“影子是怎么来的？”你能用简单的话解释吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子问：“影子是怎么来的？”你能用简单的话解释吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a0afe6d8-4600-985f-a16e-72b17d61a58c",
+    "usage": {
+      "prompt_tokens": 232,
+      "total_tokens": 272,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e9077d7e4430508e754a0361b69db1bc92a61c79e339667c58fc800c64f70be3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3b68ea0ffc2a44ba60989f637a2fe8d3e5906b208f5ebd05400b32ac3e33c24f",
+    "canonical_sha256": "e9077d7e4430508e754a0361b69db1bc92a61c79e339667c58fc800c64f70be3",
+    "pcm_sha256": "8aee104ef4fd5021cc4bfd3e535998b72b47464a1f1aa6ff1a556b673d6fa084",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 107520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子问：“影子是怎么来的？”你能用简单的话解释吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "孩子问：“影子是怎么来的？”你能用简单的话解释吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9037fbc3-c827-92dc-81a7-0f05d47be2a1",
+      "usage": {
+        "prompt_tokens": 171,
+        "total_tokens": 211,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3b68ea0ffc2a44ba60989f637a2fe8d3e5906b208f5ebd05400b32ac3e33c24f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3b68ea0ffc2a44ba60989f637a2fe8d3e5906b208f5ebd05400b32ac3e33c24f",
+        "canonical_audio_sha256": "e9077d7e4430508e754a0361b69db1bc92a61c79e339667c58fc800c64f70be3",
+        "pcm_sha256": "8aee104ef4fd5021cc4bfd3e535998b72b47464a1f1aa6ff1a556b673d6fa084",
+        "same_samples": true
+      }
+    }
+  ]
+}

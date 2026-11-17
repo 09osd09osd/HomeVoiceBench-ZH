@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/12b350e48fe06c29d563e4ff4dce2570.wav",
+  "sha256": "a41eb23e0c4228da4c6504107bcb323fda4fd5806ae8fc1f913467faa6e5dfe6",
+  "duration_seconds": 9.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "550f779a-f47e-969e-a7ec-e58f07d122d8",
+  "usage": {
+    "input_tokens": 225,
+    "output_tokens": 1800,
+    "total_tokens": 2025,
+    "duration": 9
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "前天我跟我爸因为借车的事闹了别扭，我说话有点冲，现在想主动跟他说开，你帮我琢磨几句能说出口的话，承认我当时态度不好，但也别让他觉得我在逼他原谅。",
+  "spoken_text": "前天我跟我爸因为借车的事闹了别扭，我说话有点冲，现在想主动跟他说开，你帮我琢磨几句能说出口的话，承认我当时态度不好，但也别让他觉得我在逼他原谅。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "前天我跟我爸因为借车的事闹了别扭，我说话有点冲。现在想主动跟他说开，你帮我琢磨几句能说出口的话，承认我当时态度不好，但也别让他觉得我在逼他原谅。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "前天我跟我爸因为借车的事闹了别扭，我说话有点冲。现在想主动跟他说开，你帮我琢磨几句能说出口的话，承认我当时态度不好，但也别让他觉得我在逼他原谅。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-93848127-958a-9b69-b6fa-13657a24dc4d",
+    "usage": {
+      "prompt_tokens": 300,
+      "total_tokens": 372,
+      "completion_tokens": 72,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 65,
+        "text_tokens": 235
+      },
+      "completion_tokens_details": {
+        "text_tokens": 72
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a41eb23e0c4228da4c6504107bcb323fda4fd5806ae8fc1f913467faa6e5dfe6"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5a7e1938fe450b349161251d46261d2d27a54ce06c86b443d55ab970623f5215",
+    "canonical_sha256": "a41eb23e0c4228da4c6504107bcb323fda4fd5806ae8fc1f913467faa6e5dfe6",
+    "pcm_sha256": "95288ab449e9dc8bb136bcca10a3c30fcb7e50bfdba5b0360d180135d7e57ac4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 216000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "前天我跟我爸因为借车的事闹了别扭，我说话有点冲，现在想主动跟他说开，你帮我琢磨几句能说出口的话，承认我当时态度不好，但也别让他觉得我在逼他原谅。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3f1bcbd0-0d49-9ca4-a064-079a0a373ea9",
+      "usage": {
+        "prompt_tokens": 216,
+        "total_tokens": 288,
+        "completion_tokens": 72,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 65,
+          "text_tokens": 151
+        },
+        "completion_tokens_details": {
+          "text_tokens": 72
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5a7e1938fe450b349161251d46261d2d27a54ce06c86b443d55ab970623f5215",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5a7e1938fe450b349161251d46261d2d27a54ce06c86b443d55ab970623f5215",
+        "canonical_audio_sha256": "a41eb23e0c4228da4c6504107bcb323fda4fd5806ae8fc1f913467faa6e5dfe6",
+        "pcm_sha256": "95288ab449e9dc8bb136bcca10a3c30fcb7e50bfdba5b0360d180135d7e57ac4",
+        "same_samples": true
+      }
+    }
+  ]
+}

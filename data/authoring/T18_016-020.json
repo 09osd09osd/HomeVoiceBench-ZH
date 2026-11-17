@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "ea69998056419bb330348021266b3468d3211ce28a9d2b6f5d8ba8a6d7d21ca3",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-2b3e19bf-6689-9818-9671-5d7995ecb8fc",
+  "usage": {
+    "prompt_tokens": 4264,
+    "total_tokens": 5483,
+    "completion_tokens": 1219,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4264
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1219
+    }
+  },
+  "review_request_id": "chatcmpl-b375c0da-4f82-9526-9d89-8a688f6ee4d7",
+  "review_usage": {
+    "prompt_tokens": 5105,
+    "total_tokens": 5191,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 5105
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T18_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T18_016",
+        "title": "查客厅照度读数和时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在的照度是多少，告诉我读数和测量时间，只查询，别动别的。",
+            "reference_text": "客厅照度读数是672勒克斯，测量时间是今天18点整，只查询了照度，没有调整任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_017",
+        "title": "先查客厅再查厨房照度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在的照度是多少，告诉我读数和测量时间，只查询，别动别的。",
+            "reference_text": "客厅照度读数是709勒克斯，测量时间是今天18点整，只查询了照度，没有调整任何设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的照度。",
+            "reference_text": "厨房照度读数是429勒克斯，测量时间也是今天18点整，只查询了照度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_018",
+        "title": "查两室照度后做比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在的照度是多少，告诉我读数和测量时间，只查询，别动别的。",
+            "reference_text": "客厅照度读数是746勒克斯，测量时间是今天18点整，只查询了照度，没有调整任何设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的照度。",
+            "reference_text": "厨房照度读数是466勒克斯，测量时间也是今天18点整，只查询了照度。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "客厅746勒克斯，厨房466勒克斯，客厅比厨房高280勒克斯，两个读数都是今天18点整测的，没有调整任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_019",
+        "title": "照度比较并确认读数范围",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在的照度是多少，告诉我读数和测量时间，只查询，别动别的。",
+            "reference_text": "客厅照度读数是83勒克斯，测量时间是今天18点整，只查询了照度，没有调整任何设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的照度。",
+            "reference_text": "厨房照度读数是503勒克斯，测量时间也是今天18点整，只查询了照度。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "客厅83勒克斯，厨房503勒克斯，厨房比客厅高420勒克斯，两个读数都是今天18点整测的，没有调整任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能说明全部情况。这些只是今天18点整的照度读数，有测量时效和传感器范围限制，比如不能识别人的身份，也测不了温度设定值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_020",
+        "title": "照度比较并复查客厅",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在的照度是多少，告诉我读数和测量时间，只查询，别动别的。",
+            "reference_text": "客厅照度读数是120勒克斯，测量时间是今天18点整，只查询了照度，没有调整任何设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的照度。",
+            "reference_text": "厨房照度读数是540勒克斯，测量时间也是今天18点整，只查询了照度。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "客厅120勒克斯，厨房540勒克斯，厨房比客厅高420勒克斯，两个读数都是今天18点整测的，没有调整任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能说明全部情况。这些只是今天18点整的照度读数，有测量时效和传感器范围限制，比如不能识别人的身份，也测不了温度设定值。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后重新查询一下客厅的同一指标。",
+            "reference_text": "客厅照度再次查询，读数还是120勒克斯，测量时间仍是今天18点整，没有变化。"
+          }
+        ]
+      }
+    ]
+  }
+}

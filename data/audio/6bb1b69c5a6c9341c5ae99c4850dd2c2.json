@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6bb1b69c5a6c9341c5ae99c4850dd2c2.wav",
+  "sha256": "cffcd3a94977a407359f7232261fcf6bd39b1042ae1fb8281e973987e7ab0072",
+  "duration_seconds": 5.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "29e61aa6-2e72-94bc-a4c5-68a56f31df0f",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 1120,
+    "total_tokens": 1310,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "早上好，我想边做早饭边听点轻松的播客，最好十分钟以内。",
+  "spoken_text": "早上好，我想边做早饭边听点轻松的播客，最好十分钟以内。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "早上好，我想边做早饭边听点轻松的播客，最好十分钟以内。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "早上好，我想边做早饭边听点轻松的播客，最好十分钟以内。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1e4c558e-5999-97a7-8277-a0171151815b",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 286,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cffcd3a94977a407359f7232261fcf6bd39b1042ae1fb8281e973987e7ab0072"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cec8f782c912a3a4198fd6a658261247691fac7ed082a15c0c2dc8d6526bcb66",
+    "canonical_sha256": "cffcd3a94977a407359f7232261fcf6bd39b1042ae1fb8281e973987e7ab0072",
+    "pcm_sha256": "8cf1500babdb6011f81f1d16afd93f42b56f9fe84c9424d7270b83683c65f536",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 134400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "早上好，我想边做早饭边听点轻松的播客，最好十分钟以内。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7374b3bd-c3d3-9af6-9e95-695319ec9ceb",
+      "usage": {
+        "prompt_tokens": 159,
+        "total_tokens": 202,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cec8f782c912a3a4198fd6a658261247691fac7ed082a15c0c2dc8d6526bcb66",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cec8f782c912a3a4198fd6a658261247691fac7ed082a15c0c2dc8d6526bcb66",
+        "canonical_audio_sha256": "cffcd3a94977a407359f7232261fcf6bd39b1042ae1fb8281e973987e7ab0072",
+        "pcm_sha256": "8cf1500babdb6011f81f1d16afd93f42b56f9fe84c9424d7270b83683c65f536",
+        "same_samples": true
+      }
+    }
+  ]
+}

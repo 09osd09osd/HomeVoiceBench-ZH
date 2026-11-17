@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/0ec389cef7c764bba8629703bace14ee.wav",
+  "sha256": "f570a07942093eba46755ba85b8fc19df395f088e24ad71dd1a59c7d90767d4b",
+  "duration_seconds": 3.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6d9baf94-0630-96e9-95bd-45e824ec451a",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 752,
+    "total_tokens": 935,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "白天还好，就是晚上叫得厉害，我睡觉轻，容易被吵醒。",
+  "spoken_text": "白天还好，就是晚上叫得厉害，我睡觉轻，容易被吵醒。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "白天还好，就是晚上叫得厉害，我睡觉轻，容易被吵醒。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "白天还好，就是晚上叫得厉害，我睡觉轻，容易被吵醒。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ea70c305-cfad-970a-95d1-06d6df8de4a9",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f570a07942093eba46755ba85b8fc19df395f088e24ad71dd1a59c7d90767d4b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f6c405ba7bd8379a5f4dc0a4f3c7a2ff3e654c8532e95ba5755fb3213c8f7120",
+    "canonical_sha256": "f570a07942093eba46755ba85b8fc19df395f088e24ad71dd1a59c7d90767d4b",
+    "pcm_sha256": "0c9a45d290dfc0353f085f169a62c17726a37f036008092452ab2a3f5c42f730",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 90240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "白天还好，就是晚上叫得厉害，我睡觉轻，容易被吵醒。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2e25da7d-2333-986e-b4ef-509ebe7915e1",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f6c405ba7bd8379a5f4dc0a4f3c7a2ff3e654c8532e95ba5755fb3213c8f7120",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f6c405ba7bd8379a5f4dc0a4f3c7a2ff3e654c8532e95ba5755fb3213c8f7120",
+        "canonical_audio_sha256": "f570a07942093eba46755ba85b8fc19df395f088e24ad71dd1a59c7d90767d4b",
+        "pcm_sha256": "0c9a45d290dfc0353f085f169a62c17726a37f036008092452ab2a3f5c42f730",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/3b51f31581e18dc81ad05af8a559aff9.wav",
+  "sha256": "b9dd57b3c22a2dc0d018713b7fad49004dd92d523fef21cac44cc255b8c0ca45",
+  "duration_seconds": 4.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e3c27d5f-e0b7-9c51-8458-5f56152aa2f1",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 864,
+    "total_tokens": 1054,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实错不大，我也认，就是那种被盯着的感觉让我一整天都不自在。",
+  "spoken_text": "其实错不大，我也认，就是那种被盯着的感觉让我一整天都不自在。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实错不大，我也认。就是那种被盯着的感觉让我一整天都不自在。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实错不大，我也认。就是那种被盯着的感觉让我一整天都不自在。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9ab1e3aa-2e06-92ec-929c-2f8390739cbc",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b9dd57b3c22a2dc0d018713b7fad49004dd92d523fef21cac44cc255b8c0ca45"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e2edfa2103b53155eabe76c1f3472b0082438fc7f471cb9f90e29bb6bb78fb67",
+    "canonical_sha256": "b9dd57b3c22a2dc0d018713b7fad49004dd92d523fef21cac44cc255b8c0ca45",
+    "pcm_sha256": "7a365d2497a5dbe6f920a892fc414dd10414019b32536164332b6292f1bb8775",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 103680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实错不大，我也认，就是那种被盯着的感觉让我一整天都不自在。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ed278b92-2d24-92ac-89c8-bf6c5915ec12",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e2edfa2103b53155eabe76c1f3472b0082438fc7f471cb9f90e29bb6bb78fb67",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e2edfa2103b53155eabe76c1f3472b0082438fc7f471cb9f90e29bb6bb78fb67",
+        "canonical_audio_sha256": "b9dd57b3c22a2dc0d018713b7fad49004dd92d523fef21cac44cc255b8c0ca45",
+        "pcm_sha256": "7a365d2497a5dbe6f920a892fc414dd10414019b32536164332b6292f1bb8775",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/db88f32ab84b4152a7d83716cee3069f.wav",
+  "sha256": "4d50d73db71288baff3e78de6f18199dfbefcf5a8a15900a598da7fee619ae94",
+  "duration_seconds": 3.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d031d2af-0dbe-9879-a450-84fb769bf233",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 624,
+    "total_tokens": 805,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "刚才那条安排改为明天10点整。",
+  "spoken_text": "刚才那条安排改为明天十点整。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才那条安排改为明天十点整。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才那条安排改为明天十点整。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-20a04a52-5afe-9d56-80c6-cfcd05699e55",
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 256,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 199
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4d50d73db71288baff3e78de6f18199dfbefcf5a8a15900a598da7fee619ae94"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e99e381b911779563e325caa08cc4e723d723bca0fd5547563c11952a48f1f02",
+    "canonical_sha256": "4d50d73db71288baff3e78de6f18199dfbefcf5a8a15900a598da7fee619ae94",
+    "pcm_sha256": "8799f1ce7c4d7e0ef91d8d74494a0b2407dadef264c52f05700c0affc48d6d95",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 74880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "刚才那条安排改为明天十点整。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "刚才那条安排改为明天十点整。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-8a65551e-3a72-9ef7-8094-591f4d5c270e",
+      "usage": {
+        "prompt_tokens": 161,
+        "total_tokens": 195,
+        "completion_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 138
+        },
+        "completion_tokens_details": {
+          "text_tokens": 34
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e99e381b911779563e325caa08cc4e723d723bca0fd5547563c11952a48f1f02",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e99e381b911779563e325caa08cc4e723d723bca0fd5547563c11952a48f1f02",
+        "canonical_audio_sha256": "4d50d73db71288baff3e78de6f18199dfbefcf5a8a15900a598da7fee619ae94",
+        "pcm_sha256": "8799f1ce7c4d7e0ef91d8d74494a0b2407dadef264c52f05700c0affc48d6d95",
+        "same_samples": true
+      }
+    }
+  ]
+}

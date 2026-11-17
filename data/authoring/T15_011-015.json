@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "22b1513058cd8d3ea0b63c64835176a6eccd744f2d02d9e09ad5cc8dd0bd388a",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-e05a7dc1-cad5-960a-940d-4811dbe4bfe6",
+  "usage": {
+    "prompt_tokens": 11829,
+    "total_tokens": 12858,
+    "completion_tokens": 1029,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11829
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1029
+    }
+  },
+  "review_request_id": "chatcmpl-97e94573-79e3-90fe-bf99-0370bc7b455f",
+  "review_usage": {
+    "prompt_tokens": 12482,
+    "total_tokens": 12568,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12482
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T15_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T15_011",
+        "title": "多盏灯时未指定房间，先问清再操作",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "哎，帮我把灯打开到60%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您说的是哪一盏？告诉我房间，我再操作。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_012",
+        "title": "确认书房灯后开至60%且不动其他灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "哎，帮我把灯打开到60%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您说的是哪一盏？告诉我房间，我再操作。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是书房灯，打开到60%，其他灯别动。",
+            "reference_text": "好的，书房灯已打开，亮度调到60%，其他灯没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_013",
+        "title": "澄清书房灯后只查询亮度，不关灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "哎，帮我把灯打开到60%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您说的是哪一盏？告诉我房间，我再操作。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是书房灯，打开到60%，其他灯别动。",
+            "reference_text": "好的，书房灯已打开，亮度调到60%，其他灯没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "书房灯现在是开着的，亮度60%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_014",
+        "title": "查完亮度后明确关灯并保留亮度设置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "哎，帮我把灯打开到60%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您说的是哪一盏？告诉我房间，我再操作。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是书房灯，打开到60%，其他灯别动。",
+            "reference_text": "好的，书房灯已打开，亮度调到60%，其他灯没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "书房灯现在是开着的，亮度60%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在明确关掉刚才那盏灯，亮度设置保留。",
+            "reference_text": "书房灯已经关了，亮度设置还是60%，保留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_015",
+        "title": "五轮澄清后总结书房灯开关与亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "哎，帮我把灯打开到60%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您说的是哪一盏？告诉我房间，我再操作。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是书房灯，打开到60%，其他灯别动。",
+            "reference_text": "好的，书房灯已打开，亮度调到60%，其他灯没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "书房灯现在是开着的，亮度60%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在明确关掉刚才那盏灯，亮度设置保留。",
+            "reference_text": "书房灯已经关了，亮度设置还是60%，保留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "总结我的澄清：最终是哪盏灯，开关与亮度各怎样？",
+            "reference_text": "最终是书房灯，现在是关着的，亮度设置保留在60%。"
+          }
+        ]
+      }
+    ]
+  }
+}

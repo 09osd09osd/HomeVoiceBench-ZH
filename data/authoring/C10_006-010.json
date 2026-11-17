@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "ff38d3db36031a84df4b6be2ecf58d67ff0cbf4acf0309b50d42ec88e86530a0",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-9ed3e744-c16f-902f-a8ad-7733168ad442",
+  "usage": {
+    "prompt_tokens": 1815,
+    "total_tokens": 3007,
+    "completion_tokens": 1192,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1815
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1192
+    }
+  },
+  "review_request_id": "chatcmpl-f1cdf790-6235-999e-8d85-bc3a08e33486",
+  "review_usage": {
+    "prompt_tokens": 2629,
+    "total_tokens": 2715,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2629
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C10_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C10_006",
+        "title": "晚间任务先后讨论",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚有点累，想安排一下先做什么后做什么，就聊聊，不用设提醒。",
+            "reference_text": "好的，就聊聊不设提醒。你想先说说有哪些事，我帮你理理先后。"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_007",
+        "title": "晚间任务偏好补充",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚有点累，想安排一下先做什么后做什么，就聊聊，不用设提醒。",
+            "reference_text": "好的，就聊聊不设提醒。你想先说说有哪些事，我帮你理理先后。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+            "reference_text": "明白，先轻松后难，压力小一点。那我们可以把简单的事排前面，难一点的放后面再聊。"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_008",
+        "title": "晚间任务细节更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚有点累，想安排一下先做什么后做什么，就聊聊，不用设提醒。",
+            "reference_text": "好的，就聊聊不设提醒。你想先说说有哪些事，我帮你理理先后。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+            "reference_text": "明白，先轻松后难，压力小一点。那我们可以把简单的事排前面，难一点的放后面再聊。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是先做轻松，是先做简单的，难度和累不累是两回事。",
+            "reference_text": "好的，更正为先做简单的，不是先做轻松的。那我们按简单到复杂来排，不按累不累分。"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_009",
+        "title": "晚间任务记忆检验",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚有点累，想安排一下先做什么后做什么，就聊聊，不用设提醒。",
+            "reference_text": "好的，就聊聊不设提醒。你想先说说有哪些事，我帮你理理先后。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+            "reference_text": "明白，先轻松后难，压力小一点。那我们可以把简单的事排前面，难一点的放后面再聊。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是先做轻松，是先做简单的，难度和累不累是两回事。",
+            "reference_text": "好的，更正为先做简单的，不是先做轻松的。那我们按简单到复杂来排，不按累不累分。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我刚才改的是哪一点吗？我们接着按这个来聊。",
+            "reference_text": "记得，你改的是先做简单的，不是先做轻松的。我们就按简单到复杂接着聊。"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_010",
+        "title": "晚间任务简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚有点累，想安排一下先做什么后做什么，就聊聊，不用设提醒。",
+            "reference_text": "好的，就聊聊不设提醒。你想先说说有哪些事，我帮你理理先后。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想先做轻松的，难的留到后面，这样没那么大压力。",
+            "reference_text": "明白，先轻松后难，压力小一点。那我们可以把简单的事排前面，难一点的放后面再聊。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是先做轻松，是先做简单的，难度和累不累是两回事。",
+            "reference_text": "好的，更正为先做简单的，不是先做轻松的。那我们按简单到复杂来排，不按累不累分。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我刚才改的是哪一点吗？我们接着按这个来聊。",
+            "reference_text": "记得，你改的是先做简单的，不是先做轻松的。我们就按简单到复杂接着聊。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好，那就用简短的方式收个尾吧，不用设提醒。",
+            "reference_text": "好，简短收尾：先做简单的，再做复杂的，不设提醒。累了就早点休息。"
+          }
+        ]
+      }
+    ]
+  }
+}

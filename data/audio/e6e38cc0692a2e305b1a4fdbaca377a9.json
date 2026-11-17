@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e6e38cc0692a2e305b1a4fdbaca377a9.wav",
+  "sha256": "a571ad84a2b46b6de6fba6876ae55c28d31db5297e17228b07b621447db43a6b",
+  "duration_seconds": 5.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "fe9f6276-c717-90d5-8bc4-561261199c91",
+  "usage": {
+    "input_tokens": 254,
+    "output_tokens": 1048,
+    "total_tokens": 1302,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我家孩子说好八点回家，现在都九点半了还没到，电话也不接，我心里特别慌，你能陪我说说话吗？",
+  "spoken_text": "我家孩子说好八点回家，现在都九点半了还没到，电话也不接，我心里特别慌，你能陪我说说话吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我家孩子说好八点回家，现在都九点半了还没到，电话也不接，我心里特别慌，你能陪我说说话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我家孩子说好八点回家，现在都九点半了还没到，电话也不接，我心里特别慌，你能陪我说说话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3be9058b-94ce-97b9-83a7-b15923b5edc0",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 308,
+      "completion_tokens": 54,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 217
+      },
+      "completion_tokens_details": {
+        "text_tokens": 54
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a571ad84a2b46b6de6fba6876ae55c28d31db5297e17228b07b621447db43a6b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "15fc52d40d9ba0279305a8009c08a7e4037d30dea3f6b32a378cbeb0589550d3",
+    "canonical_sha256": "a571ad84a2b46b6de6fba6876ae55c28d31db5297e17228b07b621447db43a6b",
+    "pcm_sha256": "516f288055ebdf610876f035a378b498e1c0b1cb21394bc11e0f057e35db168d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 125760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我家孩子说好八点回家，现在都九点半了还没到，电话也不接，我心里特别慌，你能陪我说说话吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-681e96a2-cacc-9a62-ae6e-71cb350f8a75",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 224,
+        "completion_tokens": 54,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 133
+        },
+        "completion_tokens_details": {
+          "text_tokens": 54
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "15fc52d40d9ba0279305a8009c08a7e4037d30dea3f6b32a378cbeb0589550d3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "15fc52d40d9ba0279305a8009c08a7e4037d30dea3f6b32a378cbeb0589550d3",
+        "canonical_audio_sha256": "a571ad84a2b46b6de6fba6876ae55c28d31db5297e17228b07b621447db43a6b",
+        "pcm_sha256": "516f288055ebdf610876f035a378b498e1c0b1cb21394bc11e0f057e35db168d",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "system": "qwen35_4b",
+  "case_id": "T27_009",
+  "reason": "Local loopback transport failed with URLError / WinError 10060 during model call 3, before any response for user node U2. This is a connection failure, not a model response or score-based retry.",
+  "observed_execution": {
+    "status": "failed",
+    "model_calls": 3,
+    "tool_calls": 1,
+    "wall_seconds": 23.859000000054948,
+    "flags": [
+      "URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>"
+    ],
+    "timing_scope": "interaction_stage; offline ASR and baseline batch TTS reported separately"
+  },
+  "original_sha256": "7f4b19da71dcad27a0e16a9554c6f722c74c8bab0bb4903e5576493d3332bc27",
+  "procedure": "After current TTS/judge stream finishes, archive the full original run and runtime metadata, then resume the same four-slot model and official sampling profile for the single missing case. Retain any genuine model failure from the retry.",
+  "archived_run": "runs/infra_attempts/loopback_timeout_4b/T27_009.json",
+  "retry_started_at_unix": 1794872688.2501097,
+  "retry_finished_at_unix": 1794872803.1985698,
+  "retry_execution": {
+    "status": "completed",
+    "model_calls": 8,
+    "tool_calls": 4,
+    "wall_seconds": 3.952999999979511,
+    "flags": [],
+    "timing_scope": "interaction_stage; offline ASR and baseline batch TTS reported separately"
+  },
+  "retry_case_pass": true,
+  "retry_sha256": "10bcd15b1899340817d8904382e95d0f8c593ca8de26a26f305bfd2411eb10c3",
+  "retry_policy": "One reviewed transport retry; genuine model outcome retained without quality-based reruns"
+}

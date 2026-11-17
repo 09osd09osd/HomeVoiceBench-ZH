@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/7e6f42f2b5c6ef8bd25310c9581d9104.wav",
+  "sha256": "b766ed5235b912c92ad6adf23b243cbc20cf5ceb2539675c9b477cd23b03e847",
+  "duration_seconds": 3.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6135598b-b433-9bec-aafc-92ecb99b97be",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 768,
+    "total_tokens": 949,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把书房灯的亮度改成40%，其他设置别动。",
+  "spoken_text": "把书房灯的亮度改成百分之四十，其他设置别动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把书房灯的亮度改成百分之四十，其他设置别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把书房灯的亮度改成百分之四十，其他设置别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d7a7c311-353f-9b94-bfcb-445de2e94449",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b766ed5235b912c92ad6adf23b243cbc20cf5ceb2539675c9b477cd23b03e847"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c841802211d3d449188942537ead4e081c00689527afd4e229615decb0eb9115",
+    "canonical_sha256": "b766ed5235b912c92ad6adf23b243cbc20cf5ceb2539675c9b477cd23b03e847",
+    "pcm_sha256": "a2a1cfff327fb610a94665b4731aa76b820d44ee837d7aa2ce4131ef617f2af1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 92160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把书房灯的亮度改成百分之四十，其他设置别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把书房灯的亮度改成百分之四十，其他设置别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-51e0564b-290d-98d9-b44f-2474264dc162",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 203,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c841802211d3d449188942537ead4e081c00689527afd4e229615decb0eb9115",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c841802211d3d449188942537ead4e081c00689527afd4e229615decb0eb9115",
+        "canonical_audio_sha256": "b766ed5235b912c92ad6adf23b243cbc20cf5ceb2539675c9b477cd23b03e847",
+        "pcm_sha256": "a2a1cfff327fb610a94665b4731aa76b820d44ee837d7aa2ce4131ef617f2af1",
+        "same_samples": true
+      }
+    }
+  ]
+}

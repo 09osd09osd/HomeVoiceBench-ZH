@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b18c7dd4c1bf2da22a52063e8c16281b.wav",
+  "sha256": "7bf844dafd3a2c012f4df29c60874dde8bc7995bb32756d34bdf8b7c30199e78",
+  "duration_seconds": 3.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "44dd8ac0-6143-9bb5-81dc-1633dfcf474e",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 664,
+    "total_tokens": 840,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "嗯，先这样吧，你简单说两句总结一下就行。",
+  "spoken_text": "嗯，先这样吧，你简单说两句总结一下就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "嗯，先这样吧，你简单说两句总结一下就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "嗯，先这样吧，你简单说两句总结一下就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f8b836c1-780a-9656-968e-203782b78163",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7bf844dafd3a2c012f4df29c60874dde8bc7995bb32756d34bdf8b7c30199e78"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d49b298a22ca0489c73611227fafc051eddc3564c64b542e08d73f25cfce617a",
+    "canonical_sha256": "7bf844dafd3a2c012f4df29c60874dde8bc7995bb32756d34bdf8b7c30199e78",
+    "pcm_sha256": "25cdf5c1541266c04fb249324e5c87d9fa5ad2ae617dca497562e4ca416a63d4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 79680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "嗯，先这样吧，你简单说两句总结一下就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b2392925-51aa-9f20-9229-04b2beddbbec",
+      "usage": {
+        "prompt_tokens": 141,
+        "total_tokens": 180,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d49b298a22ca0489c73611227fafc051eddc3564c64b542e08d73f25cfce617a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d49b298a22ca0489c73611227fafc051eddc3564c64b542e08d73f25cfce617a",
+        "canonical_audio_sha256": "7bf844dafd3a2c012f4df29c60874dde8bc7995bb32756d34bdf8b7c30199e78",
+        "pcm_sha256": "25cdf5c1541266c04fb249324e5c87d9fa5ad2ae617dca497562e4ca416a63d4",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,722 @@
+{
+  "source": "actual frozen-case run files",
+  "interpretation": "Error counts describe observed behavior; no causal attribution or test-set tuning. Length groups use planned turns, not fewer completed turns after failure.",
+  "systems": {
+    "edge_native": {
+      "runs": 1000,
+      "execution_flags": {
+        "ValueError: tool_call_budget_exceeded": 191,
+        "output_token_budget_exceeded": 15,
+        "ValueError: malformed tool call": 2
+      },
+      "failed_rule_ids": {
+        "S1": 379,
+        "S2": 355,
+        "S3": 272,
+        "NO_TOOLS": 247,
+        "S4": 167,
+        "NO_EXTRA": 101,
+        "S5": 86
+      },
+      "tool_error_counts": [
+        {
+          "tool": "schedule_create",
+          "code": "INVALID_ARGUMENT",
+          "count": 391
+        },
+        {
+          "tool": "device_set",
+          "code": "NOT_FOUND",
+          "count": 359
+        },
+        {
+          "tool": "device_get",
+          "code": "NOT_FOUND",
+          "count": 280
+        },
+        {
+          "tool": "sensor_read",
+          "code": "NOT_FOUND",
+          "count": 153
+        },
+        {
+          "tool": "media_play",
+          "code": "NOT_FOUND",
+          "count": 113
+        },
+        {
+          "tool": "task_get",
+          "code": "NOT_FOUND",
+          "count": 39
+        },
+        {
+          "tool": "media_control",
+          "code": "NOT_FOUND",
+          "count": 31
+        },
+        {
+          "tool": "schedule_update",
+          "code": "INVALID_ARGUMENT",
+          "count": 26
+        },
+        {
+          "tool": "device_list",
+          "code": "INVALID_ARGUMENT",
+          "count": 12
+        },
+        {
+          "tool": "schedule_list",
+          "code": "INVALID_ARGUMENT",
+          "count": 7
+        },
+        {
+          "tool": "device_set",
+          "code": "DEVICE_OFFLINE",
+          "count": 5
+        },
+        {
+          "tool": "media_play",
+          "code": "CONFLICT",
+          "count": 4
+        },
+        {
+          "tool": "device_set",
+          "code": "INVALID_ARGUMENT",
+          "count": 3
+        },
+        {
+          "tool": "task_cancel",
+          "code": "NOT_FOUND",
+          "count": 2
+        },
+        {
+          "tool": "media_search",
+          "code": "INVALID_ARGUMENT",
+          "count": 2
+        },
+        {
+          "tool": "media_play",
+          "code": "INVALID_ARGUMENT",
+          "count": 2
+        },
+        {
+          "tool": "schedule_get",
+          "code": "UNSUPPORTED_OPERATION",
+          "count": 1
+        },
+        {
+          "tool": "device_set",
+          "code": "CONFLICT",
+          "count": 1
+        }
+      ],
+      "normalization": {
+        "completed_turns": 2459,
+        "changed_spoken_text_turns": 686,
+        "raw_numeric_or_unit_turns": 550,
+        "remaining_arabic_digit_turns": 0
+      },
+      "native_infer_batch_counts": {
+        "1": 380,
+        "2": 1722,
+        "3": 2340,
+        "4": 804
+      },
+      "by_planned_dialogue_length": [
+        {
+          "category": "tool",
+          "planned_user_turns": 1,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 20,
+          "strict_pass_rate": 0.16666666666666666
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 2,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 14,
+          "strict_pass_rate": 0.11666666666666667
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 3,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 12,
+          "strict_pass_rate": 0.1
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 4,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 16,
+          "strict_pass_rate": 0.13333333333333333
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 5,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 13,
+          "strict_pass_rate": 0.10833333333333334
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 1,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 18,
+          "strict_pass_rate": 0.225
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 2,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 7,
+          "strict_pass_rate": 0.0875
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 3,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 10,
+          "strict_pass_rate": 0.125
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 4,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 4,
+          "strict_pass_rate": 0.05
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 5,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 2,
+          "strict_pass_rate": 0.025
+        }
+      ],
+      "audio_output": {
+        "completed_turns_with_audio": 2459,
+        "unique_output_waveforms": 1346,
+        "hit_frame_budget_turns": 0,
+        "cases_with_frame_budget_hit": 0,
+        "median_duration_s": 7.04,
+        "max_duration_s": 65.04,
+        "scope": "actual completed audio turns; repeated cached waveforms remain represented per occurrence"
+      }
+    },
+    "qwen35_2b": {
+      "runs": 1000,
+      "execution_flags": {
+        "ValueError: tool_call_budget_exceeded": 234,
+        "output_token_budget_exceeded": 7,
+        "RuntimeError: Local inference HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (8194 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":8194,\"n_ctx\":8192}}": 1,
+        "RuntimeError: Local inference HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (9528 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":9528,\"n_ctx\":8192}}": 1,
+        "RuntimeError: Local inference HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (8319 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":8319,\"n_ctx\":8192}}": 1,
+        "RuntimeError: Local inference HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (9081 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":9081,\"n_ctx\":8192}}": 1,
+        "RuntimeError: Local inference HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (8225 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":8225,\"n_ctx\":8192}}": 1,
+        "RuntimeError: Local inference HTTP 400: {\"error\":{\"code\":400,\"message\":\"request (8568 tokens) exceeds the available context size (8192 tokens), try increasing it\",\"type\":\"exceed_context_size_error\",\"n_prompt_tokens\":8568,\"n_ctx\":8192}}": 1,
+        "JSONDecodeError: Expecting value: line 1 column 128 (char 127)": 1
+      },
+      "failed_rule_ids": {
+        "S1": 362,
+        "S2": 334,
+        "NO_TOOLS": 325,
+        "S3": 260,
+        "S4": 145,
+        "NO_EXTRA": 129,
+        "S5": 74
+      },
+      "tool_error_counts": [
+        {
+          "tool": "schedule_create",
+          "code": "INVALID_ARGUMENT",
+          "count": 265
+        },
+        {
+          "tool": "sensor_read",
+          "code": "NOT_FOUND",
+          "count": 160
+        },
+        {
+          "tool": "device_get",
+          "code": "NOT_FOUND",
+          "count": 157
+        },
+        {
+          "tool": "media_play",
+          "code": "NOT_FOUND",
+          "count": 45
+        },
+        {
+          "tool": "device_set",
+          "code": "NOT_FOUND",
+          "count": 43
+        },
+        {
+          "tool": "schedule_cancel",
+          "code": "NOT_FOUND",
+          "count": 30
+        },
+        {
+          "tool": "schedule_create",
+          "code": "INVALID_TIME",
+          "count": 27
+        },
+        {
+          "tool": "schedule_list",
+          "code": "INVALID_ARGUMENT",
+          "count": 22
+        },
+        {
+          "tool": "media_control",
+          "code": "NOT_FOUND",
+          "count": 22
+        },
+        {
+          "tool": "schedule_update",
+          "code": "NOT_FOUND",
+          "count": 19
+        },
+        {
+          "tool": "schedule_update",
+          "code": "INVALID_ARGUMENT",
+          "count": 18
+        },
+        {
+          "tool": "device_set",
+          "code": "CONFLICT",
+          "count": 13
+        },
+        {
+          "tool": "device_list",
+          "code": "INVALID_ARGUMENT",
+          "count": 8
+        },
+        {
+          "tool": "device_set",
+          "code": "UNSUPPORTED_OPERATION",
+          "count": 8
+        },
+        {
+          "tool": "task_get",
+          "code": "NOT_FOUND",
+          "count": 6
+        },
+        {
+          "tool": "device_set",
+          "code": "DEVICE_OFFLINE",
+          "count": 5
+        },
+        {
+          "tool": "task_cancel",
+          "code": "NOT_CANCELLABLE",
+          "count": 4
+        },
+        {
+          "tool": "media_control",
+          "code": "INVALID_ARGUMENT",
+          "count": 3
+        },
+        {
+          "tool": "schedule_update",
+          "code": "INVALID_TIME",
+          "count": 3
+        },
+        {
+          "tool": "task_cancel",
+          "code": "NOT_FOUND",
+          "count": 3
+        },
+        {
+          "tool": "media_search",
+          "code": "INVALID_ARGUMENT",
+          "count": 2
+        },
+        {
+          "tool": "device_set",
+          "code": "TRANSIENT_FAILURE",
+          "count": 2
+        },
+        {
+          "tool": "media_play",
+          "code": "CONFLICT",
+          "count": 2
+        },
+        {
+          "tool": "device_set",
+          "code": "OUT_OF_RANGE",
+          "count": 1
+        },
+        {
+          "tool": "device_set",
+          "code": "TIMEOUT",
+          "count": 1
+        },
+        {
+          "tool": "schedule_create",
+          "code": "NOT_FOUND",
+          "count": 1
+        },
+        {
+          "tool": "schedule_cancel",
+          "code": "CONFLICT",
+          "count": 1
+        }
+      ],
+      "normalization": {
+        "completed_turns": 2377,
+        "changed_spoken_text_turns": 1654,
+        "raw_numeric_or_unit_turns": 1200,
+        "remaining_arabic_digit_turns": 0
+      },
+      "native_infer_batch_counts": {},
+      "by_planned_dialogue_length": [
+        {
+          "category": "tool",
+          "planned_user_turns": 1,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 27,
+          "strict_pass_rate": 0.225
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 2,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 22,
+          "strict_pass_rate": 0.18333333333333332
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 3,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 18,
+          "strict_pass_rate": 0.15
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 4,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 15,
+          "strict_pass_rate": 0.125
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 5,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 18,
+          "strict_pass_rate": 0.15
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 1,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 4,
+          "strict_pass_rate": 0.05
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 2,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 0,
+          "strict_pass_rate": 0.0
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 3,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 0,
+          "strict_pass_rate": 0.0
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 4,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 1,
+          "strict_pass_rate": 0.0125
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 5,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 0,
+          "strict_pass_rate": 0.0
+        }
+      ],
+      "audio_output": {
+        "completed_turns_with_audio": 2377,
+        "unique_output_waveforms": 2285,
+        "hit_frame_budget_turns": 79,
+        "cases_with_frame_budget_hit": 59,
+        "median_duration_s": 20.08,
+        "max_duration_s": 81.84,
+        "scope": "actual completed audio turns; repeated cached waveforms remain represented per occurrence"
+      }
+    },
+    "qwen35_4b": {
+      "runs": 1000,
+      "execution_flags": {
+        "ValueError: tool_call_budget_exceeded": 44,
+        "output_token_budget_exceeded": 9
+      },
+      "failed_rule_ids": {
+        "S1": 264,
+        "S2": 226,
+        "S3": 173,
+        "S4": 99,
+        "NO_TOOLS": 77,
+        "S5": 52,
+        "NO_EXTRA": 45
+      },
+      "tool_error_counts": [
+        {
+          "tool": "schedule_create",
+          "code": "INVALID_ARGUMENT",
+          "count": 80
+        },
+        {
+          "tool": "sensor_read",
+          "code": "NOT_FOUND",
+          "count": 75
+        },
+        {
+          "tool": "device_get",
+          "code": "NOT_FOUND",
+          "count": 49
+        },
+        {
+          "tool": "schedule_update",
+          "code": "INVALID_ARGUMENT",
+          "count": 17
+        },
+        {
+          "tool": "device_set",
+          "code": "UNSUPPORTED_OPERATION",
+          "count": 12
+        },
+        {
+          "tool": "device_set",
+          "code": "NOT_FOUND",
+          "count": 10
+        },
+        {
+          "tool": "device_set",
+          "code": "CONFLICT",
+          "count": 9
+        },
+        {
+          "tool": "task_get",
+          "code": "NOT_FOUND",
+          "count": 9
+        },
+        {
+          "tool": "device_set",
+          "code": "DEVICE_OFFLINE",
+          "count": 7
+        },
+        {
+          "tool": "media_control",
+          "code": "NOT_FOUND",
+          "count": 6
+        },
+        {
+          "tool": "device_set",
+          "code": "TIMEOUT",
+          "count": 3
+        },
+        {
+          "tool": "schedule_create",
+          "code": "INVALID_TIME",
+          "count": 3
+        },
+        {
+          "tool": "media_play",
+          "code": "NOT_FOUND",
+          "count": 3
+        },
+        {
+          "tool": "device_list",
+          "code": "INVALID_ARGUMENT",
+          "count": 2
+        },
+        {
+          "tool": "device_set",
+          "code": "TRANSIENT_FAILURE",
+          "count": 2
+        },
+        {
+          "tool": "schedule_cancel",
+          "code": "NOT_FOUND",
+          "count": 2
+        },
+        {
+          "tool": "schedule_update",
+          "code": "NOT_FOUND",
+          "count": 2
+        },
+        {
+          "tool": "schedule_list",
+          "code": "INVALID_ARGUMENT",
+          "count": 1
+        },
+        {
+          "tool": "media_play",
+          "code": "DEVICE_OFFLINE",
+          "count": 1
+        },
+        {
+          "tool": "task_cancel",
+          "code": "NOT_FOUND",
+          "count": 1
+        }
+      ],
+      "normalization": {
+        "completed_turns": 2982,
+        "changed_spoken_text_turns": 1917,
+        "raw_numeric_or_unit_turns": 1431,
+        "remaining_arabic_digit_turns": 0
+      },
+      "native_infer_batch_counts": {},
+      "by_planned_dialogue_length": [
+        {
+          "category": "tool",
+          "planned_user_turns": 1,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 35,
+          "strict_pass_rate": 0.2916666666666667
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 2,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 31,
+          "strict_pass_rate": 0.25833333333333336
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 3,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 26,
+          "strict_pass_rate": 0.21666666666666667
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 4,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 26,
+          "strict_pass_rate": 0.21666666666666667
+        },
+        {
+          "category": "tool",
+          "planned_user_turns": 5,
+          "planned_cases": 120,
+          "run_cases": 120,
+          "decided_cases": 120,
+          "passed_cases": 25,
+          "strict_pass_rate": 0.20833333333333334
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 1,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 35,
+          "strict_pass_rate": 0.4375
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 2,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 29,
+          "strict_pass_rate": 0.3625
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 3,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 23,
+          "strict_pass_rate": 0.2875
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 4,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 13,
+          "strict_pass_rate": 0.1625
+        },
+        {
+          "category": "chat",
+          "planned_user_turns": 5,
+          "planned_cases": 80,
+          "run_cases": 80,
+          "decided_cases": 80,
+          "passed_cases": 16,
+          "strict_pass_rate": 0.2
+        }
+      ],
+      "audio_output": {
+        "completed_turns_with_audio": 2982,
+        "unique_output_waveforms": 2903,
+        "hit_frame_budget_turns": 159,
+        "cases_with_frame_budget_hit": 99,
+        "median_duration_s": 24.36,
+        "max_duration_s": 81.84,
+        "scope": "actual completed audio turns; repeated cached waveforms remain represented per occurrence"
+      }
+    }
+  }
+}

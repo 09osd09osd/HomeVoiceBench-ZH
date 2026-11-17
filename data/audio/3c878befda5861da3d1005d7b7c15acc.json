@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/3c878befda5861da3d1005d7b7c15acc.wav",
+  "sha256": "b9bc713fb72a9d04254cfa17fe3fa260eef442411859f704929fb749fbc4a657",
+  "duration_seconds": 4.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2e8160da-cb0d-97b0-8af9-46214c305967",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 864,
+    "total_tokens": 1055,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我刚才把轮换周期改成什么了吗？我想确认一下再说给家人听。",
+  "spoken_text": "你还记得我刚才把轮换周期改成什么了吗？我想确认一下再说给家人听。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我刚才把轮换周期改成什么了吗？我想确认一下再说给家人听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我刚才把轮换周期改成什么了吗？我想确认一下再说给家人听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-20725e41-1a7d-9d70-803d-75f6e1299730",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b9bc713fb72a9d04254cfa17fe3fa260eef442411859f704929fb749fbc4a657"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3dc7ccd78e0b9308a1e05d1e896066aa87cc0d7ae098a9921c6e1203bf80c701",
+    "canonical_sha256": "b9bc713fb72a9d04254cfa17fe3fa260eef442411859f704929fb749fbc4a657",
+    "pcm_sha256": "ed0e7980f1d370ef41b12ef9107d7311e5a2cc0df1cf2186e8d5cc59dbacc77b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 103680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我刚才把轮换周期改成什么了吗？我想确认一下再说给家人听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b5c7f6f2-fc0f-9cc1-b51e-7c549dbd5b16",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 199,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3dc7ccd78e0b9308a1e05d1e896066aa87cc0d7ae098a9921c6e1203bf80c701",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3dc7ccd78e0b9308a1e05d1e896066aa87cc0d7ae098a9921c6e1203bf80c701",
+        "canonical_audio_sha256": "b9bc713fb72a9d04254cfa17fe3fa260eef442411859f704929fb749fbc4a657",
+        "pcm_sha256": "ed0e7980f1d370ef41b12ef9107d7311e5a2cc0df1cf2186e8d5cc59dbacc77b",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/87eb6811ebdd027748b0315874e6ea2d.wav",
+  "sha256": "15bae3dd1349a05e2eeb94066b425ede16f90c29c2d5105e7f2a5d5d5ed1efd3",
+  "duration_seconds": 3.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b9cf5990-a18d-9c5c-985f-2a0d1f2d1ffc",
+  "usage": {
+    "input_tokens": 212,
+    "output_tokens": 720,
+    "total_tokens": 932,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "晚上好，我有点疲惫，想睡前随便聊几句，别太热闹。",
+  "spoken_text": "晚上好，我有点疲惫，想睡前随便聊几句，别太热闹。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "晚上好，我有点疲惫，想睡前随便聊几句，别太热闹。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "晚上好，我有点疲惫，想睡前随便聊几句，别太热闹。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5133ee93-6140-9d2d-812b-d8d15368912c",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "15bae3dd1349a05e2eeb94066b425ede16f90c29c2d5105e7f2a5d5d5ed1efd3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "80b9485bd8ffd6c4792477c3b28c6e57135abe3f4f65a2976a9097ad7415718d",
+    "canonical_sha256": "15bae3dd1349a05e2eeb94066b425ede16f90c29c2d5105e7f2a5d5d5ed1efd3",
+    "pcm_sha256": "64443a957a297aa39a8074c3f94a786510e8375ea3620d1a45eee45ad7d77173",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 86400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "晚上好，我有点疲惫，想睡前随便聊几句，别太热闹。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-42d9398a-b9f9-949a-9278-bfbc7de9ea69",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "80b9485bd8ffd6c4792477c3b28c6e57135abe3f4f65a2976a9097ad7415718d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "80b9485bd8ffd6c4792477c3b28c6e57135abe3f4f65a2976a9097ad7415718d",
+        "canonical_audio_sha256": "15bae3dd1349a05e2eeb94066b425ede16f90c29c2d5105e7f2a5d5d5ed1efd3",
+        "pcm_sha256": "64443a957a297aa39a8074c3f94a786510e8375ea3620d1a45eee45ad7d77173",
+        "same_samples": true
+      }
+    }
+  ]
+}

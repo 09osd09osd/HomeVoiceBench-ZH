@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/44c9fa5b7b1d7c2c8c0fed8fe9e908cf.wav",
+  "sha256": "9744537161ab4911f641718d4c1748f9c17adc986bc13f172a29905b6566ea9b",
+  "duration_seconds": 2.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "46f8a2af-1bb8-9532-a6af-119e4c6a2653",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 592,
+    "total_tokens": 779,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，刚说错了，加班是周日不是周六。",
+  "spoken_text": "对了，刚说错了，加班是周日不是周六。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，刚说错了，加班是周日，不是周六。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，刚说错了，加班是周日，不是周六。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b9d96a06-e4f2-9dd1-ace6-6b6165a0ad16",
+    "usage": {
+      "prompt_tokens": 217,
+      "total_tokens": 256,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9744537161ab4911f641718d4c1748f9c17adc986bc13f172a29905b6566ea9b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ce0e5057c9bacf506a873ea48eea5d2c70649c0f5ad3cc85eb1a31591fc75f3c",
+    "canonical_sha256": "9744537161ab4911f641718d4c1748f9c17adc986bc13f172a29905b6566ea9b",
+    "pcm_sha256": "56db72fd27a934626cb87ed89ec883b4ce8c5a2e36b966f89f527e029712ae0f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 71040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，刚说错了，加班是周日不是周六。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c62e3f2c-9f7e-9f93-9253-df8e92b66d2b",
+      "usage": {
+        "prompt_tokens": 133,
+        "total_tokens": 171,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 117
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ce0e5057c9bacf506a873ea48eea5d2c70649c0f5ad3cc85eb1a31591fc75f3c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ce0e5057c9bacf506a873ea48eea5d2c70649c0f5ad3cc85eb1a31591fc75f3c",
+        "canonical_audio_sha256": "9744537161ab4911f641718d4c1748f9c17adc986bc13f172a29905b6566ea9b",
+        "pcm_sha256": "56db72fd27a934626cb87ed89ec883b4ce8c5a2e36b966f89f527e029712ae0f",
+        "same_samples": true
+      }
+    }
+  ]
+}

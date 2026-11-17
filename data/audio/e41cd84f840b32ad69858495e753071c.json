@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e41cd84f840b32ad69858495e753071c.wav",
+  "sha256": "03cea18dca45de403364dd02d4045c50b35c82b879775ad437bce565b07ecf72",
+  "duration_seconds": 6.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dc9b2a20-671d-91c1-befb-8adef732c7ad",
+  "usage": {
+    "input_tokens": 204,
+    "output_tokens": 1208,
+    "total_tokens": 1412,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天去超市买水果，排了好久的队，有点累。你简单陪我说两句就行。",
+  "spoken_text": "今天去超市买水果，排了好久的队，有点累。你简单陪我说两句就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天去超市买水果，排了好久的队，有点累。你简单陪我说两句就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天去超市买水果，排了好久的队，有点累。你简单陪我说两句就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0dd85fd2-35e8-9a29-9ec7-56aa10d146a1",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 301,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "03cea18dca45de403364dd02d4045c50b35c82b879775ad437bce565b07ecf72"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "fe073a5b9dbfa08b79f94c8870cd4010329e6a10b8bf7cae64ae40d687ea5bbe",
+    "canonical_sha256": "03cea18dca45de403364dd02d4045c50b35c82b879775ad437bce565b07ecf72",
+    "pcm_sha256": "3d58ca9683db0be0399ef941aaa66f4271ce7fb88379043f4586a74f0b766e09",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 144960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天去超市买水果，排了好久的队，有点累。你简单陪我说两句就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ec52be30-503b-90f6-ae2c-71b966914fad",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 217,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "fe073a5b9dbfa08b79f94c8870cd4010329e6a10b8bf7cae64ae40d687ea5bbe",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "fe073a5b9dbfa08b79f94c8870cd4010329e6a10b8bf7cae64ae40d687ea5bbe",
+        "canonical_audio_sha256": "03cea18dca45de403364dd02d4045c50b35c82b879775ad437bce565b07ecf72",
+        "pcm_sha256": "3d58ca9683db0be0399ef941aaa66f4271ce7fb88379043f4586a74f0b766e09",
+        "same_samples": true
+      }
+    }
+  ]
+}

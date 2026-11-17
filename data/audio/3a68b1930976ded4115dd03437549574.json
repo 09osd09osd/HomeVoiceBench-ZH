@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/3a68b1930976ded4115dd03437549574.wav",
+  "sha256": "f07e686a09119324a8bc8b3625c5f9dee43c4760b2fd7a428d760d5fb6f22fc6",
+  "duration_seconds": 5.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dc45761b-9c9e-955f-bd5f-e0ac7aa76477",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 1128,
+    "total_tokens": 1328,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想练练在商店退换东西，我说：这件衣服我想换一件大一号的。你听听自然吗？",
+  "spoken_text": "我想练练在商店退换东西，我说:这件衣服我想换一件大一号的。你听听自然吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想练练在商店退换东西，我说：“这件衣服我想换一件大一号的。”你听听自然吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想练练在商店退换东西，我说：“这件衣服我想换一件大一号的。”你听听自然吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b1a9b556-a86d-98e0-b2a9-3a183d4a8e26",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 300,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f07e686a09119324a8bc8b3625c5f9dee43c4760b2fd7a428d760d5fb6f22fc6"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "06bc4e23c32f4a8775441158d6e4ffd71982d56a3d3a12359bc0cf0f0d32d597",
+    "canonical_sha256": "f07e686a09119324a8bc8b3625c5f9dee43c4760b2fd7a428d760d5fb6f22fc6",
+    "pcm_sha256": "d8bb9fb49049532424c1deb87b83d8ca1199d6c83181a10db8f4b78cc0c96a47",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 135360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想练练在商店退换东西，我说：“这件衣服我想换一件大一号的。”你听听自然吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想练练在商店退换东西，我说：“这件衣服我想换一件大一号的。”你听听自然吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9e130f6e-b939-9354-b022-9e9ae6358ae0",
+      "usage": {
+        "prompt_tokens": 189,
+        "total_tokens": 239,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "06bc4e23c32f4a8775441158d6e4ffd71982d56a3d3a12359bc0cf0f0d32d597",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "06bc4e23c32f4a8775441158d6e4ffd71982d56a3d3a12359bc0cf0f0d32d597",
+        "canonical_audio_sha256": "f07e686a09119324a8bc8b3625c5f9dee43c4760b2fd7a428d760d5fb6f22fc6",
+        "pcm_sha256": "d8bb9fb49049532424c1deb87b83d8ca1199d6c83181a10db8f4b78cc0c96a47",
+        "same_samples": true
+      }
+    }
+  ]
+}

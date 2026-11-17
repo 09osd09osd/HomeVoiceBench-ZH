@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/fda8e9f0ef1ece487bcc6b539395977d.wav",
+  "sha256": "e30e7adb8f1400b91c64380cf0da9339a3faf06d5b73e19d2ad8cb264481d37b",
+  "duration_seconds": 2.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a01d14dd-7175-9a2b-a169-749866a5e5fb",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 456,
+    "total_tokens": 651,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "只关闭客厅灯，卧室不动。",
+  "spoken_text": "只关闭客厅灯，卧室不动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "只关闭客厅灯，卧室不动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "只关闭客厅灯，卧室不动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3b89e8d3-cbab-96a8-8010-527136d4d52b",
+    "usage": {
+      "prompt_tokens": 213,
+      "total_tokens": 247,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e30e7adb8f1400b91c64380cf0da9339a3faf06d5b73e19d2ad8cb264481d37b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4d43bec98136b2d131906d900686e68134e9e4603576bf497a9074668536dc9d",
+    "canonical_sha256": "e30e7adb8f1400b91c64380cf0da9339a3faf06d5b73e19d2ad8cb264481d37b",
+    "pcm_sha256": "0766a26e3c589830e9e01973a436d6fcbbdb8dd1983e90395be8b35fbcf12ecc",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 54720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "只关闭客厅灯，卧室不动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "只关闭客厅灯，卧室不动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-62730118-ff3c-96cf-a670-1fdbef7ef35e",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 186,
+        "completion_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 34
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4d43bec98136b2d131906d900686e68134e9e4603576bf497a9074668536dc9d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4d43bec98136b2d131906d900686e68134e9e4603576bf497a9074668536dc9d",
+        "canonical_audio_sha256": "e30e7adb8f1400b91c64380cf0da9339a3faf06d5b73e19d2ad8cb264481d37b",
+        "pcm_sha256": "0766a26e3c589830e9e01973a436d6fcbbdb8dd1983e90395be8b35fbcf12ecc",
+        "same_samples": true
+      }
+    }
+  ]
+}

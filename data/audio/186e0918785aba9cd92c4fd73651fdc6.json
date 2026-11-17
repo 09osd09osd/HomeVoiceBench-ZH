@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/186e0918785aba9cd92c4fd73651fdc6.wav",
+  "sha256": "80578c5e6e29e257ef1bdbc183226f0ff72202d4a7aa5528d4c1e66fc4f9ed58",
+  "duration_seconds": 2.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "23b48a45-edd0-9db4-a938-5514c202935d",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 504,
+    "total_tokens": 686,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我猜是香蕉。再给一个提示，具体点。",
+  "spoken_text": "我猜是香蕉。再给一个提示，具体点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我猜是香蕉。再给一个提示，具体点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我猜是香蕉。再给一个提示，具体点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ee093677-2224-9a11-9ab4-0d6c6a86ef4e",
+    "usage": {
+      "prompt_tokens": 218,
+      "total_tokens": 257,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "80578c5e6e29e257ef1bdbc183226f0ff72202d4a7aa5528d4c1e66fc4f9ed58"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "eb234a95a56b159c4efb3cc7b81e054ed7c90e749707eeff11d880744b2a7c20",
+    "canonical_sha256": "80578c5e6e29e257ef1bdbc183226f0ff72202d4a7aa5528d4c1e66fc4f9ed58",
+    "pcm_sha256": "fd27305bf31680050f4d433ea2040d051eb25cab1afe48bc6cc94e27f4e4e74f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 60480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我猜是香蕉。再给一个提示，具体点儿。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我猜是香蕉。再给一个提示，具体点儿。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6ef7c92d-b7dc-9dd5-96e2-e17b389b1d24",
+      "usage": {
+        "prompt_tokens": 157,
+        "total_tokens": 196,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "eb234a95a56b159c4efb3cc7b81e054ed7c90e749707eeff11d880744b2a7c20",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "eb234a95a56b159c4efb3cc7b81e054ed7c90e749707eeff11d880744b2a7c20",
+        "canonical_audio_sha256": "80578c5e6e29e257ef1bdbc183226f0ff72202d4a7aa5528d4c1e66fc4f9ed58",
+        "pcm_sha256": "fd27305bf31680050f4d433ea2040d051eb25cab1afe48bc6cc94e27f4e4e74f",
+        "same_samples": true
+      }
+    }
+  ]
+}

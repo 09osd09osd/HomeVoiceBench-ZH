@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f4097ccf87fda9795ee7be4dd2033e3a.wav",
+  "sha256": "e337e66f4a4c26bcad6b5c8a37bd93f8d80bbc51e51dd3ab118a9aeb3d7ca05d",
+  "duration_seconds": 2.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d747b39c-c07d-962b-83b3-ceceef7542d8",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 536,
+    "total_tokens": 718,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，我刚才说错了，是十一点到，不是十点。",
+  "spoken_text": "对了，我刚才说错了，是十一点到，不是十点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，我刚才说错了，是十一点到，不是十点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，我刚才说错了，是十一点到，不是十点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-11b783da-6af5-9451-be29-f2874321da89",
+    "usage": {
+      "prompt_tokens": 220,
+      "total_tokens": 261,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e337e66f4a4c26bcad6b5c8a37bd93f8d80bbc51e51dd3ab118a9aeb3d7ca05d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "907333ab50d1251c7a6a4740981d35fb92461a49c50e7dd8baf0995a1c3887c8",
+    "canonical_sha256": "e337e66f4a4c26bcad6b5c8a37bd93f8d80bbc51e51dd3ab118a9aeb3d7ca05d",
+    "pcm_sha256": "fa005c669bc031cf8c33760ad93d14909158dd0e4a5454524b8369a72609e397",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 64320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，我刚才说错了，是十一点到，不是十点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3abd4e6b-dddb-9d14-888d-6f873bf4dce4",
+      "usage": {
+        "prompt_tokens": 136,
+        "total_tokens": 177,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "907333ab50d1251c7a6a4740981d35fb92461a49c50e7dd8baf0995a1c3887c8",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "907333ab50d1251c7a6a4740981d35fb92461a49c50e7dd8baf0995a1c3887c8",
+        "canonical_audio_sha256": "e337e66f4a4c26bcad6b5c8a37bd93f8d80bbc51e51dd3ab118a9aeb3d7ca05d",
+        "pcm_sha256": "fa005c669bc031cf8c33760ad93d14909158dd0e4a5454524b8369a72609e397",
+        "same_samples": true
+      }
+    }
+  ]
+}

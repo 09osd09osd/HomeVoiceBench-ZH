@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c921d52be30ee7b3b470fa251117d8ff.wav",
+  "sha256": "f89c03dacc1acfe83f63f850bedbb408ac883a95e60af4c62f0a3e5be1ae4521",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d1296b3a-2139-9eb6-aa36-c0bdca10f5a6",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 640,
+    "total_tokens": 821,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实我记错了，不是小学毕业，是初中毕业，那时候我还没那么高。",
+  "spoken_text": "其实我记错了，不是小学毕业，是初中毕业，那时候我还没那么高。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实我记错了，不是小学毕业，是初中毕业。那时候我还没那么高。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实我记错了，不是小学毕业，是初中毕业。那时候我还没那么高。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-355a816b-7a26-9c33-8b48-81044ba201ff",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 276,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f89c03dacc1acfe83f63f850bedbb408ac883a95e60af4c62f0a3e5be1ae4521"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ee1d90f1f21965acd136e60447630864e9875a2391767fba7e43a14a9ca181b6",
+    "canonical_sha256": "f89c03dacc1acfe83f63f850bedbb408ac883a95e60af4c62f0a3e5be1ae4521",
+    "pcm_sha256": "0bdcc6b8bde4283db990e5382244f60f4dc704ba101394c18f57f50bbf26be3a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实我记错了，不是小学毕业，是初中毕业。那时候我还没那么高。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e074a248-4d77-994f-b313-17248dbb3c44",
+      "usage": {
+        "prompt_tokens": 147,
+        "total_tokens": 192,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ee1d90f1f21965acd136e60447630864e9875a2391767fba7e43a14a9ca181b6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ee1d90f1f21965acd136e60447630864e9875a2391767fba7e43a14a9ca181b6",
+        "canonical_audio_sha256": "f89c03dacc1acfe83f63f850bedbb408ac883a95e60af4c62f0a3e5be1ae4521",
+        "pcm_sha256": "0bdcc6b8bde4283db990e5382244f60f4dc704ba101394c18f57f50bbf26be3a",
+        "same_samples": true
+      }
+    }
+  ]
+}

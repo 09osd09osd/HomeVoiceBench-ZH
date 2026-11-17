@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "82890687f2a0eec3087f5c47f09bc46ad293017f9b55d76390cc8e1b0f63e2c0",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-95f6b07d-f06b-9f2b-a9c0-8f9727bdaa98",
+  "usage": {
+    "prompt_tokens": 12540,
+    "total_tokens": 13429,
+    "completion_tokens": 889,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 12540
+    },
+    "completion_tokens_details": {
+      "text_tokens": 889
+    }
+  },
+  "review_request_id": "chatcmpl-25192071-4ffa-941a-95d5-0edfaae803d8",
+  "review_usage": {
+    "prompt_tokens": 13053,
+    "total_tokens": 13139,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13053
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T03_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T03_001",
+        "title": "查看客厅灯状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？我只想查一下状态，别动它。",
+            "reference_text": "客厅灯开着，亮度是30%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_002",
+        "title": "先查灯再查窗帘",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？我只想查一下状态，别动它。",
+            "reference_text": "客厅灯开着，亮度是40%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘现在开了50%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_003",
+        "title": "连续核查灯、窗帘和空调",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？我只想查一下状态，别动它。",
+            "reference_text": "客厅灯开着，亮度是50%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘现在开了50%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "客厅空调设定的温度是26度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_004",
+        "title": "核查设备并区分设定温度与室温",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？我只想查一下状态，别动它。",
+            "reference_text": "客厅灯开着，亮度是60%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘现在开了50%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "客厅空调设定的温度是26度。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这个设定温度是实际室温吗？",
+            "reference_text": "不是，26度是设定温度，不等于实际室温。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_005",
+        "title": "多轮核对设备且不调灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？我只想查一下状态，别动它。",
+            "reference_text": "客厅灯开着，亮度是70%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘现在开了50%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "客厅空调设定的温度是26度。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这个设定温度是实际室温吗？",
+            "reference_text": "不是，26度是设定温度，不等于实际室温。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再确认一下最开始那盏灯，没有让你调。",
+            "reference_text": "客厅灯还是开着，亮度70%，我没有调它。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "d142866d57dc654a98fba631ea7dec050e926488a7b51e073ab908e2e9a56097",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-3370e4f0-78a9-9adf-8e4b-201428668809",
+  "usage": {
+    "prompt_tokens": 8409,
+    "total_tokens": 9460,
+    "completion_tokens": 1051,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 8409
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1051
+    }
+  },
+  "review_request_id": "chatcmpl-88436aeb-52e4-9faf-ae23-f9a097ccbbac",
+  "review_usage": {
+    "prompt_tokens": 9082,
+    "total_tokens": 9168,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 9082
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T23_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T23_016",
+        "title": "延后整理书包提醒半小时",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天10点的整理书包提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天10点的整理书包提醒改到10点半，其他提醒没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_017",
+        "title": "整理书包提醒改到11点",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天10点的整理书包提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天10点的整理书包提醒改到10点半，其他提醒没动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天11点整。",
+            "reference_text": "好的，整理书包提醒已改到明天11点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_018",
+        "title": "改时间后列出当前安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天10点的整理书包提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天10点的整理书包提醒改到10点半，其他提醒没动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天11点整。",
+            "reference_text": "好的，整理书包提醒已改到明天11点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有两条：明天11点的整理书包提醒，和后天12点的晾衣服提醒。没有新增。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_019",
+        "title": "只取消修改过的整理书包提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天10点的整理书包提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天10点的整理书包提醒改到10点半，其他提醒没动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天11点整。",
+            "reference_text": "好的，整理书包提醒已改到明天11点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有两条：明天11点的整理书包提醒，和后天12点的晾衣服提醒。没有新增。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已取消整理书包提醒，晾衣服提醒还留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_020",
+        "title": "取消后确认剩余安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天10点的整理书包提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天10点的整理书包提醒改到10点半，其他提醒没动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天11点整。",
+            "reference_text": "好的，整理书包提醒已改到明天11点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有两条：明天11点的整理书包提醒，和后天12点的晾衣服提醒。没有新增。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已取消整理书包提醒，晾衣服提醒还留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "现在启用的只剩后天12点的晾衣服提醒。整理书包提醒已经取消了。"
+          }
+        ]
+      }
+    ]
+  }
+}

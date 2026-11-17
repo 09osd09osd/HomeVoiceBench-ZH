@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/0ddb3419994b8e672780c994524ddabf.wav",
+  "sha256": "082491216c1db25a721006e78653ac4bda7edc73702b51c63e7d9eec16c9f510",
+  "duration_seconds": 4.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7c274ee9-27e3-9e7d-bbb1-4482a4d97312",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 888,
+    "total_tokens": 1071,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "请按我已经说过的信息处理，其他信息我暂时补充不了。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "请按我已经说过的信息处理，其他信息我暂时补充不了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0700ed8c-e6a2-951b-bdc0-739c3ce64b90",
+    "usage": {
+      "prompt_tokens": 149,
+      "total_tokens": 189,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 119
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "161dabfe555f2a9c508535015a9eb0a7045f8b4abd732d51032f75e90749f266",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "161dabfe555f2a9c508535015a9eb0a7045f8b4abd732d51032f75e90749f266",
+      "canonical_audio_sha256": "082491216c1db25a721006e78653ac4bda7edc73702b51c63e7d9eec16c9f510",
+      "pcm_sha256": "cd3fe40400f28b90bb9a908e654c0978fe462306fb9109f25754fd2312aef04d",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "161dabfe555f2a9c508535015a9eb0a7045f8b4abd732d51032f75e90749f266",
+    "canonical_sha256": "082491216c1db25a721006e78653ac4bda7edc73702b51c63e7d9eec16c9f510",
+    "pcm_sha256": "cd3fe40400f28b90bb9a908e654c0978fe462306fb9109f25754fd2312aef04d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 106560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a18840ae36b1d1780f5395c3087fb707.wav",
+  "sha256": "960c1ef00f26872cd5fb24e8563c18997e120ace9c0550fda3ea707237c5fbfc",
+  "duration_seconds": 4.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6056825c-723a-95b2-a299-e7bd79bd118c",
+  "usage": {
+    "input_tokens": 204,
+    "output_tokens": 992,
+    "total_tokens": 1196,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天照着视频学做红烧肉，结果糖色炒过了，有点发苦，不过最后还是吃完了。",
+  "spoken_text": "今天照着视频学做红烧肉，结果糖色炒过了，有点发苦，不过最后还是吃完了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天照着视频学做红烧肉，结果糖色炒过了，有点发苦。不过最后还是吃完了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天照着视频学做红烧肉，结果糖色炒过了，有点发苦。不过最后还是吃完了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-96331b2d-4f7c-9f39-a56c-505f8884ea95",
+    "usage": {
+      "prompt_tokens": 241,
+      "total_tokens": 289,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "960c1ef00f26872cd5fb24e8563c18997e120ace9c0550fda3ea707237c5fbfc"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "09f71e563e038b93915378906a3a19f2ef31250148662ee14f1c67af2a6b2d06",
+    "canonical_sha256": "960c1ef00f26872cd5fb24e8563c18997e120ace9c0550fda3ea707237c5fbfc",
+    "pcm_sha256": "73091fe56302d4d74dc4a7e87a7aff16b69591546aef654eb4eedc2790c21331",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 119040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天照着视频学做红烧肉，结果糖色炒过了有点发苦，不过最后还是吃完了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4794f2a3-59f4-9ad5-9077-a7a5687da2c5",
+      "usage": {
+        "prompt_tokens": 157,
+        "total_tokens": 204,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "09f71e563e038b93915378906a3a19f2ef31250148662ee14f1c67af2a6b2d06",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "09f71e563e038b93915378906a3a19f2ef31250148662ee14f1c67af2a6b2d06",
+        "canonical_audio_sha256": "960c1ef00f26872cd5fb24e8563c18997e120ace9c0550fda3ea707237c5fbfc",
+        "pcm_sha256": "73091fe56302d4d74dc4a7e87a7aff16b69591546aef654eb4eedc2790c21331",
+        "same_samples": true
+      }
+    }
+  ]
+}

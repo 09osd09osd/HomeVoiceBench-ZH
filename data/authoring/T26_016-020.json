@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "60b69d11189618e6def9aeb341a7933a22e37f4a748424a1161cc340378671ec",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-856506a8-4b88-906a-840c-7b0da9eef930",
+  "usage": {
+    "prompt_tokens": 4065,
+    "total_tokens": 5033,
+    "completion_tokens": 968,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4065
+    },
+    "completion_tokens_details": {
+      "text_tokens": 968
+    }
+  },
+  "review_request_id": "chatcmpl-a9bc90d4-4e0f-9ff5-b9ab-1668357d8162",
+  "review_usage": {
+    "prompt_tokens": 4655,
+    "total_tokens": 4741,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4655
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T26_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T26_016",
+        "title": "暂停客厅音箱的星空小知识",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱正在放的《星空小知识》暂停一下。",
+            "reference_text": "好的，已经暂停《星空小知识》了，当前停在10秒的位置。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_017",
+        "title": "暂停后继续播放星空小知识",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱正在放的《星空小知识》暂停一下。",
+            "reference_text": "好的，已经暂停《星空小知识》了，当前停在10秒的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已经继续播放《星空小知识》，从10秒的位置接着放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_018",
+        "title": "星空小知识暂停继续再暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱正在放的《星空小知识》暂停一下。",
+            "reference_text": "好的，已经暂停《星空小知识》了，当前停在10秒的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已经继续播放《星空小知识》，从10秒的位置接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已经又暂停了，还是停在10秒的位置。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_019",
+        "title": "星空小知识暂停继续暂停并定位90秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱正在放的《星空小知识》暂停一下。",
+            "reference_text": "好的，已经暂停《星空小知识》了，当前停在10秒的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已经继续播放《星空小知识》，从10秒的位置接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已经又暂停了，还是停在10秒的位置。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第90秒，先保持暂停。",
+            "reference_text": "好的，已经定位到第90秒，目前还是暂停状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_020",
+        "title": "星空小知识多次暂停继续定位后停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱正在放的《星空小知识》暂停一下。",
+            "reference_text": "好的，已经暂停《星空小知识》了，当前停在10秒的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已经继续播放《星空小知识》，从10秒的位置接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已经又暂停了，还是停在10秒的位置。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第90秒，先保持暂停。",
+            "reference_text": "好的，已经定位到第90秒，目前还是暂停状态。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "好的，已经停止播放《星空小知识》了，没有换别的内容。"
+          }
+        ]
+      }
+    ]
+  }
+}

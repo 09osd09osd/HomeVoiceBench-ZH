@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/3be9f505a9b74807cd78c6241fe1dc79.wav",
+  "sha256": "f277f2b7ff9a8e752f023a81c436b1661dff4e529dd6b47481f9ec43f6ede40e",
+  "duration_seconds": 2.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9833b93e-d65d-92e3-8a6d-df073abbf632",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 552,
+    "total_tokens": 738,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "厨房有空调吗？没有的话就直接说没有。",
+  "spoken_text": "厨房有空调吗？没有的话就直接说没有。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "厨房有空调吗？没有的话，就直接说没有。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "厨房有空调吗？没有的话，就直接说没有。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b60dc671-5b7a-9116-ba76-56aa74b00ac6",
+    "usage": {
+      "prompt_tokens": 216,
+      "total_tokens": 254,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f277f2b7ff9a8e752f023a81c436b1661dff4e529dd6b47481f9ec43f6ede40e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0014297c9b49f38b93b691d54b82dc879533a47d38eb520640d5315ac3ed74b2",
+    "canonical_sha256": "f277f2b7ff9a8e752f023a81c436b1661dff4e529dd6b47481f9ec43f6ede40e",
+    "pcm_sha256": "48334204483513f334b128b5e284a470443f95f0eb45ac05a200f2e8cbcd16d0",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 66240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "厨房有空调吗？没有的话就直接说没有。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "厨房有空调吗？没有的话就直接说没有。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-77997dfd-6437-9d32-802d-194332412c9d",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 192,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0014297c9b49f38b93b691d54b82dc879533a47d38eb520640d5315ac3ed74b2",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0014297c9b49f38b93b691d54b82dc879533a47d38eb520640d5315ac3ed74b2",
+        "canonical_audio_sha256": "f277f2b7ff9a8e752f023a81c436b1661dff4e529dd6b47481f9ec43f6ede40e",
+        "pcm_sha256": "48334204483513f334b128b5e284a470443f95f0eb45ac05a200f2e8cbcd16d0",
+        "same_samples": true
+      }
+    }
+  ]
+}

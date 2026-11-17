@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "1ad63b3f18ba234e5caea751a8e9bc33a16b7ccd72c6834e1121ef975ca1cefe",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-5301a82b-68c2-9d10-b557-b5d3cde9fbcd",
+  "usage": {
+    "prompt_tokens": 13511,
+    "total_tokens": 14568,
+    "completion_tokens": 1057,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13511
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1057
+    }
+  },
+  "review_request_id": "chatcmpl-2dd9d460-7d59-9b48-ac8f-0b0aec80d462",
+  "review_usage": {
+    "prompt_tokens": 14190,
+    "total_tokens": 14276,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14190
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T07_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T07_011",
+        "title": "书房阅读灯色温调到4300K",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，色温调到4300K，别的灯不用动。",
+            "reference_text": "好的，书房灯已经打开，色温调到了4300K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_012",
+        "title": "书房灯色温从4300K改为4000K",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，色温调到4300K，别的灯不用动。",
+            "reference_text": "好的，书房灯已经打开，色温调到了4300K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把书房灯的色温改成4000K，其他设置都别动。",
+            "reference_text": "好的，书房灯色温已经改成4000K，其他设置没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_013",
+        "title": "书房灯色温调整后再核对状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，色温调到4300K，别的灯不用动。",
+            "reference_text": "好的，书房灯已经打开，色温调到了4300K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把书房灯的色温改成4000K，其他设置都别动。",
+            "reference_text": "好的，书房灯色温已经改成4000K，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看书房灯现在的色温和开关状态，别调整。",
+            "reference_text": "书房灯现在是开着的，色温是4000K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_014",
+        "title": "书房灯调色温后关灯保留设置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，色温调到4300K，别的灯不用动。",
+            "reference_text": "好的，书房灯已经打开，色温调到了4300K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把书房灯的色温改成4000K，其他设置都别动。",
+            "reference_text": "好的，书房灯色温已经改成4000K，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看书房灯现在的色温和开关状态，别调整。",
+            "reference_text": "书房灯现在是开着的，色温是4000K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把书房灯关掉，色温设置留着别改。",
+            "reference_text": "好的，书房灯已经关掉，色温设置保留在4000K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_015",
+        "title": "书房灯完整调整与关灯后复查",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，色温调到4300K，别的灯不用动。",
+            "reference_text": "好的，书房灯已经打开，色温调到了4300K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把书房灯的色温改成4000K，其他设置都别动。",
+            "reference_text": "好的，书房灯色温已经改成4000K，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看书房灯现在的色温和开关状态，别调整。",
+            "reference_text": "书房灯现在是开着的，色温是4000K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把书房灯关掉，色温设置留着别改。",
+            "reference_text": "好的，书房灯已经关掉，色温设置保留在4000K。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再帮我查一下书房灯的开关，别的设备别动。",
+            "reference_text": "书房灯现在是关着的。"
+          }
+        ]
+      }
+    ]
+  }
+}

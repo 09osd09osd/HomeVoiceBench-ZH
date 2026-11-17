@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e47ec8cd044c7a94672fba29ba8f55ae.wav",
+  "sha256": "80f8d4586057e99ae3146d252a988c9529121816cb152ec4c77a49ce9e1eade1",
+  "duration_seconds": 2.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a201ccd9-014c-909d-90b9-ec142a5bb6f6",
+  "usage": {
+    "input_tokens": 172,
+    "output_tokens": 424,
+    "total_tokens": 596,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "再帮我查一下厨房的温度和湿度。",
+  "spoken_text": "再帮我查一下厨房的温度和湿度。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "再帮我查一下厨房的温度和湿度。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "再帮我查一下厨房的温度和湿度。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-063b08fd-b5a4-963d-ac79-1db66d417065",
+    "usage": {
+      "prompt_tokens": 214,
+      "total_tokens": 249,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "80f8d4586057e99ae3146d252a988c9529121816cb152ec4c77a49ce9e1eade1"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "650a90edaa09e43f5a2f81ba801888d6fcfffae8ae8d474aabbe1b184d1ad675",
+    "canonical_sha256": "80f8d4586057e99ae3146d252a988c9529121816cb152ec4c77a49ce9e1eade1",
+    "pcm_sha256": "26a5c8cef713df01d748ae2f6671eb52c646de90afb00cd305e31898e94ddd7d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 50880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "再帮我查一下厨房的温度和湿度。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "再帮我查一下厨房的温度和湿度。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-54aca284-bf2b-94d1-8a17-f1c27c9af491",
+      "usage": {
+        "prompt_tokens": 153,
+        "total_tokens": 188,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 137
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "650a90edaa09e43f5a2f81ba801888d6fcfffae8ae8d474aabbe1b184d1ad675",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "650a90edaa09e43f5a2f81ba801888d6fcfffae8ae8d474aabbe1b184d1ad675",
+        "canonical_audio_sha256": "80f8d4586057e99ae3146d252a988c9529121816cb152ec4c77a49ce9e1eade1",
+        "pcm_sha256": "26a5c8cef713df01d748ae2f6671eb52c646de90afb00cd305e31898e94ddd7d",
+        "same_samples": true
+      }
+    }
+  ]
+}

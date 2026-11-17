@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/01cb3836e642ffb6955d477279fcf003.wav",
+  "sha256": "b0682792d4ec3971610c6ac508c1339a1178e23ca7f5fd6e4c77867e42b9ea32",
+  "duration_seconds": 4.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dc8b36d1-a14a-9ae1-b1f8-cc7b7bbd2c80",
+  "usage": {
+    "input_tokens": 208,
+    "output_tokens": 912,
+    "total_tokens": 1120,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "还有，别太压抑，我最近心情一般，不想读完了更闷。",
+  "spoken_text": "还有，别太压抑，我最近心情一般，不想读完了更闷。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "还有，别太压抑。我最近心情一般，不想读完了更闷。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "还有，别太压抑。我最近心情一般，不想读完了更闷。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f449bdab-5d16-9397-9e38-e3885c24dc27",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b0682792d4ec3971610c6ac508c1339a1178e23ca7f5fd6e4c77867e42b9ea32"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ca4b78acb8a7782b7f6549f2763e6b0613e76fd86663df5396dcba6282b1bc37",
+    "canonical_sha256": "b0682792d4ec3971610c6ac508c1339a1178e23ca7f5fd6e4c77867e42b9ea32",
+    "pcm_sha256": "f028804546b014b5f71355157fa0d985722bd63a2fbc9af23eca3bea3ba52596",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 109440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "还有，别太压抑，我最近心情一般，不想读完了更闷。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "还有，别太压抑，我最近心情一般，不想读完了更闷。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6bef21c4-465c-94f6-a1fe-fb10aa34781c",
+      "usage": {
+        "prompt_tokens": 175,
+        "total_tokens": 218,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 145
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ca4b78acb8a7782b7f6549f2763e6b0613e76fd86663df5396dcba6282b1bc37",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ca4b78acb8a7782b7f6549f2763e6b0613e76fd86663df5396dcba6282b1bc37",
+        "canonical_audio_sha256": "b0682792d4ec3971610c6ac508c1339a1178e23ca7f5fd6e4c77867e42b9ea32",
+        "pcm_sha256": "f028804546b014b5f71355157fa0d985722bd63a2fbc9af23eca3bea3ba52596",
+        "same_samples": true
+      }
+    }
+  ]
+}

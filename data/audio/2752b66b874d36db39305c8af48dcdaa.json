@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/2752b66b874d36db39305c8af48dcdaa.wav",
+  "sha256": "5fbf3a21772dc762cd431983405496998c8660ece0880047872dd4c41df26616",
+  "duration_seconds": 4.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "18bcc8b4-cf6f-964b-8227-aa44f28154fa",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 960,
+    "total_tokens": 1153,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说错了一个，早上那种药不是吃1片，是吃半片。",
+  "spoken_text": "我刚才说错了一个，早上那种药不是吃一片，是吃半片。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说错了一个，早上那种药不是吃一片，是吃半片。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说错了一个，早上那种药不是吃一片，是吃半片。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2f79e243-56a3-9e8b-8b88-72c8c4982842",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 282,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5fbf3a21772dc762cd431983405496998c8660ece0880047872dd4c41df26616"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e8beb60f446f0bd9229cdd994da31e4f649ace21636b806142374c004ecd5762",
+    "canonical_sha256": "5fbf3a21772dc762cd431983405496998c8660ece0880047872dd4c41df26616",
+    "pcm_sha256": "cc43ce65b0af311384f4bcf954548aca931fc397e8ea9bf53fec1a374e08d0f3",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 115200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说错了一个，早上那种药不是吃一片，是吃半片。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我刚才说错了一个，早上那种药不是吃一片，是吃半片。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-10dd3273-0555-9d70-b680-2787f032be23",
+      "usage": {
+        "prompt_tokens": 177,
+        "total_tokens": 221,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e8beb60f446f0bd9229cdd994da31e4f649ace21636b806142374c004ecd5762",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e8beb60f446f0bd9229cdd994da31e4f649ace21636b806142374c004ecd5762",
+        "canonical_audio_sha256": "5fbf3a21772dc762cd431983405496998c8660ece0880047872dd4c41df26616",
+        "pcm_sha256": "cc43ce65b0af311384f4bcf954548aca931fc397e8ea9bf53fec1a374e08d0f3",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1de15f0b495adb9b09a45f7b4ad8fc0b.wav",
+  "sha256": "e209ce013d98d8a04f00c53c7806b3d1717495aefb0ac5ffd6f60d9a176859c3",
+  "duration_seconds": 2.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "57faf03d-09ca-9f28-b811-c261c0e72168",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 568,
+    "total_tokens": 752,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "再查一下客厅灯现在开着还是关着，其他设备别动。",
+  "spoken_text": "再查一下客厅灯现在开着还是关着，其他设备别动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "再查一下客厅灯现在开着还是关着？其他设备别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "再查一下客厅灯现在开着还是关着？其他设备别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9cb6b48a-5d6d-9687-8cce-71b0749f9017",
+    "usage": {
+      "prompt_tokens": 221,
+      "total_tokens": 263,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e209ce013d98d8a04f00c53c7806b3d1717495aefb0ac5ffd6f60d9a176859c3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2bc890503ffb33fdc3390f77750439bf38c8bb42377827a9a0747f3ad54e41d7",
+    "canonical_sha256": "e209ce013d98d8a04f00c53c7806b3d1717495aefb0ac5ffd6f60d9a176859c3",
+    "pcm_sha256": "5930316a7d34f90bd0d5b9dee0d0fac932f45648253ee60be162738bb12411ff",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 68160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "再查一下客厅灯现在开着还是关着，其他设备别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "再查一下客厅灯现在开着还是关着，其他设备别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9ebed24c-83e2-9ee8-95e5-896cf1cbb276",
+      "usage": {
+        "prompt_tokens": 160,
+        "total_tokens": 202,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2bc890503ffb33fdc3390f77750439bf38c8bb42377827a9a0747f3ad54e41d7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2bc890503ffb33fdc3390f77750439bf38c8bb42377827a9a0747f3ad54e41d7",
+        "canonical_audio_sha256": "e209ce013d98d8a04f00c53c7806b3d1717495aefb0ac5ffd6f60d9a176859c3",
+        "pcm_sha256": "5930316a7d34f90bd0d5b9dee0d0fac932f45648253ee60be162738bb12411ff",
+        "same_samples": true
+      }
+    }
+  ]
+}

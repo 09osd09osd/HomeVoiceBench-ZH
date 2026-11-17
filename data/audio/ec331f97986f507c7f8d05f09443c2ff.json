@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ec331f97986f507c7f8d05f09443c2ff.wav",
+  "sha256": "5110f16022c4bc36cceaa370fef0737cbb9398e95c5936adba2ea2add6f01607",
+  "duration_seconds": 2.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e1b09302-8b88-96b3-871d-f47aff8c8808",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 568,
+    "total_tokens": 749,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "别放太吵的，我喜欢钢琴曲，节奏慢一点的。",
+  "spoken_text": "别放太吵的，我喜欢钢琴曲，节奏慢一点的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "别放太吵的，我喜欢钢琴曲，节奏慢一点的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "别放太吵的，我喜欢钢琴曲，节奏慢一点的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-daf053a1-fa09-98c0-8911-d2550562d5cb",
+    "usage": {
+      "prompt_tokens": 219,
+      "total_tokens": 259,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5110f16022c4bc36cceaa370fef0737cbb9398e95c5936adba2ea2add6f01607"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5ea91a48d8be8a9b41d0f8da060bcade5cd79f0e1464f7e79c2e66ab96957f11",
+    "canonical_sha256": "5110f16022c4bc36cceaa370fef0737cbb9398e95c5936adba2ea2add6f01607",
+    "pcm_sha256": "8e55069d13b730c30f213967e062d51d4592b5e649da31f3d5746139ff2dd728",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 68160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "别放太吵的，我喜欢钢琴曲，节奏慢一点的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-961c015d-8495-95d0-8d08-aec9aaa3f862",
+      "usage": {
+        "prompt_tokens": 135,
+        "total_tokens": 175,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5ea91a48d8be8a9b41d0f8da060bcade5cd79f0e1464f7e79c2e66ab96957f11",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5ea91a48d8be8a9b41d0f8da060bcade5cd79f0e1464f7e79c2e66ab96957f11",
+        "canonical_audio_sha256": "5110f16022c4bc36cceaa370fef0737cbb9398e95c5936adba2ea2add6f01607",
+        "pcm_sha256": "8e55069d13b730c30f213967e062d51d4592b5e649da31f3d5746139ff2dd728",
+        "same_samples": true
+      }
+    }
+  ]
+}

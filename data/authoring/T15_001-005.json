@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "7f14bafcbd1bd9585c1eccf60e3ce6bc9fba9d9de4df8a9d27c66542c66c5de5",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-636e8de4-1dc5-92ad-b37f-3b3a658b866a",
+  "usage": {
+    "prompt_tokens": 11814,
+    "total_tokens": 12772,
+    "completion_tokens": 958,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11814
+    },
+    "completion_tokens_details": {
+      "text_tokens": 958
+    }
+  },
+  "review_request_id": "chatcmpl-a59bcc58-585a-9292-b38e-4c4bf4728977",
+  "review_usage": {
+    "prompt_tokens": 12397,
+    "total_tokens": 12483,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12397
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T15_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T15_001",
+        "title": "客厅灯亮度澄清",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到20%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您指的是哪一盏？"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_002",
+        "title": "客厅灯指定与设置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到20%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您指的是哪一盏？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到20%，其他灯别动。",
+            "reference_text": "好的，客厅灯已打开，亮度调到20%，其他灯没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_003",
+        "title": "客厅灯亮度查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到20%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您指的是哪一盏？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到20%，其他灯别动。",
+            "reference_text": "好的，客厅灯已打开，亮度调到20%，其他灯没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "客厅灯现在是开着的，亮度是20%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_004",
+        "title": "客厅灯关灯保留亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到20%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您指的是哪一盏？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到20%，其他灯别动。",
+            "reference_text": "好的，客厅灯已打开，亮度调到20%，其他灯没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "客厅灯现在是开着的，亮度是20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在明确关掉刚才那盏灯，亮度设置保留。",
+            "reference_text": "好的，客厅灯已关闭，亮度设置还是20%，没有改动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_005",
+        "title": "客厅灯最终状态总结",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到20%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您指的是哪一盏？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到20%，其他灯别动。",
+            "reference_text": "好的，客厅灯已打开，亮度调到20%，其他灯没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "客厅灯现在是开着的，亮度是20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在明确关掉刚才那盏灯，亮度设置保留。",
+            "reference_text": "好的，客厅灯已关闭，亮度设置还是20%，没有改动。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "总结我的澄清：最终是哪盏灯，开关与亮度各怎样？",
+            "reference_text": "最终是客厅灯，开关是关着的，亮度设置是20%。"
+          }
+        ]
+      }
+    ]
+  }
+}

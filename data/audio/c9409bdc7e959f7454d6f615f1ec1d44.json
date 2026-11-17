@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/c9409bdc7e959f7454d6f615f1ec1d44.wav",
+  "sha256": "c863238fc5ecadab736e8f915521d9db9860b44d35f8d3057ea3a402af75c040",
+  "duration_seconds": 2.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4ee7845f-28c4-9a1e-b27d-0a8e6d853327",
+  "usage": {
+    "input_tokens": 175,
+    "output_tokens": 528,
+    "total_tokens": 703,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "在客厅音箱上播放《星空小知识》。",
+  "spoken_text": "在客厅音箱上播放《星空小知识》。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "在客厅音箱上播放《星空小知识》。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "在客厅音箱上播放《星空小知识》。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5c5575f3-80c4-98e9-b5d8-c431be43b676",
+    "usage": {
+      "prompt_tokens": 215,
+      "total_tokens": 251,
+      "completion_tokens": 36,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 199
+      },
+      "completion_tokens_details": {
+        "text_tokens": 36
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c863238fc5ecadab736e8f915521d9db9860b44d35f8d3057ea3a402af75c040"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ad98358f5c40aa5267c2320429a18ef1ce2551389160d4d2358953248e9dd802",
+    "canonical_sha256": "c863238fc5ecadab736e8f915521d9db9860b44d35f8d3057ea3a402af75c040",
+    "pcm_sha256": "750a6f91b3899c4ee56094f72167ee95288551fc1facef79630864387613ff1c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 63360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "在客厅音箱上播放《星空小知识》。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "在客厅音箱上播放《星空小知识》。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-dd5599e6-e1fe-9df9-b0be-7bed91d55c0f",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 190,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 138
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ad98358f5c40aa5267c2320429a18ef1ce2551389160d4d2358953248e9dd802",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ad98358f5c40aa5267c2320429a18ef1ce2551389160d4d2358953248e9dd802",
+        "canonical_audio_sha256": "c863238fc5ecadab736e8f915521d9db9860b44d35f8d3057ea3a402af75c040",
+        "pcm_sha256": "750a6f91b3899c4ee56094f72167ee95288551fc1facef79630864387613ff1c",
+        "same_samples": true
+      }
+    }
+  ]
+}

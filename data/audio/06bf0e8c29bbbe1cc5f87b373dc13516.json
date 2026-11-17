@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/06bf0e8c29bbbe1cc5f87b373dc13516.wav",
+  "sha256": "8caf21ef9ce715538bc5c8a928196df00a75ffaaa1cca766b62a1d8e896f5653",
+  "duration_seconds": 10.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0f10f63d-9798-9956-91d3-acc8efc8d0e7",
+  "usage": {
+    "input_tokens": 234,
+    "output_tokens": 2104,
+    "total_tokens": 2338,
+    "duration": 11
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "上周六家里聚会我没去，我姐挺不高兴的，其实是我临时加班没顾上跟她说。我想跟她道个歉，你帮我组织几句能说出口的话，承认我没提前沟通，但也别让她觉得我在找借口。",
+  "spoken_text": "上周六家里聚会我没去，我姐挺不高兴的，其实是我临时加班没顾上跟她说。我想跟她道个歉，你帮我组织几句能说出口的话，承认我没提前沟通，但也别让她觉得我在找借口。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "上周六家里聚会我没去，我姐挺不高兴的，其实是我临时加班没顾上跟她说。我想跟她道个歉，你帮我组织几句能说出口的话，承认我没提前沟通，但也别让她觉得我在找借口。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "上周六家里聚会我没去，我姐挺不高兴的，其实是我临时加班没顾上跟她说。我想跟她道个歉，你帮我组织几句能说出口的话，承认我没提前沟通，但也别让她觉得我在找借口。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5fe9043b-dc9e-9bc9-9b7f-f09a7ac2dad9",
+    "usage": {
+      "prompt_tokens": 311,
+      "total_tokens": 387,
+      "completion_tokens": 76,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 72,
+        "text_tokens": 239
+      },
+      "completion_tokens_details": {
+        "text_tokens": 76
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8caf21ef9ce715538bc5c8a928196df00a75ffaaa1cca766b62a1d8e896f5653"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d581d9333840e948b380aac792fa97ab81efec6d743037b089cb0d8c1d3095c5",
+    "canonical_sha256": "8caf21ef9ce715538bc5c8a928196df00a75ffaaa1cca766b62a1d8e896f5653",
+    "pcm_sha256": "04942e027f0048c7d6087ffffa13a6af3ef5dabc8514090d148fe07e36b87a42",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 252480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "上周六家里聚会我没去，我姐挺不高兴的，其实是我临时加班没顾上跟她说。我想跟她道个歉，你帮我组织几句能说出口的话，承认我没提前沟通，但也别让她觉得我在找借口。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1a3b9a20-076d-939b-81b1-cad16555db2f",
+      "usage": {
+        "prompt_tokens": 227,
+        "total_tokens": 303,
+        "completion_tokens": 76,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 72,
+          "text_tokens": 155
+        },
+        "completion_tokens_details": {
+          "text_tokens": 76
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d581d9333840e948b380aac792fa97ab81efec6d743037b089cb0d8c1d3095c5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d581d9333840e948b380aac792fa97ab81efec6d743037b089cb0d8c1d3095c5",
+        "canonical_audio_sha256": "8caf21ef9ce715538bc5c8a928196df00a75ffaaa1cca766b62a1d8e896f5653",
+        "pcm_sha256": "04942e027f0048c7d6087ffffa13a6af3ef5dabc8514090d148fe07e36b87a42",
+        "same_samples": true
+      }
+    }
+  ]
+}

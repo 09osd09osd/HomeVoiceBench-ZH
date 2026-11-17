@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e227a29e97ef52f735f8465ad653048b.wav",
+  "sha256": "149f37c32662465c8994473a7309e52c17fcd6954a7b4cf280e7f232d2b8f64a",
+  "duration_seconds": 3.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0ebd41df-c765-9061-8616-44381078936b",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 616,
+    "total_tokens": 807,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把书房灯的色温改成4000K，其他设置都别动。",
+  "spoken_text": "把书房灯的色温改成四千开尔文，其他设置都别动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把书房灯的色温改成四千开尔文，其他设置都别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把书房灯的色温改成四千开尔文，其他设置都别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-11caa086-6251-9cbd-a5f1-c11e31de1b1d",
+    "usage": {
+      "prompt_tokens": 230,
+      "total_tokens": 273,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "149f37c32662465c8994473a7309e52c17fcd6954a7b4cf280e7f232d2b8f64a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f922dd751b6fcb92ede0e37830b08afb29a3e48559e7b14f540961cc7515a45a",
+    "canonical_sha256": "149f37c32662465c8994473a7309e52c17fcd6954a7b4cf280e7f232d2b8f64a",
+    "pcm_sha256": "1b62a4d1174898e9e385aa6bd1d8bc0b0cef52ff934320188be2d60f4bc5949c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 73920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把书房灯的色温改成四千K，其他设置都别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把书房灯的色温改成四千K，其他设置都别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e87cf996-8496-9ef6-ae65-ef7ddfc00e0f",
+      "usage": {
+        "prompt_tokens": 169,
+        "total_tokens": 210,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 146
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f922dd751b6fcb92ede0e37830b08afb29a3e48559e7b14f540961cc7515a45a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f922dd751b6fcb92ede0e37830b08afb29a3e48559e7b14f540961cc7515a45a",
+        "canonical_audio_sha256": "149f37c32662465c8994473a7309e52c17fcd6954a7b4cf280e7f232d2b8f64a",
+        "pcm_sha256": "1b62a4d1174898e9e385aa6bd1d8bc0b0cef52ff934320188be2d60f4bc5949c",
+        "same_samples": true
+      }
+    }
+  ]
+}

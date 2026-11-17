@@ -1,0 +1,94 @@
+{
+  "reason": "Shared GPU/system commit exhaustion during concurrent engine pressure test. Re-run only identified infrastructure failures after switching to staged single-engine batching; model correctness and budget failures are retained.",
+  "at": "2026-11-16T16:51:07.124055+00:00",
+  "runs": [
+    {
+      "case_id": "C02_008",
+      "system_id": "edge_native",
+      "flags": [
+        "RuntimeError: Local inference HTTP 500: {\"error\": \"CUDA out of memory. Tried to allocate 186.00 MiB. GPU 0 has a total capacity of 23.99 GiB of which 13.62 GiB is free. Of the allocated memory 8.30 GiB is allocated by PyTorch, with 442.73 MiB allocated in private pools (e.g., CUDA Graphs), and 423.89 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\", \"type\": \"OutOfMemoryError\"}"
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/edge_native/C02_008.json"
+    },
+    {
+      "case_id": "C02_010",
+      "system_id": "edge_native",
+      "flags": [
+        "TimeoutError: timed out"
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/edge_native/C02_010.json"
+    },
+    {
+      "case_id": "C05_014",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 502: "
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C05_014.json"
+    },
+    {
+      "case_id": "C05_020",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 500: {\"error\":{\"code\":500,\"message\":\"got exception: bad allocation\",\"type\":\"server_error\"}}"
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C05_020.json"
+    },
+    {
+      "case_id": "C06_002",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 502: "
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C06_002.json"
+    },
+    {
+      "case_id": "C06_003",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 502: "
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C06_003.json"
+    },
+    {
+      "case_id": "C06_004",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 502: "
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C06_004.json"
+    },
+    {
+      "case_id": "C06_005",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 502: "
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C06_005.json"
+    },
+    {
+      "case_id": "C06_006",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 502: "
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C06_006.json"
+    },
+    {
+      "case_id": "C06_007",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 502: "
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C06_007.json"
+    },
+    {
+      "case_id": "C06_008",
+      "system_id": "qwen35_2b",
+      "flags": [
+        "RuntimeError: Local inference HTTP 502: "
+      ],
+      "archive": "runs/infra_attempts/resource_1794847866884427400/qwen35_2b/C06_008.json"
+    }
+  ]
+}

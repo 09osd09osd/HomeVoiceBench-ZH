@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "96559125b0673a34734a9dc64632026e320f8a49c20024615fbe61a347d114dd",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-27893f83-86b6-98ab-92f3-afad238db9a6",
+  "usage": {
+    "prompt_tokens": 1835,
+    "total_tokens": 3035,
+    "completion_tokens": 1200,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1835
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1200
+    }
+  },
+  "review_request_id": "chatcmpl-a9a3fe71-3622-907c-a2b5-8494475bbffa",
+  "review_usage": {
+    "prompt_tokens": 2657,
+    "total_tokens": 2743,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2657
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C12_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C12_006",
+        "title": "一句温和的发音纠错",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天有点累，想练一句简单的英文，就一句，别太长。",
+            "reference_text": "好的，我们就练一句简单的。你可以先跟我说这句：I would like a cup of tea。注意would的发音，慢慢来，不着急。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_007",
+        "title": "疲惫时练短句并调整难度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，想练一句简单的英文，就一句，别太长。",
+            "reference_text": "好的，我们就练一句简单的。你可以先说：I would like a cup of tea。注意would的发音，慢慢来。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "能不能换个更短的句子？我实在没什么力气。",
+            "reference_text": "当然可以，那就练这句：A cup of tea, please。三个词，简单又实用，你跟着我慢慢说一遍就好。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_008",
+        "title": "短句练习中的细节更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，想练一句简单的英文，就一句，别太长。",
+            "reference_text": "好的，我们就练一句简单的。你可以先说：I would like a cup of tea。注意would的发音，慢慢来。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "能不能换个更短的句子？我实在没什么力气。",
+            "reference_text": "当然可以，那就练这句：A cup of tea, please。三个词，简单又实用，你跟着我慢慢说一遍就好。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，其实我不想要茶，我想要一杯水。",
+            "reference_text": "没关系，那我们改成：A glass of water, please。注意glass和water的发音，慢慢说，不着急。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_009",
+        "title": "记住更正后的短句继续练",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，想练一句简单的英文，就一句，别太长。",
+            "reference_text": "好的，我们就练一句简单的。你可以先说：I would like a cup of tea。注意would的发音，慢慢来。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "能不能换个更短的句子？我实在没什么力气。",
+            "reference_text": "当然可以，那就练这句：A cup of tea, please。三个词，简单又实用，你跟着我慢慢说一遍就好。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，其实我不想要茶，我想要一杯水。",
+            "reference_text": "没关系，那我们改成：A glass of water, please。注意glass和water的发音，慢慢说，不着急。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改成了要什么吗？再说一遍给我听。",
+            "reference_text": "记得，你改成了要一杯水，句子是：A glass of water, please。你跟着我再说一遍，慢慢来。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_010",
+        "title": "疲惫练习短句后简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，想练一句简单的英文，就一句，别太长。",
+            "reference_text": "好的，我们就练一句简单的。你可以先说：I would like a cup of tea。注意would的发音，慢慢来。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "能不能换个更短的句子？我实在没什么力气。",
+            "reference_text": "当然可以，那就练这句：A cup of tea, please。三个词，简单又实用，你跟着我慢慢说一遍就好。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，其实我不想要茶，我想要一杯水。",
+            "reference_text": "没关系，那我们改成：A glass of water, please。注意glass和water的发音，慢慢说，不着急。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改成了要什么吗？再说一遍给我听。",
+            "reference_text": "记得，你改成了要一杯水，句子是：A glass of water, please。你跟着我再说一遍，慢慢来。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好的，今天太累了，我们简短收个尾吧。",
+            "reference_text": "好的，今天我们就练到这儿。记住这句：A glass of water, please。你辛苦了，早点休息。"
+          }
+        ]
+      }
+    ]
+  }
+}

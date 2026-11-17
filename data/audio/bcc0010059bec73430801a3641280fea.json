@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/bcc0010059bec73430801a3641280fea.wav",
+  "sha256": "36c05b86d3c1decc307000b838012c8b9ee5980e15bb480b7b48aa5361e58aa5",
+  "duration_seconds": 3.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "30c11dfc-4682-9472-9d26-40277f31ac05",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 600,
+    "total_tokens": 779,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "再查一下客厅音箱开着没，其他设备别动。",
+  "spoken_text": "再查一下客厅音箱开着没，其他设备别动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "再查一下客厅音箱开着没？其他设备别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "再查一下客厅音箱开着没？其他设备别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ee9a467e-3693-96fa-9425-8fae4f51c34f",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "36c05b86d3c1decc307000b838012c8b9ee5980e15bb480b7b48aa5361e58aa5"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e8a2ce1584d011d158c295db5df82710dd35a8e97a40eb9e59ebcb34e982419d",
+    "canonical_sha256": "36c05b86d3c1decc307000b838012c8b9ee5980e15bb480b7b48aa5361e58aa5",
+    "pcm_sha256": "4912288b14c089ffb486187d76407ef1f178b8ab1b97cafe0c606059267959d7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 72000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "再查一下客厅音箱开着没？其他设备别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "再查一下客厅音箱开着没？其他设备别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-789d68fe-6d2f-97e6-ba15-cc9aef7a24a9",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 203,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e8a2ce1584d011d158c295db5df82710dd35a8e97a40eb9e59ebcb34e982419d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e8a2ce1584d011d158c295db5df82710dd35a8e97a40eb9e59ebcb34e982419d",
+        "canonical_audio_sha256": "36c05b86d3c1decc307000b838012c8b9ee5980e15bb480b7b48aa5361e58aa5",
+        "pcm_sha256": "4912288b14c089ffb486187d76407ef1f178b8ab1b97cafe0c606059267959d7",
+        "same_samples": true
+      }
+    }
+  ]
+}

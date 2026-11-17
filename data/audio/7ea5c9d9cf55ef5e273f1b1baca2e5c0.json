@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/7ea5c9d9cf55ef5e273f1b1baca2e5c0.wav",
+  "sha256": "f54d2a630afb615ca1972990adc448ad3d8041dea274c88bfc6e1ced4bed1270",
+  "duration_seconds": 4.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3af4ccaa-24fa-99a2-b134-76414af48295",
+  "usage": {
+    "input_tokens": 198,
+    "output_tokens": 888,
+    "total_tokens": 1086,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，别给我推带广告的那种，我听着烦。",
+  "spoken_text": "对了，别给我推带广告的那种，我听着烦。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，别给我推带广告的那种，我听着烦。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，别给我推带广告的那种，我听着烦。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-bd4cb376-7dbc-9e90-8e5c-43ef0668e655",
+    "usage": {
+      "prompt_tokens": 232,
+      "total_tokens": 271,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f54d2a630afb615ca1972990adc448ad3d8041dea274c88bfc6e1ced4bed1270"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "50033d3c9d48c13e156dacb6c85f297c01ce9dae86163fce2c2572b01c64b29b",
+    "canonical_sha256": "f54d2a630afb615ca1972990adc448ad3d8041dea274c88bfc6e1ced4bed1270",
+    "pcm_sha256": "3cfba9b753c48069c3ac73cb28d9917989116e7289b09fe62709322ac0e02fc1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 106560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，别给我推带广告的那种，我听着烦。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-037830b7-a1e2-9c3f-a6f1-e090950fa436",
+      "usage": {
+        "prompt_tokens": 148,
+        "total_tokens": 187,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "50033d3c9d48c13e156dacb6c85f297c01ce9dae86163fce2c2572b01c64b29b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "50033d3c9d48c13e156dacb6c85f297c01ce9dae86163fce2c2572b01c64b29b",
+        "canonical_audio_sha256": "f54d2a630afb615ca1972990adc448ad3d8041dea274c88bfc6e1ced4bed1270",
+        "pcm_sha256": "3cfba9b753c48069c3ac73cb28d9917989116e7289b09fe62709322ac0e02fc1",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b1e31a04e8779a109a1b3ecbde0420f8.wav",
+  "sha256": "dfead8a240da6fd63a2ffdd2a1a647d4cd03f14f83130250d252464c1b73c073",
+  "duration_seconds": 4.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c0836e9f-e27e-9798-875f-a56af1522736",
+  "usage": {
+    "input_tokens": 205,
+    "output_tokens": 912,
+    "total_tokens": 1117,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+  "spoken_text": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我看看客厅现在有没有人，把读数和测量时间告诉我。只查一下就行，别动任何设备。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我看看客厅现在有没有人，把读数和测量时间告诉我。只查一下就行，别动任何设备。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ccd982cc-b2be-9459-b5b3-02d4bd0bbc2d",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 293,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "dfead8a240da6fd63a2ffdd2a1a647d4cd03f14f83130250d252464c1b73c073"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "642d34ecabcffadb26463d512bc8c7aeded5991485dbeefbd1c052fce581f600",
+    "canonical_sha256": "dfead8a240da6fd63a2ffdd2a1a647d4cd03f14f83130250d252464c1b73c073",
+    "pcm_sha256": "6429cc1d0474c8e8d6c51e5d9cd774ef8fd66294c65084c5dc6e48d9d333b8b2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 109440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1b64d9ff-839f-960d-822a-5942fe508970",
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 232,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "642d34ecabcffadb26463d512bc8c7aeded5991485dbeefbd1c052fce581f600",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "642d34ecabcffadb26463d512bc8c7aeded5991485dbeefbd1c052fce581f600",
+        "canonical_audio_sha256": "dfead8a240da6fd63a2ffdd2a1a647d4cd03f14f83130250d252464c1b73c073",
+        "pcm_sha256": "6429cc1d0474c8e8d6c51e5d9cd774ef8fd66294c65084c5dc6e48d9d333b8b2",
+        "same_samples": true
+      }
+    }
+  ]
+}

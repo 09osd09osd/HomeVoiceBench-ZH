@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/7f7f2cbc1cebd0074660db6db3a49408.wav",
+  "sha256": "8b08b5a0f0fcfc44eae03a5eca6bbad7442016687dc9a65b00e9e58e26f9655a",
+  "duration_seconds": 3.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1bcc21e9-4f8f-95f1-8045-d2c5e576e8d4",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 688,
+    "total_tokens": 882,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你记得我今天是拿什么肉做的吗？我怕自己下次又买错了。",
+  "spoken_text": "你记得我今天是拿什么肉做的吗？我怕自己下次又买错了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你记得我今天是拿什么肉做的吗？我怕自己下次又买错了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你记得我今天是拿什么肉做的吗？我怕自己下次又买错了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e219a227-ca98-923b-b854-d986cd39af26",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8b08b5a0f0fcfc44eae03a5eca6bbad7442016687dc9a65b00e9e58e26f9655a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "70af4c92fdfb5752026bf4c12494081353b90ee46831061ad3bdcff0bcb2e75f",
+    "canonical_sha256": "8b08b5a0f0fcfc44eae03a5eca6bbad7442016687dc9a65b00e9e58e26f9655a",
+    "pcm_sha256": "e633548a54acea7e4cc771787f7892f5eda81d3ec84a94792c675b44c7aca576",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 82560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你记得我今天是拿什么肉做的吗？我怕自己下次又买错了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d88a40d5-8e6b-9212-a8b0-4202277c666d",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "70af4c92fdfb5752026bf4c12494081353b90ee46831061ad3bdcff0bcb2e75f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "70af4c92fdfb5752026bf4c12494081353b90ee46831061ad3bdcff0bcb2e75f",
+        "canonical_audio_sha256": "8b08b5a0f0fcfc44eae03a5eca6bbad7442016687dc9a65b00e9e58e26f9655a",
+        "pcm_sha256": "e633548a54acea7e4cc771787f7892f5eda81d3ec84a94792c675b44c7aca576",
+        "same_samples": true
+      }
+    }
+  ]
+}

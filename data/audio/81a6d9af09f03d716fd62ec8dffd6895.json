@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/81a6d9af09f03d716fd62ec8dffd6895.wav",
+  "sha256": "1b9c763ad88bd49091308a400e7470feb782ae45b40515adc7843b3b0a2f0a09",
+  "duration_seconds": 13.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "216b598e-d88b-94ff-8be5-dbd46142e472",
+  "usage": {
+    "input_tokens": 255,
+    "output_tokens": 2632,
+    "total_tokens": 2887,
+    "duration": 13
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "前几天我跟爸爸因为借钱的事吵了一架，我说话有点冲，现在想缓和一下，但不想让他以为我以后就不管家里的事了。你能帮我想几句能说出口的话吗？",
+  "spoken_text": "前几天我跟爸爸因为借钱的事吵了一架，我说话有点冲，现在想缓和一下，但不想让他以为我以后就不管家里的事了。你能帮我想几句能说出口的话吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "前几天我跟爸爸因为借钱的事吵了一架。我说话有点冲，现在想缓和一下，但不想让他以为我以后就不管家里的事了。你能帮我想几句能说出口的话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "前几天我跟爸爸因为借钱的事吵了一架。我说话有点冲，现在想缓和一下，但不想让他以为我以后就不管家里的事了。你能帮我想几句能说出口的话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-87d9fb55-a759-9ed0-8d0a-b4c97e372d33",
+    "usage": {
+      "prompt_tokens": 321,
+      "total_tokens": 386,
+      "completion_tokens": 65,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 93,
+        "text_tokens": 228
+      },
+      "completion_tokens_details": {
+        "text_tokens": 65
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1b9c763ad88bd49091308a400e7470feb782ae45b40515adc7843b3b0a2f0a09"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0eb50a9ac73e08cf2d5bb94d83283f7ab00625d104c6310c3d7e33dd5c5982d3",
+    "canonical_sha256": "1b9c763ad88bd49091308a400e7470feb782ae45b40515adc7843b3b0a2f0a09",
+    "pcm_sha256": "7b8243f3522f1fb46c43e5e4ff40253c461586e294f51e82c227495a8fa2a161",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 315840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "前几天我跟爸爸因为借钱的事吵了一架。我说话有点冲，现在想缓和一下，但不想让他以为我以后就不管家里的事了。你能帮我想几句能说出口的话吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-77a67383-b6ac-964b-b887-f49482d4bdec",
+      "usage": {
+        "prompt_tokens": 237,
+        "total_tokens": 302,
+        "completion_tokens": 65,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 93,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 65
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0eb50a9ac73e08cf2d5bb94d83283f7ab00625d104c6310c3d7e33dd5c5982d3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0eb50a9ac73e08cf2d5bb94d83283f7ab00625d104c6310c3d7e33dd5c5982d3",
+        "canonical_audio_sha256": "1b9c763ad88bd49091308a400e7470feb782ae45b40515adc7843b3b0a2f0a09",
+        "pcm_sha256": "7b8243f3522f1fb46c43e5e4ff40253c461586e294f51e82c227495a8fa2a161",
+        "same_samples": true
+      }
+    }
+  ]
+}

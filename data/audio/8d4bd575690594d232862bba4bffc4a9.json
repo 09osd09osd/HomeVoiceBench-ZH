@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/8d4bd575690594d232862bba4bffc4a9.wav",
+  "sha256": "63eb176ecf9b4059f830287892e563b8efda2dc7382f6c9a93530da9b70d2cf3",
+  "duration_seconds": 7.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "06d340b8-96de-9363-9915-f0c2756402cf",
+  "usage": {
+    "input_tokens": 266,
+    "output_tokens": 1448,
+    "total_tokens": 1714,
+    "duration": 7
+  },
+  "seed": 100042,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我妈昨天打了三个电话我没接，她以为我故意不理她，其实我手机静音在开会。我想跟她解释清楚，又不想让她觉得我在找借口，怎么说？",
+  "spoken_text": "我妈昨天打了三个电话我没接，她以为我故意不理她，其实我手机静音在开会。我想跟她解释清楚，又不想让她觉得我在找借口，怎么说？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "我妈昨天打了三个电话，我没接，她以为我故意不理她。其实我手机静音在开会，我想跟她解释清楚，又不想让她觉得我在找借口，怎么说？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我妈昨天打了三个电话，我没接，她以为我故意不理她。其实我手机静音在开会，我想跟她解释清楚，又不想让她觉得我在找借口，怎么说？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8add8797-5fdc-93e7-b194-0774a34a4b4c",
+    "usage": {
+      "prompt_tokens": 277,
+      "total_tokens": 341,
+      "completion_tokens": 64,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 226
+      },
+      "completion_tokens_details": {
+        "text_tokens": 64
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "63eb176ecf9b4059f830287892e563b8efda2dc7382f6c9a93530da9b70d2cf3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "16b5d137cd39126dc7a41459d6800ef7a0a120c1b348d603e2e29d6475430e5f",
+    "canonical_sha256": "63eb176ecf9b4059f830287892e563b8efda2dc7382f6c9a93530da9b70d2cf3",
+    "pcm_sha256": "4af73435e3b1b91ff60df4c085334acf37931127f78c66da1d0373ac0753eaba",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 173760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我妈昨天打了三个电话我没接，她以为我故意不理她，其实我手机静音在开会。我想跟她解释清楚，又不想让她觉得我在找借口，怎么说？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-8950ef96-506b-98c3-be4e-2d6f03e98420",
+      "usage": {
+        "prompt_tokens": 193,
+        "total_tokens": 256,
+        "completion_tokens": 63,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 63
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "16b5d137cd39126dc7a41459d6800ef7a0a120c1b348d603e2e29d6475430e5f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "16b5d137cd39126dc7a41459d6800ef7a0a120c1b348d603e2e29d6475430e5f",
+        "canonical_audio_sha256": "63eb176ecf9b4059f830287892e563b8efda2dc7382f6c9a93530da9b70d2cf3",
+        "pcm_sha256": "4af73435e3b1b91ff60df4c085334acf37931127f78c66da1d0373ac0753eaba",
+        "same_samples": true
+      }
+    }
+  ]
+}

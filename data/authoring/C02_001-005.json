@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "7eceadad31765f065935b36186d4008f0f8e904eed479cf1fde72e0bfeb2a46c",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-9edfd754-fd62-9f16-8fa3-85f5c57ea483",
+  "usage": {
+    "prompt_tokens": 1720,
+    "total_tokens": 2849,
+    "completion_tokens": 1129,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1720
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1129
+    }
+  },
+  "review_request_id": "chatcmpl-f8fbfd41-3a0d-9f16-ad55-aeac70b8611b",
+  "review_usage": {
+    "prompt_tokens": 2472,
+    "total_tokens": 2558,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2472
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C02_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C02_001",
+        "title": "晨间起床节奏与习惯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "早上好，我一般六点半起床，先喝杯温水再活动。你能陪我说说早晨的安排吗？",
+            "reference_text": "早上好！六点半起床先喝温水，这个习惯挺好。早晨可以简单伸展一下，再想想今天要做的事，慢慢进入状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_002",
+        "title": "睡前放松与习惯补充",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚上好，我睡前喜欢听点轻音乐，一般十点半上床。你能陪我聊聊怎么放松吗？",
+            "reference_text": "晚上好！十点半上床前听轻音乐确实能帮人放松。可以把灯光调暗一点，让心情慢慢静下来。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我不太喜欢太吵的音乐，最好是没有歌词的，音量也小一点。",
+            "reference_text": "明白了，选没有歌词、音量小的轻音乐，这样更安静，也不会影响入睡。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_003",
+        "title": "晨间习惯与细节更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "早上好，我起床后习惯先拉开窗帘，再喝半杯温水，然后做几分钟拉伸。",
+            "reference_text": "早上好！拉开窗帘让光线进来，喝半杯温水再拉伸，这个顺序挺舒服的。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "拉伸的时候我喜欢放点轻快的音乐，但不要太吵。",
+            "reference_text": "轻快的音乐能带动拉伸的节奏，音量适中就好，不会太吵。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，温水是喝一杯，不是半杯。",
+            "reference_text": "好的，我记住是喝一杯温水，不是半杯。拉开窗帘、喝一杯温水、再拉伸。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_004",
+        "title": "睡前流程与更正检验",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚上好，我睡前习惯先洗漱，然后看十分钟书，最后关灯睡觉。",
+            "reference_text": "晚上好！洗漱、看十分钟书再关灯，这个睡前流程很清晰，也容易坚持。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我看书的时候喜欢开小台灯，不喜欢太亮的大灯。",
+            "reference_text": "开小台灯看书确实更柔和，大灯太亮容易影响睡意。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，看书是十五分钟，不是十分钟。",
+            "reference_text": "好的，我记住是看十五分钟书，然后关灯睡觉。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我睡前看书是多久吗？顺便说说这样安排好不好。",
+            "reference_text": "你睡前看书是十五分钟，用小台灯。这样安排挺好，时间不长，能放松又不会太兴奋。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_005",
+        "title": "晨间流程更正与简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "早上好，我起床后先喝温水，再做五分钟拉伸，然后吃早饭。",
+            "reference_text": "早上好！喝温水、做五分钟拉伸再吃早饭，这个早晨安排简单又实用。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "拉伸的时候我喜欢在阳台上做，空气好一点。",
+            "reference_text": "在阳台上拉伸空气新鲜，也能让人更清醒，挺好的。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，拉伸是十分钟，不是五分钟。",
+            "reference_text": "好的，我记住拉伸是十分钟，不是五分钟。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你还记得我早上拉伸多久、在哪里做吗？",
+            "reference_text": "你早上拉伸十分钟，在阳台上做。喝温水、拉伸十分钟再吃早饭。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "记得就好，咱们简短说两句就收尾吧。",
+            "reference_text": "好的，那就简单收个尾：早上喝温水、阳台拉伸十分钟、再吃早饭。祝你今天顺顺利利！"
+          }
+        ]
+      }
+    ]
+  }
+}

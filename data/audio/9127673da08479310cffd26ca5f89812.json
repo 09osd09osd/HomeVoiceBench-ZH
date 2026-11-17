@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/9127673da08479310cffd26ca5f89812.wav",
+  "sha256": "21683eeb3e27759bae0e320c843927f6fb43e1ff92dd27cedf87f11adeaa4f05",
+  "duration_seconds": 2.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ac16b565-7aac-900c-90fd-73f709d8817e",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 544,
+    "total_tokens": 726,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我打开客厅电视，音量调到80%。",
+  "spoken_text": "帮我打开客厅电视，音量调到百分之八十。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我打开客厅电视，音量调到80%。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我打开客厅电视，音量调到80%。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1d0ac091-f598-91a1-b67d-c3652b1447d7",
+    "usage": {
+      "prompt_tokens": 216,
+      "total_tokens": 253,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "21683eeb3e27759bae0e320c843927f6fb43e1ff92dd27cedf87f11adeaa4f05"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a901c6fe024e5179d37f654c5b5cb4d10cafec3339922d4db6810c58a9d66456",
+    "canonical_sha256": "21683eeb3e27759bae0e320c843927f6fb43e1ff92dd27cedf87f11adeaa4f05",
+    "pcm_sha256": "8c9a9a34e737609e7e01772b17a7494b61d2db495bd0d72676439f1453c84c1d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 65280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我打开客厅电视，音量调到百分之八十。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我打开客厅电视，音量调到百分之八十。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5bf10137-2e71-9a30-96c1-0cceca83aae5",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 191,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a901c6fe024e5179d37f654c5b5cb4d10cafec3339922d4db6810c58a9d66456",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a901c6fe024e5179d37f654c5b5cb4d10cafec3339922d4db6810c58a9d66456",
+        "canonical_audio_sha256": "21683eeb3e27759bae0e320c843927f6fb43e1ff92dd27cedf87f11adeaa4f05",
+        "pcm_sha256": "8c9a9a34e737609e7e01772b17a7494b61d2db495bd0d72676439f1453c84c1d",
+        "same_samples": true
+      }
+    }
+  ]
+}

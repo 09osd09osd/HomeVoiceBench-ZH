@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f28def4e1bafc193854d10609aafc722.wav",
+  "sha256": "1eda048526e7e3f29bf6a9a228334f4e7c075d89e5414ab0b7758ef85d76a1ed",
+  "duration_seconds": 4.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7cc4f502-2012-91dc-ac2e-9414cd37b818",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 984,
+    "total_tokens": 1179,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "早上好，我刚起来，想听你简短陪我说几句，别太长。",
+  "spoken_text": "早上好，我刚起来，想听你简短陪我说几句，别太长。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "早上好，我刚起来，想听你简短陪我说几句，别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "早上好，我刚起来，想听你简短陪我说几句，别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6d1389d7-2491-9dd9-bf92-8f8c25f917ea",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1eda048526e7e3f29bf6a9a228334f4e7c075d89e5414ab0b7758ef85d76a1ed"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "065b69a49ebcf92aa441dbe9c4de28cb9642fe31cfbedbc71f6ef1fadf40390f",
+    "canonical_sha256": "1eda048526e7e3f29bf6a9a228334f4e7c075d89e5414ab0b7758ef85d76a1ed",
+    "pcm_sha256": "06827d62e95aa5a410857ffefcd94a05abe91b5e06855be847f025cad375f322",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 118080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "早上好，我刚起来，想听你简短陪我说几句，别太长。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-68ee063a-2097-95d2-8256-b0f5cdfc784c",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "065b69a49ebcf92aa441dbe9c4de28cb9642fe31cfbedbc71f6ef1fadf40390f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "065b69a49ebcf92aa441dbe9c4de28cb9642fe31cfbedbc71f6ef1fadf40390f",
+        "canonical_audio_sha256": "1eda048526e7e3f29bf6a9a228334f4e7c075d89e5414ab0b7758ef85d76a1ed",
+        "pcm_sha256": "06827d62e95aa5a410857ffefcd94a05abe91b5e06855be847f025cad375f322",
+        "same_samples": true
+      }
+    }
+  ]
+}

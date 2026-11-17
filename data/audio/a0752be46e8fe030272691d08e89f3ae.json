@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a0752be46e8fe030272691d08e89f3ae.wav",
+  "sha256": "97f544cce040ec4dbb20271bb2d0f01e3c7155c1dbcc2118709abea95433ed8c",
+  "duration_seconds": 8.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "be8b4a2a-9465-9a5e-a4e9-6a95dedfca00",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 1624,
+    "total_tokens": 1825,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天一个人把家里大扫除做完了，腰都直不起来，心里有点委屈。我就想抱怨两句，不用帮我出主意。",
+  "spoken_text": "今天一个人把家里大扫除做完了，腰都直不起来，心里有点委屈。我就想抱怨两句，不用帮我出主意。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天一个人把家里大扫除做完了，腰都直不起来，心里有点委屈。我就想抱怨两句，不用帮我出主意。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天一个人把家里大扫除做完了，腰都直不起来，心里有点委屈。我就想抱怨两句，不用帮我出主意。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0d70fec7-2aee-9459-934e-a95580c860ee",
+    "usage": {
+      "prompt_tokens": 275,
+      "total_tokens": 329,
+      "completion_tokens": 54,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 217
+      },
+      "completion_tokens_details": {
+        "text_tokens": 54
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "97f544cce040ec4dbb20271bb2d0f01e3c7155c1dbcc2118709abea95433ed8c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b3c9e409dad3d6af0e2c7b6f5cf65d4300e6df9aea264d66811c91505793a0d1",
+    "canonical_sha256": "97f544cce040ec4dbb20271bb2d0f01e3c7155c1dbcc2118709abea95433ed8c",
+    "pcm_sha256": "89ac75e3d6da44afac736387357f1ed2d9d2083a84e460dc070482d0de5f3f1d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 194880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天一个人把家里大扫除做完了，腰都直不起来，心里有点委屈。我就想抱怨两句，不用帮我出主意。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-684d8197-8d00-9fd9-b091-98b05db8ba63",
+      "usage": {
+        "prompt_tokens": 191,
+        "total_tokens": 245,
+        "completion_tokens": 54,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 133
+        },
+        "completion_tokens_details": {
+          "text_tokens": 54
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b3c9e409dad3d6af0e2c7b6f5cf65d4300e6df9aea264d66811c91505793a0d1",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b3c9e409dad3d6af0e2c7b6f5cf65d4300e6df9aea264d66811c91505793a0d1",
+        "canonical_audio_sha256": "97f544cce040ec4dbb20271bb2d0f01e3c7155c1dbcc2118709abea95433ed8c",
+        "pcm_sha256": "89ac75e3d6da44afac736387357f1ed2d9d2083a84e460dc070482d0de5f3f1d",
+        "same_samples": true
+      }
+    }
+  ]
+}

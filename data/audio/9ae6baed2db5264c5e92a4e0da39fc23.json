@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9ae6baed2db5264c5e92a4e0da39fc23.wav",
+  "sha256": "2169f39847fc908381e3979722d96567d3f90e0a19d126bb287a7b58a3533142",
+  "duration_seconds": 7.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "641f8bc5-9a39-91e2-b133-d50015b1cc91",
+  "usage": {
+    "input_tokens": 222,
+    "output_tokens": 1448,
+    "total_tokens": 1670,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天工作汇报被领导当众批评了，心里特别堵，我就想找个人说说，你听我讲讲就行，不用给我出主意。",
+  "spoken_text": "今天工作汇报被领导当众批评了，心里特别堵，我就想找个人说说，你听我讲讲就行，不用给我出主意。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天工作汇报被领导当众批评了，心里特别堵，我就想找个人说说，你听我讲讲就行，不用给我出主意。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天工作汇报被领导当众批评了，心里特别堵，我就想找个人说说，你听我讲讲就行，不用给我出主意。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f3773f3c-9804-9d56-9150-34a45141c7a4",
+    "usage": {
+      "prompt_tokens": 268,
+      "total_tokens": 322,
+      "completion_tokens": 54,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 217
+      },
+      "completion_tokens_details": {
+        "text_tokens": 54
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2169f39847fc908381e3979722d96567d3f90e0a19d126bb287a7b58a3533142"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d460df5919f5dd130539f8e05c8f407e69b4646a26b24f1b6b34cef91b7f573a",
+    "canonical_sha256": "2169f39847fc908381e3979722d96567d3f90e0a19d126bb287a7b58a3533142",
+    "pcm_sha256": "a9de720c3cffa7564fbbf399466535ee0347768194800ff1f67b91b8526b7743",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 173760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天工作汇报被领导当众批评了，心里特别堵，我就想找个人说说，你听我讲讲就行，不用给我出主意。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4bafc264-e120-930d-9bd5-5496920d174a",
+      "usage": {
+        "prompt_tokens": 184,
+        "total_tokens": 238,
+        "completion_tokens": 54,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 133
+        },
+        "completion_tokens_details": {
+          "text_tokens": 54
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d460df5919f5dd130539f8e05c8f407e69b4646a26b24f1b6b34cef91b7f573a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d460df5919f5dd130539f8e05c8f407e69b4646a26b24f1b6b34cef91b7f573a",
+        "canonical_audio_sha256": "2169f39847fc908381e3979722d96567d3f90e0a19d126bb287a7b58a3533142",
+        "pcm_sha256": "a9de720c3cffa7564fbbf399466535ee0347768194800ff1f67b91b8526b7743",
+        "same_samples": true
+      }
+    }
+  ]
+}

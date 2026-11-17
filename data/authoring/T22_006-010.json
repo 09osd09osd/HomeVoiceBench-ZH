@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "5facbc5ef8b27021a98742d74c70b4e810eb8c20b5de9d3392ce6ffad5ff856b",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-f3b9aa81-3976-9057-b124-81d14972d877",
+  "usage": {
+    "prompt_tokens": 7184,
+    "total_tokens": 8374,
+    "completion_tokens": 1190,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 7184
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1190
+    }
+  },
+  "review_request_id": "chatcmpl-a44b616f-dd67-90fb-8d0f-1fae1331cff9",
+  "review_usage": {
+    "prompt_tokens": 7996,
+    "total_tokens": 8082,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 7996
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T22_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T22_006",
+        "title": "每周一三五早上八点提醒浇绿萝",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五早上8点提醒我给绿萝浇水。",
+            "reference_text": "好的，已经设好每周一、三、五早上8点提醒你给绿萝浇水。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_007",
+        "title": "每周一三五浇水提醒改到八点半",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五早上8点提醒我给绿萝浇水。",
+            "reference_text": "好的，已经设好每周一、三、五早上8点提醒你给绿萝浇水。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改成8点半。",
+            "reference_text": "好的，已经把每周一、三、五给绿萝浇水的提醒改成早上8点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_008",
+        "title": "改浇水时间后列出当前启用安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五早上8点提醒我给绿萝浇水。",
+            "reference_text": "好的，已经设好每周一、三、五早上8点提醒你给绿萝浇水。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改成8点半。",
+            "reference_text": "好的，已经把每周一、三、五给绿萝浇水的提醒改成早上8点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "你现在启用的安排有两条：一条是每周一、三、五早上8点半给绿萝浇水；另一条是12月3日中午12点晾衣服。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_009",
+        "title": "取消改动后的浇水提醒保留晾衣服",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五早上8点提醒我给绿萝浇水。",
+            "reference_text": "好的，已经设好每周一、三、五早上8点提醒你给绿萝浇水。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改成8点半。",
+            "reference_text": "好的，已经把每周一、三、五给绿萝浇水的提醒改成早上8点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "你现在启用的安排有两条：一条是每周一、三、五早上8点半给绿萝浇水；另一条是12月3日中午12点晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消了每周一、三、五给绿萝浇水的提醒，晾衣服的提醒还留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_010",
+        "title": "取消后确认剩余启用与取消状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五早上8点提醒我给绿萝浇水。",
+            "reference_text": "好的，已经设好每周一、三、五早上8点提醒你给绿萝浇水。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改成8点半。",
+            "reference_text": "好的，已经把每周一、三、五给绿萝浇水的提醒改成早上8点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "你现在启用的安排有两条：一条是每周一、三、五早上8点半给绿萝浇水；另一条是12月3日中午12点晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消了每周一、三、五给绿萝浇水的提醒，晾衣服的提醒还留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "现在启用的只剩12月3日中午12点晾衣服的提醒；每周一、三、五给绿萝浇水的那条已经取消了。"
+          }
+        ]
+      }
+    ]
+  }
+}

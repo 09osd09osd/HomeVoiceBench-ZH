@@ -1,0 +1,873 @@
+{
+  "benchmark": "HomeVoiceBench-ZH",
+  "version": "0.2.0",
+  "generated_at": "2026-11-16T23:47:12.408150+00:00",
+  "evaluation_status": "complete",
+  "dataset": {
+    "cases": 1000,
+    "tool_cases": 600,
+    "chat_cases": 400,
+    "scenes": 50,
+    "normal_user_turns": 3000,
+    "turn_distribution": {
+      "1": 200,
+      "2": 200,
+      "3": 200,
+      "4": 200,
+      "5": 200
+    },
+    "audio_ready_cases": 1000,
+    "referenced_verified_unique_audio": 1648,
+    "referenced_unique_audio_seconds": 7193.28,
+    "normalizer_version": "zh_spoken_v1",
+    "human_review": "not_performed",
+    "input_type": "synthetic_clean_mandarin_audio"
+  },
+  "systems": [
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned": 1000,
+      "run_count": 1000,
+      "decided_count": 1000,
+      "judged_count": 853,
+      "passed_count": 116,
+      "strict_pass_rate": 0.116,
+      "observed_pass_rate": 0.116,
+      "dimension_mean": {
+        "relevance": 2.1462686567164178,
+        "truthfulness": 3.8985074626865672,
+        "context": 3.1453692848769053,
+        "adaptation": 2.382089552238806,
+        "clarity": 4.092537313432836,
+        "naturalness": 2.8776119402985074,
+        "intent": 2.7142857142857144,
+        "tool_use": 1.774131274131274,
+        "outcome_constraints": 1.386100386100386,
+        "feedback": 2.77992277992278,
+        "efficiency": 2.9806949806949805
+      },
+      "overall_dimension_mean": 2.7096522078937086,
+      "execution_failures": 200,
+      "critical_failure_count": 118,
+      "critical_failure_rate_among_judged": 0.13833528722157093
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned": 600,
+      "run_count": 600,
+      "decided_count": 600,
+      "judged_count": 518,
+      "passed_count": 75,
+      "strict_pass_rate": 0.125,
+      "observed_pass_rate": 0.125,
+      "dimension_mean": {
+        "intent": 2.7142857142857144,
+        "tool_use": 1.774131274131274,
+        "outcome_constraints": 1.386100386100386,
+        "context": 3.27027027027027,
+        "feedback": 2.77992277992278,
+        "efficiency": 2.9806949806949805
+      },
+      "overall_dimension_mean": 2.484234234234234,
+      "execution_failures": 85,
+      "critical_failure_count": 92,
+      "critical_failure_rate_among_judged": 0.1776061776061776
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "judged_count": 335,
+      "passed_count": 41,
+      "strict_pass_rate": 0.1025,
+      "observed_pass_rate": 0.1025,
+      "dimension_mean": {
+        "relevance": 2.1462686567164178,
+        "truthfulness": 3.8985074626865672,
+        "context": 2.952238805970149,
+        "adaptation": 2.382089552238806,
+        "clarity": 4.092537313432836,
+        "naturalness": 2.8776119402985074
+      },
+      "overall_dimension_mean": 3.0582089552238805,
+      "execution_failures": 115,
+      "critical_failure_count": 26,
+      "critical_failure_rate_among_judged": 0.07761194029850746
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned": 1000,
+      "run_count": 1000,
+      "decided_count": 1000,
+      "judged_count": 824,
+      "passed_count": 105,
+      "strict_pass_rate": 0.105,
+      "observed_pass_rate": 0.105,
+      "dimension_mean": {
+        "relevance": 1.8681948424068768,
+        "truthfulness": 2.7421203438395416,
+        "context": 2.9490291262135924,
+        "adaptation": 2.2177650429799427,
+        "clarity": 3.189111747851003,
+        "naturalness": 2.5272206303724927,
+        "intent": 2.781052631578947,
+        "tool_use": 2.3810526315789473,
+        "outcome_constraints": 2.08,
+        "feedback": 2.446315789473684,
+        "efficiency": 3.1052631578947367
+      },
+      "overall_dimension_mean": 2.6061893203883497,
+      "execution_failures": 245,
+      "critical_failure_count": 252,
+      "critical_failure_rate_among_judged": 0.3058252427184466
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned": 600,
+      "run_count": 600,
+      "decided_count": 600,
+      "judged_count": 475,
+      "passed_count": 100,
+      "strict_pass_rate": 0.16666666666666666,
+      "observed_pass_rate": 0.16666666666666666,
+      "dimension_mean": {
+        "intent": 2.781052631578947,
+        "tool_use": 2.3810526315789473,
+        "outcome_constraints": 2.08,
+        "context": 3.258947368421053,
+        "feedback": 2.446315789473684,
+        "efficiency": 3.1052631578947367
+      },
+      "overall_dimension_mean": 2.675438596491228,
+      "execution_failures": 157,
+      "critical_failure_count": 151,
+      "critical_failure_rate_among_judged": 0.3178947368421053
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "judged_count": 349,
+      "passed_count": 5,
+      "strict_pass_rate": 0.0125,
+      "observed_pass_rate": 0.0125,
+      "dimension_mean": {
+        "relevance": 1.8681948424068768,
+        "truthfulness": 2.7421203438395416,
+        "context": 2.5272206303724927,
+        "adaptation": 2.2177650429799427,
+        "clarity": 3.189111747851003,
+        "naturalness": 2.5272206303724927
+      },
+      "overall_dimension_mean": 2.5119388729703918,
+      "execution_failures": 88,
+      "critical_failure_count": 101,
+      "critical_failure_rate_among_judged": 0.28939828080229224
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned": 1000,
+      "run_count": 1000,
+      "decided_count": 1000,
+      "judged_count": 965,
+      "passed_count": 259,
+      "strict_pass_rate": 0.259,
+      "observed_pass_rate": 0.259,
+      "dimension_mean": {
+        "relevance": 3.1259445843828715,
+        "truthfulness": 3.972292191435768,
+        "context": 3.5098445595854924,
+        "adaptation": 3.5491183879093198,
+        "clarity": 3.6120906801007555,
+        "naturalness": 3.350125944584383,
+        "intent": 2.903169014084507,
+        "tool_use": 2.3028169014084505,
+        "outcome_constraints": 2.1496478873239435,
+        "feedback": 2.6038732394366195,
+        "efficiency": 3.237676056338028
+      },
+      "overall_dimension_mean": 3.0870466321243524,
+      "execution_failures": 52,
+      "critical_failure_count": 178,
+      "critical_failure_rate_among_judged": 0.1844559585492228
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned": 600,
+      "run_count": 600,
+      "decided_count": 600,
+      "judged_count": 568,
+      "passed_count": 143,
+      "strict_pass_rate": 0.23833333333333334,
+      "observed_pass_rate": 0.23833333333333334,
+      "dimension_mean": {
+        "intent": 2.903169014084507,
+        "tool_use": 2.3028169014084505,
+        "outcome_constraints": 2.1496478873239435,
+        "context": 3.3838028169014085,
+        "feedback": 2.6038732394366195,
+        "efficiency": 3.237676056338028
+      },
+      "overall_dimension_mean": 2.7634976525821595,
+      "execution_failures": 41,
+      "critical_failure_count": 138,
+      "critical_failure_rate_among_judged": 0.24295774647887325
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "judged_count": 397,
+      "passed_count": 116,
+      "strict_pass_rate": 0.29,
+      "observed_pass_rate": 0.29,
+      "dimension_mean": {
+        "relevance": 3.1259445843828715,
+        "truthfulness": 3.972292191435768,
+        "context": 3.690176322418136,
+        "adaptation": 3.5491183879093198,
+        "clarity": 3.6120906801007555,
+        "naturalness": 3.350125944584383
+      },
+      "overall_dimension_mean": 3.549958018471872,
+      "execution_failures": 11,
+      "critical_failure_count": 40,
+      "critical_failure_rate_among_judged": 0.10075566750629723
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_2b",
+      "category": "all",
+      "pass_rate_difference": 0.011,
+      "cluster_bootstrap_95_ci": [
+        -0.031,
+        0.05
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_2b",
+      "category": "tool",
+      "pass_rate_difference": -0.041666666666666664,
+      "cluster_bootstrap_95_ci": [
+        -0.10666666666666667,
+        0.016666666666666666
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_2b",
+      "category": "chat",
+      "pass_rate_difference": 0.09,
+      "cluster_bootstrap_95_ci": [
+        0.05,
+        0.1325
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_4b",
+      "category": "all",
+      "pass_rate_difference": -0.143,
+      "cluster_bootstrap_95_ci": [
+        -0.185,
+        -0.1
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_4b",
+      "category": "tool",
+      "pass_rate_difference": -0.11333333333333333,
+      "cluster_bootstrap_95_ci": [
+        -0.17666666666666667,
+        -0.04666666666666667
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_4b",
+      "category": "chat",
+      "pass_rate_difference": -0.1875,
+      "cluster_bootstrap_95_ci": [
+        -0.2375,
+        -0.14
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "qwen35_4b",
+      "system_b": "qwen35_2b",
+      "category": "all",
+      "pass_rate_difference": 0.154,
+      "cluster_bootstrap_95_ci": [
+        0.105,
+        0.201
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "qwen35_4b",
+      "system_b": "qwen35_2b",
+      "category": "tool",
+      "pass_rate_difference": 0.07166666666666667,
+      "cluster_bootstrap_95_ci": [
+        -0.0016666666666666668,
+        0.13833333333333334
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "qwen35_4b",
+      "system_b": "qwen35_2b",
+      "category": "chat",
+      "pass_rate_difference": 0.2775,
+      "cluster_bootstrap_95_ci": [
+        0.2125,
+        0.3375
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    }
+  ],
+  "api_usage": {
+    "unknown": {
+      "requests": 2,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "reported_total_tokens": 0
+    },
+    "deepseek-v4.1-flash": {
+      "requests": 493,
+      "prompt_tokens": 3469228,
+      "completion_tokens": 302180,
+      "reported_total_tokens": 3771408
+    },
+    "qwen-audio-3.1-tts-next": {
+      "requests": 1844,
+      "prompt_tokens": 335656,
+      "completion_tokens": 1539368,
+      "reported_total_tokens": 1875024
+    },
+    "qwen3.8-omni-flash": {
+      "requests": 8761,
+      "prompt_tokens": 40565079,
+      "completion_tokens": 6432332,
+      "reported_total_tokens": 46997411
+    },
+    "deepseek-flash": {
+      "requests": 1,
+      "prompt_tokens": 32,
+      "completion_tokens": 704,
+      "reported_total_tokens": 736
+    }
+  },
+  "usage_caveat": "Contains authoring, reviews, pilots, regeneration, input QC and response judging; provider pricing/billing may differ. Requests are ledger entries, not unique case costs.",
+  "limitations": [
+    "Synthetic clean speech, four instructed adult voices; no real-room noise or far-field generalization claim.",
+    "Fixed authored follow-ups and bounded clarification; not arbitrary interactive users.",
+    "Same-model authoring review is not independent human review.",
+    "One seed, one model audio judge; confidence intervals cover scene sampling, not all model/judge uncertainty.",
+    "Reference-compatible backbones differ in precision and runtime from native Edge; results compare complete deployed systems.",
+    "Offline ASR/TTS caching and batching mean interaction timings are not end-to-end real-time latency."
+  ],
+  "judge_evidence_version": "observed_oracle_v3",
+  "judge_prompt_sha256": "79a553f8525af1303af367d566fc7b754ba093a3df7e221bc4308358515109e8",
+  "by_planned_user_turns": [
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 1,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 38,
+      "strict_pass_rate": 0.19
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 2,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 21,
+      "strict_pass_rate": 0.105
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 3,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 22,
+      "strict_pass_rate": 0.11
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 4,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 20,
+      "strict_pass_rate": 0.1
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 5,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 15,
+      "strict_pass_rate": 0.075
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 1,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 20,
+      "strict_pass_rate": 0.16666666666666666
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 2,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 14,
+      "strict_pass_rate": 0.11666666666666667
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 3,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 12,
+      "strict_pass_rate": 0.1
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 4,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 16,
+      "strict_pass_rate": 0.13333333333333333
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 5,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 13,
+      "strict_pass_rate": 0.10833333333333334
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 1,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 18,
+      "strict_pass_rate": 0.225
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 2,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 7,
+      "strict_pass_rate": 0.0875
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 3,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 10,
+      "strict_pass_rate": 0.125
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 4,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 4,
+      "strict_pass_rate": 0.05
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 5,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 2,
+      "strict_pass_rate": 0.025
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 1,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 31,
+      "strict_pass_rate": 0.155
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 2,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 22,
+      "strict_pass_rate": 0.11
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 3,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 18,
+      "strict_pass_rate": 0.09
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 4,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 16,
+      "strict_pass_rate": 0.08
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 5,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 18,
+      "strict_pass_rate": 0.09
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 1,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 27,
+      "strict_pass_rate": 0.225
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 2,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 22,
+      "strict_pass_rate": 0.18333333333333332
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 3,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 18,
+      "strict_pass_rate": 0.15
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 4,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 15,
+      "strict_pass_rate": 0.125
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 5,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 18,
+      "strict_pass_rate": 0.15
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 1,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 4,
+      "strict_pass_rate": 0.05
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 2,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 0,
+      "strict_pass_rate": 0.0
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 3,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 0,
+      "strict_pass_rate": 0.0
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 4,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 1,
+      "strict_pass_rate": 0.0125
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 5,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 0,
+      "strict_pass_rate": 0.0
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 1,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 70,
+      "strict_pass_rate": 0.35
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 2,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 60,
+      "strict_pass_rate": 0.3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 3,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 49,
+      "strict_pass_rate": 0.245
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 4,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 39,
+      "strict_pass_rate": 0.195
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 5,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 41,
+      "strict_pass_rate": 0.205
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 1,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 35,
+      "strict_pass_rate": 0.2916666666666667
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 2,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 31,
+      "strict_pass_rate": 0.25833333333333336
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 3,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 26,
+      "strict_pass_rate": 0.21666666666666667
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 4,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 26,
+      "strict_pass_rate": 0.21666666666666667
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 5,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 25,
+      "strict_pass_rate": 0.20833333333333334
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 1,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 35,
+      "strict_pass_rate": 0.4375
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 2,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 29,
+      "strict_pass_rate": 0.3625
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 3,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 23,
+      "strict_pass_rate": 0.2875
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 4,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 13,
+      "strict_pass_rate": 0.1625
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 5,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 16,
+      "strict_pass_rate": 0.2
+    }
+  ]
+}

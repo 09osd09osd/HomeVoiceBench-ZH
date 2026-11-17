@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/25e775670912bd31da98b18aedf0e8ca.wav",
+  "sha256": "72f5f53cebc8c0906bd8db70618eff104c1d6319b62753a960a1e8c8aab33f68",
+  "duration_seconds": 4.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e8f1decc-3240-93c6-b742-250394a0880e",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 976,
+    "total_tokens": 1167,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "五岁孩子问我，为什么影子总是跟着他走，你能用简单的话讲清楚吗？",
+  "spoken_text": "五岁孩子问我，为什么影子总是跟着他走，你能用简单的话讲清楚吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "5岁孩子问我，为什么影子总是跟着他走？你能用简单的话讲清楚吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "5岁孩子问我，为什么影子总是跟着他走？你能用简单的话讲清楚吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-769d053d-5721-9902-8643-daee8545cbce",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 285,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "72f5f53cebc8c0906bd8db70618eff104c1d6319b62753a960a1e8c8aab33f68"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "467fedaae57b86da9c53202b7fd8c517fa7acec9193bab33f60addd67ab452b2",
+    "canonical_sha256": "72f5f53cebc8c0906bd8db70618eff104c1d6319b62753a960a1e8c8aab33f68",
+    "pcm_sha256": "dbe3a58b3ff8bf3f52ee8fb55250d193e3a428de9612c6bab316269ffb669239",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 117120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "五岁孩子问我：“为什么影子总是跟着他走？”你能用简单的话讲清楚吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "五岁孩子问我：“为什么影子总是跟着他走？”你能用简单的话讲清楚吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d4722e14-a7b7-9485-9864-2728d9f34fb1",
+      "usage": {
+        "prompt_tokens": 178,
+        "total_tokens": 224,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 148
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "467fedaae57b86da9c53202b7fd8c517fa7acec9193bab33f60addd67ab452b2",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "467fedaae57b86da9c53202b7fd8c517fa7acec9193bab33f60addd67ab452b2",
+        "canonical_audio_sha256": "72f5f53cebc8c0906bd8db70618eff104c1d6319b62753a960a1e8c8aab33f68",
+        "pcm_sha256": "dbe3a58b3ff8bf3f52ee8fb55250d193e3a428de9612c6bab316269ffb669239",
+        "same_samples": true
+      }
+    }
+  ]
+}

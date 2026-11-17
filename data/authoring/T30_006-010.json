@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "6d43ed8dc00d55bcfe3ef5abc0fb53c99a2a3ab3d0049a2e8f23a96b19ee9369",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-c97347de-a672-9860-8797-f3f49670ca06",
+  "usage": {
+    "prompt_tokens": 13269,
+    "total_tokens": 14393,
+    "completion_tokens": 1124,
+    "prompt_tokens_details": {
+      "cached_tokens": 13056,
+      "image_tokens": 0,
+      "text_tokens": 13269
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1124
+    }
+  },
+  "review_request_id": "chatcmpl-f79c11bb-095b-9cdb-821b-a4cead3fa3e1",
+  "review_usage": {
+    "prompt_tokens": 14015,
+    "total_tokens": 14101,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14015
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T30_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T30_006",
+        "title": "卧室灯调到四成并确认状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十，弄好了告诉我一声。",
+            "reference_text": "好的，已经帮你把卧室灯打开并调到百分之四十了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_007",
+        "title": "卧室灯调亮后反悔取消",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把卧室灯打开并调到百分之四十，稍等一下。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，把刚才那个任务取消掉；要是已经完成了就告诉我，别自己再把灯关上。",
+            "reference_text": "好的，刚才那个打开卧室灯的任务已经取消了，没有自动关灯。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_008",
+        "title": "取消后核对任务与灯的实际状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把卧室灯打开并调到百分之四十，稍等一下。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，把刚才那个任务取消掉；要是已经完成了就告诉我，别自己再把灯关上。",
+            "reference_text": "好的，刚才那个打开卧室灯的任务已经取消了，没有自动关灯。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我核对一下，那个任务现在是什么状态，还有卧室灯实际是开着还是关着。",
+            "reference_text": "那个任务已经取消了。卧室灯现在是关着的，亮度停在百分之四十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_009",
+        "title": "取消后核对并明确要求关灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把卧室灯打开并调到百分之四十，稍等一下。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，把刚才那个任务取消掉；要是已经完成了就告诉我，别自己再把灯关上。",
+            "reference_text": "好的，刚才那个打开卧室灯的任务已经取消了，没有自动关灯。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我核对一下，那个任务现在是什么状态，还有卧室灯实际是开着还是关着。",
+            "reference_text": "那个任务已经取消了。卧室灯现在是关着的，亮度停在百分之五十。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那我现在明确让你把这盏卧室灯关掉，你帮我关一下。",
+            "reference_text": "好的，已经帮你把卧室灯关掉了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_010",
+        "title": "关灯后确认状态并说明取消不回滚",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把卧室灯打开并调到百分之四十，稍等一下。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，把刚才那个任务取消掉；要是已经完成了就告诉我，别自己再把灯关上。",
+            "reference_text": "好的，刚才那个打开卧室灯的任务已经取消了，没有自动关灯。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我核对一下，那个任务现在是什么状态，还有卧室灯实际是开着还是关着。",
+            "reference_text": "那个任务已经取消了。卧室灯现在是关着的，亮度停在百分之六十。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那我现在明确让你把这盏卧室灯关掉，你帮我关一下。",
+            "reference_text": "好的，已经帮你把卧室灯关掉了。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "你再确认一下灯确实关好了，顺便说说刚才取消那个任务有没有把灯的状态回滚回去。",
+            "reference_text": "确认过了，卧室灯现在是关着的。刚才取消任务没有发生回滚，灯的状态还是保持关着。"
+          }
+        ]
+      }
+    ]
+  }
+}

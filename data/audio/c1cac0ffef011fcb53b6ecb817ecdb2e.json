@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c1cac0ffef011fcb53b6ecb817ecdb2e.wav",
+  "sha256": "a2b8ac7299f3ef9d7ea4f61ddf7b49c30f817b4fcffcd6d1f803cf15df918387",
+  "duration_seconds": 8.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f2d16976-cac9-9694-b8c7-7f94abf7d95e",
+  "usage": {
+    "input_tokens": 247,
+    "output_tokens": 1616,
+    "total_tokens": 1863,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我昨天因为妹妹动我东西发了火，说话有点重。我想跟她缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+  "spoken_text": "我昨天因为妹妹动我东西发了火，说话有点重。我想跟她缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我昨天因为妹妹动我东西发了火，说话有点重。我想跟她缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我昨天因为妹妹动我东西发了火，说话有点重。我想跟她缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a921eac5-56e7-9240-8e31-1d6046293266",
+    "usage": {
+      "prompt_tokens": 281,
+      "total_tokens": 341,
+      "completion_tokens": 60,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 223
+      },
+      "completion_tokens_details": {
+        "text_tokens": 60
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a2b8ac7299f3ef9d7ea4f61ddf7b49c30f817b4fcffcd6d1f803cf15df918387"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d260b3c652ff84f4c5e4fee48e37643861cb229fcd0add0fa73a39f1533c4a0b",
+    "canonical_sha256": "a2b8ac7299f3ef9d7ea4f61ddf7b49c30f817b4fcffcd6d1f803cf15df918387",
+    "pcm_sha256": "34bc93804677d11b74b3b03fdda176d201d9c9002c2e079afafccb2a39d9b0fc",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 193920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我昨天因为妹妹动我东西发了火，说话有点重。我想跟她缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d36ea0ac-d7ea-9e81-9968-6fdcc7cbfe37",
+      "usage": {
+        "prompt_tokens": 197,
+        "total_tokens": 257,
+        "completion_tokens": 60,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 60
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d260b3c652ff84f4c5e4fee48e37643861cb229fcd0add0fa73a39f1533c4a0b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d260b3c652ff84f4c5e4fee48e37643861cb229fcd0add0fa73a39f1533c4a0b",
+        "canonical_audio_sha256": "a2b8ac7299f3ef9d7ea4f61ddf7b49c30f817b4fcffcd6d1f803cf15df918387",
+        "pcm_sha256": "34bc93804677d11b74b3b03fdda176d201d9c9002c2e079afafccb2a39d9b0fc",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "8aa6ab2c24c7e77cc408a24a9667d77b3e4f4946f84e0b209fab8ac04b62e460",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-967f93bb-f0a1-9f14-a382-1da07cfff25c",
+  "usage": {
+    "prompt_tokens": 5104,
+    "total_tokens": 6289,
+    "completion_tokens": 1185,
+    "prompt_tokens_details": {
+      "cached_tokens": 4864,
+      "image_tokens": 0,
+      "text_tokens": 5104
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1185
+    }
+  },
+  "review_request_id": "chatcmpl-d81af461-b159-9ddf-b599-c3f6f1afa10d",
+  "review_usage": {
+    "prompt_tokens": 5749,
+    "total_tokens": 5835,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 4608,
+      "image_tokens": 0,
+      "text_tokens": 5749
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T16_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 2,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T16_011",
+        "title": "书房温湿度单次查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房现在的温度和湿度，告诉我读数和测量时间，只查，别动任何设备。",
+            "reference_text": "书房当前温度28摄氏度，湿度35%，测量时间都是2026年12月1日18点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_012",
+        "title": "书房与厨房温湿度先后查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房现在的温度和湿度，告诉我读数和测量时间，只查，别动任何设备。",
+            "reference_text": "书房当前温度22摄氏度，湿度38%，测量时间都是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度。",
+            "reference_text": "厨房当前温度23摄氏度，湿度39%，测量时间也都是2026年12月1日18点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_013",
+        "title": "书房厨房查询后对比读数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房现在的温度和湿度，告诉我读数和测量时间，只查，别动任何设备。",
+            "reference_text": "书房当前温度23摄氏度，湿度41%，测量时间都是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度。",
+            "reference_text": "厨房当前温度24摄氏度，湿度42%，测量时间也都是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房比书房高1摄氏度，湿度也高1个百分点；两个房间都是2026年12月1日18点整测的。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_014",
+        "title": "书房厨房对比并确认读数局限",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房现在的温度和湿度，告诉我读数和测量时间，只查，别动任何设备。",
+            "reference_text": "书房当前温度24摄氏度，湿度44%，测量时间都是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度。",
+            "reference_text": "厨房当前温度25摄氏度，湿度45%，测量时间也都是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房比书房高1摄氏度，湿度也高1个百分点；两个房间都是2026年12月1日18点整测的。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能。这些只是那一刻的温湿度读数，传感器有测量范围，也不能识别现场有没有人、是谁，温度也不是空调或暖气设定的温度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_015",
+        "title": "多次查询对比后复核书房",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房现在的温度和湿度，告诉我读数和测量时间，只查，别动任何设备。",
+            "reference_text": "书房当前温度25摄氏度，湿度47%，测量时间都是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度。",
+            "reference_text": "厨房当前温度26摄氏度，湿度48%，测量时间也都是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房比书房高1摄氏度，湿度也高1个百分点；两个房间都是2026年12月1日18点整测的。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能。这些只是那一刻的温湿度读数，传感器有测量范围，也不能识别现场有没有人、是谁，温度也不是空调或暖气设定的温度。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后重新查一下书房的同一指标，把读数和测量时间告诉我。",
+            "reference_text": "书房重新读取的温度还是25摄氏度，湿度47%，测量时间仍是2026年12月1日18点整。"
+          }
+        ]
+      }
+    ]
+  }
+}

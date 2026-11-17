@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/12023b551b28a1a237c046c77e76a88a.wav",
+  "sha256": "0dc9660b5949fe28ecb30bf7a0d44810098bc1dffc86992c5955857f084c0e2f",
+  "duration_seconds": 2.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "05ec48f3-f46c-9717-bd7e-f577eb1eca79",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 520,
+    "total_tokens": 700,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实我周末只有两个小时，不是半天。",
+  "spoken_text": "其实我周末只有两个小时，不是半天。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实我周末只有两个小时，不是半天。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实我周末只有两个小时，不是半天。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-79f19986-0fb1-967e-baba-c6e610d9bb62",
+    "usage": {
+      "prompt_tokens": 214,
+      "total_tokens": 249,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0dc9660b5949fe28ecb30bf7a0d44810098bc1dffc86992c5955857f084c0e2f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "006d7f2929166f10d939caf5edb0a3fa223477ed0b1ea6ed6fe7308a681ec00f",
+    "canonical_sha256": "0dc9660b5949fe28ecb30bf7a0d44810098bc1dffc86992c5955857f084c0e2f",
+    "pcm_sha256": "ffbb4da49d94722a3b11818a56ddae9a0c9012ac359783baf5e93b0cf9a403c0",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 62400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实我周末只有两个小时，不是半天。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "其实我周末只有两个小时，不是半天。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d564ba74-2d1e-9874-b768-830009533936",
+      "usage": {
+        "prompt_tokens": 153,
+        "total_tokens": 188,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 137
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "006d7f2929166f10d939caf5edb0a3fa223477ed0b1ea6ed6fe7308a681ec00f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "006d7f2929166f10d939caf5edb0a3fa223477ed0b1ea6ed6fe7308a681ec00f",
+        "canonical_audio_sha256": "0dc9660b5949fe28ecb30bf7a0d44810098bc1dffc86992c5955857f084c0e2f",
+        "pcm_sha256": "ffbb4da49d94722a3b11818a56ddae9a0c9012ac359783baf5e93b0cf9a403c0",
+        "same_samples": true
+      }
+    }
+  ]
+}

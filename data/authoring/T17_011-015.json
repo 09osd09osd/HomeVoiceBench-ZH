@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "e0eb9910057238432fe316869456f6ade3a659d53066c43cf4c832a853bf906a",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-5dba7162-a7f9-96a5-a4a0-494c0074b153",
+  "usage": {
+    "prompt_tokens": 4241,
+    "total_tokens": 5355,
+    "completion_tokens": 1114,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4241
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1114
+    }
+  },
+  "review_request_id": "chatcmpl-d71372ae-9799-9049-a5e6-e78a6360f655",
+  "review_usage": {
+    "prompt_tokens": 4977,
+    "total_tokens": 5063,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4977
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T17_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T17_011",
+        "title": "书房二氧化碳读数与时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在二氧化碳浓度多少，顺便说一下测量时间，只查就行。",
+            "reference_text": "书房二氧化碳浓度是1571ppm，测量时间是今天18点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_012",
+        "title": "书房与厨房二氧化碳分别查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在二氧化碳浓度多少，顺便说一下测量时间，只查就行。",
+            "reference_text": "书房二氧化碳浓度是1642ppm，测量时间是今天18点整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度是612ppm，测量时间也是今天18点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_013",
+        "title": "书房厨房读数对比不调设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在二氧化碳浓度多少，顺便说一下测量时间，只查就行。",
+            "reference_text": "书房二氧化碳浓度是513ppm，测量时间是今天18点整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度是683ppm，测量时间也是今天18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "把刚才书房和厨房的读数比一下，别动任何设备。",
+            "reference_text": "厨房是683ppm，书房是513ppm，厨房比书房高170ppm，两边测量时间都是今天18点整，我没有动任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_014",
+        "title": "读数局限与现场情况确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在二氧化碳浓度多少，顺便说一下测量时间，只查就行。",
+            "reference_text": "书房二氧化碳浓度是584ppm，测量时间是今天18点整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度是754ppm，测量时间也是今天18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "把刚才书房和厨房的读数比一下，别动任何设备。",
+            "reference_text": "厨房是754ppm，书房是584ppm，厨房比书房高170ppm，两边测量时间都是今天18点整，我没有动任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。读数只反映传感器测到的那一刻，过了时间可能就变了，而且只能覆盖传感器能测的范围。像在场识别也不能判断具体是谁，温度也不是设备的设定值，所以不能代表现场全部情况。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_015",
+        "title": "多次查询与读数时效说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在二氧化碳浓度多少，顺便说一下测量时间，只查就行。",
+            "reference_text": "书房二氧化碳浓度是655ppm，测量时间是今天18点整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度是825ppm，测量时间也是今天18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "把刚才书房和厨房的读数比一下，别动任何设备。",
+            "reference_text": "厨房是825ppm，书房是655ppm，厨房比书房高170ppm，两边测量时间都是今天18点整，我没有动任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。读数只反映传感器测到的那一刻，过了时间可能就变了，而且只能覆盖传感器能测的范围。像在场识别也不能判断具体是谁，温度也不是设备的设定值，所以不能代表现场全部情况。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再重新查一下书房二氧化碳浓度。",
+            "reference_text": "书房二氧化碳浓度还是655ppm，测量时间仍然是今天18点整。"
+          }
+        ]
+      }
+    ]
+  }
+}

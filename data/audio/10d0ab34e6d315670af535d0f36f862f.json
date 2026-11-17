@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/10d0ab34e6d315670af535d0f36f862f.wav",
+  "sha256": "5d346ff2ad4255bb4e36d82ab0ba876b82f83aeb402ac5beedec03046aa6d716",
+  "duration_seconds": 6.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ddd4bde7-cc78-9e62-a046-5b8e257f8aca",
+  "usage": {
+    "input_tokens": 206,
+    "output_tokens": 1384,
+    "total_tokens": 1590,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "擦了半天才弄干净。我养的那盆绿萝最近长得不错，就是别跟我说太多，我听着就行。",
+  "spoken_text": "擦了半天才弄干净。我养的那盆绿萝最近长得不错，就是别跟我说太多，我听着就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "擦了半天才弄干净。我养的那盆绿萝，最近长得不错，就是别跟我说太多，我听着就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "擦了半天才弄干净。我养的那盆绿萝，最近长得不错，就是别跟我说太多，我听着就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-34b89fb9-249f-97b0-8f81-d91ea1952ec4",
+    "usage": {
+      "prompt_tokens": 258,
+      "total_tokens": 310,
+      "completion_tokens": 52,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 52
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5d346ff2ad4255bb4e36d82ab0ba876b82f83aeb402ac5beedec03046aa6d716"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f74a74feedfb52ee5faf74314449e2fd86de582d30ba64d761374398ef4bc5c3",
+    "canonical_sha256": "5d346ff2ad4255bb4e36d82ab0ba876b82f83aeb402ac5beedec03046aa6d716",
+    "pcm_sha256": "98b449911bc029d6ade6ab27361176ff04c03da68dc133449d68780672ae7254",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 166080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "擦了半天才弄干净，我养的那盆绿萝最近长得不错，就是别跟我说太多，我听着就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-de312500-96bc-9e35-8892-f7b166ced84e",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 225,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f74a74feedfb52ee5faf74314449e2fd86de582d30ba64d761374398ef4bc5c3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f74a74feedfb52ee5faf74314449e2fd86de582d30ba64d761374398ef4bc5c3",
+        "canonical_audio_sha256": "5d346ff2ad4255bb4e36d82ab0ba876b82f83aeb402ac5beedec03046aa6d716",
+        "pcm_sha256": "98b449911bc029d6ade6ab27361176ff04c03da68dc133449d68780672ae7254",
+        "same_samples": true
+      }
+    }
+  ]
+}

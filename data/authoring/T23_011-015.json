@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "2c99aef0d73e8f11efa35125b0fb208f506cc08eaa4751efc8e10e7daf38971a",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-c4957d0a-5128-9157-ad72-2831aa1219ac",
+  "usage": {
+    "prompt_tokens": 8449,
+    "total_tokens": 9531,
+    "completion_tokens": 1082,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 8449
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1082
+    }
+  },
+  "review_request_id": "chatcmpl-638b49ac-3668-9909-b116-af850ce450ca",
+  "review_usage": {
+    "prompt_tokens": 9153,
+    "total_tokens": 9239,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 9153
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T23_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T23_011",
+        "title": "收阳台毛巾提醒延后半小时",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天9点的收阳台毛巾提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天9点的收阳台毛巾提醒改到9点半，其他提醒没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_012",
+        "title": "收阳台毛巾提醒改到10点",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天9点的收阳台毛巾提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天9点的收阳台毛巾提醒改到9点半，其他提醒没有动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天10点整。",
+            "reference_text": "好的，收阳台毛巾提醒已经改到明天10点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_013",
+        "title": "收阳台毛巾提醒改点后列安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天9点的收阳台毛巾提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天9点的收阳台毛巾提醒改到9点半，其他提醒没有动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天10点整。",
+            "reference_text": "好的，收阳台毛巾提醒已经改到明天10点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有两条：明天10点的收阳台毛巾提醒，后天12点的晾衣服提醒。没有新增。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_014",
+        "title": "收阳台毛巾提醒改点后取消保留晾衣服",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天9点的收阳台毛巾提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天9点的收阳台毛巾提醒改到9点半，其他提醒没有动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天10点整。",
+            "reference_text": "好的，收阳台毛巾提醒已经改到明天10点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有两条：明天10点的收阳台毛巾提醒，后天12点的晾衣服提醒。没有新增。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消收阳台毛巾提醒，晾衣服提醒保留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_015",
+        "title": "收阳台毛巾提醒改点取消后确认状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天9点的收阳台毛巾提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已把明天9点的收阳台毛巾提醒改到9点半，其他提醒没有动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天10点整。",
+            "reference_text": "好的，收阳台毛巾提醒已经改到明天10点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有两条：明天10点的收阳台毛巾提醒，后天12点的晾衣服提醒。没有新增。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消收阳台毛巾提醒，晾衣服提醒保留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "现在启用的只剩后天12点的晾衣服提醒。收阳台毛巾提醒已经取消了。"
+          }
+        ]
+      }
+    ]
+  }
+}

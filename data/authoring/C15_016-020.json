@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "5cc72598b7b295ff371a58b2ccbedb2d1f90deb866ed8327b4029079abfdb329",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-76b5ad28-ae3c-9203-9881-1429c07e5c8c",
+  "usage": {
+    "prompt_tokens": 1770,
+    "total_tokens": 2868,
+    "completion_tokens": 1098,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1770
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1098
+    }
+  },
+  "review_request_id": "chatcmpl-8e3aed36-326d-9ac3-afc6-9c87de3fea09",
+  "review_usage": {
+    "prompt_tokens": 2494,
+    "total_tokens": 2580,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2494
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C15_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C15_016",
+        "title": "猜厨房用品，逐次提示不泄底",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想玩猜谜，你出个厨房用品的谜语，一次给一条提示，别直接说答案。",
+            "reference_text": "好的，厨房用品谜语：它有个长柄，前面是金属的，炒菜时常用。先猜猜是什么？"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_017",
+        "title": "猜动物，先要陆地动物再更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们来猜动物吧，你出题，给三次提示，别直接说答案。",
+            "reference_text": "好，猜一种动物：它有四只脚，身上有毛，喜欢追球玩。你先想想是什么？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再给点提示，最好说它生活在哪里。",
+            "reference_text": "它生活在陆地上，跑得比较快，很多人家里会养。还要再猜吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_018",
+        "title": "猜水果，三次提示并更正产地",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我们猜水果吧，你出题，每次给一条提示，别一下子说答案。",
+            "reference_text": "好，猜一种水果：它是黄色的，弯弯的，要剥皮吃。你猜是什么？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再提示一下，说说它一般长在哪儿。",
+            "reference_text": "它通常长在热带地区，一串一串挂在树上。现在有想法了吗？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，刚才说热带不对，它主要长在亚热带。",
+            "reference_text": "明白，我记住更正了：这种水果主要长在亚热带。还要再给一条提示吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_019",
+        "title": "猜家用电器，更正颜色细节",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "来猜个家用电器，你给提示，一次一条，别提前说答案。",
+            "reference_text": "好，猜一种家用电器：它通常放在客厅，能显示画面，还能发出声音。你猜是什么？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "给第二条提示，说说它怎么用。",
+            "reference_text": "它一般用遥控器操作，可以换台。你再想想。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说它放在客厅，更正一下，是放在卧室的。",
+            "reference_text": "好的，更正记住了：这个电器是放在卧室的。还要继续提示吗？"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我把它放在哪个房间吗？",
+            "reference_text": "记得，你更正过，它放在卧室。现在猜到了吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_020",
+        "title": "猜交通工具，更正数量后收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我们猜交通工具吧，你出题，每次给一条提示，别直接说答案。",
+            "reference_text": "好，猜一种交通工具：它有两个轮子，用脚蹬才能走。你猜是什么？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再提示一下，它一般停在哪儿。",
+            "reference_text": "它一般停在车棚或者路边，很多人短途出行会用它。有答案了吗？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+            "reference_text": "明白，更正记住了：这种交通工具是三个轮子的。还要再提示吗？"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得它有几个轮子吗？",
+            "reference_text": "记得，你更正过，是三个轮子。现在能猜出来了吗？"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "差不多了，你简短收个尾，直接说答案吧。",
+            "reference_text": "答案是三轮车。谜底揭晓，游戏结束。"
+          }
+        ]
+      }
+    ]
+  }
+}

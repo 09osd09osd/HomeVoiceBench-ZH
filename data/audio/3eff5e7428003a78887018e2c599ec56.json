@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/3eff5e7428003a78887018e2c599ec56.wav",
+  "sha256": "8f321cfa722e441ce95ada41e9a12f2772ab7121a8bac1b02d70aa94a2b6aefd",
+  "duration_seconds": 6.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7bd69791-1f4c-9501-b7b6-08b10bc5bb4e",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 1312,
+    "total_tokens": 1509,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是周末上午，是周日晚上，时间还是一小时。",
+  "spoken_text": "更正一下，不是周末上午，是周日晚上，时间还是一小时。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是周末上午，是周日晚上，时间还是一小时。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是周末上午，是周日晚上，时间还是一小时。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d500a623-88a2-921b-a6e1-b82179557ac5",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 289,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8f321cfa722e441ce95ada41e9a12f2772ab7121a8bac1b02d70aa94a2b6aefd"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f88feaeba19ae3562ce901ca9f113bd03762b89acdf52861cb94d65add70ca99",
+    "canonical_sha256": "8f321cfa722e441ce95ada41e9a12f2772ab7121a8bac1b02d70aa94a2b6aefd",
+    "pcm_sha256": "19f54c1a3a1ec65df16c09e95af620495da878018c0b14b55d3c0e36c594b798",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 157440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是周末上午，是周日晚上，时间还是一小时。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，不是周末上午，是周日晚上，时间还是一小时。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-74138851-e30a-99e8-bf7e-61615027c9ce",
+      "usage": {
+        "prompt_tokens": 187,
+        "total_tokens": 228,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f88feaeba19ae3562ce901ca9f113bd03762b89acdf52861cb94d65add70ca99",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f88feaeba19ae3562ce901ca9f113bd03762b89acdf52861cb94d65add70ca99",
+        "canonical_audio_sha256": "8f321cfa722e441ce95ada41e9a12f2772ab7121a8bac1b02d70aa94a2b6aefd",
+        "pcm_sha256": "19f54c1a3a1ec65df16c09e95af620495da878018c0b14b55d3c0e36c594b798",
+        "same_samples": true
+      }
+    }
+  ]
+}

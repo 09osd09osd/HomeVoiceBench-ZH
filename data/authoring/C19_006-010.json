@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "772a80b78dc3c4080555a42f9c4739ae02e11cb8f4e255fa97d3dff67f00e2c1",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-f37623ab-ac8e-9d1f-ae14-ce789d6e4cd2",
+  "usage": {
+    "prompt_tokens": 1875,
+    "total_tokens": 3198,
+    "completion_tokens": 1323,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1875
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1323
+    }
+  },
+  "review_request_id": "chatcmpl-abbe77d5-2294-9311-9df6-2c76418559ea",
+  "review_usage": {
+    "prompt_tokens": 2820,
+    "total_tokens": 2906,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2820
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C19_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C19_006",
+        "title": "疲惫时想请助手帮忙看冰箱剩菜",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天有点累，不想动脑子。你帮我看看冰箱里还有什么能凑一顿晚饭的？",
+            "reference_text": "我听不到也看不到你冰箱里有什么，没法直接帮你看。你可以念几样冰箱里的东西给我，我帮你想想能做什么简单晚饭。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_007",
+        "title": "累的时候想确认药盒上的说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我这会儿有点累，眼睛也花，你帮我看看桌上药盒上写的用量是几片？",
+            "reference_text": "我看不到你桌上的药盒，也没法确认上面的字。你可以把用量念给我，我帮你复述一遍，或者直接问药师更稳妥。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我不想念太多字，你就告诉我一般这种药是不是饭后吃就行。",
+            "reference_text": "我不能替你判断这种药该饭前还是饭后，因为我不知道具体是什么药。你可以只说药名和盒上写的服用时间，我帮你记一下，吃的时候再确认。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_008",
+        "title": "想不起钥匙放哪又问是否记得旧事",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天有点累，出门前找不到钥匙了。你帮我看看我钥匙放哪儿了？",
+            "reference_text": "我看不到你家里的情况，也没法知道你钥匙放哪儿。你可以回想一下最后进门时放哪了，或者我陪你按几个常见位置念一遍找找。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那你至少记得我上次说钥匙一般放玄关吧？别让我再翻一遍。",
+            "reference_text": "我不会长期记住你之前说过的话，这次对话里你刚提到玄关，我可以帮你记着这个线索。咱们先看看玄关附近有没有。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "等等，我刚才说错了，不是玄关，是鞋柜上面那个小盘子。",
+            "reference_text": "好，我记下的是鞋柜上面的小盘子，不是玄关。你可以先去那个小盘子附近看一眼。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_009",
+        "title": "想让助手记住家门密码又更正楼层",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，怕自己忘事。你帮我记住我家门密码，回头我问你你就告诉我。",
+            "reference_text": "我不能长期保存你的家门密码，也不该替你记这种私人信息。你可以把密码写在只有自己知道的地方，或者用手机备忘录加锁保存。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那我不说密码了。你帮我记一下我住3楼，晚上回家别走错。",
+            "reference_text": "这次对话里我可以帮你记着你说住3楼。但我不会长期记住，下次可能就不记得了。你也可以在门口贴个小提示提醒自己。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，不是3楼，是4楼，你帮我改过来。",
+            "reference_text": "好，我更正一下：你住4楼，不是3楼。这次对话里我按4楼帮你记着。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你说我现在住几楼？看看你有没有记住我刚才改的。",
+            "reference_text": "你刚才更正后说的是4楼，我这次对话里按4楼记着。不过我不会长期记住，下次还得你再说一遍。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_010",
+        "title": "让助手看照片找猫又改口说不是橘猫",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，猫又不知道跑哪去了。你帮我看看客厅照片里猫在不在沙发上？",
+            "reference_text": "我看不到你的照片，也没法判断猫在不在沙发上。你可以描述一下照片里看到的情况，我帮你一起想想猫可能躲哪儿。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那你别猜太多，就告诉我猫一般爱躲哪儿，我懒得一个个找。",
+            "reference_text": "猫常躲的地方有沙发底下、柜子后面、纸箱里和窗帘后。你可以先看这几个近的地方，别翻太乱。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "对了，我刚才说橘猫不对，我家是只黑猫，你别按橘猫想。",
+            "reference_text": "好，我记住这次对话里你说的是黑猫，不是橘猫。找的时候按黑猫容易藏暗处的特点留意一下。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我家猫是什么颜色吗？别又弄错了。",
+            "reference_text": "你刚才更正过，这次对话里你家是黑猫，不是橘猫。我不会长期记住，但这一轮我按黑猫帮你想着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，我累了，你就简短说一句我最先该看哪儿。",
+            "reference_text": "先看沙发底下，黑猫容易躲暗处。"
+          }
+        ]
+      }
+    ]
+  }
+}

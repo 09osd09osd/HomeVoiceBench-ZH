@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/dcdc8bfc95fda6eb481c92d9a9f2325b.wav",
+  "sha256": "02d029315c693a9d66f7d961424740f1d8149fd8afadaf684a6f1e65f277765d",
+  "duration_seconds": 7.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d64402d1-86f3-9ba0-8028-d825c4e5b102",
+  "usage": {
+    "input_tokens": 205,
+    "output_tokens": 1416,
+    "total_tokens": 1621,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说一整夜不太准，其实是从半夜两点到早上六点，断断续续没睡成。",
+  "spoken_text": "我刚才说一整夜不太准，其实是从半夜两点到早上六点，断断续续没睡成。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说一整夜不太准，其实是从半夜两点到早上六点，断断续续没睡成。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说一整夜不太准，其实是从半夜两点到早上六点，断断续续没睡成。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-77bea3de-8134-9078-859f-29fc696f9401",
+    "usage": {
+      "prompt_tokens": 263,
+      "total_tokens": 312,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "02d029315c693a9d66f7d961424740f1d8149fd8afadaf684a6f1e65f277765d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "951880dc5b92806dff38f1d676fb861b2b3dcee7317fbebaeefe488e6b64bf28",
+    "canonical_sha256": "02d029315c693a9d66f7d961424740f1d8149fd8afadaf684a6f1e65f277765d",
+    "pcm_sha256": "14a3f04281eeb67c99291f7356b18474dc49e0cfd2f2583bb65ef7da1592418e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 169920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说一整夜不太准，其实是从半夜两点到早上六点，断断续续没睡成。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-50ec4c39-f273-9e1b-a7d9-97f6751cf1a3",
+      "usage": {
+        "prompt_tokens": 179,
+        "total_tokens": 228,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "951880dc5b92806dff38f1d676fb861b2b3dcee7317fbebaeefe488e6b64bf28",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "951880dc5b92806dff38f1d676fb861b2b3dcee7317fbebaeefe488e6b64bf28",
+        "canonical_audio_sha256": "02d029315c693a9d66f7d961424740f1d8149fd8afadaf684a6f1e65f277765d",
+        "pcm_sha256": "14a3f04281eeb67c99291f7356b18474dc49e0cfd2f2583bb65ef7da1592418e",
+        "same_samples": true
+      }
+    }
+  ]
+}

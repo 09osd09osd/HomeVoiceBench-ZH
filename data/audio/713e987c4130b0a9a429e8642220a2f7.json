@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/713e987c4130b0a9a429e8642220a2f7.wav",
+  "sha256": "6900b5a3320206a37fea4c271e292431e0a075e20aae3ea90d4e9de79d611ccf",
+  "duration_seconds": 8.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "726822a3-08b4-9a0e-ba08-030025fbeda2",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 1712,
+    "total_tokens": 1911,
+    "duration": 9
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对，自己买的。你还记得我刚才是说书店买的吧？那本书里有一章讲怎么区分相似的花，我觉得挺实用。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对，自己买的。你还记得我刚才是说书店买的吧？那本书里有一章讲怎么区分相似的花儿，我觉得挺实用。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-354fe0ce-d4be-93ed-8502-ca4e3954d145",
+    "usage": {
+      "prompt_tokens": 192,
+      "total_tokens": 248,
+      "completion_tokens": 56,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 134
+      },
+      "completion_tokens_details": {
+        "text_tokens": 56
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3434185ce36888bf0a65f527c293dfd42287447865bb3e32f46c36dd6bbf494c",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "3434185ce36888bf0a65f527c293dfd42287447865bb3e32f46c36dd6bbf494c",
+      "canonical_audio_sha256": "6900b5a3320206a37fea4c271e292431e0a075e20aae3ea90d4e9de79d611ccf",
+      "pcm_sha256": "d156df668e6c712eccada5ea3871c02eee7be9c695712d85721011f7f64204e2",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3434185ce36888bf0a65f527c293dfd42287447865bb3e32f46c36dd6bbf494c",
+    "canonical_sha256": "6900b5a3320206a37fea4c271e292431e0a075e20aae3ea90d4e9de79d611ccf",
+    "pcm_sha256": "d156df668e6c712eccada5ea3871c02eee7be9c695712d85721011f7f64204e2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 205440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

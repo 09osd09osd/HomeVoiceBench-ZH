@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "5deea4e09374cee3278c5bb8d8b74f6c2790264b000fa846d5e80fd40d465fa2",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-7f678e14-9bb3-9afb-8d35-2ec5f66ac7e4",
+  "usage": {
+    "prompt_tokens": 11983,
+    "total_tokens": 12838,
+    "completion_tokens": 855,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11983
+    },
+    "completion_tokens_details": {
+      "text_tokens": 855
+    }
+  },
+  "review_request_id": "chatcmpl-c370f552-95c1-9166-a532-24b2fc941541",
+  "review_usage": {
+    "prompt_tokens": 12460,
+    "total_tokens": 12546,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12460
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T25_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T25_016",
+        "title": "客厅音箱播放星空小知识",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "好的，已经在客厅音箱上为你播放《星空小知识》了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_017",
+        "title": "播放星空小知识并暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "好的，已经在客厅音箱上为你播放《星空小知识》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先把刚才播放的内容暂停一下。",
+            "reference_text": "好的，已经暂停播放了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_018",
+        "title": "星空小知识暂停后继续",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "好的，已经在客厅音箱上为你播放《星空小知识》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先把刚才播放的内容暂停一下。",
+            "reference_text": "好的，已经暂停播放了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续播放刚才的内容。",
+            "reference_text": "好的，已经继续播放了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_019",
+        "title": "星空小知识跳转到第75秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "好的，已经在客厅音箱上为你播放《星空小知识》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先把刚才播放的内容暂停一下。",
+            "reference_text": "好的，已经暂停播放了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续播放刚才的内容。",
+            "reference_text": "好的，已经继续播放了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "跳到第75秒。",
+            "reference_text": "好的，已经跳到第75秒了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_020",
+        "title": "星空小知识跳转后停止播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "好的，已经在客厅音箱上为你播放《星空小知识》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先把刚才播放的内容暂停一下。",
+            "reference_text": "好的，已经暂停播放了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续播放刚才的内容。",
+            "reference_text": "好的，已经继续播放了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "跳到第75秒。",
+            "reference_text": "好的，已经跳到第75秒了。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "好的，已经停止这段播放了，没有换别的。"
+          }
+        ]
+      }
+    ]
+  }
+}

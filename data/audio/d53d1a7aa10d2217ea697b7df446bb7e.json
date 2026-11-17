@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/d53d1a7aa10d2217ea697b7df446bb7e.wav",
+  "sha256": "4d5eb1597cdd28a819730744e2caef481ad1f62353a0ef444e151b768977daa3",
+  "duration_seconds": 4.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0822b5f6-ebc1-9835-bac5-fa54a63fb996",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 944,
+    "total_tokens": 1128,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "那就定周日去公园野餐吧，你简短帮我总结一下，要含人数、时间、预算。",
+  "spoken_text": "那就定周日去公园野餐吧，你简短帮我总结一下，要含人数、时间、预算。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "那就定周日去公园野餐吧，你简短帮我总结一下，要含人数、时间、预算。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "那就定周日去公园野餐吧，你简短帮我总结一下，要含人数、时间、预算。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6c923288-ba99-9cc3-a653-177c1df137c3",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 287,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4d5eb1597cdd28a819730744e2caef481ad1f62353a0ef444e151b768977daa3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4455fb6c9711ba140374ab9aa00211cba45046c28aa8d355ee7a1902676d5985",
+    "canonical_sha256": "4d5eb1597cdd28a819730744e2caef481ad1f62353a0ef444e151b768977daa3",
+    "pcm_sha256": "657feee5738cd97fa576235dee0f2550d5af18398c499d219d16f523e596692d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 113280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "那就定周日去公园野餐吧。你简短帮我总结一下，要含人数、时间、预算。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "那就定周日去公园野餐吧。你简短帮我总结一下，要含人数、时间、预算。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ec80e17a-a09b-95a1-ba83-5ce568fabe4a",
+      "usage": {
+        "prompt_tokens": 179,
+        "total_tokens": 226,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4455fb6c9711ba140374ab9aa00211cba45046c28aa8d355ee7a1902676d5985",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4455fb6c9711ba140374ab9aa00211cba45046c28aa8d355ee7a1902676d5985",
+        "canonical_audio_sha256": "4d5eb1597cdd28a819730744e2caef481ad1f62353a0ef444e151b768977daa3",
+        "pcm_sha256": "657feee5738cd97fa576235dee0f2550d5af18398c499d219d16f523e596692d",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/6ca7e4f0e0a93ea950fc727a5ba7f8a0.wav",
+  "sha256": "10a6370ef0d08cf2e30f6ce4e5cc076e4303a63a6f3e9436ad18c32735ce1261",
+  "duration_seconds": 6.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f70dd431-5888-91e7-bcc3-02ee2749f8b4",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 1328,
+    "total_tokens": 1525,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想练习给同事留语音消息，大概意思是明天上午十点开会，请准时到。你帮我听听怎么说更清楚。",
+  "spoken_text": "我想练习给同事留语音消息，大概意思是明天上午十点开会，请准时到。你帮我听听怎么说更清楚。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想练习给同事留语音消息，大概意思是明天上午十点开会，请准时到。你帮我听听怎么说更清楚？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想练习给同事留语音消息，大概意思是明天上午十点开会，请准时到。你帮我听听怎么说更清楚？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8ed5c398-3749-9466-8abb-0585ee49d44f",
+    "usage": {
+      "prompt_tokens": 259,
+      "total_tokens": 311,
+      "completion_tokens": 52,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 215
+      },
+      "completion_tokens_details": {
+        "text_tokens": 52
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "10a6370ef0d08cf2e30f6ce4e5cc076e4303a63a6f3e9436ad18c32735ce1261"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "79d134377070c063acce3d04e5c99bef9219a893c6d949e98edde58ca285d3d9",
+    "canonical_sha256": "10a6370ef0d08cf2e30f6ce4e5cc076e4303a63a6f3e9436ad18c32735ce1261",
+    "pcm_sha256": "a29aceb305f7b9ef9a2c454408735a164d5046803d62518a2d1839d5656ce6eb",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 159360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想练习给同事留语音消息，大概意思是明天上午10点开会，请准时到。你帮我听听怎么说更清楚。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想练习给同事留语音消息，大概意思是明天上午10点开会，请准时到。你帮我听听怎么说更清楚。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-dd041a03-2ccc-9459-9515-285ce275bc59",
+      "usage": {
+        "prompt_tokens": 198,
+        "total_tokens": 252,
+        "completion_tokens": 54,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 154
+        },
+        "completion_tokens_details": {
+          "text_tokens": 54
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "79d134377070c063acce3d04e5c99bef9219a893c6d949e98edde58ca285d3d9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "79d134377070c063acce3d04e5c99bef9219a893c6d949e98edde58ca285d3d9",
+        "canonical_audio_sha256": "10a6370ef0d08cf2e30f6ce4e5cc076e4303a63a6f3e9436ad18c32735ce1261",
+        "pcm_sha256": "a29aceb305f7b9ef9a2c454408735a164d5046803d62518a2d1839d5656ce6eb",
+        "same_samples": true
+      }
+    }
+  ]
+}

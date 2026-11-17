@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a15acc1dab5756e1115b063ce25d6455.wav",
+  "sha256": "64698262589e7001bd5867a65662b38e4d3e1888b67613b627fabd74211760e8",
+  "duration_seconds": 3.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a9925e97-6e67-9d9b-bcd4-0918295f3c32",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 728,
+    "total_tokens": 922,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我记错了，不是今天送，是明天送，白着急一场。",
+  "spoken_text": "我记错了，不是今天送，是明天送，白着急一场。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我记错了，不是今天送，是明天送。白着急一场。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我记错了，不是今天送，是明天送。白着急一场。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-803cf791-4076-9372-8c2e-aeb99c3beb16",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "64698262589e7001bd5867a65662b38e4d3e1888b67613b627fabd74211760e8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cab2741b5c471d25d84165b162c0a6ad1c8be3944941dc336df6efccdb485d3f",
+    "canonical_sha256": "64698262589e7001bd5867a65662b38e4d3e1888b67613b627fabd74211760e8",
+    "pcm_sha256": "5e15d30dbe4fd9c5fd6c01431ff9f39a93c9502ff83e963e592164ed9fe966a3",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 87360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我记错了，不是今天送，是明天送，白着急一场。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-df0ec56d-346f-9d46-a9ce-6d2649e862c3",
+      "usage": {
+        "prompt_tokens": 144,
+        "total_tokens": 186,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cab2741b5c471d25d84165b162c0a6ad1c8be3944941dc336df6efccdb485d3f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cab2741b5c471d25d84165b162c0a6ad1c8be3944941dc336df6efccdb485d3f",
+        "canonical_audio_sha256": "64698262589e7001bd5867a65662b38e4d3e1888b67613b627fabd74211760e8",
+        "pcm_sha256": "5e15d30dbe4fd9c5fd6c01431ff9f39a93c9502ff83e963e592164ed9fe966a3",
+        "same_samples": true
+      }
+    }
+  ]
+}

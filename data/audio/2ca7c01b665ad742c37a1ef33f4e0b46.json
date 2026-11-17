@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/2ca7c01b665ad742c37a1ef33f4e0b46.wav",
+  "sha256": "f4d1c108f6ddb6e7a003abf267b2c4073150ab5edb472a46246cf1ff93b4eaef",
+  "duration_seconds": 9.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f5e49a25-55cd-983b-8db9-02dc0abc4efe",
+  "usage": {
+    "input_tokens": 217,
+    "output_tokens": 1944,
+    "total_tokens": 2161,
+    "duration": 10
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我老公昨天发现我晚上跟朋友吃饭没提前说，他觉得我不尊重他。其实我是临时被叫去的，我想把这事说开，又不想吵，怎么开口？",
+  "spoken_text": "我老公昨天发现我晚上跟朋友吃饭没提前说，他觉得我不尊重他。其实我是临时被叫去的，我想把这事说开，又不想吵，怎么开口？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我老公昨天发现我晚上跟朋友吃饭没提前说，他觉得我不尊重他。其实我是临时被叫去的，我想把这事说开，又不想吵，怎么开口？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我老公昨天发现我晚上跟朋友吃饭没提前说，他觉得我不尊重他。其实我是临时被叫去的，我想把这事说开，又不想吵，怎么开口？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-47bd1c1e-3a7b-9402-b0dd-864e2c1de654",
+    "usage": {
+      "prompt_tokens": 292,
+      "total_tokens": 356,
+      "completion_tokens": 64,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 65,
+        "text_tokens": 227
+      },
+      "completion_tokens_details": {
+        "text_tokens": 64
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f4d1c108f6ddb6e7a003abf267b2c4073150ab5edb472a46246cf1ff93b4eaef"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f5a9ed5e17316ed3244a8ed950e8d01638108910f352c445bb34013453191140",
+    "canonical_sha256": "f4d1c108f6ddb6e7a003abf267b2c4073150ab5edb472a46246cf1ff93b4eaef",
+    "pcm_sha256": "54ff84f21bf37e7afb298a8f46543cb32a80955a514fea89c4ce26f7e4fec568",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 233280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我老公昨天发现我晚上跟朋友吃饭没提前说，他觉得我不尊重他。其实我是临时被叫去的，我想把这事说开，又不想吵，怎么开口？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3520c57a-959e-9101-b3ec-2105163efbe0",
+      "usage": {
+        "prompt_tokens": 208,
+        "total_tokens": 272,
+        "completion_tokens": 64,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 65,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 64
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f5a9ed5e17316ed3244a8ed950e8d01638108910f352c445bb34013453191140",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f5a9ed5e17316ed3244a8ed950e8d01638108910f352c445bb34013453191140",
+        "canonical_audio_sha256": "f4d1c108f6ddb6e7a003abf267b2c4073150ab5edb472a46246cf1ff93b4eaef",
+        "pcm_sha256": "54ff84f21bf37e7afb298a8f46543cb32a80955a514fea89c4ce26f7e4fec568",
+        "same_samples": true
+      }
+    }
+  ]
+}

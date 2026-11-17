@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/f51e9eef1f745fd34717a61da74a7f72.wav",
+  "sha256": "39698b07c71734cb6b37c3100ce0448c7de095e57838d6a058e349708c207504",
+  "duration_seconds": 3.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c5afd2c5-6852-9e47-baa5-f03326117325",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 760,
+    "total_tokens": 942,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子问为什么会下雨，你能用简单的话解释吗？",
+  "spoken_text": "孩子问为什么会下雨，你能用简单的话解释吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子问：“为什么会下雨？”你能用简单的话解释吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子问：“为什么会下雨？”你能用简单的话解释吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-802fa9c7-5989-962e-b919-3839d21ba461",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 263,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "39698b07c71734cb6b37c3100ce0448c7de095e57838d6a058e349708c207504"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d4adcd5517cec0b3afc03c97d035473b215f4683addafd0bea219ab735d411e5",
+    "canonical_sha256": "39698b07c71734cb6b37c3100ce0448c7de095e57838d6a058e349708c207504",
+    "pcm_sha256": "fd1cf6d0b1c4ffbfbbb17b5f52d45547d26fe42b93e6a1a6100fc6bae987e0c4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 91200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子问为什么会下雨，你能用简单的话解释吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "孩子问为什么会下雨，你能用简单的话解释吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-448db345-b591-9730-9a21-76dfcde2fe9d",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 201,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d4adcd5517cec0b3afc03c97d035473b215f4683addafd0bea219ab735d411e5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d4adcd5517cec0b3afc03c97d035473b215f4683addafd0bea219ab735d411e5",
+        "canonical_audio_sha256": "39698b07c71734cb6b37c3100ce0448c7de095e57838d6a058e349708c207504",
+        "pcm_sha256": "fd1cf6d0b1c4ffbfbbb17b5f52d45547d26fe42b93e6a1a6100fc6bae987e0c4",
+        "same_samples": true
+      }
+    }
+  ]
+}

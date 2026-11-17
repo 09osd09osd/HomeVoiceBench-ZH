@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "83c0c3190f270667cc3a13ec6108dc61d1d27496423b6dd725c04797d37e2919",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-f49964ca-dd5b-96cf-b4c3-87aed7e7235f",
+  "usage": {
+    "prompt_tokens": 1897,
+    "total_tokens": 3085,
+    "completion_tokens": 1188,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "image_tokens": 0,
+      "text_tokens": 1897
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1188
+    }
+  },
+  "review_request_id": "chatcmpl-c2f7c348-daed-9403-b181-f3d187d64b2b",
+  "review_usage": {
+    "prompt_tokens": 2550,
+    "total_tokens": 2636,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 1280,
+      "image_tokens": 0,
+      "text_tokens": 2550
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C02_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 2,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C02_006",
+        "title": "睡前想听一句温柔的话",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天有点累，准备睡了，你能说句温柔的话陪我一下吗？",
+            "reference_text": "辛苦了，今天能好好躺下就已经很棒了。把手机放远一点，闭上眼睛慢慢呼吸，我在这儿陪着你。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_007",
+        "title": "早晨想简短聊两句再起床",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "早上好，我刚醒，还有点困，想先跟你简单聊两句再起床。",
+            "reference_text": "早上好，刚醒有点困很正常。先慢慢坐起来，喝口水，我陪你聊两句简单的。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我早上不太想听太热闹的话，声音轻一点，就说一两句提醒我就好。",
+            "reference_text": "好，我轻声说。今天慢慢来，先伸个懒腰，再喝几口水，不用急着一下子清醒。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_008",
+        "title": "睡前聊天时更正关灯时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚上好，我有点疲惫，想睡前随便聊几句，别太热闹。",
+            "reference_text": "晚上好，疲惫的时候不用硬撑。我们就轻轻聊几句，你想说今天的事，还是想听我随便说点放松的？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我一般十点半左右关灯，你能记住这个习惯吗？",
+            "reference_text": "记住了，你一般十点半左右关灯。那我聊天也会收着点，不让你越聊越精神。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，我最近其实是十点四十左右关灯，不是十点半。",
+            "reference_text": "好，我更正过来：你最近是十点四十左右关灯。那我们就按这个时间，慢慢收尾。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_009",
+        "title": "晨间习惯更正后确认再收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "早上好，我刚起来，想听你简短陪我说几句，别太长。",
+            "reference_text": "早上好，刚起来先别急。喝几口水，慢慢清醒，我陪你简短说几句。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我早上喜欢先喝半杯温水，再坐一会儿，不喜欢一醒来就听很多话。",
+            "reference_text": "好，先喝半杯温水，再坐一会儿，我说话简短些，不一下子给你太多信息。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我说错了，是喝大半杯温水，不是半杯。",
+            "reference_text": "好，更正为大半杯温水。先喝大半杯温水，再安静坐一会儿，我说话简短些。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我早上先做什么吗？再说一句提醒就行。",
+            "reference_text": "记得，你先喝大半杯温水，再坐一会儿。提醒你一句：慢慢来，不用一醒来就赶。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_010",
+        "title": "睡前更正听音乐习惯并简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚上好，我有点累，想睡前听你轻轻聊几句，别太兴奋。",
+            "reference_text": "晚上好，累了就放慢一点。我们轻轻聊几句，不让脑子太兴奋，你想说点什么？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我睡前一般会听一会儿轻音乐，但不想聊太多工作上的事。",
+            "reference_text": "好，睡前听一会儿轻音乐，工作的事先放下。我们就聊点轻松的，不碰工作。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，我最近睡前听的是雨声，不是轻音乐。",
+            "reference_text": "好，更正为最近睡前听雨声。那我们就顺着雨声的节奏，轻轻说几句。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我睡前听什么吗？然后陪我说一句放松的话。",
+            "reference_text": "记得，你最近睡前听雨声。放松一点，今天到这儿就可以慢慢收住了。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好，那我准备睡了，你用一句话简短收个尾吧。",
+            "reference_text": "好，听着雨声慢慢睡吧，今天辛苦了，晚安。"
+          }
+        ]
+      }
+    ]
+  }
+}

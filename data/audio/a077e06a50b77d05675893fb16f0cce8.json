@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a077e06a50b77d05675893fb16f0cce8.wav",
+  "sha256": "f4c8be893db4cc901a1615658591c2a19238f64e35977dda85aa4a96229c3356",
+  "duration_seconds": 3.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7ea1b98d-45a2-93ef-a1b4-dbaba5a4a0cc",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 696,
+    "total_tokens": 879,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "刚才那个闹钟改到明天9点半吧。",
+  "spoken_text": "刚才那个闹钟改到明天九点半吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才那个闹钟改到明天九点半吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才那个闹钟改到明天九点半吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1064fca6-64fb-92ce-9979-67453bf76950",
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 258,
+      "completion_tokens": 36,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 199
+      },
+      "completion_tokens_details": {
+        "text_tokens": 36
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f4c8be893db4cc901a1615658591c2a19238f64e35977dda85aa4a96229c3356"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1234b619adf84b5fa9838b0904de22e3c9204038825a1dee89b38cd9b3871a78",
+    "canonical_sha256": "f4c8be893db4cc901a1615658591c2a19238f64e35977dda85aa4a96229c3356",
+    "pcm_sha256": "088a6b14bbc9cb23dfff20bc36657ebb0bef1fe27f41a46b1c8e783009b71c4e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 83520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "刚才那个闹钟改到明天九点半吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "刚才那个闹钟改到明天九点半吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0c0f68b5-d324-9cf4-8199-6e63b0316f69",
+      "usage": {
+        "prompt_tokens": 161,
+        "total_tokens": 197,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 138
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1234b619adf84b5fa9838b0904de22e3c9204038825a1dee89b38cd9b3871a78",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1234b619adf84b5fa9838b0904de22e3c9204038825a1dee89b38cd9b3871a78",
+        "canonical_audio_sha256": "f4c8be893db4cc901a1615658591c2a19238f64e35977dda85aa4a96229c3356",
+        "pcm_sha256": "088a6b14bbc9cb23dfff20bc36657ebb0bef1fe27f41a46b1c8e783009b71c4e",
+        "same_samples": true
+      }
+    }
+  ]
+}

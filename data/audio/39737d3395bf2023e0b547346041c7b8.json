@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/39737d3395bf2023e0b547346041c7b8.wav",
+  "sha256": "d2d48f4f33a4c31b9af3db81eb9953788673049681a8c97fa64b842c587e5ba4",
+  "duration_seconds": 6.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5f6b2962-1c18-939e-8e87-8ba665a5d9c6",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 1288,
+    "total_tokens": 1487,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说老人复查，其实不是这周，是下周三才去，我这几天主要是孩子作业和家务忙不过来。",
+  "spoken_text": "我刚才说老人复查，其实不是这周，是下周三才去，我这几天主要是孩子作业和家务忙不过来。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说老人复查，其实不是这周，是下周三才去。我这几天主要是孩子作业和家务忙不过来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说老人复查，其实不是这周，是下周三才去。我这几天主要是孩子作业和家务忙不过来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-dfab9237-c22a-928d-ab81-6c9e7e9f7d4f",
+    "usage": {
+      "prompt_tokens": 260,
+      "total_tokens": 313,
+      "completion_tokens": 53,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 216
+      },
+      "completion_tokens_details": {
+        "text_tokens": 53
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d2d48f4f33a4c31b9af3db81eb9953788673049681a8c97fa64b842c587e5ba4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d20fcee5e96cd8abc8f908e961a39537213ae9cb498a2947fb24bce902607936",
+    "canonical_sha256": "d2d48f4f33a4c31b9af3db81eb9953788673049681a8c97fa64b842c587e5ba4",
+    "pcm_sha256": "382f64c8d6b5a9d91afff702b30c16d7f0082cf332d892b0b09161c58a7314c3",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 154560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说老人复查，其实不是这周，是下周三才去。我这几天主要是孩子作业和家务忙不过来。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c78269ad-4876-9762-950f-7069837d147b",
+      "usage": {
+        "prompt_tokens": 176,
+        "total_tokens": 229,
+        "completion_tokens": 53,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 132
+        },
+        "completion_tokens_details": {
+          "text_tokens": 53
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d20fcee5e96cd8abc8f908e961a39537213ae9cb498a2947fb24bce902607936",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d20fcee5e96cd8abc8f908e961a39537213ae9cb498a2947fb24bce902607936",
+        "canonical_audio_sha256": "d2d48f4f33a4c31b9af3db81eb9953788673049681a8c97fa64b842c587e5ba4",
+        "pcm_sha256": "382f64c8d6b5a9d91afff702b30c16d7f0082cf332d892b0b09161c58a7314c3",
+        "same_samples": true
+      }
+    }
+  ]
+}

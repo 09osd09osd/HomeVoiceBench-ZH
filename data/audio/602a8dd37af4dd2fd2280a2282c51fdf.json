@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/602a8dd37af4dd2fd2280a2282c51fdf.wav",
+  "sha256": "34638955b64237082d489a6b62f570863d072e93b7a77f5efa61aa77d94e631c",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d8536d14-60d5-98c4-89d5-a7f9b394e1e4",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 640,
+    "total_tokens": 833,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想老换水，有点累，能隔久一点再换吗？",
+  "spoken_text": "我不想老换水，有点累，能隔久一点再换吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不想老换水，有点累，能隔久一点再换吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想老换水，有点累，能隔久一点再换吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-cd199b3d-2460-9b52-b950-3b77bcf65b8a",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "34638955b64237082d489a6b62f570863d072e93b7a77f5efa61aa77d94e631c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b45c44ed53a7317d9de77a19ec9c9befbf485b174d08c6d785afe969a4c696bb",
+    "canonical_sha256": "34638955b64237082d489a6b62f570863d072e93b7a77f5efa61aa77d94e631c",
+    "pcm_sha256": "ca24309f097e84989e90fca28ef52123a14cb511ae5860b8edaa7973ee3ab946",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想老换水，有点累，能隔久一点再换吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我不想老换水，有点累，能隔久一点再换吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5d92a6be-7a0e-911a-827e-833d57b87c2c",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 209,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b45c44ed53a7317d9de77a19ec9c9befbf485b174d08c6d785afe969a4c696bb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b45c44ed53a7317d9de77a19ec9c9befbf485b174d08c6d785afe969a4c696bb",
+        "canonical_audio_sha256": "34638955b64237082d489a6b62f570863d072e93b7a77f5efa61aa77d94e631c",
+        "pcm_sha256": "ca24309f097e84989e90fca28ef52123a14cb511ae5860b8edaa7973ee3ab946",
+        "same_samples": true
+      }
+    }
+  ]
+}

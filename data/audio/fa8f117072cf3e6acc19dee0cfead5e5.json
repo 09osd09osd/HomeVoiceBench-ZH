@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/fa8f117072cf3e6acc19dee0cfead5e5.wav",
+  "sha256": "196c5d1b527386909ef8f37870f2076952a3394e4492c05c0566c4a45904ff13",
+  "duration_seconds": 6.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d16231c2-31c0-9956-a02d-229dc31b44e1",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 1336,
+    "total_tokens": 1525,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子放学都半小时了还没到家，电话也没接，我心里有点发慌，你能陪我说说话吗？",
+  "spoken_text": "孩子放学都半小时了还没到家，电话也没接，我心里有点发慌，你能陪我说说话吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子放学都半小时了还没到家，电话也没接。我心里有点发慌，你能陪我说说话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子放学都半小时了还没到家，电话也没接。我心里有点发慌，你能陪我说说话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-02c4791a-fd3e-972c-ba19-689574c83465",
+    "usage": {
+      "prompt_tokens": 256,
+      "total_tokens": 305,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "196c5d1b527386909ef8f37870f2076952a3394e4492c05c0566c4a45904ff13"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "81454d740e151540104a88921fd75a02f64b2085571f7afe13c044c81a903a11",
+    "canonical_sha256": "196c5d1b527386909ef8f37870f2076952a3394e4492c05c0566c4a45904ff13",
+    "pcm_sha256": "cc668a5cc3acd07ebea866f16a975d0f38faa1f5960dfa4420734309c90f14c8",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 160320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子放学都半小时了还没到家，电话也没接，我心里有点发慌，你能陪我说说话吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-143c6450-7f3d-96a1-a44a-124ac56b1f7b",
+      "usage": {
+        "prompt_tokens": 172,
+        "total_tokens": 221,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "81454d740e151540104a88921fd75a02f64b2085571f7afe13c044c81a903a11",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "81454d740e151540104a88921fd75a02f64b2085571f7afe13c044c81a903a11",
+        "canonical_audio_sha256": "196c5d1b527386909ef8f37870f2076952a3394e4492c05c0566c4a45904ff13",
+        "pcm_sha256": "cc668a5cc3acd07ebea866f16a975d0f38faa1f5960dfa4420734309c90f14c8",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/27279988f770cb5fcb0da0be064647bb.wav",
+  "sha256": "284b5a1b6a9d46b805becc7d9ad9f4b57cc0ac3234c6fcb6c457a5ed240c761e",
+  "duration_seconds": 5.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ceede751-48d4-95fc-bd79-7c73c8c067a5",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 1104,
+    "total_tokens": 1284,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我改一下，刚才说从1开始不对，应该从5开始。咱们重新来。",
+  "spoken_text": "我改一下，刚才说从一开始不对，应该从五开始。咱们重新来。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我改一下，刚才说从一开始不对，应该从五开始，咱们重新来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我改一下，刚才说从一开始不对，应该从五开始，咱们重新来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-214f20a2-3c2a-90c4-bcc2-0999ccbffae7",
+    "usage": {
+      "prompt_tokens": 246,
+      "total_tokens": 290,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "284b5a1b6a9d46b805becc7d9ad9f4b57cc0ac3234c6fcb6c457a5ed240c761e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a3f0fc9e8b829728ef6563c1b1e54c509bae84d492c6cc121a19d7465d500948",
+    "canonical_sha256": "284b5a1b6a9d46b805becc7d9ad9f4b57cc0ac3234c6fcb6c457a5ed240c761e",
+    "pcm_sha256": "60efd41c7e9210c571ef8afd3f736dbedc154458ee3b5371cb96afc7294319c2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 132480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我改一下，刚才说从一开始不对，应该从五开始。咱们重新来。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我改一下，刚才说从一开始不对，应该从五开始。咱们重新来。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a7995207-f36f-95b5-863d-bd909794255d",
+      "usage": {
+        "prompt_tokens": 185,
+        "total_tokens": 229,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 148
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a3f0fc9e8b829728ef6563c1b1e54c509bae84d492c6cc121a19d7465d500948",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a3f0fc9e8b829728ef6563c1b1e54c509bae84d492c6cc121a19d7465d500948",
+        "canonical_audio_sha256": "284b5a1b6a9d46b805becc7d9ad9f4b57cc0ac3234c6fcb6c457a5ed240c761e",
+        "pcm_sha256": "60efd41c7e9210c571ef8afd3f736dbedc154458ee3b5371cb96afc7294319c2",
+        "same_samples": true
+      }
+    }
+  ]
+}

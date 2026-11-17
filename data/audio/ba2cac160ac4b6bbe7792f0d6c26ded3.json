@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ba2cac160ac4b6bbe7792f0d6c26ded3.wav",
+  "sha256": "471aa655281c43a06aeae144b36497f44d093ab22bff741e451908537cbe75d6",
+  "duration_seconds": 4.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a1fc6865-eba5-952e-8aed-0bfe5dee2edf",
+  "usage": {
+    "input_tokens": 214,
+    "output_tokens": 984,
+    "total_tokens": 1198,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "哎我说错了，不是她婆婆包的，是张姐自己包的，她婆婆在旁边帮忙打下手。",
+  "spoken_text": "哎我说错了，不是她婆婆包的，是张姐自己包的，她婆婆在旁边帮忙打下手。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "哎，我说错了，不是她婆婆包的，是张姐自己包的。她婆婆在旁边帮忙打下手。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "哎，我说错了，不是她婆婆包的，是张姐自己包的。她婆婆在旁边帮忙打下手。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-36ec7c75-c76a-9d20-9774-76ff42cd57d2",
+    "usage": {
+      "prompt_tokens": 241,
+      "total_tokens": 290,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "471aa655281c43a06aeae144b36497f44d093ab22bff741e451908537cbe75d6"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a6f9f718bae14591bc2d11901c45a2d5d5d9d4c78e77a77989387779b49609b7",
+    "canonical_sha256": "471aa655281c43a06aeae144b36497f44d093ab22bff741e451908537cbe75d6",
+    "pcm_sha256": "3cecdd5c6a516f0b8b5421fdf9b0538e14bb67b0e01981c4f497ff7c3708c99e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 118080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "哎，我说错了，不是她婆婆包的，是张姐自己包的。她婆婆在旁边帮忙打下手。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9f19d898-1fd4-9282-8e1b-7e52597da47a",
+      "usage": {
+        "prompt_tokens": 157,
+        "total_tokens": 206,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a6f9f718bae14591bc2d11901c45a2d5d5d9d4c78e77a77989387779b49609b7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a6f9f718bae14591bc2d11901c45a2d5d5d9d4c78e77a77989387779b49609b7",
+        "canonical_audio_sha256": "471aa655281c43a06aeae144b36497f44d093ab22bff741e451908537cbe75d6",
+        "pcm_sha256": "3cecdd5c6a516f0b8b5421fdf9b0538e14bb67b0e01981c4f497ff7c3708c99e",
+        "same_samples": true
+      }
+    }
+  ]
+}

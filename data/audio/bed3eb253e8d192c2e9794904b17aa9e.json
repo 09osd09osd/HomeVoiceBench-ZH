@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/bed3eb253e8d192c2e9794904b17aa9e.wav",
+  "sha256": "6575724ce1629bc68c9e66509b60939a30662b4006794ad3712b118634af0816",
+  "duration_seconds": 5.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d6a9b1eb-669a-9088-92d7-d4b4b36f470c",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 1168,
+    "total_tokens": 1360,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "嗯，再加一点吧，小熊有个好朋友是小刺猬，石头唱歌的时候小刺猬也在旁边听。",
+  "spoken_text": "嗯，再加一点吧，小熊有个好朋友是小刺猬，石头唱歌的时候小刺猬也在旁边听。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "嗯，再加一点吧。小熊有个好朋友，是小刺猬。石头唱歌的时候，小刺猬也在旁边听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "嗯，再加一点吧。小熊有个好朋友，是小刺猬。石头唱歌的时候，小刺猬也在旁边听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f89c5ab6-d404-9e69-a258-a299bff6659e",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 296,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6575724ce1629bc68c9e66509b60939a30662b4006794ad3712b118634af0816"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b616b8c09f83684ebb4a9648a11408c33d85c31db1517d23c3c39321d54adffb",
+    "canonical_sha256": "6575724ce1629bc68c9e66509b60939a30662b4006794ad3712b118634af0816",
+    "pcm_sha256": "c19c386bb04f87a2c43e0824d7e62b8e09e8b4e7a1964fe3f75fad36e072a344",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 140160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "嗯，再加一点吧。小熊有个好朋友，是小刺猬。石头唱歌的时候，小刺猬也在旁边听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "嗯，再加一点吧。小熊有个好朋友，是小刺猬。石头唱歌的时候，小刺猬也在旁边听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5abe7b89-6542-9b58-b5bf-b49cb57cc43e",
+      "usage": {
+        "prompt_tokens": 186,
+        "total_tokens": 235,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b616b8c09f83684ebb4a9648a11408c33d85c31db1517d23c3c39321d54adffb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b616b8c09f83684ebb4a9648a11408c33d85c31db1517d23c3c39321d54adffb",
+        "canonical_audio_sha256": "6575724ce1629bc68c9e66509b60939a30662b4006794ad3712b118634af0816",
+        "pcm_sha256": "c19c386bb04f87a2c43e0824d7e62b8e09e8b4e7a1964fe3f75fad36e072a344",
+        "same_samples": true
+      }
+    }
+  ]
+}

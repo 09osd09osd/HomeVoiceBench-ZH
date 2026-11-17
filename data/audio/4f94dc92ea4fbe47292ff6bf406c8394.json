@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/4f94dc92ea4fbe47292ff6bf406c8394.wav",
+  "sha256": "7150144bf55cdd9c05bacebc4cb2b3f1a7d1536b5e402e5cb02b33e60a37208c",
+  "duration_seconds": 4.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "475a530b-5b3f-9762-b6f7-704258c549ff",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 968,
+    "total_tokens": 1171,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "他喜欢听关于云朵的故事，你能把云朵说得像小棉花糖一样吗？",
+  "spoken_text": "他喜欢听关于云朵的故事，你能把云朵说得像小棉花糖一样吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "他喜欢听关于云朵的故事。你能把云朵说的像小棉花糖一样吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "他喜欢听关于云朵的故事。你能把云朵说的像小棉花糖一样吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0b9cbf68-6b24-95a8-ac01-4da8e5e81ed7",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7150144bf55cdd9c05bacebc4cb2b3f1a7d1536b5e402e5cb02b33e60a37208c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "81307a8fda8ffacd4863324717517a661e0230664251bfec9e2cc6aef8204cb5",
+    "canonical_sha256": "7150144bf55cdd9c05bacebc4cb2b3f1a7d1536b5e402e5cb02b33e60a37208c",
+    "pcm_sha256": "5c37ba8a10a2f711c05e4c261b983d4364a2b4ffdad0e482c75cceac6978d9e2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 116160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "他喜欢听关于云朵的故事，你能把云朵说得像小棉花糖一样吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "他喜欢听关于云朵的故事，你能把云朵说得像小棉花糖一样吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d592fc52-d388-9a34-89c0-e1636df85505",
+      "usage": {
+        "prompt_tokens": 175,
+        "total_tokens": 218,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 145
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "81307a8fda8ffacd4863324717517a661e0230664251bfec9e2cc6aef8204cb5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "81307a8fda8ffacd4863324717517a661e0230664251bfec9e2cc6aef8204cb5",
+        "canonical_audio_sha256": "7150144bf55cdd9c05bacebc4cb2b3f1a7d1536b5e402e5cb02b33e60a37208c",
+        "pcm_sha256": "5c37ba8a10a2f711c05e4c261b983d4364a2b4ffdad0e482c75cceac6978d9e2",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "1eaa6d1e07e4d415255d5b7d8f99e0c07df841f5e6ed5049111007e82fa18e48",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-91985169-c622-9de9-a896-8920349b3e82",
+  "usage": {
+    "prompt_tokens": 4972,
+    "total_tokens": 6187,
+    "completion_tokens": 1215,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4972
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1215
+    }
+  },
+  "review_request_id": "chatcmpl-a087f279-34c8-9bc6-b8d0-922667c8ae76",
+  "review_usage": {
+    "prompt_tokens": 5809,
+    "total_tokens": 5895,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 5809
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T16_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T16_006",
+        "title": "卧室温湿度单次查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看卧室现在的温度和湿度是多少，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "好的，卧室现在温度22摄氏度，湿度54%，测量时间是2026年12月1日18点整，只做了查询。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_007",
+        "title": "卧室与厨房温湿度查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看卧室现在的温度和湿度是多少，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "好的，卧室现在温度23摄氏度，湿度57%，测量时间是2026年12月1日18点整，只做了查询。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度吧。",
+            "reference_text": "厨房现在温度25摄氏度，湿度59%，测量时间也是2026年12月1日18点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_008",
+        "title": "卧室厨房查询后比较读数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看卧室现在的温度和湿度是多少，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "好的，卧室现在温度24摄氏度，湿度60%，测量时间是2026年12月1日18点整，只做了查询。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度吧。",
+            "reference_text": "厨房现在温度26摄氏度，湿度62%，测量时间也是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才卧室和厨房的读数，不要调任何设备。",
+            "reference_text": "刚才卧室是24摄氏度、湿度60%，厨房是26摄氏度、湿度62%，厨房比卧室高2摄氏度、湿度高2个百分点，没有调任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_009",
+        "title": "温湿度查询及读数局限性说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看卧室现在的温度和湿度是多少，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "好的，卧室现在温度25摄氏度，湿度63%，测量时间是2026年12月1日18点整，只做了查询。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度吧。",
+            "reference_text": "厨房现在温度27摄氏度，湿度65%，测量时间也是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才卧室和厨房的读数，不要调任何设备。",
+            "reference_text": "刚才卧室是25摄氏度、湿度63%，厨房是27摄氏度、湿度65%，厨房比卧室高2摄氏度、湿度高2个百分点，没有调任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。这些只是传感器在18点整测到的温湿度，不能识别人的身份，温度也不是设备的设定值，只能反映传感器测量范围内的数值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_010",
+        "title": "温湿度查询、比较与复测",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看卧室现在的温度和湿度是多少，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "好的，卧室现在温度26摄氏度，湿度66%，测量时间是2026年12月1日18点整，只做了查询。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度吧。",
+            "reference_text": "厨房现在温度28摄氏度，湿度68%，测量时间也是2026年12月1日18点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才卧室和厨房的读数，不要调任何设备。",
+            "reference_text": "刚才卧室是26摄氏度、湿度66%，厨房是28摄氏度、湿度68%，厨房比卧室高2摄氏度、湿度高2个百分点，没有调任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。这些只是传感器在18点整测到的温湿度，不能识别人的身份，温度也不是设备的设定值，只能反映传感器测量范围内的数值。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再重新查一下卧室的同一指标吧。",
+            "reference_text": "重新查了，卧室温度还是26摄氏度，湿度66%，测量时间是2026年12月1日18点整。"
+          }
+        ]
+      }
+    ]
+  }
+}

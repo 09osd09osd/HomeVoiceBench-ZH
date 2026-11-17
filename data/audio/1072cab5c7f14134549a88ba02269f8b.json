@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1072cab5c7f14134549a88ba02269f8b.wav",
+  "sha256": "193924118bffa04aee946d0bcc8af3d816e78ea5fd90840a399955c5ca16f7ee",
+  "duration_seconds": 5.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ccf92216-55a1-9d6c-9a9a-bd3fc4ee9e3f",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 1048,
+    "total_tokens": 1245,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我在卧室音箱设个明天早上8点的闹钟，提醒内容写“给绿萝浇水”。",
+  "spoken_text": "帮我在卧室音箱设个明天早上八点的闹钟，提醒内容写“给绿萝浇水”。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我在卧室音箱设个明天早上8点的闹钟，提醒内容写“给绿萝浇水”。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我在卧室音箱设个明天早上8点的闹钟，提醒内容写“给绿萝浇水”。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f23d284d-aaf6-97b9-a825-0cec8bd0e560",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 294,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "193924118bffa04aee946d0bcc8af3d816e78ea5fd90840a399955c5ca16f7ee"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "fc23d5b516729568abc5d1d0a32d14cb0f6b5fc8ae1ebb8d38d73edfe510d0a3",
+    "canonical_sha256": "193924118bffa04aee946d0bcc8af3d816e78ea5fd90840a399955c5ca16f7ee",
+    "pcm_sha256": "03b32ab3cecfc6879e3671242050197852c40def143704d1da27dc71f6314f17",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 125760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我在卧室音箱设个明天早上八点的闹钟，提醒内容写给绿萝浇水。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我在卧室音箱设个明天早上八点的闹钟，提醒内容写给绿萝浇水。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a3a5598a-761c-987c-8249-0032c2ccdd3a",
+      "usage": {
+        "prompt_tokens": 186,
+        "total_tokens": 231,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "fc23d5b516729568abc5d1d0a32d14cb0f6b5fc8ae1ebb8d38d73edfe510d0a3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "fc23d5b516729568abc5d1d0a32d14cb0f6b5fc8ae1ebb8d38d73edfe510d0a3",
+        "canonical_audio_sha256": "193924118bffa04aee946d0bcc8af3d816e78ea5fd90840a399955c5ca16f7ee",
+        "pcm_sha256": "03b32ab3cecfc6879e3671242050197852c40def143704d1da27dc71f6314f17",
+        "same_samples": true
+      }
+    }
+  ]
+}

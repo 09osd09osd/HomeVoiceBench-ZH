@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "0a4d5ac907dedda3994b06a5a90f3fa1d6fec3fd1aa44b9f81763a156f0dbab6",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-768d0e83-78a0-960b-a6e7-c33c13dadb3e",
+  "usage": {
+    "prompt_tokens": 13556,
+    "total_tokens": 14584,
+    "completion_tokens": 1028,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13556
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1028
+    }
+  },
+  "review_request_id": "chatcmpl-1a78c012-dbe7-9ddc-97f6-8470ec59d745",
+  "review_usage": {
+    "prompt_tokens": 14206,
+    "total_tokens": 14292,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14206
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T07_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T07_006",
+        "title": "卧室灯色温调至3500K",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，色温调到3500K。",
+            "reference_text": "好的，卧室灯已打开，色温设为3500K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_007",
+        "title": "卧室灯色温从3500K改到4500K",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，色温调到3500K。",
+            "reference_text": "好的，卧室灯已打开，色温设为3500K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把卧室灯的色温改成4500K，其他设置不要动。",
+            "reference_text": "好的，卧室灯色温已改为4500K，其他设置没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_008",
+        "title": "卧室灯色温调整并核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，色温调到3500K。",
+            "reference_text": "好的，卧室灯已打开，色温设为3500K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把卧室灯的色温改成4500K，其他设置不要动。",
+            "reference_text": "好的，卧室灯色温已改为4500K，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下卧室灯现在的色温和开关状态，不要调整。",
+            "reference_text": "卧室灯现在是开着的，色温4500K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_009",
+        "title": "卧室灯色温调整、核对并关灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，色温调到3500K。",
+            "reference_text": "好的，卧室灯已打开，色温设为3500K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把卧室灯的色温改成4500K，其他设置不要动。",
+            "reference_text": "好的，卧室灯色温已改为4500K，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下卧室灯现在的色温和开关状态，不要调整。",
+            "reference_text": "卧室灯现在是开着的，色温4500K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把卧室灯关掉，色温设置保留。",
+            "reference_text": "好的，卧室灯已关闭，色温设置保留为4500K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_010",
+        "title": "卧室灯色温调整、核对、关灯并再查开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，色温调到3500K。",
+            "reference_text": "好的，卧室灯已打开，色温设为3500K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把卧室灯的色温改成4500K，其他设置不要动。",
+            "reference_text": "好的，卧室灯色温已改为4500K，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下卧室灯现在的色温和开关状态，不要调整。",
+            "reference_text": "卧室灯现在是开着的，色温4500K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把卧室灯关掉，色温设置保留。",
+            "reference_text": "好的，卧室灯已关闭，色温设置保留为4500K。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再帮我查一下卧室灯的开关状态，其他设备不要改。",
+            "reference_text": "卧室灯现在是关着的，其他设备没有改动。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "c15f38779402e9a426e0c89b0cefe4c29746a9c5beebb6b9e1bd8175df2f5208",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-a18e0b56-2474-9f5b-88de-2bf2a77af9dd",
+  "usage": {
+    "prompt_tokens": 4197,
+    "total_tokens": 5360,
+    "completion_tokens": 1163,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4197
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1163
+    }
+  },
+  "review_request_id": "chatcmpl-369fa2c8-75ba-9a0a-8fd9-910ac0e137ee",
+  "review_usage": {
+    "prompt_tokens": 4982,
+    "total_tokens": 5068,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4982
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T19_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T19_011",
+        "title": "书房有人吗？现在查一下",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在有没有人，就查一下，把读数和测量时间告诉我。",
+            "reference_text": "书房当前没有检测到人，读数是“无人”，测量时间是今天18点00分00秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_012",
+        "title": "书房有人，再查厨房",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在有没有人，就查一下，把读数和测量时间告诉我。",
+            "reference_text": "书房当前检测到有人，读数是“有人”，测量时间是今天18点00分00秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房现在有没有人。",
+            "reference_text": "厨房当前没有检测到人，读数是“无人”，测量时间也是今天18点00分00秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_013",
+        "title": "书房没人厨房有人，比较一下",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在有没有人，就查一下，把读数和测量时间告诉我。",
+            "reference_text": "书房当前没有检测到人，读数是“无人”，测量时间是今天18点00分00秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房现在有没有人。",
+            "reference_text": "厨房当前检测到有人，读数是“有人”，测量时间也是今天18点00分00秒。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你比较一下刚才这两个房间的读数，别去调任何设备。",
+            "reference_text": "书房读数是“无人”，厨房读数是“有人”，两个读数测量时间相同，都是今天18点00分00秒。我没有操作任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_014",
+        "title": "书房有人厨房没人，读数能说明全部吗",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在有没有人，就查一下，把读数和测量时间告诉我。",
+            "reference_text": "书房当前检测到有人，读数是“有人”，测量时间是今天18点00分00秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房现在有没有人。",
+            "reference_text": "厨房当前没有检测到人，读数是“无人”，测量时间也是今天18点00分00秒。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你比较一下刚才这两个房间的读数，别去调任何设备。",
+            "reference_text": "书房读数是“有人”，厨房读数是“无人”，两个读数测量时间相同，都是今天18点00分00秒。我没有操作任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。读数有时间限制，只反映测量那一刻；传感器只能检测有没有人，不能识别是谁；温度也不是设备设定值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_015",
+        "title": "先查书房厨房，再确认书房",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看书房现在有没有人，就查一下，把读数和测量时间告诉我。",
+            "reference_text": "书房当前没有检测到人，读数是“无人”，测量时间是今天18点00分00秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房现在有没有人。",
+            "reference_text": "厨房当前检测到有人，读数是“有人”，测量时间也是今天18点00分00秒。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你比较一下刚才这两个房间的读数，别去调任何设备。",
+            "reference_text": "书房读数是“无人”，厨房读数是“有人”，两个读数测量时间相同，都是今天18点00分00秒。我没有操作任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。读数有时间限制，只反映测量那一刻；传感器只能检测有没有人，不能识别是谁；温度也不是设备设定值。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再重新查一下书房有没有人。",
+            "reference_text": "书房重新查询的结果还是“无人”，测量时间是今天18点00分04秒。"
+          }
+        ]
+      }
+    ]
+  }
+}

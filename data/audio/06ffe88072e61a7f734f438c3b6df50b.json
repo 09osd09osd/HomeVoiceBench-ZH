@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/06ffe88072e61a7f734f438c3b6df50b.wav",
+  "sha256": "a4f7fa1a11414704ceec28e377383dbbe54bc5527ca42ca339025312d8555523",
+  "duration_seconds": 5.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f83b3c25-d90f-98f7-a207-96ca9c05520e",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 1008,
+    "total_tokens": 1196,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "家里垃圾经常没人及时倒，我想定个轮流值日的办法，帮我跟家人说清楚。",
+  "spoken_text": "家里垃圾经常没人及时倒，我想定个轮流值日的办法，帮我跟家人说清楚。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "家里垃圾经常没人及时倒，我想定个轮流值日的办法，帮我跟家人说清楚。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "家里垃圾经常没人及时倒，我想定个轮流值日的办法，帮我跟家人说清楚。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-18530d36-f5ce-9d67-b113-6d16c334a47f",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 294,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a4f7fa1a11414704ceec28e377383dbbe54bc5527ca42ca339025312d8555523"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f76a8a3a94a4a06850d5b4fa298552f6e83f9943ade89a6d5a433dea09873532",
+    "canonical_sha256": "a4f7fa1a11414704ceec28e377383dbbe54bc5527ca42ca339025312d8555523",
+    "pcm_sha256": "ad75f23bf79a3c3ad615747973526c0917d243480bede88636123be099d8047e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 120960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "家里垃圾经常没人及时倒，我想定个轮流值日的办法，帮我跟家人说清楚。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d5dda71e-4347-9d3d-80ad-8c8bf5979594",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 210,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f76a8a3a94a4a06850d5b4fa298552f6e83f9943ade89a6d5a433dea09873532",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f76a8a3a94a4a06850d5b4fa298552f6e83f9943ade89a6d5a433dea09873532",
+        "canonical_audio_sha256": "a4f7fa1a11414704ceec28e377383dbbe54bc5527ca42ca339025312d8555523",
+        "pcm_sha256": "ad75f23bf79a3c3ad615747973526c0917d243480bede88636123be099d8047e",
+        "same_samples": true
+      }
+    }
+  ]
+}

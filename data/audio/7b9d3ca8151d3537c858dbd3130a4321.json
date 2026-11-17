@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/7b9d3ca8151d3537c858dbd3130a4321.wav",
+  "sha256": "5b1874bc05bb2616f28fcdcb47f3ea884f8f2e12b29d08d7fb6846b8cba1d0a7",
+  "duration_seconds": 5.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ba4fb544-9e26-9210-9b38-2f08e6e54600",
+  "usage": {
+    "input_tokens": 205,
+    "output_tokens": 1192,
+    "total_tokens": 1397,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天被领导当众说了一顿，心里憋得慌，就想找个人说说，你别给我出主意。",
+  "spoken_text": "今天被领导当众说了一顿，心里憋得慌，就想找个人说说，你别给我出主意。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天被领导当众说了一顿，心里憋得慌，就想找个人说说，你别给我出主意。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天被领导当众说了一顿，心里憋得慌，就想找个人说说，你别给我出主意。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b5c2b6a9-57e4-913d-b3e7-374e4c050daf",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 298,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5b1874bc05bb2616f28fcdcb47f3ea884f8f2e12b29d08d7fb6846b8cba1d0a7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4c5c9d800dd530e4a53b16243104cbc767f495ace54e7f8adad4201d79203179",
+    "canonical_sha256": "5b1874bc05bb2616f28fcdcb47f3ea884f8f2e12b29d08d7fb6846b8cba1d0a7",
+    "pcm_sha256": "a9e98b7b79ce8125507747fdd545bd61d030a27f1928a774ead1379b4357642c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 143040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天被领导当众说了一顿，心里憋得慌，就想找个人说说，你别给我出主意。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-79d542cb-9d40-98eb-86b8-dde36e5e65ee",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 214,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4c5c9d800dd530e4a53b16243104cbc767f495ace54e7f8adad4201d79203179",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4c5c9d800dd530e4a53b16243104cbc767f495ace54e7f8adad4201d79203179",
+        "canonical_audio_sha256": "5b1874bc05bb2616f28fcdcb47f3ea884f8f2e12b29d08d7fb6846b8cba1d0a7",
+        "pcm_sha256": "a9e98b7b79ce8125507747fdd545bd61d030a27f1928a774ead1379b4357642c",
+        "same_samples": true
+      }
+    }
+  ]
+}

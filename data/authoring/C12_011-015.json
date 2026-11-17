@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "78140bd57e58abbb515878ff873b7363210501d283c149d516ffd3e6bc3365c5",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-ceb0580c-f2b4-939c-ba62-53d373dcc547",
+  "usage": {
+    "prompt_tokens": 1850,
+    "total_tokens": 3036,
+    "completion_tokens": 1186,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1850
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1186
+    }
+  },
+  "review_request_id": "chatcmpl-fb9a718a-c3c7-9ed9-9dce-fefd464b1b42",
+  "review_usage": {
+    "prompt_tokens": 2660,
+    "total_tokens": 2746,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2660
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C12_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C12_011",
+        "title": "下班后练一句介绍自己的话",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天下班有点累，想练一句简单的中文自我介绍，就一句话，别太长。",
+            "reference_text": "好，那就练一句简单的自我介绍。你可以先说：“大家好，我叫小林，很高兴认识大家。”这句话短，也容易说顺。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_012",
+        "title": "练习点咖啡，要求短句且别用太难的词",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想练一下在咖啡店点单，说一句就行，别太难，我舌头有点打结。",
+            "reference_text": "可以，先练一句简单的：“你好，我要一杯拿铁，谢谢。”这句子不长，点单够用。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加一个限制，别用“拿铁”这种我老念错的词，换成更常见的饮料。",
+            "reference_text": "好，那换成：“你好，我要一杯红茶，谢谢。”这个词常见，念起来也顺口。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_013",
+        "title": "练问路，先要短句后改目的地",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想练一句问路的话，要短一点，我能在地铁站里直接说的那种。",
+            "reference_text": "可以练：“请问，去火车站怎么走？”句子短，地铁站里问路也自然。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加个限制，别太正式，像平时说话那样就行。",
+            "reference_text": "那可以改成：“麻烦问一下，火车站怎么走？”听起来更接近平时说话。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是火车站，是去机场，你帮我把目的地换掉。",
+            "reference_text": "好，换掉目的地以后可以说：“麻烦问一下，机场怎么走？”还是保持刚才那种日常说法。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_014",
+        "title": "练请假说明，改时间后确认记忆",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想练一句跟同事说明天要请假的话，简单清楚就行，别太绕。",
+            "reference_text": "可以练：“我明天想请一天假，手头的事我会提前安排好。”简单，也说清楚了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加一个限制，别说“手头的事”，换成一个更口语的说法。",
+            "reference_text": "好，那可以说：“我明天想请一天假，工作我会提前安排好。”这样更口语一些。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是明天，是后天请假，时间帮我改过来。",
+            "reference_text": "好，改成后天：“我后天想请一天假，工作我会提前安排好。”"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改的是哪天请假吗？顺便再用一句话接着练。",
+            "reference_text": "记得，你改的是后天请假。可以接着说：“我后天想请一天假，工作我会提前安排好。”"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_015",
+        "title": "练道歉短句，改对象后简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想练一句跟朋友道歉的话，要短，别太肉麻，我有点累。",
+            "reference_text": "可以练：“刚才是我不好，别生气啦。”句子短，也不会太肉麻。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加一个限制，别用“别生气啦”这种哄人的说法，换得更实在一点。",
+            "reference_text": "那可以改成：“刚才是我不好，我下次注意。”这样更实在。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是跟朋友，是跟同事道歉，称呼和语气帮我调一下。",
+            "reference_text": "好，跟同事可以说：“刚才是我不好，我下次注意。”语气保持自然、不过分熟络。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改的是跟谁说吗？再用一句话接着练。",
+            "reference_text": "记得，是跟同事道歉。可以接着说：“刚才是我不好，我下次注意。”"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后用特别短的方式收个尾，就一句，别展开。",
+            "reference_text": "好，收尾就一句：“刚才是我不好，我下次注意。”"
+          }
+        ]
+      }
+    ]
+  }
+}

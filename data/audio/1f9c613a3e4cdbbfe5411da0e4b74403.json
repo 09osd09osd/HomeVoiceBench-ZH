@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/1f9c613a3e4cdbbfe5411da0e4b74403.wav",
+  "sha256": "e474e75a302a0a502a10f95c5a01c87d873a07159725b470e79d3ebdaab12560",
+  "duration_seconds": 3.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ef05b24d-88f5-97dd-b405-f94cab97a457",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 624,
+    "total_tokens": 818,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你记得是模拟考吧？我现在还是有点提不起劲。",
+  "spoken_text": "你记得是模拟考吧？我现在还是有点提不起劲。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你记得是模拟考吧，我现在还是有点提不起劲儿。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你记得是模拟考吧，我现在还是有点提不起劲儿。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5cf66fa6-e7ba-9cb3-9589-1c7f49fbe9ec",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e474e75a302a0a502a10f95c5a01c87d873a07159725b470e79d3ebdaab12560"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "365d7ad37ff2fc0f66eb20f1fd71342b7992049b8797894d6f8319708f19572f",
+    "canonical_sha256": "e474e75a302a0a502a10f95c5a01c87d873a07159725b470e79d3ebdaab12560",
+    "pcm_sha256": "bbe46cb4c562cad204dc027e6719024d2ba063189029fa1440788881934b7e98",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 74880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你记得是模拟考吧？我现在还是有点提不起劲。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7975c388-ee07-956d-942e-a4a618d9201b",
+      "usage": {
+        "prompt_tokens": 142,
+        "total_tokens": 182,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "365d7ad37ff2fc0f66eb20f1fd71342b7992049b8797894d6f8319708f19572f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "365d7ad37ff2fc0f66eb20f1fd71342b7992049b8797894d6f8319708f19572f",
+        "canonical_audio_sha256": "e474e75a302a0a502a10f95c5a01c87d873a07159725b470e79d3ebdaab12560",
+        "pcm_sha256": "bbe46cb4c562cad204dc027e6719024d2ba063189029fa1440788881934b7e98",
+        "same_samples": true
+      }
+    }
+  ]
+}

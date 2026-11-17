@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/cdda2e37f25f4a9b5385f9c841f7868e.wav",
+  "sha256": "a4aecf856565860abc261cb72b604b463e543858ddafb8d990c0b6f79127222b",
+  "duration_seconds": 4.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b134a286-2f4e-9f52-a42d-6a103a5dcc28",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 864,
+    "total_tokens": 1052,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "提醒的时候顺便说一句水温别太高，我喜欢喝温一点的。",
+  "spoken_text": "提醒的时候顺便说一句水温别太高，我喜欢喝温一点的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "提醒的时候顺便说一句，水温别太高，我喜欢喝温一点的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "提醒的时候顺便说一句，水温别太高，我喜欢喝温一点的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-287e2d38-6a72-9d0e-b6b8-ea964431f4db",
+    "usage": {
+      "prompt_tokens": 232,
+      "total_tokens": 272,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a4aecf856565860abc261cb72b604b463e543858ddafb8d990c0b6f79127222b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7bd42fde8bcfdda7b6fb640090bfef1c12d41717e94d0e1018e385b7667839e6",
+    "canonical_sha256": "a4aecf856565860abc261cb72b604b463e543858ddafb8d990c0b6f79127222b",
+    "pcm_sha256": "104d6b87b90b90a1eb0d2dad7e3f4400e9f73f7cdc7833b15ed7867a712d2c85",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 103680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "提醒的时候顺便说一句，水温别太高，我喜欢喝温一点的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7f234908-31b4-91d1-8a22-451cf5d5a0c1",
+      "usage": {
+        "prompt_tokens": 148,
+        "total_tokens": 188,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7bd42fde8bcfdda7b6fb640090bfef1c12d41717e94d0e1018e385b7667839e6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7bd42fde8bcfdda7b6fb640090bfef1c12d41717e94d0e1018e385b7667839e6",
+        "canonical_audio_sha256": "a4aecf856565860abc261cb72b604b463e543858ddafb8d990c0b6f79127222b",
+        "pcm_sha256": "104d6b87b90b90a1eb0d2dad7e3f4400e9f73f7cdc7833b15ed7867a712d2c85",
+        "same_samples": true
+      }
+    }
+  ]
+}

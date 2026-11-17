@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "922adff09c77d44d3e3a60e00cfdfcae3e40862022fab4eef733a8800f384833",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-139a722d-3b42-9676-b4a0-27bb81c53914",
+  "usage": {
+    "prompt_tokens": 1790,
+    "total_tokens": 3002,
+    "completion_tokens": 1212,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "image_tokens": 0,
+      "text_tokens": 1790
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1212
+    }
+  },
+  "review_request_id": "chatcmpl-8f21b910-96f4-95f4-bf5b-9cb519b8a0a3",
+  "review_usage": {
+    "prompt_tokens": 2624,
+    "total_tokens": 2710,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "image_tokens": 0,
+      "text_tokens": 2624
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C03_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C03_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C03_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C03_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C03_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C03_011",
+        "title": "加班后只想被倾听，不要建议",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天加班到八点，累得不行，不想听任何建议，就想说说。",
+            "reference_text": "听起来今天真的把你累坏了。好，我不给建议，你想说什么我都听着。"
+          }
+        ]
+      },
+      {
+        "case_id": "C03_012",
+        "title": "工作受挫后倾诉，先别分析",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天被领导当众说了一顿，心里憋得慌，就想找个人说说，你别给我出主意。",
+            "reference_text": "被当众说肯定很难受，心里憋着也正常。你说吧，我不出主意，就听你讲。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "还有，你也别帮我分析谁对谁错，我现在不想听那些。",
+            "reference_text": "明白，不分析对错，也不评价。你就把想说的都说出来，我在这儿听着。"
+          }
+        ]
+      },
+      {
+        "case_id": "C03_013",
+        "title": "家里事烦心，倾诉中更正细节",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "这两天家里事多得喘不过气，我就想跟你念叨念叨，你别劝我，也别急着给办法。",
+            "reference_text": "听着就让人觉得累，家里事堆一起确实喘不过气。好，我不劝也不急着给办法，你慢慢说。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "你也别跟我说什么想开点，那些话我现在听不进去。",
+            "reference_text": "好，不说想开点这种话。你现在就是难受，我陪你待着，听你说。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，不是这两天，是这一个星期都这样，越堆越多。",
+            "reference_text": "是这一个星期都这样，不是两天，事情越堆越多，难怪你撑得这么累。我记着了。"
+          }
+        ]
+      },
+      {
+        "case_id": "C03_014",
+        "title": "项目失败后倾诉，记住更正继续聊",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "项目搞砸了，心里堵得慌，我就想说说，你别给我讲大道理。",
+            "reference_text": "项目砸了心里堵，这感受很真实。我不讲大道理，你说，我听着。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "你也别问我接下来打算怎么办，我现在不想想那些。",
+            "reference_text": "好，不问下一步，也不催你想办法。现在你就说说心里堵的那部分，我陪着你。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "其实不是项目搞砸了，是汇报的时候出了岔子，整个项目本身没失败。",
+            "reference_text": "明白了，是汇报时出了岔子，项目本身没失败。这个区别我记住了，你接着说。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我刚更正的吧？是汇报出岔子，不是项目失败。",
+            "reference_text": "记得，是汇报的时候出了岔子，项目本身没失败。我没弄混，你放心。"
+          }
+        ]
+      },
+      {
+        "case_id": "C03_015",
+        "title": "孩子生病后疲惫倾诉，简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "孩子发烧折腾了一整夜，我快撑不住了，就想跟你诉诉苦，别给我建议。",
+            "reference_text": "折腾一整夜，你肯定又累又担心。好，不给建议，你想诉苦就说，我听着。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "也别跟我说什么当妈都这样，我不想听这种话。",
+            "reference_text": "好，不说那种话。你就是累了、心疼了，这些我都听着，不拿话堵你。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说一整夜不太准，其实是从半夜两点到早上六点，断断续续没睡成。",
+            "reference_text": "是从半夜两点到早上六点，断断续续没睡成，不是一整夜。这更熬人，我记下了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得时间吧？是半夜两点到早上六点，不是一整夜。",
+            "reference_text": "记得，是半夜两点到早上六点，断断续续的，不是一整夜。你接着说。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好了，说这么多心里松快点了，你用一句话收个尾吧，我想歇会儿。",
+            "reference_text": "你辛苦了，能说出来松快一点就好，先好好歇着，我在这儿。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b970f2f4b2154ef95cf8a3df1d66a9ae.wav",
+  "sha256": "e97de8114058b2f3add0f4d47895ae0ec8a4ef97910666fbbf2f5deb9bf76d2a",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ac9c2228-d951-9519-81bf-40e479f65e5b",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 640,
+    "total_tokens": 824,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "刚才说3轮不对，改成2轮吧，其他不变。",
+  "spoken_text": "刚才说三轮不对，改成二轮吧，其他不变。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才说三轮不对，改成二轮吧，其他不变。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才说三轮不对，改成二轮吧，其他不变。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-096da97b-dba5-96b9-996b-361f0746e5ef",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 264,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e97de8114058b2f3add0f4d47895ae0ec8a4ef97910666fbbf2f5deb9bf76d2a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "865a418acb9b5fd85708c6ffaaf4b1b0f6d8493016d00e1d16864c3284b2c3f9",
+    "canonical_sha256": "e97de8114058b2f3add0f4d47895ae0ec8a4ef97910666fbbf2f5deb9bf76d2a",
+    "pcm_sha256": "1a9bf906827762f7dfb7048d6f6ea51dfd4142824876e588e1752063b21b110a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "刚才说三轮不对，改成二轮吧，其他不变。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "刚才说三轮不对，改成二轮吧，其他不变。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-440d0b57-1858-9974-a01f-0f18b6a39447",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 203,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "865a418acb9b5fd85708c6ffaaf4b1b0f6d8493016d00e1d16864c3284b2c3f9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "865a418acb9b5fd85708c6ffaaf4b1b0f6d8493016d00e1d16864c3284b2c3f9",
+        "canonical_audio_sha256": "e97de8114058b2f3add0f4d47895ae0ec8a4ef97910666fbbf2f5deb9bf76d2a",
+        "pcm_sha256": "1a9bf906827762f7dfb7048d6f6ea51dfd4142824876e588e1752063b21b110a",
+        "same_samples": true
+      }
+    }
+  ]
+}

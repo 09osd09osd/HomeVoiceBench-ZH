@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/80ee1b9a0d1c7b7857f80c44cc8ba85d.wav",
+  "sha256": "f6d339e811221264b81ab8190a354d15385b110345ff1c61447cec9bdb52c623",
+  "duration_seconds": 3.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0e6fb781-38e2-9259-ad25-8f242c4b383c",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 736,
+    "total_tokens": 924,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "那只搜索《小熊找月亮》，先不要播放。",
+  "spoken_text": "那只搜索《小熊找月亮》，先不要播放。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "那只搜索小熊找月亮，先不要播放。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "那只搜索小熊找月亮，先不要播放。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0ccbf3db-c1b0-9fa3-88cd-d2066bd5b938",
+    "usage": {
+      "prompt_tokens": 223,
+      "total_tokens": 259,
+      "completion_tokens": 36,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 36
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f6d339e811221264b81ab8190a354d15385b110345ff1c61447cec9bdb52c623"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6a99b12fa4649b9c47af10e2f3c5014d37972c73ea0f6b0d412455b27f24eb1d",
+    "canonical_sha256": "f6d339e811221264b81ab8190a354d15385b110345ff1c61447cec9bdb52c623",
+    "pcm_sha256": "5f55d289e13941be0e0bfd588cc6f7d5fe12c38517aa60a13f0ede6326ed9e1b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 88320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "那只搜索小熊找月亮，先不要播放。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "那只搜索小熊找月亮，先不要播放。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d14834f2-c9b6-96bf-83d8-ba02a4dba68b",
+      "usage": {
+        "prompt_tokens": 162,
+        "total_tokens": 198,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6a99b12fa4649b9c47af10e2f3c5014d37972c73ea0f6b0d412455b27f24eb1d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6a99b12fa4649b9c47af10e2f3c5014d37972c73ea0f6b0d412455b27f24eb1d",
+        "canonical_audio_sha256": "f6d339e811221264b81ab8190a354d15385b110345ff1c61447cec9bdb52c623",
+        "pcm_sha256": "5f55d289e13941be0e0bfd588cc6f7d5fe12c38517aa60a13f0ede6326ed9e1b",
+        "same_samples": true
+      }
+    }
+  ]
+}

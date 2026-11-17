@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "136dd8e350365b80bcefa7d4c33b6dc0ee621e62af28976e95e81bef9267e174",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-6c21135a-2022-943c-9ed7-93650d30aad9",
+  "usage": {
+    "prompt_tokens": 13486,
+    "total_tokens": 14477,
+    "completion_tokens": 991,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13486
+    },
+    "completion_tokens_details": {
+      "text_tokens": 991
+    }
+  },
+  "review_request_id": "chatcmpl-84809bab-1441-9668-92b6-68289bce6594",
+  "review_usage": {
+    "prompt_tokens": 14099,
+    "total_tokens": 14185,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14099
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T11_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T11_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T11_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T11_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T11_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T11_016",
+        "title": "打开客厅净化器并设为睡眠模式",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅净化器打开，模式调到睡眠模式。",
+            "reference_text": "好的，客厅净化器已经打开，并且切换到睡眠模式了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T11_017",
+        "title": "净化器从睡眠切换到自动模式",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅净化器打开，模式调到睡眠模式。",
+            "reference_text": "好的，客厅净化器已经打开，并且切换到睡眠模式了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把净化器的模式改成自动模式，其他设置别动。",
+            "reference_text": "已经把客厅净化器调到自动模式了，其他设置没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T11_018",
+        "title": "切换自动模式后核对净化器状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅净化器打开，模式调到睡眠模式。",
+            "reference_text": "好的，客厅净化器已经打开，并且切换到睡眠模式了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把净化器的模式改成自动模式，其他设置别动。",
+            "reference_text": "已经把客厅净化器调到自动模式了，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "看一下客厅净化器现在是什么模式，开着还是关着，别调整。",
+            "reference_text": "客厅净化器现在是开着的，模式是自动模式。"
+          }
+        ]
+      },
+      {
+        "case_id": "T11_019",
+        "title": "净化器自动模式核对后关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅净化器打开，模式调到睡眠模式。",
+            "reference_text": "好的，客厅净化器已经打开，并且切换到睡眠模式了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把净化器的模式改成自动模式，其他设置别动。",
+            "reference_text": "已经把客厅净化器调到自动模式了，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "看一下客厅净化器现在是什么模式，开着还是关着，别调整。",
+            "reference_text": "客厅净化器现在是开着的，模式是自动模式。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅净化器关掉，模式设置留着。",
+            "reference_text": "客厅净化器已经关掉了，自动模式设置还保留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T11_020",
+        "title": "净化器关闭后再次确认开关状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅净化器打开，模式调到睡眠模式。",
+            "reference_text": "好的，客厅净化器已经打开，并且切换到睡眠模式了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把净化器的模式改成自动模式，其他设置别动。",
+            "reference_text": "已经把客厅净化器调到自动模式了，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "看一下客厅净化器现在是什么模式，开着还是关着，别调整。",
+            "reference_text": "客厅净化器现在是开着的，模式是自动模式。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅净化器关掉，模式设置留着。",
+            "reference_text": "客厅净化器已经关掉了，自动模式设置还保留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅净化器的开关状态，其他设备不要动。",
+            "reference_text": "客厅净化器现在是关着的，其他设备没有动。"
+          }
+        ]
+      }
+    ]
+  }
+}

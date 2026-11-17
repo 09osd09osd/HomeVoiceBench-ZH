@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "ec9a39114990a30a29643090f80a8f6daf3767aaa462faaab0294170a1386527",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-9c36893d-040d-9839-ae4c-c2ba10c8dc73",
+  "usage": {
+    "prompt_tokens": 4125,
+    "total_tokens": 5070,
+    "completion_tokens": 945,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4125
+    },
+    "completion_tokens_details": {
+      "text_tokens": 945
+    }
+  },
+  "review_request_id": "chatcmpl-ee3db607-d421-97bc-b3bc-5277ea29f2b4",
+  "review_usage": {
+    "prompt_tokens": 4692,
+    "total_tokens": 4778,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4692
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T27_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T27_006",
+        "title": "客厅音箱跳转《安静钢琴》至45秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《安静钢琴》跳到第45秒。",
+            "reference_text": "好的，已经跳到第45秒，继续播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_007",
+        "title": "客厅音箱跳转并继续播放《安静钢琴》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《安静钢琴》跳到第45秒。",
+            "reference_text": "好的，已经跳到第45秒，继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《安静钢琴》，从第45秒接着放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_008",
+        "title": "客厅音箱跳转、继续与暂停《安静钢琴》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《安静钢琴》跳到第45秒。",
+            "reference_text": "好的，已经跳到第45秒，继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《安静钢琴》，从第45秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已暂停《安静钢琴》，停在第45秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_009",
+        "title": "客厅音箱跳转、继续、暂停并定位至70秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《安静钢琴》跳到第45秒。",
+            "reference_text": "好的，已经跳到第45秒，继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《安静钢琴》，从第45秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已暂停《安静钢琴》，停在第45秒。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第70秒，先保持暂停。",
+            "reference_text": "好的，已定位到第70秒，保持暂停。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_010",
+        "title": "客厅音箱跳转、继续、暂停、定位并停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《安静钢琴》跳到第45秒。",
+            "reference_text": "好的，已经跳到第45秒，继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《安静钢琴》，从第45秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已暂停《安静钢琴》，停在第45秒。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第70秒，先保持暂停。",
+            "reference_text": "好的，已定位到第70秒，保持暂停。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "好的，已停止《安静钢琴》，没有换别的。"
+          }
+        ]
+      }
+    ]
+  }
+}

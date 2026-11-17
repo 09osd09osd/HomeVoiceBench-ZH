@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/cedb743e9892f1e643b3a46beef9b3ec.wav",
+  "sha256": "d300935b8db6794f9631ea18c70e0b90284069a29b65f230185f4e457623d719",
+  "duration_seconds": 3.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "789ab6f3-6dd5-937b-9920-dc8b32b53f59",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 720,
+    "total_tokens": 909,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我陪作业大概要到八点半，这之前别给我排收拾的活。",
+  "spoken_text": "我陪作业大概要到八点半，这之前别给我排收拾的活。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我陪作业大概要到八点半，这之前别给我排收拾的活。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我陪作业大概要到八点半，这之前别给我排收拾的活。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-67fc899c-8daf-964a-ad12-18665a471d1d",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d300935b8db6794f9631ea18c70e0b90284069a29b65f230185f4e457623d719"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1d551775fa1e6858ad595d71ec3c37fbe677a3b242034ccbf93dcd002d4bee9d",
+    "canonical_sha256": "d300935b8db6794f9631ea18c70e0b90284069a29b65f230185f4e457623d719",
+    "pcm_sha256": "069242ee7eb6479dd6ffdb0eec50b5a67df7878150fdf6e4b73b96e03a0da9e4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 86400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我陪作业大概要到八点半，这之前别给我排收拾的活儿。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f6bd7ab6-b46a-92a8-bce1-a2a1db3cb4c9",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1d551775fa1e6858ad595d71ec3c37fbe677a3b242034ccbf93dcd002d4bee9d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1d551775fa1e6858ad595d71ec3c37fbe677a3b242034ccbf93dcd002d4bee9d",
+        "canonical_audio_sha256": "d300935b8db6794f9631ea18c70e0b90284069a29b65f230185f4e457623d719",
+        "pcm_sha256": "069242ee7eb6479dd6ffdb0eec50b5a67df7878150fdf6e4b73b96e03a0da9e4",
+        "same_samples": true
+      }
+    }
+  ]
+}

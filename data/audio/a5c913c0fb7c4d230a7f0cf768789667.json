@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a5c913c0fb7c4d230a7f0cf768789667.wav",
+  "sha256": "0d7583806beb6322aba8750cbe4010325a902895e42f4fd621b259652da88dc4",
+  "duration_seconds": 3.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "cb1bbe1f-018d-9aca-8f06-b35fa8588233",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 728,
+    "total_tokens": 924,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "现在你记得我早上喝什么吗？提醒我说水温别太高对吧？",
+  "spoken_text": "现在你记得我早上喝什么吗？提醒我说水温别太高对吧？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "现在你记得我早上喝什么吗？提醒我说水温别太高，对吧？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "现在你记得我早上喝什么吗？提醒我说水温别太高，对吧？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-71898fc2-5851-9fc2-b036-2fcc8b449655",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 271,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0d7583806beb6322aba8750cbe4010325a902895e42f4fd621b259652da88dc4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9d21a7565c63e9076ffbae32a71694fa9f828c572b276d8e87b9fe192aadc3c6",
+    "canonical_sha256": "0d7583806beb6322aba8750cbe4010325a902895e42f4fd621b259652da88dc4",
+    "pcm_sha256": "3af9f0dc457f6f68227a895c46e5ce6ae4f9c18c3597761f56a4b07d52b4f08d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 87360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "现在你记得我早上喝什么吗？提醒我说水温别太高对吧？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-25f84a51-8c80-97ad-adaf-91a89bfa478d",
+      "usage": {
+        "prompt_tokens": 144,
+        "total_tokens": 186,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9d21a7565c63e9076ffbae32a71694fa9f828c572b276d8e87b9fe192aadc3c6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9d21a7565c63e9076ffbae32a71694fa9f828c572b276d8e87b9fe192aadc3c6",
+        "canonical_audio_sha256": "0d7583806beb6322aba8750cbe4010325a902895e42f4fd621b259652da88dc4",
+        "pcm_sha256": "3af9f0dc457f6f68227a895c46e5ce6ae4f9c18c3597761f56a4b07d52b4f08d",
+        "same_samples": true
+      }
+    }
+  ]
+}

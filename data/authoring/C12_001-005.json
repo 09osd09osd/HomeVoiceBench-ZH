@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "99eb5a8359c8dea3b9265f10ab79a2124840d1eb77f649c4f8ff6994840eef78",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-2fced88a-0c8a-989a-8e26-88602726706a",
+  "usage": {
+    "prompt_tokens": 1981,
+    "total_tokens": 3264,
+    "completion_tokens": 1283,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "image_tokens": 0,
+      "text_tokens": 1981
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1283
+    }
+  },
+  "review_request_id": "chatcmpl-60a5c911-9d80-9729-88f2-79e6933fa399",
+  "review_usage": {
+    "prompt_tokens": 2721,
+    "total_tokens": 2807,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "image_tokens": 0,
+      "text_tokens": 2721
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C12_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 2,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C12_001",
+        "title": "朗读练习中的发音纠正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想练习一下普通话朗读，你听我说这句话对不对：“春天来了，花儿都开了。”",
+            "reference_text": "你说得基本清楚，“花儿”的儿化音可以再自然一点，不用刻意卷舌。整体很流利，继续这样练就好。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_002",
+        "title": "对话练习中的用词调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想模拟在菜市场问价，我说：“老板，这个西红柿怎么卖？”这样说自然吗？",
+            "reference_text": "很自然，礼貌也够。如果想更口语化，可以说“老板，西红柿怎么卖？”去掉“这个”会更利索。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那我再试试，你帮我听听语气是不是太生硬了。",
+            "reference_text": "你刚才那句语气挺平和的，不生硬。问价时稍微带点微笑的感觉，听起来会更亲切。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_003",
+        "title": "电话留言的措辞修改",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想练习给同事留语音消息，大概意思是明天上午十点开会，请准时到。你帮我听听怎么说更清楚。",
+            "reference_text": "你可以说：“明天上午十点开会，请大家准时到。”时间、事项和提醒都有了，清楚又简短。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我不太想用“请大家”，显得太正式，换成“咱们”会不会好点？",
+            "reference_text": "换成“咱们”会更亲切，可以说“明天上午十点开会，咱们准时到。”同事之间这样挺自然。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "对了，开会时间我刚才说错了，不是上午十点，是下午三点。你帮我重新说一遍。",
+            "reference_text": "好的，更正为下午三点：“明天下午三点开会，咱们准时到。”这样说时间就对了。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_004",
+        "title": "约会改期的表达与纠正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想跟朋友说周末聚会改到周日下午两点，你帮我练一下这句话怎么说比较自然。",
+            "reference_text": "可以说：“周末聚会改到周日下午两点，你看方便吗？”既说清时间，也留了商量的余地。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想语气再随意一点，别像通知似的。",
+            "reference_text": "那可以更口语：“咱们周末聚会改到周日下午两点哈，你那边行不行？”加个“哈”和“行不行”就随意多了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才把时间说错了，不是下午两点，是下午三点半。你按这个帮我再说一次。",
+            "reference_text": "好，改成三点半：“咱们周末聚会改到周日下午三点半哈，你那边行不行？”这样说时间就对了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你记得我最后改的时间是几点吗？帮我确认一下，然后再说一遍完整的话。",
+            "reference_text": "你最后改的时间是周日下午三点半。完整可以说：“咱们周末聚会改到周日下午三点半哈，你那边行不行？”"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_005",
+        "title": "请假说明的逐轮完善",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想练习跟领导口头请假，就说孩子发烧，明天想请一天假。你听听怎么说合适。",
+            "reference_text": "可以说：“领导，孩子发烧了，我明天想请一天假照顾他，工作我会提前安排好。”说清原因和安排，比较得体。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我不想说得太啰嗦，能不能再短一点，但原因和请假时间都保留？",
+            "reference_text": "可以精简成：“领导，孩子发烧，我明天请一天假照顾，工作我会安排好。”原因、时间、安排都在，也简短。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我孩子不是发烧，是肠胃不舒服，你帮我把原因改一下，其他不变。",
+            "reference_text": "好，只改原因：“领导，孩子肠胃不舒服，我明天请一天假照顾，工作我会安排好。”其他不变。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改后的原因是什么吗？确认一下，然后把整句再说一遍。",
+            "reference_text": "你改后的原因是孩子肠胃不舒服。整句是：“领导，孩子肠胃不舒服，我明天请一天假照顾，工作我会安排好。”"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好，最后你用一句话帮我总结一下请假要点，简短点收尾。",
+            "reference_text": "要点是：孩子肠胃不舒服，明天请一天假照顾，工作会提前安排好。这样说清楚又简洁。"
+          }
+        ]
+      }
+    ]
+  }
+}

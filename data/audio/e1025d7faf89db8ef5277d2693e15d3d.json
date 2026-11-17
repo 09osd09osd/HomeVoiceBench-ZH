@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e1025d7faf89db8ef5277d2693e15d3d.wav",
+  "sha256": "282dadf9a1dac825590dcbee63765dd2aa796f380340e672584a69f45968036d",
+  "duration_seconds": 6.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "59635857-b4f5-9896-9371-f005637c5fdb",
+  "usage": {
+    "input_tokens": 202,
+    "output_tokens": 1336,
+    "total_tokens": 1538,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "晚上闲着，想猜个谜。你想一种文具，一次只给一条提示，别直接说答案。",
+  "spoken_text": "晚上闲着，想猜个谜。你想一种文具，一次只给一条提示，别直接说答案。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "晚上闲着想猜个谜，你想一种文具，一次只给一条提示，别直接说答案。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "晚上闲着想猜个谜，你想一种文具，一次只给一条提示，别直接说答案。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6e08eb58-63cb-98d5-a0b1-807b186c8dd2",
+    "usage": {
+      "prompt_tokens": 256,
+      "total_tokens": 304,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "282dadf9a1dac825590dcbee63765dd2aa796f380340e672584a69f45968036d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "59712944ce0aaa03b535d74ca7fa3fb5f807b37550e80906563b0b61d19e6a52",
+    "canonical_sha256": "282dadf9a1dac825590dcbee63765dd2aa796f380340e672584a69f45968036d",
+    "pcm_sha256": "95ce2061dff059f85cbe7072e7a3068a71b03f9f85391a9b167a150b23769a1b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 160320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "晚上闲着，想猜个谜。你想一种文具，一次只给一条提示，别直接说答案。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "晚上闲着，想猜个谜。你想一种文具，一次只给一条提示，别直接说答案。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-034846eb-c9a1-9165-bb13-4bbe7f9695b2",
+      "usage": {
+        "prompt_tokens": 195,
+        "total_tokens": 244,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 151
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "59712944ce0aaa03b535d74ca7fa3fb5f807b37550e80906563b0b61d19e6a52",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "59712944ce0aaa03b535d74ca7fa3fb5f807b37550e80906563b0b61d19e6a52",
+        "canonical_audio_sha256": "282dadf9a1dac825590dcbee63765dd2aa796f380340e672584a69f45968036d",
+        "pcm_sha256": "95ce2061dff059f85cbe7072e7a3068a71b03f9f85391a9b167a150b23769a1b",
+        "same_samples": true
+      }
+    }
+  ]
+}

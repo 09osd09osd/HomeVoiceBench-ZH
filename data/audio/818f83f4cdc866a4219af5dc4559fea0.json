@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/818f83f4cdc866a4219af5dc4559fea0.wav",
+  "sha256": "c69f22c652907993097c10014b0d17907b7ed895e8b7085503ee90384b2d34b0",
+  "duration_seconds": 3.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "20a38939-6d08-9e6e-9e7c-e8fedb71b4ae",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 720,
+    "total_tokens": 910,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，散步时间改成六点半了，以后按这个时间提醒我。",
+  "spoken_text": "对了，散步时间改成六点半了，以后按这个时间提醒我。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，散步时间改成六点半了。以后按这个时间提醒我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，散步时间改成六点半了。以后按这个时间提醒我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4d267a16-41c7-9506-adae-e1a4f75bb64c",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c69f22c652907993097c10014b0d17907b7ed895e8b7085503ee90384b2d34b0"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7dbbd438a74dcc0f945c9d7b16c62aa75d48ff095ada4206b0fcf8380eab806a",
+    "canonical_sha256": "c69f22c652907993097c10014b0d17907b7ed895e8b7085503ee90384b2d34b0",
+    "pcm_sha256": "32f16c16d95ecb85c0049a004f2a76370d63bb487bb7d463a88d67878be3fd86",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 86400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，散步时间改成六点半了。以后按这个时间提醒我。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-fa9805af-800a-96be-ad68-8320314394d9",
+      "usage": {
+        "prompt_tokens": 144,
+        "total_tokens": 186,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7dbbd438a74dcc0f945c9d7b16c62aa75d48ff095ada4206b0fcf8380eab806a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7dbbd438a74dcc0f945c9d7b16c62aa75d48ff095ada4206b0fcf8380eab806a",
+        "canonical_audio_sha256": "c69f22c652907993097c10014b0d17907b7ed895e8b7085503ee90384b2d34b0",
+        "pcm_sha256": "32f16c16d95ecb85c0049a004f2a76370d63bb487bb7d463a88d67878be3fd86",
+        "same_samples": true
+      }
+    }
+  ]
+}

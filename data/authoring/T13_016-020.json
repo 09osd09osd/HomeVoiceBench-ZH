@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "34bc9d4d0ae9fde0e4f717830e0e44487387b204112a5979a46346f63d47a1f9",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-c9758fa7-ebd9-9726-a016-eea113bb0b56",
+  "usage": {
+    "prompt_tokens": 14440,
+    "total_tokens": 15347,
+    "completion_tokens": 907,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 14440
+    },
+    "completion_tokens_details": {
+      "text_tokens": 907
+    }
+  },
+  "review_request_id": "chatcmpl-ff421842-81b8-95a7-9809-f06e7c88354d",
+  "review_usage": {
+    "prompt_tokens": 14969,
+    "total_tokens": 15055,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14969
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T13_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T13_016",
+        "title": "只扫客厅并启动",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，别进其他房间。",
+            "reference_text": "好的，已经让扫地机器人开始清扫客厅，不会进入其他房间。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_017",
+        "title": "只扫客厅后暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，别进其他房间。",
+            "reference_text": "好的，已经让扫地机器人开始清扫客厅，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先暂停一下。",
+            "reference_text": "好的，扫地机器人已经暂停清扫。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_018",
+        "title": "只扫客厅暂停再继续",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，别进其他房间。",
+            "reference_text": "好的，已经让扫地机器人开始清扫客厅，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先暂停一下。",
+            "reference_text": "好的，扫地机器人已经暂停清扫。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的清扫，区域别变。",
+            "reference_text": "好的，扫地机器人继续清扫客厅，区域不变。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_019",
+        "title": "只扫客厅暂停继续再回充",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，别进其他房间。",
+            "reference_text": "好的，已经让扫地机器人开始清扫客厅，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先暂停一下。",
+            "reference_text": "好的，扫地机器人已经暂停清扫。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的清扫，区域别变。",
+            "reference_text": "好的，扫地机器人继续清扫客厅，区域不变。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不继续扫了，让它回充。",
+            "reference_text": "好的，扫地机器人已经停止清扫，正在返回充电。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_020",
+        "title": "只扫客厅暂停继续回充再确认状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，别进其他房间。",
+            "reference_text": "好的，已经让扫地机器人开始清扫客厅，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先暂停一下。",
+            "reference_text": "好的，扫地机器人已经暂停清扫。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的清扫，区域别变。",
+            "reference_text": "好的，扫地机器人继续清扫客厅，区域不变。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不继续扫了，让它回充。",
+            "reference_text": "好的，扫地机器人已经停止清扫，正在返回充电。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "它现在还在清扫吗？别把正在返回说成已经充好电。",
+            "reference_text": "它现在不在清扫，状态是正在返回充电，还没有到充电座。"
+          }
+        ]
+      }
+    ]
+  }
+}

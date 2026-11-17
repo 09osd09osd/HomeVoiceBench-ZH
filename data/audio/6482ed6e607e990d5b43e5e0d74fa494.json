@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6482ed6e607e990d5b43e5e0d74fa494.wav",
+  "sha256": "53b81dc7bf3834f6c13c1e8a83adf7a39cc8ddb9cc98a920f51f28469de6755d",
+  "duration_seconds": 4.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dd384418-166f-9cca-a7a3-9590c5a08932",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 800,
+    "total_tokens": 986,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，我刚才说错了，孩子是说好六点半放学，不是六点。",
+  "spoken_text": "对了，我刚才说错了，孩子是说好六点半放学，不是六点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，我刚才说错了，孩子是说好六点半放学，不是六点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，我刚才说错了，孩子是说好六点半放学，不是六点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-657145c5-d291-9118-9a70-03b90cf0ae51",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "53b81dc7bf3834f6c13c1e8a83adf7a39cc8ddb9cc98a920f51f28469de6755d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "be32538cacab1aedec94364c98c76cdb952e334881016be6e675bb9fa8d19812",
+    "canonical_sha256": "53b81dc7bf3834f6c13c1e8a83adf7a39cc8ddb9cc98a920f51f28469de6755d",
+    "pcm_sha256": "2cc77a7fd80a5e8cba4a651f8b7b913c8e4923c77e57975e3994d2bf27f29b03",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 96000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了我刚才说错了，孩子是说好六点半放学不是六点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9203af79-fd48-9377-a104-42707a06118d",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 193,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "be32538cacab1aedec94364c98c76cdb952e334881016be6e675bb9fa8d19812",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "be32538cacab1aedec94364c98c76cdb952e334881016be6e675bb9fa8d19812",
+        "canonical_audio_sha256": "53b81dc7bf3834f6c13c1e8a83adf7a39cc8ddb9cc98a920f51f28469de6755d",
+        "pcm_sha256": "2cc77a7fd80a5e8cba4a651f8b7b913c8e4923c77e57975e3994d2bf27f29b03",
+        "same_samples": true
+      }
+    }
+  ]
+}

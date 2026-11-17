@@ -1,0 +1,22 @@
+{
+  "model": "EdgeInstant-Omni-2B-1106-Preview",
+  "native_audio_input": true,
+  "native_audio_output": true,
+  "external_asr": false,
+  "external_tts": false,
+  "torch": "2.11.0+cu130",
+  "transformers": "5.12.1",
+  "cuda": "13.0",
+  "dtype": "published mixed BF16/FP32, auto",
+  "attention": "sdpa",
+  "max_new_tokens": 256,
+  "do_sample": false,
+  "seed": 42,
+  "normalizer_version": "zh_spoken_v1",
+  "context_limit": 8192,
+  "port": 18932,
+  "pid": 33048,
+  "load_seconds": 17.04700000002049,
+  "batch_size_per_worker": 1,
+  "parallelism": "independent model workers; no shared mutable talker state"
+}

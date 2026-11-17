@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/7ff989ec253428d136ab38639b22fa52.wav",
+  "sha256": "83c55fd6a9a89deb5d9a13ef7f10b66eff9f8057a930d049b549e88aa3264e7f",
+  "duration_seconds": 4.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1fac16f9-1c2f-9842-9eea-e98e8f7f3acc",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 880,
+    "total_tokens": 1074,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说分担一半不太准确，其实我希望每个人轮流倒一周，这样更公平。",
+  "spoken_text": "我刚才说分担一半不太准确，其实我希望每个人轮流倒一周，这样更公平。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说分担一半不太准确，其实我希望每个人轮流倒一周，这样更公平。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说分担一半不太准确，其实我希望每个人轮流倒一周，这样更公平。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1dc06f2c-948e-9052-8442-6fae6166395c",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "83c55fd6a9a89deb5d9a13ef7f10b66eff9f8057a930d049b549e88aa3264e7f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "48d91830a726906d5dd6c2ac538fde64e73da9d45bdaddfc945e374cb9da7d98",
+    "canonical_sha256": "83c55fd6a9a89deb5d9a13ef7f10b66eff9f8057a930d049b549e88aa3264e7f",
+    "pcm_sha256": "f3ed8a7b6eb8020e9afd9ddf6a6cf4ec374730fd314c30160e5973e6ba6c0bfd",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 105600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说分担一半不太准确，其实我希望每个人轮流倒一周，这样更公平。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7aa888cf-e616-9917-a19b-04602a2f44a2",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 199,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "48d91830a726906d5dd6c2ac538fde64e73da9d45bdaddfc945e374cb9da7d98",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "48d91830a726906d5dd6c2ac538fde64e73da9d45bdaddfc945e374cb9da7d98",
+        "canonical_audio_sha256": "83c55fd6a9a89deb5d9a13ef7f10b66eff9f8057a930d049b549e88aa3264e7f",
+        "pcm_sha256": "f3ed8a7b6eb8020e9afd9ddf6a6cf4ec374730fd314c30160e5973e6ba6c0bfd",
+        "same_samples": true
+      }
+    }
+  ]
+}

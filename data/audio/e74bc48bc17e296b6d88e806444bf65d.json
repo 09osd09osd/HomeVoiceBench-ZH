@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e74bc48bc17e296b6d88e806444bf65d.wav",
+  "sha256": "35c9ed00ab1b3d533929ab81f345ccea26f28bd29ece73832950b58e5fe24f02",
+  "duration_seconds": 3.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "53762bba-bc85-9004-a9c8-e52246eda5af",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 600,
+    "total_tokens": 790,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我睡前要看什么吗？提醒时间还是九点半吧？",
+  "spoken_text": "你还记得我睡前要看什么吗？提醒时间还是九点半吧？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我睡前要看什么吗？提醒时间还是九点半吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我睡前要看什么吗？提醒时间还是九点半吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d9e7a2e3-9322-990e-acfd-d7bf645eae78",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "35c9ed00ab1b3d533929ab81f345ccea26f28bd29ece73832950b58e5fe24f02"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "74971e43e5032e9ffa39784f0647bf6edccad8ef422700c660bf2329be2db3a3",
+    "canonical_sha256": "35c9ed00ab1b3d533929ab81f345ccea26f28bd29ece73832950b58e5fe24f02",
+    "pcm_sha256": "7d186f4f54e7fe1157a918d5b44fea13cdc8b512550154a9a86cdd06ae758ce7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 72000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我睡前要看什么吗？提醒时间还是九点半吧！",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-107e5f52-30fc-9f16-8c96-128fee34bfc4",
+      "usage": {
+        "prompt_tokens": 143,
+        "total_tokens": 183,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "74971e43e5032e9ffa39784f0647bf6edccad8ef422700c660bf2329be2db3a3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "74971e43e5032e9ffa39784f0647bf6edccad8ef422700c660bf2329be2db3a3",
+        "canonical_audio_sha256": "35c9ed00ab1b3d533929ab81f345ccea26f28bd29ece73832950b58e5fe24f02",
+        "pcm_sha256": "7d186f4f54e7fe1157a918d5b44fea13cdc8b512550154a9a86cdd06ae758ce7",
+        "same_samples": true
+      }
+    }
+  ]
+}

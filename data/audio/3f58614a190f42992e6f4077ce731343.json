@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/3f58614a190f42992e6f4077ce731343.wav",
+  "sha256": "ca657be8d0bef9e95244c6e105c035c1a5ac45eab85a6fa0a1e09ea9effcb6ec",
+  "duration_seconds": 5.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ac7d8cd9-712e-93f6-a603-24bec661a2b4",
+  "usage": {
+    "input_tokens": 207,
+    "output_tokens": 1016,
+    "total_tokens": 1223,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我有点累，想调一下书房灯的亮度，能改吗？先帮我核对一下权限。",
+  "spoken_text": "我有点累，想调一下书房灯的亮度，能改吗？先帮我核对一下权限。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我有点累，想调一下书房灯的亮度。能改吗？先帮我核对一下权限。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我有点累，想调一下书房灯的亮度。能改吗？先帮我核对一下权限。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7e95f530-0eb1-95ef-b94b-3f1d75781684",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 294,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ca657be8d0bef9e95244c6e105c035c1a5ac45eab85a6fa0a1e09ea9effcb6ec"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "55a04e20f72fccbbf4c231d8cf2cfe2164dc2baa4a172269f0815747d97c1a98",
+    "canonical_sha256": "ca657be8d0bef9e95244c6e105c035c1a5ac45eab85a6fa0a1e09ea9effcb6ec",
+    "pcm_sha256": "0126e2964b5ea2fa924544b0c227f59fedb0724711ce99a3b9fee190b6d7c0ab",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 121920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我有点累，想调一下书房灯的亮度，能改吗？先帮我核对一下权限。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我有点累，想调一下书房灯的亮度，能改吗？先帮我核对一下权限。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-977c54cf-9252-99ac-b18c-792d32cae225",
+      "usage": {
+        "prompt_tokens": 186,
+        "total_tokens": 233,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "55a04e20f72fccbbf4c231d8cf2cfe2164dc2baa4a172269f0815747d97c1a98",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "55a04e20f72fccbbf4c231d8cf2cfe2164dc2baa4a172269f0815747d97c1a98",
+        "canonical_audio_sha256": "ca657be8d0bef9e95244c6e105c035c1a5ac45eab85a6fa0a1e09ea9effcb6ec",
+        "pcm_sha256": "0126e2964b5ea2fa924544b0c227f59fedb0724711ce99a3b9fee190b6d7c0ab",
+        "same_samples": true
+      }
+    }
+  ]
+}

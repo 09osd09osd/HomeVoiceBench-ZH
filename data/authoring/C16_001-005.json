@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "6c3fa84f7bc27f4b258ab46afc6f510621e11d45fb749f9eec3405cba21fdc1e",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-662dae32-2fcf-9590-9c53-ad263177a4fd",
+  "usage": {
+    "prompt_tokens": 1750,
+    "total_tokens": 2914,
+    "completion_tokens": 1164,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1750
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1164
+    }
+  },
+  "review_request_id": "chatcmpl-63f832a5-2311-98fb-b52b-fa743658e026",
+  "review_usage": {
+    "prompt_tokens": 2536,
+    "total_tokens": 2622,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2536
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C16_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C16_001",
+        "title": "数字接龙游戏第一轮",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们玩个数字接龙吧，从1开始，每人说一个递增的数，但逢7和7的倍数就跳过，说其他数字。你先来。",
+            "reference_text": "好啊，那从2开始。2。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_002",
+        "title": "数字接龙游戏加禁用条件",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们玩个数字接龙吧，从1开始，每人说一个递增的数，但逢7和7的倍数就跳过，说其他数字。你先来。",
+            "reference_text": "好啊，那从2开始。2。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加一个条件，数字里带7的也不能说，比如17、27这种。你继续。",
+            "reference_text": "明白，带7的也跳过。刚才说了2，接下来该3了。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_003",
+        "title": "数字接龙更正起始数字",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们玩个数字接龙吧，从1开始，每人说一个递增的数，但逢7和7的倍数就跳过，说其他数字。你先来。",
+            "reference_text": "好啊，那从2开始。2。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加一个条件，数字里带7的也不能说，比如17、27这种。你继续。",
+            "reference_text": "明白，带7的也跳过。刚才说了2，接下来该3了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我改一下，刚才说从1开始不对，应该从5开始。咱们重新来。",
+            "reference_text": "好，重新从5开始。那我说6。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_004",
+        "title": "数字接龙检验更正记忆",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们玩个数字接龙吧，从1开始，每人说一个递增的数，但逢7和7的倍数就跳过，说其他数字。你先来。",
+            "reference_text": "好啊，那从2开始。2。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加一个条件，数字里带7的也不能说，比如17、27这种。你继续。",
+            "reference_text": "明白，带7的也跳过。刚才说了2，接下来该3了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我改一下，刚才说从1开始不对，应该从5开始。咱们重新来。",
+            "reference_text": "好，重新从5开始。那我说6。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在起始数字是几？禁用条件是什么？你重复一遍。",
+            "reference_text": "起始数字是5，禁用条件是逢7和7的倍数跳过，数字里带7的也不能说。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_005",
+        "title": "数字接龙简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们玩个数字接龙吧，从1开始，每人说一个递增的数，但逢7和7的倍数就跳过，说其他数字。你先来。",
+            "reference_text": "好啊，那从2开始。2。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加一个条件，数字里带7的也不能说，比如17、27这种。你继续。",
+            "reference_text": "明白，带7的也跳过。刚才说了2，接下来该3了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我改一下，刚才说从1开始不对，应该从5开始。咱们重新来。",
+            "reference_text": "好，重新从5开始。那我说6。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在起始数字是几？禁用条件是什么？你重复一遍。",
+            "reference_text": "起始数字是5，禁用条件是逢7和7的倍数跳过，数字里带7的也不能说。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好了，咱们就玩到这儿，简单总结一下这次游戏的规则。",
+            "reference_text": "好的，规则是从5开始递增，逢7和7的倍数跳过，数字里带7的也不能说。"
+          }
+        ]
+      }
+    ]
+  }
+}

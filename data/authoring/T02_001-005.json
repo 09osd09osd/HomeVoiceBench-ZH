@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "576b300d90fdbabe4e23385d1e3ba7600ba1aaf16af81ff1525460d4936d093e",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-4bbb254a-3778-9c79-b182-88cb88d9aaac",
+  "usage": {
+    "prompt_tokens": 11368,
+    "total_tokens": 12567,
+    "completion_tokens": 1199,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11368
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1199
+    }
+  },
+  "review_request_id": "chatcmpl-d349ff40-2ff6-9953-acf7-a32d66b5c627",
+  "review_usage": {
+    "prompt_tokens": 12189,
+    "total_tokens": 12275,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12189
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T02_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T02_001",
+        "title": "客厅灯能力查询与当前状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅灯支持什么设置，可调范围是多少？",
+            "reference_text": "客厅灯支持开关、亮度0到100%调节，以及色温2700到6500K调节。当前是关闭状态，亮度30%，色温4000K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_002",
+        "title": "客厅灯能力与色温调节确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅灯支持什么设置，可调范围是多少？",
+            "reference_text": "客厅灯支持开关、亮度0到100%调节，以及色温2700到6500K调节。当前是关闭状态，亮度40%，色温4000K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "它不支持调节颜色，但支持调节色温，范围是2700到6500K。当前色温是4000K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_003",
+        "title": "客厅灯能力、颜色限制与超范围处理",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅灯支持什么设置，可调范围是多少？",
+            "reference_text": "客厅灯支持开关、亮度0到100%调节，以及色温2700到6500K调节。当前是关闭状态，亮度50%，色温4000K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "它不支持调节颜色，但支持调节色温，范围是2700到6500K。当前色温是4000K。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果超出支持范围，你应该怎么处理？",
+            "reference_text": "如果超出范围，我不会擅自截断取值，会告诉你可调范围，并再确认你的需求。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_004",
+        "title": "客厅灯能力、颜色限制与放弃调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅灯支持什么设置，可调范围是多少？",
+            "reference_text": "客厅灯支持开关、亮度0到100%调节，以及色温2700到6500K调节。当前是关闭状态，亮度60%，色温4000K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "它不支持调节颜色，但支持调节色温，范围是2700到6500K。当前色温是4000K。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果超出支持范围，你应该怎么处理？",
+            "reference_text": "如果超出范围，我不会擅自截断取值，会告诉你可调范围，并再确认你的需求。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我只是了解一下。",
+            "reference_text": "好的，我不会做任何调整。客厅灯当前保持关闭，亮度60%，色温4000K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_005",
+        "title": "客厅灯能力、颜色限制与能力总结",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅灯支持什么设置，可调范围是多少？",
+            "reference_text": "客厅灯支持开关、亮度0到100%调节，以及色温2700到6500K调节。当前是关闭状态，亮度70%，色温4000K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "它不支持调节颜色，但支持调节色温，范围是2700到6500K。当前色温是4000K。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果超出支持范围，你应该怎么处理？",
+            "reference_text": "如果超出范围，我不会擅自截断取值，会告诉你可调范围，并再确认你的需求。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我只是了解一下。",
+            "reference_text": "好的，我不会做任何调整。客厅灯当前保持关闭，亮度70%，色温4000K。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "简短说一下刚才这台设备有哪些能力限制。",
+            "reference_text": "客厅灯能力限制是：亮度只能在0到100%之间，色温只能在2700到6500K之间，不支持调节颜色。"
+          }
+        ]
+      }
+    ]
+  }
+}

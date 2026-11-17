@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/c0b1c58a78f90db12627a16ecb33f48d.wav",
+  "sha256": "f1d77508ed10a1d6fc09e12fbedf7267f559fc33f7845864cbb950e9b109134d",
+  "duration_seconds": 3.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "12b55baf-2aa7-9069-bcf5-6184ccc21521",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 616,
+    "total_tokens": 802,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "家里有小孩，东西不能放太高，怕他爬上去拿。",
+  "spoken_text": "家里有小孩，东西不能放太高，怕他爬上去拿。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "家里有小孩，东西不能放太高，怕他爬上去拿。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "家里有小孩，东西不能放太高，怕他爬上去拿。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c792fbef-336a-9647-a1c5-d6c59d3e6994",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f1d77508ed10a1d6fc09e12fbedf7267f559fc33f7845864cbb950e9b109134d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7ba28b58888a01011a67fc1a334c0144be20470e11640065e506d80b86c1814d",
+    "canonical_sha256": "f1d77508ed10a1d6fc09e12fbedf7267f559fc33f7845864cbb950e9b109134d",
+    "pcm_sha256": "1b7adf2d26c184f7452bacd22a298cdb508a259576d9f0070c8ed847fc96c8af",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 73920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "家里有小孩，东西不能放太高，怕他爬上去拿。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "家里有小孩，东西不能放太高，怕他爬上去拿。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-41a102a0-eb22-9a19-908e-4ddd54895bb2",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 205,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7ba28b58888a01011a67fc1a334c0144be20470e11640065e506d80b86c1814d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7ba28b58888a01011a67fc1a334c0144be20470e11640065e506d80b86c1814d",
+        "canonical_audio_sha256": "f1d77508ed10a1d6fc09e12fbedf7267f559fc33f7845864cbb950e9b109134d",
+        "pcm_sha256": "1b7adf2d26c184f7452bacd22a298cdb508a259576d9f0070c8ed847fc96c8af",
+        "same_samples": true
+      }
+    }
+  ]
+}

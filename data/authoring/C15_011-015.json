@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "d8396f6822933310bfcc615c8cfc584cae468fa6cea6e2d9787bce9ba43733aa",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-d2fcb315-09e5-91ff-a0a2-2eada83e7cef",
+  "usage": {
+    "prompt_tokens": 1785,
+    "total_tokens": 3083,
+    "completion_tokens": 1298,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1785
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1298
+    }
+  },
+  "review_request_id": "chatcmpl-80be34b7-1f13-96e6-9100-a7d1bc8e04f0",
+  "review_usage": {
+    "prompt_tokens": 2706,
+    "total_tokens": 2792,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2706
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C15_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C15_011",
+        "title": "猜一个厨房里的东西",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，想玩个简单的猜谜。你心里想一个厨房里常见的东西，一次只给我一条提示，别直接说答案，我猜到了你再确认。",
+            "reference_text": "好，我想好了。它每天都会用到，但不会通电。第一条提示：它一般是金属做的。你猜猜看。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_012",
+        "title": "猜一种能带出门的饮品",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "下班回来脑子有点木，陪我玩个猜谜吧。你想一种能带出门的饮品，每次只给一句提示，不要提前揭晓答案。",
+            "reference_text": "行，我想好了一种能带出门的饮品。第一条提示：它通常是装在瓶子或罐子里的。你猜是什么？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加个限制：不要是含酒精的。你接着给提示吧。",
+            "reference_text": "明白，不含酒精。第二条提示：它打开时会有气泡冒出来。现在范围小一些了，你猜。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_013",
+        "title": "猜一个家里常用的物品",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天有点累，想玩个猜谜。你想一个家里常用的东西，一次给一条提示，别直接说答案。",
+            "reference_text": "好，我想好了。第一条提示：它一般放在客厅或卧室里，不是厨房用具。你猜猜看。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "补充一下，不要是电器类的。继续给提示吧。",
+            "reference_text": "明白，不是电器。第二条提示：它通常是软的，可以拿起来。你想想看。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，不是客厅或卧室，是放在书房里的。你记住这个更正，再给提示。",
+            "reference_text": "好的，改在书房里，不是电器，软的可拿起。第三条提示：它一般用来垫着或靠着。你猜是什么？"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_014",
+        "title": "猜一种文具",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚上闲着，想猜个谜。你想一种文具，一次只给一条提示，别直接说答案。",
+            "reference_text": "好，我想好了。第一条提示：它一般放在笔袋或书桌上。你猜猜是什么。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "补充个限制：不要是带电的。接着给提示吧。",
+            "reference_text": "明白，不带电。第二条提示：它通常是细长的，可以握在手里。你再想想。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是笔袋或书桌，是放在书包里的。你记住这个改动再继续。",
+            "reference_text": "好，改在书包里，不带电，细长可握。第三条提示：它一般用来在纸上留下痕迹。你猜猜看。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我刚才更正的位置吗？是放在哪里的？",
+            "reference_text": "记得，你更正说它是放在书包里的，不是笔袋或书桌。现在范围是书包里、不带电、细长能握、在纸上留痕迹。你继续猜。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_015",
+        "title": "猜一种可以放进包里的日常物品",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，想玩个猜谜换换脑子。你想一种可以放进包里的日常物品，一次只给一条提示，别直接说答案。",
+            "reference_text": "好，我想好了。第一条提示：它通常是软的，不是硬邦邦的。你猜猜看。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再加一个限制：不是电子产品。继续给提示吧。",
+            "reference_text": "明白，不是电子产品。第二条提示：它一般用来擦东西或保持干净。你想想有哪些可能。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是用来擦东西的，是用来装东西的。你记住这个变化再给提示。",
+            "reference_text": "好，改过来：柔软、非电子、用来装东西。第三条提示：它一般有开口，可以收口。你猜猜看。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改成了什么用途吗？确认一下，再给最后一条提示。",
+            "reference_text": "记得，你更正说它是用来装东西的，不是擦东西的。最后一条提示：它通常是布袋做的。你猜是什么。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "我猜是布袋。你简短收个尾吧。",
+            "reference_text": "对，就是布袋。柔软、非电子、能装东西、有开口可收口，简短收尾，猜对了。"
+          }
+        ]
+      }
+    ]
+  }
+}

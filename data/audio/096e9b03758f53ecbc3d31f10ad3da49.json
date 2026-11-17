@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/096e9b03758f53ecbc3d31f10ad3da49.wav",
+  "sha256": "cadaeb57fa467dea937a8ef60913c66f147a3c11f5aac862e615bf8e953f251f",
+  "duration_seconds": 2.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4e7a912c-2d65-9bb1-9d3d-8cb4331f40eb",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 520,
+    "total_tokens": 704,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我把书房风扇打开，风速调到2档。",
+  "spoken_text": "帮我把书房风扇打开，风速调到二档。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我把书房风扇打开，风速调到二档。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我把书房风扇打开，风速调到二档。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-83f2781f-5396-9458-b0c7-9e6b03c6ace2",
+    "usage": {
+      "prompt_tokens": 216,
+      "total_tokens": 253,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cadaeb57fa467dea937a8ef60913c66f147a3c11f5aac862e615bf8e953f251f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4bd1c7b4cf28205334f3823b0e0870e1dc6edab088c388932b25daabe71864d2",
+    "canonical_sha256": "cadaeb57fa467dea937a8ef60913c66f147a3c11f5aac862e615bf8e953f251f",
+    "pcm_sha256": "5f7d448457ed68550caf8c95920ece8642e7aa6139c37d682116fca4690d4bab",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 62400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我把书房风扇打开，风速调到二档。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我把书房风扇打开，风速调到二档。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b47d36de-e2e7-9bf1-853b-641da4fcfcff",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 192,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4bd1c7b4cf28205334f3823b0e0870e1dc6edab088c388932b25daabe71864d2",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4bd1c7b4cf28205334f3823b0e0870e1dc6edab088c388932b25daabe71864d2",
+        "canonical_audio_sha256": "cadaeb57fa467dea937a8ef60913c66f147a3c11f5aac862e615bf8e953f251f",
+        "pcm_sha256": "5f7d448457ed68550caf8c95920ece8642e7aa6139c37d682116fca4690d4bab",
+        "same_samples": true
+      }
+    }
+  ]
+}

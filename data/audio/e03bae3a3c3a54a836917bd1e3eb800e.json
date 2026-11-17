@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e03bae3a3c3a54a836917bd1e3eb800e.wav",
+  "sha256": "ee4ca2301755d9afab0c24ca446b9bdf354c952f9c44ffa57eeec342fa0c409a",
+  "duration_seconds": 5.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "019a4a67-414b-9d3c-858b-65a5c494b593",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 1016,
+    "total_tokens": 1203,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是这周末，是下周末，车程和门票的限制不变。",
+  "spoken_text": "更正一下，不是这周末，是下周末，车程和门票的限制不变。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是这周末，是下周末。车程和门票的限制不变。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是这周末，是下周末。车程和门票的限制不变。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c5ba8ec3-6105-908b-9cb0-725dbb03094e",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 286,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ee4ca2301755d9afab0c24ca446b9bdf354c952f9c44ffa57eeec342fa0c409a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "96d5f54803b8bf173bead77869cc03d8d62b97200726037f543e5a4b93328d30",
+    "canonical_sha256": "ee4ca2301755d9afab0c24ca446b9bdf354c952f9c44ffa57eeec342fa0c409a",
+    "pcm_sha256": "8087097f7ad39f828a1040f1019c481aa0312f74fb446e077011924b290ad40c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 121920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是这周末，是下周末，车程和门票的限制不变。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，不是这周末，是下周末，车程和门票的限制不变。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ae6a79a2-3be7-9dbd-8e1e-4883cd81b481",
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 225,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 145
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "96d5f54803b8bf173bead77869cc03d8d62b97200726037f543e5a4b93328d30",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "96d5f54803b8bf173bead77869cc03d8d62b97200726037f543e5a4b93328d30",
+        "canonical_audio_sha256": "ee4ca2301755d9afab0c24ca446b9bdf354c952f9c44ffa57eeec342fa0c409a",
+        "pcm_sha256": "8087097f7ad39f828a1040f1019c481aa0312f74fb446e077011924b290ad40c",
+        "same_samples": true
+      }
+    }
+  ]
+}

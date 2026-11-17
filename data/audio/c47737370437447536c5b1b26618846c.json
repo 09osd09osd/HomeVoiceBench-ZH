@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c47737370437447536c5b1b26618846c.wav",
+  "sha256": "69bec551629b97f7a7b108037a3901117c05aafefc941eea5bdf4c1c5b1528d1",
+  "duration_seconds": 4.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7a3eb6cd-b447-9684-a2e2-0162e6ff09f9",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 960,
+    "total_tokens": 1143,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天隔壁新搬来的邻居养了只小狗，一直在叫，有点吵。",
+  "spoken_text": "今天隔壁新搬来的邻居养了只小狗，一直在叫，有点吵。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天隔壁新搬来的邻居养了只小狗，一直在叫，有点吵。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天隔壁新搬来的邻居养了只小狗，一直在叫，有点吵。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-cbd94de8-63d7-9bf1-9662-6ee91f0edf6a",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "69bec551629b97f7a7b108037a3901117c05aafefc941eea5bdf4c1c5b1528d1"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "254c2d4fb2a8a966641468185f64f03d785012f04b99bb64685eccc32cb04b71",
+    "canonical_sha256": "69bec551629b97f7a7b108037a3901117c05aafefc941eea5bdf4c1c5b1528d1",
+    "pcm_sha256": "53db31abee693af3477530e6a686dd26272978b52bf8d8d02d608bfc7da31b93",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 115200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天隔壁新搬来的邻居养了只小狗，一直在叫，有点吵。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5b61267d-83af-9ab1-9de2-74d6ead8588f",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "254c2d4fb2a8a966641468185f64f03d785012f04b99bb64685eccc32cb04b71",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "254c2d4fb2a8a966641468185f64f03d785012f04b99bb64685eccc32cb04b71",
+        "canonical_audio_sha256": "69bec551629b97f7a7b108037a3901117c05aafefc941eea5bdf4c1c5b1528d1",
+        "pcm_sha256": "53db31abee693af3477530e6a686dd26272978b52bf8d8d02d608bfc7da31b93",
+        "same_samples": true
+      }
+    }
+  ]
+}

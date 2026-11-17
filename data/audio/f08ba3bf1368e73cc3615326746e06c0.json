@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f08ba3bf1368e73cc3615326746e06c0.wav",
+  "sha256": "2fcadf962b3a0bd5cee1eb1aac447db7f2b20be758b87c1fc09423e200334ebd",
+  "duration_seconds": 2.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "062399b6-88d2-9988-9736-517b23d6918b",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 520,
+    "total_tokens": 713,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对，那就这样吧，简单说两句我就睡了。",
+  "spoken_text": "对，那就这样吧，简单说两句我就睡了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对，那就这样吧，简单说两句我就睡了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对，那就这样吧，简单说两句我就睡了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6301291a-b338-98ac-afb9-9cfafc8bd3ba",
+    "usage": {
+      "prompt_tokens": 217,
+      "total_tokens": 255,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2fcadf962b3a0bd5cee1eb1aac447db7f2b20be758b87c1fc09423e200334ebd"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ed9ffed7572516a1400ab63c24961d299df34ffef5be68d3c889fed0006dd6dc",
+    "canonical_sha256": "2fcadf962b3a0bd5cee1eb1aac447db7f2b20be758b87c1fc09423e200334ebd",
+    "pcm_sha256": "a2b575625b6c6a2c34b2f69f9fca6b4a43763d7453f718962f5a4108621f220c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 62400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对，那就这样吧，简单说两句我就睡了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-aec74916-2d92-9fd6-ad4b-af995f7c3aa2",
+      "usage": {
+        "prompt_tokens": 133,
+        "total_tokens": 171,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 117
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ed9ffed7572516a1400ab63c24961d299df34ffef5be68d3c889fed0006dd6dc",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ed9ffed7572516a1400ab63c24961d299df34ffef5be68d3c889fed0006dd6dc",
+        "canonical_audio_sha256": "2fcadf962b3a0bd5cee1eb1aac447db7f2b20be758b87c1fc09423e200334ebd",
+        "pcm_sha256": "a2b575625b6c6a2c34b2f69f9fca6b4a43763d7453f718962f5a4108621f220c",
+        "same_samples": true
+      }
+    }
+  ]
+}

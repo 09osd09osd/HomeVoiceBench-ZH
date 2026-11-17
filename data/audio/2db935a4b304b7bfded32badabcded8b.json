@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/2db935a4b304b7bfded32badabcded8b.wav",
+  "sha256": "3a81d573d7a98712f76edac9b11459b48acb425d22e384fa98894c1993970082",
+  "duration_seconds": 3.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c17180dd-6804-9720-b73f-28363ca073c0",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 680,
+    "total_tokens": 880,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想着周日早上能睡个懒觉，别太早叫我。",
+  "spoken_text": "我想着周日早上能睡个懒觉，别太早叫我。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想着周日早上能睡个懒觉，别太早叫我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想着周日早上能睡个懒觉，别太早叫我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d0e48eaa-08d5-96ec-8a07-163d995d805d",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3a81d573d7a98712f76edac9b11459b48acb425d22e384fa98894c1993970082"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cdbee87e7ac1b5e550e12a4f80c5d6a8c29dc0b8c497b359c7a74c2d53a7db4f",
+    "canonical_sha256": "3a81d573d7a98712f76edac9b11459b48acb425d22e384fa98894c1993970082",
+    "pcm_sha256": "d67b1207b2672a3a3a32e56e2cc81e4ecd5467b3a31db41ec9daeca3ea70a649",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 81600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想着周日早上能睡个懒觉，别太早叫我。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-fa34e3b4-8240-92e6-abcf-c14a7288e721",
+      "usage": {
+        "prompt_tokens": 143,
+        "total_tokens": 184,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cdbee87e7ac1b5e550e12a4f80c5d6a8c29dc0b8c497b359c7a74c2d53a7db4f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cdbee87e7ac1b5e550e12a4f80c5d6a8c29dc0b8c497b359c7a74c2d53a7db4f",
+        "canonical_audio_sha256": "3a81d573d7a98712f76edac9b11459b48acb425d22e384fa98894c1993970082",
+        "pcm_sha256": "d67b1207b2672a3a3a32e56e2cc81e4ecd5467b3a31db41ec9daeca3ea70a649",
+        "same_samples": true
+      }
+    }
+  ]
+}

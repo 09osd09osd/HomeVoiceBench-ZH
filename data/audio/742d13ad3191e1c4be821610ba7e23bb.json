@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/742d13ad3191e1c4be821610ba7e23bb.wav",
+  "sha256": "4c18f10e22e866955425f1d9181369505aea5fac00c543e5bd523090416cdf94",
+  "duration_seconds": 4.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "fd127fef-f7df-976f-a623-5bdb80cbfeef",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 912,
+    "total_tokens": 1105,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你也别问我接下来打算怎么办，我现在不想想那些。",
+  "spoken_text": "你也别问我接下来打算怎么办，我现在不想想那些。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你也别问我接下来打算怎么办，我现在不想想那些。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你也别问我接下来打算怎么办，我现在不想想那些。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-bf8927de-3316-9e48-bbbc-899af5f981e4",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 269,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4c18f10e22e866955425f1d9181369505aea5fac00c543e5bd523090416cdf94"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1b999032842ec6c7346600c21b9443580bd7f026423f98ee24fac0d4e1444768",
+    "canonical_sha256": "4c18f10e22e866955425f1d9181369505aea5fac00c543e5bd523090416cdf94",
+    "pcm_sha256": "ac7b1d54dbd3ddaa8f269d9caea6a8a9b49441578ea307d48ee5921a88dbb9c7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 109440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你也别问我接下来打算怎么办，我现在不想想那些。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-66e98dff-d260-9351-9a76-3a0e54266f95",
+      "usage": {
+        "prompt_tokens": 147,
+        "total_tokens": 185,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 117
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1b999032842ec6c7346600c21b9443580bd7f026423f98ee24fac0d4e1444768",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1b999032842ec6c7346600c21b9443580bd7f026423f98ee24fac0d4e1444768",
+        "canonical_audio_sha256": "4c18f10e22e866955425f1d9181369505aea5fac00c543e5bd523090416cdf94",
+        "pcm_sha256": "ac7b1d54dbd3ddaa8f269d9caea6a8a9b49441578ea307d48ee5921a88dbb9c7",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e721320833dbcfc8c6503f80fe1a1e32.wav",
+  "sha256": "ee7cef73f08df0847ea5f324fab196e27208bdc0598624f44fda4c022feedbe9",
+  "duration_seconds": 6.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2357d6db-936f-9939-bfce-ea21d9e39bf6",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 1328,
+    "total_tokens": 1531,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "刚才我说周末白天谈，更正一下，是周六上午，周日我要陪孩子上课外班。",
+  "spoken_text": "刚才我说周末白天谈，更正一下，是周六上午，周日我要陪孩子上课外班。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才我说周末白天谈，更正一下，是周六上午，周日我要陪孩子上课外班。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才我说周末白天谈，更正一下，是周六上午，周日我要陪孩子上课外班。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9f4f33fa-19f6-9c8f-a0cb-e859d12d4fe0",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 301,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ee7cef73f08df0847ea5f324fab196e27208bdc0598624f44fda4c022feedbe9"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "22b995c81712fc272476c30e784f783f637eeed10959566ccfc67390340fa81c",
+    "canonical_sha256": "ee7cef73f08df0847ea5f324fab196e27208bdc0598624f44fda4c022feedbe9",
+    "pcm_sha256": "54148b773f48c102668373bd64e15ed2f26094dedc8301d3fea838f2697a6473",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 159360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "刚才我说周末白天谈，更正一下，是周六上午，周日我要陪孩子上课外班。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6d8ad774-4add-9679-9401-f070b8a13cfc",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 217,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "22b995c81712fc272476c30e784f783f637eeed10959566ccfc67390340fa81c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "22b995c81712fc272476c30e784f783f637eeed10959566ccfc67390340fa81c",
+        "canonical_audio_sha256": "ee7cef73f08df0847ea5f324fab196e27208bdc0598624f44fda4c022feedbe9",
+        "pcm_sha256": "54148b773f48c102668373bd64e15ed2f26094dedc8301d3fea838f2697a6473",
+        "same_samples": true
+      }
+    }
+  ]
+}

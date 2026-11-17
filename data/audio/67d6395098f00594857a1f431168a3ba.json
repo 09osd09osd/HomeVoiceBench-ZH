@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/67d6395098f00594857a1f431168a3ba.wav",
+  "sha256": "fb583958400d34974dcd8954e544464c4a233dd4bfa0dc6555722ab91aa4886b",
+  "duration_seconds": 4.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "200a953e-a3e2-919f-a01a-4f326e93543e",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 832,
+    "total_tokens": 1022,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想一直盯着手机，可又怕错过电话。有没有折中的办法？",
+  "spoken_text": "我不想一直盯着手机，可又怕错过电话。有没有折中的办法？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不想一直盯着手机，可又怕错过电话。有没有折中的办法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想一直盯着手机，可又怕错过电话。有没有折中的办法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3417f0f1-9ae2-9fc7-b922-2875ff12dabf",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "fb583958400d34974dcd8954e544464c4a233dd4bfa0dc6555722ab91aa4886b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f843d944e5ef1d1305d3004dc617c4ddcd6d7c8b09a3fc0f620ade4d08171456",
+    "canonical_sha256": "fb583958400d34974dcd8954e544464c4a233dd4bfa0dc6555722ab91aa4886b",
+    "pcm_sha256": "a0a6a48e10074f346e4606fd6b951f5e81f174100629cfd4e2db5c2ac6abd10a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 99840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想一直盯着手机，可又怕错过电话，有没有折中的办法？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-11bcfb6f-dffb-9557-b015-a8ed6fd9f740",
+      "usage": {
+        "prompt_tokens": 150,
+        "total_tokens": 191,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f843d944e5ef1d1305d3004dc617c4ddcd6d7c8b09a3fc0f620ade4d08171456",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f843d944e5ef1d1305d3004dc617c4ddcd6d7c8b09a3fc0f620ade4d08171456",
+        "canonical_audio_sha256": "fb583958400d34974dcd8954e544464c4a233dd4bfa0dc6555722ab91aa4886b",
+        "pcm_sha256": "a0a6a48e10074f346e4606fd6b951f5e81f174100629cfd4e2db5c2ac6abd10a",
+        "same_samples": true
+      }
+    }
+  ]
+}

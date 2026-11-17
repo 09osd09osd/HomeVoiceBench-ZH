@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/61751b96cb1bfdc16419403589e3f37b.wav",
+  "sha256": "4ecc8304265a5dca489eb8e43a9d46b1797287ec0211eaa9e4e527f359507963",
+  "duration_seconds": 3.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "125f90bc-24cc-969b-9ae8-70d0c0a4a589",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 720,
+    "total_tokens": 896,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把客厅灯打开，色温调到2700K。",
+  "spoken_text": "把客厅灯打开，色温调到二千七百开尔文。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把客厅灯打开，色温调到2700开尔文。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把客厅灯打开，色温调到2700开尔文。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3feb606d-95aa-96e9-8a06-99f3a67e8f97",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 268,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4ecc8304265a5dca489eb8e43a9d46b1797287ec0211eaa9e4e527f359507963"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d739d13586141a6da13a2d74afa140025009d5df566a56cc7e334bdc33a5feb4",
+    "canonical_sha256": "4ecc8304265a5dca489eb8e43a9d46b1797287ec0211eaa9e4e527f359507963",
+    "pcm_sha256": "93bb33f748b26e0bdd40b5d202539a74487c8b48c33f78a4e1f4478ceb61881d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 86400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把客厅灯打开，色温调到两千七百开尔文。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把客厅灯打开，色温调到两千七百开尔文。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-bd37b47d-a824-9aaf-a218-fcb1befe3d97",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 205,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d739d13586141a6da13a2d74afa140025009d5df566a56cc7e334bdc33a5feb4",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d739d13586141a6da13a2d74afa140025009d5df566a56cc7e334bdc33a5feb4",
+        "canonical_audio_sha256": "4ecc8304265a5dca489eb8e43a9d46b1797287ec0211eaa9e4e527f359507963",
+        "pcm_sha256": "93bb33f748b26e0bdd40b5d202539a74487c8b48c33f78a4e1f4478ceb61881d",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/3dd1cf620625f592a889a8aefb048657.wav",
+  "sha256": "3309c21864321f874ee25d48ac4f18d17c0bf1dd3d22d30cd84287bc9920a5df",
+  "duration_seconds": 2.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d4eb1d0a-4412-9423-8d3f-029393c4e94f",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 464,
+    "total_tokens": 645,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "客厅空调的设定温度是多少？",
+  "spoken_text": "客厅空调的设定温度是多少？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "客厅空调的设定温度是多少？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "客厅空调的设定温度是多少？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-270a61cd-6649-9c47-94c5-c675868ec2bb",
+    "usage": {
+      "prompt_tokens": 212,
+      "total_tokens": 245,
+      "completion_tokens": 33,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 196
+      },
+      "completion_tokens_details": {
+        "text_tokens": 33
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3309c21864321f874ee25d48ac4f18d17c0bf1dd3d22d30cd84287bc9920a5df"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "dec5e791073d61e659b43bf09e09baf374b7c4c66210623a2fb151972f420645",
+    "canonical_sha256": "3309c21864321f874ee25d48ac4f18d17c0bf1dd3d22d30cd84287bc9920a5df",
+    "pcm_sha256": "177aea59d337325454eab323d816e6bd738478e6a2f6cf8dccb54d0e71a7130e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 55680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "客厅空调的设定温度是多少？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "客厅空调的设定温度是多少？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ee453a90-d69a-9baf-9b55-9acf5cadff28",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 184,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 135
+        },
+        "completion_tokens_details": {
+          "text_tokens": 33
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "dec5e791073d61e659b43bf09e09baf374b7c4c66210623a2fb151972f420645",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "dec5e791073d61e659b43bf09e09baf374b7c4c66210623a2fb151972f420645",
+        "canonical_audio_sha256": "3309c21864321f874ee25d48ac4f18d17c0bf1dd3d22d30cd84287bc9920a5df",
+        "pcm_sha256": "177aea59d337325454eab323d816e6bd738478e6a2f6cf8dccb54d0e71a7130e",
+        "same_samples": true
+      }
+    }
+  ]
+}

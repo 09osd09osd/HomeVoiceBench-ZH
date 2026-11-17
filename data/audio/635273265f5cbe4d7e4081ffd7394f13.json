@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/635273265f5cbe4d7e4081ffd7394f13.wav",
+  "sha256": "7a103c2d3ac5f508eb02398944960098705182353f2755801e75705c5b5b68c1",
+  "duration_seconds": 4.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "80584a3c-a6bf-9063-b8a6-0ca5ec959f43",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 848,
+    "total_tokens": 1033,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "老师说下周三下午有亲子活动，让家长尽量都去。",
+  "spoken_text": "老师说下周三下午有亲子活动，让家长尽量都去。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "老师说下周三下午有亲子活动，让家长尽量都去。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "老师说下周三下午有亲子活动，让家长尽量都去。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e5928449-d431-9f77-b872-f346229f03c8",
+    "usage": {
+      "prompt_tokens": 232,
+      "total_tokens": 271,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7a103c2d3ac5f508eb02398944960098705182353f2755801e75705c5b5b68c1"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a5be4a7af51faeee759aac73cd2d9b0f19a323a48ce8cb9f47d5e3b3ef0f161d",
+    "canonical_sha256": "7a103c2d3ac5f508eb02398944960098705182353f2755801e75705c5b5b68c1",
+    "pcm_sha256": "b6a0901ff15aba5f44d05c97046d006f8e7fc4bbc032eb6d8004c6eb37d7c6a7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 101760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "老师说下周三下午有亲子活动，让家长尽量都去。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-edd89291-4cd0-9f25-92bb-a3576461fe14",
+      "usage": {
+        "prompt_tokens": 148,
+        "total_tokens": 187,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a5be4a7af51faeee759aac73cd2d9b0f19a323a48ce8cb9f47d5e3b3ef0f161d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a5be4a7af51faeee759aac73cd2d9b0f19a323a48ce8cb9f47d5e3b3ef0f161d",
+        "canonical_audio_sha256": "7a103c2d3ac5f508eb02398944960098705182353f2755801e75705c5b5b68c1",
+        "pcm_sha256": "b6a0901ff15aba5f44d05c97046d006f8e7fc4bbc032eb6d8004c6eb37d7c6a7",
+        "same_samples": true
+      }
+    }
+  ]
+}

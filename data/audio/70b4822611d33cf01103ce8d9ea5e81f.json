@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/70b4822611d33cf01103ce8d9ea5e81f.wav",
+  "sha256": "c32ae7902f1553ed99b9596072ecf35662790827426f5ba2b26d4e323cfd4e68",
+  "duration_seconds": 4.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "44706e50-5021-949d-9fc8-08d0561b3ad0",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 816,
+    "total_tokens": 1001,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把卧室灯的色温改成4500K，其他设置不要动。",
+  "spoken_text": "把卧室灯的色温改成四千五百开尔文，其他设置不要动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把卧室灯的色温改成四千五百开尔文，其他设置不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把卧室灯的色温改成四千五百开尔文，其他设置不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3b7fe527-d7b2-98f9-9577-4ac16418d362",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c32ae7902f1553ed99b9596072ecf35662790827426f5ba2b26d4e323cfd4e68"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "031c536c90a4ce5db530e13e1c89db3f81697eeb64e6a7ee1d92a379cf59fa3d",
+    "canonical_sha256": "c32ae7902f1553ed99b9596072ecf35662790827426f5ba2b26d4e323cfd4e68",
+    "pcm_sha256": "9878a8276859fa42c23112a44ae7dc070f050be09146625e6e9209fc6679c169",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 97920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把卧室灯的色温改成四千五百开尔文，其他设置不要动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把卧室灯的色温改成四千五百开尔文，其他设置不要动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-dea60b0f-e6f7-967d-a074-f0d2e90f091f",
+      "usage": {
+        "prompt_tokens": 175,
+        "total_tokens": 218,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 145
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "031c536c90a4ce5db530e13e1c89db3f81697eeb64e6a7ee1d92a379cf59fa3d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "031c536c90a4ce5db530e13e1c89db3f81697eeb64e6a7ee1d92a379cf59fa3d",
+        "canonical_audio_sha256": "c32ae7902f1553ed99b9596072ecf35662790827426f5ba2b26d4e323cfd4e68",
+        "pcm_sha256": "9878a8276859fa42c23112a44ae7dc070f050be09146625e6e9209fc6679c169",
+        "same_samples": true
+      }
+    }
+  ]
+}

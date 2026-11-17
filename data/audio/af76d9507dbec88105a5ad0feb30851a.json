@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/af76d9507dbec88105a5ad0feb30851a.wav",
+  "sha256": "f10d066120a79c9bff11bca479e392358ae3ab9c0d85cc1c24fd46f14ee54ba2",
+  "duration_seconds": 7.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4dd8b48c-713f-9674-a397-d303bee0edbc",
+  "usage": {
+    "input_tokens": 198,
+    "output_tokens": 1496,
+    "total_tokens": 1694,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天坐公交回家，车上放了一首老歌，我一下想起以前的事。我有点累，想听你温和地说几句。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天坐公交回家，车上放了一首老歌，我一下想起以前的事。我有点累，想听你温和地说几句。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e50afd4c-9685-9e65-a10c-ef52dc951ec2",
+    "usage": {
+      "prompt_tokens": 185,
+      "total_tokens": 240,
+      "completion_tokens": 55,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 134
+      },
+      "completion_tokens_details": {
+        "text_tokens": 55
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a74cd32059381d5b888553cb68aad55f94f9ca63a404d12a8c6638c28db8b8e8",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "a74cd32059381d5b888553cb68aad55f94f9ca63a404d12a8c6638c28db8b8e8",
+      "canonical_audio_sha256": "f10d066120a79c9bff11bca479e392358ae3ab9c0d85cc1c24fd46f14ee54ba2",
+      "pcm_sha256": "256c1b9a1e759ccc83bcac1572c1f4e79df3c5d3e1ed564d35ff76868b14c61a",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a74cd32059381d5b888553cb68aad55f94f9ca63a404d12a8c6638c28db8b8e8",
+    "canonical_sha256": "f10d066120a79c9bff11bca479e392358ae3ab9c0d85cc1c24fd46f14ee54ba2",
+    "pcm_sha256": "256c1b9a1e759ccc83bcac1572c1f4e79df3c5d3e1ed564d35ff76868b14c61a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 179520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

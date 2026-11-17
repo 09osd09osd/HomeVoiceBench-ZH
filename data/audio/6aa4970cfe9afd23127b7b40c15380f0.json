@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6aa4970cfe9afd23127b7b40c15380f0.wav",
+  "sha256": "bc1b6f577c6cbd3b650f7116e52acd5728cad842286368d1c37cad5495d16bc7",
+  "duration_seconds": 4.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6a0bc2b7-ec7f-9ae5-821e-d71b71b7f49a",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 912,
+    "total_tokens": 1102,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "别太长，五分钟以内的简报就行，我边洗漱边听。",
+  "spoken_text": "别太长，五分钟以内的简报就行，我边洗漱边听。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "别太长，五分钟以内的简报就行。我边洗漱边听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "别太长，五分钟以内的简报就行。我边洗漱边听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4601ecd2-1c5b-94c3-b522-ac6237d7b280",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 273,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "bc1b6f577c6cbd3b650f7116e52acd5728cad842286368d1c37cad5495d16bc7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "294a00cbe1292a06e42aca7acd9168a4ccf02a3bcf8e0342ce4419756a59b12a",
+    "canonical_sha256": "bc1b6f577c6cbd3b650f7116e52acd5728cad842286368d1c37cad5495d16bc7",
+    "pcm_sha256": "e95ef0e71dbb7dc2b89864ae4a1afd3dcb987b9755935c6f666f201f94b03b41",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 109440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "别太长，五分钟以内的简报就行，我边洗漱边听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f63b1616-1c67-98de-93ef-6a51d01bc834",
+      "usage": {
+        "prompt_tokens": 149,
+        "total_tokens": 189,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "294a00cbe1292a06e42aca7acd9168a4ccf02a3bcf8e0342ce4419756a59b12a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "294a00cbe1292a06e42aca7acd9168a4ccf02a3bcf8e0342ce4419756a59b12a",
+        "canonical_audio_sha256": "bc1b6f577c6cbd3b650f7116e52acd5728cad842286368d1c37cad5495d16bc7",
+        "pcm_sha256": "e95ef0e71dbb7dc2b89864ae4a1afd3dcb987b9755935c6f666f201f94b03b41",
+        "same_samples": true
+      }
+    }
+  ]
+}

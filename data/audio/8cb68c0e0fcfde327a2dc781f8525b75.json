@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/8cb68c0e0fcfde327a2dc781f8525b75.wav",
+  "sha256": "54c25012922a9991bc6b76bcb495508e5d37b848247714be49e5274c32139044",
+  "duration_seconds": 2.36,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "52c2088c-6f5b-9ac7-80ab-f48edd1f68a1",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 472,
+    "total_tokens": 662,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "哎我说错了，苹果是6块钱一斤，不是8块。",
+  "spoken_text": "哎我说错了，苹果是六块钱一斤，不是八块。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "哎，我说错了，苹果是六块钱一斤，不是八块。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "哎，我说错了，苹果是六块钱一斤，不是八块。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2f3e5ab8-f782-9215-8c11-96f7bf73527f",
+    "usage": {
+      "prompt_tokens": 219,
+      "total_tokens": 260,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "54c25012922a9991bc6b76bcb495508e5d37b848247714be49e5274c32139044"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d4b46fbfe5939f04a86535aee72d4cc0d2d5bd6130027b0d49d2612b9e701580",
+    "canonical_sha256": "54c25012922a9991bc6b76bcb495508e5d37b848247714be49e5274c32139044",
+    "pcm_sha256": "5e8a0887907374ade5605a988a1076ed5668afee1b9c73624945d7fddeda609d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 56640,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "哎我说错了，苹果是六块钱一斤，不是八块。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-50c141fa-c5cf-9c8d-b60a-8156afb22d08",
+      "usage": {
+        "prompt_tokens": 135,
+        "total_tokens": 175,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d4b46fbfe5939f04a86535aee72d4cc0d2d5bd6130027b0d49d2612b9e701580",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d4b46fbfe5939f04a86535aee72d4cc0d2d5bd6130027b0d49d2612b9e701580",
+        "canonical_audio_sha256": "54c25012922a9991bc6b76bcb495508e5d37b848247714be49e5274c32139044",
+        "pcm_sha256": "5e8a0887907374ade5605a988a1076ed5668afee1b9c73624945d7fddeda609d",
+        "same_samples": true
+      }
+    }
+  ]
+}

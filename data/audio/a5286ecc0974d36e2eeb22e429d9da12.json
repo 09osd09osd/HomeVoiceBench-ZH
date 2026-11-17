@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a5286ecc0974d36e2eeb22e429d9da12.wav",
+  "sha256": "56c2200959d43fbc08879f52fb92953b627944d7a967360629e4fa7d300e9c80",
+  "duration_seconds": 3.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4929beac-19a8-9a1a-b121-cbf85838194b",
+  "usage": {
+    "input_tokens": 174,
+    "output_tokens": 616,
+    "total_tokens": 790,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "拉伸的时候我喜欢在阳台上做，空气好一点。",
+  "spoken_text": "拉伸的时候我喜欢在阳台上做，空气好一点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "拉伸的时候，我喜欢在阳台上做，空气好一点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "拉伸的时候，我喜欢在阳台上做，空气好一点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2bee6491-c29b-9180-8688-f30e89cc7060",
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 259,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 199
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "56c2200959d43fbc08879f52fb92953b627944d7a967360629e4fa7d300e9c80"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d2b0b6df1b065ab473263465d1d61b7b1701df07f7cdebbb32d80dd57699d756",
+    "canonical_sha256": "56c2200959d43fbc08879f52fb92953b627944d7a967360629e4fa7d300e9c80",
+    "pcm_sha256": "874c64cc4f4c210a9ea753ae1e7fa14a3f2552e51f3b43dbe8d8982ec2742a55",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 73920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "拉伸的时候我喜欢在阳台上做，空气好一点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-df850e91-2005-90ee-bd16-25eadbf03cd3",
+      "usage": {
+        "prompt_tokens": 138,
+        "total_tokens": 174,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 115
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d2b0b6df1b065ab473263465d1d61b7b1701df07f7cdebbb32d80dd57699d756",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d2b0b6df1b065ab473263465d1d61b7b1701df07f7cdebbb32d80dd57699d756",
+        "canonical_audio_sha256": "56c2200959d43fbc08879f52fb92953b627944d7a967360629e4fa7d300e9c80",
+        "pcm_sha256": "874c64cc4f4c210a9ea753ae1e7fa14a3f2552e51f3b43dbe8d8982ec2742a55",
+        "same_samples": true
+      }
+    }
+  ]
+}

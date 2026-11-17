@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/274a6107abd468a8ca06b04ebf0c225e.wav",
+  "sha256": "cb78955b63587fb425d872eb523ef02a07c702ab990a5a06d721fc981867b3d2",
+  "duration_seconds": 3.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7b0bf615-7025-946d-823e-f6707e038161",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 776,
+    "total_tokens": 958,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是同事，是小组长当众说的，我刚刚说错了。",
+  "spoken_text": "更正一下，不是同事，是小组长当众说的，我刚刚说错了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是同事，是小组长当众说的。我刚刚说错了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是同事，是小组长当众说的。我刚刚说错了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2da89032-5571-96d6-b48d-3ddd826055d2",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cb78955b63587fb425d872eb523ef02a07c702ab990a5a06d721fc981867b3d2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d8812192f59e2db3a0acdc430fc89e4f7c668e47a7fb0e41f4b7199ca5549601",
+    "canonical_sha256": "cb78955b63587fb425d872eb523ef02a07c702ab990a5a06d721fc981867b3d2",
+    "pcm_sha256": "bf089ae5ab2ad97c79a40800aa3091c5a3c8da6c314442ce153a1dd6d4713e04",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 93120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是同事，是小组长当众说的，我刚刚说错了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9c89df1f-7faf-925b-8ceb-49be5f6e15fb",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d8812192f59e2db3a0acdc430fc89e4f7c668e47a7fb0e41f4b7199ca5549601",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d8812192f59e2db3a0acdc430fc89e4f7c668e47a7fb0e41f4b7199ca5549601",
+        "canonical_audio_sha256": "cb78955b63587fb425d872eb523ef02a07c702ab990a5a06d721fc981867b3d2",
+        "pcm_sha256": "bf089ae5ab2ad97c79a40800aa3091c5a3c8da6c314442ce153a1dd6d4713e04",
+        "same_samples": true
+      }
+    }
+  ]
+}

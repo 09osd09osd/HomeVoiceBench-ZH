@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "e2dff33bd285ed19f3227feed8551a748df6e257718ab4645da118535991330f",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-61ab385c-5727-953b-b4ed-ea6f320bb719",
+  "usage": {
+    "prompt_tokens": 10769,
+    "total_tokens": 11799,
+    "completion_tokens": 1030,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 10769
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1030
+    }
+  },
+  "review_request_id": "chatcmpl-b1bb2d11-1d6c-9efa-b2d4-f66460ba06d7",
+  "review_usage": {
+    "prompt_tokens": 11421,
+    "total_tokens": 11507,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 11421
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T28_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T28_006",
+        "title": "客厅音箱播放《安静钢琴》失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一首《安静钢琴》。",
+            "reference_text": "找到《安静钢琴》了，但客厅音箱离线，播放失败。可以稍后再试。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_007",
+        "title": "播放失败原因追问",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一首《安静钢琴》。",
+            "reference_text": "找到《安静钢琴》了，但客厅音箱离线，播放失败。可以稍后再试。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才失败的是查找内容还是播放设备？先别重试。",
+            "reference_text": "内容已经找到了，失败的是播放设备：客厅音箱离线。听你的，先不重试。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_008",
+        "title": "检查客厅音箱在线状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一首《安静钢琴》。",
+            "reference_text": "找到《安静钢琴》了，但客厅音箱离线，播放失败。可以稍后再试。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才失败的是查找内容还是播放设备？先别重试。",
+            "reference_text": "内容已经找到了，失败的是播放设备：客厅音箱离线。听你的，先不重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "检查一下客厅音箱现在在不在线。",
+            "reference_text": "查过了，客厅音箱目前还是离线状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_009",
+        "title": "保持原样不换卧室音箱",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一首《安静钢琴》。",
+            "reference_text": "找到《安静钢琴》了，但客厅音箱离线，播放失败。可以稍后再试。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才失败的是查找内容还是播放设备？先别重试。",
+            "reference_text": "内容已经找到了，失败的是播放设备：客厅音箱离线。听你的，先不重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "检查一下客厅音箱现在在不在线。",
+            "reference_text": "查过了，客厅音箱目前还是离线状态。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "如果还是离线就保持原样，不要换卧室音箱。",
+            "reference_text": "明白，客厅音箱仍离线，我就保持原样，没有换到卧室音箱。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_010",
+        "title": "说明实际执行进度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一首《安静钢琴》。",
+            "reference_text": "找到《安静钢琴》了，但客厅音箱离线，播放失败。可以稍后再试。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才失败的是查找内容还是播放设备？先别重试。",
+            "reference_text": "内容已经找到了，失败的是播放设备：客厅音箱离线。听你的，先不重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "检查一下客厅音箱现在在不在线。",
+            "reference_text": "查过了，客厅音箱目前还是离线状态。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "如果还是离线就保持原样，不要换卧室音箱。",
+            "reference_text": "明白，客厅音箱仍离线，我就保持原样，没有换到卧室音箱。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "简单说一下现在实际做到哪一步了。",
+            "reference_text": "已经找到《安静钢琴》，尝试在客厅音箱播放但失败，检查确认音箱仍离线。没有重试，也没有换卧室音箱。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/9c6b5e63988f1ff78082002fb4eadc12.wav",
+  "sha256": "5f67104a4f0e872869d6f4e35294dd9a42aed7db43e552cdaf4895aa9b2ee513",
+  "duration_seconds": 9.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0095fe22-c273-9312-a85e-3607304ae8c6",
+  "usage": {
+    "input_tokens": 206,
+    "output_tokens": 1856,
+    "total_tokens": 2062,
+    "duration": 9
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天下班顺路去菜市场，看到有卖新鲜荠菜的，就买了一小把，想着回来包馄饨。你觉得荠菜馅儿怎么调才好吃？",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天下班顺路去菜市场，看到有卖新鲜荠菜的，就买了一小把，想着回来包馄饨。你觉得荠菜馅儿怎么调才好吃？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d81c19dc-e73d-99c1-8688-80b4e9fe8d74",
+    "usage": {
+      "prompt_tokens": 204,
+      "total_tokens": 264,
+      "completion_tokens": 60,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 65,
+        "text_tokens": 139
+      },
+      "completion_tokens_details": {
+        "text_tokens": 60
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3aceab26c5f0558d6cb4e60f49c2938a9b871be8bb14ecbf931ffa181527e474",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "3aceab26c5f0558d6cb4e60f49c2938a9b871be8bb14ecbf931ffa181527e474",
+      "canonical_audio_sha256": "5f67104a4f0e872869d6f4e35294dd9a42aed7db43e552cdaf4895aa9b2ee513",
+      "pcm_sha256": "3b7e8965864fee25ab9ee65d203da85e1575877e71ec16e656c2688f49682a3e",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3aceab26c5f0558d6cb4e60f49c2938a9b871be8bb14ecbf931ffa181527e474",
+    "canonical_sha256": "5f67104a4f0e872869d6f4e35294dd9a42aed7db43e552cdaf4895aa9b2ee513",
+    "pcm_sha256": "3b7e8965864fee25ab9ee65d203da85e1575877e71ec16e656c2688f49682a3e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 222720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

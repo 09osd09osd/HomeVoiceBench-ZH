@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a14cafbaf5e7311ed973adc88a9160ff.wav",
+  "sha256": "9bfc1b083d8c25b709483ddcd1da4041b8aa96a3b21bd70193ae737b72e343fc",
+  "duration_seconds": 7.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5bff5525-f60d-9a1a-af25-d7ba8cb313cc",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 1584,
+    "total_tokens": 1777,
+    "duration": 8
+  },
+  "seed": 100042,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想起来了，他下午说过可能先去加个油，我忘了。那可能不是八点，是八点二十左右。",
+  "spoken_text": "我想起来了，他下午说过可能先去加个油，我忘了。那可能不是八点，是八点二十左右。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "我想起来了，他下午说过可能先去加个油，我忘了。那可能不是八点，是八点二十左右。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想起来了，他下午说过可能先去加个油，我忘了。那可能不是八点，是八点二十左右。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-bb4481ed-990c-9565-ad0a-cac7006c8a27",
+    "usage": {
+      "prompt_tokens": 265,
+      "total_tokens": 316,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9bfc1b083d8c25b709483ddcd1da4041b8aa96a3b21bd70193ae737b72e343fc"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b7ca08d9d66fc8f8d38627c4c54afe0d54facc8b5f579eb821b86b72af9e2853",
+    "canonical_sha256": "9bfc1b083d8c25b709483ddcd1da4041b8aa96a3b21bd70193ae737b72e343fc",
+    "pcm_sha256": "f8e2bcd46edfca6697d31acb064cadd95e96de1c6237fb61240e4f6c3ae4c57d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 190080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想起来了，他下午说过可能先去加个油，我忘了。那可能不是八点，是八点二十左右。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a015b99a-9b2a-9111-a222-ea9871624f20",
+      "usage": {
+        "prompt_tokens": 181,
+        "total_tokens": 232,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b7ca08d9d66fc8f8d38627c4c54afe0d54facc8b5f579eb821b86b72af9e2853",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b7ca08d9d66fc8f8d38627c4c54afe0d54facc8b5f579eb821b86b72af9e2853",
+        "canonical_audio_sha256": "9bfc1b083d8c25b709483ddcd1da4041b8aa96a3b21bd70193ae737b72e343fc",
+        "pcm_sha256": "f8e2bcd46edfca6697d31acb064cadd95e96de1c6237fb61240e4f6c3ae4c57d",
+        "same_samples": true
+      }
+    }
+  ]
+}

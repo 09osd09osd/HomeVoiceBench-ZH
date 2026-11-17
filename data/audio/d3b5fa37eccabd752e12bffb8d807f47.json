@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/d3b5fa37eccabd752e12bffb8d807f47.wav",
+  "sha256": "2124871e2fc7d59702522ef3a7803d89a56eb5ffc0e4b910ae2fd0e1e9ae84ac",
+  "duration_seconds": 5.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3fc22b0a-c2e1-9ccd-81f5-8f32c5452be1",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 1128,
+    "total_tokens": 1329,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "家里擦桌子和扫地的活儿老是那几个人干，我想跟家人商量轮换，你能帮我想想怎么说吗？",
+  "spoken_text": "家里擦桌子和扫地的活儿老是那几个人干，我想跟家人商量轮换，你能帮我想想怎么说吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "家里擦桌子和扫地的活老是那几个人干，我想跟家人商量轮换。你能帮我想想怎么说吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "家里擦桌子和扫地的活老是那几个人干，我想跟家人商量轮换。你能帮我想想怎么说吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3748bb04-0a87-98f8-93e9-637a4f6d7b3e",
+    "usage": {
+      "prompt_tokens": 251,
+      "total_tokens": 302,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2124871e2fc7d59702522ef3a7803d89a56eb5ffc0e4b910ae2fd0e1e9ae84ac"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4b15f67dff61b43b9065966195c88e1321bb62d74873101209d87855b63e3dee",
+    "canonical_sha256": "2124871e2fc7d59702522ef3a7803d89a56eb5ffc0e4b910ae2fd0e1e9ae84ac",
+    "pcm_sha256": "0e828a69b6d9a3a06ecc29f2cef7ef8ae08dc21830fccc3e727122451fb96ca7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 135360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "家里擦桌子和扫地的活儿老是那几个人干，我想跟家人商量轮换，你能帮我想想怎么说吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1b5b5d09-073f-9813-8593-f286f9ceefb2",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 218,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4b15f67dff61b43b9065966195c88e1321bb62d74873101209d87855b63e3dee",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4b15f67dff61b43b9065966195c88e1321bb62d74873101209d87855b63e3dee",
+        "canonical_audio_sha256": "2124871e2fc7d59702522ef3a7803d89a56eb5ffc0e4b910ae2fd0e1e9ae84ac",
+        "pcm_sha256": "0e828a69b6d9a3a06ecc29f2cef7ef8ae08dc21830fccc3e727122451fb96ca7",
+        "same_samples": true
+      }
+    }
+  ]
+}

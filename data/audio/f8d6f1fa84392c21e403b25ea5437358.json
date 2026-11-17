@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f8d6f1fa84392c21e403b25ea5437358.wav",
+  "sha256": "d1e4efcbf4fea80686b58ff37fe3ab33004679a8c6c762e9f7dede290ebfd2f2",
+  "duration_seconds": 5.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1f351053-7a6e-91f5-b9b7-ef5c4e1d4c3c",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 1056,
+    "total_tokens": 1236,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "早上好，我起床后先喝温水，再做五分钟拉伸，然后吃早饭。",
+  "spoken_text": "早上好，我起床后先喝温水，再做五分钟拉伸，然后吃早饭。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "早上好！我起床后先喝温水，再做五分钟拉伸，然后吃早饭。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "早上好！我起床后先喝温水，再做五分钟拉伸，然后吃早饭。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-63195fcd-bf44-9348-9131-51398404728f",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 286,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d1e4efcbf4fea80686b58ff37fe3ab33004679a8c6c762e9f7dede290ebfd2f2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "be5c09d8d043203cf59087e0382a48bcb6a035445e95cd06b05b3459e67ab48f",
+    "canonical_sha256": "d1e4efcbf4fea80686b58ff37fe3ab33004679a8c6c762e9f7dede290ebfd2f2",
+    "pcm_sha256": "31250168a8e23ddf2ca562359a11f9c86f879057ddb1cbc64e8f9f01cbe0a816",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 126720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "早上好，我起床后先喝温水，再做五分钟拉伸，然后吃早饭。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-67e0b38b-c297-9e6d-ba3d-4e0eb01e147c",
+      "usage": {
+        "prompt_tokens": 159,
+        "total_tokens": 202,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "be5c09d8d043203cf59087e0382a48bcb6a035445e95cd06b05b3459e67ab48f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "be5c09d8d043203cf59087e0382a48bcb6a035445e95cd06b05b3459e67ab48f",
+        "canonical_audio_sha256": "d1e4efcbf4fea80686b58ff37fe3ab33004679a8c6c762e9f7dede290ebfd2f2",
+        "pcm_sha256": "31250168a8e23ddf2ca562359a11f9c86f879057ddb1cbc64e8f9f01cbe0a816",
+        "same_samples": true
+      }
+    }
+  ]
+}

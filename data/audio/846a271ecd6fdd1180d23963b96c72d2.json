@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/846a271ecd6fdd1180d23963b96c72d2.wav",
+  "sha256": "6152478b62ee7ace8c10fb24d44dfb4914c190c7849416fc81b1541106846f19",
+  "duration_seconds": 3.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8348e85e-e1bd-9d80-b3a5-635577419051",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 632,
+    "total_tokens": 827,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我前面说错了，他不是六岁，是刚满五岁，你后面按五岁来讲。",
+  "spoken_text": "我前面说错了，他不是六岁，是刚满五岁，你后面按五岁来讲。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我前面说错了，他不是六岁，是刚满五岁。你后面按五岁来讲。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我前面说错了，他不是六岁，是刚满五岁。你后面按五岁来讲。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d25af51b-8466-97b9-b60e-edae77287e3d",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 282,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6152478b62ee7ace8c10fb24d44dfb4914c190c7849416fc81b1541106846f19"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "bcb100cb7044d1743fcbc73f49a63a5e4de662ba8348f81a0bb0cb29f4c096c4",
+    "canonical_sha256": "6152478b62ee7ace8c10fb24d44dfb4914c190c7849416fc81b1541106846f19",
+    "pcm_sha256": "8fd5e0555fd4932e39a974fe053f33a9cf545068aabd199558239213624f1763",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 75840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我前面说错了，他不是六岁，是刚满五岁，你后面按五岁来讲。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我前面说错了，他不是六岁，是刚满五岁，你后面按五岁来讲。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9a946985-95c3-9678-a533-4a8569858265",
+      "usage": {
+        "prompt_tokens": 173,
+        "total_tokens": 221,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 150
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "bcb100cb7044d1743fcbc73f49a63a5e4de662ba8348f81a0bb0cb29f4c096c4",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "bcb100cb7044d1743fcbc73f49a63a5e4de662ba8348f81a0bb0cb29f4c096c4",
+        "canonical_audio_sha256": "6152478b62ee7ace8c10fb24d44dfb4914c190c7849416fc81b1541106846f19",
+        "pcm_sha256": "8fd5e0555fd4932e39a974fe053f33a9cf545068aabd199558239213624f1763",
+        "same_samples": true
+      }
+    }
+  ]
+}

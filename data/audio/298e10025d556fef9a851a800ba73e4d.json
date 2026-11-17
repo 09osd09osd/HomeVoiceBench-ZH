@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/298e10025d556fef9a851a800ba73e4d.wav",
+  "sha256": "5003fcca81ebe8aee0252a1ef7f81542241d287bc7f1d8981b870a658b7638ff",
+  "duration_seconds": 1.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "fa0c0e7d-7b8c-9752-8097-c21232d2f655",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 352,
+    "total_tokens": 531,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "刚才那个改成20%打开。",
+  "spoken_text": "刚才那个改成百分之二十打开。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才那个改成百分之二十，打开。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才那个改成百分之二十，打开。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5afc9b68-595f-9851-b8a2-67f1ef36fb36",
+    "usage": {
+      "prompt_tokens": 206,
+      "total_tokens": 240,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5003fcca81ebe8aee0252a1ef7f81542241d287bc7f1d8981b870a658b7638ff"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "18c350ced4f3699c55ba3dba4c7e7a63ee640dc92197e6233f4ed657617f51e0",
+    "canonical_sha256": "5003fcca81ebe8aee0252a1ef7f81542241d287bc7f1d8981b870a658b7638ff",
+    "pcm_sha256": "37061c2b216868e6f413c453c5eaa6132ab836c5033f27d4cb5063fd5d3a9b63",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 42240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "刚才那个改成百分之二十打开。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "刚才那个改成百分之二十打开。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-dcd65182-fa62-94fd-ba76-7a5f0c82e7e4",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 178,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 33
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "18c350ced4f3699c55ba3dba4c7e7a63ee640dc92197e6233f4ed657617f51e0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "18c350ced4f3699c55ba3dba4c7e7a63ee640dc92197e6233f4ed657617f51e0",
+        "canonical_audio_sha256": "5003fcca81ebe8aee0252a1ef7f81542241d287bc7f1d8981b870a658b7638ff",
+        "pcm_sha256": "37061c2b216868e6f413c453c5eaa6132ab836c5033f27d4cb5063fd5d3a9b63",
+        "same_samples": true
+      }
+    }
+  ]
+}

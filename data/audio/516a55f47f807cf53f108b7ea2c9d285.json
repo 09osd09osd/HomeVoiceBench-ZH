@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/516a55f47f807cf53f108b7ea2c9d285.wav",
+  "sha256": "4c82652c5d943b9367c00fc6a485895381d88865249450de853d8f1c68358b68",
+  "duration_seconds": 3.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1af1fe90-c3a4-9d0c-9aac-ebbaed8bddbf",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 648,
+    "total_tokens": 836,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得那张照片是在哪儿拍的吗？我想确认一下自己没记错。",
+  "spoken_text": "你还记得那张照片是在哪儿拍的吗？我想确认一下自己没记错。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得那张照片是在哪拍的吗？我想确认一下自己没记错。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得那张照片是在哪拍的吗？我想确认一下自己没记错。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9aaf51e0-8955-9d54-a93e-7b55b91e005f",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4c82652c5d943b9367c00fc6a485895381d88865249450de853d8f1c68358b68"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b25aedc53a733d8fb996845ff3c6690f676eee5cde4e0a2408a92a5766bdc75a",
+    "canonical_sha256": "4c82652c5d943b9367c00fc6a485895381d88865249450de853d8f1c68358b68",
+    "pcm_sha256": "d10bf03a2692d1f52c5ec667180f8d884631e2a41ec6d889f1e7cb1e758477ee",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 77760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得那张照片是在哪拍的吗？我想确认一下自己没记错。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6fea37fb-2eb5-9747-8f17-a3a2a9599ff9",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b25aedc53a733d8fb996845ff3c6690f676eee5cde4e0a2408a92a5766bdc75a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b25aedc53a733d8fb996845ff3c6690f676eee5cde4e0a2408a92a5766bdc75a",
+        "canonical_audio_sha256": "4c82652c5d943b9367c00fc6a485895381d88865249450de853d8f1c68358b68",
+        "pcm_sha256": "d10bf03a2692d1f52c5ec667180f8d884631e2a41ec6d889f1e7cb1e758477ee",
+        "same_samples": true
+      }
+    }
+  ]
+}

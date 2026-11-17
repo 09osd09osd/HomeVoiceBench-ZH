@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/d0e6c6403cb2437adce0c6f5b4b2429c.wav",
+  "sha256": "094a24c767b79b351400105d5b0aab558b71c7cf9fae82993e9f008f3e9abd0d",
+  "duration_seconds": 2.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2311cdf4-7890-987f-a228-e8571c472e08",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 568,
+    "total_tokens": 750,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "说错了，买的是热牛奶，不是豆浆。",
+  "spoken_text": "说错了，买的是热牛奶，不是豆浆。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "说错了，买的是热牛奶，不是豆浆。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "说错了，买的是热牛奶，不是豆浆。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-eb7226d1-f329-9e7b-8c63-a1bbee79e816",
+    "usage": {
+      "prompt_tokens": 216,
+      "total_tokens": 253,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "094a24c767b79b351400105d5b0aab558b71c7cf9fae82993e9f008f3e9abd0d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0d3f51578fbe8fa80f0c391adb65ae95bb3444711a51831a5aa10602a7511971",
+    "canonical_sha256": "094a24c767b79b351400105d5b0aab558b71c7cf9fae82993e9f008f3e9abd0d",
+    "pcm_sha256": "28e8448cf0fc2db7a97cf2b997060a8cdcd63e54c1d50b27b754244e2f1fbe9f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 68160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "说错了，买的是热牛奶，不是豆浆。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1566c349-65f5-9285-b834-f7036b1d5e68",
+      "usage": {
+        "prompt_tokens": 132,
+        "total_tokens": 169,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 116
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0d3f51578fbe8fa80f0c391adb65ae95bb3444711a51831a5aa10602a7511971",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0d3f51578fbe8fa80f0c391adb65ae95bb3444711a51831a5aa10602a7511971",
+        "canonical_audio_sha256": "094a24c767b79b351400105d5b0aab558b71c7cf9fae82993e9f008f3e9abd0d",
+        "pcm_sha256": "28e8448cf0fc2db7a97cf2b997060a8cdcd63e54c1d50b27b754244e2f1fbe9f",
+        "same_samples": true
+      }
+    }
+  ]
+}

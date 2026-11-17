@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f400a24b4fe9a97aef81077f3600f055.wav",
+  "sha256": "025f6bbb28737fd0c6f1a5021f6125140659537ca358c0be99f132c64ffe7a28",
+  "duration_seconds": 3.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c445ebec-ee4a-9e79-b132-b9a30abfe19f",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 656,
+    "total_tokens": 842,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说错了，不是今天下午出结果，是明天下午才出。",
+  "spoken_text": "我刚才说错了，不是今天下午出结果，是明天下午才出。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说错了，不是今天下午出结果，是明天下午才出。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说错了，不是今天下午出结果，是明天下午才出。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b6b8a3f1-73b9-9d40-97bb-97e45eb68132",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "025f6bbb28737fd0c6f1a5021f6125140659537ca358c0be99f132c64ffe7a28"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "8968215026e1be2fb23ecec1f64559c4f1fc134a822624b3d37aa7399f0c372d",
+    "canonical_sha256": "025f6bbb28737fd0c6f1a5021f6125140659537ca358c0be99f132c64ffe7a28",
+    "pcm_sha256": "dd3cda3b7ce8459d735a92e0347ebd763ebddacc1b772b42b7c8dc895a2a5557",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 78720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说错了，不是今天下午出结果，是明天下午才出。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0a9997f0-fae7-90dd-9080-69df47584e37",
+      "usage": {
+        "prompt_tokens": 144,
+        "total_tokens": 186,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "8968215026e1be2fb23ecec1f64559c4f1fc134a822624b3d37aa7399f0c372d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "8968215026e1be2fb23ecec1f64559c4f1fc134a822624b3d37aa7399f0c372d",
+        "canonical_audio_sha256": "025f6bbb28737fd0c6f1a5021f6125140659537ca358c0be99f132c64ffe7a28",
+        "pcm_sha256": "dd3cda3b7ce8459d735a92e0347ebd763ebddacc1b772b42b7c8dc895a2a5557",
+        "same_samples": true
+      }
+    }
+  ]
+}

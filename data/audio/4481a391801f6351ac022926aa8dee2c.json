@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/4481a391801f6351ac022926aa8dee2c.wav",
+  "sha256": "ae1ef3c2aa1881e712439caf9fcffc39341d3dffdddc269b3ccda38d8ccfa63a",
+  "duration_seconds": 3.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "bc33cd19-5ecd-9a82-9ea5-cc6783304da3",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 624,
+    "total_tokens": 805,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想做早饭，你帮我看看冰箱里还有没有牛奶？",
+  "spoken_text": "我想做早饭，你帮我看看冰箱里还有没有牛奶？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想做早饭，你帮我看看冰箱里还有没有牛奶？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想做早饭，你帮我看看冰箱里还有没有牛奶？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9262c69d-1385-9f54-abf0-9f3782371743",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ae1ef3c2aa1881e712439caf9fcffc39341d3dffdddc269b3ccda38d8ccfa63a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6b7cfc883c8acac62e616aacf59646b38851bfd96aae4bb6c5429df0fa8a6086",
+    "canonical_sha256": "ae1ef3c2aa1881e712439caf9fcffc39341d3dffdddc269b3ccda38d8ccfa63a",
+    "pcm_sha256": "9e4575e88d2477482aea42e65c0fdd9d1612c47a7905503bf802dbe3aafd08ec",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 74880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想做早饭，你帮我看看冰箱里还有没有牛奶？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想做早饭，你帮我看看冰箱里还有没有牛奶？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5b48810a-ae91-956d-839d-5a1f03bfa498",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 203,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6b7cfc883c8acac62e616aacf59646b38851bfd96aae4bb6c5429df0fa8a6086",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6b7cfc883c8acac62e616aacf59646b38851bfd96aae4bb6c5429df0fa8a6086",
+        "canonical_audio_sha256": "ae1ef3c2aa1881e712439caf9fcffc39341d3dffdddc269b3ccda38d8ccfa63a",
+        "pcm_sha256": "9e4575e88d2477482aea42e65c0fdd9d1612c47a7905503bf802dbe3aafd08ec",
+        "same_samples": true
+      }
+    }
+  ]
+}

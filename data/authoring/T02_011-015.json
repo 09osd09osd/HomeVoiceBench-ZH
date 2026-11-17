@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "b543d36e4b2ce2944048ad8bd3573f2567db73f0d63ee18f20a679c092f550bf",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-e4c2b1bc-0ff3-9c11-9349-401351a311c6",
+  "usage": {
+    "prompt_tokens": 11104,
+    "total_tokens": 12231,
+    "completion_tokens": 1127,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11104
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1127
+    }
+  },
+  "review_request_id": "chatcmpl-a7650a85-e80f-98f6-818c-18d36d375239",
+  "review_usage": {
+    "prompt_tokens": 11855,
+    "total_tokens": 11941,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 11855
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T02_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T02_011",
+        "title": "卧室窗帘能力与范围查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下卧室窗帘支持什么设置，可调范围是多少？",
+            "reference_text": "卧室窗帘支持开关控制，也能调节开合百分比，范围从0到100。当前开合度是50%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_012",
+        "title": "卧室窗帘颜色支持与范围解释",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下卧室窗帘支持什么设置，可调范围是多少？",
+            "reference_text": "卧室窗帘支持开关控制，也能调节开合百分比，范围从0到100。当前开合度是50%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调节颜色吗？你只解释就行，别去动它。",
+            "reference_text": "不支持调节颜色。卧室窗帘只有开关和开合百分比两项能力，没有颜色相关的设置。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_013",
+        "title": "卧室窗帘超范围处理说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下卧室窗帘支持什么设置，可调范围是多少？",
+            "reference_text": "卧室窗帘支持开关控制，也能调节开合百分比，范围从0到100。当前开合度是50%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调节颜色吗？你只解释就行，别去动它。",
+            "reference_text": "不支持调节颜色。卧室窗帘只有开关和开合百分比两项能力，没有颜色相关的设置。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果我要设置的值超出支持范围，你会怎么处理？",
+            "reference_text": "我不会擅自截断你的取值，会先告诉你允许的范围是0到100，再跟你确认想设成多少。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_014",
+        "title": "卧室窗帘仅了解不调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下卧室窗帘支持什么设置，可调范围是多少？",
+            "reference_text": "卧室窗帘支持开关控制，也能调节开合百分比，范围从0到100。当前开合度是50%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调节颜色吗？你只解释就行，别去动它。",
+            "reference_text": "不支持调节颜色。卧室窗帘只有开关和开合百分比两项能力，没有颜色相关的设置。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果我要设置的值超出支持范围，你会怎么处理？",
+            "reference_text": "我不会擅自截断你的取值，会先告诉你允许的范围是0到100，再跟你确认想设成多少。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我只是了解一下。",
+            "reference_text": "好的，不会做任何调整，卧室窗帘保持原样，当前开合度还是50%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_015",
+        "title": "卧室窗帘能力限制总结",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下卧室窗帘支持什么设置，可调范围是多少？",
+            "reference_text": "卧室窗帘支持开关控制，也能调节开合百分比，范围从0到100。当前开合度是50%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调节颜色吗？你只解释就行，别去动它。",
+            "reference_text": "不支持调节颜色。卧室窗帘只有开关和开合百分比两项能力，没有颜色相关的设置。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果我要设置的值超出支持范围，你会怎么处理？",
+            "reference_text": "我不会擅自截断你的取值，会先告诉你允许的范围是0到100，再跟你确认想设成多少。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我只是了解一下。",
+            "reference_text": "好的，不会做任何调整，卧室窗帘保持原样，当前开合度还是50%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "简短说一下刚才这台设备有哪些能力限制。",
+            "reference_text": "卧室窗帘只支持开关和开合百分比，开合范围是0到100，不支持调颜色，也不能设置其他参数。"
+          }
+        ]
+      }
+    ]
+  }
+}

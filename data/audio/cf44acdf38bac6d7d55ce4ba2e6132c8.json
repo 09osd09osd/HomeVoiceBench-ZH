@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/cf44acdf38bac6d7d55ce4ba2e6132c8.wav",
+  "sha256": "b9d3befcbfd5f30982806b3e4075ebaf983f22bee3cea8ee5416fbf5ba689b35",
+  "duration_seconds": 1.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d3fe11ce-ee32-9b4e-8120-ef23fb5b0002",
+  "usage": {
+    "input_tokens": 170,
+    "output_tokens": 336,
+    "total_tokens": 506,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把灯打开到20%。",
+  "spoken_text": "把灯打开到百分之二十。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把灯打开到百分之二十。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把灯打开到百分之二十。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-afe77d43-4677-9980-8b63-2b051747a3cb",
+    "usage": {
+      "prompt_tokens": 206,
+      "total_tokens": 239,
+      "completion_tokens": 33,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 33
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b9d3befcbfd5f30982806b3e4075ebaf983f22bee3cea8ee5416fbf5ba689b35"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e4a83e6b80d81fbe2138c4878d05e45f2a509cf7581c7585b512686ab8e248a4",
+    "canonical_sha256": "b9d3befcbfd5f30982806b3e4075ebaf983f22bee3cea8ee5416fbf5ba689b35",
+    "pcm_sha256": "cd9f8f17a523af630d859a458e4fe63b048d94fb2642bdacb99e7bb9f722b164",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 40320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把灯打开到百分之二十。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把灯打开到百分之二十。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7b2d95ec-5ef8-9e19-90f6-6002a11a5724",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 178,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 33
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e4a83e6b80d81fbe2138c4878d05e45f2a509cf7581c7585b512686ab8e248a4",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e4a83e6b80d81fbe2138c4878d05e45f2a509cf7581c7585b512686ab8e248a4",
+        "canonical_audio_sha256": "b9d3befcbfd5f30982806b3e4075ebaf983f22bee3cea8ee5416fbf5ba689b35",
+        "pcm_sha256": "cd9f8f17a523af630d859a458e4fe63b048d94fb2642bdacb99e7bb9f722b164",
+        "same_samples": true
+      }
+    }
+  ]
+}

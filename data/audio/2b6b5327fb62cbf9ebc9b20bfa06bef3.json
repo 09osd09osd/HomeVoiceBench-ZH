@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/2b6b5327fb62cbf9ebc9b20bfa06bef3.wav",
+  "sha256": "4c1ea9e3445965d2405b7f5d8637520a2ae3669108951c671d9aed2260c680d0",
+  "duration_seconds": 2.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9d79c05d-941d-9602-b9c6-a1bb4f780810",
+  "usage": {
+    "input_tokens": 177,
+    "output_tokens": 424,
+    "total_tokens": 601,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得领导到底说的是什么问题吗？",
+  "spoken_text": "你还记得领导到底说的是什么问题吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得领导到底说的是什么问题吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得领导到底说的是什么问题吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2e447432-0450-978b-bfb6-05b685b4b5b3",
+    "usage": {
+      "prompt_tokens": 214,
+      "total_tokens": 249,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4c1ea9e3445965d2405b7f5d8637520a2ae3669108951c671d9aed2260c680d0"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "8c177a8a36dc89623abea9ebfcd403a9af01c034401380628374cddc60f9732a",
+    "canonical_sha256": "4c1ea9e3445965d2405b7f5d8637520a2ae3669108951c671d9aed2260c680d0",
+    "pcm_sha256": "40b766bd5751dc02258c5607b175c9ccdb83ac0e14943e6e3fe4637d44ae4408",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 50880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得领导到底说的是什么问题吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d316b15d-251a-9315-bff6-7052780cefda",
+      "usage": {
+        "prompt_tokens": 130,
+        "total_tokens": 165,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 114
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "8c177a8a36dc89623abea9ebfcd403a9af01c034401380628374cddc60f9732a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "8c177a8a36dc89623abea9ebfcd403a9af01c034401380628374cddc60f9732a",
+        "canonical_audio_sha256": "4c1ea9e3445965d2405b7f5d8637520a2ae3669108951c671d9aed2260c680d0",
+        "pcm_sha256": "40b766bd5751dc02258c5607b175c9ccdb83ac0e14943e6e3fe4637d44ae4408",
+        "same_samples": true
+      }
+    }
+  ]
+}

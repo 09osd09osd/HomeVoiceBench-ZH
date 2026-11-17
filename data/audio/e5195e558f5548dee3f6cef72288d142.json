@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e5195e558f5548dee3f6cef72288d142.wav",
+  "sha256": "b53e7235d44a5da4dcd566fa81c212f136e8eb7404f1680f1b058a47a2783355",
+  "duration_seconds": 7.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c27b4b79-7dd9-9c0b-8244-bba62b6c6a84",
+  "usage": {
+    "input_tokens": 209,
+    "output_tokens": 1480,
+    "total_tokens": 1689,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子玩具堆了一客厅，晚上只有四十分钟，手头有仨收纳筐和一卷标签纸，怎么快速分一下？",
+  "spoken_text": "孩子玩具堆了一客厅，晚上只有四十分钟，手头有仨收纳筐和一卷标签纸，怎么快速分一下？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子玩具堆了一客厅，晚上只有四十分钟。手头有仨收纳筐和一卷标签纸，怎么快速分一下？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子玩具堆了一客厅，晚上只有四十分钟。手头有仨收纳筐和一卷标签纸，怎么快速分一下？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-10be6563-7a29-9a1b-a887-dde7a8a2b5e7",
+    "usage": {
+      "prompt_tokens": 267,
+      "total_tokens": 320,
+      "completion_tokens": 53,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 216
+      },
+      "completion_tokens_details": {
+        "text_tokens": 53
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b53e7235d44a5da4dcd566fa81c212f136e8eb7404f1680f1b058a47a2783355"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2203627befd53062b6fec9692ffb9cf751775f9728df5650167069c6ac2f8a17",
+    "canonical_sha256": "b53e7235d44a5da4dcd566fa81c212f136e8eb7404f1680f1b058a47a2783355",
+    "pcm_sha256": "52f585f5fb780f2520708e89955f99b1e6cbae49c429552008b639af9a7f7291",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 177600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子玩具堆了一客厅，晚上只有40min，手头有仨收纳筐和一卷标签纸，怎么快速分一下？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "孩子玩具堆了一客厅，晚上只有40min，手头有仨收纳筐和一卷标签纸，怎么快速分一下？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-dc2fd71d-d2d9-9cfa-8296-c1c62f77c279",
+      "usage": {
+        "prompt_tokens": 206,
+        "total_tokens": 260,
+        "completion_tokens": 54,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 155
+        },
+        "completion_tokens_details": {
+          "text_tokens": 54
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2203627befd53062b6fec9692ffb9cf751775f9728df5650167069c6ac2f8a17",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2203627befd53062b6fec9692ffb9cf751775f9728df5650167069c6ac2f8a17",
+        "canonical_audio_sha256": "b53e7235d44a5da4dcd566fa81c212f136e8eb7404f1680f1b058a47a2783355",
+        "pcm_sha256": "52f585f5fb780f2520708e89955f99b1e6cbae49c429552008b639af9a7f7291",
+        "same_samples": true
+      }
+    }
+  ]
+}

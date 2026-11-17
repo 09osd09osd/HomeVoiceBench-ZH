@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/faf5005fd54c181f542d6edbc12617b0.wav",
+  "sha256": "a65b0401676754a6ec058ee417b36ff15a65d9793890297de0ae689d5a6411e2",
+  "duration_seconds": 6.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6984d405-491a-9dd3-97f0-28522a66a150",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 1208,
+    "total_tokens": 1395,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是昨天，是前天下午我不在家。你按前天这个时间帮我把话说顺一点。",
+  "spoken_text": "更正一下，不是昨天，是前天下午我不在家。你按前天这个时间帮我把话说顺一点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是昨天，是前天下午我不在家。你按前天这个时间帮我把话说顺一点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是昨天，是前天下午我不在家。你按前天这个时间帮我把话说顺一点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-709df19f-1fa3-9351-8aad-27a33b2e6a28",
+    "usage": {
+      "prompt_tokens": 256,
+      "total_tokens": 305,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a65b0401676754a6ec058ee417b36ff15a65d9793890297de0ae689d5a6411e2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "aa1284b38a8da8533ceec8c32fad46dfc85296166e7d2f71dc60d96ba9cf17db",
+    "canonical_sha256": "a65b0401676754a6ec058ee417b36ff15a65d9793890297de0ae689d5a6411e2",
+    "pcm_sha256": "b06845317f5217b9eb1dfd89142fd082fe880c6c5f8b01c0b3e06ec1f5f6873b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 144960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是昨天，是前天下午我不在家。你按前天这个时间帮我把话说顺一点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4a192003-036f-9009-8a0a-c03cc5e844d1",
+      "usage": {
+        "prompt_tokens": 172,
+        "total_tokens": 221,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "aa1284b38a8da8533ceec8c32fad46dfc85296166e7d2f71dc60d96ba9cf17db",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "aa1284b38a8da8533ceec8c32fad46dfc85296166e7d2f71dc60d96ba9cf17db",
+        "canonical_audio_sha256": "a65b0401676754a6ec058ee417b36ff15a65d9793890297de0ae689d5a6411e2",
+        "pcm_sha256": "b06845317f5217b9eb1dfd89142fd082fe880c6c5f8b01c0b3e06ec1f5f6873b",
+        "same_samples": true
+      }
+    }
+  ]
+}

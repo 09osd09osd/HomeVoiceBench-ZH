@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "35ad35cecdcaa6090835b80f08318f7cb7c1ff5a42384bbeeebee3a8a7ae5075",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-656bbc9c-1f81-9e03-affa-f24b6a2375a2",
+  "usage": {
+    "prompt_tokens": 14445,
+    "total_tokens": 15579,
+    "completion_tokens": 1134,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 14445
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1134
+    }
+  },
+  "review_request_id": "chatcmpl-f181cc0d-2779-95c4-9935-d4bb4f9057e8",
+  "review_usage": {
+    "prompt_tokens": 15201,
+    "total_tokens": 15287,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 15201
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T21_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T21_006",
+        "title": "卧室音箱设绿萝浇水闹钟",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我在卧室音箱设个明天早上8点的闹钟，提醒内容写“给绿萝浇水”。",
+            "reference_text": "好的，明天早上8点在卧室音箱提醒你给绿萝浇水，已经设好了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_007",
+        "title": "绿萝闹钟改到8点半",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我在卧室音箱设个明天早上8点的闹钟，提醒内容写“给绿萝浇水”。",
+            "reference_text": "好的，明天早上8点在卧室音箱提醒你给绿萝浇水，已经设好了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改成明天8点半吧。",
+            "reference_text": "好的，已经改成明天早上8点半，还是在卧室音箱提醒你给绿萝浇水。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_008",
+        "title": "绿萝闹钟改点后查看安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我在卧室音箱设个明天早上8点的闹钟，提醒内容写“给绿萝浇水”。",
+            "reference_text": "好的，明天早上8点在卧室音箱提醒你给绿萝浇水，已经设好了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改成明天8点半吧。",
+            "reference_text": "好的，已经改成明天早上8点半，还是在卧室音箱提醒你给绿萝浇水。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用的有两条：明天早上8点半在卧室音箱提醒给绿萝浇水；后天中午12点提醒晾衣服。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_009",
+        "title": "取消绿萝闹钟保留晾衣服",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我在卧室音箱设个明天早上8点的闹钟，提醒内容写“给绿萝浇水”。",
+            "reference_text": "好的，明天早上8点在卧室音箱提醒你给绿萝浇水，已经设好了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改成明天8点半吧。",
+            "reference_text": "好的，已经改成明天早上8点半，还是在卧室音箱提醒你给绿萝浇水。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用的有两条：明天早上8点半在卧室音箱提醒给绿萝浇水；后天中午12点提醒晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消给绿萝浇水的闹钟，原来的晾衣服提醒还留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_010",
+        "title": "取消绿萝闹钟并确认剩余安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我在卧室音箱设个明天早上8点的闹钟，提醒内容写“给绿萝浇水”。",
+            "reference_text": "好的，明天早上8点在卧室音箱提醒你给绿萝浇水，已经设好了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改成明天8点半吧。",
+            "reference_text": "好的，已经改成明天早上8点半，还是在卧室音箱提醒你给绿萝浇水。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用的有两条：明天早上8点半在卧室音箱提醒给绿萝浇水；后天中午12点提醒晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消给绿萝浇水的闹钟，原来的晾衣服提醒还留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "刚才那条给绿萝浇水的闹钟已经取消，现在启用的只剩后天中午12点提醒晾衣服。"
+          }
+        ]
+      }
+    ]
+  }
+}

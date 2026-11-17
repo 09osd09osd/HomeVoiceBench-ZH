@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/22fb7ae03c66a56ce16917416ef2215b.wav",
+  "sha256": "2e4ad998c41d64223ee8c0699d0993581e5f62ee7fb14bda3fb2c9e5b2a359f8",
+  "duration_seconds": 6.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "406a78a8-3222-9471-8290-1f8e215458be",
+  "usage": {
+    "input_tokens": 205,
+    "output_tokens": 1352,
+    "total_tokens": 1557,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，我刚才说错了，不是四点四十，是五点十分了，等得更久了一点。",
+  "spoken_text": "对了，我刚才说错了，不是四点四十，是五点十分了，等得更久了一点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，我刚才说错了，不是四点四十，是五点十分了，等得更久了一点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，我刚才说错了，不是四点四十，是五点十分了，等得更久了一点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e4724480-f449-9c90-aa4a-57310586e7bb",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 301,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2e4ad998c41d64223ee8c0699d0993581e5f62ee7fb14bda3fb2c9e5b2a359f8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c7058b7b3d607e373af11c00ac0183db3eeef1c330115ee45379b107054d486f",
+    "canonical_sha256": "2e4ad998c41d64223ee8c0699d0993581e5f62ee7fb14bda3fb2c9e5b2a359f8",
+    "pcm_sha256": "a4cff4caba49be2a30ba27a796acf07e0f43fe3a854054addeecf692ecad43ff",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 162240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，我刚才说错了，不是四点四十，是五点十分了，等得更久了一点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5f209edc-0686-9ccb-871e-0ec180e5553d",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 217,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c7058b7b3d607e373af11c00ac0183db3eeef1c330115ee45379b107054d486f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c7058b7b3d607e373af11c00ac0183db3eeef1c330115ee45379b107054d486f",
+        "canonical_audio_sha256": "2e4ad998c41d64223ee8c0699d0993581e5f62ee7fb14bda3fb2c9e5b2a359f8",
+        "pcm_sha256": "a4cff4caba49be2a30ba27a796acf07e0f43fe3a854054addeecf692ecad43ff",
+        "same_samples": true
+      }
+    }
+  ]
+}

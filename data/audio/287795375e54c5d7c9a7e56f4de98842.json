@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/287795375e54c5d7c9a7e56f4de98842.wav",
+  "sha256": "8f93f25d75b49e976ed869ca3c6dcf287e6219bff482823d1fcad6eed6389141",
+  "duration_seconds": 2.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b2113d3a-163e-922f-b5d1-db309921c69b",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 568,
+    "total_tokens": 761,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实不是期末考，是昨天的模拟考，我说错了。",
+  "spoken_text": "其实不是期末考，是昨天的模拟考，我说错了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实不是期末考，是昨天的模拟考。我说错了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实不是期末考，是昨天的模拟考。我说错了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b10132c5-2fe8-9d99-b9ca-76ab8dfa21d1",
+    "usage": {
+      "prompt_tokens": 218,
+      "total_tokens": 257,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8f93f25d75b49e976ed869ca3c6dcf287e6219bff482823d1fcad6eed6389141"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "64677ac491b9365091a42916023cc87fed29087f8940e272beed4003cac71af5",
+    "canonical_sha256": "8f93f25d75b49e976ed869ca3c6dcf287e6219bff482823d1fcad6eed6389141",
+    "pcm_sha256": "86b835a8e3a92cfc4100d1a8aa2ae3619b757951875dada3cc80d75c646d3b20",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 68160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实不是期末考，是昨天的模拟考。我说错了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7f699b7a-dea6-98f4-84a0-f8895b00c652",
+      "usage": {
+        "prompt_tokens": 134,
+        "total_tokens": 173,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "64677ac491b9365091a42916023cc87fed29087f8940e272beed4003cac71af5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "64677ac491b9365091a42916023cc87fed29087f8940e272beed4003cac71af5",
+        "canonical_audio_sha256": "8f93f25d75b49e976ed869ca3c6dcf287e6219bff482823d1fcad6eed6389141",
+        "pcm_sha256": "86b835a8e3a92cfc4100d1a8aa2ae3619b757951875dada3cc80d75c646d3b20",
+        "same_samples": true
+      }
+    }
+  ]
+}

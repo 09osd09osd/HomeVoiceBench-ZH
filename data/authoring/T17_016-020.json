@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "965f9f4253f395dee80936bb7077e36bbb50a06ded1204fd232a5a2b966ea3db",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-542139a4-7078-9c35-b080-ecee97946e38",
+  "usage": {
+    "prompt_tokens": 4228,
+    "total_tokens": 5278,
+    "completion_tokens": 1050,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4228
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1050
+    }
+  },
+  "review_request_id": "chatcmpl-f425830b-644f-995e-a19e-243572a634ce",
+  "review_usage": {
+    "prompt_tokens": 4900,
+    "total_tokens": 4986,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4900
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T17_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T17_016",
+        "title": "客厅二氧化碳读数与时效查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅现在的二氧化碳浓度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "客厅二氧化碳读数是1586 ppm，测量时间是今天下午4点。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_017",
+        "title": "客厅与厨房二氧化碳查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅现在的二氧化碳浓度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "客厅二氧化碳读数是457 ppm，测量时间是今天下午4点。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳读数是967 ppm，测量时间是今天下午6点。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_018",
+        "title": "客厅与厨房二氧化碳查询及比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅现在的二氧化碳浓度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "客厅二氧化碳读数是528 ppm，测量时间是今天下午4点。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳读数是1038 ppm，测量时间是今天下午6点。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房读数1038 ppm，比客厅的528 ppm高，而且厨房测量时间更近。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_019",
+        "title": "客厅与厨房二氧化碳及现场说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅现在的二氧化碳浓度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "客厅二氧化碳读数是599 ppm，测量时间是今天下午4点。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳读数是1109 ppm，测量时间是今天下午6点。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房读数1109 ppm，比客厅的599 ppm高，而且厨房测量时间更近。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。客厅读数是下午4点的，已经过去两小时；传感器只能测它覆盖的范围，不能识别人的身份，温度也不是设备设定值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_020",
+        "title": "客厅厨房二氧化碳查询比较及复测",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅现在的二氧化碳浓度是多少？告诉我读数和测量时间，只查一下就行。",
+            "reference_text": "客厅二氧化碳读数是670 ppm，测量时间是今天下午4点。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳读数是1180 ppm，测量时间是今天下午6点。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房读数1180 ppm，比客厅的670 ppm高，而且厨房测量时间更近。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。客厅读数是下午4点的，已经过去两小时；传感器只能测它覆盖的范围，不能识别人的身份，温度也不是设备设定值。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再重新查一下客厅的二氧化碳浓度。",
+            "reference_text": "客厅二氧化碳读数还是670 ppm，测量时间仍是今天下午4点，没有更新。"
+          }
+        ]
+      }
+    ]
+  }
+}

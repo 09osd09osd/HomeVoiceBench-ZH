@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/27a22ffdfda625ac5431133c8fcbe07e.wav",
+  "sha256": "5f572b31b81ee85957078d2e38652a36b1a1cf6ca83ca49d233d7f90093780e8",
+  "duration_seconds": 4.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9e47bf4c-94f3-9e78-945a-10354bcc1bcb",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 856,
+    "total_tokens": 1038,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我看看书房风扇现在风速是几档，开着没有，别调整。",
+  "spoken_text": "帮我看看书房风扇现在风速是几档，开着没有，别调整。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我看看书房风扇现在风速是几档，开着没有？别调整。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我看看书房风扇现在风速是几档，开着没有？别调整。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-70549acd-70b8-92c3-90ab-375441dde826",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5f572b31b81ee85957078d2e38652a36b1a1cf6ca83ca49d233d7f90093780e8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "54ee8bf6e0ba629ce360f1b8c92298451379669b5d3760bd5a05503b38e99818",
+    "canonical_sha256": "5f572b31b81ee85957078d2e38652a36b1a1cf6ca83ca49d233d7f90093780e8",
+    "pcm_sha256": "24daed00c2e4d20908f69f7d0091898c8875a676db2cfe1a9bc90b0a1377f06a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 102720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我看看书房风扇现在风速是几档，开着没有，别调整。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我看看书房风扇现在风速是几档，开着没有，别调整。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-edad3f14-032b-9c13-a518-ffb10994c6a7",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 216,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "54ee8bf6e0ba629ce360f1b8c92298451379669b5d3760bd5a05503b38e99818",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "54ee8bf6e0ba629ce360f1b8c92298451379669b5d3760bd5a05503b38e99818",
+        "canonical_audio_sha256": "5f572b31b81ee85957078d2e38652a36b1a1cf6ca83ca49d233d7f90093780e8",
+        "pcm_sha256": "24daed00c2e4d20908f69f7d0091898c8875a676db2cfe1a9bc90b0a1377f06a",
+        "same_samples": true
+      }
+    }
+  ]
+}

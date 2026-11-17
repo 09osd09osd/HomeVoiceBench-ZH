@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/cc923a5cbf23cdbc46d25a58346dc7a1.wav",
+  "sha256": "68cb05666943c0437835e2e4fd24975521066d698bd9a4e70d9a8be7f4798287",
+  "duration_seconds": 3.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4e3a88a0-56f2-9d45-ae03-6babf8925549",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 712,
+    "total_tokens": 900,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说两个孩子，其实是一个孩子，另一个是邻居家的。",
+  "spoken_text": "我刚才说两个孩子，其实是一个孩子，另一个是邻居家的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说两个孩子，其实是一个孩子，另一个是邻居家的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说两个孩子，其实是一个孩子，另一个是邻居家的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7196d627-7d05-9ed2-a339-8e0c4fe087c9",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "68cb05666943c0437835e2e4fd24975521066d698bd9a4e70d9a8be7f4798287"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a52319c09b37af7c29c3d7575993923db17a99bbe5afa9519f5d50eb6e1a66d9",
+    "canonical_sha256": "68cb05666943c0437835e2e4fd24975521066d698bd9a4e70d9a8be7f4798287",
+    "pcm_sha256": "0513845a5fb1c9fad19ca6cafa442f73dc80745852162d19430dff4f863ae9ab",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 85440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说两个孩子，其实是一个孩子，另一个是邻居家的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-159e84fa-4084-9f6f-9bfd-b0f84d5bd352",
+      "usage": {
+        "prompt_tokens": 142,
+        "total_tokens": 182,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a52319c09b37af7c29c3d7575993923db17a99bbe5afa9519f5d50eb6e1a66d9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a52319c09b37af7c29c3d7575993923db17a99bbe5afa9519f5d50eb6e1a66d9",
+        "canonical_audio_sha256": "68cb05666943c0437835e2e4fd24975521066d698bd9a4e70d9a8be7f4798287",
+        "pcm_sha256": "0513845a5fb1c9fad19ca6cafa442f73dc80745852162d19430dff4f863ae9ab",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f013db9219c9e67e3ad04384f3d261c3.wav",
+  "sha256": "3dee990872a0ffe4c985aa7accbc34e666190a86eb079f225b0070d170ee9e00",
+  "duration_seconds": 7.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4f95a4e8-9950-9a89-8aac-1adf9b188c8f",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 1504,
+    "total_tokens": 1705,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实不是项目搞砸了，是汇报的时候出了岔子，整个项目本身没失败。",
+  "spoken_text": "其实不是项目搞砸了，是汇报的时候出了岔子，整个项目本身没失败。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实不是项目搞砸了，是汇报的时候出了岔子，整个项目本身没失败。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实不是项目搞砸了，是汇报的时候出了岔子，整个项目本身没失败。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-98c93d12-5943-9bd3-81e3-8f42f91db7da",
+    "usage": {
+      "prompt_tokens": 260,
+      "total_tokens": 306,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3dee990872a0ffe4c985aa7accbc34e666190a86eb079f225b0070d170ee9e00"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ad469b2ce813804fda73ddfc53efdb3f8feab71a5c8580f9ffb8d78d2d0afa71",
+    "canonical_sha256": "3dee990872a0ffe4c985aa7accbc34e666190a86eb079f225b0070d170ee9e00",
+    "pcm_sha256": "82f9653f923e12bf32f515f30a6a40ea68755478e4abf2ff0ecaea27a259318e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 180480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实不是项目搞砸了，是汇报的时候出了岔子，整个项目本身没失败。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0ebef396-d42f-98b0-8f77-bc72e59f92fa",
+      "usage": {
+        "prompt_tokens": 176,
+        "total_tokens": 222,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ad469b2ce813804fda73ddfc53efdb3f8feab71a5c8580f9ffb8d78d2d0afa71",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ad469b2ce813804fda73ddfc53efdb3f8feab71a5c8580f9ffb8d78d2d0afa71",
+        "canonical_audio_sha256": "3dee990872a0ffe4c985aa7accbc34e666190a86eb079f225b0070d170ee9e00",
+        "pcm_sha256": "82f9653f923e12bf32f515f30a6a40ea68755478e4abf2ff0ecaea27a259318e",
+        "same_samples": true
+      }
+    }
+  ]
+}

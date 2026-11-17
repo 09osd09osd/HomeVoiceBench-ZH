@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/cf08d6565e15c14cca8f1f9de0bdd62a.wav",
+  "sha256": "74c95bf5efcc468926a66b9af8e82d64107f2cbdba9504e4dce5b68cc2ee439d",
+  "duration_seconds": 6.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6ba87196-ecc5-9eef-ab9b-8536e553ba4b",
+  "usage": {
+    "input_tokens": 214,
+    "output_tokens": 1376,
+    "total_tokens": 1590,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天很累，想听个睡前故事，讲一只小猫在雨停后去小花园里找蜗牛，故事短一点，别吓人。",
+  "spoken_text": "今天很累，想听个睡前故事，讲一只小猫在雨停后去小花园里找蜗牛，故事短一点，别吓人。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天很累，想听个睡前故事。讲一只小猫在雨停后去小花园里找蜗牛。故事短一点，别吓人。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天很累，想听个睡前故事。讲一只小猫在雨停后去小花园里找蜗牛。故事短一点，别吓人。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d7e18116-0bea-9525-9673-937c53bccd62",
+    "usage": {
+      "prompt_tokens": 263,
+      "total_tokens": 319,
+      "completion_tokens": 56,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 219
+      },
+      "completion_tokens_details": {
+        "text_tokens": 56
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "74c95bf5efcc468926a66b9af8e82d64107f2cbdba9504e4dce5b68cc2ee439d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d506627666de2b333213ef9a0e56897c04cd0c32f17ab000238445939760bf34",
+    "canonical_sha256": "74c95bf5efcc468926a66b9af8e82d64107f2cbdba9504e4dce5b68cc2ee439d",
+    "pcm_sha256": "be60f94ea79a314688be2f084eaefa6924a0748d572b8038bd56279ba99e7a9d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 165120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天很累，想听个睡前故事，讲一只小猫在雨停后去小花园里找蜗牛，故事短一点，别吓人。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "今天很累，想听个睡前故事，讲一只小猫在雨停后去小花园里找蜗牛，故事短一点，别吓人。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-72e2ffbb-3d2f-9452-bebd-782b07df1976",
+      "usage": {
+        "prompt_tokens": 202,
+        "total_tokens": 258,
+        "completion_tokens": 56,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 158
+        },
+        "completion_tokens_details": {
+          "text_tokens": 56
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d506627666de2b333213ef9a0e56897c04cd0c32f17ab000238445939760bf34",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d506627666de2b333213ef9a0e56897c04cd0c32f17ab000238445939760bf34",
+        "canonical_audio_sha256": "74c95bf5efcc468926a66b9af8e82d64107f2cbdba9504e4dce5b68cc2ee439d",
+        "pcm_sha256": "be60f94ea79a314688be2f084eaefa6924a0748d572b8038bd56279ba99e7a9d",
+        "same_samples": true
+      }
+    }
+  ]
+}

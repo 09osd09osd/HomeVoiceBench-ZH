@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b429d66f0860b38b951f3d645aceb170.wav",
+  "sha256": "51a8e485a0223c412a941aa1c48b3f9196d539d3ae254484a753886884abeb86",
+  "duration_seconds": 4.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "00803a85-f7ce-9fb5-bfea-f0aa27432907",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 840,
+    "total_tokens": 1032,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我平时下班晚，不想每天折腾，最好两三天看一次就行。",
+  "spoken_text": "我平时下班晚，不想每天折腾，最好两三天看一次就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我平时下班晚，不想每天折腾，最好两三天看一次就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我平时下班晚，不想每天折腾，最好两三天看一次就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fd77eb52-b8c6-91d6-8824-019ce8e875a8",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "51a8e485a0223c412a941aa1c48b3f9196d539d3ae254484a753886884abeb86"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2a37b754250002d3f9bd9fbfa30955ad9289234746fc13b72ab83a7af7ec9ccb",
+    "canonical_sha256": "51a8e485a0223c412a941aa1c48b3f9196d539d3ae254484a753886884abeb86",
+    "pcm_sha256": "66d01d160872a296adbb1e542c12b06aff8739fe3b0ee0069c2a18cb48d1a875",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 100800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我平时下班晚，不想每天折腾，最好两三天看一次就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我平时下班晚，不想每天折腾，最好两三天看一次就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-72dda9f0-25d6-9e17-b25b-dc7bdb25f75b",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 216,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2a37b754250002d3f9bd9fbfa30955ad9289234746fc13b72ab83a7af7ec9ccb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2a37b754250002d3f9bd9fbfa30955ad9289234746fc13b72ab83a7af7ec9ccb",
+        "canonical_audio_sha256": "51a8e485a0223c412a941aa1c48b3f9196d539d3ae254484a753886884abeb86",
+        "pcm_sha256": "66d01d160872a296adbb1e542c12b06aff8739fe3b0ee0069c2a18cb48d1a875",
+        "same_samples": true
+      }
+    }
+  ]
+}

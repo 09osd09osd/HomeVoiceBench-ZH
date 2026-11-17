@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "9f84627762a2f1ccbcc4038959455c52405cd48b1da693919588bd0b7e0f9549",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-fdafd15c-d52f-9517-8704-ed4f8661c736",
+  "usage": {
+    "prompt_tokens": 4060,
+    "total_tokens": 5013,
+    "completion_tokens": 953,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4060
+    },
+    "completion_tokens_details": {
+      "text_tokens": 953
+    }
+  },
+  "review_request_id": "chatcmpl-89a841af-eca0-9a00-8e35-3ce49acdd81b",
+  "review_usage": {
+    "prompt_tokens": 4635,
+    "total_tokens": 4721,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4635
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T26_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T26_001",
+        "title": "暂停客厅音箱的《雨后散步》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》暂停一下。",
+            "reference_text": "好的，客厅音箱的《雨后散步》已经暂停了，停在10秒的位置。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_002",
+        "title": "暂停后继续播放《雨后散步》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》暂停一下。",
+            "reference_text": "好的，客厅音箱的《雨后散步》已经暂停了，停在10秒的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《雨后散步》，从10秒的位置接着放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_003",
+        "title": "暂停、继续、再暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》暂停一下。",
+            "reference_text": "好的，客厅音箱的《雨后散步》已经暂停了，停在10秒的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《雨后散步》，从10秒的位置接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，这段内容已经暂停了，还是停在10秒的位置。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_004",
+        "title": "暂停、继续、再暂停并定位到60秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》暂停一下。",
+            "reference_text": "好的，客厅音箱的《雨后散步》已经暂停了，停在10秒的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《雨后散步》，从10秒的位置接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，这段内容已经暂停了，还是停在10秒的位置。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第60秒，先保持暂停。",
+            "reference_text": "好的，已经定位到第60秒，保持暂停状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_005",
+        "title": "暂停、继续、再暂停、定位并停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》暂停一下。",
+            "reference_text": "好的，客厅音箱的《雨后散步》已经暂停了，停在10秒的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《雨后散步》，从10秒的位置接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，这段内容已经暂停了，还是停在10秒的位置。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第60秒，先保持暂停。",
+            "reference_text": "好的，已经定位到第60秒，保持暂停状态。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "好的，已经停止这段播放，没有换别的。"
+          }
+        ]
+      }
+    ]
+  }
+}

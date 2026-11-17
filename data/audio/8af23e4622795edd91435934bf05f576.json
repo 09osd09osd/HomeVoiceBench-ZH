@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/8af23e4622795edd91435934bf05f576.wav",
+  "sha256": "34ef59862470a88039df48f0c1565ab379f6630b9d546f56c6851885a6358597",
+  "duration_seconds": 9.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "bec590cd-d3b9-9e3b-b0e7-544ae9f5ea63",
+  "usage": {
+    "input_tokens": 207,
+    "output_tokens": 1800,
+    "total_tokens": 2007,
+    "duration": 9
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想以后每次出门都像请假一样，但我也理解他会担心。我只想答应临时局发个消息，不想变成事事报备，这话怎么说？",
+  "spoken_text": "我不想以后每次出门都像请假一样，但我也理解他会担心。我只想答应临时局发个消息，不想变成事事报备，这话怎么说？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不想以后每次出门都像请假一样，但我也理解他会担心。我只想答应临时局发个消息，不想变成事事报备，这话怎么说？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想以后每次出门都像请假一样，但我也理解他会担心。我只想答应临时局发个消息，不想变成事事报备，这话怎么说？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-27432e3d-0df0-92fa-a48c-dec27f1af963",
+    "usage": {
+      "prompt_tokens": 284,
+      "total_tokens": 340,
+      "completion_tokens": 56,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 65,
+        "text_tokens": 219
+      },
+      "completion_tokens_details": {
+        "text_tokens": 56
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "34ef59862470a88039df48f0c1565ab379f6630b9d546f56c6851885a6358597"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7d2da6dc66d9d0c5e09a2c93426c031267c73a9639c11dfeb6045c929cff9a0b",
+    "canonical_sha256": "34ef59862470a88039df48f0c1565ab379f6630b9d546f56c6851885a6358597",
+    "pcm_sha256": "9c0130cb8a8ba2584a569184035ac26a406941b116d68eff3bbfc09d985cab43",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 216000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想以后每次出门都像请假一样，但我也理解他会担心。我只想答应临时局发个消息，不想变成事事报备，这话怎么说？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-8105fd61-28ab-9476-8b61-8fef19136bac",
+      "usage": {
+        "prompt_tokens": 200,
+        "total_tokens": 256,
+        "completion_tokens": 56,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 65,
+          "text_tokens": 135
+        },
+        "completion_tokens_details": {
+          "text_tokens": 56
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7d2da6dc66d9d0c5e09a2c93426c031267c73a9639c11dfeb6045c929cff9a0b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7d2da6dc66d9d0c5e09a2c93426c031267c73a9639c11dfeb6045c929cff9a0b",
+        "canonical_audio_sha256": "34ef59862470a88039df48f0c1565ab379f6630b9d546f56c6851885a6358597",
+        "pcm_sha256": "9c0130cb8a8ba2584a569184035ac26a406941b116d68eff3bbfc09d985cab43",
+        "same_samples": true
+      }
+    }
+  ]
+}

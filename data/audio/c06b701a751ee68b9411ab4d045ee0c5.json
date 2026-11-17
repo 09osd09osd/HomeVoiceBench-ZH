@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c06b701a751ee68b9411ab4d045ee0c5.wav",
+  "sha256": "c0bbc7cdc7599072e4a20ce985e9801ee8ca8f1bdde29c98255c950ffd2b4a0f",
+  "duration_seconds": 5.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0ece3d5d-a223-93fa-ab35-b7699f3e54e3",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 1136,
+    "total_tokens": 1327,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我叠衣服只负责哪两天吗？那剩下的洗衣和晾晒怎么排比较顺？",
+  "spoken_text": "你还记得我叠衣服只负责哪两天吗？那剩下的洗衣和晾晒怎么排比较顺？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我叠衣服只负责哪两天吗？那剩下的洗衣和晾晒怎么排比较顺？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我叠衣服只负责哪两天吗？那剩下的洗衣和晾晒怎么排比较顺？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7a36d724-422a-9eab-9d3e-25ccdd21a307",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 294,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c0bbc7cdc7599072e4a20ce985e9801ee8ca8f1bdde29c98255c950ffd2b4a0f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f1952e0b6b18c40f2e2bfd578a6f5d0e97070a185815e79e4299465bcf67e03e",
+    "canonical_sha256": "c0bbc7cdc7599072e4a20ce985e9801ee8ca8f1bdde29c98255c950ffd2b4a0f",
+    "pcm_sha256": "782d4c51eb09c4d4299e117c589e37bcc81cd0f2589b56d97e9c98fd485b41ba",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 136320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我叠衣服只负责哪两天吗？那剩下的洗衣和晾晒怎么排比较顺？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b5784b86-d1df-95bc-9395-f34be2fef718",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 210,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f1952e0b6b18c40f2e2bfd578a6f5d0e97070a185815e79e4299465bcf67e03e",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f1952e0b6b18c40f2e2bfd578a6f5d0e97070a185815e79e4299465bcf67e03e",
+        "canonical_audio_sha256": "c0bbc7cdc7599072e4a20ce985e9801ee8ca8f1bdde29c98255c950ffd2b4a0f",
+        "pcm_sha256": "782d4c51eb09c4d4299e117c589e37bcc81cd0f2589b56d97e9c98fd485b41ba",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ca829599f6519df206334584d0da141b.wav",
+  "sha256": "4fd4de06cf4a584a6b86ea51a5845d1b98992c61545963b4f2c754c4b26e8956",
+  "duration_seconds": 5.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "14a86ccc-fa8e-9835-92ee-3f6b07115f84",
+  "usage": {
+    "input_tokens": 178,
+    "output_tokens": 1016,
+    "total_tokens": 1194,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我看书的时候喜欢开小台灯，不喜欢太亮的大灯。",
+  "spoken_text": "我看书的时候喜欢开小台灯，不喜欢太亮的大灯。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我看书的时候喜欢开小台灯，不喜欢太亮的大灯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我看书的时候喜欢开小台灯，不喜欢太亮的大灯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-80c3b874-8068-95ef-a80f-61f70c81b39e",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 280,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4fd4de06cf4a584a6b86ea51a5845d1b98992c61545963b4f2c754c4b26e8956"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3e20c1204e231059dbe03a292257f7afc9c75cdf9926ea02601771540a15b903",
+    "canonical_sha256": "4fd4de06cf4a584a6b86ea51a5845d1b98992c61545963b4f2c754c4b26e8956",
+    "pcm_sha256": "1fa41f206ffedb8d700b7147ff1b4f7c8221bbcb3762fae20d3f929894215110",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 121920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我看书的时候喜欢开小台灯，不喜欢太亮的大灯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-983561c4-7980-9fe2-9cbf-c6ec2cc428a7",
+      "usage": {
+        "prompt_tokens": 156,
+        "total_tokens": 196,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3e20c1204e231059dbe03a292257f7afc9c75cdf9926ea02601771540a15b903",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3e20c1204e231059dbe03a292257f7afc9c75cdf9926ea02601771540a15b903",
+        "canonical_audio_sha256": "4fd4de06cf4a584a6b86ea51a5845d1b98992c61545963b4f2c754c4b26e8956",
+        "pcm_sha256": "1fa41f206ffedb8d700b7147ff1b4f7c8221bbcb3762fae20d3f929894215110",
+        "same_samples": true
+      }
+    }
+  ]
+}

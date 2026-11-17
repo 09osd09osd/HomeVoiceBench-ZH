@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/947e54d93d599ccfd3e04155be8164fc.wav",
+  "sha256": "8aeb8493e9ff7fe9d6615cda60ec8affed6f8dfafcc38e4e0109086926d9d0ca",
+  "duration_seconds": 6.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e8d63ef3-d5be-9ac9-85aa-9346a0810ce2",
+  "usage": {
+    "input_tokens": 204,
+    "output_tokens": 1280,
+    "total_tokens": 1484,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我给妈买的药说今天送到，本来讲好下午三点前到，现在都过了还没来，我有点担心她断药。",
+  "spoken_text": "我给妈买的药说今天送到，本来讲好下午三点前到，现在都过了还没来，我有点担心她断药。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我给妈买的药说今天送到，本来讲好下午三点前到，现在都过了还没来，我有点担心她断药。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我给妈买的药说今天送到，本来讲好下午三点前到，现在都过了还没来，我有点担心她断药。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-953ba075-2b66-9673-a026-9f684f5cd157",
+    "usage": {
+      "prompt_tokens": 261,
+      "total_tokens": 315,
+      "completion_tokens": 54,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 217
+      },
+      "completion_tokens_details": {
+        "text_tokens": 54
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8aeb8493e9ff7fe9d6615cda60ec8affed6f8dfafcc38e4e0109086926d9d0ca"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6526db9b6c49333b55e777f3c9688f41ce1e383a3663c8e57e672508ad73ae9a",
+    "canonical_sha256": "8aeb8493e9ff7fe9d6615cda60ec8affed6f8dfafcc38e4e0109086926d9d0ca",
+    "pcm_sha256": "6f5f759a613d1290d680e502cd94892961d89502c713ab532540b4e92f729c18",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 153600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我给妈买的药说今天送到，本来讲好下午三点前到，现在都过了还没来，我有点担心她断药。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9cf9bfc9-90ce-9420-bd33-63efd0464028",
+      "usage": {
+        "prompt_tokens": 177,
+        "total_tokens": 231,
+        "completion_tokens": 54,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 133
+        },
+        "completion_tokens_details": {
+          "text_tokens": 54
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6526db9b6c49333b55e777f3c9688f41ce1e383a3663c8e57e672508ad73ae9a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6526db9b6c49333b55e777f3c9688f41ce1e383a3663c8e57e672508ad73ae9a",
+        "canonical_audio_sha256": "8aeb8493e9ff7fe9d6615cda60ec8affed6f8dfafcc38e4e0109086926d9d0ca",
+        "pcm_sha256": "6f5f759a613d1290d680e502cd94892961d89502c713ab532540b4e92f729c18",
+        "same_samples": true
+      }
+    }
+  ]
+}

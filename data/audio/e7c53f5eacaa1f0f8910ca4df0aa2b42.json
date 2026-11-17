@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e7c53f5eacaa1f0f8910ca4df0aa2b42.wav",
+  "sha256": "1ff13bf022bce89ff49b8aec135c6a617afbf4fb6a554fa74ba5aa888b1076e8",
+  "duration_seconds": 8.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f52f1ff2-cc6f-958c-8601-03394c27dc3d",
+  "usage": {
+    "input_tokens": 241,
+    "output_tokens": 1608,
+    "total_tokens": 1849,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想把每笔小钱都报给他，那样太累了。我只想让他知道大开销，平时几十块的就别管了，这话怎么说得自然点？",
+  "spoken_text": "我不想把每笔小钱都报给他，那样太累了。我只想让他知道大开销，平时几十块的就别管了，这话怎么说得自然点？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不想把每笔小钱都报给他，那样太累了。我只想让他知道大开销，平时几十块的就别管了，这话怎么说得自然点？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想把每笔小钱都报给他，那样太累了。我只想让他知道大开销，平时几十块的就别管了，这话怎么说得自然点？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8fa768f6-c608-9454-b031-615c7cf75454",
+    "usage": {
+      "prompt_tokens": 281,
+      "total_tokens": 341,
+      "completion_tokens": 60,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 223
+      },
+      "completion_tokens_details": {
+        "text_tokens": 60
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1ff13bf022bce89ff49b8aec135c6a617afbf4fb6a554fa74ba5aa888b1076e8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "10f7d54149d207faa3bcb94997b5c2e4eccf9cc7708529f174be1c9adb9b4bfc",
+    "canonical_sha256": "1ff13bf022bce89ff49b8aec135c6a617afbf4fb6a554fa74ba5aa888b1076e8",
+    "pcm_sha256": "3bacc846fa36f6a441cbab7bfbb7ea06cf853072559d9835e9c704637a7fff00",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 192960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想把每笔小钱都报给他，那样太累了。我只想让他知道大开销，平时几十块的就别管了，这话怎么说得自然点？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9c00e552-3232-9a5d-a5c3-b2426810de12",
+      "usage": {
+        "prompt_tokens": 197,
+        "total_tokens": 257,
+        "completion_tokens": 60,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 60
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "10f7d54149d207faa3bcb94997b5c2e4eccf9cc7708529f174be1c9adb9b4bfc",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "10f7d54149d207faa3bcb94997b5c2e4eccf9cc7708529f174be1c9adb9b4bfc",
+        "canonical_audio_sha256": "1ff13bf022bce89ff49b8aec135c6a617afbf4fb6a554fa74ba5aa888b1076e8",
+        "pcm_sha256": "3bacc846fa36f6a441cbab7bfbb7ea06cf853072559d9835e9c704637a7fff00",
+        "same_samples": true
+      }
+    }
+  ]
+}

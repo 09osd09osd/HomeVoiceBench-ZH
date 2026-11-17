@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/e82d287c2b143e1dd64d6e1a4f79d129.wav",
+  "sha256": "a47762c2c847b39054e63a3e3c011bffa266ceac05ae3b91ab68ee8a61c3612f",
+  "duration_seconds": 5.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2946f77b-ea69-9dca-94a4-48d287c37670",
+  "usage": {
+    "input_tokens": 208,
+    "output_tokens": 1040,
+    "total_tokens": 1248,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "哎我说错了，不是超市，是楼下那家水果店。我就在店里转了一圈。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "哎，我说错了，不是超市，是楼下那家水果店。我就在店里转了一圈儿。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b8a6a94e-7b6a-9625-a65e-29f11617a47c",
+    "usage": {
+      "prompt_tokens": 162,
+      "total_tokens": 210,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 125
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9a07ef31f20dc5f1d08af3466ed5c3587519227477afd51a63c50814dbdbef44",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "9a07ef31f20dc5f1d08af3466ed5c3587519227477afd51a63c50814dbdbef44",
+      "canonical_audio_sha256": "a47762c2c847b39054e63a3e3c011bffa266ceac05ae3b91ab68ee8a61c3612f",
+      "pcm_sha256": "e6d7840f7a3cc603a7de068ad15d51e5a209129a2e85e7c80f0ae2f020f6b022",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9a07ef31f20dc5f1d08af3466ed5c3587519227477afd51a63c50814dbdbef44",
+    "canonical_sha256": "a47762c2c847b39054e63a3e3c011bffa266ceac05ae3b91ab68ee8a61c3612f",
+    "pcm_sha256": "e6d7840f7a3cc603a7de068ad15d51e5a209129a2e85e7c80f0ae2f020f6b022",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 124800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

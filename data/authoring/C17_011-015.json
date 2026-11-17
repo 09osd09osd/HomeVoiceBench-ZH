@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "26d1d91912e1c1903c073b5878682b776bbb0b2fca0061f451b39306e3eb35c8",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-56501bff-1ce0-9f39-9707-904d6fad2c85",
+  "usage": {
+    "prompt_tokens": 1800,
+    "total_tokens": 3190,
+    "completion_tokens": 1390,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1800
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1390
+    }
+  },
+  "review_request_id": "chatcmpl-31059aed-6403-94dc-abc5-56f0c6ee70dc",
+  "review_usage": {
+    "prompt_tokens": 2812,
+    "total_tokens": 2898,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2812
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C17_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C17_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C17_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C17_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C17_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C17_011",
+        "title": "下班后想找点轻松音乐却怕太闹",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天累得不想动，想听点轻松的音乐，但别给我太吵的，我受不了。",
+            "reference_text": "听起来你今天挺累的，想放松一下。我可以给你说说舒缓音乐的类型，比如轻柔的钢琴曲或者慢节奏的民谣，你看哪个方向更合你意？"
+          }
+        ]
+      },
+      {
+        "case_id": "C17_012",
+        "title": "睡前想听书但不要悬疑",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚上躺床上想听点书放松，别给我推吓人的或者太费脑子的。",
+            "reference_text": "睡前想放松，避开吓人和烧脑的，那可以试试生活随笔或者散文类的。你平时喜欢听人讲日常故事，还是偏风景描写那种？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "还有啊，别太长篇，一章听不完我就睡着了，最好是短篇合集。",
+            "reference_text": "明白了，短篇合集，每篇不太长，适合睡前听一段就放下。生活随笔里有很多这种短章，我可以按这个方向给你说说。"
+          }
+        ]
+      },
+      {
+        "case_id": "C17_013",
+        "title": "想找老歌但不要伤感，后来更正年代",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "最近想怀旧，找点老歌听听，但别给我太伤感的，我容易跟着低落。",
+            "reference_text": "怀旧又不想太伤感，可以往轻快些的老歌方向找。你心里想的是哪个年代的老歌？我按那个范围帮你说说。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "补充一下，我平时听不了太快的节奏，慢一点但别苦情就行。",
+            "reference_text": "好，节奏慢一点，情绪别苦情。那轻快或温和的老歌里，可以挑旋律舒缓、歌词不太悲的，我按这个来说。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说年代说错了，不是八十年代，是九十年代的老歌。",
+            "reference_text": "明白了，是九十年代的老歌，不是八十年代。还是慢一点、不苦情的方向，我记住了。"
+          }
+        ]
+      },
+      {
+        "case_id": "C17_014",
+        "title": "周末想读短篇小说，更正为散文",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "周末想在家读点东西，别给我推荐太厚的大部头，我拿不动也读不完。",
+            "reference_text": "周末想轻松读点，避开厚书，那可以从短篇或者随笔入手。你更想读故事性强的，还是随便翻翻那种？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "还有，别太压抑，我最近心情一般，不想读完了更闷。",
+            "reference_text": "明白，避开压抑的内容，读点让心情松一些的。短篇里也有温暖轻松的，我可以按这个方向给你说说。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚说短篇小说不太对，其实我更想读散文，短篇散文就行。",
+            "reference_text": "好，改成短篇散文，不是短篇小说。还是不要厚书、不要太压抑，我记下了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改成了短篇散文吧？那按这个给我说说可以读什么样的。",
+            "reference_text": "记得，是短篇散文，不是短篇小说，也不要厚书和压抑的内容。可以找写日常、写风景、语气平和的短篇散文，读起来不费劲。"
+          }
+        ]
+      },
+      {
+        "case_id": "C17_015",
+        "title": "想学一种乐器但怕吵，更正为口琴",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想在家学个乐器放松一下，但别推荐太吵的，邻居会受不了。",
+            "reference_text": "想在家学乐器又不想吵到邻居，可以往声音小、容易上手的方向想。你希望学起来简单点，还是想有点挑战？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "补充一个，别太贵，我不想一开始就花好多钱买设备。",
+            "reference_text": "好，声音别太大，也别一开始就花很多钱。那可以从入门成本低、体积小的乐器里挑，我按这个范围说。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才想的是口琴，不是笛子，你别弄混了。",
+            "reference_text": "明白，是口琴，不是笛子。口琴体积小、入门花费也不高，声音相对可控，符合你前面说的两个限制。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我选的是口琴吧？那初学口琴平时怎么练比较不扰民？",
+            "reference_text": "记得，是口琴。初学可以选白天固定短时间练，关上门窗，先练单音和简单曲子，别一上来就长时间吹，这样对邻居影响小些。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，那你简短总结一下，口琴初学要注意什么，我就记这两三点。",
+            "reference_text": "好，简单记三点：一是每次练短一点，别太久；二是先练单音和简单曲，别急着吹难的；三是注意时间和门窗，尽量别在休息时间吹。"
+          }
+        ]
+      }
+    ]
+  }
+}

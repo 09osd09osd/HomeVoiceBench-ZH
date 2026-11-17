@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/30e8c7e5e1777a323636dff88b1b73f8.wav",
+  "sha256": "aa1de8993f5ebba9af0af5575e61122b89b29e3fee6e5a5482a84af3b9e59a50",
+  "duration_seconds": 8.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dd45919b-ea51-999d-a6eb-a9af2120f795",
+  "usage": {
+    "input_tokens": 232,
+    "output_tokens": 1696,
+    "total_tokens": 1928,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天开会，我做的方案被同事说成是他主导的，我当场没敢反驳，回来越想越憋屈。我就想跟你说说，别给我讲大道理。",
+  "spoken_text": "今天开会，我做的方案被同事说成是他主导的，我当场没敢反驳，回来越想越憋屈。我就想跟你说说，别给我讲大道理。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天开会，我做的方案被同事说成是他主导的，我当场没敢反驳，回来越想越憋屈。我就想跟你说说，别给我讲大道理。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天开会，我做的方案被同事说成是他主导的，我当场没敢反驳，回来越想越憋屈。我就想跟你说说，别给我讲大道理。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-cfbc9962-72be-97c0-906d-5503081fa1ad",
+    "usage": {
+      "prompt_tokens": 286,
+      "total_tokens": 351,
+      "completion_tokens": 65,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 228
+      },
+      "completion_tokens_details": {
+        "text_tokens": 65
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "aa1de8993f5ebba9af0af5575e61122b89b29e3fee6e5a5482a84af3b9e59a50"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "8c76548bf41a461b34f24c18366eb1a30153dd82df8e3bb3c3fdc8063ac1e6ef",
+    "canonical_sha256": "aa1de8993f5ebba9af0af5575e61122b89b29e3fee6e5a5482a84af3b9e59a50",
+    "pcm_sha256": "6ba92862d059e26bc483eed618f5d934162a2e79f5fcd333c852f682ea4bdc46",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 203520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天开会，我做的方案被同事说成是他主导的，我当场没敢反驳，回来越想越憋屈。我就想跟你说说，别给我讲大道理。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2eb2e9c8-5302-9bf3-b256-24af24cd81d8",
+      "usage": {
+        "prompt_tokens": 202,
+        "total_tokens": 267,
+        "completion_tokens": 65,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 65
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "8c76548bf41a461b34f24c18366eb1a30153dd82df8e3bb3c3fdc8063ac1e6ef",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "8c76548bf41a461b34f24c18366eb1a30153dd82df8e3bb3c3fdc8063ac1e6ef",
+        "canonical_audio_sha256": "aa1de8993f5ebba9af0af5575e61122b89b29e3fee6e5a5482a84af3b9e59a50",
+        "pcm_sha256": "6ba92862d059e26bc483eed618f5d934162a2e79f5fcd333c852f682ea4bdc46",
+        "same_samples": true
+      }
+    }
+  ]
+}

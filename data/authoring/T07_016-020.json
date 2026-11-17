@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "4c182886bc3ed96bb4dbba668b5a53b0ac975faf3ecf8866d8baf1f660ec30e4",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-e1fbb77e-0d1c-9c3d-a127-fa17e6547e35",
+  "usage": {
+    "prompt_tokens": 13446,
+    "total_tokens": 14706,
+    "completion_tokens": 1260,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13446
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1260
+    }
+  },
+  "review_request_id": "chatcmpl-e9896146-01af-9ef2-86da-74b8a08a4f3f",
+  "review_usage": {
+    "prompt_tokens": 14328,
+    "total_tokens": 14414,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14328
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T07_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T07_016",
+        "title": "客厅灯9000K色温可行性确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想把客厅灯的色温调到9000K，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+            "reference_text": "客厅灯支持色温调节，范围是2700K到6500K，9000K超出了上限，所以没法设置。我先保持原样，没有改动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_017",
+        "title": "客厅灯色温9000K确认后改3500K",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想把客厅灯的色温调到9000K，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+            "reference_text": "客厅灯支持色温调节，范围是2700K到6500K，9000K超出了上限，所以没法设置。我先保持原样，没有改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那帮我把客厅灯的色温改成3500K，只调色温，其他设置别动。",
+            "reference_text": "好的，已经把客厅灯的色温改成3500K了，其他设置没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_018",
+        "title": "客厅灯色温改3500K并核对状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想把客厅灯的色温调到9000K，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+            "reference_text": "客厅灯支持色温调节，范围是2700K到6500K，9000K超出了上限，所以没法设置。我先保持原样，没有改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那帮我把客厅灯的色温改成3500K，只调色温，其他设置别动。",
+            "reference_text": "好的，已经把客厅灯的色温改成3500K了，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你核对一下客厅灯现在的色温和开关状态，别调整。",
+            "reference_text": "客厅灯现在是关着的，色温是3500K，没有做任何调整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_019",
+        "title": "客厅灯色温3500K并关灯保留设置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想把客厅灯的色温调到9000K，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+            "reference_text": "客厅灯支持色温调节，范围是2700K到6500K，9000K超出了上限，所以没法设置。我先保持原样，没有改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那帮我把客厅灯的色温改成3500K，只调色温，其他设置别动。",
+            "reference_text": "好的，已经把客厅灯的色温改成3500K了，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你核对一下客厅灯现在的色温和开关状态，别调整。",
+            "reference_text": "客厅灯现在是关着的，色温是3500K，没有做任何调整。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅灯关掉，色温设置保留。",
+            "reference_text": "客厅灯本来就是关着的，已经确认关闭，色温3500K保留不变。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_020",
+        "title": "客厅灯色温补查与关灯后复查",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想把客厅灯的色温调到9000K，你先看看支持不支持？不支持的话就告诉我范围，别动它。",
+            "reference_text": "客厅灯支持色温调节，范围是2700K到6500K，9000K超出了上限，所以没法设置。我先保持原样，没有改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那帮我把客厅灯的色温改成3500K，只调色温，其他设置别动。",
+            "reference_text": "好的，已经把客厅灯的色温改成3500K了，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你核对一下客厅灯现在的色温和开关状态，别调整。",
+            "reference_text": "客厅灯现在是关着的，色温是3500K，没有做任何调整。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅灯关掉，色温设置保留。",
+            "reference_text": "客厅灯本来就是关着的，已经确认关闭，色温3500K保留不变。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅灯现在开着还是关着，其他设备别动。",
+            "reference_text": "查过了，客厅灯现在是关着的，其他设备没有动。"
+          }
+        ]
+      }
+    ]
+  }
+}

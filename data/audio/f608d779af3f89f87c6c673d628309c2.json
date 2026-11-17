@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f608d779af3f89f87c6c673d628309c2.wav",
+  "sha256": "8d2937e2c6e15f719b9fe0c9981696fbaab82519c2f4fa162444f8eef215713d",
+  "duration_seconds": 3.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "07a86381-2e30-9f4f-bf22-832914099896",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 720,
+    "total_tokens": 909,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说五分钟不太对，其实是三分钟以内，越短越好。",
+  "spoken_text": "我刚才说五分钟不太对，其实是三分钟以内，越短越好。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说五分钟不太对，其实是三分钟以内，越短越好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说五分钟不太对，其实是三分钟以内，越短越好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a16a898c-bf0b-9c74-8ca8-095e54c014bd",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8d2937e2c6e15f719b9fe0c9981696fbaab82519c2f4fa162444f8eef215713d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "426d8ff7b15685cdf2650fd6db968de9e530255719672b78ccd143edac3f91dd",
+    "canonical_sha256": "8d2937e2c6e15f719b9fe0c9981696fbaab82519c2f4fa162444f8eef215713d",
+    "pcm_sha256": "5dce2f466f4c1279073ce6b338f3f37d1c1cccb817e2e01d7e64fc26c3261a3d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 86400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说五分钟不太对，其实是三分钟以内，越短越好。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2e60e02f-6a87-95ab-a5dc-a96df860f0a6",
+      "usage": {
+        "prompt_tokens": 143,
+        "total_tokens": 184,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "426d8ff7b15685cdf2650fd6db968de9e530255719672b78ccd143edac3f91dd",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "426d8ff7b15685cdf2650fd6db968de9e530255719672b78ccd143edac3f91dd",
+        "canonical_audio_sha256": "8d2937e2c6e15f719b9fe0c9981696fbaab82519c2f4fa162444f8eef215713d",
+        "pcm_sha256": "5dce2f466f4c1279073ce6b338f3f37d1c1cccb817e2e01d7e64fc26c3261a3d",
+        "same_samples": true
+      }
+    }
+  ]
+}

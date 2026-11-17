@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/c83c1a6f44538aa2941bc2cb99c64d49.wav",
+  "sha256": "eb96edbc3708508e3084f0790be1481b90e1805a81e230f62caf79681463e28d",
+  "duration_seconds": 3.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8ffa68a5-244d-9356-9952-e9b0ce584b24",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 712,
+    "total_tokens": 905,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "用孩子能懂的话讲，最好短一点，我有点累。",
+  "spoken_text": "用孩子能懂的话讲，最好短一点，我有点累。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "用孩子能懂的话讲，最好短一点。我有点累。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "用孩子能懂的话讲，最好短一点。我有点累。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4c9ed7bd-2419-9547-9f7c-1f23feb1f73b",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "eb96edbc3708508e3084f0790be1481b90e1805a81e230f62caf79681463e28d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a286f4c17b9f6458d7a8a713235fa232f88660f8f10f8a00678c1250437a1013",
+    "canonical_sha256": "eb96edbc3708508e3084f0790be1481b90e1805a81e230f62caf79681463e28d",
+    "pcm_sha256": "4b38df486149d303451b1747cd909729923d5f88d1a48c907a5ef90d41827707",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 85440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "用孩子能懂的话讲，最好短一点，我有点累。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "用孩子能懂的话讲，最好短一点，我有点累。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-46aaf350-a1b1-9cc6-8978-385dfbbbdd11",
+      "usage": {
+        "prompt_tokens": 166,
+        "total_tokens": 207,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a286f4c17b9f6458d7a8a713235fa232f88660f8f10f8a00678c1250437a1013",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a286f4c17b9f6458d7a8a713235fa232f88660f8f10f8a00678c1250437a1013",
+        "canonical_audio_sha256": "eb96edbc3708508e3084f0790be1481b90e1805a81e230f62caf79681463e28d",
+        "pcm_sha256": "4b38df486149d303451b1747cd909729923d5f88d1a48c907a5ef90d41827707",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/b93171004009e74aa7e4b5854c966df2.wav",
+  "sha256": "d71fcfa5db43f08c102559795158255cdf0338d1a7ba0f13ae0f350b0d213c87",
+  "duration_seconds": 5.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "37def8b9-b9a0-94c4-8e8c-cc8bca091817",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 1048,
+    "total_tokens": 1231,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天回来的时候看见小区门口新开了一家面包店，闻着挺香的，就进去逛了逛。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天回来的时候看见小区门口新开了一家面包店，闻着挺香的，就进去逛了逛。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-61c780c2-2c97-976a-8f39-cac128a2e303",
+    "usage": {
+      "prompt_tokens": 164,
+      "total_tokens": 212,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 127
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "47797c00905279782d1ecd8dec35343ed4d9784820a912ef0fa9baa210af2205",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "47797c00905279782d1ecd8dec35343ed4d9784820a912ef0fa9baa210af2205",
+      "canonical_audio_sha256": "d71fcfa5db43f08c102559795158255cdf0338d1a7ba0f13ae0f350b0d213c87",
+      "pcm_sha256": "e37deffa156d1dd7161f49a3f5905f2d5c086059dc802c35b1bca6aad6690c01",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "47797c00905279782d1ecd8dec35343ed4d9784820a912ef0fa9baa210af2205",
+    "canonical_sha256": "d71fcfa5db43f08c102559795158255cdf0338d1a7ba0f13ae0f350b0d213c87",
+    "pcm_sha256": "e37deffa156d1dd7161f49a3f5905f2d5c086059dc802c35b1bca6aad6690c01",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 125760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

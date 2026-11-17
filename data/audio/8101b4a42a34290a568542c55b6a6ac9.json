@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/8101b4a42a34290a568542c55b6a6ac9.wav",
+  "sha256": "e6021aedae462a978e71befcb6a8625b3b0a57aab34640addc25573a0aa2ee47",
+  "duration_seconds": 4.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7262ac89-9f70-909f-8ab1-9c88dcce6a77",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 832,
+    "total_tokens": 1035,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我擦窗户不太方便，弯腰拖地倒还行，尽量别让我爬高。",
+  "spoken_text": "我擦窗户不太方便，弯腰拖地倒还行，尽量别让我爬高。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我擦窗户不太方便，弯腰拖地倒还行，尽量别让我爬高。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我擦窗户不太方便，弯腰拖地倒还行，尽量别让我爬高。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-277969b9-9222-9a67-a58b-5426f38ad01c",
+    "usage": {
+      "prompt_tokens": 237,
+      "total_tokens": 281,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e6021aedae462a978e71befcb6a8625b3b0a57aab34640addc25573a0aa2ee47"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d347d3fc9a11578596cc4c81f6cd3a686b3708c5961140f395be51247d7e8f40",
+    "canonical_sha256": "e6021aedae462a978e71befcb6a8625b3b0a57aab34640addc25573a0aa2ee47",
+    "pcm_sha256": "0abfffd831f35118701fbe961087ba8ab6559b2a19499efd9b7dbcb1f65c4f1c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 99840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我擦窗户不太方便，弯腰拖地倒还行，尽量别让我爬高。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-56a0f1e2-3104-9f22-b8c8-8d7755531500",
+      "usage": {
+        "prompt_tokens": 153,
+        "total_tokens": 197,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 123
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d347d3fc9a11578596cc4c81f6cd3a686b3708c5961140f395be51247d7e8f40",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d347d3fc9a11578596cc4c81f6cd3a686b3708c5961140f395be51247d7e8f40",
+        "canonical_audio_sha256": "e6021aedae462a978e71befcb6a8625b3b0a57aab34640addc25573a0aa2ee47",
+        "pcm_sha256": "0abfffd831f35118701fbe961087ba8ab6559b2a19499efd9b7dbcb1f65c4f1c",
+        "same_samples": true
+      }
+    }
+  ]
+}

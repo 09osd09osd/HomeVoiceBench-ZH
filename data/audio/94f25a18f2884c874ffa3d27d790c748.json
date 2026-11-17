@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/94f25a18f2884c874ffa3d27d790c748.wav",
+  "sha256": "ddb00a1fa5ba631ec1f29a4a6a026f4de6e07925500e4a4cd65f652b8bf73223",
+  "duration_seconds": 5.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a62960a4-d693-9aa2-aac0-0ae81db67dd1",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 1128,
+    "total_tokens": 1309,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "刚才说八点前，其实改成晚上七点半更合适，因为孩子八点要睡觉。",
+  "spoken_text": "刚才说八点前，其实改成晚上七点半更合适，因为孩子八点要睡觉。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才说八点前，其实改成晚上七点半更合适，因为孩子八点要睡觉。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才说八点前，其实改成晚上七点半更合适，因为孩子八点要睡觉。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7bead628-1e41-9537-8a3f-34084578bd6f",
+    "usage": {
+      "prompt_tokens": 245,
+      "total_tokens": 290,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ddb00a1fa5ba631ec1f29a4a6a026f4de6e07925500e4a4cd65f652b8bf73223"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a2aaebf511817e4077eb5afa93709d725d59b26740934806159c090d832544e8",
+    "canonical_sha256": "ddb00a1fa5ba631ec1f29a4a6a026f4de6e07925500e4a4cd65f652b8bf73223",
+    "pcm_sha256": "dc8391932ac0d01489814551662b1ae6a58f4224166f69b79889179db93a8ff6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 135360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "刚才说八点前，其实改成晚上七点半更合适，因为孩子八点要睡觉。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d94ac261-a677-96a7-bded-432b22b6c8a5",
+      "usage": {
+        "prompt_tokens": 161,
+        "total_tokens": 206,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a2aaebf511817e4077eb5afa93709d725d59b26740934806159c090d832544e8",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a2aaebf511817e4077eb5afa93709d725d59b26740934806159c090d832544e8",
+        "canonical_audio_sha256": "ddb00a1fa5ba631ec1f29a4a6a026f4de6e07925500e4a4cd65f652b8bf73223",
+        "pcm_sha256": "dc8391932ac0d01489814551662b1ae6a58f4224166f69b79889179db93a8ff6",
+        "same_samples": true
+      }
+    }
+  ]
+}

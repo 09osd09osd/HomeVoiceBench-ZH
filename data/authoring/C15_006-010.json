@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "c1726c7d97bb6d8607bc0db323dc84e4701fad4059d021baf5f6328e72489144",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-eaa481c2-8bd3-9bf5-a469-911365b5901b",
+  "usage": {
+    "prompt_tokens": 1770,
+    "total_tokens": 3189,
+    "completion_tokens": 1419,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1770
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1419
+    }
+  },
+  "review_request_id": "chatcmpl-74e16544-4b00-9ab6-aa2e-eae09e138f67",
+  "review_usage": {
+    "prompt_tokens": 2811,
+    "total_tokens": 2897,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2811
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C15_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C15_006",
+        "title": "猜厨房小物件，只要一个提示",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，你出个猜谜吧，就猜厨房里的小东西，先给一个提示就好，别提前说答案。",
+            "reference_text": "好呀，猜厨房里的小物件：它有个长把儿，前面带个小兜，炒菜时常用。先猜猜看，我不说答案。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_007",
+        "title": "猜厨房小物件，提示别太难",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，你出个猜谜吧，就猜厨房里的小东西，先给一个提示就好，别提前说答案。",
+            "reference_text": "好呀，猜厨房里的小物件：它有个长把儿，前面带个小兜，炒菜时常用。先猜猜看，我不说答案。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "提示别太难，我脑子转得慢，一次给一点点就行，也别直接说答案。",
+            "reference_text": "行，那再给一点点：它一般是金属的，炒菜时用来翻动食物。还是先猜，答案我留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_008",
+        "title": "猜厨房小物件，更正为塑料的",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，你出个猜谜吧，就猜厨房里的小东西，先给一个提示就好，别提前说答案。",
+            "reference_text": "好呀，猜厨房里的小物件：它有个长把儿，前面带个小兜，炒菜时常用。先猜猜看，我不说答案。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "提示别太难，我脑子转得慢，一次给一点点就行，也别直接说答案。",
+            "reference_text": "行，那再给一点点：它一般是金属的，炒菜时用来翻动食物。还是先猜，答案我留着。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，不是金属的，是塑料的，你按塑料的来提示。",
+            "reference_text": "好，更正成塑料的：它轻飘飘的，常挂在厨房墙边，炒菜时拿起来翻两下。答案还是先不说。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_009",
+        "title": "猜厨房小物件，看是否记住塑料更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，你出个猜谜吧，就猜厨房里的小东西，先给一个提示就好，别提前说答案。",
+            "reference_text": "好呀，猜厨房里的小物件：它有个长把儿，前面带个小兜，炒菜时常用。先猜猜看，我不说答案。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "提示别太难，我脑子转得慢，一次给一点点就行，也别直接说答案。",
+            "reference_text": "行，那再给一点点：它一般是金属的，炒菜时用来翻动食物。还是先猜，答案我留着。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，不是金属的，是塑料的，你按塑料的来提示。",
+            "reference_text": "好，更正成塑料的：它轻飘飘的，常挂在厨房墙边，炒菜时拿起来翻两下。答案还是先不说。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改成塑料的了吧？那再给一个不泄底的提示，我接着猜。",
+            "reference_text": "记得，是塑料的。再提示：它颜色鲜亮，洗完容易干，炒菜时用来翻菜。答案先不说，你猜猜看。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_010",
+        "title": "猜厨房小物件，最后简短收个尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，你出个猜谜吧，就猜厨房里的小东西，先给一个提示就好，别提前说答案。",
+            "reference_text": "好呀，猜厨房里的小物件：它有个长把儿，前面带个小兜，炒菜时常用。先猜猜看，我不说答案。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "提示别太难，我脑子转得慢，一次给一点点就行，也别直接说答案。",
+            "reference_text": "行，那再给一点点：它一般是金属的，炒菜时用来翻动食物。还是先猜，答案我留着。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，不是金属的，是塑料的，你按塑料的来提示。",
+            "reference_text": "好，更正成塑料的：它轻飘飘的，常挂在厨房墙边，炒菜时拿起来翻两下。答案还是先不说。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改成塑料的了吧？那再给一个不泄底的提示，我接着猜。",
+            "reference_text": "记得，是塑料的。再提示：它颜色鲜亮，洗完容易干，炒菜时用来翻菜。答案先不说，你猜猜看。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "我有点累了，你简短点收个尾，别把答案直接说出来。",
+            "reference_text": "好，简短收尾：塑料的、带长把儿、炒菜翻动用。你慢慢猜，答案我留着，累了就歇会儿。"
+          }
+        ]
+      }
+    ]
+  }
+}

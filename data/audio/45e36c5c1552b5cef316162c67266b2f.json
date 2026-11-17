@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/45e36c5c1552b5cef316162c67266b2f.wav",
+  "sha256": "a7008ec7ee90b492a573245f58071cc35c13a2ebbcf194938e11346e0d3bc5c8",
+  "duration_seconds": 5.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6b5c2f27-a1fc-9395-9f5b-f1809cabf25c",
+  "usage": {
+    "input_tokens": 208,
+    "output_tokens": 1136,
+    "total_tokens": 1344,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "厨房台面东西太多，抽屉也乱，周末有两小时，手头有几个空罐子和旧盒子，怎么整理？",
+  "spoken_text": "厨房台面东西太多，抽屉也乱，周末有两小时，手头有几个空罐子和旧盒子，怎么整理？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "厨房台面东西太多，抽屉也乱。周末有两小时，手头有几个空罐子和旧盒子，怎么整理？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "厨房台面东西太多，抽屉也乱。周末有两小时，手头有几个空罐子和旧盒子，怎么整理？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-10ca0598-0aef-96d1-a4ed-8e1ef36fc94d",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 300,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a7008ec7ee90b492a573245f58071cc35c13a2ebbcf194938e11346e0d3bc5c8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e9a5fb48e785fa9206581ab8bf39847cc292192bd3345d60abdddce19a217ed1",
+    "canonical_sha256": "a7008ec7ee90b492a573245f58071cc35c13a2ebbcf194938e11346e0d3bc5c8",
+    "pcm_sha256": "99d414654614afdd0e3af8ac7f8c7bb813142b4aa8cca9e47a766d1a7361a758",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 136320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "厨房台面东西太多，抽屉也乱，周末有两小时，手头有几个空罐子和旧盒子，怎么整理？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "厨房台面东西太多，抽屉也乱，周末有两小时，手头有几个空罐子和旧盒子，怎么整理？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2a128c3e-e934-9a2c-b501-96b89d38b043",
+      "usage": {
+        "prompt_tokens": 189,
+        "total_tokens": 239,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e9a5fb48e785fa9206581ab8bf39847cc292192bd3345d60abdddce19a217ed1",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e9a5fb48e785fa9206581ab8bf39847cc292192bd3345d60abdddce19a217ed1",
+        "canonical_audio_sha256": "a7008ec7ee90b492a573245f58071cc35c13a2ebbcf194938e11346e0d3bc5c8",
+        "pcm_sha256": "99d414654614afdd0e3af8ac7f8c7bb813142b4aa8cca9e47a766d1a7361a758",
+        "same_samples": true
+      }
+    }
+  ]
+}

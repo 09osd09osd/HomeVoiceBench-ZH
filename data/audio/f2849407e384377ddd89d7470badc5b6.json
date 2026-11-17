@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f2849407e384377ddd89d7470badc5b6.wav",
+  "sha256": "8f4d78a79cbc877a819cca540b80b2418f3f077b03fa3b2a60dc37b186355268",
+  "duration_seconds": 7.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b907e13f-66f4-9dc5-87e5-fd6487f3ffc0",
+  "usage": {
+    "input_tokens": 206,
+    "output_tokens": 1536,
+    "total_tokens": 1742,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天加班到很晚，项目还被领导挑刺，心里特别堵。我就想找个人说说，不用给我建议，听着就行。",
+  "spoken_text": "今天加班到很晚，项目还被领导挑刺，心里特别堵。我就想找个人说说，不用给我建议，听着就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天加班到很晚，项目还被领导挑刺，心里特别堵。我就想找个人说说，不用给我建议，听着就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天加班到很晚，项目还被领导挑刺，心里特别堵。我就想找个人说说，不用给我建议，听着就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e6293635-4ed3-98a5-86b9-ca09407ee835",
+    "usage": {
+      "prompt_tokens": 268,
+      "total_tokens": 322,
+      "completion_tokens": 54,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 217
+      },
+      "completion_tokens_details": {
+        "text_tokens": 54
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8f4d78a79cbc877a819cca540b80b2418f3f077b03fa3b2a60dc37b186355268"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "381b39b3c304c3859a3741a8409bf7b2f3c933a7583b3bde7bb019f4e0457f11",
+    "canonical_sha256": "8f4d78a79cbc877a819cca540b80b2418f3f077b03fa3b2a60dc37b186355268",
+    "pcm_sha256": "1238c2a21699cbd665c9f6feae3c5dea2d974972091f620866fadc023aa835c8",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 184320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天加班到很晚，项目还被领导挑刺，心里特别堵。我就想找个人说说，不用给我建议，听着就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1d5a3ec1-0d64-9c0e-bc6c-4bc6b316f565",
+      "usage": {
+        "prompt_tokens": 184,
+        "total_tokens": 238,
+        "completion_tokens": 54,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 133
+        },
+        "completion_tokens_details": {
+          "text_tokens": 54
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "381b39b3c304c3859a3741a8409bf7b2f3c933a7583b3bde7bb019f4e0457f11",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "381b39b3c304c3859a3741a8409bf7b2f3c933a7583b3bde7bb019f4e0457f11",
+        "canonical_audio_sha256": "8f4d78a79cbc877a819cca540b80b2418f3f077b03fa3b2a60dc37b186355268",
+        "pcm_sha256": "1238c2a21699cbd665c9f6feae3c5dea2d974972091f620866fadc023aa835c8",
+        "same_samples": true
+      }
+    }
+  ]
+}

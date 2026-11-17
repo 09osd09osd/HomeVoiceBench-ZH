@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/4ed17c6a83c38b33bf677929d2c765a3.wav",
+  "sha256": "dbcdf5784f85668e53c16b1f84ca1fef27a86c555c2a790f320ba7de74c20942",
+  "duration_seconds": 5.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "24af4ef9-1639-9762-94e7-2381b1914820",
+  "usage": {
+    "input_tokens": 275,
+    "output_tokens": 1192,
+    "total_tokens": 1467,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "晚上陪孩子写作业，他磨蹭到十点，我忍不住发了火，现在又后悔又累。我就想说说，不想听大道理。",
+  "spoken_text": "晚上陪孩子写作业，他磨蹭到十点，我忍不住发了火，现在又后悔又累。我就想说说，不想听大道理。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "晚上陪孩子写作业，他磨蹭到十点，我忍不住发了火。现在又后悔又累，我就想说说，不想听大道理。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "晚上陪孩子写作业，他磨蹭到十点，我忍不住发了火。现在又后悔又累，我就想说说，不想听大道理。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8129cc66-e7d0-92ac-9275-323e1fe456fe",
+    "usage": {
+      "prompt_tokens": 257,
+      "total_tokens": 314,
+      "completion_tokens": 57,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 220
+      },
+      "completion_tokens_details": {
+        "text_tokens": 57
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "dbcdf5784f85668e53c16b1f84ca1fef27a86c555c2a790f320ba7de74c20942"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "843d7bbe455d537e806b4d156d9767f3154bd4b356b2c60061284f1d2b070eca",
+    "canonical_sha256": "dbcdf5784f85668e53c16b1f84ca1fef27a86c555c2a790f320ba7de74c20942",
+    "pcm_sha256": "0ce529865d5412ba13abb98c340612e8fb15a3ef34f695ec553c10c6b5777e91",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 143040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "晚上陪孩子写作业，他磨蹭到十点，我忍不住发了火。现在又后悔又累，我就想说说，不想听大道理。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2b7b9247-0e60-9dd1-a936-d0900518c6ee",
+      "usage": {
+        "prompt_tokens": 173,
+        "total_tokens": 230,
+        "completion_tokens": 57,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 57
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "843d7bbe455d537e806b4d156d9767f3154bd4b356b2c60061284f1d2b070eca",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "843d7bbe455d537e806b4d156d9767f3154bd4b356b2c60061284f1d2b070eca",
+        "canonical_audio_sha256": "dbcdf5784f85668e53c16b1f84ca1fef27a86c555c2a790f320ba7de74c20942",
+        "pcm_sha256": "0ce529865d5412ba13abb98c340612e8fb15a3ef34f695ec553c10c6b5777e91",
+        "same_samples": true
+      }
+    }
+  ]
+}

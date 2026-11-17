@@ -1,0 +1,64 @@
+{
+  "status": "terminated_resource_pressure",
+  "effective": {
+    "model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "batch_size": 32,
+    "adaptive_max_batch_size": 64,
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.3",
+    "cuda": "13.0",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "seed": 42,
+    "generation": {
+      "do_sample": true,
+      "repetition_penalty": 1.05,
+      "temperature": 0.9,
+      "top_p": 1.0,
+      "top_k": 50,
+      "subtalker_dosample": true,
+      "subtalker_temperature": 0.9,
+      "subtalker_top_p": 1.0,
+      "subtalker_top_k": 50,
+      "max_new_tokens": 1024
+    },
+    "timing_scope": "offline_batch_inference_not_realtime_latency",
+    "pilot": false
+  },
+  "completed_batches": [
+    {
+      "mode": "tts",
+      "done": 32,
+      "total": 5184,
+      "batch_seconds": 8.391,
+      "peak_gpu_gib": 4.86
+    },
+    {
+      "mode": "tts",
+      "done": 64,
+      "total": 5184,
+      "batch_seconds": 10.719,
+      "peak_gpu_gib": 5.47
+    },
+    {
+      "mode": "tts",
+      "done": 128,
+      "total": 5184,
+      "batch_seconds": 19.984,
+      "peak_gpu_gib": 9.55
+    }
+  ],
+  "resource_event": {
+    "reason": "Observed Windows GPU/system memory oversubscription during TTS batch64; stopped before exhausting system commit",
+    "pid": 22680,
+    "observed_gpu_used_mib": 24060,
+    "observed_gpu_total_mib": 24564,
+    "observed_system_committed_bytes": 82641068032,
+    "observed_system_commit_limit_bytes": 83577618432,
+    "last_completed_tasks": 128,
+    "next_batch_offset": 128,
+    "unfinished_batch_size": 64,
+    "formal_model_outputs_changed": false,
+    "timestamp": "2026-11-16T19:33:53.250893+00:00"
+  }
+}

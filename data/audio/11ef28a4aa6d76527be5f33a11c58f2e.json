@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/11ef28a4aa6d76527be5f33a11c58f2e.wav",
+  "sha256": "ee86d4e3b6996c988e2f1dce747a86b30bddf3702b0fb19987b6e65ec248a5b5",
+  "duration_seconds": 1.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "104f5edb-8c5e-95a8-bfbc-0e96e2984ca7",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 384,
+    "total_tokens": 570,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "现在停止这段播放，不要换别的。",
+  "spoken_text": "现在停止这段播放，不要换别的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "现在停止这段播放，不要换别的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "现在停止这段播放，不要换别的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9008e80c-bc4a-9195-99ce-95d03005be40",
+    "usage": {
+      "prompt_tokens": 207,
+      "total_tokens": 242,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ee86d4e3b6996c988e2f1dce747a86b30bddf3702b0fb19987b6e65ec248a5b5"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "17bf5d2aa48da66ede8d132d5f09008370e3638aa5f6c6d6badcd5cd783bb697",
+    "canonical_sha256": "ee86d4e3b6996c988e2f1dce747a86b30bddf3702b0fb19987b6e65ec248a5b5",
+    "pcm_sha256": "52673e501b57a998e719d68803a3238a3c1246fbc6f8042630681b75d36cf5f1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 46080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "现在停止这段播放，不要换别的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "现在停止这段播放，不要换别的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ea7563cb-a317-9879-a1eb-13e63733dc98",
+      "usage": {
+        "prompt_tokens": 146,
+        "total_tokens": 181,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 137
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "17bf5d2aa48da66ede8d132d5f09008370e3638aa5f6c6d6badcd5cd783bb697",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "17bf5d2aa48da66ede8d132d5f09008370e3638aa5f6c6d6badcd5cd783bb697",
+        "canonical_audio_sha256": "ee86d4e3b6996c988e2f1dce747a86b30bddf3702b0fb19987b6e65ec248a5b5",
+        "pcm_sha256": "52673e501b57a998e719d68803a3238a3c1246fbc6f8042630681b75d36cf5f1",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/34bb59d4c06b00d9a9c9fd9add70e931.wav",
+  "sha256": "0b4c3f2fa445761e5a1cb65457267225d5b82eb1481f209e4d6d712aac056517",
+  "duration_seconds": 4.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f91fd469-3e6a-96ce-b425-e63396ce742f",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 936,
+    "total_tokens": 1120,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "晚上泡了杯茶，翻了翻昨天从图书馆借的那本讲植物的书，挺有意思的。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "晚上泡了杯茶，翻了翻昨天从图书馆借的那本讲植物的书，挺有意思的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8e6adb3e-2b9a-9e09-a6aa-31b4befc8291",
+    "usage": {
+      "prompt_tokens": 157,
+      "total_tokens": 205,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 127
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6f6be01fe51bbb98f96e62038751e5c3e97b2fe9cf32e5faabf6e18e88f899aa",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "6f6be01fe51bbb98f96e62038751e5c3e97b2fe9cf32e5faabf6e18e88f899aa",
+      "canonical_audio_sha256": "0b4c3f2fa445761e5a1cb65457267225d5b82eb1481f209e4d6d712aac056517",
+      "pcm_sha256": "9be0eb1ea3a58f39de268a62cb03a0525d0de593ab61a1ab27adecfc6cfb84cb",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6f6be01fe51bbb98f96e62038751e5c3e97b2fe9cf32e5faabf6e18e88f899aa",
+    "canonical_sha256": "0b4c3f2fa445761e5a1cb65457267225d5b82eb1481f209e4d6d712aac056517",
+    "pcm_sha256": "9be0eb1ea3a58f39de268a62cb03a0525d0de593ab61a1ab27adecfc6cfb84cb",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 112320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

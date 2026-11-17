@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1d89cc2ca73a2d3af054a073a349ba01.wav",
+  "sha256": "30c93887090f6f1c535b91203832b7e6a7c5dba6fb1cf1ccfe974cdf838b7325",
+  "duration_seconds": 5.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9398a4b9-7a86-92fe-beec-ecc87424b4ac",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 1112,
+    "total_tokens": 1294,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天下班回来的时候，在小区门口看到一只橘猫，蹲在花坛边上，挺可爱的。",
+  "spoken_text": "今天下班回来的时候，在小区门口看到一只橘猫，蹲在花坛边上，挺可爱的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天下班回来的时候，在小区门口看到一只橘猫，蹲在花坛边儿上，挺可爱的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天下班回来的时候，在小区门口看到一只橘猫，蹲在花坛边儿上，挺可爱的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3020dd78-c69d-9368-ad57-8d047a1d662e",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 296,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "30c93887090f6f1c535b91203832b7e6a7c5dba6fb1cf1ccfe974cdf838b7325"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "00d341bae988452e6e48c47f199cf8261a0e6d8a217d3c0d8be238673722c461",
+    "canonical_sha256": "30c93887090f6f1c535b91203832b7e6a7c5dba6fb1cf1ccfe974cdf838b7325",
+    "pcm_sha256": "34783784c12e66c04b4e69de058b3fb9d787a2899acc0b84538f81439d6891b8",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 133440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天下班回来的时候，在小区门口看到一只橘猫蹲在花坛边儿上，挺可爱的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "今天下班回来的时候，在小区门口看到一只橘猫蹲在花坛边儿上，挺可爱的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0d29f5c5-a574-996c-8138-d67a385a3d9e",
+      "usage": {
+        "prompt_tokens": 186,
+        "total_tokens": 234,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "00d341bae988452e6e48c47f199cf8261a0e6d8a217d3c0d8be238673722c461",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "00d341bae988452e6e48c47f199cf8261a0e6d8a217d3c0d8be238673722c461",
+        "canonical_audio_sha256": "30c93887090f6f1c535b91203832b7e6a7c5dba6fb1cf1ccfe974cdf838b7325",
+        "pcm_sha256": "34783784c12e66c04b4e69de058b3fb9d787a2899acc0b84538f81439d6891b8",
+        "same_samples": true
+      }
+    }
+  ]
+}

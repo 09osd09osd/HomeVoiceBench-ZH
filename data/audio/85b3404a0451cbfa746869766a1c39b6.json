@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/85b3404a0451cbfa746869766a1c39b6.wav",
+  "sha256": "48c7ab198ff57a4b32feb30ff4d9b24618addf93327e3a85bf9f2352dc29bed3",
+  "duration_seconds": 1.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "cbfdcd99-44c9-9a33-a384-c40614ff8dd8",
+  "usage": {
+    "input_tokens": 170,
+    "output_tokens": 392,
+    "total_tokens": 562,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得是楼下还是隔壁吗？",
+  "spoken_text": "你还记得是楼下还是隔壁吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得是楼下还是隔壁吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得是楼下还是隔壁吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f3967a6d-fd67-9669-a0c1-8a42f9f1257e",
+    "usage": {
+      "prompt_tokens": 206,
+      "total_tokens": 240,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "48c7ab198ff57a4b32feb30ff4d9b24618addf93327e3a85bf9f2352dc29bed3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "13726d63d04fbb15cc301c46f1857e7bdec538e09c68214aabca32ebd117ef5d",
+    "canonical_sha256": "48c7ab198ff57a4b32feb30ff4d9b24618addf93327e3a85bf9f2352dc29bed3",
+    "pcm_sha256": "9094e59b2df6a99f5ff2a2c723fb1115347ae6bcaf6e5ce4f3d1d638e23ca3e7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 47040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得是楼下还是隔壁吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-38953901-3ced-93d8-a085-01700ee09511",
+      "usage": {
+        "prompt_tokens": 122,
+        "total_tokens": 156,
+        "completion_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 113
+        },
+        "completion_tokens_details": {
+          "text_tokens": 34
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "13726d63d04fbb15cc301c46f1857e7bdec538e09c68214aabca32ebd117ef5d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "13726d63d04fbb15cc301c46f1857e7bdec538e09c68214aabca32ebd117ef5d",
+        "canonical_audio_sha256": "48c7ab198ff57a4b32feb30ff4d9b24618addf93327e3a85bf9f2352dc29bed3",
+        "pcm_sha256": "9094e59b2df6a99f5ff2a2c723fb1115347ae6bcaf6e5ce4f3d1d638e23ca3e7",
+        "same_samples": true
+      }
+    }
+  ]
+}

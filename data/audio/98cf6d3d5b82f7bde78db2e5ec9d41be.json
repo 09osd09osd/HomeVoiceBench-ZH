@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/98cf6d3d5b82f7bde78db2e5ec9d41be.wav",
+  "sha256": "5ec2ac1eb32e252ca6cc3e4f2cd0a131cfa8cf47fbd851efc8be25682d2e175d",
+  "duration_seconds": 6.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "03f77f89-de74-9964-83ae-bad31648f152",
+  "usage": {
+    "input_tokens": 202,
+    "output_tokens": 1200,
+    "total_tokens": 1402,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天下班路上看到一只小猫蹲在花坛边，特别可爱。我有点累，你就简单跟我说两句吧。",
+  "spoken_text": "今天下班路上看到一只小猫蹲在花坛边，特别可爱。我有点累，你就简单跟我说两句吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天下班路上看到一只小猫蹲在花坛边，特别可爱。我有点累，你就简单跟我说两句吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天下班路上看到一只小猫蹲在花坛边，特别可爱。我有点累，你就简单跟我说两句吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-24e7e2ce-3f2a-9947-9a34-ebc0ec192fbe",
+    "usage": {
+      "prompt_tokens": 257,
+      "total_tokens": 307,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5ec2ac1eb32e252ca6cc3e4f2cd0a131cfa8cf47fbd851efc8be25682d2e175d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "31083e4cd800ae85bd3e6bf83c1065561df8a32df8772af526e929069a414676",
+    "canonical_sha256": "5ec2ac1eb32e252ca6cc3e4f2cd0a131cfa8cf47fbd851efc8be25682d2e175d",
+    "pcm_sha256": "0b8ee0cc3a31ca835c98516731c2f27e078c2bd07b3da65be9e62cdb6941c02a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 144000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天下班路上看到一只小猫蹲在花坛边，特别可爱。我有点累，你就简单跟我说两句吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "今天下班路上看到一只小猫蹲在花坛边，特别可爱。我有点累，你就简单跟我说两句吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4d3d568e-c2f7-9fc4-b8ec-fcf8e311f428",
+      "usage": {
+        "prompt_tokens": 196,
+        "total_tokens": 246,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "31083e4cd800ae85bd3e6bf83c1065561df8a32df8772af526e929069a414676",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "31083e4cd800ae85bd3e6bf83c1065561df8a32df8772af526e929069a414676",
+        "canonical_audio_sha256": "5ec2ac1eb32e252ca6cc3e4f2cd0a131cfa8cf47fbd851efc8be25682d2e175d",
+        "pcm_sha256": "0b8ee0cc3a31ca835c98516731c2f27e078c2bd07b3da65be9e62cdb6941c02a",
+        "same_samples": true
+      }
+    }
+  ]
+}

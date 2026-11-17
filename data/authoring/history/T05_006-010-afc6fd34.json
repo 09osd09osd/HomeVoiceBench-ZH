@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "20aa93f261aeebe6cc4b2eb2cf11006c4ad8a1b304d53ea3f024c99b80291ba7",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-cb04a67d-8b58-938f-b6f3-8036fa75bdc3",
+  "usage": {
+    "prompt_tokens": 6324,
+    "total_tokens": 7480,
+    "completion_tokens": 1156,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 6324
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1156
+    }
+  },
+  "review_request_id": "chatcmpl-2c7eeb1c-857e-9036-bc77-4333f59a5ff6",
+  "review_usage": {
+    "prompt_tokens": 7102,
+    "total_tokens": 7188,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 7102
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T05_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T05_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T05_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T05_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T05_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T05_006",
+        "title": "查询家庭预设音量与色温",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家预设的睡前音量和阅读色温是多少？我只是想了解一下，不用帮我调。",
+            "reference_text": "睡前音量预设是20%，阅读色温预设是4000K。我只查到了这两项，没有做任何调整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T05_007",
+        "title": "查预设并问当前时区时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家预设的睡前音量和阅读色温是多少？我只是想了解一下，不用帮我调。",
+            "reference_text": "睡前音量预设是20%，阅读色温预设是4000K。我只查到了这两项，没有做任何调整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用的是哪个时区，具体几点啦？",
+            "reference_text": "现在家里用的是Asia/Taipei时区，当前时间是18点00分01秒左右。"
+          }
+        ]
+      },
+      {
+        "case_id": "T05_008",
+        "title": "预设与实时状态辨析",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家预设的睡前音量和阅读色温是多少？我只是想了解一下，不用帮我调。",
+            "reference_text": "睡前音量预设是20%，阅读色温预设是4000K。我只查到了这两项，没有做任何调整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用的是哪个时区，具体几点啦？",
+            "reference_text": "现在家里用的是Asia/Taipei时区，当前时间是18点00分01秒左右。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "这个音量预设代表音箱现在的音量吗？",
+            "reference_text": "不是的，预设只是家庭偏好的设定值，并不代表音箱此刻的实际音量。"
+          }
+        ]
+      },
+      {
+        "case_id": "T05_009",
+        "title": "核对客厅音箱实时音量",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家预设的睡前音量和阅读色温是多少？我只是想了解一下，不用帮我调。",
+            "reference_text": "睡前音量预设是20%，阅读色温预设是4000K。我只查到了这两项，没有做任何调整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用的是哪个时区，具体几点啦？",
+            "reference_text": "现在家里用的是Asia/Taipei时区，当前时间是18点00分01秒左右。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "这个音量预设代表音箱现在的音量吗？",
+            "reference_text": "不是的，预设只是家庭偏好的设定值，并不代表音箱此刻的实际音量。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你帮我核对一下客厅音箱现在的音量是多少。",
+            "reference_text": "客厅音箱当前处于离线状态，音量显示为30%。离线时这个数值可能不是实时状态，我无法确认它此刻的真实音量。"
+          }
+        ]
+      },
+      {
+        "case_id": "T05_010",
+        "title": "总结预设与当前值差异",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家预设的睡前音量和阅读色温是多少？我只是想了解一下，不用帮我调。",
+            "reference_text": "睡前音量预设是20%，阅读色温预设是4000K。我只查到了这两项，没有做任何调整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用的是哪个时区，具体几点啦？",
+            "reference_text": "现在家里用的是Asia/Taipei时区，当前时间是18点00分01秒左右。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "这个音量预设代表音箱现在的音量吗？",
+            "reference_text": "不是的，预设只是家庭偏好的设定值，并不代表音箱此刻的实际音量。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你帮我核对一下客厅音箱现在的音量是多少。",
+            "reference_text": "客厅音箱当前处于离线状态，音量显示为30%。离线时这个数值可能不是实时状态，我无法确认它此刻的真实音量。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "你只帮我总结一下预设和当前值的区别就行。",
+            "reference_text": "预设睡前音量是20%，客厅音箱当前显示音量是30%，两者相差10个百分点。不过客厅音箱现在是离线状态，所以30%这个当前值可能不是实时准确的，我无法确认它此刻的真实音量。"
+          }
+        ]
+      }
+    ]
+  }
+}

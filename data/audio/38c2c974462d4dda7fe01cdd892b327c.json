@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/38c2c974462d4dda7fe01cdd892b327c.wav",
+  "sha256": "0c61249d699e620e762df4dbf09daad92a128e7ebf9ccade8f6c6b9a305a999a",
+  "duration_seconds": 4.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e3eecaed-ecd2-9291-86ad-443267919a5a",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 968,
+    "total_tokens": 1171,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我有个重要证件在快递里，显示今天送，现在都傍晚了还没到，我一会儿下楼看一趟。",
+  "spoken_text": "我有个重要证件在快递里，显示今天送，现在都傍晚了还没到，我一会儿下楼看一趟。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我有个重要证件在快递里，显示今天送。现在都傍晚了还没到，我一会儿下楼看一趟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我有个重要证件在快递里，显示今天送。现在都傍晚了还没到，我一会儿下楼看一趟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-32f23d71-3def-9e47-8e79-bc8c46a8a063",
+    "usage": {
+      "prompt_tokens": 244,
+      "total_tokens": 295,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0c61249d699e620e762df4dbf09daad92a128e7ebf9ccade8f6c6b9a305a999a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "77560caa90cb8ae21fcdae09d086eedcfc8ae68b5472582e41e5bee7706a0baa",
+    "canonical_sha256": "0c61249d699e620e762df4dbf09daad92a128e7ebf9ccade8f6c6b9a305a999a",
+    "pcm_sha256": "b88b2b312bee751f4299082c0945184e28963a1200de4b5f75fae4a08a90af21",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 116160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我有个重要证件在快递里，显示今天送。现在都傍晚了还没到，我一会儿下楼看一趟。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-178d7599-49e4-958d-9336-7fab74902cab",
+      "usage": {
+        "prompt_tokens": 160,
+        "total_tokens": 211,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "77560caa90cb8ae21fcdae09d086eedcfc8ae68b5472582e41e5bee7706a0baa",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "77560caa90cb8ae21fcdae09d086eedcfc8ae68b5472582e41e5bee7706a0baa",
+        "canonical_audio_sha256": "0c61249d699e620e762df4dbf09daad92a128e7ebf9ccade8f6c6b9a305a999a",
+        "pcm_sha256": "b88b2b312bee751f4299082c0945184e28963a1200de4b5f75fae4a08a90af21",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "93cd385bfbb25e04aac103b5274d8b8f78032a98f7119a54e66e8927b10f5963",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-02c6a86a-2881-9130-a5cd-0ce1dbb808c3",
+  "usage": {
+    "prompt_tokens": 1958,
+    "total_tokens": 3211,
+    "completion_tokens": 1253,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "image_tokens": 0,
+      "text_tokens": 1958
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1253
+    }
+  },
+  "review_request_id": "chatcmpl-15159348-528a-9db3-a5e2-15b3198a386b",
+  "review_usage": {
+    "prompt_tokens": 2645,
+    "total_tokens": 2731,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "image_tokens": 0,
+      "text_tokens": 2645
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C16_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 2,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C16_006",
+        "title": "疲惫时想玩一个温和的记词小游戏",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天有点累，想玩个简单温和的记词游戏，就一轮，别用水果词，可以吗？",
+            "reference_text": "可以。我们就玩一轮记词，不用水果词。我说三个词，你记住后告诉我：台灯、雨伞、铅笔。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_007",
+        "title": "两轮数字记忆，避开水果词",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，想玩两轮数字记忆游戏，要温和简短，别用水果词。",
+            "reference_text": "好，两轮数字记忆，温和简短，不出现水果词。第一轮请记住：3、8、5。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "数字别超过十，每轮就三个数，我记性今天不太好。",
+            "reference_text": "明白，数字都在十以内，每轮三个。第一轮是3、8、5，你慢慢记。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_008",
+        "title": "三轮词语游戏，中途改禁用词",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想玩三轮词语记忆，要简短温和，先别用水果词。",
+            "reference_text": "好，三轮词语记忆，简短温和，先不用水果词。第一轮三个词：杯子、帽子、钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "每轮就三个词，我有点疲惫，别太长。",
+            "reference_text": "每轮三个词，不拖长。第一轮是杯子、帽子、钥匙，你记一下。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，刚才说别用水果词不对，是别用动物词。",
+            "reference_text": "好，更正为不用动物词，水果词可以。还是三轮，每轮三个词。第一轮杯子、帽子、钥匙继续。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_009",
+        "title": "四轮记忆游戏，更正禁用词再检验",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天有点累，想玩四轮词语记忆，简短温和，别用水果词。",
+            "reference_text": "好，四轮词语记忆，简短温和，不用水果词。第一轮三个词：书本、眼镜、水杯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "每轮还是三个词吧，我容易走神。",
+            "reference_text": "每轮三个词，不增加。第一轮是书本、眼镜、水杯，你慢慢记。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，不是别用水果词，是别用动物词。",
+            "reference_text": "好，更正为不用动物词，水果词可以用。还是四轮，每轮三个词。第一轮书本、眼镜、水杯。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得现在禁用的是哪类词吗？确认一下再继续。",
+            "reference_text": "记得，现在禁用动物词，水果词可以用。四轮记忆继续，第一轮三个词是书本、眼镜、水杯。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_010",
+        "title": "五轮数字记忆，中途改禁用词并收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，想玩五轮数字记忆，简短温和，别用水果词。",
+            "reference_text": "好，五轮数字记忆，简短温和，不用水果词。第一轮三个数字：2、7、4。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "数字别超过十，每轮三个，我慢慢记。",
+            "reference_text": "明白，数字在十以内，每轮三个。第一轮是2、7、4，你慢慢记。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是别用水果词，是别用动物词。",
+            "reference_text": "好，更正为不用动物词，水果词可以。还是五轮，每轮三个十以内数字。第一轮2、7、4继续。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你现在记得的禁用词是哪类？说对了再往下。",
+            "reference_text": "记得，现在禁用动物词，水果词可以用。五轮记忆继续，第一轮三个数字是2、7、4。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "我有点困了，最后用一句话把规则和当前进度简短说一下吧。",
+            "reference_text": "好。规则是五轮数字记忆，每轮三个十以内数字，禁用动物词；目前在第一轮，数字是2、7、4。"
+          }
+        ]
+      }
+    ]
+  }
+}

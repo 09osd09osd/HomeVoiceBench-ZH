@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/8fbfb3295ae5ef31b4cbb1d931862ea3.wav",
+  "sha256": "2d73ac9aba1ede502d43e6a1f338d0d0c900d9db4f9040899e5355c4a5af89b5",
+  "duration_seconds": 5.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "92797c36-f930-917f-b328-12e4c21a4b86",
+  "usage": {
+    "input_tokens": 247,
+    "output_tokens": 1184,
+    "total_tokens": 1431,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我打开客厅电视，音量调到80%。要是没成功或超时了，可以再试一次，成功后别重复操作。",
+  "spoken_text": "帮我打开客厅电视，音量调到百分之八十。要是没成功或超时了，可以再试一次，成功后别重复操作。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我打开客厅电视，音量调到80%。要是没成功或超时了，可以再试一次，成功后别重复操作。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我打开客厅电视，音量调到80%。要是没成功或超时了，可以再试一次，成功后别重复操作。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3e9763fa-aff9-9d5a-b171-0e0aa7cab6e0",
+    "usage": {
+      "prompt_tokens": 253,
+      "total_tokens": 306,
+      "completion_tokens": 53,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 216
+      },
+      "completion_tokens_details": {
+        "text_tokens": 53
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2d73ac9aba1ede502d43e6a1f338d0d0c900d9db4f9040899e5355c4a5af89b5"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "dbf6f743e9ac72e19b0c3f98c0821de5f0d4b87b5376673e4d10c99c508f2380",
+    "canonical_sha256": "2d73ac9aba1ede502d43e6a1f338d0d0c900d9db4f9040899e5355c4a5af89b5",
+    "pcm_sha256": "2c7314aa69c226ee33faf67596ed337d69d6bcd683412902853dcab6a3f2c988",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 142080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我打开客厅电视，音量调到百分之八十。要是没成功或超时了，可以再试一次，成功后别重复操作。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我打开客厅电视，音量调到百分之八十。要是没成功或超时了，可以再试一次，成功后别重复操作。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-8a0cf0e7-3f6e-9367-b2f4-4c90e5e9a252",
+      "usage": {
+        "prompt_tokens": 192,
+        "total_tokens": 244,
+        "completion_tokens": 52,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 155
+        },
+        "completion_tokens_details": {
+          "text_tokens": 52
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "dbf6f743e9ac72e19b0c3f98c0821de5f0d4b87b5376673e4d10c99c508f2380",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "dbf6f743e9ac72e19b0c3f98c0821de5f0d4b87b5376673e4d10c99c508f2380",
+        "canonical_audio_sha256": "2d73ac9aba1ede502d43e6a1f338d0d0c900d9db4f9040899e5355c4a5af89b5",
+        "pcm_sha256": "2c7314aa69c226ee33faf67596ed337d69d6bcd683412902853dcab6a3f2c988",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/be628e17c1efe44fb15d87ca5928d45c.wav",
+  "sha256": "6ea659798b69fe03fdd9ab8ebe588c36467fff394195f758d9e658f3c7b96555",
+  "duration_seconds": 12.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8a23ad4a-4785-9d15-8762-5a577ef917bd",
+  "usage": {
+    "input_tokens": 264,
+    "output_tokens": 2424,
+    "total_tokens": 2688,
+    "duration": 12
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "昨天我和弟弟因为他老不敲门就进我房间吵了一架，我吼了他，现在想跟他道歉，但也不想让他觉得我以后就完全不让家人进我房间了。你能帮我想几句能说出口的话吗？",
+  "spoken_text": "昨天我和弟弟因为他老不敲门就进我房间吵了一架，我吼了他，现在想跟他道歉，但也不想让他觉得我以后就完全不让家人进我房间了。你能帮我想几句能说出口的话吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "昨天我和弟弟因为他老不敲门就进我房间吵了一架，我吼了他，现在想跟他道歉，但也不想让他觉得我以后就完全不让家人进我房间了。你能帮我想几句能说出口的话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "昨天我和弟弟因为他老不敲门就进我房间吵了一架，我吼了他，现在想跟他道歉，但也不想让他觉得我以后就完全不让家人进我房间了。你能帮我想几句能说出口的话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f4d70e21-b4fd-9eb9-beeb-b2f95a61e2fe",
+    "usage": {
+      "prompt_tokens": 322,
+      "total_tokens": 395,
+      "completion_tokens": 73,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 86,
+        "text_tokens": 236
+      },
+      "completion_tokens_details": {
+        "text_tokens": 73
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6ea659798b69fe03fdd9ab8ebe588c36467fff394195f758d9e658f3c7b96555"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "83796c147d8ddb1e2baf0684fc65e0f981d959ce9e646f21b7f4420c1671eebc",
+    "canonical_sha256": "6ea659798b69fe03fdd9ab8ebe588c36467fff394195f758d9e658f3c7b96555",
+    "pcm_sha256": "90861093a9ed892d69ffa408f9cb745a061c2fd93e9757daee0abee084a78fe9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 290880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "昨天我和弟弟因为他老不敲门就进我房间吵了一架，我吼了他，现在想跟他道歉，但也不想让他觉得我以后就完全不让家人进我房间了。你能帮我想几句能说出口的话吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-fa97c6b5-ef26-9388-87be-89c105bf71a7",
+      "usage": {
+        "prompt_tokens": 238,
+        "total_tokens": 311,
+        "completion_tokens": 73,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 86,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 73
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "83796c147d8ddb1e2baf0684fc65e0f981d959ce9e646f21b7f4420c1671eebc",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "83796c147d8ddb1e2baf0684fc65e0f981d959ce9e646f21b7f4420c1671eebc",
+        "canonical_audio_sha256": "6ea659798b69fe03fdd9ab8ebe588c36467fff394195f758d9e658f3c7b96555",
+        "pcm_sha256": "90861093a9ed892d69ffa408f9cb745a061c2fd93e9757daee0abee084a78fe9",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/13a327bf561d0917d18c81c8802db3f6.wav",
+  "sha256": "93e3e68f9e8010381e5b136bfd922a846cdf6d5f81f342c9b730af077a4cfa62",
+  "duration_seconds": 5.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e9640dcc-9796-99eb-82ae-87d2907dc0d0",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 1032,
+    "total_tokens": 1224,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我上周做了个检查，说今天下午出结果，可现在都四点了还没电话，我坐立不安的。",
+  "spoken_text": "我上周做了个检查，说今天下午出结果，可现在都四点了还没电话，我坐立不安的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我上周做了个检查，说今天下午出结果。可现在都四点了还没电话，我坐立不安的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我上周做了个检查，说今天下午出结果。可现在都四点了还没电话，我坐立不安的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-480a9049-5ec0-999b-b948-1ab6fb69571e",
+    "usage": {
+      "prompt_tokens": 251,
+      "total_tokens": 302,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "93e3e68f9e8010381e5b136bfd922a846cdf6d5f81f342c9b730af077a4cfa62"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "dc0c397868aaa8f3ee35dd074d583d196d6da21630c3c33690ce633996ed59b0",
+    "canonical_sha256": "93e3e68f9e8010381e5b136bfd922a846cdf6d5f81f342c9b730af077a4cfa62",
+    "pcm_sha256": "9984ddd904f790ed19210fc4149ed0063c77a94bcfea3180296c4080278e3ebe",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 123840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我上周做了个检查，说今天下午出结果，可现在都四点了还没电话，我坐立不安的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-61face55-0026-9520-a7b7-7abf4a3dbb2e",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 218,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "dc0c397868aaa8f3ee35dd074d583d196d6da21630c3c33690ce633996ed59b0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "dc0c397868aaa8f3ee35dd074d583d196d6da21630c3c33690ce633996ed59b0",
+        "canonical_audio_sha256": "93e3e68f9e8010381e5b136bfd922a846cdf6d5f81f342c9b730af077a4cfa62",
+        "pcm_sha256": "9984ddd904f790ed19210fc4149ed0063c77a94bcfea3180296c4080278e3ebe",
+        "same_samples": true
+      }
+    }
+  ]
+}

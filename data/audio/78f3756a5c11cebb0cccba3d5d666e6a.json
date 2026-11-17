@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/78f3756a5c11cebb0cccba3d5d666e6a.wav",
+  "sha256": "94bcfcbaaa672ca4074ce8750b6124a1b98f88fba8854a947b9c602288543c75",
+  "duration_seconds": 1.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "72c1e5d9-964c-936b-a8fe-f2c43849bd7b",
+  "usage": {
+    "input_tokens": 169,
+    "output_tokens": 280,
+    "total_tokens": 449,
+    "duration": 1
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "再查一下厨房的照度。",
+  "spoken_text": "再查一下厨房的照度。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "再查一下厨房的照度。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "再查一下厨房的照度。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9a989ff6-9bf4-964b-bef8-87941ac2e309",
+    "usage": {
+      "prompt_tokens": 206,
+      "total_tokens": 240,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "94bcfcbaaa672ca4074ce8750b6124a1b98f88fba8854a947b9c602288543c75"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "61b7d6bb8dd02080cf529116f2272428d8478764b36a290415685f2f41d12c79",
+    "canonical_sha256": "94bcfcbaaa672ca4074ce8750b6124a1b98f88fba8854a947b9c602288543c75",
+    "pcm_sha256": "ba6a05e5fa1cd57dc8e5304100264ee7f9c3c1d56cca86a837614fa59c964d25",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 33600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "再查一下厨房的照度。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "再查一下厨房的照度。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9094c928-da3e-9a86-9fab-78ec52ded548",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 179,
+        "completion_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 34
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "61b7d6bb8dd02080cf529116f2272428d8478764b36a290415685f2f41d12c79",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "61b7d6bb8dd02080cf529116f2272428d8478764b36a290415685f2f41d12c79",
+        "canonical_audio_sha256": "94bcfcbaaa672ca4074ce8750b6124a1b98f88fba8854a947b9c602288543c75",
+        "pcm_sha256": "ba6a05e5fa1cd57dc8e5304100264ee7f9c3c1d56cca86a837614fa59c964d25",
+        "same_samples": true
+      }
+    }
+  ]
+}

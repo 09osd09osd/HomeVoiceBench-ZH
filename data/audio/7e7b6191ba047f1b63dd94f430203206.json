@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/7e7b6191ba047f1b63dd94f430203206.wav",
+  "sha256": "47d65b5f2dafecb03dca2441c5aae673dca2ea76d51e8f2765809339c2a1a759",
+  "duration_seconds": 6.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4a03e998-c02d-9a35-9ab0-bbdcc6c3536c",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 1208,
+    "total_tokens": 1402,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "有一张是在海边拍的，我穿着件红衣服，笑得特别傻，但那种开心现在想起来还挺真的。",
+  "spoken_text": "有一张是在海边拍的，我穿着件红衣服，笑得特别傻，但那种开心现在想起来还挺真的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "有一张是在海边拍的，我穿着件红衣服，笑得特别傻，但那种开心现在想起来还挺真的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "有一张是在海边拍的，我穿着件红衣服，笑得特别傻，但那种开心现在想起来还挺真的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e5ea327d-e0ea-90ec-938b-b6203a51950a",
+    "usage": {
+      "prompt_tokens": 257,
+      "total_tokens": 307,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "47d65b5f2dafecb03dca2441c5aae673dca2ea76d51e8f2765809339c2a1a759"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4991d2ac05fa140bfe29bf0740e694540fe67e58d11e5cb6b294c4f820886698",
+    "canonical_sha256": "47d65b5f2dafecb03dca2441c5aae673dca2ea76d51e8f2765809339c2a1a759",
+    "pcm_sha256": "ea13e71836a96b4c9cc3c13f57b607ae705a92a0cbfaef6e8302becc1f9f25c5",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 144960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "有一张是在海边拍的，我穿着件红衣服，笑得特别傻，但那种开心现在想起来还挺真的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-91362e9b-080b-909d-a9c2-92a3f37edd6a",
+      "usage": {
+        "prompt_tokens": 173,
+        "total_tokens": 223,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 129
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4991d2ac05fa140bfe29bf0740e694540fe67e58d11e5cb6b294c4f820886698",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4991d2ac05fa140bfe29bf0740e694540fe67e58d11e5cb6b294c4f820886698",
+        "canonical_audio_sha256": "47d65b5f2dafecb03dca2441c5aae673dca2ea76d51e8f2765809339c2a1a759",
+        "pcm_sha256": "ea13e71836a96b4c9cc3c13f57b607ae705a92a0cbfaef6e8302becc1f9f25c5",
+        "same_samples": true
+      }
+    }
+  ]
+}

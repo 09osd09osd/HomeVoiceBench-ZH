@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a4396e7f081035dc6176196f65594687.wav",
+  "sha256": "00e61fe502cd21eff200b7e3d4ae214f91ea4c9766d8f90733e8d52c66844390",
+  "duration_seconds": 6.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3eb09e44-8ab8-98e2-8798-e3433a550cb7",
+  "usage": {
+    "input_tokens": 215,
+    "output_tokens": 1312,
+    "total_tokens": 1527,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天坐公交不小心坐过站了，多走了两站路才回来。我有点累，你简单陪我说两句。",
+  "spoken_text": "今天坐公交不小心坐过站了，多走了两站路才回来。我有点累，你简单陪我说两句。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天坐公交不小心坐过站了，多走了两站路才回来。我有点累，你简单陪我说两句。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天坐公交不小心坐过站了，多走了两站路才回来。我有点累，你简单陪我说两句。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ed370317-1b55-9288-85d0-9253aa668e39",
+    "usage": {
+      "prompt_tokens": 260,
+      "total_tokens": 313,
+      "completion_tokens": 53,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 216
+      },
+      "completion_tokens_details": {
+        "text_tokens": 53
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "00e61fe502cd21eff200b7e3d4ae214f91ea4c9766d8f90733e8d52c66844390"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "368197c7aaccdc13eba2f61dec929980d4eab3246eb7e955e73175c9d3d477c9",
+    "canonical_sha256": "00e61fe502cd21eff200b7e3d4ae214f91ea4c9766d8f90733e8d52c66844390",
+    "pcm_sha256": "f60670d900604841f40782e28779b45b19c2a0928b100b1971ac9e66fc02ea98",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 157440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天坐公交不小心坐过站了，多走了两站路才回来。我有点累，你简单陪我说两句。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-21622480-d544-96ca-b4c4-5260a020931d",
+      "usage": {
+        "prompt_tokens": 176,
+        "total_tokens": 229,
+        "completion_tokens": 53,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 132
+        },
+        "completion_tokens_details": {
+          "text_tokens": 53
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "368197c7aaccdc13eba2f61dec929980d4eab3246eb7e955e73175c9d3d477c9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "368197c7aaccdc13eba2f61dec929980d4eab3246eb7e955e73175c9d3d477c9",
+        "canonical_audio_sha256": "00e61fe502cd21eff200b7e3d4ae214f91ea4c9766d8f90733e8d52c66844390",
+        "pcm_sha256": "f60670d900604841f40782e28779b45b19c2a0928b100b1971ac9e66fc02ea98",
+        "same_samples": true
+      }
+    }
+  ]
+}

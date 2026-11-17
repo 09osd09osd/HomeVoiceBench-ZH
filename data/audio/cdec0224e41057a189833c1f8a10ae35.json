@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/cdec0224e41057a189833c1f8a10ae35.wav",
+  "sha256": "c3512717282b800ba1369f54ada7178756b8aabc6fb33f5984fb03460bd01b85",
+  "duration_seconds": 3.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "90fedb1b-fa38-9e17-bcdb-d29326074d7c",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 752,
+    "total_tokens": 940,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我早上起来总忘记喝水，你能在每天起床后提醒我一下吗？",
+  "spoken_text": "我早上起来总忘记喝水，你能在每天起床后提醒我一下吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我早上起来总忘记喝水，你能在每天起床后提醒我一下吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我早上起来总忘记喝水，你能在每天起床后提醒我一下吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b8955863-94e3-9701-9f1c-44e3d8170c5b",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c3512717282b800ba1369f54ada7178756b8aabc6fb33f5984fb03460bd01b85"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cb129f41d5395ed59ce12ba26bb3b4fd8280ce23c18c25069cf6c25e7a8465c3",
+    "canonical_sha256": "c3512717282b800ba1369f54ada7178756b8aabc6fb33f5984fb03460bd01b85",
+    "pcm_sha256": "f322e2824de91ea5dddbb8a65cac2bf2c7f02340cf68bbd252ad84a160bf8b9a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 90240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我早上起来总忘记喝水，你能在每天起床后提醒我一下吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5f796211-43c3-9bfa-a325-4cbcd91d7b2f",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cb129f41d5395ed59ce12ba26bb3b4fd8280ce23c18c25069cf6c25e7a8465c3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cb129f41d5395ed59ce12ba26bb3b4fd8280ce23c18c25069cf6c25e7a8465c3",
+        "canonical_audio_sha256": "c3512717282b800ba1369f54ada7178756b8aabc6fb33f5984fb03460bd01b85",
+        "pcm_sha256": "f322e2824de91ea5dddbb8a65cac2bf2c7f02340cf68bbd252ad84a160bf8b9a",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/8b1f19b287e8927b3fdbf8daeed61e6f.wav",
+  "sha256": "5b009650455d47c0efcf76e742365a43931695dfda2521b623ca03ce692535bf",
+  "duration_seconds": 4.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ae0a8423-7dad-907c-81ff-ddacc8c24342",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 960,
+    "total_tokens": 1145,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我一直想学吉他，可每天最多只能挤出二十分钟，你觉得这种条件还能学吗？",
+  "spoken_text": "我一直想学吉他，可每天最多只能挤出二十分钟，你觉得这种条件还能学吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我一直想学吉他，可每天最多只能挤出二十分钟。你觉得这种条件还能学吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我一直想学吉他，可每天最多只能挤出二十分钟。你觉得这种条件还能学吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-49d36e4b-dbfc-97a5-b40f-020ef9fbe1ca",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 285,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5b009650455d47c0efcf76e742365a43931695dfda2521b623ca03ce692535bf"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "256aa49823bc0850e5037f356e5b523b58660031a0dcb338f0d1bc55bd15d506",
+    "canonical_sha256": "5b009650455d47c0efcf76e742365a43931695dfda2521b623ca03ce692535bf",
+    "pcm_sha256": "635f4ece6a3fa30719e96f5ff075b05c94fe37bca32d9ad7baa13575b4df1576",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 115200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我一直想学吉他，可每天最多只能挤出二十分钟，你觉得这种条件还能学吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我一直想学吉他，可每天最多只能挤出二十分钟，你觉得这种条件还能学吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4a6ed8ea-79a8-9fb2-bb23-4296f455d0ac",
+      "usage": {
+        "prompt_tokens": 178,
+        "total_tokens": 224,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 148
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "256aa49823bc0850e5037f356e5b523b58660031a0dcb338f0d1bc55bd15d506",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "256aa49823bc0850e5037f356e5b523b58660031a0dcb338f0d1bc55bd15d506",
+        "canonical_audio_sha256": "5b009650455d47c0efcf76e742365a43931695dfda2521b623ca03ce692535bf",
+        "pcm_sha256": "635f4ece6a3fa30719e96f5ff075b05c94fe37bca32d9ad7baa13575b4df1576",
+        "same_samples": true
+      }
+    }
+  ]
+}

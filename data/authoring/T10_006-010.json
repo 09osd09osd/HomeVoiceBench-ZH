@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "6433a7e88f6c9164c8c9ca0e9192d4fbb51bebfb00de770252a4ec765910e831",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-b38fcccc-2231-9959-bec1-474ade55b963",
+  "usage": {
+    "prompt_tokens": 12875,
+    "total_tokens": 13842,
+    "completion_tokens": 967,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 12875
+    },
+    "completion_tokens_details": {
+      "text_tokens": 967
+    }
+  },
+  "review_request_id": "chatcmpl-c397ac7f-4eef-9b6c-bcae-81edba543ec8",
+  "review_usage": {
+    "prompt_tokens": 13464,
+    "total_tokens": 13550,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13464
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T10_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T10_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T10_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T10_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T10_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T10_006",
+        "title": "书房风扇开二档",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房风扇打开，风速调到2档。",
+            "reference_text": "好的，书房风扇已经打开，风速调到2档了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T10_007",
+        "title": "书房风扇二档改三档",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房风扇打开，风速调到2档。",
+            "reference_text": "好的，书房风扇已经打开，风速调到2档了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个风扇的风速改成3档，其他设置别动。",
+            "reference_text": "书房风扇风速已经调到3档，其他设置没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T10_008",
+        "title": "书房风扇调档后核对状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房风扇打开，风速调到2档。",
+            "reference_text": "好的，书房风扇已经打开，风速调到2档了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个风扇的风速改成3档，其他设置别动。",
+            "reference_text": "书房风扇风速已经调到3档，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下书房风扇现在的风速和开关，不要调整。",
+            "reference_text": "书房风扇现在是开着的，风速显示为3档。"
+          }
+        ]
+      },
+      {
+        "case_id": "T10_009",
+        "title": "书房风扇调档核对后关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房风扇打开，风速调到2档。",
+            "reference_text": "好的，书房风扇已经打开，风速调到2档了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个风扇的风速改成3档，其他设置别动。",
+            "reference_text": "书房风扇风速已经调到3档，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下书房风扇现在的风速和开关，不要调整。",
+            "reference_text": "书房风扇现在是开着的，风速显示为3档。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把书房风扇关掉，风速设置保留。",
+            "reference_text": "书房风扇已经关掉了，风速还保留在3档。"
+          }
+        ]
+      },
+      {
+        "case_id": "T10_010",
+        "title": "书房风扇调档核对关闭再查",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房风扇打开，风速调到2档。",
+            "reference_text": "好的，书房风扇已经打开，风速调到2档了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个风扇的风速改成3档，其他设置别动。",
+            "reference_text": "书房风扇风速已经调到3档，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下书房风扇现在的风速和开关，不要调整。",
+            "reference_text": "书房风扇现在是开着的，风速显示为3档。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把书房风扇关掉，风速设置保留。",
+            "reference_text": "书房风扇已经关掉了，风速还保留在3档。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下书房风扇的开关，其他设备不要改。",
+            "reference_text": "书房风扇现在处于关闭状态，其他设备没有调整。"
+          }
+        ]
+      }
+    ]
+  }
+}

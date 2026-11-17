@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/35db08009c3830cbd04dbdd1acc23f1b.wav",
+  "sha256": "4e6f23283e0af1263f282af00ac747ccfda0404652f78add0f1ecdacd156cee9",
+  "duration_seconds": 5.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "079888df-a659-901f-8982-c2ace7fa4a9e",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 1176,
+    "total_tokens": 1368,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今晚想给女儿讲一个小熊和月亮灯的故事。要温馨一点，情节简单，适合睡前听。",
+  "spoken_text": "今晚想给女儿讲一个小熊和月亮灯的故事。要温馨一点，情节简单，适合睡前听。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今晚想给女儿讲一个小熊和月亮灯的故事，要温馨一点，情节简单，适合睡前听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今晚想给女儿讲一个小熊和月亮灯的故事，要温馨一点，情节简单，适合睡前听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-01c4a93a-6089-9f51-b2b0-5cfcb72e1fe9",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 298,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4e6f23283e0af1263f282af00ac747ccfda0404652f78add0f1ecdacd156cee9"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "11faf254c59184aec9484aa22c6e68bfb0f02fd0b7dce46b7bba92dcf7d06804",
+    "canonical_sha256": "4e6f23283e0af1263f282af00ac747ccfda0404652f78add0f1ecdacd156cee9",
+    "pcm_sha256": "42e99ad2112be397ef6f84ec347618c0627e37c75edee9836e10fb7dfd845e6c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 141120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今晚想给女儿讲一个小熊和月亮灯的故事，要温馨一点，情节简单适合睡前听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "今晚想给女儿讲一个小熊和月亮灯的故事，要温馨一点，情节简单适合睡前听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1d115979-b1ec-93ec-a7e0-29aed2ad97ed",
+      "usage": {
+        "prompt_tokens": 188,
+        "total_tokens": 236,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 151
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "11faf254c59184aec9484aa22c6e68bfb0f02fd0b7dce46b7bba92dcf7d06804",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "11faf254c59184aec9484aa22c6e68bfb0f02fd0b7dce46b7bba92dcf7d06804",
+        "canonical_audio_sha256": "4e6f23283e0af1263f282af00ac747ccfda0404652f78add0f1ecdacd156cee9",
+        "pcm_sha256": "42e99ad2112be397ef6f84ec347618c0627e37c75edee9836e10fb7dfd845e6c",
+        "same_samples": true
+      }
+    }
+  ]
+}

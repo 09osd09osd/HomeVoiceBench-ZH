@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/c48444d5afa85df656d149cc3ff94f19.wav",
+  "sha256": "80ddce3998edf4edd1789a7c0c93cff09d8e2219b324825f889cfff1c4070d05",
+  "duration_seconds": 5.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8ca8e605-399c-9a09-8384-74669ba5e0a6",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 1048,
+    "total_tokens": 1249,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说错了，不是5个词，是6个词，你再加一个“雨伞”。",
+  "spoken_text": "我刚才说错了，不是五个词，是六个词，你再加一个“雨伞”。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说错了，不是五个词，是六个词，你再加一个雨伞。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说错了，不是五个词，是六个词，你再加一个雨伞。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ade576f2-3db8-9406-86e2-55c54a0bdf8a",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 291,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "80ddce3998edf4edd1789a7c0c93cff09d8e2219b324825f889cfff1c4070d05"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "fe98e868214e0be941d0b4cc56313b7421fb165ad1eec5c910e2c9a8c393e5a5",
+    "canonical_sha256": "80ddce3998edf4edd1789a7c0c93cff09d8e2219b324825f889cfff1c4070d05",
+    "pcm_sha256": "4befd386fd6f1f0f2b94c7fda446cd9b389de221af678339d5746d6dacb1f64c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 125760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说错了，不是五个词，是六个词，你再加一个雨伞。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我刚才说错了，不是五个词，是六个词，你再加一个雨伞。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-80fb6a1e-c56b-9a7d-949f-c051efb1d7d7",
+      "usage": {
+        "prompt_tokens": 186,
+        "total_tokens": 230,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "fe98e868214e0be941d0b4cc56313b7421fb165ad1eec5c910e2c9a8c393e5a5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "fe98e868214e0be941d0b4cc56313b7421fb165ad1eec5c910e2c9a8c393e5a5",
+        "canonical_audio_sha256": "80ddce3998edf4edd1789a7c0c93cff09d8e2219b324825f889cfff1c4070d05",
+        "pcm_sha256": "4befd386fd6f1f0f2b94c7fda446cd9b389de221af678339d5746d6dacb1f64c",
+        "same_samples": true
+      }
+    }
+  ]
+}

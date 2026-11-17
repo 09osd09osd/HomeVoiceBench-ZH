@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/8df1761bb3f858843bcf12f4e16eec1d.wav",
+  "sha256": "17c4b6f0ce3ffd31f4049cf7fa8f1c284e49e9ea7eaede79b681fcf32c1a3fe9",
+  "duration_seconds": 4.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dee2f205-9a56-91f5-91e3-3d93a2b9ab26",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 896,
+    "total_tokens": 1072,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "小狐狸住在树洞里，毯子是奶奶送的，这个细节加上。",
+  "spoken_text": "小狐狸住在树洞里，毯子是奶奶送的，这个细节加上。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "小狐狸住在树洞里，毯子是奶奶送的。这个细节加上。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "小狐狸住在树洞里，毯子是奶奶送的。这个细节加上。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6c90d3c0-2119-9b2b-9ea2-25acf23acc42",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "17c4b6f0ce3ffd31f4049cf7fa8f1c284e49e9ea7eaede79b681fcf32c1a3fe9"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7914337b276f0bbb54c6b4ef53ed9355c906893e72b08054fae7c1bff09a8c1d",
+    "canonical_sha256": "17c4b6f0ce3ffd31f4049cf7fa8f1c284e49e9ea7eaede79b681fcf32c1a3fe9",
+    "pcm_sha256": "99eab29a8a1ebd1f5555600fd842695555c8a67f205744405e6b22d12d81e435",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 107520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "小狐狸住在树洞里，毯子是奶奶送的，这个细节加上。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "小狐狸住在树洞里，毯子是奶奶送的，这个细节加上。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1e86a685-fb7a-9133-86ae-64a79bf55dbd",
+      "usage": {
+        "prompt_tokens": 173,
+        "total_tokens": 214,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7914337b276f0bbb54c6b4ef53ed9355c906893e72b08054fae7c1bff09a8c1d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7914337b276f0bbb54c6b4ef53ed9355c906893e72b08054fae7c1bff09a8c1d",
+        "canonical_audio_sha256": "17c4b6f0ce3ffd31f4049cf7fa8f1c284e49e9ea7eaede79b681fcf32c1a3fe9",
+        "pcm_sha256": "99eab29a8a1ebd1f5555600fd842695555c8a67f205744405e6b22d12d81e435",
+        "same_samples": true
+      }
+    }
+  ]
+}

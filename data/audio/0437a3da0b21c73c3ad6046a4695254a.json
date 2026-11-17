@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/0437a3da0b21c73c3ad6046a4695254a.wav",
+  "sha256": "c924fcae4be761c8bc59294cf40a1d7c36a5c9cf916db4743cadce9bcad40755",
+  "duration_seconds": 2.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8648d004-e38f-960a-af7a-817de3bb26d1",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 408,
+    "total_tokens": 592,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我陪作业到几点吗？",
+  "spoken_text": "你还记得我陪作业到几点吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我陪作业到几点吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我陪作业到几点吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-61822207-906a-9997-9367-18545a2672f7",
+    "usage": {
+      "prompt_tokens": 214,
+      "total_tokens": 249,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c924fcae4be761c8bc59294cf40a1d7c36a5c9cf916db4743cadce9bcad40755"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cd035de479a00834e461079064e36832941664a78bc315b255db01b089107a1e",
+    "canonical_sha256": "c924fcae4be761c8bc59294cf40a1d7c36a5c9cf916db4743cadce9bcad40755",
+    "pcm_sha256": "f39a9c840ffd0457838ee7ad26371090660cbfd0fea3b23a7e4c2a79219de9d7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 48960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我陪作业到几点吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5d207eff-959e-9827-99e4-f7a9b7ea9398",
+      "usage": {
+        "prompt_tokens": 130,
+        "total_tokens": 165,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 114
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cd035de479a00834e461079064e36832941664a78bc315b255db01b089107a1e",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cd035de479a00834e461079064e36832941664a78bc315b255db01b089107a1e",
+        "canonical_audio_sha256": "c924fcae4be761c8bc59294cf40a1d7c36a5c9cf916db4743cadce9bcad40755",
+        "pcm_sha256": "f39a9c840ffd0457838ee7ad26371090660cbfd0fea3b23a7e4c2a79219de9d7",
+        "same_samples": true
+      }
+    }
+  ]
+}

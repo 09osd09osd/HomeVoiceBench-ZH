@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/de69dd7d39f1a903745230c89236c000.wav",
+  "sha256": "915c08b3d65e03415709a27fada6870c71a069178ff1a62c659c9218f2f204da",
+  "duration_seconds": 5.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0d858db9-2383-9913-a06b-9ed687efeb43",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 1080,
+    "total_tokens": 1277,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "家里洗衣服、晾衣服和叠衣服总是堆在一起，我想跟家人分一下工，你帮我起个头。",
+  "spoken_text": "家里洗衣服、晾衣服和叠衣服总是堆在一起，我想跟家人分一下工，你帮我起个头。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "家里洗衣服、晾衣服和叠衣服总是堆在一起，我想跟家人分一下工。你帮我起个头。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "家里洗衣服、晾衣服和叠衣服总是堆在一起，我想跟家人分一下工。你帮我起个头。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-676c965e-9217-9e4b-91c7-12c2e1a86254",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 300,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "915c08b3d65e03415709a27fada6870c71a069178ff1a62c659c9218f2f204da"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "dfa7453272e44ce5d88d3aef008241e285b67dea498e73dd8fc26e19bd5d20e5",
+    "canonical_sha256": "915c08b3d65e03415709a27fada6870c71a069178ff1a62c659c9218f2f204da",
+    "pcm_sha256": "40bfbd3afd61e6658d7fdfa14fd8b89957a72487dcda11330a7f362c9a887820",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 129600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "家里洗衣服、晾衣服和叠衣服总是堆在一起，我想跟家人分一下工，你帮我起个头。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4f3fe251-de59-9cdf-ab73-bc34ca1861a5",
+      "usage": {
+        "prompt_tokens": 166,
+        "total_tokens": 216,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 129
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "dfa7453272e44ce5d88d3aef008241e285b67dea498e73dd8fc26e19bd5d20e5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "dfa7453272e44ce5d88d3aef008241e285b67dea498e73dd8fc26e19bd5d20e5",
+        "canonical_audio_sha256": "915c08b3d65e03415709a27fada6870c71a069178ff1a62c659c9218f2f204da",
+        "pcm_sha256": "40bfbd3afd61e6658d7fdfa14fd8b89957a72487dcda11330a7f362c9a887820",
+        "same_samples": true
+      }
+    }
+  ]
+}

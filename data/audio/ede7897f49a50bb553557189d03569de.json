@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ede7897f49a50bb553557189d03569de.wav",
+  "sha256": "122d1f904a906962ad8150c81421602519ed3c0a18d985b2d568542723e0a2ec",
+  "duration_seconds": 4.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b3a626f1-da72-94a7-ad97-3dbcedd3a623",
+  "usage": {
+    "input_tokens": 174,
+    "output_tokens": 800,
+    "total_tokens": 974,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我周二和周四肯定赶不回来，其他三天可以我来做饭。",
+  "spoken_text": "我周二和周四肯定赶不回来，其他三天可以我来做饭。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我周二和周四肯定赶不回来，其他三天可以我来做饭。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我周二和周四肯定赶不回来，其他三天可以我来做饭。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-883c8681-2414-985e-9248-b4e879419104",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "122d1f904a906962ad8150c81421602519ed3c0a18d985b2d568542723e0a2ec"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9ed9d9d1a620f64ee7ba036898d4ca322e233472b8acd1049db0495fb37d1a4a",
+    "canonical_sha256": "122d1f904a906962ad8150c81421602519ed3c0a18d985b2d568542723e0a2ec",
+    "pcm_sha256": "d85cec5f6a1e8b5c1ac2678fff6b5913482d9c2203a1b2099827e57c3a747c46",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 96000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我周二和周四肯定赶不回来，其他三天可以我来做饭。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-aa449bdc-eaad-9595-a3dc-5672ed7e1686",
+      "usage": {
+        "prompt_tokens": 150,
+        "total_tokens": 191,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9ed9d9d1a620f64ee7ba036898d4ca322e233472b8acd1049db0495fb37d1a4a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9ed9d9d1a620f64ee7ba036898d4ca322e233472b8acd1049db0495fb37d1a4a",
+        "canonical_audio_sha256": "122d1f904a906962ad8150c81421602519ed3c0a18d985b2d568542723e0a2ec",
+        "pcm_sha256": "d85cec5f6a1e8b5c1ac2678fff6b5913482d9c2203a1b2099827e57c3a747c46",
+        "same_samples": true
+      }
+    }
+  ]
+}

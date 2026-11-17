@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "df19a53fcda67bcae31c25456466fe7cd56390965bd40828db3ed2b15937dec7",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-27e7c4b8-b8ca-9dc8-9fce-a4975876e960",
+  "usage": {
+    "prompt_tokens": 1660,
+    "total_tokens": 2862,
+    "completion_tokens": 1202,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1660
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1202
+    }
+  },
+  "review_request_id": "chatcmpl-a1cbbb87-80aa-9b4c-b957-d8590ec586a1",
+  "review_usage": {
+    "prompt_tokens": 2485,
+    "total_tokens": 2571,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2485
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C14_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C14_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C14_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C14_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C14_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C14_016",
+        "title": "小兔邮差送生日邀请",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你当森林里的小兔邮差，我是小松鼠，明天我过生日，你帮我给三个好朋友送邀请，路不远但别跑太快。",
+            "reference_text": "好，我是小兔邮差。你明天过生日，我会把邀请送给三个好朋友，路上稳稳走，不跑太快。你想先送哪一家？"
+          }
+        ]
+      },
+      {
+        "case_id": "C14_017",
+        "title": "飞船厨师改口味",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你扮演太空飞船上的厨师，我是船长，今晚想让你做一顿庆祝晚餐，先说说你准备做啥。",
+            "reference_text": "好的船长，我是飞船厨师。今晚庆祝晚餐我打算做热汤、软面包和一份水果甜点，您看合不合胃口？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "船上有人不吃辣，所有菜都别放辣椒，口味清淡一点。",
+            "reference_text": "明白，全部不放辣椒，口味清淡。热汤、软面包和水果甜点都按这个来。"
+          }
+        ]
+      },
+      {
+        "case_id": "C14_018",
+        "title": "魔法图书馆员换书",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你当魔法图书馆的管理员，我是来借书的小学徒，想找一本会发光的睡前故事书。",
+            "reference_text": "欢迎你，小学徒。我是魔法图书馆管理员。会发光的睡前故事书在月光书架那边，我带你去找。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我只有十分钟，别推荐太厚的，最好一页一个小故事。",
+            "reference_text": "明白，时间只有十分钟，要薄一点、一页一个小故事的发光书。我去月光书架挑一本合适的。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是十分钟，是五分钟，得再快一点。",
+            "reference_text": "好的，改成五分钟，我加快速度，只拿最薄的那本一页一个小故事的发光书。"
+          }
+        ]
+      },
+      {
+        "case_id": "C14_019",
+        "title": "骑士护送小王子回城堡",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你扮演忠诚的骑士，我是小王子，我们要在天黑前回到城堡，你带我走安全的小路。",
+            "reference_text": "遵命，小王子。我是您的骑士，会带您走安全的小路，争取天黑前回到城堡。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "路上别经过闹市，我带着一只胆小的小狗，怕人多。",
+            "reference_text": "明白，避开闹市，照顾胆小的小狗，我们走安静的安全小路。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是小狗，是小猫，它更怕吵。",
+            "reference_text": "记住了，是胆小的小猫，更怕吵。我们继续避开闹市，走安静的小路。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我带着什么动物、要避开哪里吗？",
+            "reference_text": "记得，您带着一只胆小的小猫，我们要避开闹市，走安静的安全小路回城堡。"
+          }
+        ]
+      },
+      {
+        "case_id": "C14_020",
+        "title": "海底向导找珊瑚",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你当海底向导，我是潜水员，想找一片红色珊瑚，别去太深的地方。",
+            "reference_text": "好的，我是海底向导。我们去找红色珊瑚，避开太深的地方，在浅一些的海域慢慢找。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我背的氧气只够半小时，路线要短，别绕远。",
+            "reference_text": "明白，氧气只够半小时，路线要短，不绕远，我们直奔浅海的红色珊瑚。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是红色珊瑚，是橙色珊瑚，其他不变。",
+            "reference_text": "好的，更正为橙色珊瑚，其他不变：不去太深的地方，氧气只够半小时，路线要短。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你再确认一下，我们要找什么颜色、氧气够多久？",
+            "reference_text": "确认：我们要找橙色珊瑚，您的氧气只够半小时，路线要短，不去太深的地方。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好，用一句话收尾，告诉我接下来往哪游。",
+            "reference_text": "接下来往左前方浅海游，保持短路线，去找橙色珊瑚。"
+          }
+        ]
+      }
+    ]
+  }
+}

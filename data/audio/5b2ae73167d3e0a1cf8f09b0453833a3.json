@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/5b2ae73167d3e0a1cf8f09b0453833a3.wav",
+  "sha256": "16ac1d425aa5a7b47f0eb1b9b295c38d94c6cb53d11c1b5b8cd8648096d44b3f",
+  "duration_seconds": 7.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "55df1fa1-b5d0-99e3-84f2-c22717b8c2dd",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 1560,
+    "total_tokens": 1755,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我老伴去医院拿检查报告，说好十点回来，现在都快十一点了还没进门，我坐也不是站也不是。",
+  "spoken_text": "我老伴去医院拿检查报告，说好十点回来，现在都快十一点了还没进门，我坐也不是站也不是。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我老伴儿去医院拿检查报告，说好十点回来，现在都快十一点了还没进门，我坐也不是站也不是。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我老伴儿去医院拿检查报告，说好十点回来，现在都快十一点了还没进门，我坐也不是站也不是。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-941cc6b6-da3a-9347-a810-a25fcf239d5d",
+    "usage": {
+      "prompt_tokens": 265,
+      "total_tokens": 317,
+      "completion_tokens": 52,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 52
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "16ac1d425aa5a7b47f0eb1b9b295c38d94c6cb53d11c1b5b8cd8648096d44b3f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "790bff51f1176fba63e9923ea27682202938627c505c4b892c377553473a7a85",
+    "canonical_sha256": "16ac1d425aa5a7b47f0eb1b9b295c38d94c6cb53d11c1b5b8cd8648096d44b3f",
+    "pcm_sha256": "919c6f4375b40a2a3530df51f337804cf43a2f6d59fcf6f35902986461249942",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 187200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我老伴儿去医院拿检查报告，说好十点回来，现在都快十一点了还没进门，我坐也不是站也不是。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-684bc8f1-57eb-94cf-ab3a-96e62450d6b9",
+      "usage": {
+        "prompt_tokens": 181,
+        "total_tokens": 233,
+        "completion_tokens": 52,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 52
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "790bff51f1176fba63e9923ea27682202938627c505c4b892c377553473a7a85",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "790bff51f1176fba63e9923ea27682202938627c505c4b892c377553473a7a85",
+        "canonical_audio_sha256": "16ac1d425aa5a7b47f0eb1b9b295c38d94c6cb53d11c1b5b8cd8648096d44b3f",
+        "pcm_sha256": "919c6f4375b40a2a3530df51f337804cf43a2f6d59fcf6f35902986461249942",
+        "same_samples": true
+      }
+    }
+  ]
+}

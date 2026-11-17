@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "a8abc6cc2f3e378b703482a8c9f70978e5d541248af121e6794e375368008f44",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-05fa997d-15b7-919c-b64d-1efe464f2191",
+  "usage": {
+    "prompt_tokens": 2573,
+    "total_tokens": 3626,
+    "completion_tokens": 1053,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 2573
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1053
+    }
+  },
+  "review_request_id": "chatcmpl-cdce26e4-8d3c-9328-b758-c589a63abe7e",
+  "review_usage": {
+    "prompt_tokens": 3248,
+    "total_tokens": 3334,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 3248
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T28_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T28_001",
+        "title": "单轮搜索不存在音乐并如实告知",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就播放，没有就直接告诉我。",
+            "reference_text": "我搜了一下《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_002",
+        "title": "先搜无结果再搜另一首并禁止播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就播放，没有就直接告诉我。",
+            "reference_text": "我搜了一下《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《雨后散步》，先不要播放。",
+            "reference_text": "好的，我搜索到了《雨后散步》这首音乐，但按你说的先不播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_003",
+        "title": "搜索两首后询问已找到内容的类型和长度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就播放，没有就直接告诉我。",
+            "reference_text": "我搜了一下《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《雨后散步》，先不要播放。",
+            "reference_text": "好的，我搜索到了《雨后散步》这首音乐，但按你说的先不播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "告诉我刚才找到的内容类型和长度。",
+            "reference_text": "刚才找到的《雨后散步》是音乐类型，长度是180秒，也就是3分钟。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_004",
+        "title": "搜索两首并询问类型长度后明确不播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就播放，没有就直接告诉我。",
+            "reference_text": "我搜了一下《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《雨后散步》，先不要播放。",
+            "reference_text": "好的，我搜索到了《雨后散步》这首音乐，但按你说的先不播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "告诉我刚才找到的内容类型和长度。",
+            "reference_text": "刚才找到的《雨后散步》是音乐类型，长度是180秒，也就是3分钟。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "先别放任何内容。",
+            "reference_text": "好的，我不会播放任何内容，请放心。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_005",
+        "title": "搜索两首并确认未开始播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有就播放，没有就直接告诉我。",
+            "reference_text": "我搜了一下《不存在的蓝色月球》，没有找到这段音乐，所以没有播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《雨后散步》，先不要播放。",
+            "reference_text": "好的，我搜索到了《雨后散步》这首音乐，但按你说的先不播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "告诉我刚才找到的内容类型和长度。",
+            "reference_text": "刚才找到的《雨后散步》是音乐类型，长度是180秒，也就是3分钟。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "先别放任何内容。",
+            "reference_text": "好的，我不会播放任何内容，请放心。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认刚才有没有开始播放，别编造播放成功。",
+            "reference_text": "我确认一下，刚才没有开始播放任何内容，也没有播放成功。"
+          }
+        ]
+      }
+    ]
+  }
+}

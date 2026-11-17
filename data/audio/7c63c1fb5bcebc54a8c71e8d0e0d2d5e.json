@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/7c63c1fb5bcebc54a8c71e8d0e0d2d5e.wav",
+  "sha256": "71460a24c36b33c3d98c5e7b7e0bbb8ff5d3784f7cac71e68388ee10aca9166f",
+  "duration_seconds": 3.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "63bbb989-f35a-9e97-8874-f61022b1d052",
+  "usage": {
+    "input_tokens": 171,
+    "output_tokens": 656,
+    "total_tokens": 827,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "确认刚才有没有开始播放，别编造播放成功。",
+  "spoken_text": "确认刚才有没有开始播放，别编造播放成功。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "确认刚才有没有开始播放，别编造播放成功。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "确认刚才有没有开始播放，别编造播放成功。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e60e1177-6cc2-9b2d-ad73-8d2ad3677a78",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 262,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "71460a24c36b33c3d98c5e7b7e0bbb8ff5d3784f7cac71e68388ee10aca9166f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "69d870c594e6b24cbf6fecd3e3aad226d2ca477936b10b620aca2999fe491cfd",
+    "canonical_sha256": "71460a24c36b33c3d98c5e7b7e0bbb8ff5d3784f7cac71e68388ee10aca9166f",
+    "pcm_sha256": "2c5398f9efb20a2c9be0119dd47a228de966b49390bbf1b22d84a1e4507eed27",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 78720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "确认刚才有没有开始播放？别编造播放成功。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "确认刚才有没有开始播放？别编造播放成功。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d8eef0f0-f4dc-980e-af76-8a8e90e28cdd",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 201,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "69d870c594e6b24cbf6fecd3e3aad226d2ca477936b10b620aca2999fe491cfd",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "69d870c594e6b24cbf6fecd3e3aad226d2ca477936b10b620aca2999fe491cfd",
+        "canonical_audio_sha256": "71460a24c36b33c3d98c5e7b7e0bbb8ff5d3784f7cac71e68388ee10aca9166f",
+        "pcm_sha256": "2c5398f9efb20a2c9be0119dd47a228de966b49390bbf1b22d84a1e4507eed27",
+        "same_samples": true
+      }
+    }
+  ]
+}

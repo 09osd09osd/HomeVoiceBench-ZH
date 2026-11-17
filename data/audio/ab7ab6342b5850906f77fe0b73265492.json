@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/ab7ab6342b5850906f77fe0b73265492.wav",
+  "sha256": "7582ef6a92ee5c23156b395ec1b071eab44fdeab6d597f7997a229c84112f6a7",
+  "duration_seconds": 6.36,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "56eb4e74-5a83-9f7d-b800-8e9ae7182658",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 1272,
+    "total_tokens": 1462,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "最好能有个室内备选，万一下雨也不至于白跑，预算还是两百块，人数和时间都不变。",
+  "spoken_text": "最好能有个室内备选，万一下雨也不至于白跑，预算还是两百块，人数和时间都不变。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "最好能有个室内备选，万一下雨也不至于白跑。预算还是200块，人数和时间都不变。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "最好能有个室内备选，万一下雨也不至于白跑。预算还是200块，人数和时间都不变。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3e949a1e-7deb-9191-bd89-023b5a23d368",
+    "usage": {
+      "prompt_tokens": 257,
+      "total_tokens": 309,
+      "completion_tokens": 52,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 52
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7582ef6a92ee5c23156b395ec1b071eab44fdeab6d597f7997a229c84112f6a7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a12a6809ee97d184675672abd0d12a9c8914d1cda71d7e1c789dea2a30965e65",
+    "canonical_sha256": "7582ef6a92ee5c23156b395ec1b071eab44fdeab6d597f7997a229c84112f6a7",
+    "pcm_sha256": "f119b4393617d8a6de8a66c9a0edc4c88433f11f7ddc0a812983445c2c3c12bf",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 152640,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "最好能有个室内备选，万一下雨也不至于白跑。预算还是两百块，人数和时间都不变。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "最好能有个室内备选，万一下雨也不至于白跑。预算还是两百块，人数和时间都不变。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1c9eaace-cf99-9280-838e-c60d84d3f427",
+      "usage": {
+        "prompt_tokens": 196,
+        "total_tokens": 246,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a12a6809ee97d184675672abd0d12a9c8914d1cda71d7e1c789dea2a30965e65",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a12a6809ee97d184675672abd0d12a9c8914d1cda71d7e1c789dea2a30965e65",
+        "canonical_audio_sha256": "7582ef6a92ee5c23156b395ec1b071eab44fdeab6d597f7997a229c84112f6a7",
+        "pcm_sha256": "f119b4393617d8a6de8a66c9a0edc4c88433f11f7ddc0a812983445c2c3c12bf",
+        "same_samples": true
+      }
+    }
+  ]
+}

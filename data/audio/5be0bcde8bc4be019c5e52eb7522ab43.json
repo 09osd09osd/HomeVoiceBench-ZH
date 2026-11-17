@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/5be0bcde8bc4be019c5e52eb7522ab43.wav",
+  "sha256": "e8b3944390673561addaf78bfa80ac3213ca7ebc329ba3923a882ffd7eb7fcdd",
+  "duration_seconds": 5.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "43425c08-5e21-99e3-a44c-d985a25b817d",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 1016,
+    "total_tokens": 1202,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我最难受的不是他磨蹭，是我吼完以后他低着头不说话，那个样子让我心里过不去。",
+  "spoken_text": "我最难受的不是他磨蹭，是我吼完以后他低着头不说话，那个样子让我心里过不去。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我最难受的不是他磨蹭，是我吼完以后他低着头不说话，那个样子让我心里过不去。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我最难受的不是他磨蹭，是我吼完以后他低着头不说话，那个样子让我心里过不去。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4d74f3be-1d7a-92ef-bfd3-341b97872db3",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 294,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e8b3944390673561addaf78bfa80ac3213ca7ebc329ba3923a882ffd7eb7fcdd"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0e7f9bbd23bee8b25b237f338bd445f18362b516e05fe97d3bbe6d813e8aba9c",
+    "canonical_sha256": "e8b3944390673561addaf78bfa80ac3213ca7ebc329ba3923a882ffd7eb7fcdd",
+    "pcm_sha256": "1f0e5391ceff572df01b51c8f9a944d704bb7624ed865a23dafc481e99adeaa2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 121920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我最难受的不是他磨蹭，是我吼完以后他低着头不说话，那个样子让我心里过不去。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f18d8669-0d28-9bae-873b-763c0773f2cd",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 210,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0e7f9bbd23bee8b25b237f338bd445f18362b516e05fe97d3bbe6d813e8aba9c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0e7f9bbd23bee8b25b237f338bd445f18362b516e05fe97d3bbe6d813e8aba9c",
+        "canonical_audio_sha256": "e8b3944390673561addaf78bfa80ac3213ca7ebc329ba3923a882ffd7eb7fcdd",
+        "pcm_sha256": "1f0e5391ceff572df01b51c8f9a944d704bb7624ed865a23dafc481e99adeaa2",
+        "same_samples": true
+      }
+    }
+  ]
+}

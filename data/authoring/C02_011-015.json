@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "b95095859a88a51438d8084907dc7be37de9e7971862adad63e23c959c044504",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-31e82bf4-7439-9311-b3b2-24f18eaf8b29",
+  "usage": {
+    "prompt_tokens": 1755,
+    "total_tokens": 2901,
+    "completion_tokens": 1146,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1755
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1146
+    }
+  },
+  "review_request_id": "chatcmpl-17ec3c2e-ecbe-970a-83e8-7f554148f4f7",
+  "review_usage": {
+    "prompt_tokens": 2525,
+    "total_tokens": 2611,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2525
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C02_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C02_011",
+        "title": "睡前想听轻音乐但别太吵",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天有点累，想睡前听点轻音乐，别太吵的那种。",
+            "reference_text": "好的，睡前听点轻柔的音乐确实能放松。我记住你喜欢不吵的轻音乐了，需要我帮你找一些推荐吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_012",
+        "title": "晨间播客要短且不带广告",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "早上好，我想边做早饭边听点轻松的播客，最好十分钟以内。",
+            "reference_text": "早上好！十分钟以内的轻松播客很适合做早饭时听。我帮你留意这个时长的节目。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "对了，别给我推带广告的那种，我听着烦。",
+            "reference_text": "明白，除了十分钟以内，还要避开带广告的播客。我记住了，会按这两个条件帮你找。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_013",
+        "title": "睡前故事不要悬疑且时长改短",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚上想听个睡前故事放松一下，大概二十分钟左右的。",
+            "reference_text": "好的，睡前听二十分钟左右的故事挺合适。我记住这个时长，帮你找轻松的故事。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "内容别太吓人，我不要悬疑推理那种，最好温馨一点。",
+            "reference_text": "明白，不要悬疑推理，要温馨的内容。我会按这个方向帮你找睡前故事。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "刚才说的时间我改一下，不要二十分钟了，十分钟以内就行。",
+            "reference_text": "好的，时间改成十分钟以内，内容还是温馨不吓人的。我记住这个更正了。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_014",
+        "title": "晨间新闻要本地且改到八点前",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "早上起来想听点新闻，帮我留意一下本地的晨间新闻。",
+            "reference_text": "好的，早上听本地新闻是个不错的习惯。我记住你关注本地晨间新闻了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "别太长，五分钟以内的简报就行，我边洗漱边听。",
+            "reference_text": "明白，要五分钟以内的本地新闻简报，方便你边洗漱边听。我记住这个时长了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说五分钟不太对，其实是三分钟以内，越短越好。",
+            "reference_text": "好的，更正为三分钟以内的本地新闻简报，越短越好。我记住这个新时长了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你现在记住我要多长的新闻了吗？还是本地的吧？",
+            "reference_text": "记住了，你要的是三分钟以内的本地新闻简报，早上边洗漱边听。没错吧？"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_015",
+        "title": "睡前白噪音改雨声并要简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚想听着白噪音睡觉，帮我找个能放一晚上的那种。",
+            "reference_text": "好的，睡前放一晚上的白噪音能帮助放松。我记住你需要长时间播放的白噪音了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "别放那种带旋律的，我就想要纯一点的声音，比如风扇声。",
+            "reference_text": "明白，不要带旋律的，要纯一点的声音，像风扇声那样的。我记住了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "风扇声就算了，换成雨声吧，我还是更喜欢下雨的声音。",
+            "reference_text": "好的，把风扇声换成雨声，你喜欢下雨的声音。我记住这个更正了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我现在要的是什么声音吗？是不是纯雨声？",
+            "reference_text": "记得，你现在要的是纯雨声，不要带旋律的，放一晚上帮助睡觉。对吧？"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "对，那就这样吧，简单说两句我就睡了。",
+            "reference_text": "好，纯雨声放一晚上，帮你放松入睡。晚安，好好休息。"
+          }
+        ]
+      }
+    ]
+  }
+}

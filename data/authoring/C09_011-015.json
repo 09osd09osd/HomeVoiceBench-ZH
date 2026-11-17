@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "486aeeeddbce9e025e91c7f9903e5183895aaaddccb2115d49d40368536a2e66",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-1f25f630-c83b-9c78-b9d0-b07565af680a",
+  "usage": {
+    "prompt_tokens": 1855,
+    "total_tokens": 3269,
+    "completion_tokens": 1414,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1855
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1414
+    }
+  },
+  "review_request_id": "chatcmpl-8a6382d0-a4eb-9b42-b945-cc756cbb986e",
+  "review_usage": {
+    "prompt_tokens": 2891,
+    "total_tokens": 2977,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2891
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C09_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C09_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C09_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C09_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C09_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C09_011",
+        "title": "疲惫周六想安排轻松家庭活动",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "这周六我们一家三口想出去透透气，预算300块以内，时间别超过4小时，有啥推荐吗？",
+            "reference_text": "可以安排去近郊的免费公园散步，再找个平价餐馆吃午饭，一家三口300元以内够用，来回加吃饭控制在4小时左右，轻松不累。"
+          }
+        ]
+      },
+      {
+        "case_id": "C09_012",
+        "title": "预算300内再加不想开车",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "这周六我们一家三口想出去透透气，预算300块以内，时间别超过4小时，有啥推荐吗？",
+            "reference_text": "可以安排去近郊的免费公园散步，再找个平价餐馆吃午饭，一家三口300元以内够用，来回加吃饭控制在4小时左右，轻松不累。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "对了，我最近有点累，不想开车，最好公交或地铁能到的。",
+            "reference_text": "那还是保留300元预算和4小时内，改选地铁能到的市区公园，加上附近小吃店，一家三口花费可控，路上也不用你开车。"
+          }
+        ]
+      },
+      {
+        "case_id": "C09_013",
+        "title": "人数从三口更正为四口",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "这周六我们一家三口想出去透透气，预算300块以内，时间别超过4小时，有啥推荐吗？",
+            "reference_text": "可以安排去近郊的免费公园散步，再找个平价餐馆吃午饭，一家三口300元以内够用，来回加吃饭控制在4小时左右，轻松不累。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我最近有点累，不想开车，最好公交或地铁能到的。",
+            "reference_text": "那还是保留300元预算和4小时内，改选地铁能到的市区公园，加上附近小吃店，一家三口花费可控，路上也不用你开车。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "哦我记错了，不是三口，是我爸妈也来，一共五口人。",
+            "reference_text": "明白，改成五口人。预算还是300元以内、4小时以内、公交地铁能到，建议去免费公园散步，再找能坐五人的平价餐馆，点菜时控制总价。"
+          }
+        ]
+      },
+      {
+        "case_id": "C09_014",
+        "title": "确认五口人限制是否记住",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "这周六我们一家三口想出去透透气，预算300块以内，时间别超过4小时，有啥推荐吗？",
+            "reference_text": "可以安排去近郊的免费公园散步，再找个平价餐馆吃午饭，一家三口300元以内够用，来回加吃饭控制在4小时左右，轻松不累。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我最近有点累，不想开车，最好公交或地铁能到的。",
+            "reference_text": "那还是保留300元预算和4小时内，改选地铁能到的市区公园，加上附近小吃店，一家三口花费可控，路上也不用你开车。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "哦我记错了，不是三口，是我爸妈也来，一共五口人。",
+            "reference_text": "明白，改成五口人。预算还是300元以内、4小时以内、公交地铁能到，建议去免费公园散步，再找能坐五人的平价餐馆，点菜时控制总价。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你现在记得我们是几口人、预算多少、能开车吗？",
+            "reference_text": "记得，是五口人，预算300元以内，时间4小时以内，不开车，选公交或地铁能到的地方。"
+          }
+        ]
+      },
+      {
+        "case_id": "C09_015",
+        "title": "五口人公交出行最后简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "这周六我们一家三口想出去透透气，预算300块以内，时间别超过4小时，有啥推荐吗？",
+            "reference_text": "可以安排去近郊的免费公园散步，再找个平价餐馆吃午饭，一家三口300元以内够用，来回加吃饭控制在4小时左右，轻松不累。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我最近有点累，不想开车，最好公交或地铁能到的。",
+            "reference_text": "那还是保留300元预算和4小时内，改选地铁能到的市区公园，加上附近小吃店，一家三口花费可控，路上也不用你开车。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "哦我记错了，不是三口，是我爸妈也来，一共五口人。",
+            "reference_text": "明白，改成五口人。预算还是300元以内、4小时以内、公交地铁能到，建议去免费公园散步，再找能坐五人的平价餐馆，点菜时控制总价。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你现在记得我们是几口人、预算多少、能开车吗？",
+            "reference_text": "记得，是五口人，预算300元以内，时间4小时以内，不开车，选公交或地铁能到的地方。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，那你用一两句话给我总结一下周六怎么安排吧。",
+            "reference_text": "周六五口人坐公交或地铁去市区免费公园散步，再找平价餐馆吃午饭，总花费控制在300元内，全程4小时以内。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "132f174894bb299a269a162d112a5a99b2917a3d69b86fc18b17fad0bdc3e872",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-20ab3fa0-e0bc-9b16-bfc2-80b182b24245",
+  "usage": {
+    "prompt_tokens": 1750,
+    "total_tokens": 3029,
+    "completion_tokens": 1279,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1750
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1279
+    }
+  },
+  "review_request_id": "chatcmpl-86c671b6-eab2-9c54-8c67-29633384276a",
+  "review_usage": {
+    "prompt_tokens": 2651,
+    "total_tokens": 2737,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2651
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C15_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C15_001",
+        "title": "猜厨房用品，一次一提示",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想玩猜谜，你出一道生活用品的题，提示要一次给一个，别提前把答案说出来。",
+            "reference_text": "好，我出个厨房用品的谜。提示一：它有一个长柄。你先猜猜看，我不会提前说答案。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_002",
+        "title": "猜动物，先给两个提示",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们来猜动物吧，你出题，每次只给一个提示，别泄底。",
+            "reference_text": "行，我出个动物谜。第一个提示：它有四条腿。你猜猜是什么？答案我先不说。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我猜是猫。再给一个提示，要具体点的。",
+            "reference_text": "不是猫。第二个提示：它生活在海里。你可以再猜一次，我还是不提前说答案。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_003",
+        "title": "猜日用品，更正提示数量",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想猜个日用品，你出题，一次给一个提示，别提前说答案。",
+            "reference_text": "好，我出个日用品谜。第一个提示：它每天都会用到。你猜猜看，答案我先不说。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我猜是牙刷。再给一个提示，别太笼统。",
+            "reference_text": "不是牙刷。第二个提示：它通常放在卫生间里。你继续猜，我还是不提前说答案。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "等一下，我刚才说每天都会用到，其实改成经常用到，不是每天。",
+            "reference_text": "好，更正一下：第一个提示改成“经常用到”，不是每天。现在提示是：经常用到，通常放在卫生间里。你接着猜，答案我还是不说。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_004",
+        "title": "猜文具，记住更正继续猜",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "来猜文具吧，你出题，一次一个提示，别提前泄底。",
+            "reference_text": "好，我出个文具谜。第一个提示：它通常放在笔袋里。你猜猜看，答案我先不说。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我猜是铅笔。再给一个提示，要具体些。",
+            "reference_text": "不是铅笔。第二个提示：它用来擦掉写错的字。你继续猜，我还是不提前说答案。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我猜是橡皮。对了，刚才我说放在笔袋里，更正一下，是放在书桌上。",
+            "reference_text": "好，我记住了：第一个提示更正为“通常放在书桌上”。现在提示是：放在书桌上，用来擦掉写错的字。你接着猜，答案我还是不说。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改过的第一个提示吗？现在再给一个提示。",
+            "reference_text": "记得，第一个提示是“通常放在书桌上”。再给一个提示：它一般是长方形的。你猜猜看，答案我还是不提前说。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_005",
+        "title": "猜水果，记住更正后收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+            "reference_text": "好，我出个水果谜。第一个提示：它的外皮是黄色的。你猜猜看，答案我先不说。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我猜是香蕉。再给一个提示，具体点。",
+            "reference_text": "不是香蕉。第二个提示：它是一瓣一瓣的。你继续猜，我还是不提前说答案。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我猜是橘子。对了，刚才我说外皮是黄色的，更正一下，是橙色的。",
+            "reference_text": "好，我记住了：第一个提示更正为“外皮是橙色的”。现在提示是：外皮是橙色的，一瓣一瓣的。你接着猜，答案我还是不说。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我改过的第一个提示吗？再给一个提示。",
+            "reference_text": "记得，第一个提示是“外皮是橙色的”。再给一个提示：它通常秋天成熟。你猜猜看，答案我还是不提前说。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "我猜是橙子。你用一句话收尾，把更正后的提示和答案简短说一下。",
+            "reference_text": "对，答案是橙子。简短收尾：外皮是橙色的，一瓣一瓣的，通常秋天成熟。"
+          }
+        ]
+      }
+    ]
+  }
+}

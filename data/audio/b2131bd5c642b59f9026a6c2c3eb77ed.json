@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b2131bd5c642b59f9026a6c2c3eb77ed.wav",
+  "sha256": "3688a6edd851b2e8ced641ec3f4d60f74f43c02a9f07a8e22ece6a50aef286c4",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ba01ba35-978e-9682-bdfc-b6f8d396e59c",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 824,
+    "total_tokens": 1016,
+    "duration": 4
+  },
+  "seed": 100042,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想打扰她家人，他们肯定也忙。我就在家干等着行吗？",
+  "spoken_text": "我不想打扰她家人，他们肯定也忙。我就在家干等着行吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "我不想打扰他家人，他们肯定也忙。我就在家干等着行吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想打扰他家人，他们肯定也忙。我就在家干等着行吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1c7e3af6-44e0-9f9e-9c6d-a387ebe3b3bd",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3688a6edd851b2e8ced641ec3f4d60f74f43c02a9f07a8e22ece6a50aef286c4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "fdd8caf10c117aa6c445d5c5433ee7e455090b4b7b4b55dc3ba36db5d82b26ee",
+    "canonical_sha256": "3688a6edd851b2e8ced641ec3f4d60f74f43c02a9f07a8e22ece6a50aef286c4",
+    "pcm_sha256": "d1b489bcee13aa4e3527bc9b1ed805646e2167378b657677f01e6039f4f1bcce",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想打扰她家人，他们肯定也忙。我就在家干等着行吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d435d7d4-cb8b-9ec4-8d81-66f6d2189c6e",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "fdd8caf10c117aa6c445d5c5433ee7e455090b4b7b4b55dc3ba36db5d82b26ee",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "fdd8caf10c117aa6c445d5c5433ee7e455090b4b7b4b55dc3ba36db5d82b26ee",
+        "canonical_audio_sha256": "3688a6edd851b2e8ced641ec3f4d60f74f43c02a9f07a8e22ece6a50aef286c4",
+        "pcm_sha256": "d1b489bcee13aa4e3527bc9b1ed805646e2167378b657677f01e6039f4f1bcce",
+        "same_samples": true
+      }
+    }
+  ]
+}

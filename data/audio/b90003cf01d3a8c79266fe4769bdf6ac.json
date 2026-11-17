@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b90003cf01d3a8c79266fe4769bdf6ac.wav",
+  "sha256": "5ef1bda4168d67debc5ac53a22e88c8093d6fe8345c21ed79b4c9b9f4c197e7c",
+  "duration_seconds": 5.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "024bcef2-7406-95bc-82f4-6c6eb2d5400d",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 1064,
+    "total_tokens": 1258,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "那帮我把客厅灯的色温改成3500K，只调色温，其他设置别动。",
+  "spoken_text": "那帮我把客厅灯的色温改成三千五百开尔文，只调色温，其他设置别动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "那帮我把客厅灯的色温改成3500开尔文，只调色温，其他设置别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "那帮我把客厅灯的色温改成3500开尔文，只调色温，其他设置别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b4add7e5-f3e7-9f52-a4b2-0b6ce5b1f884",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 300,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5ef1bda4168d67debc5ac53a22e88c8093d6fe8345c21ed79b4c9b9f4c197e7c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "849fd795f18829393e3c830f31c1da6db65c606762a90730409e048469b3aa25",
+    "canonical_sha256": "5ef1bda4168d67debc5ac53a22e88c8093d6fe8345c21ed79b4c9b9f4c197e7c",
+    "pcm_sha256": "4d309773e15f1fcba4f8695459aea60a3f363f9377b72cb5c8cf6e10c4983b75",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 127680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "那帮我把客厅灯的色温改成3500K，只调色温，其他设置别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "那帮我把客厅灯的色温改成3500K，只调色温，其他设置别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5a7ffc82-be0e-96e9-a4a7-e5d538f2d6bb",
+      "usage": {
+        "prompt_tokens": 188,
+        "total_tokens": 237,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 151
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "849fd795f18829393e3c830f31c1da6db65c606762a90730409e048469b3aa25",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "849fd795f18829393e3c830f31c1da6db65c606762a90730409e048469b3aa25",
+        "canonical_audio_sha256": "5ef1bda4168d67debc5ac53a22e88c8093d6fe8345c21ed79b4c9b9f4c197e7c",
+        "pcm_sha256": "4d309773e15f1fcba4f8695459aea60a3f363f9377b72cb5c8cf6e10c4983b75",
+        "same_samples": true
+      }
+    }
+  ]
+}

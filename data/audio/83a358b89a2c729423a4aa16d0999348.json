@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/83a358b89a2c729423a4aa16d0999348.wav",
+  "sha256": "bfc97dd0987de4da485b99a901209f9a0a2ea16e77f159180c6f821df0582bf6",
+  "duration_seconds": 5.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0915fd30-175c-9e2c-9bee-e6bc82d2f5e5",
+  "usage": {
+    "input_tokens": 204,
+    "output_tokens": 1056,
+    "total_tokens": 1260,
+    "duration": 5
+  },
+  "seed": 100042,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我希望值日表排得简单点，每人负责一天，周末可以一起大扫除。",
+  "spoken_text": "我希望值日表排得简单点，每人负责一天，周末可以一起大扫除。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "我希望值日表排得简单点，每人负责一天，周末可以一起大扫除。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我希望值日表排得简单点，每人负责一天，周末可以一起大扫除。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d5e46708-52e7-9834-a8ca-65a19d8d6848",
+    "usage": {
+      "prompt_tokens": 245,
+      "total_tokens": 290,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "bfc97dd0987de4da485b99a901209f9a0a2ea16e77f159180c6f821df0582bf6"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ac238397b6754c5e6391ee698120ad28e680f8ce5ebdf5984afd157eaa236973",
+    "canonical_sha256": "bfc97dd0987de4da485b99a901209f9a0a2ea16e77f159180c6f821df0582bf6",
+    "pcm_sha256": "8198647ab3d7279d3ba2ed34b5e7b5509a946779c0a29b7e7ebb39bae3a23d81",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 126720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我希望值日表排得简单点，每人负责一天，周末可以一起大扫除。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1dff8373-6b76-970c-b463-86e82a14f39f",
+      "usage": {
+        "prompt_tokens": 161,
+        "total_tokens": 206,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ac238397b6754c5e6391ee698120ad28e680f8ce5ebdf5984afd157eaa236973",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ac238397b6754c5e6391ee698120ad28e680f8ce5ebdf5984afd157eaa236973",
+        "canonical_audio_sha256": "bfc97dd0987de4da485b99a901209f9a0a2ea16e77f159180c6f821df0582bf6",
+        "pcm_sha256": "8198647ab3d7279d3ba2ed34b5e7b5509a946779c0a29b7e7ebb39bae3a23d81",
+        "same_samples": true
+      }
+    }
+  ]
+}

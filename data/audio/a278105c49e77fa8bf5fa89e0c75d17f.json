@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a278105c49e77fa8bf5fa89e0c75d17f.wav",
+  "sha256": "45ab27fb300db991417375655c34f5c480ea4015c065906204dc9522f4c7ff86",
+  "duration_seconds": 5.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8e35da8d-2c69-9723-bb6d-646c92b115a9",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 1048,
+    "total_tokens": 1247,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "一个人带两个孩子，今天真的累到不想说话，但又想有人听听。",
+  "spoken_text": "一个人带两个孩子，今天真的累到不想说话，但又想有人听听。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "一个人带两个孩子，今天真的累到不想说话，但又想有人听听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "一个人带两个孩子，今天真的累到不想说话，但又想有人听听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ff0e4346-0130-9551-81a1-dbd8ee228e57",
+    "usage": {
+      "prompt_tokens": 242,
+      "total_tokens": 284,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "45ab27fb300db991417375655c34f5c480ea4015c065906204dc9522f4c7ff86"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1ad0975158c93fc9997b8d85402dd982d14e10a092e95fb697f9c31fea9105c6",
+    "canonical_sha256": "45ab27fb300db991417375655c34f5c480ea4015c065906204dc9522f4c7ff86",
+    "pcm_sha256": "a32f2fd2aaa9820c6dd37608cf2e9305ab4807bb847b3e2f8285ff62ce3de13b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 125760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "一个人带两个孩子，今天真的累到不想说话，但又想有人听听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e675a6f3-a75b-9693-a343-ae5dfa40e024",
+      "usage": {
+        "prompt_tokens": 158,
+        "total_tokens": 200,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1ad0975158c93fc9997b8d85402dd982d14e10a092e95fb697f9c31fea9105c6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1ad0975158c93fc9997b8d85402dd982d14e10a092e95fb697f9c31fea9105c6",
+        "canonical_audio_sha256": "45ab27fb300db991417375655c34f5c480ea4015c065906204dc9522f4c7ff86",
+        "pcm_sha256": "a32f2fd2aaa9820c6dd37608cf2e9305ab4807bb847b3e2f8285ff62ce3de13b",
+        "same_samples": true
+      }
+    }
+  ]
+}

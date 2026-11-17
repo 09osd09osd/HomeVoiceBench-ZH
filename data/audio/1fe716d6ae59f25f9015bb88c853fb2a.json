@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1fe716d6ae59f25f9015bb88c853fb2a.wav",
+  "sha256": "ffdcc6905dc2f9f2c3cfb67ee7fad3c6c4c6d46ce2009f27d2075e4196189047",
+  "duration_seconds": 5.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0fd073df-ec53-9781-b2a7-80f677940e06",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 1144,
+    "total_tokens": 1324,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，我不是从上海出发，是从南京出发，高铁时间会不一样。",
+  "spoken_text": "更正一下，我不是从上海出发，是从南京出发，高铁时间会不一样。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，我不是从上海出发，是从南京出发。高铁时间会不一样。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，我不是从上海出发，是从南京出发。高铁时间会不一样。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c4fe1286-eff5-9d49-8aa8-d5a06e20a1ba",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 286,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ffdcc6905dc2f9f2c3cfb67ee7fad3c6c4c6d46ce2009f27d2075e4196189047"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2e587b20763c1e49c145f548551fefc4f81ec4562c4bc051d29a9608d24fa921",
+    "canonical_sha256": "ffdcc6905dc2f9f2c3cfb67ee7fad3c6c4c6d46ce2009f27d2075e4196189047",
+    "pcm_sha256": "a5d2f1727ec1890a997788774abb1d7c3f7ed261ee0c46ff95cb5a118bfee551",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 137280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，我不是从上海出发，是从南京出发，高铁时间会不一样。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，我不是从上海出发，是从南京出发，高铁时间会不一样。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-21c0abb8-5123-9659-b9ac-b4b47093e794",
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 225,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 145
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2e587b20763c1e49c145f548551fefc4f81ec4562c4bc051d29a9608d24fa921",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2e587b20763c1e49c145f548551fefc4f81ec4562c4bc051d29a9608d24fa921",
+        "canonical_audio_sha256": "ffdcc6905dc2f9f2c3cfb67ee7fad3c6c4c6d46ce2009f27d2075e4196189047",
+        "pcm_sha256": "a5d2f1727ec1890a997788774abb1d7c3f7ed261ee0c46ff95cb5a118bfee551",
+        "same_samples": true
+      }
+    }
+  ]
+}

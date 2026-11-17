@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6a4620ce2051c68f7a686a57dec2820d.wav",
+  "sha256": "d4187aa43a81f4afb0800316ea54c21a24b23ce2a226a2b6e507b55813ade1cb",
+  "duration_seconds": 6.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b477e707-69a2-9b7d-866c-da890a992230",
+  "usage": {
+    "input_tokens": 212,
+    "output_tokens": 1288,
+    "total_tokens": 1500,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我姐比较要面子，你说话别太随意，但也别太生硬。我想让她知道我是真心觉得没提前说不好，不是故意放她鸽子。",
+  "spoken_text": "我姐比较要面子，你说话别太随意，但也别太生硬。我想让她知道我是真心觉得没提前说不好，不是故意放她鸽子。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我姐比较要面子，你说话别太随意，但也别太生硬。我想让她知道我是真心觉得没提前说不好，不是故意放她鸽子。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我姐比较要面子，你说话别太随意，但也别太生硬。我想让她知道我是真心觉得没提前说不好，不是故意放她鸽子。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f7c4602b-2731-9305-ad76-2059d15c3303",
+    "usage": {
+      "prompt_tokens": 268,
+      "total_tokens": 329,
+      "completion_tokens": 61,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 224
+      },
+      "completion_tokens_details": {
+        "text_tokens": 61
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d4187aa43a81f4afb0800316ea54c21a24b23ce2a226a2b6e507b55813ade1cb"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b162344e9a4c2d98c3058d5864e0465506e61e8e68cf830b2501868bfce603f3",
+    "canonical_sha256": "d4187aa43a81f4afb0800316ea54c21a24b23ce2a226a2b6e507b55813ade1cb",
+    "pcm_sha256": "7d1575323d9897d5cad634d89e7a9946efc2dd38c0e48b838b8157e202d18e43",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 154560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我姐比较要面子，你说话别太随意，但也别太生硬。我想让她知道我是真心觉得没提前说不好，不是故意放她鸽子。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-86439ad3-64b5-93d9-a19f-42a599129247",
+      "usage": {
+        "prompt_tokens": 184,
+        "total_tokens": 245,
+        "completion_tokens": 61,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 61
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b162344e9a4c2d98c3058d5864e0465506e61e8e68cf830b2501868bfce603f3",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b162344e9a4c2d98c3058d5864e0465506e61e8e68cf830b2501868bfce603f3",
+        "canonical_audio_sha256": "d4187aa43a81f4afb0800316ea54c21a24b23ce2a226a2b6e507b55813ade1cb",
+        "pcm_sha256": "7d1575323d9897d5cad634d89e7a9946efc2dd38c0e48b838b8157e202d18e43",
+        "same_samples": true
+      }
+    }
+  ]
+}

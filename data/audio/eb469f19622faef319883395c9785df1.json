@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/eb469f19622faef319883395c9785df1.wav",
+  "sha256": "d16062388a1526424402ae5916fce0c2364d31f0e29a1744c52eeb19cbe64ddb",
+  "duration_seconds": 5.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "11b6ec2c-ba1f-9ec3-9c83-e31d61b277f0",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 1016,
+    "total_tokens": 1205,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "再加一个限制，别说“手头的事”，换成一个更口语的说法。",
+  "spoken_text": "再加一个限制，别说“手头的事”，换成一个更口语的说法。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "再加一个限制，别说“手头的事”，换成一个更口语的说法。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "再加一个限制，别说“手头的事”，换成一个更口语的说法。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-17cd0b9d-3cf6-9ef1-8752-7019c5514e14",
+    "usage": {
+      "prompt_tokens": 241,
+      "total_tokens": 282,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d16062388a1526424402ae5916fce0c2364d31f0e29a1744c52eeb19cbe64ddb"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0be97ca552201798838429d03f6269c347845d85d4a1afd33aa2287f0ea13f1b",
+    "canonical_sha256": "d16062388a1526424402ae5916fce0c2364d31f0e29a1744c52eeb19cbe64ddb",
+    "pcm_sha256": "a5138177b391d34353a9a39ee511f26ff7f19985bba93e6d5eb7a70a1e04ca5c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 121920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "再加一个限制，别说“手头的事”，换成一个更口语的说法。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "再加一个限制，别说“手头的事”，换成一个更口语的说法。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-cb050c19-232b-91f6-80c0-be014eff203a",
+      "usage": {
+        "prompt_tokens": 180,
+        "total_tokens": 221,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0be97ca552201798838429d03f6269c347845d85d4a1afd33aa2287f0ea13f1b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0be97ca552201798838429d03f6269c347845d85d4a1afd33aa2287f0ea13f1b",
+        "canonical_audio_sha256": "d16062388a1526424402ae5916fce0c2364d31f0e29a1744c52eeb19cbe64ddb",
+        "pcm_sha256": "a5138177b391d34353a9a39ee511f26ff7f19985bba93e6d5eb7a70a1e04ca5c",
+        "same_samples": true
+      }
+    }
+  ]
+}

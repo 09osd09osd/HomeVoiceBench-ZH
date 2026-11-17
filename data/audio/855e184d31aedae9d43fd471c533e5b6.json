@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/855e184d31aedae9d43fd471c533e5b6.wav",
+  "sha256": "95d101d55fdb0bbc742ec73623f2f8ff7ab682ca5a0e8ae655bba1c2fcc2e415",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "90bca54b-6f0f-9398-ae9f-da2a1575d8f6",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 640,
+    "total_tokens": 825,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，周三我也赶不回来，所以是周二、周三、周四都不行。",
+  "spoken_text": "更正一下，周三我也赶不回来，所以是周二、周三、周四都不行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，周三我也赶不回来。所以是周二、周三、周四都不行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，周三我也赶不回来。所以是周二、周三、周四都不行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8936ba18-8af3-9f62-9d2c-aa47e3a64875",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 276,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "95d101d55fdb0bbc742ec73623f2f8ff7ab682ca5a0e8ae655bba1c2fcc2e415"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d8fa6e5570335e42f1410ed7e6c4ce83f45175277380db5849944e7beec1bed9",
+    "canonical_sha256": "95d101d55fdb0bbc742ec73623f2f8ff7ab682ca5a0e8ae655bba1c2fcc2e415",
+    "pcm_sha256": "aa62833eafccdd0a7de592869881f14f63a064b4cc7e6abcf5896f7e12204af9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，周三我也赶不回来，所以是周二、周三、周四都不行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-90f5cd8b-2188-927d-8909-98c36fa1b8dd",
+      "usage": {
+        "prompt_tokens": 147,
+        "total_tokens": 192,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d8fa6e5570335e42f1410ed7e6c4ce83f45175277380db5849944e7beec1bed9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d8fa6e5570335e42f1410ed7e6c4ce83f45175277380db5849944e7beec1bed9",
+        "canonical_audio_sha256": "95d101d55fdb0bbc742ec73623f2f8ff7ab682ca5a0e8ae655bba1c2fcc2e415",
+        "pcm_sha256": "aa62833eafccdd0a7de592869881f14f63a064b4cc7e6abcf5896f7e12204af9",
+        "same_samples": true
+      }
+    }
+  ]
+}

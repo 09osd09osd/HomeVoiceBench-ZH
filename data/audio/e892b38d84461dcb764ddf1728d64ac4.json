@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e892b38d84461dcb764ddf1728d64ac4.wav",
+  "sha256": "1e538b03ce7f890591c7cdab2b752e9d0d38a576001363e0a457865c0c7b1bc3",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7aae4302-252d-967f-a6be-f5c5aafe0538",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 824,
+    "total_tokens": 1007,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "这个周末我打算去爬香山，好久没运动了，想活动活动。",
+  "spoken_text": "这个周末我打算去爬香山，好久没运动了，想活动活动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "这个周末我打算去爬香山，好久没运动了，想活动活动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "这个周末我打算去爬香山，好久没运动了，想活动活动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5dc38b60-3709-99d0-863d-1d04e47089eb",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1e538b03ce7f890591c7cdab2b752e9d0d38a576001363e0a457865c0c7b1bc3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "63e31fa833ddf0a15e4739d18e37e1896810661766c26614c81a59986ab8ce8b",
+    "canonical_sha256": "1e538b03ce7f890591c7cdab2b752e9d0d38a576001363e0a457865c0c7b1bc3",
+    "pcm_sha256": "649076b8a8942590373f5fc59a996940e879dcaa092848aedcb756f1d010c184",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "这个周末我打算去爬香山，好久没运动了，想活动活动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d8dfb026-7ee4-9c6c-89b5-3bbd6923a49c",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "63e31fa833ddf0a15e4739d18e37e1896810661766c26614c81a59986ab8ce8b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "63e31fa833ddf0a15e4739d18e37e1896810661766c26614c81a59986ab8ce8b",
+        "canonical_audio_sha256": "1e538b03ce7f890591c7cdab2b752e9d0d38a576001363e0a457865c0c7b1bc3",
+        "pcm_sha256": "649076b8a8942590373f5fc59a996940e879dcaa092848aedcb756f1d010c184",
+        "same_samples": true
+      }
+    }
+  ]
+}

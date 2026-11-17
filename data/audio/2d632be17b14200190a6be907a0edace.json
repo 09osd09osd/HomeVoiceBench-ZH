@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/2d632be17b14200190a6be907a0edace.wav",
+  "sha256": "2e5cf7ffc769b4f6140a2816a49042d2a7a9356d2861a838d6263a7fc8058ab4",
+  "duration_seconds": 2.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d76a4616-a315-995b-8cce-67e63799eadb",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 576,
+    "total_tokens": 762,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是十点，是九点半左右，我记混了。",
+  "spoken_text": "更正一下，不是十点，是九点半左右，我记混了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是十点，是九点半左右，我记混了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是十点，是九点半左右，我记混了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e4a3d63e-c902-9c02-afbd-1d9274e167d6",
+    "usage": {
+      "prompt_tokens": 221,
+      "total_tokens": 263,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2e5cf7ffc769b4f6140a2816a49042d2a7a9356d2861a838d6263a7fc8058ab4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7313cfeb00a75e12ceb15d80d500cbf296a46f5ae21bb2e0da8e491ca18246b5",
+    "canonical_sha256": "2e5cf7ffc769b4f6140a2816a49042d2a7a9356d2861a838d6263a7fc8058ab4",
+    "pcm_sha256": "12183a150c4237875651c89a73a5e0893c189d510e547944fe25306a15b06be6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 69120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是十点，是九点半左右，我记混了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-99d6f35a-572a-96af-9313-f6015646aab9",
+      "usage": {
+        "prompt_tokens": 137,
+        "total_tokens": 179,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7313cfeb00a75e12ceb15d80d500cbf296a46f5ae21bb2e0da8e491ca18246b5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7313cfeb00a75e12ceb15d80d500cbf296a46f5ae21bb2e0da8e491ca18246b5",
+        "canonical_audio_sha256": "2e5cf7ffc769b4f6140a2816a49042d2a7a9356d2861a838d6263a7fc8058ab4",
+        "pcm_sha256": "12183a150c4237875651c89a73a5e0893c189d510e547944fe25306a15b06be6",
+        "same_samples": true
+      }
+    }
+  ]
+}

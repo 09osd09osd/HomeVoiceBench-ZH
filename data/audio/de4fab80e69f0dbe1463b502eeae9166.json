@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/de4fab80e69f0dbe1463b502eeae9166.wav",
+  "sha256": "ed39dd7acb5c38ed8080353474eb40d318f9e785454f061e0a3c75df1b24a281",
+  "duration_seconds": 3.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "601284cd-b206-938c-9ddd-85fc3276988f",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 608,
+    "total_tokens": 792,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得航班是几点到吗？我脑子有点乱。",
+  "spoken_text": "你还记得航班是几点到吗？我脑子有点乱。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得航班是几点到吗？我脑子有点乱。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得航班是几点到吗？我脑子有点乱。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c4685444-d3f8-98fd-8a00-3f8759ff55d8",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ed39dd7acb5c38ed8080353474eb40d318f9e785454f061e0a3c75df1b24a281"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1c3476517e09e39675fa5dfbf0cf89ee3699eca731851050add6f06ee3af12a4",
+    "canonical_sha256": "ed39dd7acb5c38ed8080353474eb40d318f9e785454f061e0a3c75df1b24a281",
+    "pcm_sha256": "ee20eb22f6f43cbdd354fc2ef765b560e33965d19be75f7ed9ffe9800538542e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 72960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得航班是几点到吗？我脑子有点乱。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-533dfd66-f282-9987-bc86-30e70608d93e",
+      "usage": {
+        "prompt_tokens": 141,
+        "total_tokens": 180,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1c3476517e09e39675fa5dfbf0cf89ee3699eca731851050add6f06ee3af12a4",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1c3476517e09e39675fa5dfbf0cf89ee3699eca731851050add6f06ee3af12a4",
+        "canonical_audio_sha256": "ed39dd7acb5c38ed8080353474eb40d318f9e785454f061e0a3c75df1b24a281",
+        "pcm_sha256": "ee20eb22f6f43cbdd354fc2ef765b560e33965d19be75f7ed9ffe9800538542e",
+        "same_samples": true
+      }
+    }
+  ]
+}

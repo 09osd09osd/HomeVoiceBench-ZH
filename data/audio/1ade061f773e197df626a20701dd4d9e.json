@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1ade061f773e197df626a20701dd4d9e.wav",
+  "sha256": "b8c2c56554e2ee6e37ad3e8c0dfcda551b72902331252a3c7045509a71f86e53",
+  "duration_seconds": 3.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b109e98b-4470-990e-99a1-7c79b48fea3b",
+  "usage": {
+    "input_tokens": 174,
+    "output_tokens": 600,
+    "total_tokens": 774,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把卧室窗帘打开到20%，其他不动。",
+  "spoken_text": "把卧室窗帘打开到百分之二十，其他不动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把卧室窗帘打开到百分之二十，其他不动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把卧室窗帘打开到百分之二十，其他不动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-be356a53-a817-9922-888b-10488ea7b3d3",
+    "usage": {
+      "prompt_tokens": 223,
+      "total_tokens": 260,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b8c2c56554e2ee6e37ad3e8c0dfcda551b72902331252a3c7045509a71f86e53"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6ebcc270fe647556f6af2a1371cc0037acbc48595bf2a31a29dcc5e1afbce9ee",
+    "canonical_sha256": "b8c2c56554e2ee6e37ad3e8c0dfcda551b72902331252a3c7045509a71f86e53",
+    "pcm_sha256": "fd5ab3be79a2240065a6e43865fc961a74c7132a8fe8894da12d8d805ae1910b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 72000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把卧室窗帘打开到百分之二十，其他不动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把卧室窗帘打开到百分之二十，其他不动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ddc03fe3-e5eb-90ae-9834-d68c2e254e60",
+      "usage": {
+        "prompt_tokens": 162,
+        "total_tokens": 199,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6ebcc270fe647556f6af2a1371cc0037acbc48595bf2a31a29dcc5e1afbce9ee",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6ebcc270fe647556f6af2a1371cc0037acbc48595bf2a31a29dcc5e1afbce9ee",
+        "canonical_audio_sha256": "b8c2c56554e2ee6e37ad3e8c0dfcda551b72902331252a3c7045509a71f86e53",
+        "pcm_sha256": "fd5ab3be79a2240065a6e43865fc961a74c7132a8fe8894da12d8d805ae1910b",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b94d3c179d09aeb5c28343e36e3e20d1.wav",
+  "sha256": "faf8df6ba38627d6605145251115c57916c49e15b7aebc4f3c24ec7936231326",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5237db60-e11b-9bc4-b2bb-d2e02f3c1f21",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 824,
+    "total_tokens": 1013,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实我最近改看杂志了，你提醒我拿杂志吧。",
+  "spoken_text": "其实我最近改看杂志了，你提醒我拿杂志吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实我最近改看杂志了，你提醒我拿杂志吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实我最近改看杂志了，你提醒我拿杂志吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-21400075-ecbf-9db5-9976-b16ee8d51194",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "faf8df6ba38627d6605145251115c57916c49e15b7aebc4f3c24ec7936231326"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a274595a894c62c9438ac018537b28d5bcffbf03c736a0c1ca14e47d72ddf7aa",
+    "canonical_sha256": "faf8df6ba38627d6605145251115c57916c49e15b7aebc4f3c24ec7936231326",
+    "pcm_sha256": "78d90b84911104d2f6c08468e079c5824d3bca215456e67715c8521854c264f8",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实我最近改看杂志了，你提醒我拿杂志吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-fa26ee79-226e-9dc1-ba91-4cb5fd9e8245",
+      "usage": {
+        "prompt_tokens": 150,
+        "total_tokens": 191,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a274595a894c62c9438ac018537b28d5bcffbf03c736a0c1ca14e47d72ddf7aa",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a274595a894c62c9438ac018537b28d5bcffbf03c736a0c1ca14e47d72ddf7aa",
+        "canonical_audio_sha256": "faf8df6ba38627d6605145251115c57916c49e15b7aebc4f3c24ec7936231326",
+        "pcm_sha256": "78d90b84911104d2f6c08468e079c5824d3bca215456e67715c8521854c264f8",
+        "same_samples": true
+      }
+    }
+  ]
+}

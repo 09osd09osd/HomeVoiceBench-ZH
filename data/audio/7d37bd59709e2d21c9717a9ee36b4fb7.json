@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/7d37bd59709e2d21c9717a9ee36b4fb7.wav",
+  "sha256": "cf50e7da8d36efcc5c036c086cabb514f8b59b5aea708da6a9ba4de32fc026e2",
+  "duration_seconds": 2.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2907bfe6-8f9a-934a-8f57-9316cf00fe13",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 560,
+    "total_tokens": 741,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "明天9点提醒我收阳台毛巾。",
+  "spoken_text": "明天九点提醒我收阳台毛巾。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "明天九点提醒我收阳台毛巾。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "明天九点提醒我收阳台毛巾。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-88257b14-65fc-99d0-b257-54882caded61",
+    "usage": {
+      "prompt_tokens": 214,
+      "total_tokens": 249,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cf50e7da8d36efcc5c036c086cabb514f8b59b5aea708da6a9ba4de32fc026e2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "09b8a662c49c2934434546221e583a18ca1c10716b30cf707fc0a175b12a1df2",
+    "canonical_sha256": "cf50e7da8d36efcc5c036c086cabb514f8b59b5aea708da6a9ba4de32fc026e2",
+    "pcm_sha256": "ab5f68684e7815eba56f674527ff5990bb7a301ed24f44cba8b980b764648e36",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 67200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "明天九点提醒我收阳台毛巾。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "明天九点提醒我收阳台毛巾。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-53850102-9c76-9803-b2f7-d4feabbaef3e",
+      "usage": {
+        "prompt_tokens": 153,
+        "total_tokens": 188,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 137
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "09b8a662c49c2934434546221e583a18ca1c10716b30cf707fc0a175b12a1df2",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "09b8a662c49c2934434546221e583a18ca1c10716b30cf707fc0a175b12a1df2",
+        "canonical_audio_sha256": "cf50e7da8d36efcc5c036c086cabb514f8b59b5aea708da6a9ba4de32fc026e2",
+        "pcm_sha256": "ab5f68684e7815eba56f674527ff5990bb7a301ed24f44cba8b980b764648e36",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b16cb75d65038ed5ef924d145d75bdba.wav",
+  "sha256": "462573ccec7d4eed76faaf76447cca337925aa133a5985d347a2a98b9467d505",
+  "duration_seconds": 4.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "cb0c0d13-ae30-9a91-95e9-784fd2e97fb8",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 864,
+    "total_tokens": 1055,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实我也不是想让你评理，就是希望有人能听我把话说完，别打断我。",
+  "spoken_text": "其实我也不是想让你评理，就是希望有人能听我把话说完，别打断我。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实我也不是想让你评理，就是希望有人能听我把话说完，别打断我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实我也不是想让你评理，就是希望有人能听我把话说完，别打断我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-71b7b18a-bfbe-9def-b40a-eb50a172d31d",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 287,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "462573ccec7d4eed76faaf76447cca337925aa133a5985d347a2a98b9467d505"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3052e69f6a17bd8a76f36a4c621aa5108941aa2e15e115d5cbd44744fbe30cd2",
+    "canonical_sha256": "462573ccec7d4eed76faaf76447cca337925aa133a5985d347a2a98b9467d505",
+    "pcm_sha256": "22f044699b8bc0a78fc9dc657a3f1737a6f33835669ac3d7f62d9330bfa56080",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 103680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实我也不是想让你评理，就是希望有人能听我把话说完，别打断我。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-98d28687-cef5-990f-b8b7-96fe03dc5dab",
+      "usage": {
+        "prompt_tokens": 156,
+        "total_tokens": 203,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3052e69f6a17bd8a76f36a4c621aa5108941aa2e15e115d5cbd44744fbe30cd2",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3052e69f6a17bd8a76f36a4c621aa5108941aa2e15e115d5cbd44744fbe30cd2",
+        "canonical_audio_sha256": "462573ccec7d4eed76faaf76447cca337925aa133a5985d347a2a98b9467d505",
+        "pcm_sha256": "22f044699b8bc0a78fc9dc657a3f1737a6f33835669ac3d7f62d9330bfa56080",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/4e645d49f16656807542596920b1b3cc.wav",
+  "sha256": "f96f5d87c2f5fc9603b1d7f46ec52c318dce2b201afa4c942fa8f496600b0b75",
+  "duration_seconds": 4.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "527c2231-1cf9-9305-ac43-c68bb7c22b9f",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 840,
+    "total_tokens": 1029,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我希望上午十点前做完，因为下午孩子要在家写作业，别太吵。",
+  "spoken_text": "我希望上午十点前做完，因为下午孩子要在家写作业，别太吵。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我希望上午十点前做完，因为下午孩子要在家写作业，别太吵。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我希望上午十点前做完，因为下午孩子要在家写作业，别太吵。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-41fa4ae4-e6b4-972f-b364-6607dd081b16",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f96f5d87c2f5fc9603b1d7f46ec52c318dce2b201afa4c942fa8f496600b0b75"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9788f8a1ee3204d92f4daa77f6a2b3b4365affdb5d1c5a0097356336dbc09751",
+    "canonical_sha256": "f96f5d87c2f5fc9603b1d7f46ec52c318dce2b201afa4c942fa8f496600b0b75",
+    "pcm_sha256": "346bb84379e3390f79f24bd91b81dd24a94e7d6725ee6f5348e94e5321b457a6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 100800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我希望上午十点前做完，因为下午孩子要在家写作业，别太吵。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-62f45a69-da83-95fa-98f2-cb0a706085f4",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9788f8a1ee3204d92f4daa77f6a2b3b4365affdb5d1c5a0097356336dbc09751",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9788f8a1ee3204d92f4daa77f6a2b3b4365affdb5d1c5a0097356336dbc09751",
+        "canonical_audio_sha256": "f96f5d87c2f5fc9603b1d7f46ec52c318dce2b201afa4c942fa8f496600b0b75",
+        "pcm_sha256": "346bb84379e3390f79f24bd91b81dd24a94e7d6725ee6f5348e94e5321b457a6",
+        "same_samples": true
+      }
+    }
+  ]
+}

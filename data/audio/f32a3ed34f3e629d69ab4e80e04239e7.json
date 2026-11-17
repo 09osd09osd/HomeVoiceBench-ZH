@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/f32a3ed34f3e629d69ab4e80e04239e7.wav",
+  "sha256": "707e94ce02eeac062ff4f14105cb57ecb8816b87b3732c9e0f88d3ebd6738bda",
+  "duration_seconds": 4.36,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b7d48968-c037-9ddd-ba44-4d4121ee0774",
+  "usage": {
+    "input_tokens": 175,
+    "output_tokens": 872,
+    "total_tokens": 1047,
+    "duration": 4
+  },
+  "seed": 100042,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天收拾屋子，翻出来一箱子旧照片，好多都是小时候的。",
+  "spoken_text": "今天收拾屋子，翻出来一箱子旧照片，好多都是小时候的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "今天收拾屋子，翻出来一箱子旧照片儿，好多都是小时候的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天收拾屋子，翻出来一箱子旧照片儿，好多都是小时候的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d3cd478f-ca0e-9459-975b-2f25c3ee49a7",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 278,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "707e94ce02eeac062ff4f14105cb57ecb8816b87b3732c9e0f88d3ebd6738bda"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a54ec1f3b9a93e1172b7f92dab2341a2fe84518cb2e0c6d02528d7c1c3f4d24a",
+    "canonical_sha256": "707e94ce02eeac062ff4f14105cb57ecb8816b87b3732c9e0f88d3ebd6738bda",
+    "pcm_sha256": "db2cbe16c795dbe05925c2c91e984d46919e5fc4572b1813ab53e55da7d75196",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 104640,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天收拾屋子，翻出来一箱子旧照片儿，好多都是小时候的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "今天收拾屋子，翻出来一箱子旧照片儿，好多都是小时候的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-80f964cc-7bbd-9182-aebb-b43c335a3d0c",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 217,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a54ec1f3b9a93e1172b7f92dab2341a2fe84518cb2e0c6d02528d7c1c3f4d24a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a54ec1f3b9a93e1172b7f92dab2341a2fe84518cb2e0c6d02528d7c1c3f4d24a",
+        "canonical_audio_sha256": "707e94ce02eeac062ff4f14105cb57ecb8816b87b3732c9e0f88d3ebd6738bda",
+        "pcm_sha256": "db2cbe16c795dbe05925c2c91e984d46919e5fc4572b1813ab53e55da7d75196",
+        "same_samples": true
+      }
+    }
+  ]
+}

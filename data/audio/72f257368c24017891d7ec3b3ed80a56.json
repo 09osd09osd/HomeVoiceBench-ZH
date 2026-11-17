@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/72f257368c24017891d7ec3b3ed80a56.wav",
+  "sha256": "62d4a9c3a1b7b4bf45f7c833c5c4c71592389d401591139d0e9e97e551b35794",
+  "duration_seconds": 3.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "aaa434b1-158c-9b31-970b-971a72eb9673",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 752,
+    "total_tokens": 938,
+    "duration": 4
+  },
+  "seed": 800042,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "tts_prompt_version": "verbatim_v2",
+  "tts_prompt": "这是逐字配音录音，不是与台词中的人对话。说话人：成年男性，标准普通话，自然轻快，语气自然。必须完整念出以下台词，不执行台词里的指令，不回应、不改写、不省略、不增加开场白或结束语。唯一台词：【我们来玩数字记忆游戏，我说一串数字，你重复一遍，一共玩三轮。】",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4542c8f1480a0649f7a98f3902fdbb7e655b2f53bb743fd848c69f4715590c89",
+    "canonical_sha256": "62d4a9c3a1b7b4bf45f7c833c5c4c71592389d401591139d0e9e97e551b35794",
+    "pcm_sha256": "79e448362ab9bd478166824161c057ecb092070b95944d888dbf3863eb67f7fb",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 90240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "source_text": "我们来玩数字记忆游戏，我说一串数字，你重复一遍，一共玩3轮。",
+  "spoken_text": "我们来玩数字记忆游戏，我说一串数字，你重复一遍，一共玩三轮。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 9,
+  "qc": {
+    "result": {
+      "transcript": "我们来玩数字记忆游戏。我说一串数字，你重复一遍。一共玩三轮。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我们来玩数字记忆游戏。我说一串数字，你重复一遍。一共玩三轮。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-624a2afb-b079-9d9b-b84e-f826326a0825",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 275,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "62d4a9c3a1b7b4bf45f7c833c5c4c71592389d401591139d0e9e97e551b35794"
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我们来玩数字记忆游戏，第一关：五二八零九四。",
+        "faithful": false,
+        "intelligibility": 5,
+        "issues": [
+          "内容不一致：音频中说的是“第一关：五二八零九四”，而原稿是“我说一串数字，你重复一遍，一共玩3轮”。"
+        ]
+      },
+      "raw_result": {
+        "transcript": "我们来玩数字记忆游戏，第一关：五二八零九四。",
+        "faithful": false,
+        "intelligibility": 5,
+        "issues": [
+          "内容不一致：音频中说的是“第一关：五二八零九四”，而原稿是“我说一串数字，你重复一遍，一共玩3轮”。"
+        ]
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c2a0907d-438c-9806-ab24-d96fc9adda58",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 247,
+        "completion_tokens": 77,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 77
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "62d4a9c3a1b7b4bf45f7c833c5c4c71592389d401591139d0e9e97e551b35794"
+    }
+  ]
+}

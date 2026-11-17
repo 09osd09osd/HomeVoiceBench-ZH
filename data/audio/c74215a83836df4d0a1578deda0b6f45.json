@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c74215a83836df4d0a1578deda0b6f45.wav",
+  "sha256": "d662ad6d8453874863da058525d7249dc978f6ee734294de4753bf9332ff19e4",
+  "duration_seconds": 5.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a0c3c957-1e94-9e0f-8fdd-675f36c72a36",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 1136,
+    "total_tokens": 1321,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天办公室空调开得太猛，吹得我头有点疼，回家路上都晕晕的。",
+  "spoken_text": "今天办公室空调开得太猛，吹得我头有点疼，回家路上都晕晕的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天办公室空调开得太猛，吹得我头有点疼，回家路上都晕晕的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天办公室空调开得太猛，吹得我头有点疼，回家路上都晕晕的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4304c740-6b5c-9cc5-acbb-db11a81b8722",
+    "usage": {
+      "prompt_tokens": 246,
+      "total_tokens": 292,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d662ad6d8453874863da058525d7249dc978f6ee734294de4753bf9332ff19e4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e83b5162ea01f7e4387157a9cc9420da5215b81df156810bc09304b70990bc26",
+    "canonical_sha256": "d662ad6d8453874863da058525d7249dc978f6ee734294de4753bf9332ff19e4",
+    "pcm_sha256": "98d7bc736ecf72f62fb44f3df1abc8f01396b0e65046c615c521346167e1924b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 136320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天办公室空调开得太猛，吹得我头有点疼，回家路上都晕晕的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-060de545-ed58-9ea4-9d84-05b513b2fbbb",
+      "usage": {
+        "prompt_tokens": 162,
+        "total_tokens": 208,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e83b5162ea01f7e4387157a9cc9420da5215b81df156810bc09304b70990bc26",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e83b5162ea01f7e4387157a9cc9420da5215b81df156810bc09304b70990bc26",
+        "canonical_audio_sha256": "d662ad6d8453874863da058525d7249dc978f6ee734294de4753bf9332ff19e4",
+        "pcm_sha256": "98d7bc736ecf72f62fb44f3df1abc8f01396b0e65046c615c521346167e1924b",
+        "same_samples": true
+      }
+    }
+  ]
+}

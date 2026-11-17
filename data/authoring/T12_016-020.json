@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "48c0ed3e6a79e64f842287fe5bad494895df9b1c1ef4215811f3d050bca4aac4",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-bf3d92d1-e1af-9dfc-a2e7-56fc6650adeb",
+  "usage": {
+    "prompt_tokens": 13156,
+    "total_tokens": 14163,
+    "completion_tokens": 1007,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13156
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1007
+    }
+  },
+  "review_request_id": "chatcmpl-4edfa2b8-57d8-9116-9383-20047208fb81",
+  "review_usage": {
+    "prompt_tokens": 13788,
+    "total_tokens": 13874,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13788
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T12_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T12_016",
+        "title": "打开客厅电视并设为80%音量",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我打开客厅电视，音量调到80%。",
+            "reference_text": "好的，客厅电视已经打开，音量设到了80%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_017",
+        "title": "电视音量从80%降到40%",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我打开客厅电视，音量调到80%。",
+            "reference_text": "好的，客厅电视已经打开，音量设到了80%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把电视音量改成40%，其他设置别动。",
+            "reference_text": "好的，电视音量已经调到40%，其他设置没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_018",
+        "title": "电视音量调整后核对状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我打开客厅电视，音量调到80%。要是第一次没成功，可以再试一次，成功后就别重复操作了。",
+            "reference_text": "好的，客厅电视已经打开，音量设到了80%。第一次没成功，重试了一次才成功，没有重复操作。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "电视音量改成40%，其他设置别动。",
+            "reference_text": "好的，电视音量已经调到40%，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅电视现在音量和开关状态，别调整。",
+            "reference_text": "查了一下，客厅电视现在是开着的，音量是40%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_019",
+        "title": "电视音量调整、核对并关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我打开客厅电视，音量调到80%。要是没成功或超时了，可以再试一次，成功后别重复操作。",
+            "reference_text": "好的，客厅电视已经打开，音量设到了80%。中间超时了一次，重试后成功了，没有重复操作。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "电视音量改成40%，其他设置别动。",
+            "reference_text": "好的，电视音量已经调到40%，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅电视现在音量和开关状态，别调整。",
+            "reference_text": "查了一下，客厅电视现在是开着的，音量是40%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅电视关掉，音量设置保留。",
+            "reference_text": "好的，客厅电视已经关掉，音量还是保留在40%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_020",
+        "title": "电视音量多轮确认与关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我打开客厅电视，音量调到80%。",
+            "reference_text": "好的，客厅电视已经打开，音量设到了80%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "电视音量改成40%，其他设置别动。",
+            "reference_text": "好的，电视音量已经调到40%，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅电视现在音量和开关状态，别调整。",
+            "reference_text": "查了一下，客厅电视现在是开着的，音量是40%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅电视关掉，音量设置保留。",
+            "reference_text": "好的，客厅电视已经关掉，音量还是保留在40%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再帮我查一下客厅电视的开关状态，其他设备别改。",
+            "reference_text": "查了一下，客厅电视现在是关着的，其他设备没有改动。"
+          }
+        ]
+      }
+    ]
+  }
+}

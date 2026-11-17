@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6f46c06d4dbd0bbe618b9497d8609c49.wav",
+  "sha256": "db9db10faceff2c42804161c4b36973d9101431eb8b384f5fd792a6c30d00a01",
+  "duration_seconds": 5.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2f4fa160-0e79-9568-a51a-b7fdb9a31fa2",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 1184,
+    "total_tokens": 1372,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想惊动老师，怕小题大做。就想在自己家里做点什么，让自己别胡思乱想。",
+  "spoken_text": "我不想惊动老师，怕小题大做。就想在自己家里做点什么，让自己别胡思乱想。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不想惊动老师，怕小题大做。就想在自己家里做点什么，让自己别胡思乱想。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想惊动老师，怕小题大做。就想在自己家里做点什么，让自己别胡思乱想。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7a90bd0d-88f7-9c49-bd4d-201cbbcf5b39",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 296,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "db9db10faceff2c42804161c4b36973d9101431eb8b384f5fd792a6c30d00a01"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ff0d46bdfa1751f97373262d195b8a4d94e99214d8141a73f83e6fffd7c9cd29",
+    "canonical_sha256": "db9db10faceff2c42804161c4b36973d9101431eb8b384f5fd792a6c30d00a01",
+    "pcm_sha256": "17ae4bc84b122f3558346aacf10b85f5bf087fbc3227cf1c2f97a572e83ae25e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 142080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想惊动老师，怕小题大做。就想在自己家里做点什么，让自己别胡思乱想。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-80764176-8d33-96f7-ae18-3512dff37f25",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 212,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ff0d46bdfa1751f97373262d195b8a4d94e99214d8141a73f83e6fffd7c9cd29",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ff0d46bdfa1751f97373262d195b8a4d94e99214d8141a73f83e6fffd7c9cd29",
+        "canonical_audio_sha256": "db9db10faceff2c42804161c4b36973d9101431eb8b384f5fd792a6c30d00a01",
+        "pcm_sha256": "17ae4bc84b122f3558346aacf10b85f5bf087fbc3227cf1c2f97a572e83ae25e",
+        "same_samples": true
+      }
+    }
+  ]
+}

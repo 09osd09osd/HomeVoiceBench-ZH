@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a2cc822c1cc207de70bb39de5704516d.wav",
+  "sha256": "63ce377291ae7ca1bb22a32dda7a0eeb884dfbd2df87e9a375921865a02bde89",
+  "duration_seconds": 5.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4d163dd6-1c65-9774-b19f-0f50d3016a84",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 1024,
+    "total_tokens": 1207,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我平时只在书房和卧室戴眼镜，你帮我按这两个地方想个找法。",
+  "spoken_text": "我平时只在书房和卧室戴眼镜，你帮我按这两个地方想个找法。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我平时只在书房和卧室戴眼镜，你帮我按这两个地方想个找法。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我平时只在书房和卧室戴眼镜，你帮我按这两个地方想个找法。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f6f9df53-cbcc-9075-9d99-97ca9bc7ada9",
+    "usage": {
+      "prompt_tokens": 245,
+      "total_tokens": 290,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "63ce377291ae7ca1bb22a32dda7a0eeb884dfbd2df87e9a375921865a02bde89"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "bbf40a93ce5a23ddeb4f7ba0c8aa7543e9c09d82106465082bf77281b5aeb9da",
+    "canonical_sha256": "63ce377291ae7ca1bb22a32dda7a0eeb884dfbd2df87e9a375921865a02bde89",
+    "pcm_sha256": "975ac76709f41ddc6926bb0ffca2523397e18fe6a685e501538f10cc81b6cc78",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 122880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我平时只在书房和卧室戴眼镜，你帮我按这两个地方想个找法。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我平时只在书房和卧室戴眼镜，你帮我按这两个地方想个找法。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9977f9af-a92f-9ddf-8162-304a7ce25ef6",
+      "usage": {
+        "prompt_tokens": 184,
+        "total_tokens": 229,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "bbf40a93ce5a23ddeb4f7ba0c8aa7543e9c09d82106465082bf77281b5aeb9da",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "bbf40a93ce5a23ddeb4f7ba0c8aa7543e9c09d82106465082bf77281b5aeb9da",
+        "canonical_audio_sha256": "63ce377291ae7ca1bb22a32dda7a0eeb884dfbd2df87e9a375921865a02bde89",
+        "pcm_sha256": "975ac76709f41ddc6926bb0ffca2523397e18fe6a685e501538f10cc81b6cc78",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "batch_size": 16,
+  "adaptive_max_batch_size": 16,
+  "torch": "2.11.0+cu130",
+  "transformers": "4.57.3",
+  "cuda": "13.0",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "seed": 42,
+  "generation": {
+    "do_sample": true,
+    "repetition_penalty": 1.05,
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 50,
+    "subtalker_dosample": true,
+    "subtalker_temperature": 0.9,
+    "subtalker_top_p": 1.0,
+    "subtalker_top_k": 50,
+    "max_new_tokens": 1024
+  },
+  "timing_scope": "offline_batch_inference_not_realtime_latency",
+  "pilot": false,
+  "status": "resource_pressure_interrupted",
+  "batches": [
+    {
+      "mode": "tts",
+      "done": 16,
+      "total": 5056,
+      "batch_seconds": 10.938,
+      "peak_gpu_gib": 4.16
+    },
+    {
+      "mode": "tts",
+      "done": 32,
+      "total": 5056,
+      "batch_seconds": 10.859,
+      "peak_gpu_gib": 4.26
+    },
+    {
+      "mode": "tts",
+      "done": 48,
+      "total": 5056,
+      "batch_seconds": 12.828,
+      "peak_gpu_gib": 4.68
+    },
+    {
+      "mode": "tts",
+      "done": 64,
+      "total": 5056,
+      "batch_seconds": 12.172,
+      "peak_gpu_gib": 4.62
+    },
+    {
+      "mode": "tts",
+      "done": 80,
+      "total": 5056,
+      "batch_seconds": 12.172,
+      "peak_gpu_gib": 4.47
+    },
+    {
+      "mode": "tts",
+      "done": 96,
+      "total": 5056,
+      "batch_seconds": 11.578,
+      "peak_gpu_gib": 4.42
+    },
+    {
+      "mode": "tts",
+      "done": 112,
+      "total": 5056,
+      "batch_seconds": 12.047,
+      "peak_gpu_gib": 4.6
+    },
+    {
+      "mode": "tts",
+      "done": 128,
+      "total": 5056,
+      "batch_seconds": 13.0,
+      "peak_gpu_gib": 4.57
+    },
+    {
+      "mode": "tts",
+      "done": 144,
+      "total": 5056,
+      "batch_seconds": 14.547,
+      "peak_gpu_gib": 4.7
+    },
+    {
+      "mode": "tts",
+      "done": 160,
+      "total": 5056,
+      "batch_seconds": 13.984,
+      "peak_gpu_gib": 4.78
+    },
+    {
+      "mode": "tts",
+      "done": 176,
+      "total": 5056,
+      "batch_seconds": 12.688,
+      "peak_gpu_gib": 4.68
+    },
+    {
+      "mode": "tts",
+      "done": 192,
+      "total": 5056,
+      "batch_seconds": 13.64,
+      "peak_gpu_gib": 4.88
+    },
+    {
+      "mode": "tts",
+      "done": 208,
+      "total": 5056,
+      "batch_seconds": 13.11,
+      "peak_gpu_gib": 4.7
+    },
+    {
+      "mode": "tts",
+      "done": 224,
+      "total": 5056,
+      "batch_seconds": 12.953,
+      "peak_gpu_gib": 4.65
+    },
+    {
+      "mode": "tts",
+      "done": 240,
+      "total": 5056,
+      "batch_seconds": 15.234,
+      "peak_gpu_gib": 4.75
+    },
+    {
+      "mode": "tts",
+      "done": 256,
+      "total": 5056,
+      "batch_seconds": 15.078,
+      "peak_gpu_gib": 5.11
+    },
+    {
+      "mode": "tts",
+      "done": 272,
+      "total": 5056,
+      "batch_seconds": 13.875,
+      "peak_gpu_gib": 4.83
+    },
+    {
+      "mode": "tts",
+      "done": 288,
+      "total": 5056,
+      "batch_seconds": 16.11,
+      "peak_gpu_gib": 5.16
+    },
+    {
+      "mode": "tts",
+      "done": 304,
+      "total": 5056,
+      "batch_seconds": 14.578,
+      "peak_gpu_gib": 4.96
+    },
+    {
+      "mode": "tts",
+      "done": 320,
+      "total": 5056,
+      "batch_seconds": 14.859,
+      "peak_gpu_gib": 5.01
+    },
+    {
+      "mode": "tts",
+      "done": 336,
+      "total": 5056,
+      "batch_seconds": 15.813,
+      "peak_gpu_gib": 5.27
+    },
+    {
+      "mode": "tts",
+      "done": 352,
+      "total": 5056,
+      "batch_seconds": 14.328,
+      "peak_gpu_gib": 4.96
+    },
+    {
+      "mode": "tts",
+      "done": 368,
+      "total": 5056,
+      "batch_seconds": 16.562,
+      "peak_gpu_gib": 5.45
+    },
+    {
+      "mode": "tts",
+      "done": 384,
+      "total": 5056,
+      "batch_seconds": 15.61,
+      "peak_gpu_gib": 5.22
+    },
+    {
+      "mode": "tts",
+      "done": 400,
+      "total": 5056,
+      "batch_seconds": 14.64,
+      "peak_gpu_gib": 5.01
+    },
+    {
+      "mode": "tts",
+      "done": 416,
+      "total": 5056,
+      "batch_seconds": 16.891,
+      "peak_gpu_gib": 5.37
+    },
+    {
+      "mode": "tts",
+      "done": 432,
+      "total": 5056,
+      "batch_seconds": 15.734,
+      "peak_gpu_gib": 5.29
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/84dae9441795160b21699f5c518a3641.wav",
+  "sha256": "dff2c14d72a289fbeba1a39b97934e3cfa8f438d12f46a6ecb0b98f64aa3f367",
+  "duration_seconds": 7.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7edb822d-b06c-9724-a944-98d701f59a83",
+  "usage": {
+    "input_tokens": 247,
+    "output_tokens": 1544,
+    "total_tokens": 1791,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天在阳台浇花，不小心把水壶打翻了，弄得一地水。我有点累，你简单安慰我两句吧。",
+  "spoken_text": "今天在阳台浇花，不小心把水壶打翻了，弄得一地水。我有点累，你简单安慰我两句吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天在阳台浇花，不小心把水壶打翻了，弄得一地水。我有点累，你简单安慰我两句吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天在阳台浇花，不小心把水壶打翻了，弄得一地水。我有点累，你简单安慰我两句吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-222e4057-ff3b-9920-ac5d-c9c1ddb0a744",
+    "usage": {
+      "prompt_tokens": 267,
+      "total_tokens": 320,
+      "completion_tokens": 53,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 216
+      },
+      "completion_tokens_details": {
+        "text_tokens": 53
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "dff2c14d72a289fbeba1a39b97934e3cfa8f438d12f46a6ecb0b98f64aa3f367"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1c66f5e92f3ff83413510b38841370750f142771e91fd29c96e7ac674a674b59",
+    "canonical_sha256": "dff2c14d72a289fbeba1a39b97934e3cfa8f438d12f46a6ecb0b98f64aa3f367",
+    "pcm_sha256": "c03abb673bec75ac0a0e37931ea77c447cae27fd3749b65068dc76f53d2b3c84",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 185280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天在阳台浇花，不小心把水壶打翻了，弄得一地水。我有点累，你简单安慰我两句吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0f4ba41a-815c-9dbc-8c5f-70b08033b527",
+      "usage": {
+        "prompt_tokens": 183,
+        "total_tokens": 236,
+        "completion_tokens": 53,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 132
+        },
+        "completion_tokens_details": {
+          "text_tokens": 53
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1c66f5e92f3ff83413510b38841370750f142771e91fd29c96e7ac674a674b59",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1c66f5e92f3ff83413510b38841370750f142771e91fd29c96e7ac674a674b59",
+        "canonical_audio_sha256": "dff2c14d72a289fbeba1a39b97934e3cfa8f438d12f46a6ecb0b98f64aa3f367",
+        "pcm_sha256": "c03abb673bec75ac0a0e37931ea77c447cae27fd3749b65068dc76f53d2b3c84",
+        "same_samples": true
+      }
+    }
+  ]
+}

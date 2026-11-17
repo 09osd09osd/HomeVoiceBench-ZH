@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/13dc52d86b2af4d40fe45a6a28b453dc.wav",
+  "sha256": "17e85bef24a921de918719685cca4e42629dc475dc27ac106eecea44dbe5437f",
+  "duration_seconds": 3.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "45864622-2d7b-9236-b6c2-7f4b07df8d80",
+  "usage": {
+    "input_tokens": 171,
+    "output_tokens": 720,
+    "total_tokens": 891,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我希望按周轮，一个人轮一周，周末交接。",
+  "spoken_text": "我希望按周轮，一个人轮一周，周末交接。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我希望按周轮，一个人轮一周，周末交接。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我希望按周轮，一个人轮一周，周末交接。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-99c20c6a-edda-920b-88f0-a5ceec2138d1",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 262,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "17e85bef24a921de918719685cca4e42629dc475dc27ac106eecea44dbe5437f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5967c87403bbd9ec6b77ca87c5be5c3f8ce8beba5fb89c28723bee8543ffafc0",
+    "canonical_sha256": "17e85bef24a921de918719685cca4e42629dc475dc27ac106eecea44dbe5437f",
+    "pcm_sha256": "ede338acec03f913cd174062594a32d3732043a51fdadc41d14b2634d291a353",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 86400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我希望按周轮，一个人轮一周，周末交接。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-44135e65-7d3f-9d87-a088-4d2120f0ea32",
+      "usage": {
+        "prompt_tokens": 140,
+        "total_tokens": 178,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 117
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5967c87403bbd9ec6b77ca87c5be5c3f8ce8beba5fb89c28723bee8543ffafc0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5967c87403bbd9ec6b77ca87c5be5c3f8ce8beba5fb89c28723bee8543ffafc0",
+        "canonical_audio_sha256": "17e85bef24a921de918719685cca4e42629dc475dc27ac106eecea44dbe5437f",
+        "pcm_sha256": "ede338acec03f913cd174062594a32d3732043a51fdadc41d14b2634d291a353",
+        "same_samples": true
+      }
+    }
+  ]
+}

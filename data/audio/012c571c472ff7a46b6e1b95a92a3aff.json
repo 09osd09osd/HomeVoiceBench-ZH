@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/012c571c472ff7a46b6e1b95a92a3aff.wav",
+  "sha256": "581c8dd11cce88ff77678eefc1e5170a9e765cb41093eec0be334a00f6783189",
+  "duration_seconds": 5.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f8036920-9399-989a-955b-70366e72dbb7",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 1112,
+    "total_tokens": 1300,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "补充一下，我家有小孩和猫，预算不超过5000块，你按这个再帮我分析。",
+  "spoken_text": "补充一下，我家有小孩和猫，预算不超过五千块，你按这个再帮我分析。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "补充一下，我家有小孩和猫，预算不超过五千块，你按这个再帮我分析。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "补充一下，我家有小孩和猫，预算不超过五千块，你按这个再帮我分析。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b72c0388-d4e6-948b-9574-5bd94b5f0dad",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 297,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "581c8dd11cce88ff77678eefc1e5170a9e765cb41093eec0be334a00f6783189"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "99162e3648f816aaef8099923320d2623748f919bc05f824fd69c977708104fd",
+    "canonical_sha256": "581c8dd11cce88ff77678eefc1e5170a9e765cb41093eec0be334a00f6783189",
+    "pcm_sha256": "bc8ed7c9b799b83edaa01072b99ac01cfbbb93b62ff5a64f57a61c22762b81c4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 133440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "补充一下，我家有小孩和猫，预算不超过五千块，你按这个再帮我分析。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "补充一下，我家有小孩和猫，预算不超过五千块，你按这个再帮我分析。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5fe17647-3d41-9d74-b1b9-76ae48887567",
+      "usage": {
+        "prompt_tokens": 189,
+        "total_tokens": 236,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "99162e3648f816aaef8099923320d2623748f919bc05f824fd69c977708104fd",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "99162e3648f816aaef8099923320d2623748f919bc05f824fd69c977708104fd",
+        "canonical_audio_sha256": "581c8dd11cce88ff77678eefc1e5170a9e765cb41093eec0be334a00f6783189",
+        "pcm_sha256": "bc8ed7c9b799b83edaa01072b99ac01cfbbb93b62ff5a64f57a61c22762b81c4",
+        "same_samples": true
+      }
+    }
+  ]
+}

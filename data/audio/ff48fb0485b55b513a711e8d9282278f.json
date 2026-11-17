@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ff48fb0485b55b513a711e8d9282278f.wav",
+  "sha256": "ae549f9d8ef42ad1e45165f4b1a6029543fa527f096f7843db7d5b2142a990e8",
+  "duration_seconds": 3.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "379b06f6-98b5-9879-986d-b4fe211870e2",
+  "usage": {
+    "input_tokens": 198,
+    "output_tokens": 616,
+    "total_tokens": 814,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你现在记住我要多长的新闻了吗？还是本地的吧？",
+  "spoken_text": "你现在记住我要多长的新闻了吗？还是本地的吧？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你现在记住我要多长的新闻了吗？还是本地的吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你现在记住我要多长的新闻了吗？还是本地的吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-26c0d6f8-8793-9c6e-91f5-d342ce3abaf5",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 262,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ae549f9d8ef42ad1e45165f4b1a6029543fa527f096f7843db7d5b2142a990e8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6dfacc2b9e652e02b16226d3cd87121799ab44a5c2fee6d8ffe5514b17264795",
+    "canonical_sha256": "ae549f9d8ef42ad1e45165f4b1a6029543fa527f096f7843db7d5b2142a990e8",
+    "pcm_sha256": "84a2dfa22d0f4210f1232717972744bf3729322aa6ab174ede1bec21a77701ff",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 73920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你现在记住我要多长的新闻了吗？还是本地的吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-52c4bee6-2a52-948b-a985-0519cb23d612",
+      "usage": {
+        "prompt_tokens": 140,
+        "total_tokens": 178,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 117
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6dfacc2b9e652e02b16226d3cd87121799ab44a5c2fee6d8ffe5514b17264795",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6dfacc2b9e652e02b16226d3cd87121799ab44a5c2fee6d8ffe5514b17264795",
+        "canonical_audio_sha256": "ae549f9d8ef42ad1e45165f4b1a6029543fa527f096f7843db7d5b2142a990e8",
+        "pcm_sha256": "84a2dfa22d0f4210f1232717972744bf3729322aa6ab174ede1bec21a77701ff",
+        "same_samples": true
+      }
+    }
+  ]
+}

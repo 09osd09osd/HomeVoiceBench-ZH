@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/27d2ee4e0a57f2b2052d72a9541fffda.wav",
+  "sha256": "acaff0800d5e7789de8e9059a286825cab2ac18ee09f77efc1d72d336927a259",
+  "duration_seconds": 7.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4096cc49-6af8-9e52-918e-f18f6e2ead65",
+  "usage": {
+    "input_tokens": 177,
+    "output_tokens": 1496,
+    "total_tokens": 1673,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询，不要动。",
+  "spoken_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询，不要动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "家里有哪些房间？再看看客厅里有哪些设备，只查询不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "家里有哪些房间？再看看客厅里有哪些设备，只查询不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9018979e-26fa-9162-838d-0bcceb405367",
+    "usage": {
+      "prompt_tokens": 256,
+      "total_tokens": 297,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "acaff0800d5e7789de8e9059a286825cab2ac18ee09f77efc1d72d336927a259"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "12e44fce141c594fd1792893b07e576ed1509f4bacf410338e41107655f5b803",
+    "canonical_sha256": "acaff0800d5e7789de8e9059a286825cab2ac18ee09f77efc1d72d336927a259",
+    "pcm_sha256": "2c9bde0db6930ad1a935801d41f03b87cbbbefd44ff3635ae75648c80233a0ef",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 179520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "家里有哪些房间？再看看客厅里有哪些设备，只查询不要动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "家里有哪些房间？再看看客厅里有哪些设备，只查询不要动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e3c2ac21-fc6c-9f17-b720-18d516372855",
+      "usage": {
+        "prompt_tokens": 195,
+        "total_tokens": 236,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "12e44fce141c594fd1792893b07e576ed1509f4bacf410338e41107655f5b803",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "12e44fce141c594fd1792893b07e576ed1509f4bacf410338e41107655f5b803",
+        "canonical_audio_sha256": "acaff0800d5e7789de8e9059a286825cab2ac18ee09f77efc1d72d336927a259",
+        "pcm_sha256": "2c9bde0db6930ad1a935801d41f03b87cbbbefd44ff3635ae75648c80233a0ef",
+        "same_samples": true
+      }
+    }
+  ]
+}

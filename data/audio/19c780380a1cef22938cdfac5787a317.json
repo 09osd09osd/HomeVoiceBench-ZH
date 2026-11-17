@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/19c780380a1cef22938cdfac5787a317.wav",
+  "sha256": "e66244f7b286ab9205c383d20d95e2646568dd6d4f3d627a6859fcd4637b3877",
+  "duration_seconds": 3.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "baf19a88-eb93-97b5-9a0c-8d8bbb18ca07",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 600,
+    "total_tokens": 786,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是阳台，是窗台，地方更小。",
+  "spoken_text": "更正一下，不是阳台，是窗台，地方更小。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是阳台，是窗台，地方更小。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是阳台，是窗台，地方更小。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9694af24-7beb-9ce5-9f58-c83262d7ccb5",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e66244f7b286ab9205c383d20d95e2646568dd6d4f3d627a6859fcd4637b3877"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e75ada6aea982e5c1daa4795a34f3086697ae1124ede875618609ca92016e9b9",
+    "canonical_sha256": "e66244f7b286ab9205c383d20d95e2646568dd6d4f3d627a6859fcd4637b3877",
+    "pcm_sha256": "d73f2d70b1e224be85b85650f10261445fd81ac2e0132a659ca91f4e02e9d93a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 72000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是阳台，是窗台，地方更小。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，不是阳台，是窗台，地方更小。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-371b6e69-ace0-9ae3-81a3-b661f68ece8f",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 203,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e75ada6aea982e5c1daa4795a34f3086697ae1124ede875618609ca92016e9b9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e75ada6aea982e5c1daa4795a34f3086697ae1124ede875618609ca92016e9b9",
+        "canonical_audio_sha256": "e66244f7b286ab9205c383d20d95e2646568dd6d4f3d627a6859fcd4637b3877",
+        "pcm_sha256": "d73f2d70b1e224be85b85650f10261445fd81ac2e0132a659ca91f4e02e9d93a",
+        "same_samples": true
+      }
+    }
+  ]
+}

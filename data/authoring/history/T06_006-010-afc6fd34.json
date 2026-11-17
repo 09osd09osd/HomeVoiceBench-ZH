@@ -1,0 +1,172 @@
+{
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-2240f1fb-2030-908a-a33e-07fcc47fc1ce",
+  "usage": {
+    "prompt_tokens": 13519,
+    "total_tokens": 14477,
+    "completion_tokens": 958,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13519
+    },
+    "completion_tokens_details": {
+      "text_tokens": 958
+    }
+  },
+  "review_request_id": "chatcmpl-3608e85a-aa35-9e19-b72e-3805c604efe4",
+  "review_usage": {
+    "prompt_tokens": 14099,
+    "total_tokens": 14185,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14099
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T06_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T06_006",
+        "title": "卧室灯调到四成亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十。",
+            "reference_text": "好的，卧室灯已经打开，亮度设置为百分之四十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_007",
+        "title": "卧室灯亮度从四成调到六成",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十。",
+            "reference_text": "好的，卧室灯已经打开，亮度设置为百分之四十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把卧室灯的亮度改成百分之六十，其他设置别动。",
+            "reference_text": "好的，卧室灯的亮度已经改成百分之六十，其他设置没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_008",
+        "title": "卧室灯调亮度后核对状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十。",
+            "reference_text": "好的，卧室灯已经打开，亮度设置为百分之四十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把卧室灯的亮度改成百分之六十，其他设置别动。",
+            "reference_text": "好的，卧室灯的亮度已经改成百分之六十，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看卧室灯现在亮度和开关状态，不用调。",
+            "reference_text": "卧室灯现在是开着的，亮度百分之六十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_009",
+        "title": "卧室灯调亮后关灯保留亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十。",
+            "reference_text": "好的，卧室灯已经打开，亮度设置为百分之四十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把卧室灯的亮度改成百分之六十，其他设置别动。",
+            "reference_text": "好的，卧室灯的亮度已经改成百分之六十，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看卧室灯现在亮度和开关状态，不用调。",
+            "reference_text": "卧室灯现在是开着的，亮度百分之六十。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把卧室灯关掉，亮度设置保留着。",
+            "reference_text": "好的，卧室灯已经关掉，亮度设置还是百分之六十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_010",
+        "title": "卧室灯关灯后再查开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到百分之四十。",
+            "reference_text": "好的，卧室灯已经打开，亮度设置为百分之四十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把卧室灯的亮度改成百分之六十，其他设置别动。",
+            "reference_text": "好的，卧室灯的亮度已经改成百分之六十，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看卧室灯现在亮度和开关状态，不用调。",
+            "reference_text": "卧室灯现在是开着的，亮度百分之六十。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把卧室灯关掉，亮度设置保留着。",
+            "reference_text": "好的，卧室灯已经关掉，亮度设置还是百分之六十。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再帮我查一下卧室灯的开关，别的设备别动。",
+            "reference_text": "卧室灯现在是关着的。"
+          }
+        ]
+      }
+    ]
+  }
+}

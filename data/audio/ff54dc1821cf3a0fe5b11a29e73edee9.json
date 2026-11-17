@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ff54dc1821cf3a0fe5b11a29e73edee9.wav",
+  "sha256": "7b948cc5a312fe345ea01ca9b7c2f537922a49bfb774d84bf1e0488b722e755b",
+  "duration_seconds": 4.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d79ad305-673b-9c80-8d01-576c915dbdc8",
+  "usage": {
+    "input_tokens": 189,
+    "output_tokens": 928,
+    "total_tokens": 1117,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我下午面试完说三天内给结果，现在第二天了，我一会儿看一次手机，根本静不下来。",
+  "spoken_text": "我下午面试完说三天内给结果，现在第二天了，我一会儿看一次手机，根本静不下来。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我下午面试完说三天内给结果，现在第二天了。我一会儿看一次手机，根本静不下来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我下午面试完说三天内给结果，现在第二天了。我一会儿看一次手机，根本静不下来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2a453bf3-1437-9d15-a42e-15e63ad15000",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 293,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7b948cc5a312fe345ea01ca9b7c2f537922a49bfb774d84bf1e0488b722e755b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0a67ca5d40b29c5a0208e48a6d16da4532e85404a03c50663cd7647c41c21a21",
+    "canonical_sha256": "7b948cc5a312fe345ea01ca9b7c2f537922a49bfb774d84bf1e0488b722e755b",
+    "pcm_sha256": "5d09b37611ebe30ebc2a60185a300f2ca22fb9c3e0564a7c673bef2922457853",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 111360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我下午面试完说三天内给结果，现在第二天了，我一会看一次手机根本静不下来。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-28f51b3b-de09-9889-b856-348b8181d91c",
+      "usage": {
+        "prompt_tokens": 159,
+        "total_tokens": 208,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 129
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0a67ca5d40b29c5a0208e48a6d16da4532e85404a03c50663cd7647c41c21a21",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0a67ca5d40b29c5a0208e48a6d16da4532e85404a03c50663cd7647c41c21a21",
+        "canonical_audio_sha256": "7b948cc5a312fe345ea01ca9b7c2f537922a49bfb774d84bf1e0488b722e755b",
+        "pcm_sha256": "5d09b37611ebe30ebc2a60185a300f2ca22fb9c3e0564a7c673bef2922457853",
+        "same_samples": true
+      }
+    }
+  ]
+}

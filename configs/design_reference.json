@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/1zhou-Wang/RoleCraft-ZH",
+  "verified_revision": "fdeaa18035114fa28e85e523f60636bf517d413d",
+  "verified_at_utc": "2026-11-16T22:13:32.576590+00:00",
+  "readme_url": "https://github.com/1zhou-Wang/RoleCraft-ZH/blob/fdeaa18035114fa28e85e523f60636bf517d413d/README.md",
+  "readme_sha256": "8567448b7adf4cd420092d06a3e8f2ef1d7396304bb84ecc326acfaf9cf6a16b",
+  "verification_scope": "Publication-time source/config verification; model inference settings were already fixed before the formal runs. No benchmark cases copied.",
+  "qwen_reference": {
+    "runtime": "llama.cpp b11552",
+    "quantization": "Q8_0",
+    "max_tokens": 512,
+    "reasoning": "off",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 2.0,
+    "seed": 42
+  },
+  "official_sampling_source": "https://huggingface.co/Qwen/Qwen3.5-2B#best-practices",
+  "task_specific_choices": "HomeVoiceBench uses 1000 new household cases, actual local baseline TTS for every completed answer, shared zh_spoken_v1 normalization, and task-specific sandbox/audio judging."
+}

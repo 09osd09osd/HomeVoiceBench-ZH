@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/72b192e58b610123433db25d80887319.wav",
+  "sha256": "c65d8a21fc9438bcebd8c5b3b4619d609cac61c8e40575e06ad9370f9704c6c3",
+  "duration_seconds": 4.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "20562d8b-810e-995f-a81a-115267a9c727",
+  "usage": {
+    "input_tokens": 216,
+    "output_tokens": 800,
+    "total_tokens": 1016,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天下班挤地铁累坏了，站了快四十分钟，腿都酸了。",
+  "spoken_text": "今天下班挤地铁累坏了，站了快四十分钟，腿都酸了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天下班挤地铁累坏了，站了快四十分钟，腿都酸了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天下班挤地铁累坏了，站了快四十分钟，腿都酸了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a29558bf-5a92-9eef-a286-a2ab789ba79c",
+    "usage": {
+      "prompt_tokens": 237,
+      "total_tokens": 281,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c65d8a21fc9438bcebd8c5b3b4619d609cac61c8e40575e06ad9370f9704c6c3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9b2c7f250ea37f6996dc11099ca1b1714074c781b5929adb82f6fb05b3b42538",
+    "canonical_sha256": "c65d8a21fc9438bcebd8c5b3b4619d609cac61c8e40575e06ad9370f9704c6c3",
+    "pcm_sha256": "5c46fde762cad3e821e3a2cb76b62796592d3dd08b4b31e33496adfe311cd84f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 96000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天下班挤地铁累坏了，站了快四十分钟，腿都酸了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ae52ef12-93c4-97c8-90e6-3fe661f7270d",
+      "usage": {
+        "prompt_tokens": 153,
+        "total_tokens": 197,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 123
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9b2c7f250ea37f6996dc11099ca1b1714074c781b5929adb82f6fb05b3b42538",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9b2c7f250ea37f6996dc11099ca1b1714074c781b5929adb82f6fb05b3b42538",
+        "canonical_audio_sha256": "c65d8a21fc9438bcebd8c5b3b4619d609cac61c8e40575e06ad9370f9704c6c3",
+        "pcm_sha256": "5c46fde762cad3e821e3a2cb76b62796592d3dd08b4b31e33496adfe311cd84f",
+        "same_samples": true
+      }
+    }
+  ]
+}

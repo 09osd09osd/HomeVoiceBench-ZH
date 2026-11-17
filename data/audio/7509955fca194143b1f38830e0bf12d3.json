@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/7509955fca194143b1f38830e0bf12d3.wav",
+  "sha256": "5771454e9c8520916a1eb25358c2628bb4397b130622a985f3f4cfe9fec074a2",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ed13832d-bf80-9db8-aeab-536073b7af4d",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 824,
+    "total_tokens": 1008,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子六岁，大概请8个小朋友，最好别太吵，家长也能坐得下。",
+  "spoken_text": "孩子六岁，大概请八个小朋友，最好别太吵，家长也能坐得下。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子六岁，大概请八个小朋友，最好别太吵，家长也能坐得下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子六岁，大概请八个小朋友，最好别太吵，家长也能坐得下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-351aa933-14b6-91a7-88e6-4d2c566665a0",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 286,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5771454e9c8520916a1eb25358c2628bb4397b130622a985f3f4cfe9fec074a2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3570c7666f47e0ac2cd43380255512030a371f651fb9d476679e08e9a97590d7",
+    "canonical_sha256": "5771454e9c8520916a1eb25358c2628bb4397b130622a985f3f4cfe9fec074a2",
+    "pcm_sha256": "4c45178e74d46c0176f9aa02d9bbe321c8565fd69647c9cc65b887cefad2773d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子六岁，大概请八个小朋友，最好别太吵，家长也能坐得下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "孩子六岁，大概请八个小朋友，最好别太吵，家长也能坐得下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5ac969d9-5ea6-98f9-b042-b4c00fd1d4bc",
+      "usage": {
+        "prompt_tokens": 179,
+        "total_tokens": 225,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3570c7666f47e0ac2cd43380255512030a371f651fb9d476679e08e9a97590d7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3570c7666f47e0ac2cd43380255512030a371f651fb9d476679e08e9a97590d7",
+        "canonical_audio_sha256": "5771454e9c8520916a1eb25358c2628bb4397b130622a985f3f4cfe9fec074a2",
+        "pcm_sha256": "4c45178e74d46c0176f9aa02d9bbe321c8565fd69647c9cc65b887cefad2773d",
+        "same_samples": true
+      }
+    }
+  ]
+}

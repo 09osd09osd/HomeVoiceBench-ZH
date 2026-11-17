@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/944c3866a22ef2077ded22241f18e252.wav",
+  "sha256": "b2b9d60b983a1aaafaf5e2b63fe2d9dc9af4de5140bb78fb947334441d96a93e",
+  "duration_seconds": 3.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0498e5ed-dd82-93d3-b1e6-480924ca32d7",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 752,
+    "total_tokens": 942,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我下次想做得甜一点，家里人都爱吃偏甜口的，但别太腻。",
+  "spoken_text": "我下次想做得甜一点，家里人都爱吃偏甜口的，但别太腻。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我下次想做的甜一点，家里人都爱吃偏甜口的，但别太腻。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我下次想做的甜一点，家里人都爱吃偏甜口的，但别太腻。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8f5c233f-0ef7-9ede-a354-8499c07a7896",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 276,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b2b9d60b983a1aaafaf5e2b63fe2d9dc9af4de5140bb78fb947334441d96a93e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9da88186a2b1ccec72581833d7b819833c2f49f061bc4ffdc38a70f74d0a9aef",
+    "canonical_sha256": "b2b9d60b983a1aaafaf5e2b63fe2d9dc9af4de5140bb78fb947334441d96a93e",
+    "pcm_sha256": "e479da5cdecfe58b9f7bbd4af1586da373fa8a2a7fbe2c0a39138412fbc8f226",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 90240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我下次想做的甜一点，家里人都爱吃偏甜口的，但别太腻。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0ece88e4-5f56-9a27-b215-2b6f057db971",
+      "usage": {
+        "prompt_tokens": 147,
+        "total_tokens": 192,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9da88186a2b1ccec72581833d7b819833c2f49f061bc4ffdc38a70f74d0a9aef",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9da88186a2b1ccec72581833d7b819833c2f49f061bc4ffdc38a70f74d0a9aef",
+        "canonical_audio_sha256": "b2b9d60b983a1aaafaf5e2b63fe2d9dc9af4de5140bb78fb947334441d96a93e",
+        "pcm_sha256": "e479da5cdecfe58b9f7bbd4af1586da373fa8a2a7fbe2c0a39138412fbc8f226",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-16T23:52:22.959623+00:00",
+  "browser": "in-app browser, desktop viewport",
+  "website_checks": {
+    "final_results_visible": true,
+    "systems_decided": [
+      1000,
+      1000,
+      1000
+    ],
+    "heard_judgments": 2642,
+    "strict_pass_rates": [
+      0.116,
+      0.105,
+      0.259
+    ],
+    "qwen35_4b_example_audio": {
+      "case_id": "T06_003",
+      "user_turn": 1,
+      "duration_seconds": 14.96,
+      "observed_current_time_seconds": [
+        0.291727,
+        9.0539
+      ],
+      "ready_state": 4,
+      "error": null
+    },
+    "console_errors": []
+  },
+  "workbook_checks": {
+    "final_previews_inspected": [
+      "Overview",
+      "Runs columns J:P"
+    ],
+    "formula_reconciliation": "reports/workbook_validation.json",
+    "layout": "final results and planned/actual turn columns readable"
+  },
+  "screenshots": [
+    "docs/preview/final-results.jpg",
+    "docs/preview/number-normalization.jpg"
+  ],
+  "limits": [
+    "No native Excel/WPS application compatibility test",
+    "No mobile viewport check",
+    "Audio playback verified; semantic/audio scoring is machine judged, not human audited"
+  ]
+}

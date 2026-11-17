@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/761635b49e3c277d9b8eaab08a2f0876.wav",
+  "sha256": "b61bd9c1912842747bd3578650b521c8d29fa23210baf84ba9b7c55ec54eb04c",
+  "duration_seconds": 4.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8012f623-051b-96d2-af3e-04aea493233a",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 848,
+    "total_tokens": 1036,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我睡前看书是多久吗？顺便说说这样安排好不好。",
+  "spoken_text": "你还记得我睡前看书是多久吗？顺便说说这样安排好不好。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我睡前看书是多久吗？顺便说说这样安排好不好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我睡前看书是多久吗？顺便说说这样安排好不好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-23bb1b23-2aa3-91a6-8355-9e949ad100b2",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b61bd9c1912842747bd3578650b521c8d29fa23210baf84ba9b7c55ec54eb04c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cce1b6700b9a54352196c9bc8be65a056aab0facee307baab764043464036dd2",
+    "canonical_sha256": "b61bd9c1912842747bd3578650b521c8d29fa23210baf84ba9b7c55ec54eb04c",
+    "pcm_sha256": "81a929629afbcb8cf74ab5648cde11a684e1cf0ef51b887588dddf763e7ac6e0",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 101760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我睡前看书是多久吗？顺便说说这样安排好不好。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4d42b50b-32fe-913a-b675-12cd155a574e",
+      "usage": {
+        "prompt_tokens": 150,
+        "total_tokens": 191,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cce1b6700b9a54352196c9bc8be65a056aab0facee307baab764043464036dd2",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cce1b6700b9a54352196c9bc8be65a056aab0facee307baab764043464036dd2",
+        "canonical_audio_sha256": "b61bd9c1912842747bd3578650b521c8d29fa23210baf84ba9b7c55ec54eb04c",
+        "pcm_sha256": "81a929629afbcb8cf74ab5648cde11a684e1cf0ef51b887588dddf763e7ac6e0",
+        "same_samples": true
+      }
+    }
+  ]
+}

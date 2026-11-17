@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e473a65757b475acf4ab7fde25c5b8ea.wav",
+  "sha256": "321efe5d4909150ac5aab1a8a90da3d0abde243738ee72e3e7a3f228e136c8cc",
+  "duration_seconds": 3.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "cd106b95-89a1-93e1-b347-a31001a2928d",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 696,
+    "total_tokens": 886,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "别放那种带旋律的，我就想要纯一点的声音，比如风扇声。",
+  "spoken_text": "别放那种带旋律的，我就想要纯一点的声音，比如风扇声。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "别放那种带旋律的，我就想要纯一点的声音，比如风扇声。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "别放那种带旋律的，我就想要纯一点的声音，比如风扇声。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-48859b08-0bff-994d-a1d5-8a5881d7a65c",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "321efe5d4909150ac5aab1a8a90da3d0abde243738ee72e3e7a3f228e136c8cc"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e4c7bec8a9902c26d387b61413a136997b8529a13362b123656262550ca86e5a",
+    "canonical_sha256": "321efe5d4909150ac5aab1a8a90da3d0abde243738ee72e3e7a3f228e136c8cc",
+    "pcm_sha256": "51ad0a153cc5392560248b27e6c4cfc7ebb604c3cead4c4cb88636e0fa3e2067",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 83520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "别放那种带旋律的，我就想要纯一点的声音，比如风扇声。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-377c94b8-0eda-94e0-bb68-2157cf39450b",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e4c7bec8a9902c26d387b61413a136997b8529a13362b123656262550ca86e5a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e4c7bec8a9902c26d387b61413a136997b8529a13362b123656262550ca86e5a",
+        "canonical_audio_sha256": "321efe5d4909150ac5aab1a8a90da3d0abde243738ee72e3e7a3f228e136c8cc",
+        "pcm_sha256": "51ad0a153cc5392560248b27e6c4cfc7ebb604c3cead4c4cb88636e0fa3e2067",
+        "same_samples": true
+      }
+    }
+  ]
+}

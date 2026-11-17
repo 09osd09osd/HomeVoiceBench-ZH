@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/3fabd72f801532ce3935e79a7fea553e.wav",
+  "sha256": "288b0ee42632bcf9ab5d86545bd85c8b0ff785eee4ad037a927fad566d19e23d",
+  "duration_seconds": 7.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7678caf2-16b4-9789-bdb0-20f2004c73c2",
+  "usage": {
+    "input_tokens": 207,
+    "output_tokens": 1576,
+    "total_tokens": 1783,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我老公不太爱听长篇大论，你帮我说得短一点、实在一点，别太煽情，也别让我保证以后一定记得，我不想说做不到的话。",
+  "spoken_text": "我老公不太爱听长篇大论，你帮我说得短一点、实在一点，别太煽情，也别让我保证以后一定记得，我不想说做不到的话。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我老公不太爱听长篇大论，你帮我说得短一点、实在一点，别太煽情，也别让我保证以后一定记得，我不想说做不到的话。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我老公不太爱听长篇大论，你帮我说得短一点、实在一点，别太煽情，也别让我保证以后一定记得，我不想说做不到的话。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fe52a57f-3959-91dc-bf25-fbd3b98e86da",
+    "usage": {
+      "prompt_tokens": 277,
+      "total_tokens": 340,
+      "completion_tokens": 63,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 226
+      },
+      "completion_tokens_details": {
+        "text_tokens": 63
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "288b0ee42632bcf9ab5d86545bd85c8b0ff785eee4ad037a927fad566d19e23d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f2b7cac80e20dd7a47bdb1534130867c58848269a2b68dbadce4a04925a6537c",
+    "canonical_sha256": "288b0ee42632bcf9ab5d86545bd85c8b0ff785eee4ad037a927fad566d19e23d",
+    "pcm_sha256": "49a8fe65a613f4e260d733b399f627bb3d24efdb09ea172234387553617e7647",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 189120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我老公不太爱听长篇大论，你帮我说得短一点、实在一点，别太煽情，也别让我保证以后一定记得，我不想说做不到的话。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f7d245ce-aaaa-9467-a2b5-0cd2e69353b4",
+      "usage": {
+        "prompt_tokens": 193,
+        "total_tokens": 256,
+        "completion_tokens": 63,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 63
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f2b7cac80e20dd7a47bdb1534130867c58848269a2b68dbadce4a04925a6537c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f2b7cac80e20dd7a47bdb1534130867c58848269a2b68dbadce4a04925a6537c",
+        "canonical_audio_sha256": "288b0ee42632bcf9ab5d86545bd85c8b0ff785eee4ad037a927fad566d19e23d",
+        "pcm_sha256": "49a8fe65a613f4e260d733b399f627bb3d24efdb09ea172234387553617e7647",
+        "same_samples": true
+      }
+    }
+  ]
+}

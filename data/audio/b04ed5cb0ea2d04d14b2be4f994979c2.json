@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b04ed5cb0ea2d04d14b2be4f994979c2.wav",
+  "sha256": "0ea744f0eac4483268fd4d6933dcf15448985c1cae8727c84fd9d49cb0f5b983",
+  "duration_seconds": 4.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b24d3e9b-714e-9938-83d9-6eb35d3a308b",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 840,
+    "total_tokens": 1041,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我有点累，想简单聊聊。这周末如果天气好，适合全家一起大扫除吗？",
+  "spoken_text": "我有点累，想简单聊聊。这周末如果天气好，适合全家一起大扫除吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我有点累，想简单聊聊。这周末如果天气好，适合全家一起大扫除吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我有点累，想简单聊聊。这周末如果天气好，适合全家一起大扫除吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a834a6a4-7046-9309-8fc1-f8a2195c4ded",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 287,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0ea744f0eac4483268fd4d6933dcf15448985c1cae8727c84fd9d49cb0f5b983"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1070a968ebcfe3afdedcf7640372d0e32b394df54fbbbe25129061355f41cf37",
+    "canonical_sha256": "0ea744f0eac4483268fd4d6933dcf15448985c1cae8727c84fd9d49cb0f5b983",
+    "pcm_sha256": "036f1e701a9d1ef73657ebf9d2ed61c33d68476a53b59bd865236c56db8e1747",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 100800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我有点累，想简单聊聊。这周末如果天气好，适合全家一起大扫除吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我有点累，想简单聊聊。这周末如果天气好，适合全家一起大扫除吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ac1da341-7c3f-910e-9370-c559ede3c3b0",
+      "usage": {
+        "prompt_tokens": 179,
+        "total_tokens": 226,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1070a968ebcfe3afdedcf7640372d0e32b394df54fbbbe25129061355f41cf37",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1070a968ebcfe3afdedcf7640372d0e32b394df54fbbbe25129061355f41cf37",
+        "canonical_audio_sha256": "0ea744f0eac4483268fd4d6933dcf15448985c1cae8727c84fd9d49cb0f5b983",
+        "pcm_sha256": "036f1e701a9d1ef73657ebf9d2ed61c33d68476a53b59bd865236c56db8e1747",
+        "same_samples": true
+      }
+    }
+  ]
+}

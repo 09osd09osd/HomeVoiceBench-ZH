@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/55c9160a253f848568b9c4dfa3d53880.wav",
+  "sha256": "97c3d167a97aa5cd1677df0b02e070b8bc42ebf72aeecd90bd57e139caa9bcce",
+  "duration_seconds": 4.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "07f3603c-08d8-9c6d-8a88-355f3a6681b7",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 944,
+    "total_tokens": 1141,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想练一下打电话请假，我说：王经理，我明天下午想请个假。你帮我听听。",
+  "spoken_text": "我想练一下打电话请假，我说:王经理，我明天下午想请个假。你帮我听听。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想练一下打电话请假。我说：“王经理，我明天下午想请个假。”你帮我听听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想练一下打电话请假。我说：“王经理，我明天下午想请个假。”你帮我听听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-223a85bb-6aa4-9e0f-9b86-2498fa738374",
+    "usage": {
+      "prompt_tokens": 242,
+      "total_tokens": 291,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "97c3d167a97aa5cd1677df0b02e070b8bc42ebf72aeecd90bd57e139caa9bcce"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5c15a2753da0993bcc7e79cf2e9e0f23142338f24aa14342058b9a1279e4c5da",
+    "canonical_sha256": "97c3d167a97aa5cd1677df0b02e070b8bc42ebf72aeecd90bd57e139caa9bcce",
+    "pcm_sha256": "7d3032c48393cd529d1f575f3c15267e026666bd3c16ff3ad5bd9455ce0491d9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 113280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想练一下打电话请假，我说：“王经理，我明天下午想请个假。”你帮我听听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想练一下打电话请假，我说：“王经理，我明天下午想请个假。”你帮我听听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-fc8376db-23e0-9bfc-9a8d-512045796f6a",
+      "usage": {
+        "prompt_tokens": 181,
+        "total_tokens": 230,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 151
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5c15a2753da0993bcc7e79cf2e9e0f23142338f24aa14342058b9a1279e4c5da",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5c15a2753da0993bcc7e79cf2e9e0f23142338f24aa14342058b9a1279e4c5da",
+        "canonical_audio_sha256": "97c3d167a97aa5cd1677df0b02e070b8bc42ebf72aeecd90bd57e139caa9bcce",
+        "pcm_sha256": "7d3032c48393cd529d1f575f3c15267e026666bd3c16ff3ad5bd9455ce0491d9",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/1eaf18fe908ebd263e64b073f64293be.wav",
+  "sha256": "04a452c07e68e984b99cdc9b5100590d7b800b5dc30c820e1fb2d0b4a60d2caf",
+  "duration_seconds": 7.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1fb61b44-8f2f-9040-943a-c959d7785dce",
+  "usage": {
+    "input_tokens": 205,
+    "output_tokens": 1464,
+    "total_tokens": 1669,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "那梨是黄色的，个头不大，闻着还挺香。我打算放两天再吃，别太急着催熟。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "那梨是黄色的，个头不大，闻着还挺香。我打算放两天再吃，别太急着催熟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d3acd23e-c541-9efa-8f00-e92f7b68b2f5",
+    "usage": {
+      "prompt_tokens": 182,
+      "total_tokens": 234,
+      "completion_tokens": 52,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 131
+      },
+      "completion_tokens_details": {
+        "text_tokens": 52
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0b342131f08f57dbbb2e04cf06408eb7082866f718a0f87faf2a2b3a39a018fe",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "0b342131f08f57dbbb2e04cf06408eb7082866f718a0f87faf2a2b3a39a018fe",
+      "canonical_audio_sha256": "04a452c07e68e984b99cdc9b5100590d7b800b5dc30c820e1fb2d0b4a60d2caf",
+      "pcm_sha256": "05d38bd0fa57654f7cb1926a1c680369b89e4eed754264527ab1d9fce55f9901",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0b342131f08f57dbbb2e04cf06408eb7082866f718a0f87faf2a2b3a39a018fe",
+    "canonical_sha256": "04a452c07e68e984b99cdc9b5100590d7b800b5dc30c820e1fb2d0b4a60d2caf",
+    "pcm_sha256": "05d38bd0fa57654f7cb1926a1c680369b89e4eed754264527ab1d9fce55f9901",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 175680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

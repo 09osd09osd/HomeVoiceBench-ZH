@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/038e10e08fc82776a48bfef9172ccfd7.wav",
+  "sha256": "8c20b905e98ca91eb5ddd6521be0a80b90da56a70cfd51f4fca8937469ffa623",
+  "duration_seconds": 5.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f8cd4312-b1c0-9b87-b044-6a9c871c215c",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 1040,
+    "total_tokens": 1237,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我改的时间吗？我想确认一下，然后接着帮我想想怎么开口。",
+  "spoken_text": "你还记得我改的时间吗？我想确认一下，然后接着帮我想想怎么开口。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我改的时间吗？我想确认一下，然后接着帮我想想怎么开口。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我改的时间吗？我想确认一下，然后接着帮我想想怎么开口。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5420e2f9-0d53-94ba-b849-4cf4be7987d6",
+    "usage": {
+      "prompt_tokens": 245,
+      "total_tokens": 290,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8c20b905e98ca91eb5ddd6521be0a80b90da56a70cfd51f4fca8937469ffa623"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c2de94821d114bd829e3f75fdbe3f2937d6d1aa7ad9cc5eb940b3dd62d2d5059",
+    "canonical_sha256": "8c20b905e98ca91eb5ddd6521be0a80b90da56a70cfd51f4fca8937469ffa623",
+    "pcm_sha256": "d6ae428d2f7cfd5ca7f7ec6f69f79389eb6770b1bb78f31cea6694b6180ea0ad",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 124800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我改的时间吗？我想确认一下，然后接着帮我想想怎么开口。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ad543f17-d132-9dd4-967f-64f5f42d6a7f",
+      "usage": {
+        "prompt_tokens": 161,
+        "total_tokens": 206,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c2de94821d114bd829e3f75fdbe3f2937d6d1aa7ad9cc5eb940b3dd62d2d5059",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c2de94821d114bd829e3f75fdbe3f2937d6d1aa7ad9cc5eb940b3dd62d2d5059",
+        "canonical_audio_sha256": "8c20b905e98ca91eb5ddd6521be0a80b90da56a70cfd51f4fca8937469ffa623",
+        "pcm_sha256": "d6ae428d2f7cfd5ca7f7ec6f69f79389eb6770b1bb78f31cea6694b6180ea0ad",
+        "same_samples": true
+      }
+    }
+  ]
+}

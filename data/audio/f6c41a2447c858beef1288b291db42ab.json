@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f6c41a2447c858beef1288b291db42ab.wav",
+  "sha256": "e626afab786556d6515a80beaabfda0bcdafc67fcc2a5a1ee1a96f9765709c6f",
+  "duration_seconds": 4.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "54407382-4076-9eb2-8714-324aae240477",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 808,
+    "total_tokens": 1009,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "他精神不错，就是聊着聊着老提以前加班的事，我其实更想听他现在的生活。",
+  "spoken_text": "他精神不错，就是聊着聊着老提以前加班的事，我其实更想听他现在的生活。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "他精神不错，就是聊着聊着老提以前加班的事。我其实更想听他现在的生活。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "他精神不错，就是聊着聊着老提以前加班的事。我其实更想听他现在的生活。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ba7c9be8-4777-9fd5-9f75-02887deac37b",
+    "usage": {
+      "prompt_tokens": 242,
+      "total_tokens": 291,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e626afab786556d6515a80beaabfda0bcdafc67fcc2a5a1ee1a96f9765709c6f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "302ea03e914bcbbf942fc44ecc7dba820758d7c394305cb1daf5330c136640a4",
+    "canonical_sha256": "e626afab786556d6515a80beaabfda0bcdafc67fcc2a5a1ee1a96f9765709c6f",
+    "pcm_sha256": "a51902ba0358044cdbc83a1935cd26271b8bf9b4cd1fe17c2af507b1703f3981",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 96960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "他精神不错，就是聊着聊着老提以前加班的事，我其实更想听他现在的生活。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9007f106-6e30-9750-a635-ab782c7e0553",
+      "usage": {
+        "prompt_tokens": 158,
+        "total_tokens": 207,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "302ea03e914bcbbf942fc44ecc7dba820758d7c394305cb1daf5330c136640a4",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "302ea03e914bcbbf942fc44ecc7dba820758d7c394305cb1daf5330c136640a4",
+        "canonical_audio_sha256": "e626afab786556d6515a80beaabfda0bcdafc67fcc2a5a1ee1a96f9765709c6f",
+        "pcm_sha256": "a51902ba0358044cdbc83a1935cd26271b8bf9b4cd1fe17c2af507b1703f3981",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/1ae02f0a5b4681a89f6bcb2c7f1a98da.wav",
+  "sha256": "7d307e7b70b80c26d32dadeffadeafdb2ef3f749ba29f110184979d92b4d07f3",
+  "duration_seconds": 4.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "81761409-e94f-9786-b28e-208a4637fdac",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 968,
+    "total_tokens": 1153,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是大扫除，是搬换季的衣服和被子，来回搬了好几趟。",
+  "spoken_text": "更正一下，不是大扫除，是搬换季的衣服和被子，来回搬了好几趟。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是大扫除，是搬换季的衣服和被子，来回搬了好几趟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是大扫除，是搬换季的衣服和被子，来回搬了好几趟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fca86329-dccb-9b24-98d5-f0a111b33e19",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 285,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7d307e7b70b80c26d32dadeffadeafdb2ef3f749ba29f110184979d92b4d07f3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3ba386b77c716ea46f87fa441e99b541264d60555d795a59383a8ff0a5545068",
+    "canonical_sha256": "7d307e7b70b80c26d32dadeffadeafdb2ef3f749ba29f110184979d92b4d07f3",
+    "pcm_sha256": "a666b1454be52f2952f176acbed3ca762e3b2e91865e6461fa7dcf5653ef9b9f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 116160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是大扫除，是搬换季的衣服和被子，来回搬了好几趟。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4ae7779c-10f3-94f8-b3ff-13cd6074b43f",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 201,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3ba386b77c716ea46f87fa441e99b541264d60555d795a59383a8ff0a5545068",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3ba386b77c716ea46f87fa441e99b541264d60555d795a59383a8ff0a5545068",
+        "canonical_audio_sha256": "7d307e7b70b80c26d32dadeffadeafdb2ef3f749ba29f110184979d92b4d07f3",
+        "pcm_sha256": "a666b1454be52f2952f176acbed3ca762e3b2e91865e6461fa7dcf5653ef9b9f",
+        "same_samples": true
+      }
+    }
+  ]
+}

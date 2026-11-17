@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/6dae571661ee41202f50825a8ad5ebf9.wav",
+  "sha256": "d7ce9bd11532c9e35d68119ad5056120f654ea2635252a777e5f21c6571ef759",
+  "duration_seconds": 5.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ef359d20-a7af-90f1-9c41-eaaa8a2090ac",
+  "usage": {
+    "input_tokens": 198,
+    "output_tokens": 1000,
+    "total_tokens": 1198,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "衣柜里总有一股潮味，衣服拿出来也不清爽，有没有低风险的处理办法？",
+  "spoken_text": "衣柜里总有一股潮味，衣服拿出来也不清爽，有没有低风险的处理办法？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "衣柜里总有一股潮味，衣服拿出来也不清爽，有没有低风险的处理办法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "衣柜里总有一股潮味，衣服拿出来也不清爽，有没有低风险的处理办法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-43583133-bd62-93e0-a796-19909d05bd24",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 286,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d7ce9bd11532c9e35d68119ad5056120f654ea2635252a777e5f21c6571ef759"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a10e4905b2f864dbf942b045453bc419c88b87c522a10afc8ca7fdbd8e58aed2",
+    "canonical_sha256": "d7ce9bd11532c9e35d68119ad5056120f654ea2635252a777e5f21c6571ef759",
+    "pcm_sha256": "3203fab7985ad5c646eb01e5b434c0084d34e8ecfb57807a5043c89fe9a2b362",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 120000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "衣柜里总有一股潮味，衣服拿出来也不清爽，有没有低风险的处理办法？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "衣柜里总有一股潮味，衣服拿出来也不清爽，有没有低风险的处理办法？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6f4fe1ec-f980-9445-90ad-b0bf21b500ad",
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 225,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 145
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a10e4905b2f864dbf942b045453bc419c88b87c522a10afc8ca7fdbd8e58aed2",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a10e4905b2f864dbf942b045453bc419c88b87c522a10afc8ca7fdbd8e58aed2",
+        "canonical_audio_sha256": "d7ce9bd11532c9e35d68119ad5056120f654ea2635252a777e5f21c6571ef759",
+        "pcm_sha256": "3203fab7985ad5c646eb01e5b434c0084d34e8ecfb57807a5043c89fe9a2b362",
+        "same_samples": true
+      }
+    }
+  ]
+}

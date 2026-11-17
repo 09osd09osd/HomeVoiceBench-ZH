@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "312f9dd4fa2ed5b85eaa22db1ba9a6877a6f3cf661a26dec05c6a33fc45b25c4",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-4bcf7afd-6174-9223-9069-8b791af83a7c",
+  "usage": {
+    "prompt_tokens": 4110,
+    "total_tokens": 5007,
+    "completion_tokens": 897,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4110
+    },
+    "completion_tokens_details": {
+      "text_tokens": 897
+    }
+  },
+  "review_request_id": "chatcmpl-965ee679-7751-90df-8446-9fdc94c3bb7d",
+  "review_usage": {
+    "prompt_tokens": 4629,
+    "total_tokens": 4715,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4629
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T27_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T27_001",
+        "title": "客厅音箱跳转到第30秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》跳到第30秒。",
+            "reference_text": "好的，已经跳到第30秒，继续播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_002",
+        "title": "跳到30秒后继续播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》跳到第30秒。",
+            "reference_text": "好的，已经跳到第30秒，继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放，从第30秒接着放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_003",
+        "title": "跳到30秒后继续再暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》跳到第30秒。",
+            "reference_text": "好的，已经跳到第30秒，继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放，从第30秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已暂停，停在第30秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_004",
+        "title": "暂停后定位到第60秒保持暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》跳到第30秒。",
+            "reference_text": "好的，已经跳到第30秒，继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放，从第30秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已暂停，停在第30秒。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第60秒，先保持暂停。",
+            "reference_text": "好的，已经定位到第60秒，保持暂停。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_005",
+        "title": "定位第60秒暂停后停止不换内容",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》跳到第30秒。",
+            "reference_text": "好的，已经跳到第30秒，继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放，从第30秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已暂停，停在第30秒。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第60秒，先保持暂停。",
+            "reference_text": "好的，已经定位到第60秒，保持暂停。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "好的，已停止，没有换别的内容。"
+          }
+        ]
+      }
+    ]
+  }
+}

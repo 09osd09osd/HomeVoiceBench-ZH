@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a7d4bf56edc0291977e6beb14482fbac.wav",
+  "sha256": "42cca37b7f77bca97c2a49a2ccd0e2597093149a0c96e46b99f1a29086a3e9f2",
+  "duration_seconds": 3.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1cf5f5bd-babc-9c44-8846-bf52fe86262b",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 768,
+    "total_tokens": 964,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我今天晚上试着做了个番茄炒蛋，但番茄放多了，有点酸。",
+  "spoken_text": "我今天晚上试着做了个番茄炒蛋，但番茄放多了，有点酸。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我今天晚上试着做了个番茄炒蛋，但番茄放多了，有点酸。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我今天晚上试着做了个番茄炒蛋，但番茄放多了，有点酸。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fa6c112e-5fce-9691-a89e-9966e4b148be",
+    "usage": {
+      "prompt_tokens": 229,
+      "total_tokens": 272,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "42cca37b7f77bca97c2a49a2ccd0e2597093149a0c96e46b99f1a29086a3e9f2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9603c7402fcafbbc6c8fffca1dbf0408a59e14ae31f43b6f5650ca19b64c4f52",
+    "canonical_sha256": "42cca37b7f77bca97c2a49a2ccd0e2597093149a0c96e46b99f1a29086a3e9f2",
+    "pcm_sha256": "3bc12fc468c10bbbc13ea8277ba354a18d3956758d589aa75604db350aa94c3d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 92160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我今天晚上试着做了个番茄炒蛋，但番茄放多了，有点酸。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3e8c0544-959c-905b-b3cb-795aa05d6884",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 188,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9603c7402fcafbbc6c8fffca1dbf0408a59e14ae31f43b6f5650ca19b64c4f52",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9603c7402fcafbbc6c8fffca1dbf0408a59e14ae31f43b6f5650ca19b64c4f52",
+        "canonical_audio_sha256": "42cca37b7f77bca97c2a49a2ccd0e2597093149a0c96e46b99f1a29086a3e9f2",
+        "pcm_sha256": "3bc12fc468c10bbbc13ea8277ba354a18d3956758d589aa75604db350aa94c3d",
+        "same_samples": true
+      }
+    }
+  ]
+}

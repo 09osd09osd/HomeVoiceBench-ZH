@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/51092f96e2f4877ea538ee0aed0b0701.wav",
+  "sha256": "5e51e265be94dc1fb1b2cca74e5c74c130eb085fdba101724f46965766f387ff",
+  "duration_seconds": 6.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4ada480b-9512-969d-a66f-fc5386e841c3",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 1256,
+    "total_tokens": 1449,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "好了，说这么多心里松快点了，你用一句话收个尾吧，我想歇会儿。",
+  "spoken_text": "好了，说这么多心里松快点了，你用一句话收个尾吧，我想歇会儿。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "好了，说这么多心里松快点了，你用一句话收个尾吧，我想歇会儿。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "好了，说这么多心里松快点了，你用一句话收个尾吧，我想歇会儿。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0f47a2b2-5bab-94e6-8284-e29d2cc8b847",
+    "usage": {
+      "prompt_tokens": 253,
+      "total_tokens": 299,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5e51e265be94dc1fb1b2cca74e5c74c130eb085fdba101724f46965766f387ff"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f7944a721630802ce264470fb8cdbfdeca1d909065f1657c59e1988b440afe4f",
+    "canonical_sha256": "5e51e265be94dc1fb1b2cca74e5c74c130eb085fdba101724f46965766f387ff",
+    "pcm_sha256": "d3e1a63864073f50b3bec9147abcdb441f8f391565f897716d0f3a9b3f534414",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 150720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "好了，说这么多心里松快点了，你用一句话收个尾吧，我想歇会儿。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-25308bc8-052b-96f9-9ab5-e764bd49f8c1",
+      "usage": {
+        "prompt_tokens": 169,
+        "total_tokens": 215,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f7944a721630802ce264470fb8cdbfdeca1d909065f1657c59e1988b440afe4f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f7944a721630802ce264470fb8cdbfdeca1d909065f1657c59e1988b440afe4f",
+        "canonical_audio_sha256": "5e51e265be94dc1fb1b2cca74e5c74c130eb085fdba101724f46965766f387ff",
+        "pcm_sha256": "d3e1a63864073f50b3bec9147abcdb441f8f391565f897716d0f3a9b3f534414",
+        "same_samples": true
+      }
+    }
+  ]
+}

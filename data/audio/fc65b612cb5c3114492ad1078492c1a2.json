@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/fc65b612cb5c3114492ad1078492c1a2.wav",
+  "sha256": "21d001f7cbbf848945f6fb639f37d9ba69de6c603b064993b027cd9fd0026fcd",
+  "duration_seconds": 4.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "508b03fe-8fcd-999b-8d89-adf19df23771",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 968,
+    "total_tokens": 1168,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "女儿说十点前回来，现在都十点二十了还没到，我坐也不是站也不是。",
+  "spoken_text": "女儿说十点前回来，现在都十点二十了还没到，我坐也不是站也不是。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "女儿说十点前回来，现在都10:20了还没到，我坐也不是站也不是。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "女儿说十点前回来，现在都10:20了还没到，我坐也不是站也不是。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5908213a-468c-9aad-bf3f-77e44e794dbb",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 288,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "21d001f7cbbf848945f6fb639f37d9ba69de6c603b064993b027cd9fd0026fcd"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3fc4383b8c204e6a95472111fe30989ea96f58294f5dc43ac517f9c39f212873",
+    "canonical_sha256": "21d001f7cbbf848945f6fb639f37d9ba69de6c603b064993b027cd9fd0026fcd",
+    "pcm_sha256": "6dc3f45684081fae35e98bbf722e5b7a0b82171c073fdf6c81803500dfbdc588",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 116160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "女儿说十点前回来，现在都十点二十了还没到，我坐也不是站也不是。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-efd04753-f5c3-9498-9fb5-45b14eb2b059",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 201,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3fc4383b8c204e6a95472111fe30989ea96f58294f5dc43ac517f9c39f212873",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3fc4383b8c204e6a95472111fe30989ea96f58294f5dc43ac517f9c39f212873",
+        "canonical_audio_sha256": "21d001f7cbbf848945f6fb639f37d9ba69de6c603b064993b027cd9fd0026fcd",
+        "pcm_sha256": "6dc3f45684081fae35e98bbf722e5b7a0b82171c073fdf6c81803500dfbdc588",
+        "same_samples": true
+      }
+    }
+  ]
+}

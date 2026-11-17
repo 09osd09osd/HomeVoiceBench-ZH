@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/72e80a3040296c2194ab785189e7b89d.wav",
+  "sha256": "4d65b2553159fb42a332f67909075decbd41717f6b96a4adaa595cc92610fd1a",
+  "duration_seconds": 3.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "99d0dbf4-516e-990f-ad75-70e9a37b3cfe",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 648,
+    "total_tokens": 841,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，不是上周，是前天晚上。",
+  "spoken_text": "对了，不是上周，是前天晚上。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，不是上周，是前天晚上。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，不是上周，是前天晚上。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c26a933e-4bd9-98c5-86b8-41f9ff2a81c0",
+    "usage": {
+      "prompt_tokens": 221,
+      "total_tokens": 256,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4d65b2553159fb42a332f67909075decbd41717f6b96a4adaa595cc92610fd1a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d88f19f7e3da75079ebe819caefbf837b7221f5c55252a80e36ac6424b645547",
+    "canonical_sha256": "4d65b2553159fb42a332f67909075decbd41717f6b96a4adaa595cc92610fd1a",
+    "pcm_sha256": "b6a5ccafc02539b00fe1fb59ecf91e7cc84d4d8ac70a6243b2934687d3c513ba",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 77760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，不是上周，是前天晚上。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2b14890d-aa6e-9164-bf91-2a9d96df577f",
+      "usage": {
+        "prompt_tokens": 137,
+        "total_tokens": 172,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 114
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d88f19f7e3da75079ebe819caefbf837b7221f5c55252a80e36ac6424b645547",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d88f19f7e3da75079ebe819caefbf837b7221f5c55252a80e36ac6424b645547",
+        "canonical_audio_sha256": "4d65b2553159fb42a332f67909075decbd41717f6b96a4adaa595cc92610fd1a",
+        "pcm_sha256": "b6a5ccafc02539b00fe1fb59ecf91e7cc84d4d8ac70a6243b2934687d3c513ba",
+        "same_samples": true
+      }
+    }
+  ]
+}

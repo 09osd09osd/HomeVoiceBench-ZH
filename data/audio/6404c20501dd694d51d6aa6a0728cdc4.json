@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6404c20501dd694d51d6aa6a0728cdc4.wav",
+  "sha256": "be413851dc7221c5e98ac33aa753423ec3f986b8e8884585f8149816a53b19f4",
+  "duration_seconds": 4.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "33456b55-079c-9386-8aa2-76ce9c7f8117",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 984,
+    "total_tokens": 1179,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚说错了，不是小手术，是个需要住院观察两天的手术，我更担心了。",
+  "spoken_text": "我刚说错了，不是小手术，是个需要住院观察两天的手术，我更担心了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚说错了，不是小手术，是个需要住院观察两天的手术，我更担心了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚说错了，不是小手术，是个需要住院观察两天的手术，我更担心了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1d044e07-2585-952f-a5f0-6380ed5b6492",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "be413851dc7221c5e98ac33aa753423ec3f986b8e8884585f8149816a53b19f4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1b50a551c0f637c8dc1eaefa77bf90d7006ce9abb9971646b8b889d6778765d9",
+    "canonical_sha256": "be413851dc7221c5e98ac33aa753423ec3f986b8e8884585f8149816a53b19f4",
+    "pcm_sha256": "2a6f0b0d9e0e22fb88bc08053303b25cf841550867a6ad5d669e8f33bf3d39e6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 118080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚说错了，不是小手术，是个需要住院观察两天的手术，我更担心了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-17cdcbd3-cd58-9304-b757-bcbce9941112",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 199,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1b50a551c0f637c8dc1eaefa77bf90d7006ce9abb9971646b8b889d6778765d9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1b50a551c0f637c8dc1eaefa77bf90d7006ce9abb9971646b8b889d6778765d9",
+        "canonical_audio_sha256": "be413851dc7221c5e98ac33aa753423ec3f986b8e8884585f8149816a53b19f4",
+        "pcm_sha256": "2a6f0b0d9e0e22fb88bc08053303b25cf841550867a6ad5d669e8f33bf3d39e6",
+        "same_samples": true
+      }
+    }
+  ]
+}

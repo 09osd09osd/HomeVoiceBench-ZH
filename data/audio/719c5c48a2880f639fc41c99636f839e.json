@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/719c5c48a2880f639fc41c99636f839e.wav",
+  "sha256": "3978dab18befa958f6d64001a5db863dc807410d5f42be0581936589786457e7",
+  "duration_seconds": 5.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a234d5c3-1673-9831-a4e8-c5a7be053d17",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 1120,
+    "total_tokens": 1319,
+    "duration": 6
+  },
+  "seed": 100042,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对门张姐今天送了一袋粽子过来，说是她婆婆包的，我尝了一个，味道挺不错的。",
+  "spoken_text": "对门张姐今天送了一袋粽子过来，说是她婆婆包的，我尝了一个，味道挺不错的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "对门张姐今天送了一袋粽子过来，说是她婆婆包的，我尝了一个，味道挺不错的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对门张姐今天送了一袋粽子过来，说是她婆婆包的，我尝了一个，味道挺不错的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7c1b2649-7360-90a1-9615-ff4b8785180d",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 300,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3978dab18befa958f6d64001a5db863dc807410d5f42be0581936589786457e7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a3347b546cfcc2dbf4584721cebff7938058c5048acc24270034133d2df72287",
+    "canonical_sha256": "3978dab18befa958f6d64001a5db863dc807410d5f42be0581936589786457e7",
+    "pcm_sha256": "1e07f3685141c6c53b9d4ab4f0311e5f2bf4ffeca27e5a133762efe5b7fea8bc",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 134400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对门张姐今天送了一袋粽子过来，说是她婆婆包的，我尝了一个，味道挺不错的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-cad39da9-4fda-9d39-9580-ae3008e1752a",
+      "usage": {
+        "prompt_tokens": 166,
+        "total_tokens": 216,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 129
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a3347b546cfcc2dbf4584721cebff7938058c5048acc24270034133d2df72287",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a3347b546cfcc2dbf4584721cebff7938058c5048acc24270034133d2df72287",
+        "canonical_audio_sha256": "3978dab18befa958f6d64001a5db863dc807410d5f42be0581936589786457e7",
+        "pcm_sha256": "1e07f3685141c6c53b9d4ab4f0311e5f2bf4ffeca27e5a133762efe5b7fea8bc",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/37b098a514a0c93caec4206bdb519d2d.wav",
+  "sha256": "2163115655f4d08f433fe99f512dd68930c698f4ae2a16fdc17309b30e9fe47d",
+  "duration_seconds": 5.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d649beb5-ceb9-99d3-b406-8ce27344a3ff",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 1040,
+    "total_tokens": 1239,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "早上好，我刚醒，还有点困，想先跟你简单聊两句再起床。",
+  "spoken_text": "早上好，我刚醒，还有点困，想先跟你简单聊两句再起床。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "早上好，我刚醒，还有点困，想先跟你简单聊两句再起床。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "早上好，我刚醒，还有点困，想先跟你简单聊两句再起床。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e1ccfd72-00f7-9ee2-87d4-56c832427e20",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 286,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2163115655f4d08f433fe99f512dd68930c698f4ae2a16fdc17309b30e9fe47d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6e4ed17b298fedfed4627c3bda773fcf2f7be855a910830f0708172a6c05695e",
+    "canonical_sha256": "2163115655f4d08f433fe99f512dd68930c698f4ae2a16fdc17309b30e9fe47d",
+    "pcm_sha256": "db36942899d64104022f944a3e94c3e406b97fc02d8096e7e33f8b463499b61e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 124800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "早上好，我刚醒，还有点困，想先跟你简单聊两句再起床。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-250cf497-422e-9529-9c12-b88a86dccf11",
+      "usage": {
+        "prompt_tokens": 159,
+        "total_tokens": 202,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6e4ed17b298fedfed4627c3bda773fcf2f7be855a910830f0708172a6c05695e",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6e4ed17b298fedfed4627c3bda773fcf2f7be855a910830f0708172a6c05695e",
+        "canonical_audio_sha256": "2163115655f4d08f433fe99f512dd68930c698f4ae2a16fdc17309b30e9fe47d",
+        "pcm_sha256": "db36942899d64104022f944a3e94c3e406b97fc02d8096e7e33f8b463499b61e",
+        "same_samples": true
+      }
+    }
+  ]
+}

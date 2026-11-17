@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/15541a3a25a98f3d23cea1fffa0052dd.wav",
+  "sha256": "fd27981c9d28ad925e62bd4af5662a71771741154f5e303070ca8b6d8c12966e",
+  "duration_seconds": 3.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "df0222fc-48a9-9351-a495-adef4d231fd1",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 680,
+    "total_tokens": 856,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我家里有小孩，不想用那种香味很重的防潮东西。",
+  "spoken_text": "我家里有小孩，不想用那种香味很重的防潮东西。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我家里有小孩儿，不想用那种香味很重的防潮东西。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我家里有小孩儿，不想用那种香味很重的防潮东西。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-dcce422d-7c41-90ac-a13b-9fca90e9d58d",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 265,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "fd27981c9d28ad925e62bd4af5662a71771741154f5e303070ca8b6d8c12966e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ed8f189c75ef4142853c6d60559e0b7ce1ec58b848ebc2010e1641db6b7e7f74",
+    "canonical_sha256": "fd27981c9d28ad925e62bd4af5662a71771741154f5e303070ca8b6d8c12966e",
+    "pcm_sha256": "1325e1fb3be4291a982849086553ad2ae808d704d94417b20dc4406562775f5c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 81600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我家里有小孩儿，不想用那种香味很重的防潮东西。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我家里有小孩儿，不想用那种香味很重的防潮东西。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1fb62f42-01cc-9144-89f1-dc2714dc6b25",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 204,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ed8f189c75ef4142853c6d60559e0b7ce1ec58b848ebc2010e1641db6b7e7f74",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ed8f189c75ef4142853c6d60559e0b7ce1ec58b848ebc2010e1641db6b7e7f74",
+        "canonical_audio_sha256": "fd27981c9d28ad925e62bd4af5662a71771741154f5e303070ca8b6d8c12966e",
+        "pcm_sha256": "1325e1fb3be4291a982849086553ad2ae808d704d94417b20dc4406562775f5c",
+        "same_samples": true
+      }
+    }
+  ]
+}

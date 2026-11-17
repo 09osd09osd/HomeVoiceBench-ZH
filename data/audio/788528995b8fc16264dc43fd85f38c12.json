@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/788528995b8fc16264dc43fd85f38c12.wav",
+  "sha256": "02db05d7db2ca868adb8918cf2c14a22d4e7b7f307d17af97a92b1c77285398e",
+  "duration_seconds": 4.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "de85aa4b-3bdc-95c4-a8c2-c42dcfcfb8bc",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 848,
+    "total_tokens": 1047,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我养的是吊兰吧？今天真是有点累。",
+  "spoken_text": "你还记得我养的是吊兰吧？今天真是有点累。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我养的是吊兰吧？今天真是有点累。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我养的是吊兰吧？今天真是有点累。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f5c9bc3a-82f8-9073-8916-ec7fba690780",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 273,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "02db05d7db2ca868adb8918cf2c14a22d4e7b7f307d17af97a92b1c77285398e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "93e868bf937db042c43b0fd513c38ddfa60d6b88df07c5e5e67fb79d43cc6860",
+    "canonical_sha256": "02db05d7db2ca868adb8918cf2c14a22d4e7b7f307d17af97a92b1c77285398e",
+    "pcm_sha256": "2868d8bd5d5cccf61b0fec62910437f742df85b192195060bfdf18e0ffc12f36",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 101760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我养的是吊兰吧？今天真是有点累。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-cd594540-53ec-9e62-8cdb-fedafb23cd84",
+      "usage": {
+        "prompt_tokens": 149,
+        "total_tokens": 189,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "93e868bf937db042c43b0fd513c38ddfa60d6b88df07c5e5e67fb79d43cc6860",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "93e868bf937db042c43b0fd513c38ddfa60d6b88df07c5e5e67fb79d43cc6860",
+        "canonical_audio_sha256": "02db05d7db2ca868adb8918cf2c14a22d4e7b7f307d17af97a92b1c77285398e",
+        "pcm_sha256": "2868d8bd5d5cccf61b0fec62910437f742df85b192195060bfdf18e0ffc12f36",
+        "same_samples": true
+      }
+    }
+  ]
+}

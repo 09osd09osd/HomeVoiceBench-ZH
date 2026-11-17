@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/a716b81a1fb1d62edc297265533b99be.wav",
+  "sha256": "196a9490f0125fcda70da51f9d8cd7c4d00e433bd1691c71ffb4b271c346cf56",
+  "duration_seconds": 6.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c083b87e-e009-9bf7-90fb-27435a5731e4",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 1288,
+    "total_tokens": 1482,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "看到几只野鸭，不过我没带面包，就站着看了一会儿。我一般不喜欢喂动物，怕对它们不好。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "看到几只野鸭，不过我没带面包，就站着看了一会儿。我一般不喜欢喂动物，怕对它们不好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9ae065f5-7a9e-9946-82fc-403f6067b884",
+    "usage": {
+      "prompt_tokens": 175,
+      "total_tokens": 227,
+      "completion_tokens": 52,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 131
+      },
+      "completion_tokens_details": {
+        "text_tokens": 52
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "456f3a20e579b8165b8df935bc175ee5d8a0736c3cd4662b7dc4ad53f1418424",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "456f3a20e579b8165b8df935bc175ee5d8a0736c3cd4662b7dc4ad53f1418424",
+      "canonical_audio_sha256": "196a9490f0125fcda70da51f9d8cd7c4d00e433bd1691c71ffb4b271c346cf56",
+      "pcm_sha256": "bc51a7c7740982261e4a99e552bd7a278dfab1a1fee5acefb4bfcf1d1b777f13",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "456f3a20e579b8165b8df935bc175ee5d8a0736c3cd4662b7dc4ad53f1418424",
+    "canonical_sha256": "196a9490f0125fcda70da51f9d8cd7c4d00e433bd1691c71ffb4b271c346cf56",
+    "pcm_sha256": "bc51a7c7740982261e4a99e552bd7a278dfab1a1fee5acefb4bfcf1d1b777f13",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 154560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

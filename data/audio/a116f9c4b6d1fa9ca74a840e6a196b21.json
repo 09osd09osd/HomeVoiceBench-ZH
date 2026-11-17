@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a116f9c4b6d1fa9ca74a840e6a196b21.wav",
+  "sha256": "2472238474e615752c54cca95d56b45d2b4b58dbe77ebea5204307e6b4e01f62",
+  "duration_seconds": 1.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "848b28fe-79a9-9194-baac-6d0c54de7cb7",
+  "usage": {
+    "input_tokens": 169,
+    "output_tokens": 320,
+    "total_tokens": 489,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "跳到第30秒。",
+  "spoken_text": "跳到第三十秒。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "跳到第三十秒。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "跳到第三十秒。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c439dfce-54a9-9c6b-a2ae-f96dbba7574a",
+    "usage": {
+      "prompt_tokens": 204,
+      "total_tokens": 235,
+      "completion_tokens": 31,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 195
+      },
+      "completion_tokens_details": {
+        "text_tokens": 31
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2472238474e615752c54cca95d56b45d2b4b58dbe77ebea5204307e6b4e01f62"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e3d58cef65d66ffb25053e06050d2dd168d7fc63476b1d7012ae3977c84a45b9",
+    "canonical_sha256": "2472238474e615752c54cca95d56b45d2b4b58dbe77ebea5204307e6b4e01f62",
+    "pcm_sha256": "d83665ea61c5f8e59ca40d7dcd8877197831a09265da0755c35a622233351848",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 38400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "跳到第三十秒。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "跳到第三十秒。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-bd16ae6a-f351-96ed-9614-66ce5eeb812f",
+      "usage": {
+        "prompt_tokens": 143,
+        "total_tokens": 174,
+        "completion_tokens": 31,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 134
+        },
+        "completion_tokens_details": {
+          "text_tokens": 31
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e3d58cef65d66ffb25053e06050d2dd168d7fc63476b1d7012ae3977c84a45b9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e3d58cef65d66ffb25053e06050d2dd168d7fc63476b1d7012ae3977c84a45b9",
+        "canonical_audio_sha256": "2472238474e615752c54cca95d56b45d2b4b58dbe77ebea5204307e6b4e01f62",
+        "pcm_sha256": "d83665ea61c5f8e59ca40d7dcd8877197831a09265da0755c35a622233351848",
+        "same_samples": true
+      }
+    }
+  ]
+}

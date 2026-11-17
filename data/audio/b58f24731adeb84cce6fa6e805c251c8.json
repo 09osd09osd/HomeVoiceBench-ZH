@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b58f24731adeb84cce6fa6e805c251c8.wav",
+  "sha256": "ecfb5e3483c9196ad74061c419b25ff2b1beb23dcf3789d81f050a4c85b483c7",
+  "duration_seconds": 4.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7cbd779f-65a6-99cc-89a2-64ad1813059b",
+  "usage": {
+    "input_tokens": 209,
+    "output_tokens": 904,
+    "total_tokens": 1113,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我早上不太想听太热闹的话，声音轻一点，就说一两句提醒我就好。",
+  "spoken_text": "我早上不太想听太热闹的话，声音轻一点，就说一两句提醒我就好。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我早上不太想听太热闹的话，声音轻一点，就说一两句提醒我就好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我早上不太想听太热闹的话，声音轻一点，就说一两句提醒我就好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c143844c-056d-95fe-b4a1-0b6ef2d7c9e4",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 285,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ecfb5e3483c9196ad74061c419b25ff2b1beb23dcf3789d81f050a4c85b483c7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c6102e4b6a0af685b41d6309d163d4dbada22a1446d74b608416cb7087308714",
+    "canonical_sha256": "ecfb5e3483c9196ad74061c419b25ff2b1beb23dcf3789d81f050a4c85b483c7",
+    "pcm_sha256": "ced756c826a2cd43af52305fb09460b6b78dc1e7d42d4cc45e7ef80be2d5cdf0",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 108480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我早上不太想听太热闹的话，声音轻一点，就说一两句提醒我就好。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1562b1be-e7a1-965b-be65-1fd0126f72bc",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 201,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c6102e4b6a0af685b41d6309d163d4dbada22a1446d74b608416cb7087308714",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c6102e4b6a0af685b41d6309d163d4dbada22a1446d74b608416cb7087308714",
+        "canonical_audio_sha256": "ecfb5e3483c9196ad74061c419b25ff2b1beb23dcf3789d81f050a4c85b483c7",
+        "pcm_sha256": "ced756c826a2cd43af52305fb09460b6b78dc1e7d42d4cc45e7ef80be2d5cdf0",
+        "same_samples": true
+      }
+    }
+  ]
+}

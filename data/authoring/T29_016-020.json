@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "b63ecbff2d0b83edaa50b937d52c57fce554e944adc33cfa0bb6d797baa521b1",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-58a5406e-ca92-94e2-b8f5-0effa675fc04",
+  "usage": {
+    "prompt_tokens": 12515,
+    "total_tokens": 13677,
+    "completion_tokens": 1162,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 12515
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1162
+    }
+  },
+  "review_request_id": "chatcmpl-c8e4a811-a303-9be7-8616-b37da4e13672",
+  "review_usage": {
+    "prompt_tokens": 13300,
+    "total_tokens": 13386,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13300
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T29_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T29_016",
+        "title": "客厅灯调至80%并追踪处理状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开，亮度调到80%。如果还在处理中，就告诉我当前是什么状态。",
+            "reference_text": "已经帮你把客厅灯打开、亮度调到80%了，不过目前还在处理中，进度是0%，可以取消。等一会儿我再帮你看看结果。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_017",
+        "title": "客厅灯调亮后两次查询任务进展",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度设成80%。要是返回处理中，就告诉我现在的状态。",
+            "reference_text": "客厅灯已经按80%亮度去打开了，但任务还在处理中，进度0%，目前可以取消。等会儿我再帮你确认结果。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务现在完成了吗？",
+            "reference_text": "我查了一下，这个任务目前还是处理中，进度还是0%，可以取消。还没有完成，等有结果我再告诉你。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_018",
+        "title": "客厅灯异步开启后查任务再核对灯光",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到80%。如果返回处理中，就准确告诉我当前状态。",
+            "reference_text": "客厅灯已经按80%亮度去打开了，不过任务还在处理中，进度0%，可以取消。等会儿我再帮你确认。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "我查了，刚才那个任务现在还是处理中，进度0%，可以取消，还没有完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你重新核对一下客厅灯实际是什么状态。",
+            "reference_text": "我重新查了客厅灯的实际状态：现在是开着的，亮度80%，色温4000K，设备在线。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_019",
+        "title": "客厅灯开启查询后核对并单独关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到80%，要是还在处理中，就说清楚现在什么状态。",
+            "reference_text": "客厅灯已经按80%亮度去打开了，但任务还在处理中，进度0%，可以取消。等会儿我再帮你看看。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务现在完成了吗？",
+            "reference_text": "我查了一下，这个任务目前还是处理中，进度0%，可以取消，还没有完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "重新核对一下客厅灯实际灯光状态。",
+            "reference_text": "我重新查了客厅灯：现在是开着的，亮度80%，色温4000K，设备在线。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只关闭这盏客厅灯。",
+            "reference_text": "好的，只关闭了客厅灯。现在这盏灯是关着的，亮度还保留在80%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_020",
+        "title": "客厅灯开启查询核对关闭并最终确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到80%。如果返回处理中，就准确说当前状态。",
+            "reference_text": "客厅灯已经按80%亮度去打开了，不过任务还在处理中，进度0%，可以取消。等会儿我再帮你确认。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "我查了，刚才那个任务现在还是处理中，进度0%，可以取消，还没有完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "重新核对实际灯光状态。",
+            "reference_text": "我重新查了客厅灯：现在是开着的，亮度80%，色温4000K，设备在线。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只关闭这盏灯。",
+            "reference_text": "好的，只关闭了客厅灯。现在这盏灯是关着的，亮度还保留在80%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后确认灯已经关了，别把上一条任务成功当成现在还开着。",
+            "reference_text": "我最后确认了客厅灯的实际状态：现在是关着的，亮度80%，色温4000K，设备在线。不是开着。"
+          }
+        ]
+      }
+    ]
+  }
+}

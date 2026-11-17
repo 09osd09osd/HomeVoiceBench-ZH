@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b53a8e8c35221acd093c9d5010dadd65.wav",
+  "sha256": "c9089611ad8b8aee8a2e5ba901702fbde7ba15ef8fa4454496e33e0e54d4fa91",
+  "duration_seconds": 4.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5cbc689b-4752-9b44-9bc2-578c5c80436a",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 936,
+    "total_tokens": 1136,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我刚更正的吧？是汇报出岔子，不是项目失败。",
+  "spoken_text": "你还记得我刚更正的吧？是汇报出岔子，不是项目失败。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我刚更正的吧？是汇报出岔子，不是项目失败。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我刚更正的吧？是汇报出岔子，不是项目失败。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-44dc250a-adb8-9cd7-ad99-50b9dde5834f",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c9089611ad8b8aee8a2e5ba901702fbde7ba15ef8fa4454496e33e0e54d4fa91"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4b8a426ed7a461fbf59adda83ab8b5c00075dfe9b3863c0f906f6b95c61bbc7c",
+    "canonical_sha256": "c9089611ad8b8aee8a2e5ba901702fbde7ba15ef8fa4454496e33e0e54d4fa91",
+    "pcm_sha256": "d0d869101e073771dcdf857dcf145001eac1c3062e28c59f2506f167ab72522b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 112320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我刚更正的吧？是汇报出岔子，不是项目失败。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-89334aef-b31d-95be-a3c2-253070f39ecb",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4b8a426ed7a461fbf59adda83ab8b5c00075dfe9b3863c0f906f6b95c61bbc7c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4b8a426ed7a461fbf59adda83ab8b5c00075dfe9b3863c0f906f6b95c61bbc7c",
+        "canonical_audio_sha256": "c9089611ad8b8aee8a2e5ba901702fbde7ba15ef8fa4454496e33e0e54d4fa91",
+        "pcm_sha256": "d0d869101e073771dcdf857dcf145001eac1c3062e28c59f2506f167ab72522b",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/cbd626e5016e382459d74ce49b189ee1.wav",
+  "sha256": "b2c8b6c90a25cb19e327f1dee1083c33ccbcdf91780f1b6cc4e727b71d679851",
+  "duration_seconds": 4.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ae41ecf0-4047-980c-aa1b-895dc62abcc1",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 960,
+    "total_tokens": 1160,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我希望至少倒垃圾和分类别全落在我身上，晚上八点前能弄完最好。",
+  "spoken_text": "我希望至少倒垃圾和分类别全落在我身上，晚上八点前能弄完最好。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我希望至少倒垃圾和分类别全落在我身上，晚上八点前能弄完最好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我希望至少倒垃圾和分类别全落在我身上，晚上八点前能弄完最好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7ce0f8f1-9454-92ee-ab7d-e2424eb9c2c0",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 285,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b2c8b6c90a25cb19e327f1dee1083c33ccbcdf91780f1b6cc4e727b71d679851"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0f15390d18ffd9ec54d89e3b1e8a927c6c755a19c0763d42d722b26afdfee53b",
+    "canonical_sha256": "b2c8b6c90a25cb19e327f1dee1083c33ccbcdf91780f1b6cc4e727b71d679851",
+    "pcm_sha256": "9423e98c04a5ad311424c285d64b3ce386e9b552d76e97ca46cc078de023261e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 115200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我希望至少倒垃圾和分类别全落在我身上，晚上八点前能弄完最好。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-cf99281d-dea0-9e51-aab4-269619e7b351",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 201,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0f15390d18ffd9ec54d89e3b1e8a927c6c755a19c0763d42d722b26afdfee53b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0f15390d18ffd9ec54d89e3b1e8a927c6c755a19c0763d42d722b26afdfee53b",
+        "canonical_audio_sha256": "b2c8b6c90a25cb19e327f1dee1083c33ccbcdf91780f1b6cc4e727b71d679851",
+        "pcm_sha256": "9423e98c04a5ad311424c285d64b3ce386e9b552d76e97ca46cc078de023261e",
+        "same_samples": true
+      }
+    }
+  ]
+}

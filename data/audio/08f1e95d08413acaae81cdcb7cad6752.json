@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/08f1e95d08413acaae81cdcb7cad6752.wav",
+  "sha256": "9628dc55c60b74bee67ff089f6743180096514b932970a1611f0fed525d197ef",
+  "duration_seconds": 7.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "de7c614c-857f-90fa-bd45-6b57b20e3064",
+  "usage": {
+    "input_tokens": 202,
+    "output_tokens": 1480,
+    "total_tokens": 1682,
+    "duration": 7
+  },
+  "seed": 200042,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天跟老朋友吃饭，她一句话让我觉得特别委屈，回来路上一直难受。我就想说说，别劝我大度。",
+  "spoken_text": "今天跟老朋友吃饭，她一句话让我觉得特别委屈，回来路上一直难受。我就想说说，别劝我大度。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 3,
+  "qc": {
+    "result": {
+      "transcript": "今天跟老朋友吃饭，他一句话让我觉得特别委屈。回来路上一直难受，我就想说说，别劝我大度。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天跟老朋友吃饭，他一句话让我觉得特别委屈。回来路上一直难受，我就想说说，别劝我大度。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-203049fe-ed9f-9900-9afd-290069ab61ad",
+    "usage": {
+      "prompt_tokens": 267,
+      "total_tokens": 320,
+      "completion_tokens": 53,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 216
+      },
+      "completion_tokens_details": {
+        "text_tokens": 53
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9628dc55c60b74bee67ff089f6743180096514b932970a1611f0fed525d197ef"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4327604c31942083dffba0bed55069a5cb96905cea94cd4a450e0459bf48186a",
+    "canonical_sha256": "9628dc55c60b74bee67ff089f6743180096514b932970a1611f0fed525d197ef",
+    "pcm_sha256": "8dc853d617391650b0e671a31fab22722e775e866cce75c66f4d4a75a6a038a9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 177600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天跟老朋友吃饭，她一句话让我觉得特别委屈，回来路上一直难受。我就想说说，别劝我大度。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "今天跟老朋友吃饭，她一句话让我觉得特别委屈，回来路上一直难受。我就想说说，别劝我大度。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2f6b4a5c-5a6e-93cd-aea5-00540883d826",
+      "usage": {
+        "prompt_tokens": 206,
+        "total_tokens": 259,
+        "completion_tokens": 53,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 155
+        },
+        "completion_tokens_details": {
+          "text_tokens": 53
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4327604c31942083dffba0bed55069a5cb96905cea94cd4a450e0459bf48186a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4327604c31942083dffba0bed55069a5cb96905cea94cd4a450e0459bf48186a",
+        "canonical_audio_sha256": "9628dc55c60b74bee67ff089f6743180096514b932970a1611f0fed525d197ef",
+        "pcm_sha256": "8dc853d617391650b0e671a31fab22722e775e866cce75c66f4d4a75a6a038a9",
+        "same_samples": true
+      }
+    }
+  ]
+}

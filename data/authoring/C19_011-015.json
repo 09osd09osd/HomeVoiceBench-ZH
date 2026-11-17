@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "e6c26fd9eb2e1b4c0cbe239b0c885239a9b6bbd38a6857c423820ebe3a96f621",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-f2d9925f-462d-9e9b-a126-f596923ab302",
+  "usage": {
+    "prompt_tokens": 1890,
+    "total_tokens": 3279,
+    "completion_tokens": 1389,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1890
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1389
+    }
+  },
+  "review_request_id": "chatcmpl-2df3ca86-f22f-93f1-ab7d-8a368493bbac",
+  "review_usage": {
+    "prompt_tokens": 2901,
+    "total_tokens": 2987,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2901
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C19_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C19_011",
+        "title": "整理旧照片时的记忆边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天翻出一堆旧照片，想让你帮我看看里面都有谁，但我没拍给你，你能直接认出来吗？",
+            "reference_text": "我看不到你手里的照片，所以没法直接认出里面的人。你可以一张张描述给我听，比如照片里大概几个人、穿什么衣服、背景什么样，我帮你一起理理可能是谁。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_012",
+        "title": "回忆家庭聚会细节",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，想跟你聊聊上个月家庭聚会的事，你帮我想想那天都有谁来了？",
+            "reference_text": "我这边看不到也记不住你家里聚会的具体情况，所以没法直接说出名单。你可以先说说你记得的几个人，我帮你一起理理，或者用手机备忘录先记下来。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我记性不太好，希望你能帮我长期记住这些亲戚的名字，以后我一问你就告诉我。",
+            "reference_text": "我没法长期保存你家的私人信息，每次聊天我都是从零开始。你可以把亲戚名字和关系写在手机备忘录或通讯录里，需要时我帮你一起理顺。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_013",
+        "title": "找钥匙和纠正细节",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我钥匙好像丢了，你能看见我家客厅现在什么样吗？帮我找找钥匙在哪儿。",
+            "reference_text": "我看不到你家里的情况，也没法帮你找实物。你可以回想一下最后一次用钥匙是在哪儿，或者用手电照照沙发缝、门口鞋柜这些常见地方。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我平时习惯把钥匙放玄关的小篮子里，但今天好像没放那儿，你再帮我看看。",
+            "reference_text": "我还是看不到玄关的小篮子，只能根据你说的帮你理思路。你可以先去小篮子附近摸一摸、翻一翻，再想想今天回家后还去过哪些房间。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "等等，我说错了，不是小篮子，是门口鞋柜上面的托盘。",
+            "reference_text": "好，我记下这个更正：是门口鞋柜上面的托盘。你可以先仔细翻翻托盘和鞋柜周边，看钥匙是不是滑到旁边了。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_014",
+        "title": "整理药盒与更正日期",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我每天吃的药有好几种，你能帮我看看我药盒里今天该吃哪些吗？",
+            "reference_text": "我看不到你药盒里的具体情况，也没法知道你的用药安排。你可以对着药盒上的标签，把今天要吃的药名和剂量念给我听，我帮你一起核对顺序。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我不太会拍照，眼睛也花，你就凭我报的药名帮我长期记住每天的吃药安排吧。",
+            "reference_text": "我没法长期保存你的用药信息，每次都得靠你现场告诉我。你可以用分格药盒按天分好，或者让家人帮你写个简单的每日清单贴在药盒旁边。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了一个，早上那种药不是吃1片，是吃半片。",
+            "reference_text": "好，我记下这个更正：早上那种药是吃半片。你可以把半片的药提前分好，免得下次又记混。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你现在还记得我早上那种药该吃多少吗？",
+            "reference_text": "你刚才更正过，早上那种药是吃半片。不过我没法长期记住，你最好在药盒上贴个便签写清楚。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_015",
+        "title": "安排买菜和简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我冰箱里剩的菜不多了，你能帮我看看还有什么，然后列个买菜清单吗？",
+            "reference_text": "我看不到你冰箱里有什么，没法直接列清单。你可以打开冰箱，把现有的菜报给我，我帮你一起想还需要买什么。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我懒得一样样报，你就凭上次我跟你说的那些菜帮我记着吧，我不太想重复。",
+            "reference_text": "我没法长期记住你上次说的内容，每次聊天都是新的。你可以简单说两三种现在有的菜，我帮你补全清单，不用全报。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "对了，我昨天说家里没鸡蛋了，其实还有半盒，这个别算漏了。",
+            "reference_text": "好，我记下这个更正：鸡蛋还有半盒，不用买。那你可以再看看青菜和肉还够不够。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我刚刚说鸡蛋还剩多少吗？",
+            "reference_text": "你刚更正过，鸡蛋还有半盒。不过我没法长期记住，你买菜前最好再看一眼冰箱确认。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，那你简短点帮我收个尾，就说现在该买啥。",
+            "reference_text": "好，简短收尾：鸡蛋不用买，你再看看青菜、肉和主食够不够，缺的记在手机备忘录里，出门照着买就行。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "evidence_version": "observed_oracle_v3",
+  "scope": "Post-discovery regression audit on actual benchmark audio; not independent validation or human review",
+  "model_outputs_changed": false,
+  "checks": [
+    {
+      "case_id": "T03_007",
+      "expected_content_pass": false,
+      "actual_content_pass": false,
+      "reason": "助手未能提供卧室灯和窗帘的真实状态数据，而是错误地声称设备不存在，未满足用户核心查询需求。",
+      "regression_passed": true
+    },
+    {
+      "case_id": "T18_001",
+      "expected_content_pass": false,
+      "actual_content_pass": false,
+      "reason": "助手未能提供客厅的照度读数（117勒克斯）和测量时间（2026年12月1日18点00分00秒），而是声称房间不存在。",
+      "regression_passed": true
+    },
+    {
+      "case_id": "T19_011",
+      "expected_content_pass": false,
+      "actual_content_pass": false,
+      "reason": "助手未提供用户要求的书房人员状态读数及测量时间，而是错误地声称书房不存在。根据环境证据，书房存在且传感器可用，因此内容检查失败。",
+      "regression_passed": true
+    },
+    {
+      "case_id": "T05_006",
+      "expected_content_pass": true,
+      "actual_content_pass": true,
+      "reason": "助手提供的睡前音量（20%）和阅读色温（3200K）与参考指南及环境事实完全一致，满足了用户的查询需求。",
+      "regression_passed": true
+    }
+  ],
+  "status": "passed"
+}

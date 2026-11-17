@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/5a552d945da1818d172206b6e0ed7ca0.wav",
+  "sha256": "55a68d5e3e1881fd9cc20ba994feec3cd6dd596f6853c5f363f361c43e0939df",
+  "duration_seconds": 2.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "73f2ae3c-242a-90ab-983d-551eff0f3496",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 504,
+    "total_tokens": 684,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "刚才我说五岁，其实他六岁了，快上小学了。",
+  "spoken_text": "刚才我说五岁，其实他六岁了，快上小学了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才我说五岁，其实他六岁了，快上小学了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才我说五岁，其实他六岁了，快上小学了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6f6ca537-f2b9-9b00-80d7-0a863e5341ba",
+    "usage": {
+      "prompt_tokens": 219,
+      "total_tokens": 259,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "55a68d5e3e1881fd9cc20ba994feec3cd6dd596f6853c5f363f361c43e0939df"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "63d89c3996b10c7f80d0f336ed3f1f469f367d14f66dbab8d8d77e2a76630682",
+    "canonical_sha256": "55a68d5e3e1881fd9cc20ba994feec3cd6dd596f6853c5f363f361c43e0939df",
+    "pcm_sha256": "a8ea93ab6209983f81e90978b9c0cdca86c83e3822a5eed8f689f5e3024169d2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 60480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "刚才我说五岁，其实他六岁了，快上小学了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "刚才我说五岁，其实他六岁了，快上小学了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0cb7cfb4-f696-9b80-97e9-dcb2add2b134",
+      "usage": {
+        "prompt_tokens": 158,
+        "total_tokens": 198,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "63d89c3996b10c7f80d0f336ed3f1f469f367d14f66dbab8d8d77e2a76630682",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "63d89c3996b10c7f80d0f336ed3f1f469f367d14f66dbab8d8d77e2a76630682",
+        "canonical_audio_sha256": "55a68d5e3e1881fd9cc20ba994feec3cd6dd596f6853c5f363f361c43e0939df",
+        "pcm_sha256": "a8ea93ab6209983f81e90978b9c0cdca86c83e3822a5eed8f689f5e3024169d2",
+        "same_samples": true
+      }
+    }
+  ]
+}

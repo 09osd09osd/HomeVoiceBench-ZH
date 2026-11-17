@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/d0f8793a421fb9ac2fef4fc6e8d9f03b.wav",
+  "sha256": "0e7e1baf5d2d75cee71b9414f1ee2c5f0bf10ea4a65b48b485019f17b3d5ef14",
+  "duration_seconds": 4.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a5f5e7b3-762b-9c92-b67d-272500efd8d1",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 880,
+    "total_tokens": 1061,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不太喜欢太吵的音乐，最好是没有歌词的，音量也小一点。",
+  "spoken_text": "我不太喜欢太吵的音乐，最好是没有歌词的，音量也小一点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不太喜欢太吵的音乐，最好是没有歌词的，音量也小一点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不太喜欢太吵的音乐，最好是没有歌词的，音量也小一点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e2e837e6-e77a-9f1f-afb9-2b1d9fd8059b",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0e7e1baf5d2d75cee71b9414f1ee2c5f0bf10ea4a65b48b485019f17b3d5ef14"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2eee7b383a550866ba26da11933a240787860c86527001e60047d4653915da6f",
+    "canonical_sha256": "0e7e1baf5d2d75cee71b9414f1ee2c5f0bf10ea4a65b48b485019f17b3d5ef14",
+    "pcm_sha256": "ba01d538687c333eee67fe84c6ccbaa06d7ceeb49bd77cd5c0d68deaa38a8fc6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 105600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不太喜欢太吵的音乐，最好是没有歌词的，音量也小一点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ea559e18-eb1e-9464-bd45-1a7865aa0902",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2eee7b383a550866ba26da11933a240787860c86527001e60047d4653915da6f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2eee7b383a550866ba26da11933a240787860c86527001e60047d4653915da6f",
+        "canonical_audio_sha256": "0e7e1baf5d2d75cee71b9414f1ee2c5f0bf10ea4a65b48b485019f17b3d5ef14",
+        "pcm_sha256": "ba01d538687c333eee67fe84c6ccbaa06d7ceeb49bd77cd5c0d68deaa38a8fc6",
+        "same_samples": true
+      }
+    }
+  ]
+}

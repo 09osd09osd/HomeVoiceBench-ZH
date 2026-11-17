@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b39a6e204beebe9fac74f2ef981a566e.wav",
+  "sha256": "3acdd70b7a0f2af1bd5d7cdf7ebac747ddc23f2650c863d11e27c5bf64c456f9",
+  "duration_seconds": 5.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0353c874-68aa-94ba-b65f-0d42825d31f6",
+  "usage": {
+    "input_tokens": 211,
+    "output_tokens": 1008,
+    "total_tokens": 1219,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子发烧折腾了一整夜，我快撑不住了，就想跟你诉诉苦，别给我建议。",
+  "spoken_text": "孩子发烧折腾了一整夜，我快撑不住了，就想跟你诉诉苦，别给我建议。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子发烧折腾了一整夜，我快撑不住了，就想跟你诉诉苦，别给我建议。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子发烧折腾了一整夜，我快撑不住了，就想跟你诉诉苦，别给我建议。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-34ba8915-69b1-9957-aab2-b4935ea0926a",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 296,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3acdd70b7a0f2af1bd5d7cdf7ebac747ddc23f2650c863d11e27c5bf64c456f9"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3142f9ccd6b04178fbd787c2932b1708232dcac8e5f2c29128f10a63ff9e13bb",
+    "canonical_sha256": "3acdd70b7a0f2af1bd5d7cdf7ebac747ddc23f2650c863d11e27c5bf64c456f9",
+    "pcm_sha256": "09ed770606bc18c51dae667af52b973d4e267023266748a7e1d445395ac300b1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 120960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子发烧折腾了一整夜，我快撑不住了，就想跟你诉诉苦，别给我建议。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0532274b-0bc7-96c1-9787-eda1a7b374f0",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 212,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3142f9ccd6b04178fbd787c2932b1708232dcac8e5f2c29128f10a63ff9e13bb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3142f9ccd6b04178fbd787c2932b1708232dcac8e5f2c29128f10a63ff9e13bb",
+        "canonical_audio_sha256": "3acdd70b7a0f2af1bd5d7cdf7ebac747ddc23f2650c863d11e27c5bf64c456f9",
+        "pcm_sha256": "09ed770606bc18c51dae667af52b973d4e267023266748a7e1d445395ac300b1",
+        "same_samples": true
+      }
+    }
+  ]
+}

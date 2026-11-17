@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "374563b40ab8f7576d8b043018a045ddf1d64a4c6859cda784c2ab75c84d5486",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-722943c0-4d1a-9834-897a-87b6aa36acdc",
+  "usage": {
+    "prompt_tokens": 4115,
+    "total_tokens": 5079,
+    "completion_tokens": 964,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4115
+    },
+    "completion_tokens_details": {
+      "text_tokens": 964
+    }
+  },
+  "review_request_id": "chatcmpl-8f403c80-d7a7-905e-8eba-62cbfa627d9a",
+  "review_usage": {
+    "prompt_tokens": 4701,
+    "total_tokens": 4787,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 4701
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T27_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T27_016",
+        "title": "跳转客厅音箱播放进度至75秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《星空小知识》跳到第75秒。",
+            "reference_text": "已将《星空小知识》跳转到第75秒，在客厅音箱上继续播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_017",
+        "title": "跳转后继续播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《星空小知识》跳到第75秒。",
+            "reference_text": "已将《星空小知识》跳转到第75秒，在客厅音箱上继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "继续播放《星空小知识》，从第75秒接着放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_018",
+        "title": "跳转、继续并暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《星空小知识》跳到第75秒。",
+            "reference_text": "已将《星空小知识》跳转到第75秒，在客厅音箱上继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "继续播放《星空小知识》，从第75秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "已暂停《星空小知识》，停在第75秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_019",
+        "title": "跳转、继续、暂停并定位到90秒保持暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《星空小知识》跳到第75秒。",
+            "reference_text": "已将《星空小知识》跳转到第75秒，在客厅音箱上继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "继续播放《星空小知识》，从第75秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "已暂停《星空小知识》，停在第75秒。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第90秒，先保持暂停。",
+            "reference_text": "已定位到第90秒，并保持暂停。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_020",
+        "title": "完整操作：跳转、继续、暂停、定位并停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《星空小知识》跳到第75秒。",
+            "reference_text": "已将《星空小知识》跳转到第75秒，在客厅音箱上继续播放。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "继续播放《星空小知识》，从第75秒接着放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "已暂停《星空小知识》，停在第75秒。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第90秒，先保持暂停。",
+            "reference_text": "已定位到第90秒，并保持暂停。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "已停止播放《星空小知识》，没有切换到其他内容。"
+          }
+        ]
+      }
+    ]
+  }
+}

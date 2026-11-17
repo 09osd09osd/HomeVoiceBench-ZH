@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/70f85f36b6d3482f7b5d13945e240295.wav",
+  "sha256": "d88ce455a17058d1ef54ff004d6882b5d5f3b8ff97295c7da7fedcf50d17e5a1",
+  "duration_seconds": 6.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2f84102f-6dba-9c39-b8ea-16912df384a6",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 1376,
+    "total_tokens": 1579,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我姐昨天说我偷拿她耳机，其实是我妈收进抽屉了。我想跟她把话说开，别让这事搁在心里，你说我该怎么开口？",
+  "spoken_text": "我姐昨天说我偷拿她耳机，其实是我妈收进抽屉了。我想跟她把话说开，别让这事搁在心里，你说我该怎么开口？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我姐昨天说我偷拿她耳机，其实是我妈收进抽屉了。我想跟她把话说开，别让这事搁在心里，你说我该怎么开口？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我姐昨天说我偷拿她耳机，其实是我妈收进抽屉了。我想跟她把话说开，别让这事搁在心里，你说我该怎么开口？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3620614c-38bd-9d2b-ac5d-904b8a9b90e0",
+    "usage": {
+      "prompt_tokens": 266,
+      "total_tokens": 325,
+      "completion_tokens": 59,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 222
+      },
+      "completion_tokens_details": {
+        "text_tokens": 59
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d88ce455a17058d1ef54ff004d6882b5d5f3b8ff97295c7da7fedcf50d17e5a1"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5c38571ce8363144617d428d95769893666661c6086fb96d229279c9674105cc",
+    "canonical_sha256": "d88ce455a17058d1ef54ff004d6882b5d5f3b8ff97295c7da7fedcf50d17e5a1",
+    "pcm_sha256": "71afe212c4e769eb5f430a15e91cafc8197eb9b6d12be644655703e8875f10e8",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 165120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我姐昨天说我偷拿她耳机，其实是我妈收进抽屉了。我想跟她把话说开，别让这事搁在心里，你说我该怎么开口？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7290778c-f575-9ce7-8bd9-107b85709499",
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 241,
+        "completion_tokens": 59,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 138
+        },
+        "completion_tokens_details": {
+          "text_tokens": 59
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5c38571ce8363144617d428d95769893666661c6086fb96d229279c9674105cc",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5c38571ce8363144617d428d95769893666661c6086fb96d229279c9674105cc",
+        "canonical_audio_sha256": "d88ce455a17058d1ef54ff004d6882b5d5f3b8ff97295c7da7fedcf50d17e5a1",
+        "pcm_sha256": "71afe212c4e769eb5f430a15e91cafc8197eb9b6d12be644655703e8875f10e8",
+        "same_samples": true
+      }
+    }
+  ]
+}

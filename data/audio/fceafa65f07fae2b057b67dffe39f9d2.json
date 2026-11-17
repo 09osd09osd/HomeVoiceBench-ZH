@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/fceafa65f07fae2b057b67dffe39f9d2.wav",
+  "sha256": "f41b8ab35dd41de19a0a0b14e3d725ec260823fd51551c25a3927f4e638494d4",
+  "duration_seconds": 4.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "435f04ce-c43c-9388-a04d-2824fdd4fa9c",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 944,
+    "total_tokens": 1139,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "这周末我们一家三口想出去半天，预算两百块左右，别太累，你帮我想个轻松的活动。",
+  "spoken_text": "这周末我们一家三口想出去半天，预算两百块左右，别太累，你帮我想个轻松的活动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "这周末我们一家三口想出去半天，预算200块左右，别太累。你帮我想个轻松的活动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "这周末我们一家三口想出去半天，预算200块左右，别太累。你帮我想个轻松的活动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d30f4a92-bdfb-968d-9bfe-96d1bc501be4",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 295,
+      "completion_tokens": 52,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 52
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f41b8ab35dd41de19a0a0b14e3d725ec260823fd51551c25a3927f4e638494d4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "23941707d09a37c768bbd1f8eed0c789ca9797d46081ee93db46ab18b9d429a0",
+    "canonical_sha256": "f41b8ab35dd41de19a0a0b14e3d725ec260823fd51551c25a3927f4e638494d4",
+    "pcm_sha256": "eec1463bd59496f410c6b3e7082862d056710c3caf8dd90e6d905eb3ce50b9eb",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 113280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "这周末我们一家三口想出去半天，预算两百块左右，别太累，你帮我想个轻松的活动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "这周末我们一家三口想出去半天，预算两百块左右，别太累，你帮我想个轻松的活动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b2e0fc47-8da9-96c8-b2e8-510a7609cc4a",
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 232,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "23941707d09a37c768bbd1f8eed0c789ca9797d46081ee93db46ab18b9d429a0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "23941707d09a37c768bbd1f8eed0c789ca9797d46081ee93db46ab18b9d429a0",
+        "canonical_audio_sha256": "f41b8ab35dd41de19a0a0b14e3d725ec260823fd51551c25a3927f4e638494d4",
+        "pcm_sha256": "eec1463bd59496f410c6b3e7082862d056710c3caf8dd90e6d905eb3ce50b9eb",
+        "same_samples": true
+      }
+    }
+  ]
+}

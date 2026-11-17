@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/35bf8301f93d36beede6fda6eefc154b.wav",
+  "sha256": "638aea9c4029868daa154068106f84570728a6978792e1213ed254adc98d697e",
+  "duration_seconds": 4.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "aeee9630-0410-9800-accf-c14e688fbbc8",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 880,
+    "total_tokens": 1080,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "想买点青菜、鸡蛋，再买条鱼，别的先不着急。",
+  "spoken_text": "想买点青菜、鸡蛋，再买条鱼，别的先不着急。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "想买点儿青菜、鸡蛋，再买条鱼，别的先不着急。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "想买点儿青菜、鸡蛋，再买条鱼，别的先不着急。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8ccddecb-e3b5-9d4e-bda0-81da55fb01ee",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "638aea9c4029868daa154068106f84570728a6978792e1213ed254adc98d697e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1fa5f3e55413e82d2b1d6c34417afbc9170a0db604b53e72f5d8a61372a4f634",
+    "canonical_sha256": "638aea9c4029868daa154068106f84570728a6978792e1213ed254adc98d697e",
+    "pcm_sha256": "ba6a47ed499aaba1b664a1d647f9b37f60f4b1c7cfe7f41e989c7e7cf08657ab",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 105600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "想买点儿青菜、鸡蛋，再买条鱼，别的先不着急。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-59b0a8a0-6102-9f3a-bf70-c78e87d2f3a9",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1fa5f3e55413e82d2b1d6c34417afbc9170a0db604b53e72f5d8a61372a4f634",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1fa5f3e55413e82d2b1d6c34417afbc9170a0db604b53e72f5d8a61372a4f634",
+        "canonical_audio_sha256": "638aea9c4029868daa154068106f84570728a6978792e1213ed254adc98d697e",
+        "pcm_sha256": "ba6a47ed499aaba1b664a1d647f9b37f60f4b1c7cfe7f41e989c7e7cf08657ab",
+        "same_samples": true
+      }
+    }
+  ]
+}

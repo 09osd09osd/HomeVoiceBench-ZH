@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/370cf418f2b5738fedae73119dbf8f2d.wav",
+  "sha256": "8a109060a0ec6eea622b299f86f248fec96c7438dc674e468f48ea048f926943",
+  "duration_seconds": 7.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5ee4c71f-f713-980f-a8a9-2bb7a50fc35c",
+  "usage": {
+    "input_tokens": 254,
+    "output_tokens": 1512,
+    "total_tokens": 1766,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我熬了两周做的项目方案，今天被领导一句话否了，说方向不对。我心里特别挫败，就想跟你念叨念叨，你别急着给我建议。",
+  "spoken_text": "我熬了两周做的项目方案，今天被领导一句话否了，说方向不对。我心里特别挫败，就想跟你念叨念叨，你别急着给我建议。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我熬了两周做的项目方案，今天被领导一句话否了，说方向不对。我心里特别挫败，就想跟你念叨念叨，你别急着给我建议。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我熬了两周做的项目方案，今天被领导一句话否了，说方向不对。我心里特别挫败，就想跟你念叨念叨，你别急着给我建议。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7246bab8-e0cd-99a7-b7c5-c7d60d3fe96b",
+    "usage": {
+      "prompt_tokens": 274,
+      "total_tokens": 334,
+      "completion_tokens": 60,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 223
+      },
+      "completion_tokens_details": {
+        "text_tokens": 60
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8a109060a0ec6eea622b299f86f248fec96c7438dc674e468f48ea048f926943"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cfffc6c1cb50726de48a805579b1f284a709d71d007fe6d5aef00b083bd30ebf",
+    "canonical_sha256": "8a109060a0ec6eea622b299f86f248fec96c7438dc674e468f48ea048f926943",
+    "pcm_sha256": "f150558ad460ec2b040542d87e699c66899bc3d0971ac270101622d42f13652e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 181440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我熬了两周做的项目方案，今天被领导一句话否了，说方向不对。我心里特别挫败，就想跟你念叨念叨，你别急着给我建议。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c526f6b2-4331-953b-b48a-387e54c15b69",
+      "usage": {
+        "prompt_tokens": 190,
+        "total_tokens": 250,
+        "completion_tokens": 60,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 60
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cfffc6c1cb50726de48a805579b1f284a709d71d007fe6d5aef00b083bd30ebf",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cfffc6c1cb50726de48a805579b1f284a709d71d007fe6d5aef00b083bd30ebf",
+        "canonical_audio_sha256": "8a109060a0ec6eea622b299f86f248fec96c7438dc674e468f48ea048f926943",
+        "pcm_sha256": "f150558ad460ec2b040542d87e699c66899bc3d0971ac270101622d42f13652e",
+        "same_samples": true
+      }
+    }
+  ]
+}

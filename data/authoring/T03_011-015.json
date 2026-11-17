@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "61a7fdc93557fe888f265e9485cc7e700ec80da1c3ed7b4f3674c22a6c82c19c",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-17488af3-173f-91f1-b03e-bbe2f03dc0c5",
+  "usage": {
+    "prompt_tokens": 12555,
+    "total_tokens": 13515,
+    "completion_tokens": 960,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 12555
+    },
+    "completion_tokens_details": {
+      "text_tokens": 960
+    }
+  },
+  "review_request_id": "chatcmpl-d3b8fd03-6f92-9da4-bc20-ad325c7ce5b7",
+  "review_usage": {
+    "prompt_tokens": 13138,
+    "total_tokens": 13224,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13138
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T03_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T03_011",
+        "title": "书房灯状态与亮度核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房灯现在开着吗？亮度是多少？我就问问状态，别动它。",
+            "reference_text": "书房灯现在是开着的，亮度是70%。我只查了状态，没有做任何调整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_012",
+        "title": "书房灯与卧室窗帘状态核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房灯现在开着吗？亮度是多少？只查状态，别调。",
+            "reference_text": "书房灯现在是开着的，亮度是20%。我只查了状态，没有调整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘现在开到50%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_013",
+        "title": "书房灯、窗帘与空调状态核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房灯现在开着吗？亮度是多少？只查状态，别动它。",
+            "reference_text": "书房灯现在是开着的，亮度是30%。我只查了状态，没有调整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘现在开到50%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "客厅空调的设定温度是26摄氏度，当前是制冷模式。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_014",
+        "title": "书房灯、窗帘、空调状态与室温区分",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房灯现在开着吗？亮度是多少？只查状态，别调。",
+            "reference_text": "书房灯现在是开着的，亮度是40%。我只查了状态，没有调整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘现在开到50%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "客厅空调的设定温度是26摄氏度，当前是制冷模式。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这个设定温度是实际室温吗？",
+            "reference_text": "不是，26摄氏度是设定温度，不等于传感器实测的室温。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_015",
+        "title": "多设备状态核对并确认灯未调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房灯现在开着吗？亮度是多少？只查状态，别调它。",
+            "reference_text": "书房灯现在是开着的，亮度是50%。我只查了状态，没有调整。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘现在开到50%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "客厅空调的设定温度是26摄氏度，当前是制冷模式。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这个设定温度是实际室温吗？",
+            "reference_text": "不是，26摄氏度是设定温度，不等于传感器实测的室温。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再确认一下最开始那盏灯，没有让你调。",
+            "reference_text": "书房灯还是开着的，亮度仍是50%。我没有调整它。"
+          }
+        ]
+      }
+    ]
+  }
+}

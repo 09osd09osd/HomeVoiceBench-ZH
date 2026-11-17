@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/fb93e61c20916320610e5e24d63ced7b.wav",
+  "sha256": "1e7c9c4e609590b11847f2e5f196c5456fb9ac5bed573341ab5f5af06a9f7d2b",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "14b8a153-6587-9b35-afa2-c82e708c2c6c",
+  "usage": {
+    "input_tokens": 177,
+    "output_tokens": 824,
+    "total_tokens": 1001,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "拉伸的时候我喜欢放点轻快的音乐，但不要太吵。",
+  "spoken_text": "拉伸的时候我喜欢放点轻快的音乐，但不要太吵。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "拉伸的时候，我喜欢放点轻快的音乐，但不要太吵。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "拉伸的时候，我喜欢放点轻快的音乐，但不要太吵。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d2160d90-d5cb-9a5d-8780-09b88fb4f16d",
+    "usage": {
+      "prompt_tokens": 232,
+      "total_tokens": 272,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1e7c9c4e609590b11847f2e5f196c5456fb9ac5bed573341ab5f5af06a9f7d2b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5d21003758943d93d55574df0b0b857f3cf293e5668d79b64676819c47ca4ddb",
+    "canonical_sha256": "1e7c9c4e609590b11847f2e5f196c5456fb9ac5bed573341ab5f5af06a9f7d2b",
+    "pcm_sha256": "99f1829723b32fab713ac8739009881b1828353e92a53b85dc90c50613cdd38e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "拉伸的时候我喜欢放点轻快的音乐，但不要太吵。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b624b63f-f37c-9ae9-9576-a151798c78c9",
+      "usage": {
+        "prompt_tokens": 148,
+        "total_tokens": 187,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5d21003758943d93d55574df0b0b857f3cf293e5668d79b64676819c47ca4ddb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5d21003758943d93d55574df0b0b857f3cf293e5668d79b64676819c47ca4ddb",
+        "canonical_audio_sha256": "1e7c9c4e609590b11847f2e5f196c5456fb9ac5bed573341ab5f5af06a9f7d2b",
+        "pcm_sha256": "99f1829723b32fab713ac8739009881b1828353e92a53b85dc90c50613cdd38e",
+        "same_samples": true
+      }
+    }
+  ]
+}

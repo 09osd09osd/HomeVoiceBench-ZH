@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/864c880ceec40fc1f479b2ab3892bd8c.wav",
+  "sha256": "6a2ba16cd22f2b923692b161c069a77b00c245589facd2c6ba14dbd99eeb80c0",
+  "duration_seconds": 4.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f73ac7aa-ef40-92d0-8d56-93c0d1ec75fe",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 944,
+    "total_tokens": 1131,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天加班到八点，累得不行，不想听任何建议，就想说说。",
+  "spoken_text": "今天加班到八点，累得不行，不想听任何建议，就想说说。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天加班到八点，累得不行，不想听任何建议，就想说说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天加班到八点，累得不行，不想听任何建议，就想说说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-71d2a9fb-ff0a-9cfc-9af3-a5507a0650fa",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6a2ba16cd22f2b923692b161c069a77b00c245589facd2c6ba14dbd99eeb80c0"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "aecc5f83ef83ad32f2243bf8b8236a7250dd4431b482bcd1b4a68935e9b901aa",
+    "canonical_sha256": "6a2ba16cd22f2b923692b161c069a77b00c245589facd2c6ba14dbd99eeb80c0",
+    "pcm_sha256": "d3564f1df1112922c3310626b1ce61fecab935dd3adb3e8974acca2bdc68ebb9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 113280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天加班到八点，累得不行，不想听任何建议，就想说说。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ff58f570-3798-9fb8-9ae6-55c7ace9947e",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "aecc5f83ef83ad32f2243bf8b8236a7250dd4431b482bcd1b4a68935e9b901aa",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "aecc5f83ef83ad32f2243bf8b8236a7250dd4431b482bcd1b4a68935e9b901aa",
+        "canonical_audio_sha256": "6a2ba16cd22f2b923692b161c069a77b00c245589facd2c6ba14dbd99eeb80c0",
+        "pcm_sha256": "d3564f1df1112922c3310626b1ce61fecab935dd3adb3e8974acca2bdc68ebb9",
+        "same_samples": true
+      }
+    }
+  ]
+}

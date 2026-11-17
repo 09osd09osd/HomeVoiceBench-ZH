@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e7a5166eebfc47675aa842829c77161e.wav",
+  "sha256": "81117498e0ada76699850dc49805ffa3c5fab7d0950b3017a7dd2f2226717dc4",
+  "duration_seconds": 6.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1c1c1602-bf5e-9223-9e95-147bdd006385",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 1376,
+    "total_tokens": 1569,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "周六上午家里要大扫除，我想把客厅、厨房和卫生间分给三个人做，帮我理一下怎么说。",
+  "spoken_text": "周六上午家里要大扫除，我想把客厅、厨房和卫生间分给三个人做，帮我理一下怎么说。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "周六上午家里要大扫除，我想把客厅、厨房和卫生间分给三个人做，帮我理一下怎么说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "周六上午家里要大扫除，我想把客厅、厨房和卫生间分给三个人做，帮我理一下怎么说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0bd07d6c-837b-94d9-9ecb-d1a06cbb370a",
+    "usage": {
+      "prompt_tokens": 256,
+      "total_tokens": 305,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "81117498e0ada76699850dc49805ffa3c5fab7d0950b3017a7dd2f2226717dc4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f18fc1dd3e187fb680799ab2f4f966bf05829ee07833690ed44f489f7e0ffd7e",
+    "canonical_sha256": "81117498e0ada76699850dc49805ffa3c5fab7d0950b3017a7dd2f2226717dc4",
+    "pcm_sha256": "5ac9322b5d3dfe3ac3459926e64ddc0253948181afc9a57b6cffa0ebdbe8b0dd",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 165120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "周六上午家里要大扫除，我想把客厅、厨房和卫生间分给三个人做，帮我理一下怎么说。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6e0475b0-43c8-9efb-a9b2-b269de5423d7",
+      "usage": {
+        "prompt_tokens": 172,
+        "total_tokens": 221,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f18fc1dd3e187fb680799ab2f4f966bf05829ee07833690ed44f489f7e0ffd7e",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f18fc1dd3e187fb680799ab2f4f966bf05829ee07833690ed44f489f7e0ffd7e",
+        "canonical_audio_sha256": "81117498e0ada76699850dc49805ffa3c5fab7d0950b3017a7dd2f2226717dc4",
+        "pcm_sha256": "5ac9322b5d3dfe3ac3459926e64ddc0253948181afc9a57b6cffa0ebdbe8b0dd",
+        "same_samples": true
+      }
+    }
+  ]
+}

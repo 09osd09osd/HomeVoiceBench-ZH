@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/728dbd167cb907052502cc440b978b07.wav",
+  "sha256": "2bd2e875785c99fb6f0a877a5e2779b7a6e05b6cd84678e5d33829d178d6b720",
+  "duration_seconds": 4.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4c49e772-2239-92c3-9a52-9da2682a8107",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 976,
+    "total_tokens": 1170,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说按周轮换，其实改成按天轮换更好，这样每个人每天都有点小任务。",
+  "spoken_text": "我刚才说按周轮换，其实改成按天轮换更好，这样每个人每天都有点小任务。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说按周轮换，其实改成按天轮换更好。这样每个人每天都有点小任务。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说按周轮换，其实改成按天轮换更好。这样每个人每天都有点小任务。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1c990ee2-6756-97e6-8a81-0821457c15f4",
+    "usage": {
+      "prompt_tokens": 239,
+      "total_tokens": 285,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2bd2e875785c99fb6f0a877a5e2779b7a6e05b6cd84678e5d33829d178d6b720"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3c608f431f85b9770f2c58d594ca0f3b685c310d180c589b0d3d6c837c48dd1e",
+    "canonical_sha256": "2bd2e875785c99fb6f0a877a5e2779b7a6e05b6cd84678e5d33829d178d6b720",
+    "pcm_sha256": "f40f7df203c7a522a5ffd3ee50ce42fa48746fd9b45de06429a20d83a69734c6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 117120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说按周轮换，其实改成按天轮换更好，这样每个人每天都有点小任务。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-31619a1b-d32c-9bb6-a17b-61fd92f869c0",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 201,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3c608f431f85b9770f2c58d594ca0f3b685c310d180c589b0d3d6c837c48dd1e",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3c608f431f85b9770f2c58d594ca0f3b685c310d180c589b0d3d6c837c48dd1e",
+        "canonical_audio_sha256": "2bd2e875785c99fb6f0a877a5e2779b7a6e05b6cd84678e5d33829d178d6b720",
+        "pcm_sha256": "f40f7df203c7a522a5ffd3ee50ce42fa48746fd9b45de06429a20d83a69734c6",
+        "same_samples": true
+      }
+    }
+  ]
+}

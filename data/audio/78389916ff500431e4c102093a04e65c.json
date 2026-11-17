@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/78389916ff500431e4c102093a04e65c.wav",
+  "sha256": "48e09b3ec26dc720b8b7e561482628d34aa7a953480c804e2e61c579c818e480",
+  "duration_seconds": 3.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6c5e6a4d-d484-9bae-ad0e-d74e56d79f29",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 712,
+    "total_tokens": 899,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "再把客厅电视音量改成百分之二十，别的设置别动。",
+  "spoken_text": "再把客厅电视音量改成百分之二十，别的设置别动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "再把客厅电视音量改成20%，别的设置别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "再把客厅电视音量改成20%，别的设置别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-78dda200-5f47-9acb-b082-ccbb77925180",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "48e09b3ec26dc720b8b7e561482628d34aa7a953480c804e2e61c579c818e480"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1d48ce6ed8aa5fe39221d37c6fa1c8a478f46573dc510171bc123da4cf620446",
+    "canonical_sha256": "48e09b3ec26dc720b8b7e561482628d34aa7a953480c804e2e61c579c818e480",
+    "pcm_sha256": "8611c3dcc972e056ff2143bc9540172c275c0cf85a2c6d662e06953bb1d67516",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 85440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "再把客厅电视音量改成百分之二十，别的设置别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "再把客厅电视音量改成百分之二十，别的设置别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-65136899-844e-9a3b-a6de-04aefb1443de",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 203,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1d48ce6ed8aa5fe39221d37c6fa1c8a478f46573dc510171bc123da4cf620446",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1d48ce6ed8aa5fe39221d37c6fa1c8a478f46573dc510171bc123da4cf620446",
+        "canonical_audio_sha256": "48e09b3ec26dc720b8b7e561482628d34aa7a953480c804e2e61c579c818e480",
+        "pcm_sha256": "8611c3dcc972e056ff2143bc9540172c275c0cf85a2c6d662e06953bb1d67516",
+        "same_samples": true
+      }
+    }
+  ]
+}

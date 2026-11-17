@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/78283dbee74f9437c3f59217f859e809.wav",
+  "sha256": "380043f41bee617e2d658427124f9f6988ece880291a7f457336741ce61b5895",
+  "duration_seconds": 4.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a02e0bec-465e-9038-8977-cf9833869963",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 936,
+    "total_tokens": 1136,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我早上喜欢先喝半杯温水，再坐一会儿，不喜欢一醒来就听很多话。",
+  "spoken_text": "我早上喜欢先喝半杯温水，再坐一会儿，不喜欢一醒来就听很多话。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我早上喜欢先喝半杯温水，再坐一会儿，不喜欢一醒来就听很多话。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我早上喜欢先喝半杯温水，再坐一会儿，不喜欢一醒来就听很多话。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-10766e7e-d53b-9afb-8a30-79ee1505aa49",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 287,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "380043f41bee617e2d658427124f9f6988ece880291a7f457336741ce61b5895"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "735447413349767b0ff0b8db749e5e6f2c6b55aacd679f03e52790db9072b4c0",
+    "canonical_sha256": "380043f41bee617e2d658427124f9f6988ece880291a7f457336741ce61b5895",
+    "pcm_sha256": "665f6523ed26ee5be311a9e63e630ffc46516b16e5f55e92088b6bff0dae89b5",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 112320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我早上喜欢先喝半杯温水，再坐一会儿，不喜欢一醒来就听很多话。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-97964958-3580-97c1-845a-af596b44c7e7",
+      "usage": {
+        "prompt_tokens": 156,
+        "total_tokens": 203,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 126
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "735447413349767b0ff0b8db749e5e6f2c6b55aacd679f03e52790db9072b4c0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "735447413349767b0ff0b8db749e5e6f2c6b55aacd679f03e52790db9072b4c0",
+        "canonical_audio_sha256": "380043f41bee617e2d658427124f9f6988ece880291a7f457336741ce61b5895",
+        "pcm_sha256": "665f6523ed26ee5be311a9e63e630ffc46516b16e5f55e92088b6bff0dae89b5",
+        "same_samples": true
+      }
+    }
+  ]
+}

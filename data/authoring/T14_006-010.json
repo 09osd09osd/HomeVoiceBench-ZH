@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "f9b628cb1f97b1b727c09ce337c85132eeeefbd4086d86b5109a2173d9cad9a5",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-fb16cd7f-53a8-963d-80c9-9f963b25c196",
+  "usage": {
+    "prompt_tokens": 14754,
+    "total_tokens": 15850,
+    "completion_tokens": 1096,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 14754
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1096
+    }
+  },
+  "review_request_id": "chatcmpl-d0bbe03b-8272-95bd-b267-3db31ab60baf",
+  "review_usage": {
+    "prompt_tokens": 15473,
+    "total_tokens": 15559,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 15473
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T14_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T14_006",
+        "title": "客厅卧室灯联动部分离线",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到40%，要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯已经打开，亮度调到40%了；卧室灯操作失败，因为设备离线。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_007",
+        "title": "客厅调光卧室不重试",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到40%，要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯已经打开，亮度调到40%了；卧室灯操作失败，因为设备离线。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成30%，卧室的先别重试。",
+            "reference_text": "客厅灯亮度已经改成30%了，卧室灯没有重试。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_008",
+        "title": "双灯操作后查询状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到40%，要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯已经打开，亮度调到40%了；卧室灯操作失败，因为设备离线。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成30%，卧室的先别重试。",
+            "reference_text": "客厅灯亮度已经改成30%了，卧室灯没有重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下这两盏灯分别是什么状态。",
+            "reference_text": "客厅灯开着，亮度30%；卧室灯离线，关着，亮度40%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_009",
+        "title": "双灯操作查询后关客厅",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到40%，要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯已经打开，亮度调到40%了；卧室灯操作失败，因为设备离线。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成30%，卧室的先别重试。",
+            "reference_text": "客厅灯亮度已经改成30%了，卧室灯没有重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下这两盏灯分别是什么状态。",
+            "reference_text": "客厅灯开着，亮度30%；卧室灯离线，关着，亮度50%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只关闭客厅灯，卧室不动。",
+            "reference_text": "客厅灯已经关上了，卧室灯没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_010",
+        "title": "五轮双灯操作与总结",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到40%，要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯已经打开，亮度调到40%了；卧室灯操作失败，因为设备离线。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成30%，卧室的先别重试。",
+            "reference_text": "客厅灯亮度已经改成30%了，卧室灯没有重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下这两盏灯分别是什么状态。",
+            "reference_text": "客厅灯开着，亮度30%；卧室灯离线，关着，亮度60%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只关闭客厅灯，卧室不动。",
+            "reference_text": "客厅灯已经关上了，卧室灯没有动。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "说明哪些操作成功、哪些没做成，别重新操作。",
+            "reference_text": "客厅灯打开并调到40%成功，后来亮度改成30%成功，最后关闭成功；卧室灯打开并调到40%失败，因为设备离线，之后没有重试。"
+          }
+        ]
+      }
+    ]
+  }
+}

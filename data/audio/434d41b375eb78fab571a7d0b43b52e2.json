@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/434d41b375eb78fab571a7d0b43b52e2.wav",
+  "sha256": "f051ff9bba077036a028c1a38f8d529dba1d5bc7535ba278b7eb6b3449894c36",
+  "duration_seconds": 5.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "db1bbc89-0abf-9c13-a3fe-98fd6a6ec2b0",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 1112,
+    "total_tokens": 1308,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，那张照片不是在青岛拍的，是在烟台，我记混了，那时候是跟几个老同学一起去的。",
+  "spoken_text": "对了，那张照片不是在青岛拍的，是在烟台，我记混了，那时候是跟几个老同学一起去的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，那张照片不是在青岛拍的，是在烟台。我记混了，那时候是跟几个老同学一起去的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，那张照片不是在青岛拍的，是在烟台。我记混了，那时候是跟几个老同学一起去的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5f3ba1a6-7bc7-9623-9770-6e469b044174",
+    "usage": {
+      "prompt_tokens": 251,
+      "total_tokens": 302,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f051ff9bba077036a028c1a38f8d529dba1d5bc7535ba278b7eb6b3449894c36"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "356af85d7ad6bd7cfa168e5ea4f0c61a321a4bf65d91e1c1e76a10d2aa06dfda",
+    "canonical_sha256": "f051ff9bba077036a028c1a38f8d529dba1d5bc7535ba278b7eb6b3449894c36",
+    "pcm_sha256": "ab8a3adf3e07ede31657446b60e452966175d27f84047709b1d5545fe462370d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 133440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，那张照片不是在青岛拍的，是在烟台。我记混了，那时候是跟几个老同学一起去的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5fbe3e0c-2972-9270-a9a0-911a8e1ab498",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 218,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "356af85d7ad6bd7cfa168e5ea4f0c61a321a4bf65d91e1c1e76a10d2aa06dfda",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "356af85d7ad6bd7cfa168e5ea4f0c61a321a4bf65d91e1c1e76a10d2aa06dfda",
+        "canonical_audio_sha256": "f051ff9bba077036a028c1a38f8d529dba1d5bc7535ba278b7eb6b3449894c36",
+        "pcm_sha256": "ab8a3adf3e07ede31657446b60e452966175d27f84047709b1d5545fe462370d",
+        "same_samples": true
+      }
+    }
+  ]
+}

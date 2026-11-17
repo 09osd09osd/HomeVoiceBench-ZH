@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6c0e68911407fb98d3a142d188809f09.wav",
+  "sha256": "db714acb9052c864edd4fce169d69590cde83529a292969d0bfb2c9d8e13cab2",
+  "duration_seconds": 3.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "242b10e8-8ddb-9a50-aa46-149033aeef02",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 696,
+    "total_tokens": 896,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我周三和周五晚上没空，这两天最好别排我。",
+  "spoken_text": "我周三和周五晚上没空，这两天最好别排我。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我周三和周五晚上没空，这两天最好别排我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我周三和周五晚上没空，这两天最好别排我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-aff6452a-15fd-9f4d-89e9-700f07de2c3b",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "db714acb9052c864edd4fce169d69590cde83529a292969d0bfb2c9d8e13cab2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "93b84efef68fa76684796632b3364ba0d548d2857bce7a0e98e096adbf644808",
+    "canonical_sha256": "db714acb9052c864edd4fce169d69590cde83529a292969d0bfb2c9d8e13cab2",
+    "pcm_sha256": "1035a393722e8e0fc1aa471a1184bcd878ba22c9a0d458347cd0033623fa4077",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 83520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我周三和周五晚上没空，这两天最好别排我。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0d1d4551-9c58-9057-a75f-792e65e9e2a4",
+      "usage": {
+        "prompt_tokens": 142,
+        "total_tokens": 182,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "93b84efef68fa76684796632b3364ba0d548d2857bce7a0e98e096adbf644808",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "93b84efef68fa76684796632b3364ba0d548d2857bce7a0e98e096adbf644808",
+        "canonical_audio_sha256": "db714acb9052c864edd4fce169d69590cde83529a292969d0bfb2c9d8e13cab2",
+        "pcm_sha256": "1035a393722e8e0fc1aa471a1184bcd878ba22c9a0d458347cd0033623fa4077",
+        "same_samples": true
+      }
+    }
+  ]
+}

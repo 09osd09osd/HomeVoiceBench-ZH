@@ -1,0 +1,172 @@
+{
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-a19b25b2-3f83-9ece-ba26-7637ea2f367d",
+  "usage": {
+    "prompt_tokens": 9675,
+    "total_tokens": 10888,
+    "completion_tokens": 1213,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 9675
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1213
+    }
+  },
+  "review_request_id": "chatcmpl-571e6034-bfbd-9b48-99f2-e797c0e9f707",
+  "review_usage": {
+    "prompt_tokens": 10511,
+    "total_tokens": 10597,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 10511
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T01_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T01_016",
+        "title": "查询家庭房间与客厅设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询，别动设备。",
+            "reference_text": "你家有客厅、卧室、书房和厨房。客厅里有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人，一共6个设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_017",
+        "title": "查询房间客厅设备及全屋灯具分布",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询，别动设备。",
+            "reference_text": "你家有客厅、卧室、书房和厨房。客厅里有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人，一共6个设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯：客厅灯在客厅，卧室灯在卧室，书房灯在书房。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_018",
+        "title": "查询房间客厅设备及灯具分布和参数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询，别动设备。",
+            "reference_text": "你家有客厅、卧室、书房和厨房。客厅里有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人，一共6个设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯：客厅灯在客厅，卧室灯在卧室，书房灯在书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅的灯能调哪些参数？",
+            "reference_text": "客厅灯可以调开关、亮度（0到100%）和色温（2700到6500K）。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_019",
+        "title": "查询房间客厅设备及灯具参数和厨房空调",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询，别动设备。",
+            "reference_text": "你家有客厅、卧室、书房和厨房。客厅里有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人，一共6个设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯：客厅灯在客厅，卧室灯在卧室，书房灯在书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅的灯能调哪些参数？",
+            "reference_text": "客厅灯可以调开关、亮度（0到100%）和色温（2700到6500K）。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有就说没有。",
+            "reference_text": "厨房没有空调。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_020",
+        "title": "查询房间客厅设备及灯具参数和厨房空调并整理",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询，别动设备。",
+            "reference_text": "你家有客厅、卧室、书房和厨房。客厅里有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人，一共6个设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯：客厅灯在客厅，卧室灯在卧室，书房灯在书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅的灯能调哪些参数？",
+            "reference_text": "客厅灯可以调开关、亮度（0到100%）和色温（2700到6500K）。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有就说没有。",
+            "reference_text": "厨房没有空调。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "整理一下刚才查到的情况，不要操作设备。",
+            "reference_text": "整理如下：家有客厅、卧室、书房、厨房4个房间。客厅有6个设备：客厅灯、空调、净化器、音箱、电视、扫地机器人。全屋共3盏灯：客厅灯、卧室灯、书房灯。客厅灯可调开关、亮度0-100%、色温2700-6500K。厨房没有空调。以上只是查询，未操作任何设备。"
+          }
+        ]
+      }
+    ]
+  }
+}

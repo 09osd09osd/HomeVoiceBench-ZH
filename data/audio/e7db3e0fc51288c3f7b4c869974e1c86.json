@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e7db3e0fc51288c3f7b4c869974e1c86.wav",
+  "sha256": "2d9623d8f7d548e1fecc1290fb8a49a0a290cfa1769e3fd2c5676c639a328852",
+  "duration_seconds": 4.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1e1bb1d6-a251-916b-a0f1-dc76523568a4",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 848,
+    "total_tokens": 1044,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "风扇声就算了，换成雨声吧，我还是更喜欢下雨的声音。",
+  "spoken_text": "风扇声就算了，换成雨声吧，我还是更喜欢下雨的声音。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "风扇声就算了，换成雨声吧。我还是更喜欢下雨的声音。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "风扇声就算了，换成雨声吧。我还是更喜欢下雨的声音。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-419899d0-7306-973b-94f8-6ff436a80a06",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 273,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2d9623d8f7d548e1fecc1290fb8a49a0a290cfa1769e3fd2c5676c639a328852"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f6cea91f3854bd958067ab272bf49d354fd1987edcb4c72375a131416a0f092b",
+    "canonical_sha256": "2d9623d8f7d548e1fecc1290fb8a49a0a290cfa1769e3fd2c5676c639a328852",
+    "pcm_sha256": "882ec85ccf32439034412cdb243711e5549f3e21f99e758737eca38e8e3b8111",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 101760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "风扇声就算了，换成雨声吧，我还是更喜欢下雨的声音。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d93695c4-dca2-9c8d-9914-960c3c331a44",
+      "usage": {
+        "prompt_tokens": 149,
+        "total_tokens": 189,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f6cea91f3854bd958067ab272bf49d354fd1987edcb4c72375a131416a0f092b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f6cea91f3854bd958067ab272bf49d354fd1987edcb4c72375a131416a0f092b",
+        "canonical_audio_sha256": "2d9623d8f7d548e1fecc1290fb8a49a0a290cfa1769e3fd2c5676c639a328852",
+        "pcm_sha256": "882ec85ccf32439034412cdb243711e5549f3e21f99e758737eca38e8e3b8111",
+        "same_samples": true
+      }
+    }
+  ]
+}

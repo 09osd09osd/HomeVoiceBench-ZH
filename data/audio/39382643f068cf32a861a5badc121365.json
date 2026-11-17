@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/39382643f068cf32a861a5badc121365.wav",
+  "sha256": "72a6b0dcf326fd450d0c8288e0a575f9d97171c37642f7c60f99bb8650e2570a",
+  "duration_seconds": 4.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f3e42e44-6edf-9171-bcca-2f5f55c6bdf1",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 920,
+    "total_tokens": 1119,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天有点累，想睡前听点轻音乐，别太吵的那种。",
+  "spoken_text": "今天有点累，想睡前听点轻音乐，别太吵的那种。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天有点累，想睡前听点轻音乐，别太吵的那种。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天有点累，想睡前听点轻音乐，别太吵的那种。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d057cba2-60a8-9242-8947-941aaf065342",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "72a6b0dcf326fd450d0c8288e0a575f9d97171c37642f7c60f99bb8650e2570a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "8e93d731689ec0937fd91b46eff3405e92c7603cb48b4e96cd7974a276079731",
+    "canonical_sha256": "72a6b0dcf326fd450d0c8288e0a575f9d97171c37642f7c60f99bb8650e2570a",
+    "pcm_sha256": "de4bd3f255a6d2515ee2e3e3c6b8d7d4c0ed5a2d156ee5b7473d16c29db3bc27",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 110400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天有点累，想睡前听点轻音乐，别太吵的那种。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6ef7d9ad-0ba5-9a37-ba5f-5621668b6187",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "8e93d731689ec0937fd91b46eff3405e92c7603cb48b4e96cd7974a276079731",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "8e93d731689ec0937fd91b46eff3405e92c7603cb48b4e96cd7974a276079731",
+        "canonical_audio_sha256": "72a6b0dcf326fd450d0c8288e0a575f9d97171c37642f7c60f99bb8650e2570a",
+        "pcm_sha256": "de4bd3f255a6d2515ee2e3e3c6b8d7d4c0ed5a2d156ee5b7473d16c29db3bc27",
+        "same_samples": true
+      }
+    }
+  ]
+}

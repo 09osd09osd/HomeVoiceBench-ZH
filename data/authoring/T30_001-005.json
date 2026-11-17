@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "973be63cce6983e5323bf3fe25e17e59edd42669e7fcfe32918edf697d06bb01",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-a4a77c11-b545-90b6-b6a2-6aecaff6c7d5",
+  "usage": {
+    "prompt_tokens": 13219,
+    "total_tokens": 14439,
+    "completion_tokens": 1220,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13219
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1220
+    }
+  },
+  "review_request_id": "chatcmpl-8d8fcdfe-0c6e-9ba8-9ce6-91481d9c2956",
+  "review_usage": {
+    "prompt_tokens": 14061,
+    "total_tokens": 14147,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14061
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T30_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T30_001",
+        "title": "客厅灯调至20%并报告状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把客厅灯打开并调到20%亮度，目前任务还在处理中，等有结果我再告诉你。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_002",
+        "title": "取消调灯任务并避免自动关灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把客厅灯打开并调到20%亮度，目前任务还在处理中，等有结果我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个开灯任务；要是已经完成了就告诉我，别自动再关灯。",
+            "reference_text": "已经帮你取消刚才那个开灯任务了，任务没有完成，灯也不会自动关。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_003",
+        "title": "取消后核对任务与灯的实际状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把客厅灯打开并调到20%亮度，目前任务还在处理中，等有结果我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个开灯任务；要是已经完成了就告诉我，别自动再关灯。",
+            "reference_text": "已经帮你取消刚才那个开灯任务了，任务没有完成，灯也不会自动关。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我核对一下任务状态和这盏灯现在的实际状态。",
+            "reference_text": "我查过了：那个开灯任务的状态是已取消，进度0%；客厅灯现在是关着的，亮度停留在50%，色温4000K，在线正常。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_004",
+        "title": "取消核对后明确关灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把客厅灯打开并调到20%亮度，目前任务还在处理中，等有结果我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个开灯任务；要是已经完成了就告诉我，别自动再关灯。",
+            "reference_text": "已经帮你取消刚才那个开灯任务了，任务没有完成，灯也不会自动关。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我核对一下任务状态和这盏灯现在的实际状态。",
+            "reference_text": "我查过了：那个开灯任务的状态是已取消，进度0%；客厅灯现在是关着的，亮度停留在60%，色温4000K，在线正常。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那我现在明确要求把这盏灯关掉。",
+            "reference_text": "好的，已经帮你把客厅灯关掉了，灯现在处于关闭状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_005",
+        "title": "关灯后确认状态与取消回滚说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%，弄好了告诉我一声。",
+            "reference_text": "好的，正在帮你把客厅灯打开并调到20%亮度，目前任务还在处理中，等有结果我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个开灯任务；要是已经完成了就告诉我，别自动再关灯。",
+            "reference_text": "已经帮你取消刚才那个开灯任务了，任务没有完成，灯也不会自动关。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我核对一下任务状态和这盏灯现在的实际状态。",
+            "reference_text": "我查过了：那个开灯任务的状态是已取消，进度0%；客厅灯现在是关着的，亮度停留在70%，色温4000K，在线正常。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那我现在明确要求把这盏灯关掉。",
+            "reference_text": "好的，已经帮你把客厅灯关掉了，灯现在处于关闭状态。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "你确认一下灯已经关了，再跟我说说取消任务有没有发生回滚。",
+            "reference_text": "确认过了，客厅灯现在是关闭状态。之前取消开灯任务没有发生回滚，灯的状态没有因为取消而自动恢复或改变。"
+          }
+        ]
+      }
+    ]
+  }
+}

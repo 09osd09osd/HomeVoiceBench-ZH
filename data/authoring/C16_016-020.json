@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "55baaef05565fe87e83b7372e2eae8af05a7beab9e5c7de85a8d4cfff762c861",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-b735b3ba-af00-9054-bbeb-f482721f4859",
+  "usage": {
+    "prompt_tokens": 1770,
+    "total_tokens": 2934,
+    "completion_tokens": 1164,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1770
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1164
+    }
+  },
+  "review_request_id": "chatcmpl-531b95b8-d248-98ab-982a-52bb4e45cc88",
+  "review_usage": {
+    "prompt_tokens": 2557,
+    "total_tokens": 2643,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2557
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C16_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C16_016",
+        "title": "词语接龙游戏规则确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们玩个词语接龙吧，我说一个词，你接一个，不能用重复的词，每人最多接3次，错了就重来。",
+            "reference_text": "好的，那我先开始。我说“苹果”，你接一个词语吧。记住不能用重复的词，每人最多接3次，错了就重来。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_017",
+        "title": "数字记忆游戏加禁用条件",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我们来玩数字记忆游戏，我说一串数字，你重复一遍，一共玩3轮。",
+            "reference_text": "好的，我准备好了。你开始说数字吧，我会认真记住并重复出来。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "加个限制，数字里不能出现0，如果出现了就算你输。",
+            "reference_text": "明白了，数字里不能出现0，出现0就算我输。我会注意的，你开始吧。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_018",
+        "title": "词语联想游戏次数更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我们玩词语联想，我说一个主题词，你说出3个相关的词，不能重复，一共玩5轮。",
+            "reference_text": "好的，主题词是什么？我来说3个相关的词，不会重复，一共玩5轮。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "注意，我说的词如果是动物类的，你要说植物类的词，不能再说动物。",
+            "reference_text": "明白了，如果你说动物类的词，我就说植物类的词，不说动物。你开始吧。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "刚才说的5轮不对，改成3轮吧，其他不变。",
+            "reference_text": "好的，改成3轮，其他规则不变。你说主题词吧。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_019",
+        "title": "数字倒背游戏规则调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我们来玩数字倒背游戏，我说3个数字，你倒着说出来，一共玩4轮。",
+            "reference_text": "好的，你说3个数字，我倒着说出来，一共玩4轮。开始吧。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "数字里不能有重复的数字，比如112不行。",
+            "reference_text": "明白了，数字里不能有重复的数字，比如112不行。我会注意的。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "刚才说4轮不对，改成2轮吧，其他不变。",
+            "reference_text": "好的，改成2轮，其他规则不变。你说数字吧。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我们玩几轮吗？数字有什么限制？",
+            "reference_text": "记得，我们玩2轮，数字里不能有重复的数字，比如112不行。对吧？"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_020",
+        "title": "词语分类记忆游戏",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我们玩词语分类记忆，我说5个词，你按水果和蔬菜分类记住，然后说出来，一共玩3轮。",
+            "reference_text": "好的，你说5个词，我按水果和蔬菜分类记住，然后说出来，一共玩3轮。开始吧。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "如果词里有不是水果也不是蔬菜的，你要指出来，不能忽略。",
+            "reference_text": "明白了，如果词里有不是水果也不是蔬菜的，我会指出来，不会忽略。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "刚才说3轮不对，改成2轮吧，其他不变。",
+            "reference_text": "好的，改成2轮，其他规则不变。你说5个词吧。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我们玩几轮吗？遇到不是水果蔬菜的词怎么办？",
+            "reference_text": "记得，我们玩2轮，遇到不是水果也不是蔬菜的词我会指出来，不会忽略。对吧？"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好，那你用一句话总结一下游戏规则，我们就结束。",
+            "reference_text": "好的，规则是：你说5个词，我按水果和蔬菜分类记住并说出来，一共2轮；遇到不是水果也不是蔬菜的词要指出来。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/cfae916b0ba5d8ad3d06efb1050be957.wav",
+  "sha256": "2ad7d4ad6161da8e6cf722bb9f16a22d1a60db615e6e6f49484535d859ef05a3",
+  "duration_seconds": 4.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4599fd40-570f-947f-aa22-6a50d4d07fcc",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 832,
+    "total_tokens": 1013,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，我晚上也不一定每天有空，叠衣服只能负责周一和周三。",
+  "spoken_text": "更正一下，我晚上也不一定每天有空，叠衣服只能负责周一和周三。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，我晚上也不一定每天有空，叠衣服只能负责周一和周三。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，我晚上也不一定每天有空，叠衣服只能负责周一和周三。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-10d9a7db-5f93-9f40-97af-2517e4362368",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2ad7d4ad6161da8e6cf722bb9f16a22d1a60db615e6e6f49484535d859ef05a3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "85c95ad5fefb252c6901a5cb35d2ec9227635277f1f39cf38a0164180bf66570",
+    "canonical_sha256": "2ad7d4ad6161da8e6cf722bb9f16a22d1a60db615e6e6f49484535d859ef05a3",
+    "pcm_sha256": "3d491e86c98c2d77f5f07704695c94aa172793e5cc18031228e4969ce3bb6c7f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 99840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，我晚上也不一定每天有空，叠衣服只能负责周一和周三。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1fba2325-9298-9da1-afed-d702026f341b",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "85c95ad5fefb252c6901a5cb35d2ec9227635277f1f39cf38a0164180bf66570",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "85c95ad5fefb252c6901a5cb35d2ec9227635277f1f39cf38a0164180bf66570",
+        "canonical_audio_sha256": "2ad7d4ad6161da8e6cf722bb9f16a22d1a60db615e6e6f49484535d859ef05a3",
+        "pcm_sha256": "3d491e86c98c2d77f5f07704695c94aa172793e5cc18031228e4969ce3bb6c7f",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-11-16T23:44:48.337640+00:00",
+  "policy": "one GPU engine at a time; native microbatch4, Qwen4 slots, TTS18 with allocator cap and unused-cache release; overlapping cloud judge16",
+  "stages": [
+    {
+      "name": "edge_native_batch4",
+      "started_at": "2026-11-16T23:44:48.339644+00:00"
+    },
+    {
+      "name": "qwen35_2b",
+      "started_at": "2026-11-16T23:44:51.367877+00:00"
+    },
+    {
+      "name": "qwen35_4b",
+      "started_at": "2026-11-16T23:44:51.372371+00:00"
+    },
+    {
+      "name": "baseline_tts_batch18",
+      "started_at": "2026-11-16T23:45:11.536778+00:00"
+    },
+    {
+      "name": "audio_judging",
+      "started_at": "2026-11-16T23:45:47.552660+00:00"
+    },
+    {
+      "name": "summarize",
+      "started_at": "2026-11-16T23:46:28.169531+00:00"
+    }
+  ],
+  "current_stage": "summarize",
+  "status": "completed",
+  "finished_at": "2026-11-16T23:46:43.182841+00:00"
+}

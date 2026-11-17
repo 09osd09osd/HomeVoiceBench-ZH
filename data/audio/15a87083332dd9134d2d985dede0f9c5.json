@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/15a87083332dd9134d2d985dede0f9c5.wav",
+  "sha256": "29db1e39a37a4194460b2a97a67d5fbecc49ddb562600bc360f4f8596c55199a",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5bead972-c797-9cc0-9d25-cbf488d3ce6e",
+  "usage": {
+    "input_tokens": 216,
+    "output_tokens": 640,
+    "total_tokens": 856,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把这段内容定位到第70秒，先保持暂停。",
+  "spoken_text": "把这段内容定位到第七十秒，先保持暂停。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把这段内容定位到第70秒，先保持暂停。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把这段内容定位到第70秒，先保持暂停。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5d3b7ce4-55da-9891-848e-762799cc329c",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "29db1e39a37a4194460b2a97a67d5fbecc49ddb562600bc360f4f8596c55199a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "598b446aa5a6dd1b751f3a3ce2fa61e443ea2e1164e9542be9de4d16c267b608",
+    "canonical_sha256": "29db1e39a37a4194460b2a97a67d5fbecc49ddb562600bc360f4f8596c55199a",
+    "pcm_sha256": "2cb74544399b4dd48a5b723bd87b04519d7d8bc3b4ac9512056771970e278137",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把这段内容定位到第七十秒，先保持暂停。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把这段内容定位到第七十秒，先保持暂停。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a34a8a81-876d-9a6e-8090-6d1bd875a88c",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 204,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "598b446aa5a6dd1b751f3a3ce2fa61e443ea2e1164e9542be9de4d16c267b608",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "598b446aa5a6dd1b751f3a3ce2fa61e443ea2e1164e9542be9de4d16c267b608",
+        "canonical_audio_sha256": "29db1e39a37a4194460b2a97a67d5fbecc49ddb562600bc360f4f8596c55199a",
+        "pcm_sha256": "2cb74544399b4dd48a5b723bd87b04519d7d8bc3b4ac9512056771970e278137",
+        "same_samples": true
+      }
+    }
+  ]
+}

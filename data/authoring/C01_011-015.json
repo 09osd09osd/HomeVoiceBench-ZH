@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "04f12e0d5aca1756805bdfdd68bde8d5deccc461e7590941e8c8adab421af33a",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-69e673ac-3f1e-9d71-8c3d-213278d232d2",
+  "usage": {
+    "prompt_tokens": 1860,
+    "total_tokens": 3011,
+    "completion_tokens": 1151,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "image_tokens": 0,
+      "text_tokens": 1860
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1151
+    }
+  },
+  "review_request_id": "chatcmpl-49ee1673-a06a-9001-b671-3de17cc5fb2f",
+  "review_usage": {
+    "prompt_tokens": 2636,
+    "total_tokens": 2722,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "image_tokens": 0,
+      "text_tokens": 2636
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C01_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C01_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C01_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C01_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C01_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C01_011",
+        "title": "下班后分享挤地铁的疲惫",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天下班挤地铁累坏了，站了快四十分钟，腿都酸了。",
+            "reference_text": "站四十分钟确实够累的，腿酸就赶紧坐下歇会儿。今天地铁上人特别多吧？"
+          }
+        ]
+      },
+      {
+        "case_id": "C01_012",
+        "title": "分享办公室空调太冷和晚上想吃清淡的",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天办公室空调开得太猛，吹得我头有点疼，回家路上都晕晕的。",
+            "reference_text": "空调直吹确实容易头疼，回家先喝点温水缓一缓。要不要把窗户开条缝透透气？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "晚上想吃点清淡的，别弄太油腻，我胃不太舒服。",
+            "reference_text": "胃不舒服就吃清淡点，煮个青菜面或者小米粥都行。你想吃面还是喝粥？"
+          }
+        ]
+      },
+      {
+        "case_id": "C01_013",
+        "title": "聊周末加班和改约散步时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "这周六还得去公司加班，本来想好好歇一天的，真烦。",
+            "reference_text": "周六加班是挺扫兴的，本来能好好歇一天。加班大概要到几点？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想着周日早上能睡个懒觉，别太早叫我。",
+            "reference_text": "行，周日早上让你睡到自然醒，我不吵你。那早饭给你留着还是等你起来再做？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "对了，刚说错了，加班是周日不是周六。",
+            "reference_text": "哦，是周日加班，那我记着了。那周六你就能好好歇一天，周日早上再早起去公司。"
+          }
+        ]
+      },
+      {
+        "case_id": "C01_014",
+        "title": "聊买菜清单和更正要买的鱼",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天想去趟菜市场，家里冰箱都快空了，得补点菜。",
+            "reference_text": "冰箱空了是该补货了。明天想去买点什么菜？我帮你记着。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "想买点青菜、鸡蛋，再买条鱼，别的先不着急。",
+            "reference_text": "青菜、鸡蛋、一条鱼，就这三样，别的先不买。鱼想要哪种？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "鱼我想买鲈鱼，不是草鱼，草鱼刺太多了。",
+            "reference_text": "好，买鲈鱼，不买草鱼，草鱼刺多。那青菜要哪种？"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我要买什么鱼吗？再说一遍我听听。",
+            "reference_text": "记得，你要买鲈鱼，不是草鱼。青菜、鸡蛋和鲈鱼，对吧？"
+          }
+        ]
+      },
+      {
+        "case_id": "C01_015",
+        "title": "聊孩子家长会和更正开会时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天去给孩子开家长会了，老师说了不少事，我脑子都装满了。",
+            "reference_text": "家长会信息量是大，辛苦你了。老师主要提了哪些事？挑重要的说说就行。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "老师说下周三下午有亲子活动，让家长尽量都去。",
+            "reference_text": "下周三下午亲子活动，家长尽量都到。你那天时间上方便吗？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "哦对，我刚才说错了，亲子活动是下周四下午，不是周三。",
+            "reference_text": "好，是下周四下午，不是周三。那周四你时间上方便吗？"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得亲子活动是哪天吗？我怕我自己又记混。",
+            "reference_text": "记得，亲子活动是下周四下午，不是周三。你放心，我帮你记着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，那你简单说两句收个尾吧，我想歇会儿了。",
+            "reference_text": "好，亲子活动是下周四下午，你早点歇着，别的明天再说。"
+          }
+        ]
+      }
+    ]
+  }
+}

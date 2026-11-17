@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/755bb305c877753a18f33be86522ede1.wav",
+  "sha256": "100526feec2f95e49f1fef0ac072cf987c694c3e31042b8c812ce4e36b603358",
+  "duration_seconds": 3.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "71b7446e-5ecc-936c-9d86-7a27b6db186a",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 632,
+    "total_tokens": 813,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我把客厅空调打开，温度设成25度。",
+  "spoken_text": "帮我把客厅空调打开，温度设成二十五度。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我把客厅空调打开，温度设成二十五度。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我把客厅空调打开，温度设成二十五度。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-003eb9e0-da52-9085-a59f-a6df5522d9f5",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 263,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "100526feec2f95e49f1fef0ac072cf987c694c3e31042b8c812ce4e36b603358"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0fe5604343f3c8c0da3b3ac48f967394401213c63d4f992a427d006e49d2cf66",
+    "canonical_sha256": "100526feec2f95e49f1fef0ac072cf987c694c3e31042b8c812ce4e36b603358",
+    "pcm_sha256": "46655a4df2455322e21094a7e393deeb4b0ddc4111a2365fbf72cf3fb19010da",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 75840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我把客厅空调打开，温度设成二十五度。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我把客厅空调打开，温度设成二十五度。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-61b13ca5-aed7-9681-b76c-7dba3c207afc",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 202,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0fe5604343f3c8c0da3b3ac48f967394401213c63d4f992a427d006e49d2cf66",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0fe5604343f3c8c0da3b3ac48f967394401213c63d4f992a427d006e49d2cf66",
+        "canonical_audio_sha256": "100526feec2f95e49f1fef0ac072cf987c694c3e31042b8c812ce4e36b603358",
+        "pcm_sha256": "46655a4df2455322e21094a7e393deeb4b0ddc4111a2365fbf72cf3fb19010da",
+        "same_samples": true
+      }
+    }
+  ]
+}

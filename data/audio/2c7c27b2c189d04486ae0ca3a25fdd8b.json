@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/2c7c27b2c189d04486ae0ca3a25fdd8b.wav",
+  "sha256": "fbe67cb713862d2245b9c1db322f5b26ad093488f7ac8f39e494efe2d8452c99",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f21cea8c-ce0c-904e-8a2e-9e11012313c1",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 640,
+    "total_tokens": 835,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "继续刚才的清扫，还是只扫书房。",
+  "spoken_text": "继续刚才的清扫，还是只扫书房。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "继续刚才的清扫，还是只扫书房？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "继续刚才的清扫，还是只扫书房？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fae79814-d913-9b58-8d67-8faad0d8c991",
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 258,
+      "completion_tokens": 36,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 199
+      },
+      "completion_tokens_details": {
+        "text_tokens": 36
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "fbe67cb713862d2245b9c1db322f5b26ad093488f7ac8f39e494efe2d8452c99"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3244dd7a100cc7640f8e7f2c4028338e91b8f3bb6d39cb5f3b15008397c414bf",
+    "canonical_sha256": "fbe67cb713862d2245b9c1db322f5b26ad093488f7ac8f39e494efe2d8452c99",
+    "pcm_sha256": "14002dae5ed33ff5da8c89ef5235e187b78344ed665aeca40b1fd6d5b2ea429d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "继续刚才的清扫，还是只扫书房？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "继续刚才的清扫，还是只扫书房？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5b1e209f-3eca-9014-8668-195cef719faf",
+      "usage": {
+        "prompt_tokens": 161,
+        "total_tokens": 197,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 138
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3244dd7a100cc7640f8e7f2c4028338e91b8f3bb6d39cb5f3b15008397c414bf",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3244dd7a100cc7640f8e7f2c4028338e91b8f3bb6d39cb5f3b15008397c414bf",
+        "canonical_audio_sha256": "fbe67cb713862d2245b9c1db322f5b26ad093488f7ac8f39e494efe2d8452c99",
+        "pcm_sha256": "14002dae5ed33ff5da8c89ef5235e187b78344ed665aeca40b1fd6d5b2ea429d",
+        "same_samples": true
+      }
+    }
+  ]
+}

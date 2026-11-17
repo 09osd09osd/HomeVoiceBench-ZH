@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/98b23914b81b91d80813115aed646b94.wav",
+  "sha256": "b24371beae35c633f435c60252a5ecb4b7db5b6f54e6d5ef661bf6438c8b99c4",
+  "duration_seconds": 2.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dbeaee0c-d80e-9dda-9bfb-b1c00f825df2",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 528,
+    "total_tokens": 725,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我新家是几楼吗？没电梯这点别弄错。",
+  "spoken_text": "你还记得我新家是几楼吗？没电梯这点别弄错。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我新家是几楼吗？没电梯，这点别弄错。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我新家是几楼吗？没电梯，这点别弄错。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b44d8d3b-68d0-90da-be8c-4b5325b79c19",
+    "usage": {
+      "prompt_tokens": 221,
+      "total_tokens": 264,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b24371beae35c633f435c60252a5ecb4b7db5b6f54e6d5ef661bf6438c8b99c4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "162586abc8327227613bd70d516f19d038662bc645a51b38b4a82eb8d529bbd5",
+    "canonical_sha256": "b24371beae35c633f435c60252a5ecb4b7db5b6f54e6d5ef661bf6438c8b99c4",
+    "pcm_sha256": "2f89cc31fcf04fdd2994eb642b3c28e4b0e5d806d0d58315cb5ef543324377b4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 63360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我新家是几楼吗？没电梯这点别弄错。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "你还记得我新家是几楼吗？没电梯这点别弄错。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7d00993e-ef70-94f5-9e67-ef5abac350b1",
+      "usage": {
+        "prompt_tokens": 160,
+        "total_tokens": 202,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "162586abc8327227613bd70d516f19d038662bc645a51b38b4a82eb8d529bbd5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "162586abc8327227613bd70d516f19d038662bc645a51b38b4a82eb8d529bbd5",
+        "canonical_audio_sha256": "b24371beae35c633f435c60252a5ecb4b7db5b6f54e6d5ef661bf6438c8b99c4",
+        "pcm_sha256": "2f89cc31fcf04fdd2994eb642b3c28e4b0e5d806d0d58315cb5ef543324377b4",
+        "same_samples": true
+      }
+    }
+  ]
+}

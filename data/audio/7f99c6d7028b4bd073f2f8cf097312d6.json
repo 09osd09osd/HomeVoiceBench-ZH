@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/7f99c6d7028b4bd073f2f8cf097312d6.wav",
+  "sha256": "02d016a0f3a83f99741c5d24f3dc72ebadffa3d896504df8a31be2b063b6e2ae",
+  "duration_seconds": 5.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "929267f8-7c7a-9ab1-b535-2132c7fdc5d9",
+  "usage": {
+    "input_tokens": 231,
+    "output_tokens": 1024,
+    "total_tokens": 1255,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天下班路上看见一只橘猫蹲在花坛边，特别可爱。我有点累，就想跟你随便聊两句，别太长。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天下班路上看见一只橘猫蹲在花坛边，特别可爱。我有点累，就想跟你随便聊两句，别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-59195373-180e-9833-928b-ba8a0e5dcd9b",
+    "usage": {
+      "prompt_tokens": 170,
+      "total_tokens": 224,
+      "completion_tokens": 54,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 133
+      },
+      "completion_tokens_details": {
+        "text_tokens": 54
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f898981646cc3629cf42eab3340a48c2854b3ee70051a7bb1476e35cf0ddbd81",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "f898981646cc3629cf42eab3340a48c2854b3ee70051a7bb1476e35cf0ddbd81",
+      "canonical_audio_sha256": "02d016a0f3a83f99741c5d24f3dc72ebadffa3d896504df8a31be2b063b6e2ae",
+      "pcm_sha256": "aa217d71335080b1495382363e4f6c5c26973ee05b03f40476b13478d963a887",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f898981646cc3629cf42eab3340a48c2854b3ee70051a7bb1476e35cf0ddbd81",
+    "canonical_sha256": "02d016a0f3a83f99741c5d24f3dc72ebadffa3d896504df8a31be2b063b6e2ae",
+    "pcm_sha256": "aa217d71335080b1495382363e4f6c5c26973ee05b03f40476b13478d963a887",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 122880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

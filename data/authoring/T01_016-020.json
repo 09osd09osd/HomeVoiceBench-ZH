@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "29efcd37656f37c308e960b31e4ed5fa1d412cc10a62cee5ffbabfd0bba61518",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-b6c649f6-386c-9edb-8556-ffddc7e78717",
+  "usage": {
+    "prompt_tokens": 9675,
+    "total_tokens": 10888,
+    "completion_tokens": 1213,
+    "prompt_tokens_details": {
+      "cached_tokens": 9472,
+      "image_tokens": 0,
+      "text_tokens": 9675
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1213
+    }
+  },
+  "review_request_id": "chatcmpl-79dbe5dd-d195-9e1c-a1b1-10691ef0443a",
+  "review_usage": {
+    "prompt_tokens": 10510,
+    "total_tokens": 10596,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 9472,
+      "image_tokens": 0,
+      "text_tokens": 10510
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T01_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T01_016",
+        "title": "查询家庭房间与客厅设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再看看客厅里有哪些设备，只查一下就行。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。客厅里的设备有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_017",
+        "title": "查询家庭房间、客厅设备与全屋灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再看看客厅里有哪些设备，只查一下就行。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。客厅里的设备有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪儿？",
+            "reference_text": "家里总共有3盏灯：客厅有一盏，卧室有一盏，书房也有一盏。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_018",
+        "title": "查询家庭房间、设备与客厅灯参数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再看看客厅里有哪些设备，只查一下就行。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。客厅里的设备有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪儿？",
+            "reference_text": "家里总共有3盏灯：客厅有一盏，卧室有一盏，书房也有一盏。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那客厅的灯能调哪些参数呀？",
+            "reference_text": "客厅灯可以开关，亮度能在0到100%之间调，色温能在2700K到6500K之间调。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_019",
+        "title": "查询房间设备、灯参数与厨房空调",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再看看客厅里有哪些设备，只查一下就行。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。客厅里的设备有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪儿？",
+            "reference_text": "家里总共有3盏灯：客厅有一盏，卧室有一盏，书房也有一盏。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那客厅的灯能调哪些参数呀？",
+            "reference_text": "客厅灯可以开关，亮度能在0到100%之间调，色温能在2700K到6500K之间调。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有的话就直接说没有。",
+            "reference_text": "厨房没有空调。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_020",
+        "title": "完整查询家庭设备并整理",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "咱们家都有哪些房间呀？再看看客厅里有哪些设备，只查一下就行。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。客厅里的设备有：客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪儿？",
+            "reference_text": "家里总共有3盏灯：客厅有一盏，卧室有一盏，书房也有一盏。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那客厅的灯能调哪些参数呀？",
+            "reference_text": "客厅灯可以开关，亮度能在0到100%之间调，色温能在2700K到6500K之间调。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有的话就直接说没有。",
+            "reference_text": "厨房没有空调。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "整理一下刚才查到的情况，不要操作设备。",
+            "reference_text": "好的，整理一下：家里有客厅、卧室、书房和厨房四个房间。客厅设备有客厅灯、客厅空调、客厅净化器、客厅音箱、客厅电视和扫地机器人。全屋一共3盏灯，分别在客厅、卧室和书房。客厅灯可以开关，亮度0到100%，色温2700K到6500K。厨房没有空调。以上只是查询结果，没有操作任何设备。"
+          }
+        ]
+      }
+    ]
+  }
+}

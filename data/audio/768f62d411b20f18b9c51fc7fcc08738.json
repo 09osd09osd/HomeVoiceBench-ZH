@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/768f62d411b20f18b9c51fc7fcc08738.wav",
+  "sha256": "954e42b559ee3b20bf60064b6c0d67b743e3c09852e598ad564bf7cfe03a64bf",
+  "duration_seconds": 3.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0fad2efb-1991-95e2-bab6-be83352b4537",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 776,
+    "total_tokens": 964,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "这周六还得去公司加班，本来想好好歇一天的，真烦。",
+  "spoken_text": "这周六还得去公司加班，本来想好好歇一天的，真烦。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "这周六还得去公司加班，本来想好好歇一天的，真烦。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "这周六还得去公司加班，本来想好好歇一天的，真烦。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0b1f18c3-ff32-9800-ac46-04414c4894d0",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "954e42b559ee3b20bf60064b6c0d67b743e3c09852e598ad564bf7cfe03a64bf"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "677bbfae08f32936d30526c46a19419beabbfa901e494d5b6303c37f63a7138c",
+    "canonical_sha256": "954e42b559ee3b20bf60064b6c0d67b743e3c09852e598ad564bf7cfe03a64bf",
+    "pcm_sha256": "f86d420fecf0998cf7d9f7306c9e06ebe0c1d40bad82a9016ad198519856b020",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 93120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "这周六还得去公司加班，本来想好好歇一天的，真烦。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4ffb24b0-2ac3-9781-b9ae-682971e9e985",
+      "usage": {
+        "prompt_tokens": 144,
+        "total_tokens": 186,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "677bbfae08f32936d30526c46a19419beabbfa901e494d5b6303c37f63a7138c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "677bbfae08f32936d30526c46a19419beabbfa901e494d5b6303c37f63a7138c",
+        "canonical_audio_sha256": "954e42b559ee3b20bf60064b6c0d67b743e3c09852e598ad564bf7cfe03a64bf",
+        "pcm_sha256": "f86d420fecf0998cf7d9f7306c9e06ebe0c1d40bad82a9016ad198519856b020",
+        "same_samples": true
+      }
+    }
+  ]
+}

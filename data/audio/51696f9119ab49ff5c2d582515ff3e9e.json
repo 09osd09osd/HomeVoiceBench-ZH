@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/51696f9119ab49ff5c2d582515ff3e9e.wav",
+  "sha256": "1e7d41fc0c434574aa512b16847f3b85349c122d610e506a5dbc894f57dd9421",
+  "duration_seconds": 3.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3c88078f-0ebc-9991-8f97-f37f2648ac2f",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 624,
+    "total_tokens": 814,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "行，你最后用一两句话帮我总结一下重点就行，我有点累了。",
+  "spoken_text": "行，你最后用一两句话帮我总结一下重点就行，我有点累了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "行，你最后用一两句话帮我总结一下重点就行，我有点累了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "行，你最后用一两句话帮我总结一下重点就行，我有点累了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3b510336-43b1-9132-bec5-e8c9d118c60e",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1e7d41fc0c434574aa512b16847f3b85349c122d610e506a5dbc894f57dd9421"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0d5f0a0e295f9dac08fc334a54441580eb5d7b67989758a14cb0dc4ab0ec08dc",
+    "canonical_sha256": "1e7d41fc0c434574aa512b16847f3b85349c122d610e506a5dbc894f57dd9421",
+    "pcm_sha256": "a3769f646c20ee6bd4756b70fd1577ec19dc9803f24e493432358642b7f93d02",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 74880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "行，你最后用一两句话帮我总结一下重点就行，我有点累了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "行，你最后用一两句话帮我总结一下重点就行，我有点累了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-82beaf1e-ce56-99ce-a1c2-633af32eb5d3",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 209,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0d5f0a0e295f9dac08fc334a54441580eb5d7b67989758a14cb0dc4ab0ec08dc",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0d5f0a0e295f9dac08fc334a54441580eb5d7b67989758a14cb0dc4ab0ec08dc",
+        "canonical_audio_sha256": "1e7d41fc0c434574aa512b16847f3b85349c122d610e506a5dbc894f57dd9421",
+        "pcm_sha256": "a3769f646c20ee6bd4756b70fd1577ec19dc9803f24e493432358642b7f93d02",
+        "same_samples": true
+      }
+    }
+  ]
+}

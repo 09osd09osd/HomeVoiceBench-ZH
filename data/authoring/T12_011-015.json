@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "0429e0bb647281bf11eb81c62726a2acefd46256cccb5c999b63672e5418329f",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-28056b6e-0956-9fde-a779-50706a34fc67",
+  "usage": {
+    "prompt_tokens": 12918,
+    "total_tokens": 13854,
+    "completion_tokens": 936,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 12918
+    },
+    "completion_tokens_details": {
+      "text_tokens": 936
+    }
+  },
+  "review_request_id": "chatcmpl-2008288a-b105-9a50-a80f-3382bcd8df29",
+  "review_usage": {
+    "prompt_tokens": 13479,
+    "total_tokens": 13565,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13479
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T12_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T12_011",
+        "title": "只开客厅音箱并设音量60%",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱打开，音量调到60%。",
+            "reference_text": "好的，客厅音箱已经打开，音量设到了60%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_012",
+        "title": "开客厅音箱60%后再降到30%",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱打开，音量调到60%。",
+            "reference_text": "好的，客厅音箱已经打开，音量设到了60%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再把刚才那个音箱的音量调到30%，别的不用动。",
+            "reference_text": "客厅音箱的音量已经调到30%，其他设置没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_013",
+        "title": "开客厅音箱调音量后核对状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱打开，音量调到60%。",
+            "reference_text": "好的，客厅音箱已经打开，音量设到了60%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再把刚才那个音箱的音量调到30%，别的不用动。",
+            "reference_text": "客厅音箱的音量已经调到30%，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅音箱现在音量多少、开着没，别调整。",
+            "reference_text": "客厅音箱现在开着，音量是30%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_014",
+        "title": "客厅音箱音量调整与关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱打开，音量调到60%。",
+            "reference_text": "好的，客厅音箱已经打开，音量设到了60%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再把刚才那个音箱的音量调到30%，别的不用动。",
+            "reference_text": "客厅音箱的音量已经调到30%，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅音箱现在音量多少、开着没，别调整。",
+            "reference_text": "客厅音箱现在开着，音量是30%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅音箱关掉，音量设置保留。",
+            "reference_text": "客厅音箱已经关掉，音量还是30%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_015",
+        "title": "客厅音箱多次调整与关闭查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱打开，音量调到60%。",
+            "reference_text": "好的，客厅音箱已经打开，音量设到了60%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再把刚才那个音箱的音量调到30%，别的不用动。",
+            "reference_text": "客厅音箱的音量已经调到30%，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅音箱现在音量多少、开着没，别调整。",
+            "reference_text": "客厅音箱现在开着，音量是30%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅音箱关掉，音量设置保留。",
+            "reference_text": "客厅音箱已经关掉，音量还是30%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅音箱开着没，其他设备别动。",
+            "reference_text": "客厅音箱现在是关着的。"
+          }
+        ]
+      }
+    ]
+  }
+}

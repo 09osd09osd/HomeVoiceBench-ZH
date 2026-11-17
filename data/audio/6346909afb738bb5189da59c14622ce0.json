@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6346909afb738bb5189da59c14622ce0.wav",
+  "sha256": "5aaf18d39cfc372571b78736e701560d05cb0641d43327e564179c8dfc4dcf88",
+  "duration_seconds": 5.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1ede0dc7-1f28-943c-acec-7e85c52e1527",
+  "usage": {
+    "input_tokens": 243,
+    "output_tokens": 1032,
+    "total_tokens": 1275,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我妈想让我坐着别乱跑，可干坐着更难受。有没有不出这个区域的打发时间法？",
+  "spoken_text": "我妈想让我坐着别乱跑，可干坐着更难受。有没有不出这个区域的打发时间法？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我妈想让我坐着别乱跑，可干坐着更难受。有没有不出这个区域的打发时间法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我妈想让我坐着别乱跑，可干坐着更难受。有没有不出这个区域的打发时间法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1315a75d-6b1f-9994-b70d-76cbbf36c8ae",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 296,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5aaf18d39cfc372571b78736e701560d05cb0641d43327e564179c8dfc4dcf88"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "78e927a5a6b4702a5ed93014f49d53e1d0468927aed09a92f465e7374b021e5a",
+    "canonical_sha256": "5aaf18d39cfc372571b78736e701560d05cb0641d43327e564179c8dfc4dcf88",
+    "pcm_sha256": "7eefab0892df1f8e92c32d27b882ecf33a5df62c74fe937b6d1026611630f669",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 123840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我妈想让我坐着别乱跑，可干坐着更难受。有没有不出这个区域的打发时间法？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7a739932-1f95-9d7b-937a-2ab7f3f0110b",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 212,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "78e927a5a6b4702a5ed93014f49d53e1d0468927aed09a92f465e7374b021e5a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "78e927a5a6b4702a5ed93014f49d53e1d0468927aed09a92f465e7374b021e5a",
+        "canonical_audio_sha256": "5aaf18d39cfc372571b78736e701560d05cb0641d43327e564179c8dfc4dcf88",
+        "pcm_sha256": "7eefab0892df1f8e92c32d27b882ecf33a5df62c74fe937b6d1026611630f669",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/af8733af7184b777db23a512aa7e0ecf.wav",
+  "sha256": "c13038f19af83d808f79f71f7e064d921c45de9dc15bf49049ca960152d6c9cc",
+  "duration_seconds": 2.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "904b39d9-3af1-9258-ab2c-e8fdbcedc1be",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 576,
+    "total_tokens": 767,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我现在要的是什么声音吗？是不是纯雨声？",
+  "spoken_text": "你还记得我现在要的是什么声音吗？是不是纯雨声？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我现在要的是什么声音吗？是不是纯雨声？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我现在要的是什么声音吗？是不是纯雨声？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fd0706c5-7894-9539-91e2-5e40d6c1b60e",
+    "usage": {
+      "prompt_tokens": 218,
+      "total_tokens": 257,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c13038f19af83d808f79f71f7e064d921c45de9dc15bf49049ca960152d6c9cc"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1e67630f4811e6a3581b3b8bfb71dff8900eb062b8588c5e22bcbef40a31d896",
+    "canonical_sha256": "c13038f19af83d808f79f71f7e064d921c45de9dc15bf49049ca960152d6c9cc",
+    "pcm_sha256": "07f7c4164e17bc0c9e0a2632d7b66ceb1e32f7e30aaad38e2ea1df6268a2f9f8",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 69120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我现在要的是什么声音吗？是不是纯雨声？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-49fafd2b-2bd0-97cf-9fad-c14015c88f83",
+      "usage": {
+        "prompt_tokens": 134,
+        "total_tokens": 173,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1e67630f4811e6a3581b3b8bfb71dff8900eb062b8588c5e22bcbef40a31d896",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1e67630f4811e6a3581b3b8bfb71dff8900eb062b8588c5e22bcbef40a31d896",
+        "canonical_audio_sha256": "c13038f19af83d808f79f71f7e064d921c45de9dc15bf49049ca960152d6c9cc",
+        "pcm_sha256": "07f7c4164e17bc0c9e0a2632d7b66ceb1e32f7e30aaad38e2ea1df6268a2f9f8",
+        "same_samples": true
+      }
+    }
+  ]
+}

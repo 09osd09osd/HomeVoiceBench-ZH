@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a86738a70c6ada3d7b90f687e0a52e55.wav",
+  "sha256": "891df6dab69bc35946606ad9473e2219d8d2e9e7c0b826bc4682b0b43319ef5b",
+  "duration_seconds": 2.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "dda2d2b6-b9f4-91da-bbb8-813d1e906028",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 568,
+    "total_tokens": 751,
+    "duration": 3
+  },
+  "seed": 100042,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "好，那你简单跟我说两句就行，我准备去门口等。",
+  "spoken_text": "好，那你简单跟我说两句就行，我准备去门口等。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "好，那你简单跟我说两句就行，我准备去门口等。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "好，那你简单跟我说两句就行，我准备去门口等。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b8af5b70-7e99-9c62-9132-46a3ccdde49f",
+    "usage": {
+      "prompt_tokens": 219,
+      "total_tokens": 259,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "891df6dab69bc35946606ad9473e2219d8d2e9e7c0b826bc4682b0b43319ef5b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "78478da0c6cb7e809613f5f5e1827333a497f28d9106ad9a66993689e239e02a",
+    "canonical_sha256": "891df6dab69bc35946606ad9473e2219d8d2e9e7c0b826bc4682b0b43319ef5b",
+    "pcm_sha256": "8c432cdd62d394223cc83e265388eba8541da5ad0142e9d0da068a6f92a86c3d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 68160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "好，那你简单跟我说两句就行，我准备去门口等。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5d8f34d1-3c8e-98d8-b602-c080cca19ef2",
+      "usage": {
+        "prompt_tokens": 135,
+        "total_tokens": 175,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "78478da0c6cb7e809613f5f5e1827333a497f28d9106ad9a66993689e239e02a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "78478da0c6cb7e809613f5f5e1827333a497f28d9106ad9a66993689e239e02a",
+        "canonical_audio_sha256": "891df6dab69bc35946606ad9473e2219d8d2e9e7c0b826bc4682b0b43319ef5b",
+        "pcm_sha256": "8c432cdd62d394223cc83e265388eba8541da5ad0142e9d0da068a6f92a86c3d",
+        "same_samples": true
+      }
+    }
+  ]
+}

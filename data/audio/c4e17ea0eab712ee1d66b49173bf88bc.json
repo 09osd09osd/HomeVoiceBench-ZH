@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/c4e17ea0eab712ee1d66b49173bf88bc.wav",
+  "sha256": "d876e22b5fa82e96b5e2a53e4c69f639a1e41733a6dcbe285ef3a1b2bd678c29",
+  "duration_seconds": 3.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7bafefbb-47a0-906b-8a20-a92f67628694",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 680,
+    "total_tokens": 870,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说错了，其实是6片叶子，不是5片。",
+  "spoken_text": "我刚才说错了，其实是六片叶子，不是五片。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说错了，其实是六片叶子，不是五片。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说错了，其实是六片叶子，不是五片。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-59ad76ed-f204-9ca4-b17f-edfe2753e61b",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d876e22b5fa82e96b5e2a53e4c69f639a1e41733a6dcbe285ef3a1b2bd678c29"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1bd21c8ffa7c15ac2ada399b9ac48d05387e2aba7d2392df008a2e6a8a2d8f81",
+    "canonical_sha256": "d876e22b5fa82e96b5e2a53e4c69f639a1e41733a6dcbe285ef3a1b2bd678c29",
+    "pcm_sha256": "d3a715524e85acadcf0f5daf799d50f58b32cd5081bd6f9d68685d507121693c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 81600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说错了，其实是六片叶子，不是五片。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我刚才说错了，其实是六片叶子，不是五片。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b15dacc1-9ded-903a-a1e2-10afc6e33fa0",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 205,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1bd21c8ffa7c15ac2ada399b9ac48d05387e2aba7d2392df008a2e6a8a2d8f81",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1bd21c8ffa7c15ac2ada399b9ac48d05387e2aba7d2392df008a2e6a8a2d8f81",
+        "canonical_audio_sha256": "d876e22b5fa82e96b5e2a53e4c69f639a1e41733a6dcbe285ef3a1b2bd678c29",
+        "pcm_sha256": "d3a715524e85acadcf0f5daf799d50f58b32cd5081bd6f9d68685d507121693c",
+        "same_samples": true
+      }
+    }
+  ]
+}

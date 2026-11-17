@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/5f62d1c6ecd6414bbdd2507108dffb6b.wav",
+  "sha256": "969c32a807cb9dd2286da4ebcffee4a956df1358a626e7948991314db6868a63",
+  "duration_seconds": 7.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5b117c96-76d7-9a81-bb11-f4f00546d638",
+  "usage": {
+    "input_tokens": 252,
+    "output_tokens": 1536,
+    "total_tokens": 1788,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我弟的飞机模型翅膀断了，他一口咬定是我碰掉的，其实我根本没进他房间。我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
+  "spoken_text": "我弟的飞机模型翅膀断了，他一口咬定是我碰掉的，其实我根本没进他房间。我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我弟的飞机模型翅膀断了，他一口咬定是我碰掉的。其实我根本没进他房间，我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我弟的飞机模型翅膀断了，他一口咬定是我碰掉的。其实我根本没进他房间，我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-aad047ab-6a4f-9dcf-812b-10444de06b1d",
+    "usage": {
+      "prompt_tokens": 279,
+      "total_tokens": 344,
+      "completion_tokens": 65,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 228
+      },
+      "completion_tokens_details": {
+        "text_tokens": 65
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "969c32a807cb9dd2286da4ebcffee4a956df1358a626e7948991314db6868a63"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c23cad1c85f0568c100149265c0a1ea2345a9bf7e717f2b77c59af69afe59f24",
+    "canonical_sha256": "969c32a807cb9dd2286da4ebcffee4a956df1358a626e7948991314db6868a63",
+    "pcm_sha256": "797921046a8f01350b49993a0d5fdca4a19b8c84a1050ec3e51540d9410d9e3f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 184320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我弟的飞机模型翅膀断了，他一口咬定是我碰掉的，其实我根本没进他房间。我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b35df2a5-70f1-9fa5-a74e-c43c7160f9f9",
+      "usage": {
+        "prompt_tokens": 195,
+        "total_tokens": 260,
+        "completion_tokens": 65,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 65
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c23cad1c85f0568c100149265c0a1ea2345a9bf7e717f2b77c59af69afe59f24",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c23cad1c85f0568c100149265c0a1ea2345a9bf7e717f2b77c59af69afe59f24",
+        "canonical_audio_sha256": "969c32a807cb9dd2286da4ebcffee4a956df1358a626e7948991314db6868a63",
+        "pcm_sha256": "797921046a8f01350b49993a0d5fdca4a19b8c84a1050ec3e51540d9410d9e3f",
+        "same_samples": true
+      }
+    }
+  ]
+}

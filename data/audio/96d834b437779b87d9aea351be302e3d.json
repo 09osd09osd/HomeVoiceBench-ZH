@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/96d834b437779b87d9aea351be302e3d.wav",
+  "sha256": "5097a547963305565884009fb87c38c025b375a484fa15aed42471eeeff8a422",
+  "duration_seconds": 8.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8d6ef3e7-f9a5-9f08-b263-7c8db7c287ae",
+  "usage": {
+    "input_tokens": 246,
+    "output_tokens": 1680,
+    "total_tokens": 1926,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "他脾气急，我要是直接说“不是我”，他肯定更炸。我想先安抚他，再说事实，但别让我背锅，这个分寸怎么拿？",
+  "spoken_text": "他脾气急，我要是直接说“不是我”，他肯定更炸。我想先安抚他，再说事实，但别让我背锅，这个分寸怎么拿？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "他脾气急，我要是直接说“不是我”，他肯定更炸。我想先安抚他再说事实，但别让我背锅，这个分寸怎么拿？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "他脾气急，我要是直接说“不是我”，他肯定更炸。我想先安抚他再说事实，但别让我背锅，这个分寸怎么拿？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f6d0eed2-f153-9ffb-961a-7d4126fa88e8",
+    "usage": {
+      "prompt_tokens": 281,
+      "total_tokens": 340,
+      "completion_tokens": 59,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 223
+      },
+      "completion_tokens_details": {
+        "text_tokens": 59
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5097a547963305565884009fb87c38c025b375a484fa15aed42471eeeff8a422"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "21b5006357bc9fd6db8e60adc2dbb3fa7e7cd849933436db64f3123f04a66ce9",
+    "canonical_sha256": "5097a547963305565884009fb87c38c025b375a484fa15aed42471eeeff8a422",
+    "pcm_sha256": "3f016f6289edfd45cb48c5b0f7a3f29fa836241572c8948578e53a5a64fcd95f",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 201600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "他脾气急，我要是直接说不是我，他肯定更炸。我想先安抚他，再说事实，但别让我背锅，这个分寸怎么拿？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4218749f-b0a5-951a-a401-c7c05a087c81",
+      "usage": {
+        "prompt_tokens": 197,
+        "total_tokens": 256,
+        "completion_tokens": 59,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 59
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "21b5006357bc9fd6db8e60adc2dbb3fa7e7cd849933436db64f3123f04a66ce9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "21b5006357bc9fd6db8e60adc2dbb3fa7e7cd849933436db64f3123f04a66ce9",
+        "canonical_audio_sha256": "5097a547963305565884009fb87c38c025b375a484fa15aed42471eeeff8a422",
+        "pcm_sha256": "3f016f6289edfd45cb48c5b0f7a3f29fa836241572c8948578e53a5a64fcd95f",
+        "same_samples": true
+      }
+    }
+  ]
+}

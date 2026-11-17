@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/3699f34bd74c1bc5f1701f958b63cd14.wav",
+  "sha256": "fd73a5999ca2a13cfd866aae12393833efd52dfe8ab696136711806b9f721b7d",
+  "duration_seconds": 2.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a9cd2818-f1d4-96e0-94a0-b758078556aa",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 520,
+    "total_tokens": 706,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "提醒的时候声音别太大，我早上刚起来不想被吓一跳。",
+  "spoken_text": "提醒的时候声音别太大，我早上刚起来不想被吓一跳。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "提醒的时候声音别太大，我早上刚起来不想被吓一跳。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "提醒的时候声音别太大，我早上刚起来不想被吓一跳。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8ec509cd-487b-9b8e-a74c-d76a632db99d",
+    "usage": {
+      "prompt_tokens": 220,
+      "total_tokens": 261,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "fd73a5999ca2a13cfd866aae12393833efd52dfe8ab696136711806b9f721b7d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e206ceaadc50553c19937e5d96563d61909a16b4fb2097424d980b359035431f",
+    "canonical_sha256": "fd73a5999ca2a13cfd866aae12393833efd52dfe8ab696136711806b9f721b7d",
+    "pcm_sha256": "664137865e819b36580b6c35d2e419fa498adc2259892fc695780ffe388063e9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 62400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "提醒的时候声音别太大，我早上刚起来不想被吓一跳。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-96566a93-636f-92ed-b2c5-8d51f4fa930e",
+      "usage": {
+        "prompt_tokens": 136,
+        "total_tokens": 177,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e206ceaadc50553c19937e5d96563d61909a16b4fb2097424d980b359035431f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e206ceaadc50553c19937e5d96563d61909a16b4fb2097424d980b359035431f",
+        "canonical_audio_sha256": "fd73a5999ca2a13cfd866aae12393833efd52dfe8ab696136711806b9f721b7d",
+        "pcm_sha256": "664137865e819b36580b6c35d2e419fa498adc2259892fc695780ffe388063e9",
+        "same_samples": true
+      }
+    }
+  ]
+}

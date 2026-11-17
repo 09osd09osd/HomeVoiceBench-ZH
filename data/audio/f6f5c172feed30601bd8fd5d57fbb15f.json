@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f6f5c172feed30601bd8fd5d57fbb15f.wav",
+  "sha256": "679e884540fb4930626662380144a44b31a2633d947d98c6afdb7dd0e15d687a",
+  "duration_seconds": 6.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "78cff73e-c172-9121-aa32-f80cad966ca0",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 1208,
+    "total_tokens": 1404,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "晚上吃完饭翻出以前的相册，看到几张十几年前出去玩的照片，一下子想起好多事。",
+  "spoken_text": "晚上吃完饭翻出以前的相册，看到几张十几年前出去玩的照片，一下子想起好多事。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "晚上吃完饭，翻出以前的相册，看到几张十几年前出去玩的照片，一下子想起好多事。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "晚上吃完饭，翻出以前的相册，看到几张十几年前出去玩的照片，一下子想起好多事。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-02555b21-165f-94b5-88e0-74b6cd9d090a",
+    "usage": {
+      "prompt_tokens": 252,
+      "total_tokens": 298,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "679e884540fb4930626662380144a44b31a2633d947d98c6afdb7dd0e15d687a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4d783cd3e8b6a6b9fd39279782c1fef57bb08bf739798e8b8d265841f014570f",
+    "canonical_sha256": "679e884540fb4930626662380144a44b31a2633d947d98c6afdb7dd0e15d687a",
+    "pcm_sha256": "d0fe3015f606d75fae51200a9c93ff37fd88a544d9ce8939c22a48d493f492c9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 144960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "晚上吃完饭翻出以前的相册，看到几张十几年前出去玩的照片，一下子想起好多事。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-59ed4613-dbeb-9c14-8838-565400c1fd49",
+      "usage": {
+        "prompt_tokens": 168,
+        "total_tokens": 213,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4d783cd3e8b6a6b9fd39279782c1fef57bb08bf739798e8b8d265841f014570f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4d783cd3e8b6a6b9fd39279782c1fef57bb08bf739798e8b8d265841f014570f",
+        "canonical_audio_sha256": "679e884540fb4930626662380144a44b31a2633d947d98c6afdb7dd0e15d687a",
+        "pcm_sha256": "d0fe3015f606d75fae51200a9c93ff37fd88a544d9ce8939c22a48d493f492c9",
+        "same_samples": true
+      }
+    }
+  ]
+}

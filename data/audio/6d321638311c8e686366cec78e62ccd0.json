@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6d321638311c8e686366cec78e62ccd0.wav",
+  "sha256": "c487c2696b2c523ad8ce8768c350f90fbbc1c6f0235aaf8998646bf71c6aae24",
+  "duration_seconds": 3.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a2fad9c9-791d-981a-bd20-17025c9cb4c4",
+  "usage": {
+    "input_tokens": 171,
+    "output_tokens": 712,
+    "total_tokens": 883,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，拉伸是十分钟，不是五分钟。",
+  "spoken_text": "更正一下，拉伸是十分钟，不是五分钟。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，拉伸是十分钟，不是五分钟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，拉伸是十分钟，不是五分钟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-39839d6f-e028-9acb-a735-5954c8390c79",
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 258,
+      "completion_tokens": 36,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 199
+      },
+      "completion_tokens_details": {
+        "text_tokens": 36
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c487c2696b2c523ad8ce8768c350f90fbbc1c6f0235aaf8998646bf71c6aae24"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "df1b70b988f98d2e3901aa8e8ad755cd6315e0a224fa001ba82fbffa2c519274",
+    "canonical_sha256": "c487c2696b2c523ad8ce8768c350f90fbbc1c6f0235aaf8998646bf71c6aae24",
+    "pcm_sha256": "d5d9d3af365632fb55159d864396f3003e8f4dba722dffcce14b391e7f403bb9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 85440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，拉伸是十分钟，不是五分钟。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ce361acb-5e6f-9fe1-97d7-3c2bbba42bd6",
+      "usage": {
+        "prompt_tokens": 138,
+        "total_tokens": 174,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 115
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "df1b70b988f98d2e3901aa8e8ad755cd6315e0a224fa001ba82fbffa2c519274",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "df1b70b988f98d2e3901aa8e8ad755cd6315e0a224fa001ba82fbffa2c519274",
+        "canonical_audio_sha256": "c487c2696b2c523ad8ce8768c350f90fbbc1c6f0235aaf8998646bf71c6aae24",
+        "pcm_sha256": "d5d9d3af365632fb55159d864396f3003e8f4dba722dffcce14b391e7f403bb9",
+        "same_samples": true
+      }
+    }
+  ]
+}

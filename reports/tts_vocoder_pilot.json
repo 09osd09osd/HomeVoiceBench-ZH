@@ -1,0 +1,256 @@
+{
+  "status": "needs_inspection",
+  "policy": "same_global_padding_batch_axis_split_v1",
+  "vocoder_max_batch_size": 2,
+  "tokenizer_type": "qwen3_tts_tokenizer_12hz",
+  "generation": {
+    "do_sample": true,
+    "repetition_penalty": 1.05,
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 50,
+    "subtalker_dosample": true,
+    "subtalker_temperature": 0.9,
+    "subtalker_top_p": 1.0,
+    "subtalker_top_k": 50,
+    "max_new_tokens": 1024
+  },
+  "seed": 42,
+  "thresholds": {
+    "rmse_max": 0.0001,
+    "absolute_difference_max": 0.002
+  },
+  "note": "Identical generated codec inputs; global padding and official temporal decoder chunking unchanged. Stress audio is not a benchmark answer. No model run or cached audio overwritten.",
+  "comparisons": [
+    {
+      "label": "eight_actual_pilot_utterances",
+      "codec_lengths": [
+        65,
+        73,
+        70,
+        64,
+        79,
+        67,
+        85,
+        78
+      ],
+      "full_batch": {
+        "seconds": 0.35999999998603016,
+        "peak_gpu_bytes": 3345483264
+      },
+      "bounded_batch": {
+        "seconds": 0.1880000000819564,
+        "peak_gpu_bytes": 2588112896
+      },
+      "chunks": [
+        {
+          "sample_indices": [
+            0,
+            1
+          ],
+          "batch_size": 2,
+          "padded_codec_frames": 85
+        },
+        {
+          "sample_indices": [
+            2,
+            3
+          ],
+          "batch_size": 2,
+          "padded_codec_frames": 85
+        },
+        {
+          "sample_indices": [
+            4,
+            5
+          ],
+          "batch_size": 2,
+          "padded_codec_frames": 85
+        },
+        {
+          "sample_indices": [
+            6,
+            7
+          ],
+          "batch_size": 2,
+          "padded_codec_frames": 85
+        }
+      ],
+      "differences": [
+        {
+          "frames": 124800,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.037109375,
+          "rmse": 0.0012976558333511643
+        },
+        {
+          "frames": 140160,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.0283203125,
+          "rmse": 0.001295969349677992
+        },
+        {
+          "frames": 134400,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.025390625,
+          "rmse": 0.0013840286268425124
+        },
+        {
+          "frames": 122880,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.09912109375,
+          "rmse": 0.0025111215073861963
+        },
+        {
+          "frames": 151680,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.041015625,
+          "rmse": 0.0012917763799301805
+        },
+        {
+          "frames": 128640,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.06298828125,
+          "rmse": 0.0015743674852590963
+        },
+        {
+          "frames": 163200,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.029296875,
+          "rmse": 0.0013753021699381253
+        },
+        {
+          "frames": 149760,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.02734375,
+          "rmse": 0.0013614065165109285
+        }
+      ],
+      "passed": false
+    },
+    {
+      "label": "synthetic_1024_codec_frame_memory_probe_not_benchmark_audio",
+      "codec_lengths": [
+        1024,
+        73,
+        70,
+        64,
+        79,
+        67,
+        85,
+        78
+      ],
+      "full_batch": {
+        "seconds": 2.015999999945052,
+        "peak_gpu_bytes": 6683707392
+      },
+      "bounded_batch": {
+        "seconds": 1.577999999979511,
+        "peak_gpu_bytes": 3778255872
+      },
+      "chunks": [
+        {
+          "sample_indices": [
+            0,
+            1
+          ],
+          "batch_size": 2,
+          "padded_codec_frames": 1024
+        },
+        {
+          "sample_indices": [
+            2,
+            3
+          ],
+          "batch_size": 2,
+          "padded_codec_frames": 1024
+        },
+        {
+          "sample_indices": [
+            4,
+            5
+          ],
+          "batch_size": 2,
+          "padded_codec_frames": 1024
+        },
+        {
+          "sample_indices": [
+            6,
+            7
+          ],
+          "batch_size": 2,
+          "padded_codec_frames": 1024
+        }
+      ],
+      "differences": [
+        {
+          "frames": 1966080,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.033203125,
+          "rmse": 0.0010028617608683359
+        },
+        {
+          "frames": 140160,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.0224609375,
+          "rmse": 0.0010967725904093204
+        },
+        {
+          "frames": 134400,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.0224609375,
+          "rmse": 0.0011498095638978417
+        },
+        {
+          "frames": 122880,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.0478515625,
+          "rmse": 0.002225574367850547
+        },
+        {
+          "frames": 151680,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.0556640625,
+          "rmse": 0.0014562940918666837
+        },
+        {
+          "frames": 128640,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.02197265625,
+          "rmse": 0.0013670758370331981
+        },
+        {
+          "frames": 163200,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.0361328125,
+          "rmse": 0.0014374463676501666
+        },
+        {
+          "frames": 149760,
+          "same_length": true,
+          "float_identical": false,
+          "max_absolute_difference": 0.019287109375,
+          "rmse": 0.0011932535744415662
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "decision": "not_adopted_in_formal_evaluation",
+  "decision_reason": "BF16 waveform differences exceeded predefined comparison limits. Production retains the unmodified official decoder; resume at fixed full batch 16 to reduce memory pressure."
+}

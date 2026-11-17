@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1631fae9648b855eee53e750034c2436.wav",
+  "sha256": "609a3b5767581d17f21538ed8dc220f455a99413cea80a8275e8c07ede9cf4f0",
+  "duration_seconds": 10.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ebbab5c1-a975-9b21-8f24-444ff3ce2232",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 2040,
+    "total_tokens": 2243,
+    "duration": 10
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，小猫拿的不是小叶子，是一朵小蘑菇当伞，刚才说错了，后面都用小蘑菇。",
+  "spoken_text": "更正一下，小猫拿的不是小叶子，是一朵小蘑菇当伞，刚才说错了，后面都用小蘑菇。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，小猫拿的不是小叶子，是一朵小蘑菇当伞。刚才说错了，后面都用小蘑菇。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，小猫拿的不是小叶子，是一朵小蘑菇当伞。刚才说错了，后面都用小蘑菇。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f05720ba-d5c1-9d67-b88f-03d486439bfa",
+    "usage": {
+      "prompt_tokens": 286,
+      "total_tokens": 337,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 72,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "609a3b5767581d17f21538ed8dc220f455a99413cea80a8275e8c07ede9cf4f0"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2c00aaa585c2c2a8c763faaf729c0f102269883779e192dba5b239ac72ccf79c",
+    "canonical_sha256": "609a3b5767581d17f21538ed8dc220f455a99413cea80a8275e8c07ede9cf4f0",
+    "pcm_sha256": "3ed2c025802cc3c75180f9549d622208f51c5d2bc07c8b2cf5cd5dc02ffa2df1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 244800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，小猫拿的不是小叶子，是一朵小蘑菇当伞。刚才说错了，后面都用小蘑菇。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，小猫拿的不是小叶子，是一朵小蘑菇当伞。刚才说错了，后面都用小蘑菇。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4246899c-4fdf-9452-b16c-e8e1d43f66ef",
+      "usage": {
+        "prompt_tokens": 225,
+        "total_tokens": 276,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 72,
+          "text_tokens": 153
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2c00aaa585c2c2a8c763faaf729c0f102269883779e192dba5b239ac72ccf79c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2c00aaa585c2c2a8c763faaf729c0f102269883779e192dba5b239ac72ccf79c",
+        "canonical_audio_sha256": "609a3b5767581d17f21538ed8dc220f455a99413cea80a8275e8c07ede9cf4f0",
+        "pcm_sha256": "3ed2c025802cc3c75180f9549d622208f51c5d2bc07c8b2cf5cd5dc02ffa2df1",
+        "same_samples": true
+      }
+    }
+  ]
+}

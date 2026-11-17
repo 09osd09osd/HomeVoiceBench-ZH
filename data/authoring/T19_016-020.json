@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "8d805d7dd222d7f39dc4e0a1c796a2c67dc75b46ea5fda410baae9c23fb8728c",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-87376d4a-ea3d-9c35-9549-d3d68d83fdc8",
+  "usage": {
+    "prompt_tokens": 4182,
+    "total_tokens": 5152,
+    "completion_tokens": 970,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 4182
+    },
+    "completion_tokens_details": {
+      "text_tokens": 970
+    }
+  },
+  "review_request_id": "chatcmpl-6254af94-916e-9668-86e5-2288c5386d44",
+  "review_usage": {
+    "prompt_tokens": 5038,
+    "total_tokens": 5124,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 5038
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T19_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T19_016",
+        "title": "客厅是否有人只查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+            "reference_text": "查到了：客厅检测到有人，读数是“有人”，测量时间是今天18点00分00秒。这次只做了查询，没有操作任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_017",
+        "title": "先查客厅再查厨房是否有人",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+            "reference_text": "查到了：客厅这次没有检测到人，测量时间是今天18点00分00秒。只做了查询，没有动设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房有没有人。",
+            "reference_text": "厨房检测到有人，测量时间是今天18点00分00秒。这次也只是查询，没有操作设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_018",
+        "title": "客厅厨房有人对比",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+            "reference_text": "客厅检测到有人，测量时间是今天18点00分00秒。只做了查询，没有操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房有没有人。",
+            "reference_text": "厨房这次没有检测到人，测量时间是今天18点00分00秒。只查询，没有动设备。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "把刚才客厅和厨房的读数比一下，别调任何设备。",
+            "reference_text": "刚才两个读数对比：客厅检测到有人，厨房没有检测到人，测量时间都是今天18点00分00秒。只是比较读数，没有操作任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_019",
+        "title": "客厅厨房读数与能力边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+            "reference_text": "客厅这次没有检测到人，测量时间是今天18点00分00秒。只做了查询，没有动设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房有没有人。",
+            "reference_text": "厨房检测到有人，测量时间是今天18点00分00秒。只查询，没有操作设备。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "把刚才客厅和厨房的读数比一下，别调任何设备。",
+            "reference_text": "对比一下：客厅没有检测到人，厨房检测到有人，测量时间都是今天18点00分00秒。没有操作任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。这些读数只是传感器在当时测到的状态，有测量时间限制，也有覆盖范围限制；只能表示检测到或没检测到人，不能判断是谁，也不代表房间里的全部情况。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_020",
+        "title": "多次查询并重新确认客厅",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我看看客厅现在有没有人，把读数和测量时间告诉我，只查一下就行，别动任何设备。",
+            "reference_text": "客厅检测到有人，测量时间是今天18点00分00秒。只做了查询，没有操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再帮我查一下厨房有没有人。",
+            "reference_text": "厨房这次没有检测到人，测量时间是今天18点00分00秒。只查询，没有动设备。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "把刚才客厅和厨房的读数比一下，别调任何设备。",
+            "reference_text": "对比结果：客厅检测到有人，厨房没有检测到人，测量时间都是今天18点00分00秒。没有操作任何设备。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。读数有测量时间限制，也有传感器范围限制；是否检测到人不能判断人的身份，也不代表房间里的全部情况。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再重新查一下客厅的有没有人。",
+            "reference_text": "重新查了客厅：检测到有人，测量时间是今天18点00分00秒。只做了查询，没有操作设备。"
+          }
+        ]
+      }
+    ]
+  }
+}

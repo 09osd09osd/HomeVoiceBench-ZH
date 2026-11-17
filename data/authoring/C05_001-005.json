@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "a8384de17730dedd7e5d7e4422316c51145fa000093c382d59f3f8db225f50a7",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-c173c289-6982-9c9a-9dfb-d0833ae2bffb",
+  "usage": {
+    "prompt_tokens": 1690,
+    "total_tokens": 3064,
+    "completion_tokens": 1374,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1690
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1374
+    }
+  },
+  "review_request_id": "chatcmpl-6948dc95-0aec-926b-a3cc-ad3f7524aa8f",
+  "review_usage": {
+    "prompt_tokens": 2686,
+    "total_tokens": 2772,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2686
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C05_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C05_001",
+        "title": "晚饭后家务分工协商",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想跟家人商量一下晚饭后的家务分工，你能帮我把需求说清楚吗？",
+            "reference_text": "可以。你可以直接说：晚饭后我需要有人帮忙洗碗、擦桌子和倒垃圾，看看大家怎么分比较合适。这样说清楚具体事情，不评价谁勤快谁懒。"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_002",
+        "title": "周末大扫除分工协商",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "周六上午家里要大扫除，我想把客厅、厨房和卫生间分给三个人做，帮我理一下怎么说。",
+            "reference_text": "你可以说：周六上午咱们把大扫除分一下，客厅、厨房、卫生间各一个人负责，先看看谁方便做哪块。这样只提事情和范围，不给人贴标签。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我希望上午十点前做完，因为下午孩子要在家写作业，别太吵。",
+            "reference_text": "那可以补一句：尽量上午十点前做完，下午孩子要写作业，需要安静。把时间限制说清楚，大家再商量各自负责哪块。"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_003",
+        "title": "工作日接送孩子和做饭分工",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "工作日我下班晚，想跟家里人商量谁接孩子、谁做晚饭，你帮我组织一下说法。",
+            "reference_text": "你可以说：我工作日下班晚，接孩子和做晚饭需要分一下，看看谁哪天方便。只提具体安排，不说谁不负责任。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我周二和周四肯定赶不回来，其他三天可以我来做饭。",
+            "reference_text": "可以这样表达：周二和周四我赶不回来，其他三天晚饭我来做，接孩子这两天需要别人帮忙。把能做的和不能做的都说清楚。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，周三我也赶不回来，所以是周二、周三、周四都不行。",
+            "reference_text": "好的，改成：周二、周三、周四我都赶不回来，周一和周五晚饭我可以做。接孩子这三天需要家里其他人帮忙，看看怎么排。"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_004",
+        "title": "轮流值日和垃圾清理",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里垃圾经常没人及时倒，我想定个轮流值日的办法，帮我跟家人说清楚。",
+            "reference_text": "你可以说：垃圾需要定个轮流倒的办法，每天谁值日谁负责倒，避免总堆着。只提规则，不说谁懒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我希望按周轮，一个人轮一周，周末交接。",
+            "reference_text": "可以补一句：按周轮换，一个人负责一周，周末交接给下一个人，这样大家心里有数。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "刚才说周末交接不太合适，改成每周一早上交接吧。",
+            "reference_text": "那更正为：按周轮换，每周一早上交接给下一个人，谁值日谁负责倒垃圾。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我们改成周一早上交接了吗？那这一周该谁先开始，怎么定比较好？",
+            "reference_text": "记得，是每周一早上交接。先开始的人可以大家商量，比如这周谁方便谁先来，或者按房间顺序定，关键是交接时间不变。"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_005",
+        "title": "洗衣晾晒和叠衣分工",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里洗衣服、晾衣服和叠衣服总是堆在一起，我想跟家人分一下工，你帮我起个头。",
+            "reference_text": "你可以说：洗衣、晾晒和叠衣想分开安排，看看谁负责哪一段，别都堆到一个人身上。只提事情，不评价谁做得多。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我早上出门早，晾衣服不太方便，但晚上叠衣服可以我来。",
+            "reference_text": "可以这样讲：我早上出门早，晾衣服需要别人帮忙，晚上叠衣服我可以负责。把时间和能做的部分说清楚。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，我晚上也不一定每天有空，叠衣服只能负责周一和周三。",
+            "reference_text": "好的，改成：我早上出门早，晾衣服不方便；叠衣服我只负责周一和周三，其他时间需要大家再分。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我叠衣服只负责哪两天吗？那剩下的洗衣和晾晒怎么排比较顺？",
+            "reference_text": "记得，你叠衣服只负责周一和周三。剩下的洗衣和晾晒可以按天轮，比如谁在家谁负责晾，洗衣提前一晚放好，大家再确认。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，那你用简短的话帮我收个尾，把分工说清楚就行。",
+            "reference_text": "简短收尾：洗衣大家轮着来，晾衣服谁方便谁做，叠衣服你负责周一和周三，其余时间再商量。这样分工清楚，也不给谁贴标签。"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b4c4f9854c2b526cb9f156a04c4356c4.wav",
+  "sha256": "9a98565db428bfb7c52962ba65b439340c54f72c15a143ee2d2a9275b2c0f1fa",
+  "duration_seconds": 5.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9248aac2-a546-9135-bbe9-54a836e80d32",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 1040,
+    "total_tokens": 1225,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我前面说小鸭子帮忙浇水，改成小鸭子帮忙拔草吧，浇水还是小兔子自己来。",
+  "spoken_text": "我前面说小鸭子帮忙浇水，改成小鸭子帮忙拔草吧，浇水还是小兔子自己来。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我前面说小鸭子帮忙浇水，改成小鸭子帮忙拔草吧，浇水还是小兔子自己来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我前面说小鸭子帮忙浇水，改成小鸭子帮忙拔草吧，浇水还是小兔子自己来。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-23b0cf95-5404-9700-8d8e-62476f993552",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 296,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9a98565db428bfb7c52962ba65b439340c54f72c15a143ee2d2a9275b2c0f1fa"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "04fb2e8717d524483ede0e96b2ebf113f64e5c874325f670b880207365b686a8",
+    "canonical_sha256": "9a98565db428bfb7c52962ba65b439340c54f72c15a143ee2d2a9275b2c0f1fa",
+    "pcm_sha256": "01c49a636817d3ff427ebee3366c6e650f4c34a1babffe64164b1bba2c24f100",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 124800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我前面说小鸭子帮忙浇水，改成小鸭子帮忙拔草吧，浇水还是小兔子自己来。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我前面说小鸭子帮忙浇水，改成小鸭子帮忙拔草吧，浇水还是小兔子自己来。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6e991c63-5f72-9c62-8311-4aed35b8cbe6",
+      "usage": {
+        "prompt_tokens": 187,
+        "total_tokens": 235,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 150
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "04fb2e8717d524483ede0e96b2ebf113f64e5c874325f670b880207365b686a8",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "04fb2e8717d524483ede0e96b2ebf113f64e5c874325f670b880207365b686a8",
+        "canonical_audio_sha256": "9a98565db428bfb7c52962ba65b439340c54f72c15a143ee2d2a9275b2c0f1fa",
+        "pcm_sha256": "01c49a636817d3ff427ebee3366c6e650f4c34a1babffe64164b1bba2c24f100",
+        "same_samples": true
+      }
+    }
+  ]
+}

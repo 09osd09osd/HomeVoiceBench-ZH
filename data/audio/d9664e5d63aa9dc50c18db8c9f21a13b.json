@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/d9664e5d63aa9dc50c18db8c9f21a13b.wav",
+  "sha256": "a33b517736119177a81fddae811f352328cbdce30e22bd58764a98918295b11e",
+  "duration_seconds": 2.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "99ee42f9-ca23-9d98-a37d-9c41468bda9a",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 584,
+    "total_tokens": 770,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得现在几点吧？那我先做哪样好？",
+  "spoken_text": "你还记得现在几点吧？那我先做哪样好？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得现在几点吧？那我先做哪样好？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得现在几点吧？那我先做哪样好？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ed9ef4e6-5b04-9020-ad09-348e3205d381",
+    "usage": {
+      "prompt_tokens": 218,
+      "total_tokens": 257,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a33b517736119177a81fddae811f352328cbdce30e22bd58764a98918295b11e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a1f36a88cc6077bd58c26d13864ca886fe20f6988c00c6f259ea338010ef973f",
+    "canonical_sha256": "a33b517736119177a81fddae811f352328cbdce30e22bd58764a98918295b11e",
+    "pcm_sha256": "cc8aadfab39ea5caec49bcfc5cfce48bab2f81c940e61d63b2da7b8834a73d25",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 70080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得现在几点吧？那我先做哪样好？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-898d8355-6148-9119-a72b-7aaad5392128",
+      "usage": {
+        "prompt_tokens": 134,
+        "total_tokens": 173,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a1f36a88cc6077bd58c26d13864ca886fe20f6988c00c6f259ea338010ef973f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a1f36a88cc6077bd58c26d13864ca886fe20f6988c00c6f259ea338010ef973f",
+        "canonical_audio_sha256": "a33b517736119177a81fddae811f352328cbdce30e22bd58764a98918295b11e",
+        "pcm_sha256": "cc8aadfab39ea5caec49bcfc5cfce48bab2f81c940e61d63b2da7b8834a73d25",
+        "same_samples": true
+      }
+    }
+  ]
+}

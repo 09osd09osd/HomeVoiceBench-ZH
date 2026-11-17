@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a05342721b18a16d929360034418aa0c.wav",
+  "sha256": "ac98e586c5cc0e7abdbb860e495a88dd1295faffd670faf03b4e23e9c317c41f",
+  "duration_seconds": 5.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ecee5e47-71f1-9b7b-9cf4-02504c062887",
+  "usage": {
+    "input_tokens": 217,
+    "output_tokens": 1176,
+    "total_tokens": 1393,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "故事里再加一个细节：地球是颗蓝色弹珠，我儿子小时候总这么说。",
+  "spoken_text": "故事里再加一个细节:地球是颗蓝色弹珠，我儿子小时候总这么说。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "故事里再加一个细节，地球是颗蓝色弹珠，我儿子小时候总这么说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "故事里再加一个细节，地球是颗蓝色弹珠，我儿子小时候总这么说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-42ff246a-32df-9c6c-9582-a6327405fcf4",
+    "usage": {
+      "prompt_tokens": 245,
+      "total_tokens": 290,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ac98e586c5cc0e7abdbb860e495a88dd1295faffd670faf03b4e23e9c317c41f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e5bbbbec94326634c54b4bd4494f1c7eeff9dc55b123034b5a99b1180b2a2ddd",
+    "canonical_sha256": "ac98e586c5cc0e7abdbb860e495a88dd1295faffd670faf03b4e23e9c317c41f",
+    "pcm_sha256": "c5eb564045ba613a7a589e8d3218c20c9015964062bb14cd00d1c5c5c15aafc6",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 141120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "故事里再加一个细节，地球是颗蓝色弹珠，我儿子小时候总这么说。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "故事里再加一个细节，地球是颗蓝色弹珠，我儿子小时候总这么说。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ac932dd6-2972-9185-9582-5a453aae88ad",
+      "usage": {
+        "prompt_tokens": 184,
+        "total_tokens": 229,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e5bbbbec94326634c54b4bd4494f1c7eeff9dc55b123034b5a99b1180b2a2ddd",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e5bbbbec94326634c54b4bd4494f1c7eeff9dc55b123034b5a99b1180b2a2ddd",
+        "canonical_audio_sha256": "ac98e586c5cc0e7abdbb860e495a88dd1295faffd670faf03b4e23e9c317c41f",
+        "pcm_sha256": "c5eb564045ba613a7a589e8d3218c20c9015964062bb14cd00d1c5c5c15aafc6",
+        "same_samples": true
+      }
+    }
+  ]
+}

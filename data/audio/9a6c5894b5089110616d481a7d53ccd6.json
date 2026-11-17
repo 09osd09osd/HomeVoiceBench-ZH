@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/9a6c5894b5089110616d481a7d53ccd6.wav",
+  "sha256": "24c0cd6bd76e5ee4960eaa5ff52461f60699261747ae7b8e44f658f563f277fc",
+  "duration_seconds": 3.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "528acbef-be37-9f8c-8519-68c28a882d00",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 696,
+    "total_tokens": 888,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "明天早上9点，帮我把书房灯自动关掉。",
+  "spoken_text": "明天早上九点，帮我把书房灯自动关掉。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "明天早上九点，帮我把书房灯自动关掉。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "明天早上九点，帮我把书房灯自动关掉。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-aa7653e8-dcbf-90bf-a685-bb041f9ef40b",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 262,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "24c0cd6bd76e5ee4960eaa5ff52461f60699261747ae7b8e44f658f563f277fc"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ad7f59f5b6f906cf00fb01ef96b2a805d64c111a91c882e2c06635456ea3d1c7",
+    "canonical_sha256": "24c0cd6bd76e5ee4960eaa5ff52461f60699261747ae7b8e44f658f563f277fc",
+    "pcm_sha256": "204c58f026d1325aeb1e03a9249e38317a19003c910775e0e15f48cfba3ab479",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 83520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "明天早上九点，帮我把书房灯自动关掉。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "明天早上九点，帮我把书房灯自动关掉。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e7f05322-5bba-9575-b35f-7c832eb34b4d",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 201,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ad7f59f5b6f906cf00fb01ef96b2a805d64c111a91c882e2c06635456ea3d1c7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ad7f59f5b6f906cf00fb01ef96b2a805d64c111a91c882e2c06635456ea3d1c7",
+        "canonical_audio_sha256": "24c0cd6bd76e5ee4960eaa5ff52461f60699261747ae7b8e44f658f563f277fc",
+        "pcm_sha256": "204c58f026d1325aeb1e03a9249e38317a19003c910775e0e15f48cfba3ab479",
+        "same_samples": true
+      }
+    }
+  ]
+}

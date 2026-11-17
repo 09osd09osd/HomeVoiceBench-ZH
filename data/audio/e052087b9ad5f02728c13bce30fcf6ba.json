@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e052087b9ad5f02728c13bce30fcf6ba.wav",
+  "sha256": "ca88a8fc64527cd3c700e432d59cf9e140207735484115bffa68640cfa9072b7",
+  "duration_seconds": 3.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "082af2f1-1641-90f7-bdb8-4c25f9256288",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 784,
+    "total_tokens": 963,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "让扫地机器人只清扫卧室，别的房间不要进去。",
+  "spoken_text": "让扫地机器人只清扫卧室，别的房间不要进去。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "让扫地机器人只清扫卧室，别的房间不要进去。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "让扫地机器人只清扫卧室，别的房间不要进去。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f8b83742-44b7-9395-a40d-c1a6a5ee2d21",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 262,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ca88a8fc64527cd3c700e432d59cf9e140207735484115bffa68640cfa9072b7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5887a434761a5b813b12b58020f391b28694918500ad325e7808fb1aecc742e6",
+    "canonical_sha256": "ca88a8fc64527cd3c700e432d59cf9e140207735484115bffa68640cfa9072b7",
+    "pcm_sha256": "138f4023fd8fdf865264f3578f937d844b21cce3aea8bb077744853133660417",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 94080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "让扫地机器人只清扫卧室，别的房间不要进去。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "让扫地机器人只清扫卧室，别的房间不要进去。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-78e92d1f-9095-999a-9cc5-80ea9a6e54b1",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 201,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5887a434761a5b813b12b58020f391b28694918500ad325e7808fb1aecc742e6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5887a434761a5b813b12b58020f391b28694918500ad325e7808fb1aecc742e6",
+        "canonical_audio_sha256": "ca88a8fc64527cd3c700e432d59cf9e140207735484115bffa68640cfa9072b7",
+        "pcm_sha256": "138f4023fd8fdf865264f3578f937d844b21cce3aea8bb077744853133660417",
+        "same_samples": true
+      }
+    }
+  ]
+}

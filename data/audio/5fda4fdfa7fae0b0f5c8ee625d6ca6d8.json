@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/5fda4fdfa7fae0b0f5c8ee625d6ca6d8.wav",
+  "sha256": "ef2311e357bfa213f3c1dff9413e0f0b9fdb11812110197bb9f1b90d04156f5d",
+  "duration_seconds": 3.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1279a1a9-90c2-9a23-a2f9-89a182082277",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 656,
+    "total_tokens": 843,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我早上先做什么吗？再说一句提醒就行。",
+  "spoken_text": "你还记得我早上先做什么吗？再说一句提醒就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我早上先做什么吗？再说一句提醒就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我早上先做什么吗？再说一句提醒就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-22871b2a-bd96-9cc8-941a-c826f677dd90",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ef2311e357bfa213f3c1dff9413e0f0b9fdb11812110197bb9f1b90d04156f5d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "66ba57182211558861b0263739d4cc442c2c8479001e8cb3eef0a55d55657c94",
+    "canonical_sha256": "ef2311e357bfa213f3c1dff9413e0f0b9fdb11812110197bb9f1b90d04156f5d",
+    "pcm_sha256": "22ccd458efde463996af713a1b7dd07c60b75e231715a8d150de8ea4b3cf48ac",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 78720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我早上先做什么吗？再说一句提醒就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4be2f035-1020-997b-95e0-3b3d56169127",
+      "usage": {
+        "prompt_tokens": 141,
+        "total_tokens": 180,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "66ba57182211558861b0263739d4cc442c2c8479001e8cb3eef0a55d55657c94",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "66ba57182211558861b0263739d4cc442c2c8479001e8cb3eef0a55d55657c94",
+        "canonical_audio_sha256": "ef2311e357bfa213f3c1dff9413e0f0b9fdb11812110197bb9f1b90d04156f5d",
+        "pcm_sha256": "22ccd458efde463996af713a1b7dd07c60b75e231715a8d150de8ea4b3cf48ac",
+        "same_samples": true
+      }
+    }
+  ]
+}

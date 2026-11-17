@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/2cd85f2893b892ab3913000b44fcbf12.wav",
+  "sha256": "051e0b8f218e09bd49859a9744581cffe054798539ebaa080bf48bf97a3ca8f2",
+  "duration_seconds": 5.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3b5a2892-90ed-925b-9457-6683d88b0aaf",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 1080,
+    "total_tokens": 1272,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "主要想弹唱，民谣那种，但手指按弦特别疼，有点打退堂鼓。",
+  "spoken_text": "主要想弹唱，民谣那种，但手指按弦特别疼，有点打退堂鼓。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "主要想弹唱民谣那种，但手指按弦特别疼，有点打退堂鼓。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "主要想弹唱民谣那种，但手指按弦特别疼，有点打退堂鼓。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6c5e2bcf-150b-9653-808a-d0f3336935e0",
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 293,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "051e0b8f218e09bd49859a9744581cffe054798539ebaa080bf48bf97a3ca8f2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "28933088b889234b95b172f545097f3bceed8298ee44f045177d54338c91877a",
+    "canonical_sha256": "051e0b8f218e09bd49859a9744581cffe054798539ebaa080bf48bf97a3ca8f2",
+    "pcm_sha256": "24bc09b0f0daa459f11f677d4be4b726af17e27fb6760a865cc81f4c84f48e79",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 129600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "主要想弹唱民谣那种，但手指按弦特别疼，有点打退堂鼓。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "主要想弹唱民谣那种，但手指按弦特别疼，有点打退堂鼓。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4d000093-de37-947b-abcc-5e75048d0b51",
+      "usage": {
+        "prompt_tokens": 186,
+        "total_tokens": 232,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 149
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "28933088b889234b95b172f545097f3bceed8298ee44f045177d54338c91877a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "28933088b889234b95b172f545097f3bceed8298ee44f045177d54338c91877a",
+        "canonical_audio_sha256": "051e0b8f218e09bd49859a9744581cffe054798539ebaa080bf48bf97a3ca8f2",
+        "pcm_sha256": "24bc09b0f0daa459f11f677d4be4b726af17e27fb6760a865cc81f4c84f48e79",
+        "same_samples": true
+      }
+    }
+  ]
+}

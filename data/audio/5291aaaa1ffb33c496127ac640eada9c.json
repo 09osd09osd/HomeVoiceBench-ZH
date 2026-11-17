@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/5291aaaa1ffb33c496127ac640eada9c.wav",
+  "sha256": "bac70164020b6c0087ac5775ff28db330b73c696dc79da5fce2555a37a678243",
+  "duration_seconds": 3.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e75162c9-ac73-989a-ae3b-8844f6ffd47b",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 760,
+    "total_tokens": 963,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你也别跟我说什么想开点，那些话我现在听不进去。",
+  "spoken_text": "你也别跟我说什么想开点，那些话我现在听不进去。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你也别跟我说什么“想开点儿”，那些话我现在听不进去。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你也别跟我说什么“想开点儿”，那些话我现在听不进去。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-33b8e413-69c2-961f-b1a1-4d4aa9e855b3",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 269,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "bac70164020b6c0087ac5775ff28db330b73c696dc79da5fce2555a37a678243"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6997f27b8aef12917246f12bc5d93c89bd3b2b884eefbb0546cb9345a9a7bcf5",
+    "canonical_sha256": "bac70164020b6c0087ac5775ff28db330b73c696dc79da5fce2555a37a678243",
+    "pcm_sha256": "4ce25680f072fcb5cc60680a00e78833dcbb8b8019269c73b8c54120ba4b4474",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 91200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你也别跟我说什么想开点儿，那些话我现在听不进去。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-50e64d20-81bc-98cd-bfe7-b919eba71ef5",
+      "usage": {
+        "prompt_tokens": 143,
+        "total_tokens": 184,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6997f27b8aef12917246f12bc5d93c89bd3b2b884eefbb0546cb9345a9a7bcf5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6997f27b8aef12917246f12bc5d93c89bd3b2b884eefbb0546cb9345a9a7bcf5",
+        "canonical_audio_sha256": "bac70164020b6c0087ac5775ff28db330b73c696dc79da5fce2555a37a678243",
+        "pcm_sha256": "4ce25680f072fcb5cc60680a00e78833dcbb8b8019269c73b8c54120ba4b4474",
+        "same_samples": true
+      }
+    }
+  ]
+}

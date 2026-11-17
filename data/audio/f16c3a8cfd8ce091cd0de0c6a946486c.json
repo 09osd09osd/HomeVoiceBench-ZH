@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f16c3a8cfd8ce091cd0de0c6a946486c.wav",
+  "sha256": "b5adff7ee306ea6e357814551252f55ed3a028bd2404d977521e1498dd2b8b30",
+  "duration_seconds": 3.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a9c90b4e-3489-9783-815f-34d78059c158",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 680,
+    "total_tokens": 868,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "提醒的时候顺便告诉我今天星期几，我老是记混。",
+  "spoken_text": "提醒的时候顺便告诉我今天星期几，我老是记混。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "提醒的时候顺便告诉我今天星期几，我老是记混。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "提醒的时候顺便告诉我今天星期几，我老是记混。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2f69ab14-b5ac-91a9-8764-912101b4f8de",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b5adff7ee306ea6e357814551252f55ed3a028bd2404d977521e1498dd2b8b30"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1dc4832d794fbf15ac37315471cab06e1c687ddf2d2762f90531e37eeee07e02",
+    "canonical_sha256": "b5adff7ee306ea6e357814551252f55ed3a028bd2404d977521e1498dd2b8b30",
+    "pcm_sha256": "ab6a23cd52f1377db15a0c0a2a8c2c9040cd1fd3ddaa6fc895ced4c8930cd9a2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 81600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "提醒的时候顺便告诉我今天星期几，我老是记混。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-fa09ee1f-2303-96fa-a52f-f960e57ef25d",
+      "usage": {
+        "prompt_tokens": 141,
+        "total_tokens": 180,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1dc4832d794fbf15ac37315471cab06e1c687ddf2d2762f90531e37eeee07e02",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1dc4832d794fbf15ac37315471cab06e1c687ddf2d2762f90531e37eeee07e02",
+        "canonical_audio_sha256": "b5adff7ee306ea6e357814551252f55ed3a028bd2404d977521e1498dd2b8b30",
+        "pcm_sha256": "ab6a23cd52f1377db15a0c0a2a8c2c9040cd1fd3ddaa6fc895ced4c8930cd9a2",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/3825e6d08259c7acecd50c6f36b23636.wav",
+  "sha256": "cf4f17a8370065841f2e20f6eeecef4c90b06d066ccf821ff4b9538a327949bb",
+  "duration_seconds": 1.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3646981c-f9b5-900f-bc06-13a0ae1468e4",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 392,
+    "total_tokens": 571,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "这个设定温度是实际室温吗？",
+  "spoken_text": "这个设定温度是实际室温吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "这个设定温度是实际室温吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "这个设定温度是实际室温吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0a8ff45a-a33b-9477-9621-48ec9a14bef0",
+    "usage": {
+      "prompt_tokens": 206,
+      "total_tokens": 240,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cf4f17a8370065841f2e20f6eeecef4c90b06d066ccf821ff4b9538a327949bb"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "0b47bcd21322379398f6692f52299e09e74ba30b2cbdd733b10a5c6ab5e539c6",
+    "canonical_sha256": "cf4f17a8370065841f2e20f6eeecef4c90b06d066ccf821ff4b9538a327949bb",
+    "pcm_sha256": "f8c059b22bb19a89885c8c9ab1de68a2146e9e4dee5795e0931fb0399819cb66",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 47040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "这个设定温度是实际室温吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "这个设定温度是实际室温吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-dbf16707-7fa7-9f04-926d-c7b90167b9c3",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 179,
+        "completion_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 34
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "0b47bcd21322379398f6692f52299e09e74ba30b2cbdd733b10a5c6ab5e539c6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "0b47bcd21322379398f6692f52299e09e74ba30b2cbdd733b10a5c6ab5e539c6",
+        "canonical_audio_sha256": "cf4f17a8370065841f2e20f6eeecef4c90b06d066ccf821ff4b9538a327949bb",
+        "pcm_sha256": "f8c059b22bb19a89885c8c9ab1de68a2146e9e4dee5795e0931fb0399819cb66",
+        "same_samples": true
+      }
+    }
+  ]
+}

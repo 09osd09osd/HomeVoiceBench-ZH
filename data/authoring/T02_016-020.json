@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "67d4c5c4523019005a20dfba3b829a954611e591a20892a94e1d78c971661bc4",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-95fe7377-d880-970c-94f6-88a088afcf77",
+  "usage": {
+    "prompt_tokens": 11008,
+    "total_tokens": 12170,
+    "completion_tokens": 1162,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11008
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1162
+    }
+  },
+  "review_request_id": "chatcmpl-53da6b33-595a-98d3-b447-11c20ee6bef0",
+  "review_usage": {
+    "prompt_tokens": 11792,
+    "total_tokens": 11878,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 11792
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T02_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T02_016",
+        "title": "书房风扇的设置与范围查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房风扇能调什么？范围是多少？",
+            "reference_text": "书房风扇目前是关着的，风速当前为1档。它支持开关和风速调节，风速范围是1到3档。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_017",
+        "title": "书房风扇颜色调节能力确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房风扇能调什么？范围是多少？",
+            "reference_text": "书房风扇目前是关着的，风速当前为1档。它支持开关和风速调节，风速范围是1到3档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调颜色吗？我只想了解，先别动它。",
+            "reference_text": "书房风扇不支持调节颜色，它只能开关和调风速，风速范围是1到3档。我没有做任何调整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_018",
+        "title": "书房风扇超范围处理说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房风扇能调什么？范围是多少？",
+            "reference_text": "书房风扇目前是关着的，风速当前为1档。它支持开关和风速调节，风速范围是1到3档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调颜色吗？我只想了解，先别动它。",
+            "reference_text": "书房风扇不支持调节颜色，它只能开关和调风速，风速范围是1到3档。我没有做任何调整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果我要设的范围超出支持范围，你会怎么处理？",
+            "reference_text": "我不会擅自把数值截到范围内，会告诉你书房风扇的风速只支持1到3档，再跟你确认想设成多少。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_019",
+        "title": "书房风扇仅了解不调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房风扇能调什么？范围是多少？",
+            "reference_text": "书房风扇目前是关着的，风速当前为1档。它支持开关和风速调节，风速范围是1到3档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调颜色吗？我只想了解，先别动它。",
+            "reference_text": "书房风扇不支持调节颜色，它只能开关和调风速，风速范围是1到3档。我没有做任何调整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果我要设的范围超出支持范围，你会怎么处理？",
+            "reference_text": "我不会擅自把数值截到范围内，会告诉你书房风扇的风速只支持1到3档，再跟你确认想设成多少。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我只是了解一下。",
+            "reference_text": "好的，没有做任何调整。书房风扇还是关着的，风速1档，只支持开关和1到3档风速。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_020",
+        "title": "书房风扇能力限制总结",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房风扇能调什么？范围是多少？",
+            "reference_text": "书房风扇目前是关着的，风速当前为1档。它支持开关和风速调节，风速范围是1到3档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调颜色吗？我只想了解，先别动它。",
+            "reference_text": "书房风扇不支持调节颜色，它只能开关和调风速，风速范围是1到3档。我没有做任何调整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果我要设的范围超出支持范围，你会怎么处理？",
+            "reference_text": "我不会擅自把数值截到范围内，会告诉你书房风扇的风速只支持1到3档，再跟你确认想设成多少。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我只是了解一下。",
+            "reference_text": "好的，没有做任何调整。书房风扇还是关着的，风速1档，只支持开关和1到3档风速。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "简短说一下刚才这台设备有哪些能力限制。",
+            "reference_text": "书房风扇只能开关和调风速，风速范围1到3档，不支持调颜色，目前关着，风速1档。"
+          }
+        ]
+      }
+    ]
+  }
+}

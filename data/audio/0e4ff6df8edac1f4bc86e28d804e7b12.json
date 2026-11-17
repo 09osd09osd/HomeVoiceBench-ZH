@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/0e4ff6df8edac1f4bc86e28d804e7b12.wav",
+  "sha256": "9918606a3f278388fbdde874c02b7e4fe6bf229b3470cd71a6557111f340fff5",
+  "duration_seconds": 4.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "32ec58c3-244b-9432-8605-594b36867a8d",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 992,
+    "total_tokens": 1172,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我猜是橙子。你用一句话收尾，把更正后的提示和答案简短说一下。",
+  "spoken_text": "我猜是橙子。你用一句话收尾，把更正后的提示和答案简短说一下。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我猜是橙子。你用一句话收尾，把更正后的提示和答案简短说一下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我猜是橙子。你用一句话收尾，把更正后的提示和答案简短说一下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7b3db4fb-9d64-9f3d-a663-e04240c5db1f",
+    "usage": {
+      "prompt_tokens": 237,
+      "total_tokens": 281,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9918606a3f278388fbdde874c02b7e4fe6bf229b3470cd71a6557111f340fff5"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "77833242dcb271cbc54c0dbfce497934ad7683f4ecdbe7efc336b40e5446bf59",
+    "canonical_sha256": "9918606a3f278388fbdde874c02b7e4fe6bf229b3470cd71a6557111f340fff5",
+    "pcm_sha256": "d6c2071c457cfd749ceb1ea009d2ee1eb0840d5ceb2da2f6a7fc2ae1b5540692",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 119040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我猜是橙子，你用一句话收尾，把更正后的提示和答案简短说一下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我猜是橙子，你用一句话收尾，把更正后的提示和答案简短说一下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-49f8764d-9b79-9775-84bf-6d443dfe28a9",
+      "usage": {
+        "prompt_tokens": 176,
+        "total_tokens": 220,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 146
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "77833242dcb271cbc54c0dbfce497934ad7683f4ecdbe7efc336b40e5446bf59",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "77833242dcb271cbc54c0dbfce497934ad7683f4ecdbe7efc336b40e5446bf59",
+        "canonical_audio_sha256": "9918606a3f278388fbdde874c02b7e4fe6bf229b3470cd71a6557111f340fff5",
+        "pcm_sha256": "d6c2071c457cfd749ceb1ea009d2ee1eb0840d5ceb2da2f6a7fc2ae1b5540692",
+        "same_samples": true
+      }
+    }
+  ]
+}

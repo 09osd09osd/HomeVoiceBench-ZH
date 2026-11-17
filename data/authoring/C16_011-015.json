@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "46c60d8c2178c0b3f7e5c13882e19483800ee69da0ef856a969b65f15741899e",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-bb60bca2-ae3b-9840-bcc8-dac4a0be82f2",
+  "usage": {
+    "prompt_tokens": 1785,
+    "total_tokens": 3168,
+    "completion_tokens": 1383,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1785
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1383
+    }
+  },
+  "review_request_id": "chatcmpl-4d02a6f3-eb50-9525-b912-bd3fd99a3ab8",
+  "review_usage": {
+    "prompt_tokens": 2790,
+    "total_tokens": 2876,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2790
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C16_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C16_011",
+        "title": "晚饭后玩词语接龙",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天累得不想动脑子，咱俩玩个简单的词语接龙吧，我说一个词，你接一个，但别用吃的词，行吗？",
+            "reference_text": "行，那咱们就从简单的开始。您先出词，我接的时候会避开吃的，比如水果、饭菜这些都不说。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_012",
+        "title": "词语接龙加禁字规则",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我躺沙发上歇会儿，你陪我玩词语接龙吧，咱定个规矩：每次接的词不能带数字，行不行？",
+            "reference_text": "行，那咱们开始。您出词，我接的时候会避开带数字的词。您先来一个吧。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "对了，再加一条，也别用颜色词，像红黄蓝绿那种都不要。",
+            "reference_text": "好，我记下了：接龙时不能用带数字的词，也不带颜色词。您继续出词，我按这两条来。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_013",
+        "title": "数字记忆游戏改次数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我最近老忘事，想练练记性。你随便说3个词，我记一下，然后你问我刚才说的是哪几个，行吗？",
+            "reference_text": "行，您听好这3个词：苹果、钥匙、雨伞。您可以先默念一遍，准备好了我就问您刚才说的是哪几个。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "问的时候别按顺序问，打乱着问，这样更能练记性。",
+            "reference_text": "好，那我打乱顺序问。您先记一下刚才的3个词，然后我随意挑着问，不按原来顺序来。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "等一下，我刚才说错了，不是3个词，是4个词，你重新说4个吧。",
+            "reference_text": "好，更正为4个词：苹果、钥匙、雨伞、茶杯。您先记一下，准备好了我就打乱顺序问您。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_014",
+        "title": "四词记忆打乱问",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我坐这儿没事干，你陪我玩个记词的游戏。你说4个词，我记一会儿，然后你问我。",
+            "reference_text": "好，您听这4个词：桌子、月亮、信封、小草。您先记一下，准备好了我就开始问。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "问的时候打乱顺序，别按你刚才说的顺序来。",
+            "reference_text": "好，我会打乱顺序问。您先记一下这4个词，等您说准备好了，我就随意挑着问。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我改一下，是5个词，不是4个，你再加一个词吧，就加“水杯”。",
+            "reference_text": "好，更正为5个词：桌子、月亮、信封、小草、水杯。您记一下，准备好了我就打乱顺序问。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你现在说说，刚才最后定的是几个词？都是哪几个？",
+            "reference_text": "最后定的是5个词：桌子、月亮、信封、小草、水杯。您准备好了，我就打乱顺序问您。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_015",
+        "title": "五词记忆加禁用水果词",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点犯困，想玩个简单的记忆游戏提提神。你说5个词，我记两分钟，然后你问我记住了几个。",
+            "reference_text": "好，您听这5个词：铅笔、窗户、毛巾、帽子、石头。您先记两分钟，然后我来问您记住了几个。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "问的时候别提示，也别问我哪个词排第几，就随便问。",
+            "reference_text": "好，我不提示，也不问顺序，就随便挑着问。您先记着这5个词，准备好了告诉我。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，不是5个词，是6个词，你再加一个“雨伞”。",
+            "reference_text": "好，更正为6个词：铅笔、窗户、毛巾、帽子、石头、雨伞。您记一下，准备好了我就随便问。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你记住啊，最后是6个词，不是5个。那现在我问你，我最初说的是几个词？",
+            "reference_text": "您最初说的是5个词，后来更正成6个。最后定的是6个词：铅笔、窗户、毛巾、帽子、石头、雨伞。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，我脑子有点转不动了，你就用一句话告诉我最后是几个词、都是啥，然后咱就歇了。",
+            "reference_text": "最后是6个词：铅笔、窗户、毛巾、帽子、石头、雨伞。那就先歇着，想玩再叫我。"
+          }
+        ]
+      }
+    ]
+  }
+}

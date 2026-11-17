@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/48f87718e7b253e7e24dda31f614365d.wav",
+  "sha256": "3aef60585dd1c85947f193b986a9d6d67b809be2cc29ae93f36124d931565079",
+  "duration_seconds": 5.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8b8a5a91-3b1a-9d3f-a940-d30853f96198",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 1160,
+    "total_tokens": 1353,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，我刚才说走了两圈，其实记错了，是走了三圈，第三圈还碰到邻居聊了几句。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，我刚才说走了两圈，其实记错了，是走了三圈，第三圈还碰到邻居聊了几句。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-bacd0ccd-561b-961c-81d4-bcaef8c11804",
+    "usage": {
+      "prompt_tokens": 169,
+      "total_tokens": 222,
+      "completion_tokens": 53,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 132
+      },
+      "completion_tokens_details": {
+        "text_tokens": 53
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9c75fa3464d88b267f6cd424c41d41b3dfdf19fb0b70bb51ab19575d3c8b3158",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "9c75fa3464d88b267f6cd424c41d41b3dfdf19fb0b70bb51ab19575d3c8b3158",
+      "canonical_audio_sha256": "3aef60585dd1c85947f193b986a9d6d67b809be2cc29ae93f36124d931565079",
+      "pcm_sha256": "35816bf855a0eecbeee935c78a4ba0f64e1efa346e09ed42349acbc2d48d30ae",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9c75fa3464d88b267f6cd424c41d41b3dfdf19fb0b70bb51ab19575d3c8b3158",
+    "canonical_sha256": "3aef60585dd1c85947f193b986a9d6d67b809be2cc29ae93f36124d931565079",
+    "pcm_sha256": "35816bf855a0eecbeee935c78a4ba0f64e1efa346e09ed42349acbc2d48d30ae",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 139200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

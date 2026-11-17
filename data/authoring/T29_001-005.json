@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "9c5d7d9cbf00182464a5abfbb80ec6588069eda0ed30af0d82e1d9300b074b40",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-752a5dcc-2833-9273-88ad-047589c119d1",
+  "usage": {
+    "prompt_tokens": 13383,
+    "total_tokens": 14435,
+    "completion_tokens": 1052,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13383
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1052
+    }
+  },
+  "review_request_id": "chatcmpl-6f8117dc-b173-9936-9c35-14890b604f6d",
+  "review_usage": {
+    "prompt_tokens": 14059,
+    "total_tokens": 14145,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14059
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T29_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T29_001",
+        "title": "客厅灯调至20%并确认处理状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%。",
+            "reference_text": "好的，客厅灯已收到打开并调到20%的指令，不过现在还在处理中，没有完成。等它好了我再告诉你。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_002",
+        "title": "客厅灯调至20%后查询任务完成情况",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%。",
+            "reference_text": "好的，客厅灯已收到打开并调到20%的指令，不过现在还在处理中，没有完成。等它好了我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务完成了吗？",
+            "reference_text": "查了一下，刚才那个任务已经完成了，客厅灯现在开着，亮度是20%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_003",
+        "title": "客厅灯调至20%后查询并核对实际灯光状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%。",
+            "reference_text": "好的，客厅灯已收到打开并调到20%的指令，不过现在还在处理中，没有完成。等它好了我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务完成了吗？",
+            "reference_text": "查了一下，刚才那个任务已经完成了，客厅灯现在开着，亮度是20%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "再帮我核对一下灯的实际状态。",
+            "reference_text": "我又核实了一下，客厅灯确实开着，亮度就是20%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_004",
+        "title": "客厅灯调至20%、查询、核对并关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%。",
+            "reference_text": "好的，客厅灯已收到打开并调到20%的指令，不过现在还在处理中，没有完成。等它好了我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务完成了吗？",
+            "reference_text": "查了一下，刚才那个任务已经完成了，客厅灯现在开着，亮度是20%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "再帮我核对一下灯的实际状态。",
+            "reference_text": "我又核实了一下，客厅灯确实开着，亮度就是20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅灯关掉，就关这一盏。",
+            "reference_text": "好的，客厅灯已经关掉了，其他灯没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_005",
+        "title": "客厅灯调至20%、查询、核对、关闭并最终确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅灯打开，亮度调到20%。",
+            "reference_text": "好的，客厅灯已收到打开并调到20%的指令，不过现在还在处理中，没有完成。等它好了我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务完成了吗？",
+            "reference_text": "查了一下，刚才那个任务已经完成了，客厅灯现在开着，亮度是20%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "再帮我核对一下灯的实际状态。",
+            "reference_text": "我又核实了一下，客厅灯确实开着，亮度就是20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅灯关掉，就关这一盏。",
+            "reference_text": "好的，客厅灯已经关掉了，其他灯没有动。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后帮我确认一下客厅灯是不是真已经关了，别拿之前开灯成功当现在。",
+            "reference_text": "我最后确认了一遍，客厅灯现在是关着的，不是开着的状态。"
+          }
+        ]
+      }
+    ]
+  }
+}

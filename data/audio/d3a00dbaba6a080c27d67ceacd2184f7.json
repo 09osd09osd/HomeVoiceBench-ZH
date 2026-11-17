@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/d3a00dbaba6a080c27d67ceacd2184f7.wav",
+  "sha256": "4de8b1df250f1521af133b5f47a0ffe8c55b83a7b068c00fa5075dc11fe9a5e4",
+  "duration_seconds": 4.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0ef6ae83-5199-90c9-b2b7-7625668915f3",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 896,
+    "total_tokens": 1092,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得时间吧？是半夜两点到早上六点，不是一整夜。",
+  "spoken_text": "你还记得时间吧？是半夜两点到早上六点，不是一整夜。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得时间吗？是半夜两点到早上六点，不是一整夜。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得时间吗？是半夜两点到早上六点，不是一整夜。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-dffec669-ebd0-94a5-9422-bf7fec4e0a92",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4de8b1df250f1521af133b5f47a0ffe8c55b83a7b068c00fa5075dc11fe9a5e4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "cedf16a988badcb0a351e4d207a7655c36e21924a56ee57545660116a1615c26",
+    "canonical_sha256": "4de8b1df250f1521af133b5f47a0ffe8c55b83a7b068c00fa5075dc11fe9a5e4",
+    "pcm_sha256": "904daa104992f5f8babd49a06778eaa082d39760536748602692ce91348a191d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 107520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得时间嘛？是半夜两点到早上六点，不是一整夜。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-8f2c5470-6f05-93bf-9df4-51609bd89d6a",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "cedf16a988badcb0a351e4d207a7655c36e21924a56ee57545660116a1615c26",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "cedf16a988badcb0a351e4d207a7655c36e21924a56ee57545660116a1615c26",
+        "canonical_audio_sha256": "4de8b1df250f1521af133b5f47a0ffe8c55b83a7b068c00fa5075dc11fe9a5e4",
+        "pcm_sha256": "904daa104992f5f8babd49a06778eaa082d39760536748602692ce91348a191d",
+        "same_samples": true
+      }
+    }
+  ]
+}

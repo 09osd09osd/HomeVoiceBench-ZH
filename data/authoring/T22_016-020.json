@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "47bb9519fc89a09a5fae8d0013a729a513c9a6d56ce915645eed96538bbbdf20",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-4d92c574-d79a-940a-abbf-974cb039f5d8",
+  "usage": {
+    "prompt_tokens": 7124,
+    "total_tokens": 8282,
+    "completion_tokens": 1158,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 7124
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1158
+    }
+  },
+  "review_request_id": "chatcmpl-4fbca70c-bc3a-9ac3-8f5d-c4653b3691df",
+  "review_usage": {
+    "prompt_tokens": 7904,
+    "total_tokens": 7990,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 7904
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T22_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T22_016",
+        "title": "每周一三五十点整理书包提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五10点提醒我整理书包。",
+            "reference_text": "好的，从下一次开始，每周一、三、五上午10点提醒你整理书包。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_017",
+        "title": "整理书包提醒改到十点半",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五10点提醒我整理书包。",
+            "reference_text": "好的，从下一次开始，每周一、三、五上午10点提醒你整理书包。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为10点半。",
+            "reference_text": "好的，还是每周一、三、五，时间改成上午10点半提醒你整理书包。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_018",
+        "title": "整理书包提醒改点后查看安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五10点提醒我整理书包。",
+            "reference_text": "好的，从下一次开始，每周一、三、五上午10点提醒你整理书包。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为10点半。",
+            "reference_text": "好的，还是每周一、三、五，时间改成上午10点半提醒你整理书包。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "你现在启用的有两条：一条是每周一、三、五上午10点半整理书包，另一条是12月3日中午12点晾衣服。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_019",
+        "title": "整理书包提醒改点后取消新增并保留晾衣",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五10点提醒我整理书包。",
+            "reference_text": "好的，从下一次开始，每周一、三、五上午10点提醒你整理书包。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为10点半。",
+            "reference_text": "好的，还是每周一、三、五，时间改成上午10点半提醒你整理书包。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "你现在启用的有两条：一条是每周一、三、五上午10点半整理书包，另一条是12月3日中午12点晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消了刚才那条整理书包的提醒，晾衣服的提醒还留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_020",
+        "title": "整理书包提醒改点取消后确认状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五10点提醒我整理书包。",
+            "reference_text": "好的，从下一次开始，每周一、三、五上午10点提醒你整理书包。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为10点半。",
+            "reference_text": "好的，还是每周一、三、五，时间改成上午10点半提醒你整理书包。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "你现在启用的有两条：一条是每周一、三、五上午10点半整理书包，另一条是12月3日中午12点晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消了刚才那条整理书包的提醒，晾衣服的提醒还留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "现在启用的只剩下12月3日中午12点晾衣服的提醒。刚才那条每周一、三、五上午10点半整理书包的提醒已经取消了。"
+          }
+        ]
+      }
+    ]
+  }
+}

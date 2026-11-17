@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1bb2e7f930ce2495a0eb50707542224c.wav",
+  "sha256": "d7bb321518a2079d3a8cbc0f20de59d2ea5658b219374a37c2e29fb5a5ced37a",
+  "duration_seconds": 6.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "cf1c945a-ee25-99c3-b783-d7144cd9366c",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 1336,
+    "total_tokens": 1523,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "加一只小鸭子帮忙浇水，结尾大家一起吃胡萝卜，不要有虫子吃菜叶的情节。",
+  "spoken_text": "加一只小鸭子帮忙浇水，结尾大家一起吃胡萝卜，不要有虫子吃菜叶的情节。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "加一只小鸭子帮忙浇水，结尾大家一起吃胡萝卜，不要有虫子吃菜叶的情节。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "加一只小鸭子帮忙浇水，结尾大家一起吃胡萝卜，不要有虫子吃菜叶的情节。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8fede07f-40c0-9349-9fd1-d9dbf623df1b",
+    "usage": {
+      "prompt_tokens": 253,
+      "total_tokens": 299,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d7bb321518a2079d3a8cbc0f20de59d2ea5658b219374a37c2e29fb5a5ced37a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "da798951b5755774ccf59b050b45f38e427d5042e7acba412619e177f9385217",
+    "canonical_sha256": "d7bb321518a2079d3a8cbc0f20de59d2ea5658b219374a37c2e29fb5a5ced37a",
+    "pcm_sha256": "b34d24c29e774c0e8082171ef1f352f9f18d640e72e63eb8281bee5451a9956c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 160320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "加一只小鸭子帮忙浇水，结尾大家一起吃胡萝卜，不要有虫子吃菜叶的情节。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "加一只小鸭子帮忙浇水，结尾大家一起吃胡萝卜，不要有虫子吃菜叶的情节。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-00bde58c-6e8c-9827-8908-01b08f6f2607",
+      "usage": {
+        "prompt_tokens": 192,
+        "total_tokens": 238,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 148
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "da798951b5755774ccf59b050b45f38e427d5042e7acba412619e177f9385217",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "da798951b5755774ccf59b050b45f38e427d5042e7acba412619e177f9385217",
+        "canonical_audio_sha256": "d7bb321518a2079d3a8cbc0f20de59d2ea5658b219374a37c2e29fb5a5ced37a",
+        "pcm_sha256": "b34d24c29e774c0e8082171ef1f352f9f18d640e72e63eb8281bee5451a9956c",
+        "same_samples": true
+      }
+    }
+  ]
+}

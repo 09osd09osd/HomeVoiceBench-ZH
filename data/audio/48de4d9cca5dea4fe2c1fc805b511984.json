@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/48de4d9cca5dea4fe2c1fc805b511984.wav",
+  "sha256": "398ee173bb3fe0a623f7a66e4b3cfd225c37ed2939b28ba9f0208db1d5d74e1b",
+  "duration_seconds": 4.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9526ae74-87ea-9649-8f02-4fef1f3214a9",
+  "usage": {
+    "input_tokens": 198,
+    "output_tokens": 920,
+    "total_tokens": 1118,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "家里垃圾分类总是我做，想跟家人重新分一下，怎么开口比较好？",
+  "spoken_text": "家里垃圾分类总是我做，想跟家人重新分一下，怎么开口比较好？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "家里垃圾分类总是我做，想跟家人重新分一下，怎么开口比较好？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "家里垃圾分类总是我做，想跟家人重新分一下，怎么开口比较好？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-085c8ec8-d974-9771-b090-60935622c3c1",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "398ee173bb3fe0a623f7a66e4b3cfd225c37ed2939b28ba9f0208db1d5d74e1b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f96c69b2abfdc87ee365e9a13beab41bdbc9cfd5ecc9f6a2ba0795b0b7fd0dc5",
+    "canonical_sha256": "398ee173bb3fe0a623f7a66e4b3cfd225c37ed2939b28ba9f0208db1d5d74e1b",
+    "pcm_sha256": "6518e2747dedd681cc48336dbf03a13abcf5bd71aac2b933298dd42c8d96f7d5",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 110400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "家里垃圾分类总是我做，想跟家人重新分一下，怎么开口比较好？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9d7489f1-6923-9066-99e7-a0675e69bbd6",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f96c69b2abfdc87ee365e9a13beab41bdbc9cfd5ecc9f6a2ba0795b0b7fd0dc5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f96c69b2abfdc87ee365e9a13beab41bdbc9cfd5ecc9f6a2ba0795b0b7fd0dc5",
+        "canonical_audio_sha256": "398ee173bb3fe0a623f7a66e4b3cfd225c37ed2939b28ba9f0208db1d5d74e1b",
+        "pcm_sha256": "6518e2747dedd681cc48336dbf03a13abcf5bd71aac2b933298dd42c8d96f7d5",
+        "same_samples": true
+      }
+    }
+  ]
+}

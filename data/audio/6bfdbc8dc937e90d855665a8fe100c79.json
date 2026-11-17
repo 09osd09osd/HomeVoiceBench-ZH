@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6bfdbc8dc937e90d855665a8fe100c79.wav",
+  "sha256": "2cb95f6a04a3c1355785f49a8c75bc901318d03e7cd7a653dd3d48f2c39c38fa",
+  "duration_seconds": 4.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f576f2f0-bb82-98d6-8aea-2e840f1e5910",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 912,
+    "total_tokens": 1099,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想跟家人商量一下晚饭后的家务分工，你能帮我把需求说清楚吗？",
+  "spoken_text": "我想跟家人商量一下晚饭后的家务分工，你能帮我把需求说清楚吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想跟家人商量一下晚饭后的家务分工，你能帮我把需求说清楚吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想跟家人商量一下晚饭后的家务分工，你能帮我把需求说清楚吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-10dc5e38-5487-92a3-bf24-53a9a55860ed",
+    "usage": {
+      "prompt_tokens": 237,
+      "total_tokens": 281,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2cb95f6a04a3c1355785f49a8c75bc901318d03e7cd7a653dd3d48f2c39c38fa"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "8d062db4b63b55ca7dd0944838b4bffc8e83195f5c1f69f2088f49160a57e529",
+    "canonical_sha256": "2cb95f6a04a3c1355785f49a8c75bc901318d03e7cd7a653dd3d48f2c39c38fa",
+    "pcm_sha256": "a31e7be6d62571984e02905d6fcd0fb331e11b4e4cf8d734f3a0d80e41ffb7fb",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 109440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想跟家人商量一下晚饭后的家务分工，你能帮我把需求说清楚吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-32ab6877-00e2-9e5a-b466-bdf658c00bec",
+      "usage": {
+        "prompt_tokens": 153,
+        "total_tokens": 197,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 123
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "8d062db4b63b55ca7dd0944838b4bffc8e83195f5c1f69f2088f49160a57e529",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "8d062db4b63b55ca7dd0944838b4bffc8e83195f5c1f69f2088f49160a57e529",
+        "canonical_audio_sha256": "2cb95f6a04a3c1355785f49a8c75bc901318d03e7cd7a653dd3d48f2c39c38fa",
+        "pcm_sha256": "a31e7be6d62571984e02905d6fcd0fb331e11b4e4cf8d734f3a0d80e41ffb7fb",
+        "same_samples": true
+      }
+    }
+  ]
+}

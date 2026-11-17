@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/50325674b64dc4209a20f363505975bb.wav",
+  "sha256": "dc1cd9221519408f11851ca9c96bbc701ec2bea56aa7c4a1f41e891f71ea867d",
+  "duration_seconds": 2.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6527b95d-e8c9-9282-abc2-63f464186b23",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 408,
+    "total_tokens": 587,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我跳到第60秒的地方。",
+  "spoken_text": "帮我跳到第六十秒的地方。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我跳到第60秒的地方。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我跳到第60秒的地方。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c13cb0e0-6588-9e97-9785-9bb17f2b4046",
+    "usage": {
+      "prompt_tokens": 213,
+      "total_tokens": 247,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "dc1cd9221519408f11851ca9c96bbc701ec2bea56aa7c4a1f41e891f71ea867d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "bc6223bb58d788e22f7af71c82d1962d30d87fefcebc52860aabd55941cbe3de",
+    "canonical_sha256": "dc1cd9221519408f11851ca9c96bbc701ec2bea56aa7c4a1f41e891f71ea867d",
+    "pcm_sha256": "f50df7e70e55e99c918a9c8e0f6a238183a9125d8724d6505631ab87f579c963",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 48960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我跳到第六十秒的地方。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我跳到第六十秒的地方。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-dfc1ef94-1f26-92f6-8fde-701c22519c8b",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 185,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 33
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "bc6223bb58d788e22f7af71c82d1962d30d87fefcebc52860aabd55941cbe3de",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "bc6223bb58d788e22f7af71c82d1962d30d87fefcebc52860aabd55941cbe3de",
+        "canonical_audio_sha256": "dc1cd9221519408f11851ca9c96bbc701ec2bea56aa7c4a1f41e891f71ea867d",
+        "pcm_sha256": "f50df7e70e55e99c918a9c8e0f6a238183a9125d8724d6505631ab87f579c963",
+        "same_samples": true
+      }
+    }
+  ]
+}

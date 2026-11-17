@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/4bfba76cbbcf15b31332defcf5ab4dc9.wav",
+  "sha256": "ff2ebb31373d0cf55b6bf28898b4ebeed6ffa35a2cc2b88cd094c48e7a179ab4",
+  "duration_seconds": 3.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4d3abd53-4506-9f73-8e8d-96b9f51bb411",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 624,
+    "total_tokens": 823,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我背的氧气只够半小时，路线要短，别绕远。",
+  "spoken_text": "我背的氧气只够半小时，路线要短，别绕远。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我背的氧气只够半小时，路线要短，别绕远。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我背的氧气只够半小时，路线要短，别绕远。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ca57e0db-991a-9fe9-9c71-b987d1c481ec",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ff2ebb31373d0cf55b6bf28898b4ebeed6ffa35a2cc2b88cd094c48e7a179ab4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "684f8deada6fd495300e1ac2220390ff88f8523b2433be3ae5c928969fd34bc8",
+    "canonical_sha256": "ff2ebb31373d0cf55b6bf28898b4ebeed6ffa35a2cc2b88cd094c48e7a179ab4",
+    "pcm_sha256": "4d043cb6331ac5d051f1a40920175d42675a3d2dfb4b63b513e2b22a31845f15",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 74880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我背的氧气只够半小时，路线要短，别绕远。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我背的氧气只够半小时，路线要短，别绕远。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-65a7b663-aed1-9d36-9410-c6072e82bb69",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 209,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "684f8deada6fd495300e1ac2220390ff88f8523b2433be3ae5c928969fd34bc8",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "684f8deada6fd495300e1ac2220390ff88f8523b2433be3ae5c928969fd34bc8",
+        "canonical_audio_sha256": "ff2ebb31373d0cf55b6bf28898b4ebeed6ffa35a2cc2b88cd094c48e7a179ab4",
+        "pcm_sha256": "4d043cb6331ac5d051f1a40920175d42675a3d2dfb4b63b513e2b22a31845f15",
+        "same_samples": true
+      }
+    }
+  ]
+}

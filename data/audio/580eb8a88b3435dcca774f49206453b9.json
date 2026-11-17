@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/580eb8a88b3435dcca774f49206453b9.wav",
+  "sha256": "7eeff0705e7711338b1683e6c5cc19fe213a0a0b6b12052dfd59b819f82c425f",
+  "duration_seconds": 3.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "94a05105-91a9-9384-8ea0-5359cd5fdb0e",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 688,
+    "total_tokens": 883,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我刚更正的是什么吗？我怕你按小手术来安慰我。",
+  "spoken_text": "你还记得我刚更正的是什么吗？我怕你按小手术来安慰我。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我刚更正的是什么吗？我怕你按小手术来安慰我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我刚更正的是什么吗？我怕你按小手术来安慰我。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7f090e52-9a77-941d-9e2f-5dd8373031e8",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7eeff0705e7711338b1683e6c5cc19fe213a0a0b6b12052dfd59b819f82c425f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "069c05bfdcb2c3226144c573c2a6f2d2abacaf68782d3f54749771332a9cd3f0",
+    "canonical_sha256": "7eeff0705e7711338b1683e6c5cc19fe213a0a0b6b12052dfd59b819f82c425f",
+    "pcm_sha256": "bade7374bffe339e62556c8d15721f4a233aa7a5b08cf9a817eec2ff7263c7b4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 82560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我刚更正的是什么吗？我怕你按小手术来安慰我。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-960fe147-9e7f-9acf-894d-6c96f5f65f3d",
+      "usage": {
+        "prompt_tokens": 144,
+        "total_tokens": 186,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "069c05bfdcb2c3226144c573c2a6f2d2abacaf68782d3f54749771332a9cd3f0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "069c05bfdcb2c3226144c573c2a6f2d2abacaf68782d3f54749771332a9cd3f0",
+        "canonical_audio_sha256": "7eeff0705e7711338b1683e6c5cc19fe213a0a0b6b12052dfd59b819f82c425f",
+        "pcm_sha256": "bade7374bffe339e62556c8d15721f4a233aa7a5b08cf9a817eec2ff7263c7b4",
+        "same_samples": true
+      }
+    }
+  ]
+}

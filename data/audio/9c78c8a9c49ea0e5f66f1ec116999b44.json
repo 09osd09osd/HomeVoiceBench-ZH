@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9c78c8a9c49ea0e5f66f1ec116999b44.wav",
+  "sha256": "7ef85ff64ed2453c2a2fe73c7d369f414844e291e6659049157f759e4eac2127",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5ff0c0a1-8d36-9bec-b5d7-a0b4f785a518",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 824,
+    "total_tokens": 1008,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "嗯，我比较喜欢甜口的，下次想放点糖，但又怕太甜。",
+  "spoken_text": "嗯，我比较喜欢甜口的，下次想放点糖，但又怕太甜。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "嗯，我比较喜欢甜口的，下次想放点糖，但又怕太甜。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "嗯，我比较喜欢甜口的，下次想放点糖，但又怕太甜。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-da09ae59-3fa4-9745-b947-194dfd36d676",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7ef85ff64ed2453c2a2fe73c7d369f414844e291e6659049157f759e4eac2127"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "08cd84b392697fb938567aba972f74f68b590434d0c2bcbda725b740a2f99ea6",
+    "canonical_sha256": "7ef85ff64ed2453c2a2fe73c7d369f414844e291e6659049157f759e4eac2127",
+    "pcm_sha256": "16562c3e49c6298f24abe6952a145989b3c989c0c73afe173e30d70075059e03",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "嗯，我比较喜欢甜口的，下次想放点糖，但又怕太甜。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6d75eaa1-207c-9217-81f9-27bfc0f1c53d",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 199,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "08cd84b392697fb938567aba972f74f68b590434d0c2bcbda725b740a2f99ea6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "08cd84b392697fb938567aba972f74f68b590434d0c2bcbda725b740a2f99ea6",
+        "canonical_audio_sha256": "7ef85ff64ed2453c2a2fe73c7d369f414844e291e6659049157f759e4eac2127",
+        "pcm_sha256": "16562c3e49c6298f24abe6952a145989b3c989c0c73afe173e30d70075059e03",
+        "same_samples": true
+      }
+    }
+  ]
+}

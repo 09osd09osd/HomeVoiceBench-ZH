@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/43ee67708c6d6b84c070944a3e612f72.wav",
+  "sha256": "5655a65e2d2c772ede69f9a080f88794164e650d4d163e910f61fbd370aa1e19",
+  "duration_seconds": 4.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "de10b45c-4b20-9283-baea-53a2d4391cd7",
+  "usage": {
+    "input_tokens": 210,
+    "output_tokens": 960,
+    "total_tokens": 1170,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我有点累，猫又不知道跑哪去了。你帮我看看客厅照片里猫在不在沙发上？",
+  "spoken_text": "我有点累，猫又不知道跑哪去了。你帮我看看客厅照片里猫在不在沙发上？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我有点累，猫又不知道跑哪去了。你帮我看看客厅照片里猫在不在沙发上？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我有点累，猫又不知道跑哪去了。你帮我看看客厅照片里猫在不在沙发上？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-432c8e54-3711-9e40-954e-0670e49aedd5",
+    "usage": {
+      "prompt_tokens": 241,
+      "total_tokens": 289,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5655a65e2d2c772ede69f9a080f88794164e650d4d163e910f61fbd370aa1e19"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d962dafac4b6692c308a810ce14d07a33fca74d6cb6da411c5c766a777e7a3aa",
+    "canonical_sha256": "5655a65e2d2c772ede69f9a080f88794164e650d4d163e910f61fbd370aa1e19",
+    "pcm_sha256": "50dbcd246d4378653352e4a6d522bd8cdaec57f95bd7230ba01b3db460fb3f32",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 115200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我有点累，猫又不知道跑哪去了。你帮我看看客厅照片里猫在不在沙发上？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我有点累，猫又不知道跑哪去了。你帮我看看客厅照片里猫在不在沙发上？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5fa0bbd2-78dd-9975-ae0d-d85a62d556cf",
+      "usage": {
+        "prompt_tokens": 180,
+        "total_tokens": 228,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 150
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d962dafac4b6692c308a810ce14d07a33fca74d6cb6da411c5c766a777e7a3aa",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d962dafac4b6692c308a810ce14d07a33fca74d6cb6da411c5c766a777e7a3aa",
+        "canonical_audio_sha256": "5655a65e2d2c772ede69f9a080f88794164e650d4d163e910f61fbd370aa1e19",
+        "pcm_sha256": "50dbcd246d4378653352e4a6d522bd8cdaec57f95bd7230ba01b3db460fb3f32",
+        "same_samples": true
+      }
+    }
+  ]
+}

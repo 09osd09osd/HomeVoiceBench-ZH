@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/68992273b2ee2ff1f1ec5eb811770a59.wav",
+  "sha256": "cff9cbfaf6f888e7426ec41423f6053bca24123634d9ff0a82ce6bae5d91b5b1",
+  "duration_seconds": 2.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8618f144-95d3-9d7c-9714-a0d8d416c7a8",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 536,
+    "total_tokens": 716,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "那你还记得我早上拉伸多久、在哪里做吗？",
+  "spoken_text": "那你还记得我早上拉伸多久、在哪里做吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "那你还记得我早上拉伸多久、在哪里做吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "那你还记得我早上拉伸多久、在哪里做吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-66c163cb-80c5-9b35-9a32-94ef60ba5a93",
+    "usage": {
+      "prompt_tokens": 217,
+      "total_tokens": 255,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cff9cbfaf6f888e7426ec41423f6053bca24123634d9ff0a82ce6bae5d91b5b1"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3cb6b8800dd0a232dc7f30e056eb5c8ea0886539397c3311e8b7e973dfc16f76",
+    "canonical_sha256": "cff9cbfaf6f888e7426ec41423f6053bca24123634d9ff0a82ce6bae5d91b5b1",
+    "pcm_sha256": "429749a80c46e03dfd3331edf690ca826ae4a99d350d4a255b69696da0659616",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 64320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "那你还记得我早上拉伸多久、在哪里做吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b6316fe1-4440-9da8-9655-91ef87394e35",
+      "usage": {
+        "prompt_tokens": 133,
+        "total_tokens": 171,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 117
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3cb6b8800dd0a232dc7f30e056eb5c8ea0886539397c3311e8b7e973dfc16f76",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3cb6b8800dd0a232dc7f30e056eb5c8ea0886539397c3311e8b7e973dfc16f76",
+        "canonical_audio_sha256": "cff9cbfaf6f888e7426ec41423f6053bca24123634d9ff0a82ce6bae5d91b5b1",
+        "pcm_sha256": "429749a80c46e03dfd3331edf690ca826ae4a99d350d4a255b69696da0659616",
+        "same_samples": true
+      }
+    }
+  ]
+}

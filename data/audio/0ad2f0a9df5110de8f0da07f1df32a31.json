@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/0ad2f0a9df5110de8f0da07f1df32a31.wav",
+  "sha256": "df3ec83d38a268e1f7a96a053a500a62455be50172900102af50aa1c2e8d7c01",
+  "duration_seconds": 5.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "93d3ed89-0218-9acb-ba79-021b86144aa4",
+  "usage": {
+    "input_tokens": 208,
+    "output_tokens": 1048,
+    "total_tokens": 1256,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我妈去拿体检报告了，说好中午回来，这都下午两点了还没到家，我坐立不安的。",
+  "spoken_text": "我妈去拿体检报告了，说好中午回来，这都下午两点了还没到家，我坐立不安的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我妈去拿体检报告了，说好中午回来，这都下午两点了还没到家，我坐立不安的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我妈去拿体检报告了，说好中午回来，这都下午两点了还没到家，我坐立不安的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a4a53c21-9a8f-919d-9fa9-4a58d2c3f2ae",
+    "usage": {
+      "prompt_tokens": 251,
+      "total_tokens": 302,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "df3ec83d38a268e1f7a96a053a500a62455be50172900102af50aa1c2e8d7c01"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "90a6f3fadd86d7b53d08c845fc49bb2de12801a05514d91a473af5e0d2427434",
+    "canonical_sha256": "df3ec83d38a268e1f7a96a053a500a62455be50172900102af50aa1c2e8d7c01",
+    "pcm_sha256": "28ae22bc4d650e6a7d4a4222c2f9f0ed41dfbfe952fb00ea7c66104210f3e8ce",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 125760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我妈去拿体检报告了，说好中午回来，这都下午两点了还没到家，我坐立不安的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d44cc269-6a6c-922c-96d0-cea567dd7fd4",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 218,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "90a6f3fadd86d7b53d08c845fc49bb2de12801a05514d91a473af5e0d2427434",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "90a6f3fadd86d7b53d08c845fc49bb2de12801a05514d91a473af5e0d2427434",
+        "canonical_audio_sha256": "df3ec83d38a268e1f7a96a053a500a62455be50172900102af50aa1c2e8d7c01",
+        "pcm_sha256": "28ae22bc4d650e6a7d4a4222c2f9f0ed41dfbfe952fb00ea7c66104210f3e8ce",
+        "same_samples": true
+      }
+    }
+  ]
+}

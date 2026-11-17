@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b1f41cbd7e03b8229db98556a32f1ebf.wav",
+  "sha256": "e744ea1e77150da3b75bdf6c6fa8fb3588add9daafd549164d03aa7dbce5d4d9",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3baf91d2-7e11-927b-884e-daa196ec4a59",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 824,
+    "total_tokens": 1016,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "家里有小孩，别选太吓人的，最好适合全家一起看。",
+  "spoken_text": "家里有小孩，别选太吓人的，最好适合全家一起看。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "家里有小孩儿，别选太吓人的，最好适合全家一起看。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "家里有小孩儿，别选太吓人的，最好适合全家一起看。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-35781806-424b-9fe3-af7e-e29ed4c8ed82",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 276,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e744ea1e77150da3b75bdf6c6fa8fb3588add9daafd549164d03aa7dbce5d4d9"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "dd14096e332e62dffd7d561d9ba9f52b4ea2883fee0c5d186028f19f76d5072a",
+    "canonical_sha256": "e744ea1e77150da3b75bdf6c6fa8fb3588add9daafd549164d03aa7dbce5d4d9",
+    "pcm_sha256": "342acf988da90cc9e29b75b95843da83e4f785f77c85ff70d985390f6935dc52",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "家里有小孩儿，别选太吓人的，最好适合全家一起看。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "家里有小孩儿，别选太吓人的，最好适合全家一起看。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f8e468f1-bd0d-90c2-b70f-1724a8ff638e",
+      "usage": {
+        "prompt_tokens": 173,
+        "total_tokens": 215,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "dd14096e332e62dffd7d561d9ba9f52b4ea2883fee0c5d186028f19f76d5072a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "dd14096e332e62dffd7d561d9ba9f52b4ea2883fee0c5d186028f19f76d5072a",
+        "canonical_audio_sha256": "e744ea1e77150da3b75bdf6c6fa8fb3588add9daafd549164d03aa7dbce5d4d9",
+        "pcm_sha256": "342acf988da90cc9e29b75b95843da83e4f785f77c85ff70d985390f6935dc52",
+        "same_samples": true
+      }
+    }
+  ]
+}

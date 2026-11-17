@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/19dba1c267d8d3a656d9b718e1eb2937.wav",
+  "sha256": "c67151f913e1ba6217d0f45dc0b3418c18aac9cf98c64e00bde5ddb8f86a3f51",
+  "duration_seconds": 4.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a35f5641-6b1d-9692-a511-62e8e21158f8",
+  "usage": {
+    "input_tokens": 235,
+    "output_tokens": 992,
+    "total_tokens": 1227,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天上班被领导当众批评了，心里挺难受的，我就想跟你说说，不用给我出主意。",
+  "spoken_text": "今天上班被领导当众批评了，心里挺难受的，我就想跟你说说，不用给我出主意。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天上班被领导当众批评了，心里挺难受的，我就想跟你说说，不用给我出主意。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天上班被领导当众批评了，心里挺难受的，我就想跟你说说，不用给我出主意。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1c701c2b-0ba5-9a2f-aa1c-659aeff41850",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 293,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c67151f913e1ba6217d0f45dc0b3418c18aac9cf98c64e00bde5ddb8f86a3f51"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "25899e00d875dbc309dcd982db1ffed1288a282961eb00ddbd77b8e909db96e5",
+    "canonical_sha256": "c67151f913e1ba6217d0f45dc0b3418c18aac9cf98c64e00bde5ddb8f86a3f51",
+    "pcm_sha256": "aaba6d7bf99971d39d81db4b249e28672e3474628a10308514631dd133267104",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 119040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天上班被领导当众批评了，心里挺难受的。我就想跟你说说，不用给我出主意。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1eb719a3-465f-9199-bf5e-881643063671",
+      "usage": {
+        "prompt_tokens": 159,
+        "total_tokens": 209,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 129
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "25899e00d875dbc309dcd982db1ffed1288a282961eb00ddbd77b8e909db96e5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "25899e00d875dbc309dcd982db1ffed1288a282961eb00ddbd77b8e909db96e5",
+        "canonical_audio_sha256": "c67151f913e1ba6217d0f45dc0b3418c18aac9cf98c64e00bde5ddb8f86a3f51",
+        "pcm_sha256": "aaba6d7bf99971d39d81db4b249e28672e3474628a10308514631dd133267104",
+        "same_samples": true
+      }
+    }
+  ]
+}

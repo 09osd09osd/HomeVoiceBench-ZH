@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/869e7c04641d9954f83fbf6996676177.wav",
+  "sha256": "00b23fbbf9a1621669995533a2b7cd1a43a4548da5d99dad0cd4b71e847f7484",
+  "duration_seconds": 7.36,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a6dfffb4-1e8b-9c6b-bd2b-17544ddbcc31",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 1472,
+    "total_tokens": 1671,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我有点累了，想听个短故事，小鹿晚上走一条有萤火虫的小路回家。要温和，不吓人。",
+  "spoken_text": "我有点累了，想听个短故事，小鹿晚上走一条有萤火虫的小路回家。要温和，不吓人。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我有点累了，想听个短故事。小鹿晚上走一条有萤火虫的小路回家，要温和不吓人。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我有点累了，想听个短故事。小鹿晚上走一条有萤火虫的小路回家，要温和不吓人。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0978fb26-e6bd-955f-a8a6-3b6dd9d0cf40",
+    "usage": {
+      "prompt_tokens": 266,
+      "total_tokens": 317,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 215
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "00b23fbbf9a1621669995533a2b7cd1a43a4548da5d99dad0cd4b71e847f7484"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d78143357c06de15626427019e6edf3a47e8e2271a5e6e4a9401c38dc60cd4f5",
+    "canonical_sha256": "00b23fbbf9a1621669995533a2b7cd1a43a4548da5d99dad0cd4b71e847f7484",
+    "pcm_sha256": "bf35f3a8b6b4580ad5a56a2a5a61c5f323a9a524531c69d4fe1991fb986f71ad",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 176640,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我有点累了，想听个短故事。小鹿晚上走一条有萤火虫的小路回家，要温和不吓人。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我有点累了，想听个短故事。小鹿晚上走一条有萤火虫的小路回家，要温和不吓人。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-aaaa2440-3290-9dcc-ba7d-29042ca783dc",
+      "usage": {
+        "prompt_tokens": 205,
+        "total_tokens": 256,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 154
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d78143357c06de15626427019e6edf3a47e8e2271a5e6e4a9401c38dc60cd4f5",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d78143357c06de15626427019e6edf3a47e8e2271a5e6e4a9401c38dc60cd4f5",
+        "canonical_audio_sha256": "00b23fbbf9a1621669995533a2b7cd1a43a4548da5d99dad0cd4b71e847f7484",
+        "pcm_sha256": "bf35f3a8b6b4580ad5a56a2a5a61c5f323a9a524531c69d4fe1991fb986f71ad",
+        "same_samples": true
+      }
+    }
+  ]
+}

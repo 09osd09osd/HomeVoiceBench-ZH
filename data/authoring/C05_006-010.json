@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "335871d96770c3c3193367d4b03fa7222a59eb0a695b1dc59c30c71ca75263ce",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-71af2973-a297-929a-9771-a8ab5f065b15",
+  "usage": {
+    "prompt_tokens": 1710,
+    "total_tokens": 2948,
+    "completion_tokens": 1238,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1710
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1238
+    }
+  },
+  "review_request_id": "chatcmpl-90ef1fbc-5837-9bd4-ae48-2fb1a8bf5bb2",
+  "review_usage": {
+    "prompt_tokens": 2572,
+    "total_tokens": 2658,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2572
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C05_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C05_006",
+        "title": "晚饭后洗碗分工商量",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天加班回来有点累，晚饭后洗碗和擦桌子能不能分一下？",
+            "reference_text": "听起来你今天挺辛苦的。要不这样试试：一个人洗碗，另一个人擦桌子，具体谁做什么你们商量着来，都别太累。"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_007",
+        "title": "周末大扫除分工偏好",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "周末想全家一起大扫除，但我不想一个人包太多，怎么分工比较好？",
+            "reference_text": "全家一起做确实能轻松些。可以按区域分，比如客厅、厨房、卫生间各有人负责，具体谁做哪块你们商量。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我擦窗户不太方便，弯腰拖地倒还行，尽量别让我爬高。",
+            "reference_text": "那擦窗户这类要爬高的就交给别人，你负责拖地这类不用爬高的活，这样安排你觉得合适吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_008",
+        "title": "垃圾分类和倒垃圾安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里垃圾分类总是我做，想跟家人重新分一下，怎么开口比较好？",
+            "reference_text": "可以平和地说你最近有点累，想大家一起分担。比如问问谁愿意负责哪类垃圾，或者轮流倒，具体你们商量。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我希望至少倒垃圾和分类别全落在我身上，晚上八点前能弄完最好。",
+            "reference_text": "明白，你想把倒垃圾和分类分出去一部分，尽量晚上八点前完成。可以跟家人说清楚这个时间，大家一起定个轮换。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "刚才说八点前，其实改成晚上七点半更合适，因为孩子八点要睡觉。",
+            "reference_text": "好，那时间改成晚上七点半前完成，这样也不影响孩子睡觉。跟家人商量时把这个时间说清楚就行。"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_009",
+        "title": "洗衣晾衣轮换协商",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "洗衣晾衣基本都是我在弄，想跟家人轮着来，怎么提比较好？",
+            "reference_text": "可以直说你想轻松一点，提议轮换。比如一人负责一天，或者一人洗一人晾，具体怎么轮你们一起定。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我周三和周五晚上没空，这两天最好别排我。",
+            "reference_text": "那周三和周五晚上就不排你，其他时间再轮。跟家人说清楚这两个晚上不方便就行。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我刚才说错了，是周二和周四晚上没空，不是周三周五。",
+            "reference_text": "好，更正一下：周二和周四晚上不排你，周三周五可以。这样跟家人商量轮换就清楚了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那你记得我现在说的是哪两天没空吗？",
+            "reference_text": "记得，你说的是周二和周四晚上没空，周三和周五可以安排。这样继续商量轮换就行。"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_010",
+        "title": "饭后收拾与孩子作业协调",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚饭后我要陪孩子写作业，收拾厨房的事想跟家人分一下，怎么说好？",
+            "reference_text": "可以说明你要陪孩子写作业，请家人帮忙分担厨房收拾。比如一人洗碗一人擦灶台，具体你们商量。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我陪作业大概要到八点半，这之前别给我排收拾的活。",
+            "reference_text": "好，八点半之前不给你排收拾的活，等陪完作业再看情况。跟家人说清楚这个时间就行。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，是到九点，不是八点半，最近作业多。",
+            "reference_text": "明白，改成九点之前不给你排收拾的活。跟家人商量时按九点来说。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我陪作业到几点吗？",
+            "reference_text": "记得，你陪作业到九点，九点前不排你收拾厨房。这样跟家人分工就清楚了。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "好，那就简短帮我总结一下怎么跟家人说吧。",
+            "reference_text": "可以这样说：我九点前要陪孩子写作业，厨房收拾想请大家分担，具体谁做什么咱们一起定，别都压一个人身上。"
+          }
+        ]
+      }
+    ]
+  }
+}

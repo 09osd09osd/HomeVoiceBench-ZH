@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/942b573c1f960ee13a1fe409ff47b44c.wav",
+  "sha256": "25496550ebd1397f5a54bf35f5f3295e57b210f03f0135574315ffaa04a6951f",
+  "duration_seconds": 5.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "edb5ac99-cd15-96c2-97cb-e41989ec2f28",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 1040,
+    "total_tokens": 1234,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实我用的不是五花肉，是前腿肉，家里正好只有这个，口感比五花肉柴一些。",
+  "spoken_text": "其实我用的不是五花肉，是前腿肉，家里正好只有这个，口感比五花肉柴一些。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实我用的不是五花肉，是前腿肉。家里正好只有这个，口感比五花肉柴一些。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实我用的不是五花肉，是前腿肉。家里正好只有这个，口感比五花肉柴一些。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-25522045-33c8-9bdd-9197-645393d5cc00",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 296,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "25496550ebd1397f5a54bf35f5f3295e57b210f03f0135574315ffaa04a6951f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "fd417a8f8cd08cd9674f75d977332f57eee0e8424010bdc65002dd71ae87c408",
+    "canonical_sha256": "25496550ebd1397f5a54bf35f5f3295e57b210f03f0135574315ffaa04a6951f",
+    "pcm_sha256": "d832ab344f72a80cf42ada7b93b627f5fcd89f261f5f20d6414e522bfb5ebfda",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 124800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实我用的不是五花肉，是前腿肉。家里正好只有这个，口感比五花肉柴一些。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3c0b7275-c9e6-9c02-abe6-dc8d850b7e70",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 212,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "fd417a8f8cd08cd9674f75d977332f57eee0e8424010bdc65002dd71ae87c408",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "fd417a8f8cd08cd9674f75d977332f57eee0e8424010bdc65002dd71ae87c408",
+        "canonical_audio_sha256": "25496550ebd1397f5a54bf35f5f3295e57b210f03f0135574315ffaa04a6951f",
+        "pcm_sha256": "d832ab344f72a80cf42ada7b93b627f5fcd89f261f5f20d6414e522bfb5ebfda",
+        "same_samples": true
+      }
+    }
+  ]
+}

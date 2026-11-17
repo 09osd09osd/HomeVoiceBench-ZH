@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/68b8394e6082fd5234155c7381746b5a.wav",
+  "sha256": "bfd97a792ec580a8dcebf874223c5fbfb25f31dc2f407be4133cfe32c153bf9a",
+  "duration_seconds": 5.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "974e310f-e5f5-91d3-b299-64c2a05078f4",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 1144,
+    "total_tokens": 1341,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "晚上好，我睡前喜欢听点轻音乐，一般十点半上床。你能陪我聊聊怎么放松吗？",
+  "spoken_text": "晚上好，我睡前喜欢听点轻音乐，一般十点半上床。你能陪我聊聊怎么放松吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "晚上好，我睡前喜欢听点轻音乐，一般十点半上床。你能陪我聊聊怎么放松吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "晚上好，我睡前喜欢听点轻音乐，一般十点半上床。你能陪我聊聊怎么放松吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c4027b73-4608-995f-8ee5-263d8303f0e3",
+    "usage": {
+      "prompt_tokens": 250,
+      "total_tokens": 300,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "bfd97a792ec580a8dcebf874223c5fbfb25f31dc2f407be4133cfe32c153bf9a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "dcbd982617e852a7a75ef6bf4f422a6ad8807971420ec490f0ffeef3ec2803fd",
+    "canonical_sha256": "bfd97a792ec580a8dcebf874223c5fbfb25f31dc2f407be4133cfe32c153bf9a",
+    "pcm_sha256": "dfe2edc1d6e90ac25f588eb23f8284807b21b2e826972c630f24264da2085b91",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 137280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "晚上好，我睡前喜欢听点轻音乐，一般十点半上床。你能陪我聊聊怎么放松吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c93d7776-4fbf-97e8-af70-c56192ea4a28",
+      "usage": {
+        "prompt_tokens": 166,
+        "total_tokens": 216,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 129
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "dcbd982617e852a7a75ef6bf4f422a6ad8807971420ec490f0ffeef3ec2803fd",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "dcbd982617e852a7a75ef6bf4f422a6ad8807971420ec490f0ffeef3ec2803fd",
+        "canonical_audio_sha256": "bfd97a792ec580a8dcebf874223c5fbfb25f31dc2f407be4133cfe32c153bf9a",
+        "pcm_sha256": "dfe2edc1d6e90ac25f588eb23f8284807b21b2e826972c630f24264da2085b91",
+        "same_samples": true
+      }
+    }
+  ]
+}

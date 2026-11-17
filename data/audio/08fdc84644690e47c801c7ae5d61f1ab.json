@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/08fdc84644690e47c801c7ae5d61f1ab.wav",
+  "sha256": "3c7af42db8f98ade2916e85e995d2a597f02b6c0ae2b22f90d1eecf125b55fec",
+  "duration_seconds": 4.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f10fba63-29b3-9f04-9da5-86b2133cf75f",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 848,
+    "total_tokens": 1027,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想早点去，避开人流，最好八点前就到山脚下。",
+  "spoken_text": "我想早点去，避开人流，最好八点前就到山脚下。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想早点去，避开人流，最好八点前就到山脚下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想早点去，避开人流，最好八点前就到山脚下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-acf863da-e818-96c1-b589-37a3e2de8673",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 273,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3c7af42db8f98ade2916e85e995d2a597f02b6c0ae2b22f90d1eecf125b55fec"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f735de2bad3cfd2e3a57e5b0fba9e4143b0408d26e238b7795e32539e1f33c82",
+    "canonical_sha256": "3c7af42db8f98ade2916e85e995d2a597f02b6c0ae2b22f90d1eecf125b55fec",
+    "pcm_sha256": "e813e7719444407c43c8f6278ac24c30f8fdf6b1de1699e92d92f808cb3b15e9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 101760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想早点去，避开人流，最好八点前就到山脚下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3bf780a9-afa0-9fdf-8dbc-56af69dbd989",
+      "usage": {
+        "prompt_tokens": 149,
+        "total_tokens": 189,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f735de2bad3cfd2e3a57e5b0fba9e4143b0408d26e238b7795e32539e1f33c82",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f735de2bad3cfd2e3a57e5b0fba9e4143b0408d26e238b7795e32539e1f33c82",
+        "canonical_audio_sha256": "3c7af42db8f98ade2916e85e995d2a597f02b6c0ae2b22f90d1eecf125b55fec",
+        "pcm_sha256": "e813e7719444407c43c8f6278ac24c30f8fdf6b1de1699e92d92f808cb3b15e9",
+        "same_samples": true
+      }
+    }
+  ]
+}

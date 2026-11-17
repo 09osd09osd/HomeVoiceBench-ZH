@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e6728d6ca94b2b30cd4834b5f8bf15b7.wav",
+  "sha256": "98a9271bae1594ee41704e39539d677f31b05e431bc059cb8d961a16cc48168a",
+  "duration_seconds": 5.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1c4bf28e-4108-9297-8667-a21aa691b69f",
+  "usage": {
+    "input_tokens": 206,
+    "output_tokens": 1000,
+    "total_tokens": 1206,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，那个小女孩不叫小圆，叫小月，刚才说错了，后面都用小月。",
+  "spoken_text": "对了，那个小女孩不叫小圆，叫小月，刚才说错了，后面都用小月。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，那个小女孩不叫小圆，叫小月。刚才说错了，后面都用小月。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，那个小女孩不叫小圆，叫小月。刚才说错了，后面都用小月。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f14349b7-31e2-9254-96f2-1c84a74f0bc3",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 296,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "98a9271bae1594ee41704e39539d677f31b05e431bc059cb8d961a16cc48168a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "717e66e0423b82087eff86900b4dad48164e667d14ead8ae2999cba4138d90f9",
+    "canonical_sha256": "98a9271bae1594ee41704e39539d677f31b05e431bc059cb8d961a16cc48168a",
+    "pcm_sha256": "a0930cb1a91f3b5b2354ef4fa4c0c9291362091bd665aa2512fec99d006906a1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 120000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，那个小女孩不叫小圆，叫小月。刚才说错了，后面都用小月。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "对了，那个小女孩不叫小圆，叫小月。刚才说错了，后面都用小月。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-7c8e3f66-3615-9d55-9b25-6cd979432353",
+      "usage": {
+        "prompt_tokens": 187,
+        "total_tokens": 235,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 150
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "717e66e0423b82087eff86900b4dad48164e667d14ead8ae2999cba4138d90f9",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "717e66e0423b82087eff86900b4dad48164e667d14ead8ae2999cba4138d90f9",
+        "canonical_audio_sha256": "98a9271bae1594ee41704e39539d677f31b05e431bc059cb8d961a16cc48168a",
+        "pcm_sha256": "a0930cb1a91f3b5b2354ef4fa4c0c9291362091bd665aa2512fec99d006906a1",
+        "same_samples": true
+      }
+    }
+  ]
+}

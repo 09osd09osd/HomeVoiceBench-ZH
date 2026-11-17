@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e42f9c32fc225c02259c640f62f192eb.wav",
+  "sha256": "b9bc15fb12e2559b245ad7a7608dc8c142785a9e1d6ea0a0bb62632129786920",
+  "duration_seconds": 4.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5d1009ea-7f6a-93a0-9d31-70f51859db9c",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 800,
+    "total_tokens": 981,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "跟我说说哪些操作成功了、哪些没做成，别再重新弄一遍。",
+  "spoken_text": "跟我说说哪些操作成功了、哪些没做成，别再重新弄一遍。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "跟我说说哪些操作成功了，哪些没做成，别再重新弄一遍。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "跟我说说哪些操作成功了，哪些没做成，别再重新弄一遍。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e782c405-2c35-932b-9d80-1f301d633e75",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b9bc15fb12e2559b245ad7a7608dc8c142785a9e1d6ea0a0bb62632129786920"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "aa9266494521ae2aa8736afa5eb4409e00624ef92c14cafb33c40cc57ec96b06",
+    "canonical_sha256": "b9bc15fb12e2559b245ad7a7608dc8c142785a9e1d6ea0a0bb62632129786920",
+    "pcm_sha256": "195a5131b829659539bf259bd3cbd7adc2e784d7aa2b3bbfce41ab98250f4474",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 96000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "跟我说说哪些操作成功了，哪些没做成，别再重新弄一遍。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "跟我说说哪些操作成功了，哪些没做成，别再重新弄一遍。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-17b9ba03-b922-96d7-90ce-579ec9eab855",
+      "usage": {
+        "prompt_tokens": 173,
+        "total_tokens": 214,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "aa9266494521ae2aa8736afa5eb4409e00624ef92c14cafb33c40cc57ec96b06",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "aa9266494521ae2aa8736afa5eb4409e00624ef92c14cafb33c40cc57ec96b06",
+        "canonical_audio_sha256": "b9bc15fb12e2559b245ad7a7608dc8c142785a9e1d6ea0a0bb62632129786920",
+        "pcm_sha256": "195a5131b829659539bf259bd3cbd7adc2e784d7aa2b3bbfce41ab98250f4474",
+        "same_samples": true
+      }
+    }
+  ]
+}

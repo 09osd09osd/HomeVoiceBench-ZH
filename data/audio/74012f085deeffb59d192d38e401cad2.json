@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/74012f085deeffb59d192d38e401cad2.wav",
+  "sha256": "57dfc2617c2c452c542232df29aab2bd88bd525d2a9604de9d96e6cadc75f1e6",
+  "duration_seconds": 4.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a19d50e1-c89a-9a3e-89df-1f96b9d31ccb",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 912,
+    "total_tokens": 1102,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把客厅灯打开到80%，要是还在处理中，就说清楚现在什么状态。",
+  "spoken_text": "把客厅灯打开到百分之八十，要是还在处理中，就说清楚现在什么状态。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把客厅灯打开到80%，要是还在处理中，就说清楚现在什么状态。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把客厅灯打开到80%，要是还在处理中，就说清楚现在什么状态。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8a1e46cb-1ed8-9c1a-94fa-975208f8a84f",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "57dfc2617c2c452c542232df29aab2bd88bd525d2a9604de9d96e6cadc75f1e6"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ad1804cb0c017e5863b7a5fe983cac9ab3c3c1eeab653340e98f4856088bf550",
+    "canonical_sha256": "57dfc2617c2c452c542232df29aab2bd88bd525d2a9604de9d96e6cadc75f1e6",
+    "pcm_sha256": "8230c5370921658216b3d612bdd0f1504e6797046dc4ee3d153a3c037ac3ddc1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 109440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把客厅灯打开到百分之八十，要是还在处理中就说清楚现在什么状态。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把客厅灯打开到百分之八十，要是还在处理中就说清楚现在什么状态。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-37fc9505-2f1a-9b91-aa82-5f8c50b5320b",
+      "usage": {
+        "prompt_tokens": 177,
+        "total_tokens": 221,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ad1804cb0c017e5863b7a5fe983cac9ab3c3c1eeab653340e98f4856088bf550",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ad1804cb0c017e5863b7a5fe983cac9ab3c3c1eeab653340e98f4856088bf550",
+        "canonical_audio_sha256": "57dfc2617c2c452c542232df29aab2bd88bd525d2a9604de9d96e6cadc75f1e6",
+        "pcm_sha256": "8230c5370921658216b3d612bdd0f1504e6797046dc4ee3d153a3c037ac3ddc1",
+        "same_samples": true
+      }
+    }
+  ]
+}

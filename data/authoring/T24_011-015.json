@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "66bace843f03b2d03b72050a9d8303b60a23fb82402d934b5f263efb7162e0ca",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-4caa863f-0426-92c2-b2ef-b1d9c7793c05",
+  "usage": {
+    "prompt_tokens": 14585,
+    "total_tokens": 15647,
+    "completion_tokens": 1062,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 14585
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1062
+    }
+  },
+  "review_request_id": "chatcmpl-f4653466-b2ed-943e-a9c8-b2ef8fa614b1",
+  "review_usage": {
+    "prompt_tokens": 15269,
+    "total_tokens": 15355,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 15269
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T24_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T24_011",
+        "title": "明天9点自动关书房灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天早上9点，帮我把书房灯自动关掉。",
+            "reference_text": "好的，已经设好明天早上9点自动关书房灯。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_012",
+        "title": "明天9点关书房灯并改到9点半",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天早上9点，帮我把书房灯自动关掉。",
+            "reference_text": "好的，已经设好明天早上9点自动关书房灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改成明天9点半。",
+            "reference_text": "好，已经改成明天早上9点半自动关书房灯了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_013",
+        "title": "改时间并查看当前启用的安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天早上9点，帮我把书房灯自动关掉。",
+            "reference_text": "好的，已经设好明天早上9点自动关书房灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改成明天9点半。",
+            "reference_text": "好，已经改成明天早上9点半自动关书房灯了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用中的安排有两条：一条是明天早上9点半自动关书房灯，另一条是后天中午12点的晾衣服提醒。没有新增。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_014",
+        "title": "取消新增安排并保留晾衣服提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天早上9点，帮我把书房灯自动关掉。",
+            "reference_text": "好的，已经设好明天早上9点自动关书房灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改成明天9点半。",
+            "reference_text": "好，已经改成明天早上9点半自动关书房灯了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用中的安排有两条：一条是明天早上9点半自动关书房灯，另一条是后天中午12点的晾衣服提醒。没有新增。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好，已经取消明天早上9点半自动关书房灯那条，原来的晾衣服提醒还留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_015",
+        "title": "取消后确认启用项与取消状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天早上9点，帮我把书房灯自动关掉。",
+            "reference_text": "好的，已经设好明天早上9点自动关书房灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改成明天9点半。",
+            "reference_text": "好，已经改成明天早上9点半自动关书房灯了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用中的安排有两条：一条是明天早上9点半自动关书房灯，另一条是后天中午12点的晾衣服提醒。没有新增。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好，已经取消明天早上9点半自动关书房灯那条，原来的晾衣服提醒还留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认一下现在启用的还剩什么，还有刚才那条是不是已经取消了。",
+            "reference_text": "现在启用的只剩后天中午12点的晾衣服提醒。刚才那条明天早上9点半自动关书房灯的安排已经取消了。"
+          }
+        ]
+      }
+    ]
+  }
+}

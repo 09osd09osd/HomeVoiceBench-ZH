@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/46fb58bde08f34a407b16bb7e939edc1.wav",
+  "sha256": "54dc3c415346ba6719e1787ff626d85d3329ae7065e299289200e2b860288d7a",
+  "duration_seconds": 4.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6ca2bdc8-b664-9f3a-8022-0a12c73bf57c",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 968,
+    "total_tokens": 1160,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，我剪的是4段，不是3段。发黑的是其中一段。",
+  "spoken_text": "更正一下，我剪的是四段，不是三段。发黑的是其中一段。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，我剪的是四段，不是三段。发黑的是其中一段。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，我剪的是四段，不是三段。发黑的是其中一段。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7199fbbb-56e1-91c9-8348-5d436c96e2e7",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 282,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "54dc3c415346ba6719e1787ff626d85d3329ae7065e299289200e2b860288d7a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1f6838381239e6c502511ed1f4e661bec3202943ca4615d0d719e34849ca7308",
+    "canonical_sha256": "54dc3c415346ba6719e1787ff626d85d3329ae7065e299289200e2b860288d7a",
+    "pcm_sha256": "0f99bd1a264c05c572f0fcb925405e55fbf6fb1fb1ad3a809a7660864cc7c9bc",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 116160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，我剪的是四段不是三段。发黑的是其中一段。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，我剪的是四段不是三段。发黑的是其中一段。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a965a098-db8c-9340-89fd-56ed1d1057dc",
+      "usage": {
+        "prompt_tokens": 177,
+        "total_tokens": 220,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1f6838381239e6c502511ed1f4e661bec3202943ca4615d0d719e34849ca7308",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1f6838381239e6c502511ed1f4e661bec3202943ca4615d0d719e34849ca7308",
+        "canonical_audio_sha256": "54dc3c415346ba6719e1787ff626d85d3329ae7065e299289200e2b860288d7a",
+        "pcm_sha256": "0f99bd1a264c05c572f0fcb925405e55fbf6fb1fb1ad3a809a7660864cc7c9bc",
+        "same_samples": true
+      }
+    }
+  ]
+}

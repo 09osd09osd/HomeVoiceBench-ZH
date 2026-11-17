@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/dc2f038c8218bdad352c00a98b8046e5.wav",
+  "sha256": "a69d3301e5081c3cf9840263558de0ae1d1d27365220e76eb1f99e431ecbb173",
+  "duration_seconds": 5.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3f37ccba-c3b0-9d81-b91b-ceddc59a3974",
+  "usage": {
+    "input_tokens": 207,
+    "output_tokens": 1056,
+    "total_tokens": 1263,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今晚想听个小松鼠的故事，它窗边挂了个风铃，风吹过来叮叮响。要短、温和。",
+  "spoken_text": "今晚想听个小松鼠的故事，它窗边挂了个风铃，风吹过来叮叮响。要短、温和。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今晚想听个小松鼠的故事，它窗边挂了个风铃，风吹过来叮叮响。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今晚想听个小松鼠的故事，它窗边挂了个风铃，风吹过来叮叮响。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c4beecc7-417e-9bd0-859e-483e906d25f3",
+    "usage": {
+      "prompt_tokens": 252,
+      "total_tokens": 299,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 215
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a69d3301e5081c3cf9840263558de0ae1d1d27365220e76eb1f99e431ecbb173"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "442cb31b81dcf11e695f377f90ff887599ff51d8621270b7b2e08e049a0aa4bf",
+    "canonical_sha256": "a69d3301e5081c3cf9840263558de0ae1d1d27365220e76eb1f99e431ecbb173",
+    "pcm_sha256": "d51d7a01dc89ccd95fd315605917d64de8ecd6ecc4b0a207d11c26957ab6b2e4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 126720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今晚想听个小松鼠的故事，它窗边挂了个风铃，风吹过来叮叮响。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "今晚想听个小松鼠的故事，它窗边挂了个风铃，风吹过来叮叮响。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-9679e158-6908-9eaa-b961-517b3c6222b3",
+      "usage": {
+        "prompt_tokens": 191,
+        "total_tokens": 238,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 154
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "442cb31b81dcf11e695f377f90ff887599ff51d8621270b7b2e08e049a0aa4bf",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "442cb31b81dcf11e695f377f90ff887599ff51d8621270b7b2e08e049a0aa4bf",
+        "canonical_audio_sha256": "a69d3301e5081c3cf9840263558de0ae1d1d27365220e76eb1f99e431ecbb173",
+        "pcm_sha256": "d51d7a01dc89ccd95fd315605917d64de8ecd6ecc4b0a207d11c26957ab6b2e4",
+        "same_samples": true
+      }
+    }
+  ]
+}

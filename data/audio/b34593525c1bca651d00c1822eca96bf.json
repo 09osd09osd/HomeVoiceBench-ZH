@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b34593525c1bca651d00c1822eca96bf.wav",
+  "sha256": "cead9ca0af02ced7fc757cba87157b1bd3b1df094c093b4d1de72e47fe7b6097",
+  "duration_seconds": 4.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3cd8151b-0683-91c7-b25e-8bb4b4d359f0",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 840,
+    "total_tokens": 1024,
+    "duration": 4
+  },
+  "seed": 100042,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "行，你帮我用一两句话收个尾，我好直接跟他说，别太长。",
+  "spoken_text": "行，你帮我用一两句话收个尾，我好直接跟他说，别太长。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "行，你帮我用一两句话收个尾，我好直接跟他说别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "行，你帮我用一两句话收个尾，我好直接跟他说别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8784fb14-de65-94c3-af92-b36dcebed785",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 282,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cead9ca0af02ced7fc757cba87157b1bd3b1df094c093b4d1de72e47fe7b6097"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "aaf189c6747503f29325fb0406954bac8140ebf55271af0f32e7a11b62aabbff",
+    "canonical_sha256": "cead9ca0af02ced7fc757cba87157b1bd3b1df094c093b4d1de72e47fe7b6097",
+    "pcm_sha256": "09a2b82eeff9b9c385d024ebd4b63fcc08174f475bfeef2dd2dad7cddae789af",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 100800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "行，你帮我用一两句话收个尾我好直接跟他说别太长。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-1d56cd9f-0bd6-97ad-bc2d-3e5d2b7420b2",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 197,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "aaf189c6747503f29325fb0406954bac8140ebf55271af0f32e7a11b62aabbff",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "aaf189c6747503f29325fb0406954bac8140ebf55271af0f32e7a11b62aabbff",
+        "canonical_audio_sha256": "cead9ca0af02ced7fc757cba87157b1bd3b1df094c093b4d1de72e47fe7b6097",
+        "pcm_sha256": "09a2b82eeff9b9c385d024ebd4b63fcc08174f475bfeef2dd2dad7cddae789af",
+        "same_samples": true
+      }
+    }
+  ]
+}

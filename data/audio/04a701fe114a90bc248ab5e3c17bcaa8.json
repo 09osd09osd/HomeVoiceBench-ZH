@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/04a701fe114a90bc248ab5e3c17bcaa8.wav",
+  "sha256": "228970caf2e1dbeb811db3b007225f94beee550908004cec147536d9347a1b0d",
+  "duration_seconds": 3.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0d1dbc6f-dbf4-983b-a9d4-6c815ec8ac1b",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 624,
+    "total_tokens": 810,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我要买什么鱼吗？再说一遍我听听。",
+  "spoken_text": "你还记得我要买什么鱼吗？再说一遍我听听。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我要买什么鱼吗？再说一遍我听听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我要买什么鱼吗？再说一遍我听听。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-13aa7079-6cb1-98b3-83a7-36160cd3b914",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "228970caf2e1dbeb811db3b007225f94beee550908004cec147536d9347a1b0d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "10d0f6cc54e9c6481f1ecc8848ff57eccf97ee611329fbd8fcc37fc8f7786531",
+    "canonical_sha256": "228970caf2e1dbeb811db3b007225f94beee550908004cec147536d9347a1b0d",
+    "pcm_sha256": "39b92538d400e224db2be6280b8e881eddafb9201baa9b375274e846b929a4df",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 74880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我要买什么鱼吗？再说一遍我听听。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6dd25797-65d5-94ef-8c61-4798dc0ff045",
+      "usage": {
+        "prompt_tokens": 141,
+        "total_tokens": 180,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 118
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "10d0f6cc54e9c6481f1ecc8848ff57eccf97ee611329fbd8fcc37fc8f7786531",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "10d0f6cc54e9c6481f1ecc8848ff57eccf97ee611329fbd8fcc37fc8f7786531",
+        "canonical_audio_sha256": "228970caf2e1dbeb811db3b007225f94beee550908004cec147536d9347a1b0d",
+        "pcm_sha256": "39b92538d400e224db2be6280b8e881eddafb9201baa9b375274e846b929a4df",
+        "same_samples": true
+      }
+    }
+  ]
+}

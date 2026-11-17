@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ea3abb79f36378de99da1f19d6b45a5c.wav",
+  "sha256": "44b8749e934a8a93e0d687f0c51497f81e6f27bdc2c9a33da726ce8d0e737d9f",
+  "duration_seconds": 3.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5e4073e2-8e6c-9b5b-a8e8-082cb7f122b3",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 664,
+    "total_tokens": 855,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，我刚才说错了，不是周四，今天才周三。",
+  "spoken_text": "对了，我刚才说错了，不是周四，今天才周三。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，我刚才说错了，不是周四，今天才周三。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，我刚才说错了，不是周四，今天才周三。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-484be7a3-6897-9660-9378-933d5fde27da",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "44b8749e934a8a93e0d687f0c51497f81e6f27bdc2c9a33da726ce8d0e737d9f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "66450355c555b6fd86ea8b945b2806da424989a8d1fbe10baa3e65122c2c647b",
+    "canonical_sha256": "44b8749e934a8a93e0d687f0c51497f81e6f27bdc2c9a33da726ce8d0e737d9f",
+    "pcm_sha256": "5ebe6dfef21c5b612028e76fe981dbdb345de1674af46984761c000a8b8d1ed9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 79680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，我刚才说错了，不是周四，今天才周三。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c32e697d-fa9e-9ae6-8fa7-b50f21bb87e6",
+      "usage": {
+        "prompt_tokens": 142,
+        "total_tokens": 182,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "66450355c555b6fd86ea8b945b2806da424989a8d1fbe10baa3e65122c2c647b",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "66450355c555b6fd86ea8b945b2806da424989a8d1fbe10baa3e65122c2c647b",
+        "canonical_audio_sha256": "44b8749e934a8a93e0d687f0c51497f81e6f27bdc2c9a33da726ce8d0e737d9f",
+        "pcm_sha256": "5ebe6dfef21c5b612028e76fe981dbdb345de1674af46984761c000a8b8d1ed9",
+        "same_samples": true
+      }
+    }
+  ]
+}

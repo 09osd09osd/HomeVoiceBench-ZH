@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "aefa9df044bbf1ada71d456b8be45a2340686c409620221a1274936449be0da3",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-79bbce19-309d-9d4a-8648-2897dd01bee8",
+  "usage": {
+    "prompt_tokens": 1845,
+    "total_tokens": 3104,
+    "completion_tokens": 1259,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1845
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1259
+    }
+  },
+  "review_request_id": "chatcmpl-9cf0303b-1321-9312-8dd5-393ae3c5d370",
+  "review_usage": {
+    "prompt_tokens": 2726,
+    "total_tokens": 2812,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2726
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C20_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C20_006",
+        "title": "聊周末是否适合家庭大扫除",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，想简单聊聊。这周末如果天气好，适合全家一起大扫除吗？",
+            "reference_text": "听起来你有点累，那咱们就简单聊。这周末天气好的话，全家一起大扫除确实挺合适，不过也看大家有没有空，别太勉强。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_007",
+        "title": "聊给客厅换窗帘的颜色偏好",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想给客厅换个窗帘，你觉得米色和浅灰色哪个更耐看？",
+            "reference_text": "这两个都挺耐看。米色暖一些，浅灰色更清爽；如果客厅采光一般，米色会显得柔和点。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我比较喜欢暖一点的，但家里有小孩，耐脏也很重要。",
+            "reference_text": "那米色系会暖一些，但可以选稍微深一点的米色或带点纹理的，比纯浅色更耐脏，也还保持暖感。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_008",
+        "title": "聊周末短途散步路线选择",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "周末想带家人出去走走，附近有湖边和公园两条路线，你建议选哪条？",
+            "reference_text": "湖边路线风景好，但风可能大；公园路线更平缓，适合慢慢走。看家人是想看水还是想省力。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我爸妈腿脚一般，不想走太久，最好有地方坐。",
+            "reference_text": "那公园路线更合适，路平、休息的地方也多，走一小段就能坐下来歇歇，不会太累。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是爸妈，是我岳父母腿脚一般。",
+            "reference_text": "明白，是岳父母腿脚一般。那还是公园路线更稳妥，路平、能随时坐下休息，走起来轻松些。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_009",
+        "title": "聊晚饭后全家散步的时间安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "晚饭后想全家一起散步，你觉得几点出门比较好？",
+            "reference_text": "一般饭后歇半小时再出门比较舒服，如果七点吃完，七点半左右出门就挺合适。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "孩子八点半要洗漱，散步最好别超过四十分钟。",
+            "reference_text": "那七点半出门、走三十到四十分钟，八点十分左右回来，正好赶上孩子八点半洗漱，不会太赶。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我说错了，孩子是九点洗漱，不是八点半。",
+            "reference_text": "好的，孩子九点洗漱。那七点半出门走四十分钟也来得及，八点十分回来还能歇一会儿。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得孩子几点洗漱吗？那散步路线有什么建议？",
+            "reference_text": "记得，孩子九点洗漱。路线可以选小区里绕一圈，路灯亮、车少，走四十分钟左右刚好。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_010",
+        "title": "聊阳台种花品种的取舍",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "阳台想种点花，好养又不太占地方的，你有什么推荐？",
+            "reference_text": "好养又不占地方的，可以看看薄荷、太阳花或者小盆的绿萝，浇水不用太勤，也不怎么挑地方。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想要能开花的，最好颜色亮一点，但别招太多虫子。",
+            "reference_text": "那太阳花挺合适，颜色亮、好养，虫子也少；或者小盆的矮牵牛，开花多，注意通风就行。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，不是阳台，是窗台，地方更小。",
+            "reference_text": "明白，是窗台，地方更小。那就选小盆的太阳花或矮牵牛，一盆就够，不占地方，开花也亮眼。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得是窗台吧？那浇水要注意什么？",
+            "reference_text": "记得，是窗台。窗台通风好但容易干，浇水看土表，干了再浇透，别让盆底积水就行。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "我有点累了，简单总结两句就好。",
+            "reference_text": "好，简单说：窗台选小盆太阳花或矮牵牛，土干了再浇透，别积水。先歇着吧。"
+          }
+        ]
+      }
+    ]
+  }
+}

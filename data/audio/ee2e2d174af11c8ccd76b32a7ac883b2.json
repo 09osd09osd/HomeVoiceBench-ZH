@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ee2e2d174af11c8ccd76b32a7ac883b2.wav",
+  "sha256": "7f6527d41129e261812a888792b9c6328ce4d6ef056c6a298b426cd5ba8d15d2",
+  "duration_seconds": 3.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "57632782-b360-96b9-95b2-221d31cab646",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 616,
+    "total_tokens": 801,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我结果到底是哪天出吗？我怕自己又记混了。",
+  "spoken_text": "你还记得我结果到底是哪天出吗？我怕自己又记混了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我结果到底是哪天出吗？我怕自己又记混了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我结果到底是哪天出吗？我怕自己又记混了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-97376270-caf7-91e3-a138-ad191bc532d1",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7f6527d41129e261812a888792b9c6328ce4d6ef056c6a298b426cd5ba8d15d2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f5e984eaae8cf8918b157f28ece714869d99f28690eb23bd1ee881946a68f373",
+    "canonical_sha256": "7f6527d41129e261812a888792b9c6328ce4d6ef056c6a298b426cd5ba8d15d2",
+    "pcm_sha256": "1a4c6ebd703119580c5ea1195dc8d59c7c8b60060b79385d9219bbcd1702e997",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 73920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我结果到底是哪天出吗？我怕自己又记混了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b84f66af-0ea1-9c6c-93bf-79b8a116b2c0",
+      "usage": {
+        "prompt_tokens": 144,
+        "total_tokens": 186,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f5e984eaae8cf8918b157f28ece714869d99f28690eb23bd1ee881946a68f373",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f5e984eaae8cf8918b157f28ece714869d99f28690eb23bd1ee881946a68f373",
+        "canonical_audio_sha256": "7f6527d41129e261812a888792b9c6328ce4d6ef056c6a298b426cd5ba8d15d2",
+        "pcm_sha256": "1a4c6ebd703119580c5ea1195dc8d59c7c8b60060b79385d9219bbcd1702e997",
+        "same_samples": true
+      }
+    }
+  ]
+}

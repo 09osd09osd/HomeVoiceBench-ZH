@@ -1,0 +1,172 @@
+{
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-06a730b6-fe58-9181-8540-96c52282504d",
+  "usage": {
+    "prompt_tokens": 13474,
+    "total_tokens": 14529,
+    "completion_tokens": 1055,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13474
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1055
+    }
+  },
+  "review_request_id": "chatcmpl-25ff5713-210d-95d8-84e4-0b3495220a12",
+  "review_usage": {
+    "prompt_tokens": 14151,
+    "total_tokens": 14237,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14151
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T06_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T06_011",
+        "title": "书房灯开灯并调至60%亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我把书房灯打开，亮度调到百分之六十就行。",
+            "reference_text": "好的，书房灯已经打开了，亮度调到了百分之六十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_012",
+        "title": "书房灯开灯调亮度再改至40%",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我把书房灯打开，亮度调到百分之六十就行。",
+            "reference_text": "好的，书房灯已经打开了，亮度调到了百分之六十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "亮度还是有点刺眼，把刚才那盏书房灯调到百分之四十，其他设置别动。",
+            "reference_text": "好的，书房灯亮度已经调到百分之四十，其他设置没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_013",
+        "title": "书房灯开灯调亮再核验状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我把书房灯打开，亮度调到百分之六十就行。",
+            "reference_text": "好的，书房灯已经打开了，亮度调到了百分之六十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "亮度还是有点刺眼，把刚才那盏书房灯调到百分之四十，其他设置别动。",
+            "reference_text": "好的，书房灯亮度已经调到百分之四十，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看书房灯现在亮度和开关状态，别调整。",
+            "reference_text": "书房灯现在是开着的，亮度百分之四十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_014",
+        "title": "书房灯调光核验后关灯保留亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我把书房灯打开，亮度调到百分之六十就行。",
+            "reference_text": "好的，书房灯已经打开了，亮度调到了百分之六十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "亮度还是有点刺眼，把刚才那盏书房灯调到百分之四十，其他设置别动。",
+            "reference_text": "好的，书房灯亮度已经调到百分之四十，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看书房灯现在亮度和开关状态，别调整。",
+            "reference_text": "书房灯现在是开着的，亮度百分之四十。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把书房灯关掉吧，亮度设置保留着别动。",
+            "reference_text": "好的，书房灯已经关掉了，亮度还保留在百分之四十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_015",
+        "title": "书房灯调光核验关灯再查开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累，帮我把书房灯打开，亮度调到百分之六十就行。",
+            "reference_text": "好的，书房灯已经打开了，亮度调到了百分之六十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "亮度还是有点刺眼，把刚才那盏书房灯调到百分之四十，其他设置别动。",
+            "reference_text": "好的，书房灯亮度已经调到百分之四十，其他设置没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看书房灯现在亮度和开关状态，别调整。",
+            "reference_text": "书房灯现在是开着的，亮度百分之四十。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把书房灯关掉吧，亮度设置保留着别动。",
+            "reference_text": "好的，书房灯已经关掉了，亮度还保留在百分之四十。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再帮我确认下书房灯关好了没，其他设备不要动。",
+            "reference_text": "书房灯现在是关着的，亮度还是百分之四十，其他设备没动。"
+          }
+        ]
+      }
+    ]
+  }
+}

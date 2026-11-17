@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1d6da713d7c616f58015eb29518769b5.wav",
+  "sha256": "c2cac4e28163fecd254e52c9859de02280488a2b3246d0eeadc76fce5207dd63",
+  "duration_seconds": 6.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3ea2abf4-de5a-9de7-8c5d-47434436fe27",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 1200,
+    "total_tokens": 1403,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我最近开始对爵士乐感兴趣，但不太了解，你能推荐几张适合上下班路上听的入门专辑吗？",
+  "spoken_text": "我最近开始对爵士乐感兴趣，但不太了解，你能推荐几张适合上下班路上听的入门专辑吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我最近开始对爵士乐感兴趣，但不太了解。你能推荐几张适合上下班路上听的入门专辑吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我最近开始对爵士乐感兴趣，但不太了解。你能推荐几张适合上下班路上听的入门专辑吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9a542892-1a4b-9b0b-b178-37c03aa91d8e",
+    "usage": {
+      "prompt_tokens": 256,
+      "total_tokens": 305,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c2cac4e28163fecd254e52c9859de02280488a2b3246d0eeadc76fce5207dd63"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "65c0e424c5bff10afd5f923d5afae623ece791561317c20cc44ce2cd738c1ff8",
+    "canonical_sha256": "c2cac4e28163fecd254e52c9859de02280488a2b3246d0eeadc76fce5207dd63",
+    "pcm_sha256": "f46a5518a7df17f9eaf4cc7304b1838dfa7ef24cf6a58cdcbdfac6bbaee0af53",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 144000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我最近开始对爵士乐感兴趣，但不太了解。你能推荐几张适合上下班路上听的入门专辑吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我最近开始对爵士乐感兴趣，但不太了解。你能推荐几张适合上下班路上听的入门专辑吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-88353672-79b4-99af-8674-e9a5341d5d14",
+      "usage": {
+        "prompt_tokens": 195,
+        "total_tokens": 244,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 151
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "65c0e424c5bff10afd5f923d5afae623ece791561317c20cc44ce2cd738c1ff8",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "65c0e424c5bff10afd5f923d5afae623ece791561317c20cc44ce2cd738c1ff8",
+        "canonical_audio_sha256": "c2cac4e28163fecd254e52c9859de02280488a2b3246d0eeadc76fce5207dd63",
+        "pcm_sha256": "f46a5518a7df17f9eaf4cc7304b1838dfa7ef24cf6a58cdcbdfac6bbaee0af53",
+        "same_samples": true
+      }
+    }
+  ]
+}

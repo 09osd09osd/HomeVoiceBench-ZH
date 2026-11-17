@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/6c313957892855daa7d14d94155fe90f.wav",
+  "sha256": "00b757e5e57d19fae93be975f7598d3903811fe35a7ac54d0969ce18d0ea6d6a",
+  "duration_seconds": 3.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6fa913b7-8128-96bf-94d2-a1b45fb92c6d",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 704,
+    "total_tokens": 887,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我家阳台朝北，平时风不大，有没有更适合这种情况的？",
+  "spoken_text": "我家阳台朝北，平时风不大，有没有更适合这种情况的？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我家阳台朝北，平时风不大，有没有更适合这种情况的？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我家阳台朝北，平时风不大，有没有更适合这种情况的？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a176fd5b-9369-9557-83e0-57f24e57897d",
+    "usage": {
+      "prompt_tokens": 226,
+      "total_tokens": 266,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "00b757e5e57d19fae93be975f7598d3903811fe35a7ac54d0969ce18d0ea6d6a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d7058a942a973c5bbcc89005a2e616087b0eae5e6645904bd69f756ccef62fea",
+    "canonical_sha256": "00b757e5e57d19fae93be975f7598d3903811fe35a7ac54d0969ce18d0ea6d6a",
+    "pcm_sha256": "59cb6ff4f484dc2c82467b289645d5e4e915f488e3cba1e0ca03d9cc51953f18",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 84480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我家阳台朝北，平时风不大，有没有更适合这种情况的？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我家阳台朝北，平时风不大，有没有更适合这种情况的？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4ead9b26-773c-9378-b90b-91702ac46f31",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 205,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d7058a942a973c5bbcc89005a2e616087b0eae5e6645904bd69f756ccef62fea",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d7058a942a973c5bbcc89005a2e616087b0eae5e6645904bd69f756ccef62fea",
+        "canonical_audio_sha256": "00b757e5e57d19fae93be975f7598d3903811fe35a7ac54d0969ce18d0ea6d6a",
+        "pcm_sha256": "59cb6ff4f484dc2c82467b289645d5e4e915f488e3cba1e0ca03d9cc51953f18",
+        "same_samples": true
+      }
+    }
+  ]
+}

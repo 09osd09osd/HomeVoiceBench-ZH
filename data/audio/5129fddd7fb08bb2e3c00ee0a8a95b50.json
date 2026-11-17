@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/5129fddd7fb08bb2e3c00ee0a8a95b50.wav",
+  "sha256": "1af45994d764bc4c5c8b91c529993d46514facc4fa62cd2a0247f034dd5079d7",
+  "duration_seconds": 1.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8cd1eccf-63da-9c82-83f3-304e21a8220b",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 280,
+    "total_tokens": 460,
+    "duration": 1
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "暂停一下这段内容。",
+  "spoken_text": "暂停一下这段内容。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "暂停一下这段内容。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "暂停一下这段内容。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c7e3c0a2-85e6-9572-b0e2-0ebf8aa856a2",
+    "usage": {
+      "prompt_tokens": 203,
+      "total_tokens": 234,
+      "completion_tokens": 31,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 194
+      },
+      "completion_tokens_details": {
+        "text_tokens": 31
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1af45994d764bc4c5c8b91c529993d46514facc4fa62cd2a0247f034dd5079d7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9adcb205ff05af18565752c440e294fed8e75c50133a927d4225feb2565cbe33",
+    "canonical_sha256": "1af45994d764bc4c5c8b91c529993d46514facc4fa62cd2a0247f034dd5079d7",
+    "pcm_sha256": "ddb5a8b0d206aeb198698ff073f762b17d81d779e6cf66241932d482f900f976",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 33600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "暂停一下这段内容。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "暂停一下这段内容。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-afa48a1a-7395-91b9-86e6-82a3199be35c",
+      "usage": {
+        "prompt_tokens": 142,
+        "total_tokens": 173,
+        "completion_tokens": 31,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 133
+        },
+        "completion_tokens_details": {
+          "text_tokens": 31
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9adcb205ff05af18565752c440e294fed8e75c50133a927d4225feb2565cbe33",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9adcb205ff05af18565752c440e294fed8e75c50133a927d4225feb2565cbe33",
+        "canonical_audio_sha256": "1af45994d764bc4c5c8b91c529993d46514facc4fa62cd2a0247f034dd5079d7",
+        "pcm_sha256": "ddb5a8b0d206aeb198698ff073f762b17d81d779e6cf66241932d482f900f976",
+        "same_samples": true
+      }
+    }
+  ]
+}

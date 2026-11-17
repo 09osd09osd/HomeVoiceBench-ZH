@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/911a14a787d78d542348ae37d99b7ac1.wav",
+  "sha256": "1a2fa5d98c04650c41944c9be2fa26b50bf3c28e72fef20dd3194d2aa91632fb",
+  "duration_seconds": 10.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7d2aa159-9cfa-94c6-a8a1-f753ec5bbf53",
+  "usage": {
+    "input_tokens": 253,
+    "output_tokens": 2008,
+    "total_tokens": 2261,
+    "duration": 10
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我昨晚跟爱人因为孩子写作业的事争了几句，我语气不太好。我想今天找个机会缓和一下，你能帮我想句能说出口的话吗？我不想让孩子觉得我们在冷战。",
+  "spoken_text": "我昨晚跟爱人因为孩子写作业的事争了几句，我语气不太好。我想今天找个机会缓和一下，你能帮我想句能说出口的话吗？我不想让孩子觉得我们在冷战。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我昨晚跟爱人因为孩子写作业的事争了几句，我语气不太好。我想今天找个机会缓和一下，你能帮我想句能说出口的话吗？我不想让孩子觉得我们在冷战。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我昨晚跟爱人因为孩子写作业的事争了几句，我语气不太好。我想今天找个机会缓和一下，你能帮我想句能说出口的话吗？我不想让孩子觉得我们在冷战。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8ef012d8-6d69-957f-bd15-99f5e40177f4",
+    "usage": {
+      "prompt_tokens": 299,
+      "total_tokens": 363,
+      "completion_tokens": 64,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 72,
+        "text_tokens": 227
+      },
+      "completion_tokens_details": {
+        "text_tokens": 64
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1a2fa5d98c04650c41944c9be2fa26b50bf3c28e72fef20dd3194d2aa91632fb"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7bce9ad4c219359cf016811e04eb452f2c7c70bc1381ca69c32f1be18740c55f",
+    "canonical_sha256": "1a2fa5d98c04650c41944c9be2fa26b50bf3c28e72fef20dd3194d2aa91632fb",
+    "pcm_sha256": "f3364967f9d696877f4365300895ac19fe2a61c05a6db91f47f57bf984d3e029",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 240960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我昨晚跟爱人因为孩子写作业的事争了几句，我语气不太好。我想今天找个机会缓和一下，你能帮我想句能说出口的话吗？我不想让孩子觉得我们在冷战。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f72917a1-b5c0-9839-83f7-9911bdb9a632",
+      "usage": {
+        "prompt_tokens": 215,
+        "total_tokens": 279,
+        "completion_tokens": 64,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 72,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 64
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7bce9ad4c219359cf016811e04eb452f2c7c70bc1381ca69c32f1be18740c55f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7bce9ad4c219359cf016811e04eb452f2c7c70bc1381ca69c32f1be18740c55f",
+        "canonical_audio_sha256": "1a2fa5d98c04650c41944c9be2fa26b50bf3c28e72fef20dd3194d2aa91632fb",
+        "pcm_sha256": "f3364967f9d696877f4365300895ac19fe2a61c05a6db91f47f57bf984d3e029",
+        "same_samples": true
+      }
+    }
+  ]
+}

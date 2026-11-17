@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/ef3c36f00a29e02dc6288e06d796998d.wav",
+  "sha256": "db8c6e3b1053fc9e47fee3d46b7de485f86bcc6c0414c71aa11dde293c95e12d",
+  "duration_seconds": 4.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2e4775fc-b0c1-9cca-81d3-0605928ff097",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 992,
+    "total_tokens": 1191,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我最近刚读完《小王子》，特别喜欢那种温柔又有点哲理的故事，你能推荐一本类似的书吗？",
+  "spoken_text": "我最近刚读完《小王子》，特别喜欢那种温柔又有点哲理的故事，你能推荐一本类似的书吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我最近刚读完《小王子》，特别喜欢那种温柔又有点哲理的故事。你能推荐一本类似的书吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我最近刚读完《小王子》，特别喜欢那种温柔又有点哲理的故事。你能推荐一本类似的书吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1bc81f4b-05a8-91ae-bbc5-f621953c17f3",
+    "usage": {
+      "prompt_tokens": 241,
+      "total_tokens": 289,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "db8c6e3b1053fc9e47fee3d46b7de485f86bcc6c0414c71aa11dde293c95e12d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3bc6964d637532797878e1c83d6887497f22c1f8819761b1cf489ed7f9dd6267",
+    "canonical_sha256": "db8c6e3b1053fc9e47fee3d46b7de485f86bcc6c0414c71aa11dde293c95e12d",
+    "pcm_sha256": "44dc27e4ad1ae5a58eae0e3b5999de0c24d7df3f5b10e8fcb79b23ac60b9375b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 119040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我最近刚读完《小王子》，特别喜欢那种温柔又有点哲理的故事，你能推荐一本类似的书吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我最近刚读完《小王子》，特别喜欢那种温柔又有点哲理的故事，你能推荐一本类似的书吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c615b8c8-666e-9df4-a41c-7e966bd65372",
+      "usage": {
+        "prompt_tokens": 180,
+        "total_tokens": 228,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 150
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3bc6964d637532797878e1c83d6887497f22c1f8819761b1cf489ed7f9dd6267",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3bc6964d637532797878e1c83d6887497f22c1f8819761b1cf489ed7f9dd6267",
+        "canonical_audio_sha256": "db8c6e3b1053fc9e47fee3d46b7de485f86bcc6c0414c71aa11dde293c95e12d",
+        "pcm_sha256": "44dc27e4ad1ae5a58eae0e3b5999de0c24d7df3f5b10e8fcb79b23ac60b9375b",
+        "same_samples": true
+      }
+    }
+  ]
+}

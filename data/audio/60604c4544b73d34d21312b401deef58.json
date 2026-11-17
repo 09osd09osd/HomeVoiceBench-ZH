@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/60604c4544b73d34d21312b401deef58.wav",
+  "sha256": "f22615c71fbf0c962eeda4bf68db8bf82253b0e8cf9f1e344d99e3e7f92110bd",
+  "duration_seconds": 3.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d609b19a-2c13-96ee-9930-9fbf41c10adf",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 784,
+    "total_tokens": 977,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我有点累，想练一句简单的英文，就一句，别太长。",
+  "spoken_text": "我有点累，想练一句简单的英文，就一句，别太长。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我有点累，想练一句简单的英文。就一句，别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我有点累，想练一句简单的英文。就一句，别太长。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0f1bbf7a-1ac4-9c2a-a1d5-b2281376990e",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f22615c71fbf0c962eeda4bf68db8bf82253b0e8cf9f1e344d99e3e7f92110bd"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "811ac74afff1200abd72a02f7ae53a785aafd7fb04dc04bc8818b5ff40837880",
+    "canonical_sha256": "f22615c71fbf0c962eeda4bf68db8bf82253b0e8cf9f1e344d99e3e7f92110bd",
+    "pcm_sha256": "d0b7f5e1832b1b3caf050fd92503fa66a6178ad667deb7d82cdb593ef3d26c36",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 94080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我有点累，想练一句简单的英文，就一句，别太长。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我有点累，想练一句简单的英文，就一句，别太长。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-029f3c27-7105-950b-9c6a-89e427b64fb0",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 209,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "811ac74afff1200abd72a02f7ae53a785aafd7fb04dc04bc8818b5ff40837880",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "811ac74afff1200abd72a02f7ae53a785aafd7fb04dc04bc8818b5ff40837880",
+        "canonical_audio_sha256": "f22615c71fbf0c962eeda4bf68db8bf82253b0e8cf9f1e344d99e3e7f92110bd",
+        "pcm_sha256": "d0b7f5e1832b1b3caf050fd92503fa66a6178ad667deb7d82cdb593ef3d26c36",
+        "same_samples": true
+      }
+    }
+  ]
+}

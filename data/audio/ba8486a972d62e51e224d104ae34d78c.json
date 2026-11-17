@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/ba8486a972d62e51e224d104ae34d78c.wav",
+  "sha256": "43d781bb6242c5410b1e0b03a32f5ae44433295f92f203ed03a598985ab91c4d",
+  "duration_seconds": 5.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "27c09758-85d9-91c4-9235-edab73f76040",
+  "usage": {
+    "input_tokens": 202,
+    "output_tokens": 1000,
+    "total_tokens": 1202,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子问天为什么会下雨，你能用他能听懂的话解释吗？他今年六岁。",
+  "spoken_text": "孩子问天为什么会下雨，你能用他能听懂的话解释吗？他今年六岁。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子问：“天为什么会下雨？”你能用他能听懂的话解释吗？他今年6岁。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子问：“天为什么会下雨？”你能用他能听懂的话解释吗？他今年6岁。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6e156273-b48f-9bfe-9fe0-5d5da5cb52c6",
+    "usage": {
+      "prompt_tokens": 245,
+      "total_tokens": 291,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "43d781bb6242c5410b1e0b03a32f5ae44433295f92f203ed03a598985ab91c4d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "963a3fc04d624c539c790b898d3af315d5a30a327a23178d30e53a5da50ac958",
+    "canonical_sha256": "43d781bb6242c5410b1e0b03a32f5ae44433295f92f203ed03a598985ab91c4d",
+    "pcm_sha256": "b0ddda88810d4907be79f4a391b977a4288f8cef4202381903b8e6f69e19924d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 120000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子问天为什么会下雨，你能用他能听懂的话解释吗？他今年六岁。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "孩子问天为什么会下雨，你能用他能听懂的话解释吗？他今年六岁。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0302a864-004f-9f0c-af02-fcfbe4f382c5",
+      "usage": {
+        "prompt_tokens": 184,
+        "total_tokens": 229,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "963a3fc04d624c539c790b898d3af315d5a30a327a23178d30e53a5da50ac958",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "963a3fc04d624c539c790b898d3af315d5a30a327a23178d30e53a5da50ac958",
+        "canonical_audio_sha256": "43d781bb6242c5410b1e0b03a32f5ae44433295f92f203ed03a598985ab91c4d",
+        "pcm_sha256": "b0ddda88810d4907be79f4a391b977a4288f8cef4202381903b8e6f69e19924d",
+        "same_samples": true
+      }
+    }
+  ]
+}

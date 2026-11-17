@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/f5287f735e08b0a8b05fc307cab76eba.wav",
+  "sha256": "04a07717cc494752a8e5c588e27c13add64678bf15d79d35877fc347342d14ef",
+  "duration_seconds": 6.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "02598905-2c20-9867-a00b-54dc5fbf6ca1",
+  "usage": {
+    "input_tokens": 211,
+    "output_tokens": 1328,
+    "total_tokens": 1539,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天去超市买水果，本来想买苹果，结果拎回来一袋梨。我有点累，想简单说说这事。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天去超市买水果，本来想买苹果，结果拎回来一袋梨。我有点累，想简单说说这事儿。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b816e99c-18dc-9e59-993f-7b4dc2f54dad",
+    "usage": {
+      "prompt_tokens": 175,
+      "total_tokens": 227,
+      "completion_tokens": 52,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 131
+      },
+      "completion_tokens_details": {
+        "text_tokens": 52
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "fb54b6531ccf76eeee8b2dc0c6322847ec76b559a1a4b64ef6c6ba4f73e6fce4",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "fb54b6531ccf76eeee8b2dc0c6322847ec76b559a1a4b64ef6c6ba4f73e6fce4",
+      "canonical_audio_sha256": "04a07717cc494752a8e5c588e27c13add64678bf15d79d35877fc347342d14ef",
+      "pcm_sha256": "d1e40d5a35bc7f6348ee93ca6f9bc583b14fdc39a85a9b849a4d41d7c7333949",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "fb54b6531ccf76eeee8b2dc0c6322847ec76b559a1a4b64ef6c6ba4f73e6fce4",
+    "canonical_sha256": "04a07717cc494752a8e5c588e27c13add64678bf15d79d35877fc347342d14ef",
+    "pcm_sha256": "d1e40d5a35bc7f6348ee93ca6f9bc583b14fdc39a85a9b849a4d41d7c7333949",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 159360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

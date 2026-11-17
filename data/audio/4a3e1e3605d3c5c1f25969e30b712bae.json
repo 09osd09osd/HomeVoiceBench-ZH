@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/4a3e1e3605d3c5c1f25969e30b712bae.wav",
+  "sha256": "9195cd7154d17da933fec7652a481263ee6ae8e0f5b92d413d8101e9a9d76286",
+  "duration_seconds": 4.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "6104b9dc-5aaf-9e4d-b545-8e132fe32131",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 808,
+    "total_tokens": 990,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天试着做了个番茄炒蛋，不过番茄有点酸，整体味道还行。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天试着做了个番茄炒蛋，不过番茄有点酸，整体味道还行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-eb69ad63-c147-9a33-bac8-a508c736ea0a",
+    "usage": {
+      "prompt_tokens": 152,
+      "total_tokens": 195,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 122
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ef39d579738283b392a75743021a11d02d781c684d17175245dd7635a65c30e1",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "ef39d579738283b392a75743021a11d02d781c684d17175245dd7635a65c30e1",
+      "canonical_audio_sha256": "9195cd7154d17da933fec7652a481263ee6ae8e0f5b92d413d8101e9a9d76286",
+      "pcm_sha256": "90466c0bd4df8b34affe814b663fa9dfccca5d7936ef035ed09a576148943353",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ef39d579738283b392a75743021a11d02d781c684d17175245dd7635a65c30e1",
+    "canonical_sha256": "9195cd7154d17da933fec7652a481263ee6ae8e0f5b92d413d8101e9a9d76286",
+    "pcm_sha256": "90466c0bd4df8b34affe814b663fa9dfccca5d7936ef035ed09a576148943353",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 96960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

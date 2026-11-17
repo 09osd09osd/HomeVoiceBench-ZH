@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/7bcf2ca3f56329e071d9f3641fe94898.wav",
+  "sha256": "6fb18a7100910541aa76fa786c543e36d7a27e7e711bbb767e73a6c65d2622e8",
+  "duration_seconds": 3.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b805ce7a-2c66-92bf-8f99-72f3f45e710b",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 736,
+    "total_tokens": 923,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才指的是客厅灯，打开到80%，其他灯别动。",
+  "spoken_text": "我刚才指的是客厅灯，打开到百分之八十，其他灯别动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才指的是客厅灯，打开到百分之八十，其他灯别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才指的是客厅灯，打开到百分之八十，其他灯别动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8c5da646-ec41-9324-acdd-b885acff90f8",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6fb18a7100910541aa76fa786c543e36d7a27e7e711bbb767e73a6c65d2622e8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4290044699f4cc70f81f0439e7eb48fc6144804fd615d2de27441970cc448fe7",
+    "canonical_sha256": "6fb18a7100910541aa76fa786c543e36d7a27e7e711bbb767e73a6c65d2622e8",
+    "pcm_sha256": "65dd9445c389235942989604fecc6d6de076e56693831299f4c8d745e5971e25",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 88320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才指的是客厅灯，打开到百分之八十，其他灯别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我刚才指的是客厅灯，打开到百分之八十，其他灯别动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-cf76a89f-4d9b-9b75-ad03-a3f6897aaaae",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 209,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4290044699f4cc70f81f0439e7eb48fc6144804fd615d2de27441970cc448fe7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4290044699f4cc70f81f0439e7eb48fc6144804fd615d2de27441970cc448fe7",
+        "canonical_audio_sha256": "6fb18a7100910541aa76fa786c543e36d7a27e7e711bbb767e73a6c65d2622e8",
+        "pcm_sha256": "65dd9445c389235942989604fecc6d6de076e56693831299f4c8d745e5971e25",
+        "same_samples": true
+      }
+    }
+  ]
+}

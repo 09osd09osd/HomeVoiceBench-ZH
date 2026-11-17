@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/3cc66fa4a8a2b59afe773d35609d056a.wav",
+  "sha256": "249713cd3e0852c221dac0f1ba3933b9983238c9ee63a0cce78acd0ad8ed8e13",
+  "duration_seconds": 4.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "66065433-d947-99ed-8e79-84e41f358339",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 800,
+    "total_tokens": 982,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "买了个全麦吐司，不过我最近在控制糖分，不太敢买甜面包。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "买了个全麦吐司，不过我最近在控制糖分，不太敢买甜面包。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-01ba0674-c8e6-92aa-a2cc-15f431cdd67e",
+    "usage": {
+      "prompt_tokens": 153,
+      "total_tokens": 197,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 123
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8fceaf062e555e0a6f26aacee0924423cefc2dca89724673b6c8921fd3a506a2",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "8fceaf062e555e0a6f26aacee0924423cefc2dca89724673b6c8921fd3a506a2",
+      "canonical_audio_sha256": "249713cd3e0852c221dac0f1ba3933b9983238c9ee63a0cce78acd0ad8ed8e13",
+      "pcm_sha256": "5b63c79aef03ecfb7e29b7b884bbe36704f1af1c627c92ae383cfd7dca07c1c7",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "8fceaf062e555e0a6f26aacee0924423cefc2dca89724673b6c8921fd3a506a2",
+    "canonical_sha256": "249713cd3e0852c221dac0f1ba3933b9983238c9ee63a0cce78acd0ad8ed8e13",
+    "pcm_sha256": "5b63c79aef03ecfb7e29b7b884bbe36704f1af1c627c92ae383cfd7dca07c1c7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 96000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

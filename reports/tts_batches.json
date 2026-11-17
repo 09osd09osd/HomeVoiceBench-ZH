@@ -1,0 +1,44 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "batch_size": 18,
+  "adaptive_max_batch_size": 18,
+  "torch": "2.11.0+cu130",
+  "transformers": "4.57.3",
+  "cuda": "13.0",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "seed": 42,
+  "generation": {
+    "do_sample": true,
+    "repetition_penalty": 1.05,
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 50,
+    "subtalker_dosample": true,
+    "subtalker_temperature": 0.9,
+    "subtalker_top_p": 1.0,
+    "subtalker_top_k": 50,
+    "max_new_tokens": 1024
+  },
+  "timing_scope": "offline_batch_inference_not_realtime_latency",
+  "pilot": false,
+  "allocator_cache_policy": "release_unused_after_each_batch",
+  "cuda_allocator_memory_fraction": 0.7,
+  "status": "completed",
+  "tasks": 2,
+  "completed_tasks": 2,
+  "wall_seconds": 20.108999999938533,
+  "batches": [
+    {
+      "offset": 0,
+      "n": 2,
+      "seconds": 20.108999999938533,
+      "peak_gpu_bytes": 2951719936,
+      "reserved_gpu_bytes_before_release": 3443523584,
+      "reserved_gpu_bytes_after_release": 2290089984
+    }
+  ],
+  "final_batch_size": 18,
+  "resource_retries": [],
+  "batch_adjustments": []
+}

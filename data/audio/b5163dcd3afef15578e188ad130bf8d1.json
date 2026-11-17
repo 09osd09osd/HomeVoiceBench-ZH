@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/b5163dcd3afef15578e188ad130bf8d1.wav",
+  "sha256": "cb24e1339c26f6ba7b49d8d6c3b7c760cd970db07409d3702961775fc26848e4",
+  "duration_seconds": 5.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8e8ecf99-1810-9cec-864a-5557070c319f",
+  "usage": {
+    "input_tokens": 241,
+    "output_tokens": 1192,
+    "total_tokens": 1433,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我不想一直打电话，怕他开车分心。能不能就陪我说说话，让我别老往坏处想？",
+  "spoken_text": "我不想一直打电话，怕他开车分心。能不能就陪我说说话，让我别老往坏处想？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我不想一直打电话，怕他开车分心。能不能就陪我说说话，让我别老往坏处想？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我不想一直打电话，怕他开车分心。能不能就陪我说说话，让我别老往坏处想？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-84a6deff-7871-90e3-8fbd-7369efcc7849",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 298,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "cb24e1339c26f6ba7b49d8d6c3b7c760cd970db07409d3702961775fc26848e4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "87a575042dd1bf3b2334eb3d8930e22b0afddd1eb8e5f7273f5eca203ec226fe",
+    "canonical_sha256": "cb24e1339c26f6ba7b49d8d6c3b7c760cd970db07409d3702961775fc26848e4",
+    "pcm_sha256": "d1c0e78965d2dccdad587b8345e488c6e2a4263a9a9840cabbb1232ac0ff1690",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 143040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我不想一直打电话，怕他开车分心。能不能就陪我说说话，让我别老往坏处想？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b0f361c8-7ba5-95bb-977a-f0c4b5214f21",
+      "usage": {
+        "prompt_tokens": 165,
+        "total_tokens": 214,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "87a575042dd1bf3b2334eb3d8930e22b0afddd1eb8e5f7273f5eca203ec226fe",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "87a575042dd1bf3b2334eb3d8930e22b0afddd1eb8e5f7273f5eca203ec226fe",
+        "canonical_audio_sha256": "cb24e1339c26f6ba7b49d8d6c3b7c760cd970db07409d3702961775fc26848e4",
+        "pcm_sha256": "d1c0e78965d2dccdad587b8345e488c6e2a4263a9a9840cabbb1232ac0ff1690",
+        "same_samples": true
+      }
+    }
+  ]
+}

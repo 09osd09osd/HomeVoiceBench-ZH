@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/8ed8faaf64b0862182146700c021aea6.wav",
+  "sha256": "5338028078be4e3f46bc4439d113cbb5672b066b84ea9e84f646ae99086e6baa",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "716fdb04-7aa9-9afc-a7a1-9d556f500af1",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 824,
+    "total_tokens": 1012,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "孩子问月亮为什么有时圆有时弯，你能简单解释吗？",
+  "spoken_text": "孩子问月亮为什么有时圆有时弯，你能简单解释吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "孩子问：“月亮为什么有时圆有时弯？”你能简单解释吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "孩子问：“月亮为什么有时圆有时弯？”你能简单解释吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ab4817f6-a594-9827-8ee7-e2f4ae453bed",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 274,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5338028078be4e3f46bc4439d113cbb5672b066b84ea9e84f646ae99086e6baa"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e940d7f797ba05e50a2ca1bd58cde12ac2b9b03a93e86a678ab2e1828c805bd7",
+    "canonical_sha256": "5338028078be4e3f46bc4439d113cbb5672b066b84ea9e84f646ae99086e6baa",
+    "pcm_sha256": "df4f7beabf08ab41e634870b37021bb1c9aadce20fc1823891d12681602e04ce",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "孩子问：“月亮为什么有时圆有时弯？”你能简单解释吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "孩子问：“月亮为什么有时圆有时弯？”你能简单解释吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f4a661b2-3ce3-96a4-8f1e-5a9a0d0b1266",
+      "usage": {
+        "prompt_tokens": 172,
+        "total_tokens": 213,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e940d7f797ba05e50a2ca1bd58cde12ac2b9b03a93e86a678ab2e1828c805bd7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e940d7f797ba05e50a2ca1bd58cde12ac2b9b03a93e86a678ab2e1828c805bd7",
+        "canonical_audio_sha256": "5338028078be4e3f46bc4439d113cbb5672b066b84ea9e84f646ae99086e6baa",
+        "pcm_sha256": "df4f7beabf08ab41e634870b37021bb1c9aadce20fc1823891d12681602e04ce",
+        "same_samples": true
+      }
+    }
+  ]
+}

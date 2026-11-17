@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/d63c9de525909bde340edab00c1fae5f.wav",
+  "sha256": "f6d20a3e91235774d886d6a76b0b08393bc5626e2feb62196e477c5f94c0fc87",
+  "duration_seconds": 4.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "37d07530-3292-9f79-8f16-12f1d20dc50f",
+  "usage": {
+    "input_tokens": 186,
+    "output_tokens": 944,
+    "total_tokens": 1130,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "暂停客厅音箱正在播放的《小熊找月亮》。",
+  "spoken_text": "暂停客厅音箱正在播放的《小熊找月亮》。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "暂停客厅音箱正在播放的《小熊找月亮》。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "暂停客厅音箱正在播放的《小熊找月亮》。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c730fa88-2adb-95f7-9ba5-d520d70a3510",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 269,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f6d20a3e91235774d886d6a76b0b08393bc5626e2feb62196e477c5f94c0fc87"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "774a2c34e42d68d64556338701bac5f2379dbd1275c50ba0bb9c8a87aa301e5a",
+    "canonical_sha256": "f6d20a3e91235774d886d6a76b0b08393bc5626e2feb62196e477c5f94c0fc87",
+    "pcm_sha256": "ac00ee5ba98a653d750519a32c3c44fe5687986e42024ee7dd0a40b0f5e48703",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 113280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "暂停客厅音箱正在播放的小熊找月亮。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "暂停客厅音箱正在播放的小熊找月亮。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-96356002-42e9-9c62-9ffa-bc8aeb712ab9",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 206,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "774a2c34e42d68d64556338701bac5f2379dbd1275c50ba0bb9c8a87aa301e5a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "774a2c34e42d68d64556338701bac5f2379dbd1275c50ba0bb9c8a87aa301e5a",
+        "canonical_audio_sha256": "f6d20a3e91235774d886d6a76b0b08393bc5626e2feb62196e477c5f94c0fc87",
+        "pcm_sha256": "ac00ee5ba98a653d750519a32c3c44fe5687986e42024ee7dd0a40b0f5e48703",
+        "same_samples": true
+      }
+    }
+  ]
+}

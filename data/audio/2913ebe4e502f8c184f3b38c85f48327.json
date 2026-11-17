@@ -1,0 +1,63 @@
+{
+  "path": "assets/audio/input/2913ebe4e502f8c184f3b38c85f48327.wav",
+  "sha256": "e965a19d0e3002f0843af7eed904487f32f035ff36dee3e076a276b975347b52",
+  "duration_seconds": 4.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b629208b-0575-9a09-bb77-7bbc6b09a40c",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 840,
+    "total_tokens": 1022,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "傍晚去旁边公园走了两圈，今天人不多，湖边风挺舒服的。",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "傍晚去旁边公园走了两圈，今天人不多，湖边风挺舒服的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c4be1bd7-12b1-95a7-8d10-09f7ab6cca3f",
+    "usage": {
+      "prompt_tokens": 152,
+      "total_tokens": 195,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 122
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "9bf818c640a7d51c2877ca2ed0162ad6cf4a15721045077bbbd040eb9123d180",
+    "equivalent_pcm_header_repair": {
+      "judged_audio_sha256": "9bf818c640a7d51c2877ca2ed0162ad6cf4a15721045077bbbd040eb9123d180",
+      "canonical_audio_sha256": "e965a19d0e3002f0843af7eed904487f32f035ff36dee3e076a276b975347b52",
+      "pcm_sha256": "324877693c4b40627bcb01786d2100c7f300d0854009366e03ae55086c7ab902",
+      "same_samples": true
+    }
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9bf818c640a7d51c2877ca2ed0162ad6cf4a15721045077bbbd040eb9123d180",
+    "canonical_sha256": "e965a19d0e3002f0843af7eed904487f32f035ff36dee3e076a276b975347b52",
+    "pcm_sha256": "324877693c4b40627bcb01786d2100c7f300d0854009366e03ae55086c7ab902",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 100800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  }
+}

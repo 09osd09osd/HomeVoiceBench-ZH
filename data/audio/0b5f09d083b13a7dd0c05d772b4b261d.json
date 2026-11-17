@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/0b5f09d083b13a7dd0c05d772b4b261d.wav",
+  "sha256": "7836bf805185b06ff822d66bc869a2297968973c36b2494c6fd2b974798969c9",
+  "duration_seconds": 4.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8f7b6619-4157-9f48-92e7-a8f0cb7e6be6",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 992,
+    "total_tokens": 1195,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我家孩子说好六点放学回来，现在都快七点了还没到家，电话也没接，我心里特别慌。",
+  "spoken_text": "我家孩子说好六点放学回来，现在都快七点了还没到家，电话也没接，我心里特别慌。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我家孩子说好六点放学回来，现在都快七点了还没到家。电话也没接，我心里特别慌。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我家孩子说好六点放学回来，现在都快七点了还没到家。电话也没接，我心里特别慌。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-770e89b4-b922-9d7e-ac01-d071243f73bb",
+    "usage": {
+      "prompt_tokens": 241,
+      "total_tokens": 289,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7836bf805185b06ff822d66bc869a2297968973c36b2494c6fd2b974798969c9"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ef864193b95366c1469a89e3ed28710562119bee2524b54fb44cb0653b7e220c",
+    "canonical_sha256": "7836bf805185b06ff822d66bc869a2297968973c36b2494c6fd2b974798969c9",
+    "pcm_sha256": "5032f7ff05d0224f164fd91211526e5df1bbfed939a142bdaa79a30446fbd5c3",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 119040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我家孩子说好六点放学回来，现在都快七点了还没到家，电话也没接，我心里特别慌。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5124788b-cca7-9275-bae7-bbb22f0b62f2",
+      "usage": {
+        "prompt_tokens": 157,
+        "total_tokens": 205,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ef864193b95366c1469a89e3ed28710562119bee2524b54fb44cb0653b7e220c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ef864193b95366c1469a89e3ed28710562119bee2524b54fb44cb0653b7e220c",
+        "canonical_audio_sha256": "7836bf805185b06ff822d66bc869a2297968973c36b2494c6fd2b974798969c9",
+        "pcm_sha256": "5032f7ff05d0224f164fd91211526e5df1bbfed939a142bdaa79a30446fbd5c3",
+        "same_samples": true
+      }
+    }
+  ]
+}

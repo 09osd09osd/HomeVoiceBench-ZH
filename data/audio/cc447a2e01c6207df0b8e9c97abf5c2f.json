@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/cc447a2e01c6207df0b8e9c97abf5c2f.wav",
+  "sha256": "3260c67cc468dae79ad8da10e3feda668b7572f41fe4db9b072dfc077f35f45c",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b0d84a8a-7a28-9ad6-8cee-468848ddbe6d",
+  "usage": {
+    "input_tokens": 173,
+    "output_tokens": 640,
+    "total_tokens": 813,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我说错了，孩子是九点洗漱，不是八点半。",
+  "spoken_text": "我说错了，孩子是九点洗漱，不是八点半。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我说错了，孩子是九点洗漱，不是八点半。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我说错了，孩子是九点洗漱，不是八点半。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b892c1b5-4dab-93d7-8476-294e293336e7",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 262,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3260c67cc468dae79ad8da10e3feda668b7572f41fe4db9b072dfc077f35f45c"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "1e03b42d1d01e51e1b6b77d686ef09d181dee30467e3b9a5b0e167d3bf81b525",
+    "canonical_sha256": "3260c67cc468dae79ad8da10e3feda668b7572f41fe4db9b072dfc077f35f45c",
+    "pcm_sha256": "b501ba548b47b853e855042a2ce00593e225d25fa384913a87435daa5961a174",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我说错了，孩子是九点洗漱，不是八点半。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我说错了，孩子是九点洗漱，不是八点半。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-743f2e6a-8300-91f0-a1a2-ce0ea2c5bd30",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 201,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "1e03b42d1d01e51e1b6b77d686ef09d181dee30467e3b9a5b0e167d3bf81b525",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "1e03b42d1d01e51e1b6b77d686ef09d181dee30467e3b9a5b0e167d3bf81b525",
+        "canonical_audio_sha256": "3260c67cc468dae79ad8da10e3feda668b7572f41fe4db9b072dfc077f35f45c",
+        "pcm_sha256": "b501ba548b47b853e855042a2ce00593e225d25fa384913a87435daa5961a174",
+        "same_samples": true
+      }
+    }
+  ]
+}

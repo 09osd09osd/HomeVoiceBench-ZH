@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/bb05360913acfb66fcc1c88ec8acff17.wav",
+  "sha256": "b2c783874eded4ef4b4dedb77d68289a75755a59e4510b284e17a0251faee5ef",
+  "duration_seconds": 4.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "da5dc279-68ad-9a46-814d-a496663e5b1b",
+  "usage": {
+    "input_tokens": 197,
+    "output_tokens": 864,
+    "total_tokens": 1061,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是周五，是周六晚上，家里有小孩这条不变。",
+  "spoken_text": "更正一下，不是周五，是周六晚上，家里有小孩这条不变。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是周五，是周六晚上，家里有小孩这条不变。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是周五，是周六晚上，家里有小孩这条不变。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b31de846-ad36-9d3d-8e36-cc247ee0adbf",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b2c783874eded4ef4b4dedb77d68289a75755a59e4510b284e17a0251faee5ef"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "673441c3ca4c945327f41d9282739a06ebb9f247059c0f2541387e2a70c2083c",
+    "canonical_sha256": "b2c783874eded4ef4b4dedb77d68289a75755a59e4510b284e17a0251faee5ef",
+    "pcm_sha256": "edab0657f67dfbb035b5cc94179219e7622fccf283ea2e47df25096a709fdf74",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 103680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是周五，是周六晚上，家里有小孩儿这条不变。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，不是周五，是周六晚上，家里有小孩儿这条不变。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": false,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-999dbf97-15f1-9d87-8664-08ac10ddc0fb",
+      "usage": {
+        "prompt_tokens": 173,
+        "total_tokens": 215,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "673441c3ca4c945327f41d9282739a06ebb9f247059c0f2541387e2a70c2083c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "673441c3ca4c945327f41d9282739a06ebb9f247059c0f2541387e2a70c2083c",
+        "canonical_audio_sha256": "b2c783874eded4ef4b4dedb77d68289a75755a59e4510b284e17a0251faee5ef",
+        "pcm_sha256": "edab0657f67dfbb035b5cc94179219e7622fccf283ea2e47df25096a709fdf74",
+        "same_samples": true
+      }
+    }
+  ]
+}

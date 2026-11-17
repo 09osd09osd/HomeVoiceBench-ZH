@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "8cc28dae24943524e85b1de920a798197d0d6fabefd18de52b448bb584dbba35",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-7dfeb0f3-c7b2-94fb-a19e-6309f54dabcb",
+  "usage": {
+    "prompt_tokens": 14420,
+    "total_tokens": 15608,
+    "completion_tokens": 1188,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 14420
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1188
+    }
+  },
+  "review_request_id": "chatcmpl-dd9d161e-b8ca-9270-9790-83f441f29364",
+  "review_usage": {
+    "prompt_tokens": 15230,
+    "total_tokens": 15316,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 15230
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T21_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T21_011",
+        "title": "卧室音箱设明日九点收毛巾闹钟",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱上帮我设个明天早上9点的闹钟，提醒我收阳台毛巾。",
+            "reference_text": "好的，明天12月2日早上9点，卧室音箱会提醒你收阳台毛巾。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_012",
+        "title": "卧室音箱设闹钟并改到九点半",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱上帮我设个明天早上9点的闹钟，提醒我收阳台毛巾。",
+            "reference_text": "好的，明天12月2日早上9点，卧室音箱会提醒你收阳台毛巾。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个闹钟改到明天9点半吧。",
+            "reference_text": "好的，已经改到明天12月2日早上9点半，提醒内容还是收阳台毛巾。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_013",
+        "title": "卧室音箱设闹钟、改时间并列出安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱上帮我设个明天早上9点的闹钟，提醒我收阳台毛巾。",
+            "reference_text": "好的，明天12月2日早上9点，卧室音箱会提醒你收阳台毛巾。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个闹钟改到明天9点半吧。",
+            "reference_text": "好的，已经改到明天12月2日早上9点半，提醒内容还是收阳台毛巾。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我现在启用的安排，别新增。",
+            "reference_text": "当前启用的有两条：一条是明天12月2日9点半在卧室音箱提醒收阳台毛巾；另一条是12月3日中午12点提醒晾衣服。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_014",
+        "title": "卧室音箱设闹钟、改时间、列出并取消新增",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱上帮我设个明天早上9点的闹钟，提醒我收阳台毛巾。",
+            "reference_text": "好的，明天12月2日早上9点，卧室音箱会提醒你收阳台毛巾。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个闹钟改到明天9点半吧。",
+            "reference_text": "好的，已经改到明天12月2日早上9点半，提醒内容还是收阳台毛巾。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我现在启用的安排，别新增。",
+            "reference_text": "当前启用的有两条：一条是明天12月2日9点半在卧室音箱提醒收阳台毛巾；另一条是12月3日中午12点提醒晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消收阳台毛巾的闹钟，晾衣服的提醒还保留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_015",
+        "title": "卧室音箱闹钟设改列取消并确认状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱上帮我设个明天早上9点的闹钟，提醒我收阳台毛巾。",
+            "reference_text": "好的，明天12月2日早上9点，卧室音箱会提醒你收阳台毛巾。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个闹钟改到明天9点半吧。",
+            "reference_text": "好的，已经改到明天12月2日早上9点半，提醒内容还是收阳台毛巾。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我现在启用的安排，别新增。",
+            "reference_text": "当前启用的有两条：一条是明天12月2日9点半在卧室音箱提醒收阳台毛巾；另一条是12月3日中午12点提醒晾衣服。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消收阳台毛巾的闹钟，晾衣服的提醒还保留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认一下现在启用的还剩什么，以及刚才那条是不是已经取消了。",
+            "reference_text": "现在启用的只剩12月3日中午12点晾衣服的提醒。收阳台毛巾的闹钟已经是取消状态。"
+          }
+        ]
+      }
+    ]
+  }
+}

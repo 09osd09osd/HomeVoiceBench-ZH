@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/0ac772a62ae92753c092608e2b7daa59.wav",
+  "sha256": "1a191aabba9f293a2cd73052c334bf7a73041f40512b773212d6f815a64a272b",
+  "duration_seconds": 4.6,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4aed9100-6e91-9652-8281-88da95e53973",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 920,
+    "total_tokens": 1101,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我把客厅灯打开，亮度调到20%，弄好了告诉我一声。",
+  "spoken_text": "帮我把客厅灯打开，亮度调到百分之二十，弄好了告诉我一声。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我把客厅灯打开，亮度调到百分之二十，弄好了告诉我一声。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我把客厅灯打开，亮度调到百分之二十，弄好了告诉我一声。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fcc42c9d-4e4a-9bf8-901a-4413980ba1b1",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1a191aabba9f293a2cd73052c334bf7a73041f40512b773212d6f815a64a272b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "08970fc20102e15af4b2b863990dc0c335b34e2ea8cdf698d8d368ab20e5f85f",
+    "canonical_sha256": "1a191aabba9f293a2cd73052c334bf7a73041f40512b773212d6f815a64a272b",
+    "pcm_sha256": "28e3a08f56f18531135a5b9bcea85f2b4da08ce986ed8ea2790be83c5e3a85e3",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 110400,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我把客厅灯打开，亮度调到百分之二十，弄好了告诉我一声。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我把客厅灯打开，亮度调到百分之二十，弄好了告诉我一声。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6725e9cd-ac3f-9126-8ca3-1d47a5025ddd",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 216,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "08970fc20102e15af4b2b863990dc0c335b34e2ea8cdf698d8d368ab20e5f85f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "08970fc20102e15af4b2b863990dc0c335b34e2ea8cdf698d8d368ab20e5f85f",
+        "canonical_audio_sha256": "1a191aabba9f293a2cd73052c334bf7a73041f40512b773212d6f815a64a272b",
+        "pcm_sha256": "28e3a08f56f18531135a5b9bcea85f2b4da08ce986ed8ea2790be83c5e3a85e3",
+        "same_samples": true
+      }
+    }
+  ]
+}

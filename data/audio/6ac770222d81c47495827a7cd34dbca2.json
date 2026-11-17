@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/6ac770222d81c47495827a7cd34dbca2.wav",
+  "sha256": "4541ecbd4c535613b41ff06b5bdce21eb65ee72713d86f80a7ccf8e0beb98152",
+  "duration_seconds": 5.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e4ea2ce7-2f25-9e24-8e59-b04ceafc5e94",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 1112,
+    "total_tokens": 1307,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想练一个简单的自我介绍，我说：大家好，我叫小李，来自湖南。你听听行不行。",
+  "spoken_text": "我想练一个简单的自我介绍，我说:大家好，我叫小李，来自湖南。你听听行不行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想练一个简单的自我介绍。我说：“大家好，我叫小李，来自湖南。”你听听行不行？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想练一个简单的自我介绍。我说：“大家好，我叫小李，来自湖南。”你听听行不行？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-f7e19474-fb1e-92b6-8f42-61bff1f22d5e",
+    "usage": {
+      "prompt_tokens": 246,
+      "total_tokens": 292,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4541ecbd4c535613b41ff06b5bdce21eb65ee72713d86f80a7ccf8e0beb98152"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f0b2c1997e4b5f09e317d9ffcc27382915c188d0222830c8599071e0f9a4f88f",
+    "canonical_sha256": "4541ecbd4c535613b41ff06b5bdce21eb65ee72713d86f80a7ccf8e0beb98152",
+    "pcm_sha256": "fa95d32648a0750c80cd5a9eea4b1a9efd65e5b28b7ddde458ab15bc44ef8401",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 133440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想练一个简单的自我介绍，我说：“大家好，我叫小李，来自湖南。”你听听行不行？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想练一个简单的自我介绍，我说：“大家好，我叫小李，来自湖南。”你听听行不行？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-33354f67-9dac-93e1-b60c-6a10c6ffc6a7",
+      "usage": {
+        "prompt_tokens": 185,
+        "total_tokens": 231,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 148
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f0b2c1997e4b5f09e317d9ffcc27382915c188d0222830c8599071e0f9a4f88f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f0b2c1997e4b5f09e317d9ffcc27382915c188d0222830c8599071e0f9a4f88f",
+        "canonical_audio_sha256": "4541ecbd4c535613b41ff06b5bdce21eb65ee72713d86f80a7ccf8e0beb98152",
+        "pcm_sha256": "fa95d32648a0750c80cd5a9eea4b1a9efd65e5b28b7ddde458ab15bc44ef8401",
+        "same_samples": true
+      }
+    }
+  ]
+}

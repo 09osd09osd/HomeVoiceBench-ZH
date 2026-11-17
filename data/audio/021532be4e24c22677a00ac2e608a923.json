@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/021532be4e24c22677a00ac2e608a923.wav",
+  "sha256": "5528cca1a7d0ca0e10079503f25810d3953a220047e5da36b2374ed41b6e27dd",
+  "duration_seconds": 4.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8cb04942-0826-9191-90ae-9fbdc145b960",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 840,
+    "total_tokens": 1028,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "只把客厅灯亮度改成30%，卧室的先别重试。",
+  "spoken_text": "只把客厅灯亮度改成百分之三十，卧室的先别重试。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "只把客厅灯亮度改成百分之三十，卧室的先别重试。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "只把客厅灯亮度改成百分之三十，卧室的先别重试。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a978d821-54eb-9876-a666-20c98f5b6d53",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 273,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5528cca1a7d0ca0e10079503f25810d3953a220047e5da36b2374ed41b6e27dd"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ff6f4940fe8fcd04b44bbabc2de186dec922aaf82fe9353f43d7697b4b317bd1",
+    "canonical_sha256": "5528cca1a7d0ca0e10079503f25810d3953a220047e5da36b2374ed41b6e27dd",
+    "pcm_sha256": "1b3e52fd2d41f3c0b757f3e6d2f2f8347237e8aa24dfbe114b720984f70497de",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 100800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "只把客厅灯亮度改成百分之三十，卧室的先别重试。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "只把客厅灯亮度改成百分之三十，卧室的先别重试。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-45c3ddbd-5a9b-94dc-be06-ca48e613122c",
+      "usage": {
+        "prompt_tokens": 172,
+        "total_tokens": 212,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ff6f4940fe8fcd04b44bbabc2de186dec922aaf82fe9353f43d7697b4b317bd1",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ff6f4940fe8fcd04b44bbabc2de186dec922aaf82fe9353f43d7697b4b317bd1",
+        "canonical_audio_sha256": "5528cca1a7d0ca0e10079503f25810d3953a220047e5da36b2374ed41b6e27dd",
+        "pcm_sha256": "1b3e52fd2d41f3c0b757f3e6d2f2f8347237e8aa24dfbe114b720984f70497de",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/583a7b5d3bad5e8533ab122774c8512a.wav",
+  "sha256": "81ca934be254cc4c4e1f6d32a90a2271f674bb06cb5ddfe87c843176d72c5242",
+  "duration_seconds": 7.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f88b0ecd-91bf-9fee-b7c1-67135aa7705f",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 1552,
+    "total_tokens": 1746,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我儿子说今晚八点前到家，现在八点半了还没回来，电话打得通但没人接，我有点坐不住。",
+  "spoken_text": "我儿子说今晚八点前到家，现在八点半了还没回来，电话打得通但没人接，我有点坐不住。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我儿子说今晚八点前到家，现在八点半了还没回来，电话打得通但没人接，我有点坐不住。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我儿子说今晚八点前到家，现在八点半了还没回来，电话打得通但没人接，我有点坐不住。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-86abd8f3-cf08-9a69-830c-1e6b3cac0b3a",
+    "usage": {
+      "prompt_tokens": 267,
+      "total_tokens": 320,
+      "completion_tokens": 53,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 216
+      },
+      "completion_tokens_details": {
+        "text_tokens": 53
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "81ca934be254cc4c4e1f6d32a90a2271f674bb06cb5ddfe87c843176d72c5242"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e4952cae0e36f6f02854b563f8fdf1ede275c25ae41eb35c39dafe88a05e9dea",
+    "canonical_sha256": "81ca934be254cc4c4e1f6d32a90a2271f674bb06cb5ddfe87c843176d72c5242",
+    "pcm_sha256": "babc87b441617bf24aecc27525c767994aedd96ad99b5adb85fddd7a8c289485",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 186240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我儿子说今晚八点前到家，现在八点半了还没回来，电话打得通但没人接，我有点坐不住。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-45159619-3222-9799-9408-e842c649cdd9",
+      "usage": {
+        "prompt_tokens": 183,
+        "total_tokens": 236,
+        "completion_tokens": 53,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 132
+        },
+        "completion_tokens_details": {
+          "text_tokens": 53
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e4952cae0e36f6f02854b563f8fdf1ede275c25ae41eb35c39dafe88a05e9dea",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e4952cae0e36f6f02854b563f8fdf1ede275c25ae41eb35c39dafe88a05e9dea",
+        "canonical_audio_sha256": "81ca934be254cc4c4e1f6d32a90a2271f674bb06cb5ddfe87c843176d72c5242",
+        "pcm_sha256": "babc87b441617bf24aecc27525c767994aedd96ad99b5adb85fddd7a8c289485",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "03de4d821568fe3a76f2bd3e5e488471cca401c5dd04b64b6d46c7af306fbda9",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-3a6bd0ed-f429-9ff9-b6ee-27fa256685d2",
+  "usage": {
+    "prompt_tokens": 13928,
+    "total_tokens": 14979,
+    "completion_tokens": 1051,
+    "prompt_tokens_details": {
+      "cached_tokens": 13568,
+      "image_tokens": 0,
+      "text_tokens": 13928
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1051
+    }
+  },
+  "review_request_id": "chatcmpl-07243a83-f881-9f3e-8205-48674352ac43",
+  "review_usage": {
+    "prompt_tokens": 14432,
+    "total_tokens": 14518,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 13312,
+      "image_tokens": 0,
+      "text_tokens": 14432
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T06_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 2,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T06_016",
+        "title": "打开客厅灯并调至80%亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我只打开客厅灯，亮度调到百分之八十。",
+            "reference_text": "已为你打开客厅灯，亮度调到了百分之八十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_017",
+        "title": "客厅灯亮度从80%降到20%",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我只打开客厅灯，亮度调到百分之八十。",
+            "reference_text": "已为你打开客厅灯，亮度调到了百分之八十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个灯亮度改成百分之二十，别的设置不要动。",
+            "reference_text": "已把客厅灯的亮度改成百分之二十，其他设置没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_018",
+        "title": "客厅灯失败重试后改亮度再核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我只打开客厅灯，亮度调到百分之八十；如果暂时失败或超时，可以再试一次，成功后别重复操作。",
+            "reference_text": "第一次操作失败了，我按你的要求重试了一次，现在客厅灯已经打开，亮度是百分之八十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个灯亮度改成百分之二十，别的设置不要动。",
+            "reference_text": "已把客厅灯的亮度改成百分之二十，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下客厅灯现在的亮度和开关状态，不要调整。",
+            "reference_text": "客厅灯现在是开着的，亮度是百分之二十。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_019",
+        "title": "客厅灯调亮度核对后关闭保留设置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我只打开客厅灯，亮度调到百分之八十；如果暂时失败或超时，可以再试一次，成功后别重复操作。",
+            "reference_text": "第一次操作超时了，我按你的要求重试了一次，现在客厅灯已经打开，亮度是百分之八十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个灯亮度改成百分之二十，别的设置不要动。",
+            "reference_text": "已把客厅灯的亮度改成百分之二十，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下客厅灯现在的亮度和开关状态，不要调整。",
+            "reference_text": "客厅灯现在是开着的，亮度是百分之二十。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅灯关掉，亮度设置保留。",
+            "reference_text": "已把客厅灯关掉，亮度设置还是百分之二十，没有变。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_020",
+        "title": "客厅灯多轮调光关灯与状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我只打开客厅灯，亮度调到百分之八十；如果暂时失败或超时，可以再试一次，成功后别重复操作。",
+            "reference_text": "已为你打开客厅灯，亮度调到了百分之八十。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个灯亮度改成百分之二十，别的设置不要动。",
+            "reference_text": "已把客厅灯的亮度改成百分之二十，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下客厅灯现在的亮度和开关状态，不要调整。",
+            "reference_text": "客厅灯现在是开着的，亮度是百分之二十。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅灯关掉，亮度设置保留。",
+            "reference_text": "已把客厅灯关掉，亮度设置还是百分之二十，没有变。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅灯的开关状态，其他设备不要改。",
+            "reference_text": "客厅灯现在是关着的。"
+          }
+        ]
+      }
+    ]
+  }
+}

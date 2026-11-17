@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/b6fa14797c87b556a947b75d83f238dc.wav",
+  "sha256": "edc6f99a19f7c8e501cb69b9ae90816049eca8711b8981b3153348324a1c7967",
+  "duration_seconds": 4.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "db7301ba-d35c-986a-901c-8e3d6ba6e926",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 896,
+    "total_tokens": 1072,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "他六岁，喜欢恐龙，最好用恐龙来打比方。",
+  "spoken_text": "他六岁，喜欢恐龙，最好用恐龙来打比方。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "他六岁，喜欢恐龙，最好用恐龙来打比方。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "他六岁，喜欢恐龙，最好用恐龙来打比方。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a6f08a38-b09c-9e45-885c-f885e7f1b12b",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 273,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "edc6f99a19f7c8e501cb69b9ae90816049eca8711b8981b3153348324a1c7967"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "6d8a6797e150600eccc1d5c88a3444b01924671117b26c79c059a7441e4b4b57",
+    "canonical_sha256": "edc6f99a19f7c8e501cb69b9ae90816049eca8711b8981b3153348324a1c7967",
+    "pcm_sha256": "0db11c1a01234660f3c922c9cd7c56d83985ab5465eefe3b7faf0796e0206764",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 107520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "他六岁，喜欢恐龙，最好用恐龙来打比方。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "他六岁，喜欢恐龙，最好用恐龙来打比方。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2591c3ac-5d64-9842-93da-dbc02d595b9d",
+      "usage": {
+        "prompt_tokens": 172,
+        "total_tokens": 212,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "6d8a6797e150600eccc1d5c88a3444b01924671117b26c79c059a7441e4b4b57",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "6d8a6797e150600eccc1d5c88a3444b01924671117b26c79c059a7441e4b4b57",
+        "canonical_audio_sha256": "edc6f99a19f7c8e501cb69b9ae90816049eca8711b8981b3153348324a1c7967",
+        "pcm_sha256": "0db11c1a01234660f3c922c9cd7c56d83985ab5465eefe3b7faf0796e0206764",
+        "same_samples": true
+      }
+    }
+  ]
+}

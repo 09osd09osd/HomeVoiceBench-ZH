@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/2c98ed7b45320f3ac250ea927d2d641d.wav",
+  "sha256": "756cef24338c28df1f82ab53016a8ffca3b4ec1952ff6251fa62220d345a678b",
+  "duration_seconds": 3.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b5fe8fb6-702d-9b6d-beb3-e2f80fdd5e8d",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 632,
+    "total_tokens": 817,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说它放在客厅，更正一下，是放在卧室的。",
+  "spoken_text": "我刚才说它放在客厅，更正一下，是放在卧室的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说它放在客厅，更正一下，是放在卧室的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说它放在客厅，更正一下，是放在卧室的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c9351a70-8c80-9c86-bd2f-d60b70c5b740",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "756cef24338c28df1f82ab53016a8ffca3b4ec1952ff6251fa62220d345a678b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b72bf7a6419ab5de8740cdb2982d4a423bfd72e1386bfc3c9e05415619107cdb",
+    "canonical_sha256": "756cef24338c28df1f82ab53016a8ffca3b4ec1952ff6251fa62220d345a678b",
+    "pcm_sha256": "b1a43747c58bfcc2577b325be81a5ca30517183c6e09500270192f77973a31f7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 75840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说它放在客厅，更正一下是放在卧室的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我刚才说它放在客厅，更正一下是放在卧室的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f5a17f30-550a-9d42-b6d6-3ef437405681",
+      "usage": {
+        "prompt_tokens": 166,
+        "total_tokens": 206,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b72bf7a6419ab5de8740cdb2982d4a423bfd72e1386bfc3c9e05415619107cdb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b72bf7a6419ab5de8740cdb2982d4a423bfd72e1386bfc3c9e05415619107cdb",
+        "canonical_audio_sha256": "756cef24338c28df1f82ab53016a8ffca3b4ec1952ff6251fa62220d345a678b",
+        "pcm_sha256": "b1a43747c58bfcc2577b325be81a5ca30517183c6e09500270192f77973a31f7",
+        "same_samples": true
+      }
+    }
+  ]
+}

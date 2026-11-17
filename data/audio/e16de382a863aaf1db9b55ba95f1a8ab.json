@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e16de382a863aaf1db9b55ba95f1a8ab.wav",
+  "sha256": "6137d81809c3e90d826f6dc54298be05f3449b3b281d0f40d11df19dd66f79f8",
+  "duration_seconds": 5.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "aa2497b0-4799-95e3-a406-11c782289a2a",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 1024,
+    "total_tokens": 1215,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "对了，预算改成一百五十块吧，其他不变，还是半天、一家三口、轻松点。",
+  "spoken_text": "对了，预算改成一百五十块吧，其他不变，还是半天、一家三口、轻松点。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "对了，预算改成150块吧，其他不变，还是半天，一家三口轻松点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "对了，预算改成150块吧，其他不变，还是半天，一家三口轻松点。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d2225444-722b-90d1-8712-33b242afb556",
+    "usage": {
+      "prompt_tokens": 246,
+      "total_tokens": 292,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6137d81809c3e90d826f6dc54298be05f3449b3b281d0f40d11df19dd66f79f8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5bd6582982798c6cc26d33c9044d66007e9b494a40bd7bd4086e17ac91161ba7",
+    "canonical_sha256": "6137d81809c3e90d826f6dc54298be05f3449b3b281d0f40d11df19dd66f79f8",
+    "pcm_sha256": "756450d469af54531b7dc000345dd5236169cdaf2014ce51f0f4b6a847863d35",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 122880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "对了，预算改成150块吧，其他不变，还是半天、一家三口、轻松点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "对了，预算改成150块吧，其他不变，还是半天、一家三口、轻松点。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3a4cfb84-1fa4-906b-b38f-19e64857dc69",
+      "usage": {
+        "prompt_tokens": 185,
+        "total_tokens": 232,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 148
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5bd6582982798c6cc26d33c9044d66007e9b494a40bd7bd4086e17ac91161ba7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5bd6582982798c6cc26d33c9044d66007e9b494a40bd7bd4086e17ac91161ba7",
+        "canonical_audio_sha256": "6137d81809c3e90d826f6dc54298be05f3449b3b281d0f40d11df19dd66f79f8",
+        "pcm_sha256": "756450d469af54531b7dc000345dd5236169cdaf2014ce51f0f4b6a847863d35",
+        "same_samples": true
+      }
+    }
+  ]
+}

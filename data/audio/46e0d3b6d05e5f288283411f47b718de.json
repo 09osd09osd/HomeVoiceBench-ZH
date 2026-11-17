@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/46e0d3b6d05e5f288283411f47b718de.wav",
+  "sha256": "74ed97f26af961346702b85f56173b5db27810c3d331b8bce627851d6ed61d9d",
+  "duration_seconds": 6.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3d3111a7-921e-9bda-b3c2-8b39444c17ef",
+  "usage": {
+    "input_tokens": 210,
+    "output_tokens": 1368,
+    "total_tokens": 1578,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我最近下班回来还要做饭打扫，实在有点撑不住了，想跟家里人商量分担家务，但不想一开口就变成指责谁。",
+  "spoken_text": "我最近下班回来还要做饭打扫，实在有点撑不住了，想跟家里人商量分担家务，但不想一开口就变成指责谁。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我最近下班回来还要做饭打扫，实在有点撑不住了，想跟家里人商量分担家务，但不想一开口就变成指责谁。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我最近下班回来还要做饭打扫，实在有点撑不住了，想跟家里人商量分担家务，但不想一开口就变成指责谁。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-648617dd-bc5e-9402-8d00-341f7ea1eb2d",
+    "usage": {
+      "prompt_tokens": 262,
+      "total_tokens": 317,
+      "completion_tokens": 55,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 218
+      },
+      "completion_tokens_details": {
+        "text_tokens": 55
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "74ed97f26af961346702b85f56173b5db27810c3d331b8bce627851d6ed61d9d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ec26d8c3b3230225a8c953471d91dd23543f54110eab97799fcc6617312f25c6",
+    "canonical_sha256": "74ed97f26af961346702b85f56173b5db27810c3d331b8bce627851d6ed61d9d",
+    "pcm_sha256": "eb67bc7905ad348220fb7653b7094db3a87d257c378b605f8b88614c910d7468",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 164160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我最近下班回来还要做饭打扫，实在有点撑不住了，想跟家里人商量分担家务，但不想一开口就变成指责谁。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-042ffa5e-aca9-9207-abcc-be4e24bc316c",
+      "usage": {
+        "prompt_tokens": 178,
+        "total_tokens": 233,
+        "completion_tokens": 55,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 134
+        },
+        "completion_tokens_details": {
+          "text_tokens": 55
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ec26d8c3b3230225a8c953471d91dd23543f54110eab97799fcc6617312f25c6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ec26d8c3b3230225a8c953471d91dd23543f54110eab97799fcc6617312f25c6",
+        "canonical_audio_sha256": "74ed97f26af961346702b85f56173b5db27810c3d331b8bce627851d6ed61d9d",
+        "pcm_sha256": "eb67bc7905ad348220fb7653b7094db3a87d257c378b605f8b88614c910d7468",
+        "same_samples": true
+      }
+    }
+  ]
+}

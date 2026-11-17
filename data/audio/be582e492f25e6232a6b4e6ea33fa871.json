@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/be582e492f25e6232a6b4e6ea33fa871.wav",
+  "sha256": "128143de32ff48baea9fa52b5681f65032b4abb06429c894210c78abab769fd4",
+  "duration_seconds": 7.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8af0998f-48db-9373-991d-7967c92a2fe8",
+  "usage": {
+    "input_tokens": 269,
+    "output_tokens": 1560,
+    "total_tokens": 1829,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我前两天因为婆婆总不敲门进我们房间，说了句重话，现在气氛有点僵。我想缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+  "spoken_text": "我前两天因为婆婆总不敲门进我们房间，说了句重话，现在气氛有点僵。我想缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我前两天因为婆婆总不敲门进我们房间，说了句重话，现在气氛有点僵。我想缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我前两天因为婆婆总不敲门进我们房间，说了句重话，现在气氛有点僵。我想缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-40a30b90-98a3-9ced-8329-a0764a59e3bd",
+    "usage": {
+      "prompt_tokens": 280,
+      "total_tokens": 346,
+      "completion_tokens": 66,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 229
+      },
+      "completion_tokens_details": {
+        "text_tokens": 66
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "128143de32ff48baea9fa52b5681f65032b4abb06429c894210c78abab769fd4"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a390d3cafa672290f14f1b8fed89308848e60042f39e81d6c8502cf539214850",
+    "canonical_sha256": "128143de32ff48baea9fa52b5681f65032b4abb06429c894210c78abab769fd4",
+    "pcm_sha256": "51877ed1e7eb024feed8412396d8f1ccffc437922ba2de68165c2ba310d440d7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 187200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我前两天因为婆婆总不敲门进我们房间，说了句重话，现在气氛有点僵。我想缓和一下，你能帮我想句能说出口的话吗？我今晚想跟她说。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-fcb68700-e78d-9c6c-ad2e-23cd430511e7",
+      "usage": {
+        "prompt_tokens": 196,
+        "total_tokens": 262,
+        "completion_tokens": 66,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 145
+        },
+        "completion_tokens_details": {
+          "text_tokens": 66
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a390d3cafa672290f14f1b8fed89308848e60042f39e81d6c8502cf539214850",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a390d3cafa672290f14f1b8fed89308848e60042f39e81d6c8502cf539214850",
+        "canonical_audio_sha256": "128143de32ff48baea9fa52b5681f65032b4abb06429c894210c78abab769fd4",
+        "pcm_sha256": "51877ed1e7eb024feed8412396d8f1ccffc437922ba2de68165c2ba310d440d7",
+        "same_samples": true
+      }
+    }
+  ]
+}

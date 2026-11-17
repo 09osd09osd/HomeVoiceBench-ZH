@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/bccbdd5d947f92813424ca33ab323632.wav",
+  "sha256": "2c584dabefc1ce2fb8db85da276a0868043cf5901db60fc7071ec5021f8d24a3",
+  "duration_seconds": 3.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c5da7b11-9c92-970e-b5e2-a86dee5ae79a",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 696,
+    "total_tokens": 872,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "他五岁，喜欢玩水，最好用水来打比方。",
+  "spoken_text": "他五岁，喜欢玩水，最好用水来打比方。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "他五岁，喜欢玩水，最好用水来打比方。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "他五岁，喜欢玩水，最好用水来打比方。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3b013754-e8bb-96f4-a581-80caf04d5a4e",
+    "usage": {
+      "prompt_tokens": 225,
+      "total_tokens": 264,
+      "completion_tokens": 39,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 202
+      },
+      "completion_tokens_details": {
+        "text_tokens": 39
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2c584dabefc1ce2fb8db85da276a0868043cf5901db60fc7071ec5021f8d24a3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5caceff012b412f0939e666ac7c5c36f64bcc7ff262bd3b97550473a2cf64ac0",
+    "canonical_sha256": "2c584dabefc1ce2fb8db85da276a0868043cf5901db60fc7071ec5021f8d24a3",
+    "pcm_sha256": "6899c67a55c20f137902bc15553cca8c4bcff2758c60acf167d9d4f55aa54844",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 83520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "他五岁，喜欢玩水，最好用水来打比方。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "他五岁，喜欢玩水，最好用水来打比方。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d27d8d38-8424-997e-8aa0-9ee42af7315e",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 203,
+        "completion_tokens": 39,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 141
+        },
+        "completion_tokens_details": {
+          "text_tokens": 39
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5caceff012b412f0939e666ac7c5c36f64bcc7ff262bd3b97550473a2cf64ac0",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5caceff012b412f0939e666ac7c5c36f64bcc7ff262bd3b97550473a2cf64ac0",
+        "canonical_audio_sha256": "2c584dabefc1ce2fb8db85da276a0868043cf5901db60fc7071ec5021f8d24a3",
+        "pcm_sha256": "6899c67a55c20f137902bc15553cca8c4bcff2758c60acf167d9d4f55aa54844",
+        "same_samples": true
+      }
+    }
+  ]
+}

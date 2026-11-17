@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "34ed737228d704e2e34fe072813e024fede72bc15847c0a1201825525a53bf1c",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-52feab2f-1455-9ab1-9377-2bdcf3892814",
+  "usage": {
+    "prompt_tokens": 1855,
+    "total_tokens": 3146,
+    "completion_tokens": 1291,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 1855
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1291
+    }
+  },
+  "review_request_id": "chatcmpl-d7e5aa28-d3ea-9ce2-9dae-8b32f8ad5823",
+  "review_usage": {
+    "prompt_tokens": 2768,
+    "total_tokens": 2854,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 2768
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C19_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C19_001",
+        "title": "找钥匙与记忆边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我钥匙好像落在客厅了，你能帮我看看在哪儿吗？",
+            "reference_text": "我看不到你家里的情况，所以没法直接告诉你钥匙在哪儿。你可以去客厅常放钥匙的地方找找，比如茶几、沙发缝或门口挂钩，找到了告诉我一声。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_002",
+        "title": "找药盒与长期记忆澄清",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我那个白色的小药盒找不到了，你记得我上次放哪儿了吗？",
+            "reference_text": "我不记得你上次把药盒放在哪儿，也看不到房间里的东西。你可以先想想最近一次拿药是在卧室还是客厅，从那儿开始找。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我一般就在卧室和客厅活动，你帮我出个找的顺序吧，别让我乱翻。",
+            "reference_text": "好，建议先找卧室床头柜和梳妆台，再找客厅茶几和电视柜，最后看沙发缝和常用抽屉。我记不住你家长久的位置，只能按常见习惯给顺序。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_003",
+        "title": "找眼镜与细节更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我眼镜不知道放哪儿了，你能看见它在桌上吗？",
+            "reference_text": "我看不见你桌上的东西，没法确认眼镜在不在。你可以先去书桌、床头和沙发附近找找。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我平时只在书房和卧室戴眼镜，你帮我按这两个地方想个找法。",
+            "reference_text": "可以，先找书房的书桌和书架边，再找卧室的床头柜和枕头旁。我看不到实际位置，只能帮你列常见地方。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "纠正一下，我最近也常在餐厅看报纸时戴，所以餐厅也得找。",
+            "reference_text": "好的，那找的范围加上餐厅，重点看餐桌和餐边柜。我仍然看不到实物，只能按你说的区域给顺序。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_004",
+        "title": "找遥控器与检验更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "电视遥控器不见了，你能帮我看看在不在沙发上吗？",
+            "reference_text": "我看不到沙发上的情况，没法确认遥控器在不在。你可以先翻翻沙发坐垫和缝隙，再去茶几上找找。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我一般只把遥控器放在客厅，你给个简单的找法，别太复杂。",
+            "reference_text": "好，就在客厅找：先看茶几和沙发缝，再看电视柜和边几。我看不到实际摆放，只能给常见位置。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，我有时候也会拿到卧室去，所以卧室也得看一眼。",
+            "reference_text": "明白，那范围加上卧室，重点看床头柜和床沿。我还是看不到实物，只能按你补充的地方列顺序。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我刚说卧室也要找吗？先找客厅还是卧室？",
+            "reference_text": "记得，你刚说卧室也要找。建议先找客厅的茶几和沙发缝，再去卧室床头柜和床沿，这样不用来回跑。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_005",
+        "title": "找老花镜与简短收尾",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我老花镜找不着了，你能看见我放哪儿了吗？",
+            "reference_text": "我看不到你家里的摆放，没法直接说老花镜在哪儿。你可以先想想最后一次用是在看书还是看电视，从那儿找起。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我平时就在书房和阳台用，你帮我列两个地方先找。",
+            "reference_text": "可以先找书房的书桌和椅子旁，再找阳台的小桌和窗台。我看不到实物，只能按你说的常用区域给建议。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "更正一下，我最近也常把眼镜带到厨房看菜谱，厨房也得找。",
+            "reference_text": "好的，那厨房也加上，重点看操作台和餐桌边。我仍然看不到实际位置，只能帮你扩展寻找范围。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "你还记得我加了厨房吗？那现在先找哪儿？",
+            "reference_text": "记得，你加了厨房。建议先找书房书桌，再找厨房操作台，最后看阳台小桌，这样顺路一些。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "行，那你简短总结一下，我这就去找。",
+            "reference_text": "好，先找书房书桌，再找厨房操作台，最后看阳台小桌。我看不到实物，你按这个顺序找找看。"
+          }
+        ]
+      }
+    ]
+  }
+}

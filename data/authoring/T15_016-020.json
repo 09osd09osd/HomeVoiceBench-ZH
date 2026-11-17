@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "5f15b794837ce7f31242b5c0f49a3c30c327b07dd47e618a264d511e9bf15055",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-7b61ea96-ab21-989c-aaa8-de74f22e37d1",
+  "usage": {
+    "prompt_tokens": 11814,
+    "total_tokens": 12795,
+    "completion_tokens": 981,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11814
+    },
+    "completion_tokens_details": {
+      "text_tokens": 981
+    }
+  },
+  "review_request_id": "chatcmpl-e36b9f07-66b5-981b-b660-cd6cf8792323",
+  "review_usage": {
+    "prompt_tokens": 12421,
+    "total_tokens": 12507,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12421
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T15_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T15_016",
+        "title": "只说开灯未指房间，询问具体哪盏",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到80%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您想开哪一盏？"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_017",
+        "title": "澄清客厅灯后打开80%",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到80%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您想开哪一盏？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到80%，其他灯别动。",
+            "reference_text": "好，客厅灯已经打开，亮度调到80%，其他灯没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_018",
+        "title": "澄清客厅灯后打开80%，再查亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到80%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您想开哪一盏？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到80%，其他灯别动。",
+            "reference_text": "好，客厅灯已经打开，亮度调到80%，其他灯没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "客厅灯现在亮着，亮度是80%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_019",
+        "title": "澄清客厅灯80%后查亮度再关灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到80%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您想开哪一盏？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到80%，其他灯别动。",
+            "reference_text": "好，客厅灯已经打开，亮度调到80%，其他灯没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "客厅灯现在亮着，亮度是80%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在明确关掉刚才那盏灯，亮度设置保留。",
+            "reference_text": "客厅灯已经关掉，亮度设置还保留在80%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_020",
+        "title": "澄清客厅灯开关亮度并总结",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到80%。",
+            "reference_text": "家里有客厅灯、卧室灯和书房灯，您想开哪一盏？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到80%，其他灯别动。",
+            "reference_text": "好，客厅灯已经打开，亮度调到80%，其他灯没动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "客厅灯现在亮着，亮度是80%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在明确关掉刚才那盏灯，亮度设置保留。",
+            "reference_text": "客厅灯已经关掉，亮度设置还保留在80%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "总结我的澄清：最终是哪盏灯，开关与亮度各怎样？",
+            "reference_text": "最终是客厅灯，开关状态是关着，亮度设置为80%。"
+          }
+        ]
+      }
+    ]
+  }
+}

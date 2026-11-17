@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/5c1514b70040acec644c41699ebfec70.wav",
+  "sha256": "4a34a1d29781f7884f5984054ad37d417389dbd71d87d7e1786def1e7126203e",
+  "duration_seconds": 8.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "06e73ab6-4cf3-93ec-990b-bdd452fb2baf",
+  "usage": {
+    "input_tokens": 216,
+    "output_tokens": 1688,
+    "total_tokens": 1904,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想练一下在饭店点菜时怎么说，你帮我听听句子自然不自然。我说：来一个宫保鸡丁，不要香菜。",
+  "spoken_text": "我想练一下在饭店点菜时怎么说，你帮我听听句子自然不自然。我说:来一个宫保鸡丁，不要香菜。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想练一下在饭店点菜时怎么说。你帮我听听句子自然不自然。我说来一个宫保鸡丁，不要香菜。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想练一下在饭店点菜时怎么说。你帮我听听句子自然不自然。我说来一个宫保鸡丁，不要香菜。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6cff670d-bd32-94c4-a3eb-1ceb987f6357",
+    "usage": {
+      "prompt_tokens": 277,
+      "total_tokens": 332,
+      "completion_tokens": 55,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 219
+      },
+      "completion_tokens_details": {
+        "text_tokens": 55
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4a34a1d29781f7884f5984054ad37d417389dbd71d87d7e1786def1e7126203e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "35b046708c9a7d478990cfbd84e1ea0bdbc302b709cd6144a30ef0f3f3940737",
+    "canonical_sha256": "4a34a1d29781f7884f5984054ad37d417389dbd71d87d7e1786def1e7126203e",
+    "pcm_sha256": "01bf5547d554855163f8cc34e075a2b881f01afbfd2a6184196360c3489bab82",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 202560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想练一下在饭店点菜时怎么说，你帮我听听句子自然不自然。我说：来一个宫保鸡丁，不要香菜。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想练一下在饭店点菜时怎么说，你帮我听听句子自然不自然。我说：来一个宫保鸡丁，不要香菜。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a4471298-d51a-9ced-a050-d30a1541e4fd",
+      "usage": {
+        "prompt_tokens": 216,
+        "total_tokens": 272,
+        "completion_tokens": 56,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 158
+        },
+        "completion_tokens_details": {
+          "text_tokens": 56
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "35b046708c9a7d478990cfbd84e1ea0bdbc302b709cd6144a30ef0f3f3940737",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "35b046708c9a7d478990cfbd84e1ea0bdbc302b709cd6144a30ef0f3f3940737",
+        "canonical_audio_sha256": "4a34a1d29781f7884f5984054ad37d417389dbd71d87d7e1786def1e7126203e",
+        "pcm_sha256": "01bf5547d554855163f8cc34e075a2b881f01afbfd2a6184196360c3489bab82",
+        "same_samples": true
+      }
+    }
+  ]
+}

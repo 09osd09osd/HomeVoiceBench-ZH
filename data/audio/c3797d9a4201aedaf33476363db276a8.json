@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/c3797d9a4201aedaf33476363db276a8.wav",
+  "sha256": "a03df9da82e8d2a98cb742c583aa1ff34887c339fd798ae4e159dacc70f62fc5",
+  "duration_seconds": 4.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "853e2085-fd9c-9c15-94a1-9adce829b7ce",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 904,
+    "total_tokens": 1103,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我今天加班回来有点累，晚饭后洗碗和擦桌子能不能分一下？",
+  "spoken_text": "我今天加班回来有点累，晚饭后洗碗和擦桌子能不能分一下？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我今天加班回来有点累，晚饭后洗碗和擦桌子能不能分一下？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我今天加班回来有点累，晚饭后洗碗和擦桌子能不能分一下？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-87b16ecd-bcc0-9b4e-b7af-f1c116f9bf27",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a03df9da82e8d2a98cb742c583aa1ff34887c339fd798ae4e159dacc70f62fc5"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3f9ec5a0b908ff9553310ac0d1baee15e7d1bb1763b2ca6ed24db650c9beb6ab",
+    "canonical_sha256": "a03df9da82e8d2a98cb742c583aa1ff34887c339fd798ae4e159dacc70f62fc5",
+    "pcm_sha256": "b5ec36c9bfa8eb3240511af0c04018bb0859883e1e76949d19e6cd1b67094a8e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 108480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我今天加班回来有点累，晚饭后洗碗和擦桌子能不能分一下？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3806b745-5807-9207-83cf-608bcf004f76",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3f9ec5a0b908ff9553310ac0d1baee15e7d1bb1763b2ca6ed24db650c9beb6ab",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3f9ec5a0b908ff9553310ac0d1baee15e7d1bb1763b2ca6ed24db650c9beb6ab",
+        "canonical_audio_sha256": "a03df9da82e8d2a98cb742c583aa1ff34887c339fd798ae4e159dacc70f62fc5",
+        "pcm_sha256": "b5ec36c9bfa8eb3240511af0c04018bb0859883e1e76949d19e6cd1b67094a8e",
+        "same_samples": true
+      }
+    }
+  ]
+}

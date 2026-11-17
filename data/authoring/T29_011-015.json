@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "3f5cdfb4b55253d5de76659fdd368a20e8a7c845dc52520fc07630b968d2399f",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-347632f1-622f-96d6-b573-57cac107f850",
+  "usage": {
+    "prompt_tokens": 12530,
+    "total_tokens": 13575,
+    "completion_tokens": 1045,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 12530
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1045
+    }
+  },
+  "review_request_id": "chatcmpl-2cfcc616-a47c-9ae6-9417-7120f5f6ad5e",
+  "review_usage": {
+    "prompt_tokens": 13197,
+    "total_tokens": 13283,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13197
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T29_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T29_011",
+        "title": "书房灯开到60%但任务处理中",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%。",
+            "reference_text": "书房灯的操作已经发出，但任务还在处理中，目前进度是0%，还没有完成。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_012",
+        "title": "书房灯60%任务查询仍处理中",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%。",
+            "reference_text": "书房灯的操作已经发出，但任务还在处理中，目前进度是0%，还没有完成。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务现在完成了吗？",
+            "reference_text": "查了一下，任务还在处理中，进度还是0%，没有完成。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_013",
+        "title": "书房灯60%查询处理中再核对实际状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%。",
+            "reference_text": "书房灯的操作已经发出，但任务还在处理中，目前进度是0%，还没有完成。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务现在完成了吗？",
+            "reference_text": "查了一下，任务还在处理中，进度还是0%，没有完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你再核对一下书房灯现在实际是什么状态。",
+            "reference_text": "我查了书房灯的实际状态，现在灯是开着的，亮度60%，色温4000K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_014",
+        "title": "书房灯60%查询核对后只关这盏灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%。",
+            "reference_text": "书房灯的操作已经发出，但任务还在处理中，目前进度是0%，还没有完成。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务现在完成了吗？",
+            "reference_text": "查了一下，任务还在处理中，进度还是0%，没有完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你再核对一下书房灯现在实际是什么状态。",
+            "reference_text": "我查了书房灯的实际状态，现在灯是开着的，亮度60%，色温4000K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把书房灯关掉吧，就关这一盏。",
+            "reference_text": "书房灯已经关掉了，亮度还是60%，但灯现在是关着的。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_015",
+        "title": "书房灯60%查询核对关灯后再确认已关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把书房灯打开，亮度调到60%。",
+            "reference_text": "书房灯的操作已经发出，但任务还在处理中，目前进度是0%，还没有完成。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个任务现在完成了吗？",
+            "reference_text": "查了一下，任务还在处理中，进度还是0%，没有完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你再核对一下书房灯现在实际是什么状态。",
+            "reference_text": "我查了书房灯的实际状态，现在灯是开着的，亮度60%，色温4000K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把书房灯关掉吧，就关这一盏。",
+            "reference_text": "书房灯已经关掉了，亮度还是60%，但灯现在是关着的。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再确认一下书房灯是关着的，别拿之前任务成功当成现在开着。",
+            "reference_text": "我又查了一遍，书房灯现在是关着的，亮度60%只是保留的设置，灯确实没亮。"
+          }
+        ]
+      }
+    ]
+  }
+}

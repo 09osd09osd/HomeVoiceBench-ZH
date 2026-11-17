@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/561c889d05ae1e99b8feab6cf1ef79ab.wav",
+  "sha256": "dafe8d37ea897303ddd9b0e6f304f685ecbfde5cd0e600f96a53ed25b8eae426",
+  "duration_seconds": 5.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "617b23f0-f19e-9a0b-9e92-4922a5570f94",
+  "usage": {
+    "input_tokens": 200,
+    "output_tokens": 1184,
+    "total_tokens": 1384,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想等孩子睡了再说，别当着孩子面提。另外我不想说“对不起”三个字，觉得有点别扭，能不能换个说法？",
+  "spoken_text": "我想等孩子睡了再说，别当着孩子面提。另外我不想说“对不起”三个字，觉得有点别扭，能不能换个说法？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想等孩子睡了再说，别当着孩子面提。另外，我不想说“对不起”三个字，觉得有点别扭，能不能换个说法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想等孩子睡了再说，别当着孩子面提。另外，我不想说“对不起”三个字，觉得有点别扭，能不能换个说法？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-04251cb9-e849-9eb7-aa9c-843b7fee9fb9",
+    "usage": {
+      "prompt_tokens": 254,
+      "total_tokens": 309,
+      "completion_tokens": 55,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 217
+      },
+      "completion_tokens_details": {
+        "text_tokens": 55
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "dafe8d37ea897303ddd9b0e6f304f685ecbfde5cd0e600f96a53ed25b8eae426"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ba2ee0437618792a1ba4e9297d72b3b63a47f8458ad9925bdbfd22d481de2196",
+    "canonical_sha256": "dafe8d37ea897303ddd9b0e6f304f685ecbfde5cd0e600f96a53ed25b8eae426",
+    "pcm_sha256": "010f9f72182d0cc0c0fc9e0d18c87b4add8088565498783ef83b4f2b890a8efd",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 142080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想等孩子睡了再说，别当着孩子面提。另外我不想说“对不起”三个字，觉得有点别扭，能不能换个说法？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2632a029-ef60-965e-aa62-1a82a8aa09a3",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 224,
+        "completion_tokens": 54,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 133
+        },
+        "completion_tokens_details": {
+          "text_tokens": 54
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "ba2ee0437618792a1ba4e9297d72b3b63a47f8458ad9925bdbfd22d481de2196",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "ba2ee0437618792a1ba4e9297d72b3b63a47f8458ad9925bdbfd22d481de2196",
+        "canonical_audio_sha256": "dafe8d37ea897303ddd9b0e6f304f685ecbfde5cd0e600f96a53ed25b8eae426",
+        "pcm_sha256": "010f9f72182d0cc0c0fc9e0d18c87b4add8088565498783ef83b4f2b890a8efd",
+        "same_samples": true
+      }
+    }
+  ]
+}

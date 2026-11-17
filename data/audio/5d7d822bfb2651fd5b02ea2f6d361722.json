@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/5d7d822bfb2651fd5b02ea2f6d361722.wav",
+  "sha256": "a1551429dbad45980f2ccf5da656334bf8c55e6921aa7538698682dbda963940",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "76fc3089-e9d5-9bed-ad98-2e548a194447",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 640,
+    "total_tokens": 834,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "现在家里用的是哪个时区，具体几点了？",
+  "spoken_text": "现在家里用的是哪个时区，具体几点了？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "现在家里用的是哪个时区？具体几点了？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "现在家里用的是哪个时区？具体几点了？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-c92b1f9c-d04c-9314-8b18-4e8001f81c3f",
+    "usage": {
+      "prompt_tokens": 223,
+      "total_tokens": 260,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a1551429dbad45980f2ccf5da656334bf8c55e6921aa7538698682dbda963940"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "991346f3f91ab874282f759aa934080c3d23e512b83a590c3d80af440bc0f032",
+    "canonical_sha256": "a1551429dbad45980f2ccf5da656334bf8c55e6921aa7538698682dbda963940",
+    "pcm_sha256": "e542d83053404dfc3a1d39f6768b95c812305145ac0102c987973d272917e313",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "现在家里用的是哪个时区？具体几点了？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "现在家里用的是哪个时区？具体几点了？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-20097e43-cbaf-957b-b83c-a770dc77fe1b",
+      "usage": {
+        "prompt_tokens": 162,
+        "total_tokens": 199,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "991346f3f91ab874282f759aa934080c3d23e512b83a590c3d80af440bc0f032",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "991346f3f91ab874282f759aa934080c3d23e512b83a590c3d80af440bc0f032",
+        "canonical_audio_sha256": "a1551429dbad45980f2ccf5da656334bf8c55e6921aa7538698682dbda963940",
+        "pcm_sha256": "e542d83053404dfc3a1d39f6768b95c812305145ac0102c987973d272917e313",
+        "same_samples": true
+      }
+    }
+  ]
+}

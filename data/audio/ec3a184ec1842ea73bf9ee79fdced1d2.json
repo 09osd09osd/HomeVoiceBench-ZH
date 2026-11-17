@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ec3a184ec1842ea73bf9ee79fdced1d2.wav",
+  "sha256": "3ee2364a4e2d28e76171e845bf0e2b88d4271a07fc6bbe9b9f7e1c0ef797bc4e",
+  "duration_seconds": 2.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b131aa60-8e0d-937c-ba4a-e3dd805c3c13",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 592,
+    "total_tokens": 771,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "其实也不是新搬来的，是楼下邻居，我记混了。",
+  "spoken_text": "其实也不是新搬来的，是楼下邻居，我记混了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "其实也不是新搬来的，是楼下邻居，我记混了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "其实也不是新搬来的，是楼下邻居，我记混了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-20a9733b-cb45-92b6-a88c-c5b9999c2e9f",
+    "usage": {
+      "prompt_tokens": 220,
+      "total_tokens": 261,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3ee2364a4e2d28e76171e845bf0e2b88d4271a07fc6bbe9b9f7e1c0ef797bc4e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3f983363b6a6c196605de1b8afb7bbdca8ebb1531c9275d07998ec54aebede11",
+    "canonical_sha256": "3ee2364a4e2d28e76171e845bf0e2b88d4271a07fc6bbe9b9f7e1c0ef797bc4e",
+    "pcm_sha256": "0b73f3ea5cf32e35fa1685715cda1faaa5149d88b1409771cbf64134ac97f112",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 71040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "其实也不是新搬来的，是楼下邻居，我记混了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6c64ba11-abf6-9f96-a124-91277a5d9be8",
+      "usage": {
+        "prompt_tokens": 136,
+        "total_tokens": 177,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3f983363b6a6c196605de1b8afb7bbdca8ebb1531c9275d07998ec54aebede11",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3f983363b6a6c196605de1b8afb7bbdca8ebb1531c9275d07998ec54aebede11",
+        "canonical_audio_sha256": "3ee2364a4e2d28e76171e845bf0e2b88d4271a07fc6bbe9b9f7e1c0ef797bc4e",
+        "pcm_sha256": "0b73f3ea5cf32e35fa1685715cda1faaa5149d88b1409771cbf64134ac97f112",
+        "same_samples": true
+      }
+    }
+  ]
+}

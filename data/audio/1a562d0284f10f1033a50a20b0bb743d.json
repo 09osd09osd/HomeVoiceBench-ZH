@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/1a562d0284f10f1033a50a20b0bb743d.wav",
+  "sha256": "8dc51835ae93d36946b08594fd8679c8ae328fc9e1fab411f36e693a56fbdeaa",
+  "duration_seconds": 3.2,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "aacdce8f-9950-921d-b731-b76bd12ed3e0",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 640,
+    "total_tokens": 830,
+    "duration": 3
+  },
+  "seed": 100042,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是三十多号，刚看了一眼是二十多号。",
+  "spoken_text": "更正一下，不是三十多号，刚看了一眼是二十多号。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 2,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是三十多号，刚看了眼是二十多号。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是三十多号，刚看了眼是二十多号。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4db68dc4-c719-93f1-b0cf-db10c5f5f7b0",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8dc51835ae93d36946b08594fd8679c8ae328fc9e1fab411f36e693a56fbdeaa"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f3be7e3a8b05aef77e997491dc3acdb50e5ffac11acc2b6afe961388c5311639",
+    "canonical_sha256": "8dc51835ae93d36946b08594fd8679c8ae328fc9e1fab411f36e693a56fbdeaa",
+    "pcm_sha256": "d8da9869c350407c8464aede9b0fcec937a9ab2643e8537c69465485421aa829",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 76800,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是三十多号，刚看了眼是二十多号。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-3e926802-d2dd-974c-a41e-bb3cd0450f69",
+      "usage": {
+        "prompt_tokens": 143,
+        "total_tokens": 184,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f3be7e3a8b05aef77e997491dc3acdb50e5ffac11acc2b6afe961388c5311639",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f3be7e3a8b05aef77e997491dc3acdb50e5ffac11acc2b6afe961388c5311639",
+        "canonical_audio_sha256": "8dc51835ae93d36946b08594fd8679c8ae328fc9e1fab411f36e693a56fbdeaa",
+        "pcm_sha256": "d8da9869c350407c8464aede9b0fcec937a9ab2643e8537c69465485421aa829",
+        "same_samples": true
+      }
+    }
+  ]
+}

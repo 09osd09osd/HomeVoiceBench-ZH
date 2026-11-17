@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/2e2c5845fa1ecca42d810ff92b164964.wav",
+  "sha256": "274648502f8835ac91eda65bdb6435b34668d737392e5877c51618e5986264fa",
+  "duration_seconds": 2.92,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3798af6c-09e7-97fa-9cc8-5d8f505a7dc0",
+  "usage": {
+    "input_tokens": 171,
+    "output_tokens": 584,
+    "total_tokens": 755,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我有点累了，简单总结两句就好。",
+  "spoken_text": "我有点累了，简单总结两句就好。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我有点累了，简单总结两句就好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我有点累了，简单总结两句就好。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6ffa7134-597d-9bdf-8d3f-548935cceba6",
+    "usage": {
+      "prompt_tokens": 214,
+      "total_tokens": 249,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 198
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "274648502f8835ac91eda65bdb6435b34668d737392e5877c51618e5986264fa"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c424fdeb2443c8e7adef47a10a626196a39a3073f9c11393f487a323392a0e96",
+    "canonical_sha256": "274648502f8835ac91eda65bdb6435b34668d737392e5877c51618e5986264fa",
+    "pcm_sha256": "2b2cb399cc7f319c63da7e3ab8afc86398c4d3a18863b9b5e6487a48cd5cfc4c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 70080,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我有点累了，简单总结两句就好。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我有点累了，简单总结两句就好。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-20e1dfc6-5719-9edf-a2be-2e75a4929316",
+      "usage": {
+        "prompt_tokens": 153,
+        "total_tokens": 188,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 137
+        },
+        "completion_tokens_details": {
+          "text_tokens": 35
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c424fdeb2443c8e7adef47a10a626196a39a3073f9c11393f487a323392a0e96",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c424fdeb2443c8e7adef47a10a626196a39a3073f9c11393f487a323392a0e96",
+        "canonical_audio_sha256": "274648502f8835ac91eda65bdb6435b34668d737392e5877c51618e5986264fa",
+        "pcm_sha256": "2b2cb399cc7f319c63da7e3ab8afc86398c4d3a18863b9b5e6487a48cd5cfc4c",
+        "same_samples": true
+      }
+    }
+  ]
+}

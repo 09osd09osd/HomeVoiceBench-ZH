@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/22f9e142388ed313159bf8b328024990.wav",
+  "sha256": "c1f7b7c1d22005b2a282ee60603c19c4b9e6b7d368d5ac7e0d0b92f84ee139b0",
+  "duration_seconds": 5.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "57889b01-da46-9503-bf1c-113c7e83157e",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 1144,
+    "total_tokens": 1337,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我明天要去拿体检报告，心里有点七上八下的，怕查出什么毛病。你能陪我说说话吗？",
+  "spoken_text": "我明天要去拿体检报告，心里有点七上八下的，怕查出什么毛病。你能陪我说说话吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我明天要去拿体检报告，心里有点七上八下的，怕查出什么毛病。你能陪我说说话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我明天要去拿体检报告，心里有点七上八下的，怕查出什么毛病。你能陪我说说话吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-6fab72c9-c296-9fd1-9408-ffd9ec93f59f",
+    "usage": {
+      "prompt_tokens": 251,
+      "total_tokens": 302,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c1f7b7c1d22005b2a282ee60603c19c4b9e6b7d368d5ac7e0d0b92f84ee139b0"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "56fa474d0a921fedae13ed6f2bebb66c1ca0eef4de9f15aa77c44de9d22cfd6f",
+    "canonical_sha256": "c1f7b7c1d22005b2a282ee60603c19c4b9e6b7d368d5ac7e0d0b92f84ee139b0",
+    "pcm_sha256": "ae8b78b08e3e79b54a8c2c244df69bf55b3d3e785c465527a4bc50c83ffea4d4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 137280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我明天要去拿体检报告，心里有点七上八下的，怕查出什么毛病。你能陪我说说话吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-df96aafe-4589-9862-8a1f-f1edb5c43476",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 218,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "56fa474d0a921fedae13ed6f2bebb66c1ca0eef4de9f15aa77c44de9d22cfd6f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "56fa474d0a921fedae13ed6f2bebb66c1ca0eef4de9f15aa77c44de9d22cfd6f",
+        "canonical_audio_sha256": "c1f7b7c1d22005b2a282ee60603c19c4b9e6b7d368d5ac7e0d0b92f84ee139b0",
+        "pcm_sha256": "ae8b78b08e3e79b54a8c2c244df69bf55b3d3e785c465527a4bc50c83ffea4d4",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9b6a64acc9b21b20d50ed5072a96d79f.wav",
+  "sha256": "1f2af04d79e563fb69ab37721b5e562fcc541ac977bf35587851317a05af2b88",
+  "duration_seconds": 6.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "cea9af5a-1580-92c7-9cc3-37df546373b4",
+  "usage": {
+    "input_tokens": 199,
+    "output_tokens": 1208,
+    "total_tokens": 1407,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我好朋友今天做个小手术，说好结束后给我发消息，这都过了三个小时了还没动静，我有点担心。",
+  "spoken_text": "我好朋友今天做个小手术，说好结束后给我发消息，这都过了三个小时了还没动静，我有点担心。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我好朋友今天做个小手术，说好结束后给我发消息，这都过了三个小时了还没动静，我有点担心。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我好朋友今天做个小手术，说好结束后给我发消息，这都过了三个小时了还没动静，我有点担心。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0cfb6750-7deb-9b22-9430-a5609440c3d8",
+    "usage": {
+      "prompt_tokens": 258,
+      "total_tokens": 309,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "1f2af04d79e563fb69ab37721b5e562fcc541ac977bf35587851317a05af2b88"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "743ef58508ed49949db56f932cc84f5dd777ee5330833967b89bb3195ec67fe7",
+    "canonical_sha256": "1f2af04d79e563fb69ab37721b5e562fcc541ac977bf35587851317a05af2b88",
+    "pcm_sha256": "9d4cd47ebd54dffc2a48bca4ae193ba7c9c2524bc4f35bf36148440dd0134fa5",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 144960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我好朋友今天做个小手术，说好结束后给我发消息，这都过了三个小时了还没动静，我有点担心。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-02cf9f9f-7c95-9e59-8d40-7ee88f12e84c",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 225,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "743ef58508ed49949db56f932cc84f5dd777ee5330833967b89bb3195ec67fe7",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "743ef58508ed49949db56f932cc84f5dd777ee5330833967b89bb3195ec67fe7",
+        "canonical_audio_sha256": "1f2af04d79e563fb69ab37721b5e562fcc541ac977bf35587851317a05af2b88",
+        "pcm_sha256": "9d4cd47ebd54dffc2a48bca4ae193ba7c9c2524bc4f35bf36148440dd0134fa5",
+        "same_samples": true
+      }
+    }
+  ]
+}

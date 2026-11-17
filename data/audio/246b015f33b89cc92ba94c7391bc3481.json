@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/246b015f33b89cc92ba94c7391bc3481.wav",
+  "sha256": "ef7740a4b9c60697849eee4318dc3f769f06760326a8cfb861f2a513075d2357",
+  "duration_seconds": 4.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d9a827b7-0e46-9323-b5f0-9b0e006ca3b8",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 832,
+    "total_tokens": 1028,
+    "duration": 4
+  },
+  "seed": 200042,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "约好周末和朋友吃饭，结果她临时放我鸽子，我有点委屈。",
+  "spoken_text": "约好周末和朋友吃饭，结果她临时放我鸽子，我有点委屈。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 3,
+  "qc": {
+    "result": {
+      "transcript": "约好周末和朋友吃饭，结果他临时放我鸽子，我有点委屈。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "约好周末和朋友吃饭，结果他临时放我鸽子，我有点委屈。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-34c4b342-2c4e-9d43-b1ff-e6f7b0c8d694",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ef7740a4b9c60697849eee4318dc3f769f06760326a8cfb861f2a513075d2357"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "f12003ee4e60c328e6213bf305ca87377b1b35fc58846b0b9e5504688edcc16e",
+    "canonical_sha256": "ef7740a4b9c60697849eee4318dc3f769f06760326a8cfb861f2a513075d2357",
+    "pcm_sha256": "bea100a3dd34ec0fe6dbda649e50369dce09c4ae61c7ed62079005cad4d5d0e9",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 99840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "约好周末和朋友吃饭，结果他临时放我鸽子，我有点委屈。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "约好周末和朋友吃饭，结果他临时放我鸽子，我有点委屈。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6a6b3c9d-9a90-9bda-bdef-320423cb6363",
+      "usage": {
+        "prompt_tokens": 175,
+        "total_tokens": 218,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 145
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "f12003ee4e60c328e6213bf305ca87377b1b35fc58846b0b9e5504688edcc16e",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "f12003ee4e60c328e6213bf305ca87377b1b35fc58846b0b9e5504688edcc16e",
+        "canonical_audio_sha256": "ef7740a4b9c60697849eee4318dc3f769f06760326a8cfb861f2a513075d2357",
+        "pcm_sha256": "bea100a3dd34ec0fe6dbda649e50369dce09c4ae61c7ed62079005cad4d5d0e9",
+        "same_samples": true
+      }
+    }
+  ]
+}

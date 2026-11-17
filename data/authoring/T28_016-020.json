@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "a10aeb971196bc3587aa779252d29b576245917013249cb34fb29d8cf2ef3e1b",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-8f65a63e-b01a-9ff7-b1bf-30a31d59ab8d",
+  "usage": {
+    "prompt_tokens": 10774,
+    "total_tokens": 11782,
+    "completion_tokens": 1008,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 10774
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1008
+    }
+  },
+  "review_request_id": "chatcmpl-be30f5af-ed98-90aa-92b1-9a7e54ed11be",
+  "review_usage": {
+    "prompt_tokens": 11404,
+    "total_tokens": 11490,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 11404
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T28_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T28_016",
+        "title": "客厅音箱离线导致播放失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "《星空小知识》找到了，但播放失败，因为客厅音箱离线。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_017",
+        "title": "确认失败环节并暂停重试",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "《星空小知识》找到了，但播放失败，因为客厅音箱离线。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才失败的是查找内容还是播放设备？先别重试。",
+            "reference_text": "查找内容成功了，失败的是播放设备，客厅音箱离线。按你说的，先不重试。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_018",
+        "title": "检查客厅音箱在线状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "《星空小知识》找到了，但播放失败，因为客厅音箱离线。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才失败的是查找内容还是播放设备？先别重试。",
+            "reference_text": "查找内容成功了，失败的是播放设备，客厅音箱离线。按你说的，先不重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "检查一下客厅音箱是否在线。",
+            "reference_text": "我查了，客厅音箱现在还是离线状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_019",
+        "title": "保持原样不切换卧室音箱",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "《星空小知识》找到了，但播放失败，因为客厅音箱离线。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才失败的是查找内容还是播放设备？先别重试。",
+            "reference_text": "查找内容成功了，失败的是播放设备，客厅音箱离线。按你说的，先不重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "检查一下客厅音箱是否在线。",
+            "reference_text": "我查了，客厅音箱现在还是离线状态。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "设备还离线的话就保持原样，不要换到卧室音箱。",
+            "reference_text": "好的，客厅音箱仍离线，保持原样，没有换到卧室音箱。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_020",
+        "title": "说明实际执行进度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《星空小知识》。",
+            "reference_text": "《星空小知识》找到了，但播放失败，因为客厅音箱离线。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才失败的是查找内容还是播放设备？先别重试。",
+            "reference_text": "查找内容成功了，失败的是播放设备，客厅音箱离线。按你说的，先不重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "检查一下客厅音箱是否在线。",
+            "reference_text": "我查了，客厅音箱现在还是离线状态。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "设备还离线的话就保持原样，不要换到卧室音箱。",
+            "reference_text": "好的，客厅音箱仍离线，保持原样，没有换到卧室音箱。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "简短说一下现在实际做到哪一步了。",
+            "reference_text": "现在实际只完成了查找内容，找到了《星空小知识》；播放没成功，因为客厅音箱离线，也没有执行其他操作。"
+          }
+        ]
+      }
+    ]
+  }
+}

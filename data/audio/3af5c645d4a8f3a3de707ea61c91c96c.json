@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/3af5c645d4a8f3a3de707ea61c91c96c.wav",
+  "sha256": "623a46db093b3f0bd73100e5a3ee5c3cd0b8398c86338eb2d2189a16cf57dfe8",
+  "duration_seconds": 1.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d11d47ac-9421-9633-8663-a32f3f3c9c18",
+  "usage": {
+    "input_tokens": 180,
+    "output_tokens": 304,
+    "total_tokens": 484,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得它有几个轮子吗？",
+  "spoken_text": "你还记得它有几个轮子吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得它有几个轮子吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得它有几个轮子吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-16b799f9-08e5-9cf9-bdd2-9bb404808fe3",
+    "usage": {
+      "prompt_tokens": 206,
+      "total_tokens": 240,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 9,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "623a46db093b3f0bd73100e5a3ee5c3cd0b8398c86338eb2d2189a16cf57dfe8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "26121cc9e827a675495c001e266b49ce80025f497a9562a387817a76cd7fde40",
+    "canonical_sha256": "623a46db093b3f0bd73100e5a3ee5c3cd0b8398c86338eb2d2189a16cf57dfe8",
+    "pcm_sha256": "c1971f8be529d203294850210ce1f8addf736eaaed335f6434818b2e83c720d0",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 36480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得它有几个轮子吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "你还记得它有几个轮子吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-2073a47e-d507-97ec-957a-c746b8327cbf",
+      "usage": {
+        "prompt_tokens": 145,
+        "total_tokens": 179,
+        "completion_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 9,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 34
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "26121cc9e827a675495c001e266b49ce80025f497a9562a387817a76cd7fde40",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "26121cc9e827a675495c001e266b49ce80025f497a9562a387817a76cd7fde40",
+        "canonical_audio_sha256": "623a46db093b3f0bd73100e5a3ee5c3cd0b8398c86338eb2d2189a16cf57dfe8",
+        "pcm_sha256": "c1971f8be529d203294850210ce1f8addf736eaaed335f6434818b2e83c720d0",
+        "same_samples": true
+      }
+    }
+  ]
+}

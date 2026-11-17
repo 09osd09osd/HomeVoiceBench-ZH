@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/24a229e572c043a3887bc1abc8ad742e.wav",
+  "sha256": "f7b23f3c56a0f307db650f1d71cd0ba1e610635677348bd566560f84973f9a63",
+  "duration_seconds": 5.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "7f3c61da-0405-901c-9e82-811c6eeab7f8",
+  "usage": {
+    "input_tokens": 195,
+    "output_tokens": 1000,
+    "total_tokens": 1195,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是跟朋友，是跟同事道歉，称呼和语气帮我调一下。",
+  "spoken_text": "更正一下，不是跟朋友，是跟同事道歉，称呼和语气帮我调一下。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是跟朋友，是跟同事道歉，称呼和语气帮我调一下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是跟朋友，是跟同事道歉，称呼和语气帮我调一下。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-34b730a9-1945-9fcb-a853-2a57f73c44ba",
+    "usage": {
+      "prompt_tokens": 245,
+      "total_tokens": 290,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f7b23f3c56a0f307db650f1d71cd0ba1e610635677348bd566560f84973f9a63"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7a7b67338fd52e242f3a9c877a5f5f4cd73f99c3aa55cca06754b1e75dfd4676",
+    "canonical_sha256": "f7b23f3c56a0f307db650f1d71cd0ba1e610635677348bd566560f84973f9a63",
+    "pcm_sha256": "1d577cb35bc6ecc5c27511ff21356ec71905cadd5642e08bee2ce70794f98a29",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 120000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是跟朋友，是跟同事道歉。称呼和语气帮我调一下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，不是跟朋友，是跟同事道歉。称呼和语气帮我调一下。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-783f26ed-d9c2-9fec-885a-f77c17e55aca",
+      "usage": {
+        "prompt_tokens": 184,
+        "total_tokens": 229,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7a7b67338fd52e242f3a9c877a5f5f4cd73f99c3aa55cca06754b1e75dfd4676",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7a7b67338fd52e242f3a9c877a5f5f4cd73f99c3aa55cca06754b1e75dfd4676",
+        "canonical_audio_sha256": "f7b23f3c56a0f307db650f1d71cd0ba1e610635677348bd566560f84973f9a63",
+        "pcm_sha256": "1d577cb35bc6ecc5c27511ff21356ec71905cadd5642e08bee2ce70794f98a29",
+        "same_samples": true
+      }
+    }
+  ]
+}

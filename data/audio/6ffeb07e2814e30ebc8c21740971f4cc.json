@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/6ffeb07e2814e30ebc8c21740971f4cc.wav",
+  "sha256": "12ec34a6d3299072da8fc4105ecf754316c672852188ef23048ea7a15de10742",
+  "duration_seconds": 3.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "8c0aca9d-f976-9a46-b7d8-054bd4cde03c",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 696,
+    "total_tokens": 881,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我核对一下书房风扇现在的风速和开关状态，不要调整。",
+  "spoken_text": "帮我核对一下书房风扇现在的风速和开关状态，不要调整。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我核对一下书房风扇现在的风速和开关状态，不要调整。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我核对一下书房风扇现在的风速和开关状态，不要调整。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-00bdc2c1-6d22-971e-ae32-f3ca3caf85aa",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "12ec34a6d3299072da8fc4105ecf754316c672852188ef23048ea7a15de10742"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "3074fffdcc891c87dd7d1d436ebbc7e5a9e0b5ab8f22883efe100b3ed9ca71c1",
+    "canonical_sha256": "12ec34a6d3299072da8fc4105ecf754316c672852188ef23048ea7a15de10742",
+    "pcm_sha256": "e56e78b71ac977f5f8d35d999c6255f4f3edd34e01d22d25033dc7b27022f167",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 83520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我核对一下书房风扇现在的风速和开关状态，不要调整。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我核对一下书房风扇现在的风速和开关状态，不要调整。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-61b261a9-5eba-9ec4-91dd-971abecb4b88",
+      "usage": {
+        "prompt_tokens": 166,
+        "total_tokens": 207,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 143
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "3074fffdcc891c87dd7d1d436ebbc7e5a9e0b5ab8f22883efe100b3ed9ca71c1",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "3074fffdcc891c87dd7d1d436ebbc7e5a9e0b5ab8f22883efe100b3ed9ca71c1",
+        "canonical_audio_sha256": "12ec34a6d3299072da8fc4105ecf754316c672852188ef23048ea7a15de10742",
+        "pcm_sha256": "e56e78b71ac977f5f8d35d999c6255f4f3edd34e01d22d25033dc7b27022f167",
+        "same_samples": true
+      }
+    }
+  ]
+}

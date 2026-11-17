@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/1b3f1afc78dcf6af611792d322905c7c.wav",
+  "sha256": "da0830fa178abf24ff01e5a88103a9858d41702d978fbe83dd27e1a67317df77",
+  "duration_seconds": 2.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "5fa8c3b2-224f-9906-b365-fb6bc4b29bd2",
+  "usage": {
+    "input_tokens": 177,
+    "output_tokens": 544,
+    "total_tokens": 721,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "好的，那你用一句话告诉我披萨做好了没。",
+  "spoken_text": "好的，那你用一句话告诉我披萨做好了没。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "好的，那你用一句话告诉我披萨做好了没？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "好的，那你用一句话告诉我披萨做好了没？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-abcac43f-85c7-9b5f-afb2-12fee63494ad",
+    "usage": {
+      "prompt_tokens": 215,
+      "total_tokens": 251,
+      "completion_tokens": 36,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 199
+      },
+      "completion_tokens_details": {
+        "text_tokens": 36
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "da0830fa178abf24ff01e5a88103a9858d41702d978fbe83dd27e1a67317df77"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "53f43c4640efa66ec6fe0b590781d27a5bb39bcd0ec9828fe2f2e5879a3c8978",
+    "canonical_sha256": "da0830fa178abf24ff01e5a88103a9858d41702d978fbe83dd27e1a67317df77",
+    "pcm_sha256": "dc64a66f14244e0f72f8b334ec75b15188fe634376a710c877936ca0d8a66e0e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 65280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "好的，那你用一句话告诉我披萨做好了没？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "好的，那你用一句话告诉我披萨做好了没？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-49ab35c5-9e7b-989d-8b3a-0f2cddd2af33",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 190,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 138
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "53f43c4640efa66ec6fe0b590781d27a5bb39bcd0ec9828fe2f2e5879a3c8978",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "53f43c4640efa66ec6fe0b590781d27a5bb39bcd0ec9828fe2f2e5879a3c8978",
+        "canonical_audio_sha256": "da0830fa178abf24ff01e5a88103a9858d41702d978fbe83dd27e1a67317df77",
+        "pcm_sha256": "dc64a66f14244e0f72f8b334ec75b15188fe634376a710c877936ca0d8a66e0e",
+        "same_samples": true
+      }
+    }
+  ]
+}

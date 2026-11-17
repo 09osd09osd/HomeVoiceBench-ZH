@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/ec7425cbbb1986e2f9d7d89dbb954644.wav",
+  "sha256": "aaecacca93cb819c53ff407db4c33dc7499423986cec1ef1e5dbb10e52562a0e",
+  "duration_seconds": 3.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "10a5d24e-d623-9840-8350-81ff424c6536",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 768,
+    "total_tokens": 961,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我今天有点累，你帮我把最后这句收短一点，就一句能说完的。",
+  "spoken_text": "我今天有点累，你帮我把最后这句收短一点，就一句能说完的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我今天有点累，你帮我把最后这句收短一点，就一句能说完的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我今天有点累，你帮我把最后这句收短一点，就一句能说完的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-8056834e-1f7a-90ff-a9d4-aafdbf111986",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 276,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "aaecacca93cb819c53ff407db4c33dc7499423986cec1ef1e5dbb10e52562a0e"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9f683965cf6c16092d54e187e8927e4d75d2fea9d2c29404fe3f751b3c3d1a52",
+    "canonical_sha256": "aaecacca93cb819c53ff407db4c33dc7499423986cec1ef1e5dbb10e52562a0e",
+    "pcm_sha256": "f9ae1fdffffa0c3e4dd79f12d2f9d07ef071234ac26df6ae457ceddba9de1480",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 92160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我今天有点累，你帮我把最后这句收短一点，就一句能说完的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-4d3b5776-84d4-9c40-b8c8-81ce0fb6b416",
+      "usage": {
+        "prompt_tokens": 147,
+        "total_tokens": 192,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 124
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9f683965cf6c16092d54e187e8927e4d75d2fea9d2c29404fe3f751b3c3d1a52",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9f683965cf6c16092d54e187e8927e4d75d2fea9d2c29404fe3f751b3c3d1a52",
+        "canonical_audio_sha256": "aaecacca93cb819c53ff407db4c33dc7499423986cec1ef1e5dbb10e52562a0e",
+        "pcm_sha256": "f9ae1fdffffa0c3e4dd79f12d2f9d07ef071234ac26df6ae457ceddba9de1480",
+        "same_samples": true
+      }
+    }
+  ]
+}

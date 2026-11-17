@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/7f4eb62663853fe6321947eb924065c8.wav",
+  "sha256": "ff330b841f16282ec12031128bc9f51e56f5b7737a73a950180118b8d11c293a",
+  "duration_seconds": 2.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3938dbbe-5c98-98b1-bb72-2d239b83e8ea",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 592,
+    "total_tokens": 774,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，不是小狗，是小猫，它更怕吵。",
+  "spoken_text": "更正一下，不是小狗，是小猫，它更怕吵。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，不是小狗，是小猫。它更怕吵。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，不是小狗，是小猫。它更怕吵。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-cf3307b8-24a3-9c82-8a2d-3f2024811c02",
+    "usage": {
+      "prompt_tokens": 219,
+      "total_tokens": 259,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "ff330b841f16282ec12031128bc9f51e56f5b7737a73a950180118b8d11c293a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a237c8b3d7b7557293290899bb72e0758ee158b62381a721d80df678065eba1f",
+    "canonical_sha256": "ff330b841f16282ec12031128bc9f51e56f5b7737a73a950180118b8d11c293a",
+    "pcm_sha256": "8bb6806049bd624ea21f5448494d8bc8373f1ccce1e7edf40e46dc870a11c871",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 71040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，不是小狗，是小猫，它更怕吵。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "更正一下，不是小狗，是小猫，它更怕吵。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6165ff79-4992-9e78-8424-579cbd24a8f8",
+      "usage": {
+        "prompt_tokens": 158,
+        "total_tokens": 198,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 142
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a237c8b3d7b7557293290899bb72e0758ee158b62381a721d80df678065eba1f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a237c8b3d7b7557293290899bb72e0758ee158b62381a721d80df678065eba1f",
+        "canonical_audio_sha256": "ff330b841f16282ec12031128bc9f51e56f5b7737a73a950180118b8d11c293a",
+        "pcm_sha256": "8bb6806049bd624ea21f5448494d8bc8373f1ccce1e7edf40e46dc870a11c871",
+        "same_samples": true
+      }
+    }
+  ]
+}

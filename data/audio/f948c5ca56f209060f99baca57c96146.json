@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/f948c5ca56f209060f99baca57c96146.wav",
+  "sha256": "a38bc83605d9ca899356c37f3b9f84d657740c6221c7594af144474f5fe488f2",
+  "duration_seconds": 4.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "0872d638-b108-9427-85f6-99b9abaaaee2",
+  "usage": {
+    "input_tokens": 201,
+    "output_tokens": 992,
+    "total_tokens": 1193,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想练习一下普通话朗读，你听我说这句话对不对：“春天来了，花儿都开了。”",
+  "spoken_text": "我想练习一下普通话朗读，你听我说这句话对不对:“春天来了，花儿都开了。”",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想练习一下普通话朗读，你听我说这句话对不对？春天来了，花儿都开了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想练习一下普通话朗读，你听我说这句话对不对？春天来了，花儿都开了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2a7d5c25-6fd8-9ce9-a60d-e96c1007a33f",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "a38bc83605d9ca899356c37f3b9f84d657740c6221c7594af144474f5fe488f2"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9b2bcba76db61b303861924e729f409f3fe3e193644fce30d9f1f7c538a67b20",
+    "canonical_sha256": "a38bc83605d9ca899356c37f3b9f84d657740c6221c7594af144474f5fe488f2",
+    "pcm_sha256": "4a35764a61fa668af27ec3562a8f5611fbd8b02986e857327d243f8c6020e419",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 119040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想练习一下普通话朗读，你听我说这句话对不对？春天来了，花儿都开了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想练习一下普通话朗读，你听我说这句话对不对？春天来了，花儿都开了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b34c6f35-2469-9a05-8e1a-c8a40cee35fc",
+      "usage": {
+        "prompt_tokens": 177,
+        "total_tokens": 222,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9b2bcba76db61b303861924e729f409f3fe3e193644fce30d9f1f7c538a67b20",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9b2bcba76db61b303861924e729f409f3fe3e193644fce30d9f1f7c538a67b20",
+        "canonical_audio_sha256": "a38bc83605d9ca899356c37f3b9f84d657740c6221c7594af144474f5fe488f2",
+        "pcm_sha256": "4a35764a61fa668af27ec3562a8f5611fbd8b02986e857327d243f8c6020e419",
+        "same_samples": true
+      }
+    }
+  ]
+}

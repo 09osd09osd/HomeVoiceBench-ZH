@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/871a2c1575817c90c085002b165c2642.wav",
+  "sha256": "b0a62efbcc188ae67d5b354de485c0ad19c31802d874415d99e65db59fb298b9",
+  "duration_seconds": 4.88,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "ceb3ea82-3ca1-9b66-8da0-3ac2f662829b",
+  "usage": {
+    "input_tokens": 203,
+    "output_tokens": 976,
+    "total_tokens": 1179,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "等一下，我刚才说错了，不是3个词，是4个词，你重新说4个吧。",
+  "spoken_text": "等一下，我刚才说错了，不是三个词，是四个词，你重新说四个吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "等一下，我刚才说错了，不是三个词，是四个词。你重新说四个吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "等一下，我刚才说错了，不是三个词，是四个词。你重新说四个吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1760f33d-d827-9e26-b1a0-06cb9cd55d79",
+    "usage": {
+      "prompt_tokens": 243,
+      "total_tokens": 290,
+      "completion_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 213
+      },
+      "completion_tokens_details": {
+        "text_tokens": 47
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "b0a62efbcc188ae67d5b354de485c0ad19c31802d874415d99e65db59fb298b9"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "677c3c6af482b00d62db70b87c3bd054b08dcf3c0171bc9684c5155fa999ad0d",
+    "canonical_sha256": "b0a62efbcc188ae67d5b354de485c0ad19c31802d874415d99e65db59fb298b9",
+    "pcm_sha256": "8767453ae3cb19d1da841e0451e0fe155473e67573691e5152a80563d7fd8636",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 117120,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "等一下，我刚才说错了，不是三个词，是四个词。你重新说四个吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "等一下，我刚才说错了，不是三个词，是四个词。你重新说四个吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-f4e368d4-ed5b-995d-bd8e-c96f420831bf",
+      "usage": {
+        "prompt_tokens": 182,
+        "total_tokens": 229,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 152
+        },
+        "completion_tokens_details": {
+          "text_tokens": 47
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "677c3c6af482b00d62db70b87c3bd054b08dcf3c0171bc9684c5155fa999ad0d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "677c3c6af482b00d62db70b87c3bd054b08dcf3c0171bc9684c5155fa999ad0d",
+        "canonical_audio_sha256": "b0a62efbcc188ae67d5b354de485c0ad19c31802d874415d99e65db59fb298b9",
+        "pcm_sha256": "8767453ae3cb19d1da841e0451e0fe155473e67573691e5152a80563d7fd8636",
+        "same_samples": true
+      }
+    }
+  ]
+}

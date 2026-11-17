@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/4eaf17efbe61b6c47aab6ecd2c787291.wav",
+  "sha256": "8b7181b6852539480ade7b18e1462fcdbc84245973dc5c541b3cf4537d549fd3",
+  "duration_seconds": 6.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "d8ad96ec-1bf4-9bed-bbcd-352109dd90ef",
+  "usage": {
+    "input_tokens": 208,
+    "output_tokens": 1264,
+    "total_tokens": 1472,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我刚才说错了，不是三点前到，是四点前到，现在才三点二十，还没到时间呢。",
+  "spoken_text": "我刚才说错了，不是三点前到，是四点前到，现在才三点二十，还没到时间呢。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我刚才说错了，不是三点前到，是四点前到。现在才三点二十，还没到时间呢。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我刚才说错了，不是三点前到，是四点前到。现在才三点二十，还没到时间呢。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b3cfa13d-491c-91aa-ba4e-8cc05c3101ff",
+    "usage": {
+      "prompt_tokens": 258,
+      "total_tokens": 309,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8b7181b6852539480ade7b18e1462fcdbc84245973dc5c541b3cf4537d549fd3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5864590ae04c94869c132ff3f66b313eccde78765c0c6c8a8927d608b4b99614",
+    "canonical_sha256": "8b7181b6852539480ade7b18e1462fcdbc84245973dc5c541b3cf4537d549fd3",
+    "pcm_sha256": "91d353c7563163b0f2631bae640e0b06bda7ab555e26283cc2671bbf7577956d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 151680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我刚才说错了，不是三点前到，是四点前到，现在才三点二十，还没到时间呢。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a9cc0b5a-c535-95fa-a0bf-0996ef4594e9",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 225,
+        "completion_tokens": 51,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 51
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5864590ae04c94869c132ff3f66b313eccde78765c0c6c8a8927d608b4b99614",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5864590ae04c94869c132ff3f66b313eccde78765c0c6c8a8927d608b4b99614",
+        "canonical_audio_sha256": "8b7181b6852539480ade7b18e1462fcdbc84245973dc5c541b3cf4537d549fd3",
+        "pcm_sha256": "91d353c7563163b0f2631bae640e0b06bda7ab555e26283cc2671bbf7577956d",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/75fee50c5a72a359a92bb41bb3d4c689.wav",
+  "sha256": "af7da607b006a8845d4cd8e986f58dff75cbf9552ea19d09ec6a17c16d90dae3",
+  "duration_seconds": 3.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "971116c9-75f6-9791-9b6e-7e08b4c771d4",
+  "usage": {
+    "input_tokens": 205,
+    "output_tokens": 712,
+    "total_tokens": 917,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我改的时间吗？现在几点该看进度来着？",
+  "spoken_text": "你还记得我改的时间吗？现在几点该看进度来着？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我改的时间吗？现在几点该看进度来着？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我改的时间吗？现在几点该看进度来着？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-29fb750d-ca73-953f-9842-11d768458e22",
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 268,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "af7da607b006a8845d4cd8e986f58dff75cbf9552ea19d09ec6a17c16d90dae3"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e3e44df7e71967250a9610d0657d57040634d376060bc7e9d60553366108893c",
+    "canonical_sha256": "af7da607b006a8845d4cd8e986f58dff75cbf9552ea19d09ec6a17c16d90dae3",
+    "pcm_sha256": "6e3bc70ad22ea6418c328646d0152c72f9bd0144c7bfb0d90f3a7c121b5676eb",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 85440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我改的时间吗？现在几点该看进度来着？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b4407e1f-dc97-9c77-809a-e7fdfb4c3bba",
+      "usage": {
+        "prompt_tokens": 143,
+        "total_tokens": 184,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e3e44df7e71967250a9610d0657d57040634d376060bc7e9d60553366108893c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e3e44df7e71967250a9610d0657d57040634d376060bc7e9d60553366108893c",
+        "canonical_audio_sha256": "af7da607b006a8845d4cd8e986f58dff75cbf9552ea19d09ec6a17c16d90dae3",
+        "pcm_sha256": "6e3bc70ad22ea6418c328646d0152c72f9bd0144c7bfb0d90f3a7c121b5676eb",
+        "same_samples": true
+      }
+    }
+  ]
+}

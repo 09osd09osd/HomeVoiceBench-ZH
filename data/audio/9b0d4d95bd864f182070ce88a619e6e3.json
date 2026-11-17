@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/9b0d4d95bd864f182070ce88a619e6e3.wav",
+  "sha256": "4d26d3c09d965daad860c4432177c1a9d73e84ee14274021fef8918cc24477b7",
+  "duration_seconds": 4.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "db606001-116a-9bf3-92a7-8856d5d647e1",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 912,
+    "total_tokens": 1094,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我把客厅音箱打开，音量调到60%。",
+  "spoken_text": "帮我把客厅音箱打开，音量调到百分之六十。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我把客厅音箱打开，音量调到百分之六十。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我把客厅音箱打开，音量调到百分之六十。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b31c2719-7bcf-9bca-a19f-b3bffa98bf0e",
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 268,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4d26d3c09d965daad860c4432177c1a9d73e84ee14274021fef8918cc24477b7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4d3bcf79358f423cc352123e4e4fd38651a53c60722a4cb0300ea16a4cebd884",
+    "canonical_sha256": "4d26d3c09d965daad860c4432177c1a9d73e84ee14274021fef8918cc24477b7",
+    "pcm_sha256": "46df0377fe8c616fa029e206216b7ae8c4cccd2d7dc1ed157ccb8fdd48ec27b1",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 109440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我把客厅音箱打开，音量调到百分之六十。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我把客厅音箱打开，音量调到百分之六十。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-76d27252-e443-93e5-b897-667ba09e8caf",
+      "usage": {
+        "prompt_tokens": 170,
+        "total_tokens": 207,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4d3bcf79358f423cc352123e4e4fd38651a53c60722a4cb0300ea16a4cebd884",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4d3bcf79358f423cc352123e4e4fd38651a53c60722a4cb0300ea16a4cebd884",
+        "canonical_audio_sha256": "4d26d3c09d965daad860c4432177c1a9d73e84ee14274021fef8918cc24477b7",
+        "pcm_sha256": "46df0377fe8c616fa029e206216b7ae8c4cccd2d7dc1ed157ccb8fdd48ec27b1",
+        "same_samples": true
+      }
+    }
+  ]
+}

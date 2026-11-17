@@ -1,0 +1,172 @@
+{
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-c94b3954-5822-9883-b32a-ee11e3778ed5",
+  "usage": {
+    "prompt_tokens": 6990,
+    "total_tokens": 8141,
+    "completion_tokens": 1151,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 6990
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1151
+    }
+  },
+  "review_request_id": "chatcmpl-3667578e-ad6e-9b88-9cc1-0757ef15bff2",
+  "review_usage": {
+    "prompt_tokens": 7763,
+    "total_tokens": 7849,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 7763
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T01_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T01_011",
+        "title": "查询房间与书房设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看书房里有哪些设备，只查询，别动。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。书房里有书房灯和书房风扇。只查询，没有操作设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_012",
+        "title": "查询房间、书房设备与灯总数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看书房里有哪些设备，只查询，别动。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。书房里有书房灯和书房风扇。只查询，没有操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯：客厅灯在客厅，卧室灯在卧室，书房灯在书房。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_013",
+        "title": "查询房间、书房设备、灯位置与书房灯参数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看书房里有哪些设备，只查询，别动。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。书房里有书房灯和书房风扇。只查询，没有操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯：客厅灯在客厅，卧室灯在卧室，书房灯在书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "书房的灯能调哪些参数？",
+            "reference_text": "书房灯可以调开关、亮度，亮度范围是0%到100%；还可以调色温，范围是2700K到6500K。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_014",
+        "title": "查询房间、书房设备、灯位置、书房灯参数与厨房空调",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看书房里有哪些设备，只查询，别动。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。书房里有书房灯和书房风扇。只查询，没有操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯：客厅灯在客厅，卧室灯在卧室，书房灯在书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "书房的灯能调哪些参数？",
+            "reference_text": "书房灯可以调开关、亮度，亮度范围是0%到100%；还可以调色温，范围是2700K到6500K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有就说没有。",
+            "reference_text": "厨房没有空调。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_015",
+        "title": "查询并整理家庭设备情况",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看书房里有哪些设备，只查询，别动。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。书房里有书房灯和书房风扇。只查询，没有操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯：客厅灯在客厅，卧室灯在卧室，书房灯在书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "书房的灯能调哪些参数？",
+            "reference_text": "书房灯可以调开关、亮度，亮度范围是0%到100%；还可以调色温，范围是2700K到6500K。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有就说没有。",
+            "reference_text": "厨房没有空调。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "整理一下刚才查到的情况，不要操作设备。",
+            "reference_text": "家里有客厅、卧室、书房和厨房。书房里有书房灯和书房风扇。家里共有3盏灯：客厅灯、卧室灯、书房灯。书房灯可调开关、亮度0%到100%、色温2700K到6500K。厨房没有空调。没有操作任何设备。"
+          }
+        ]
+      }
+    ]
+  }
+}

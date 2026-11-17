@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-11-16T19:52:26.832325+00:00",
+  "policy": "one GPU engine at a time; native microbatch4, Qwen4 slots, TTS16 fixed after measured WDDM pressure; overlapping cloud judge16",
+  "stages": [
+    {
+      "name": "edge_native_batch4",
+      "started_at": "2026-11-16T19:52:26.834325+00:00"
+    },
+    {
+      "name": "qwen35_2b",
+      "started_at": "2026-11-16T19:52:28.664312+00:00"
+    },
+    {
+      "name": "qwen35_4b",
+      "started_at": "2026-11-16T19:52:28.668426+00:00"
+    },
+    {
+      "name": "baseline_tts_batch16",
+      "started_at": "2026-11-16T19:52:28.676800+00:00"
+    }
+  ],
+  "current_stage": "baseline_tts_batch16",
+  "status": "needs_attention",
+  "error": "baseline-tts exited 15; inspect logs/pipeline-baseline-tts.log"
+}

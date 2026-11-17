@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/15954ee608bc133f14777090cace1609.wav",
+  "sha256": "d6e36658723d1576504398e89a3a57a209d0db86e86b23022fcb30668b42d297",
+  "duration_seconds": 3.68,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "24f1d78f-2f9c-9364-82e2-da012c5c62c2",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 736,
+    "total_tokens": 918,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "把刚才那个客厅空调的温度改成28度，其他设置不要动。",
+  "spoken_text": "把刚才那个客厅空调的温度改成二十八度，其他设置不要动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "把刚才那个客厅空调的温度改成28度，其他设置不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "把刚才那个客厅空调的温度改成28度，其他设置不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-93873608-4fae-90d0-9c5d-d491ab610403",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "d6e36658723d1576504398e89a3a57a209d0db86e86b23022fcb30668b42d297"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7e880d6a5af95c9549c452a9a9dafb4fa7fe1c190d316fb3fd55dc9fad965514",
+    "canonical_sha256": "d6e36658723d1576504398e89a3a57a209d0db86e86b23022fcb30668b42d297",
+    "pcm_sha256": "115255187926826efb9b51cefff2926afed3995462fb65c0d70922c5b2c9ca76",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 88320,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "把刚才那个客厅空调的温度改成二十八度，其他设置不要动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "把刚才那个客厅空调的温度改成二十八度，其他设置不要动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-b7afa3f2-4001-9692-bb64-b29d31dd060c",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 208,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7e880d6a5af95c9549c452a9a9dafb4fa7fe1c190d316fb3fd55dc9fad965514",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7e880d6a5af95c9549c452a9a9dafb4fa7fe1c190d316fb3fd55dc9fad965514",
+        "canonical_audio_sha256": "d6e36658723d1576504398e89a3a57a209d0db86e86b23022fcb30668b42d297",
+        "pcm_sha256": "115255187926826efb9b51cefff2926afed3995462fb65c0d70922c5b2c9ca76",
+        "same_samples": true
+      }
+    }
+  ]
+}

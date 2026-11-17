@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9b44ec19f7e68a7ef34d4e385ff774e1.wav",
+  "sha256": "e115b901e8ea380cac7d7db81d3457c449cfd7fcac51f9f0471a33b792bf906b",
+  "duration_seconds": 4.08,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a198b2a9-2a78-9b5e-b6d8-a0dcaf6cd9f0",
+  "usage": {
+    "input_tokens": 196,
+    "output_tokens": 816,
+    "total_tokens": 1012,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "你还记得我刚更正的带娃情况吗？现在心里还是堵得慌。",
+  "spoken_text": "你还记得我刚更正的带娃情况吗？现在心里还是堵得慌。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "你还记得我刚更正的带娃情况吗？现在心里还是堵得慌。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "你还记得我刚更正的带娃情况吗？现在心里还是堵得慌。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-1ab5a248-eea9-90cb-8270-c0af51865411",
+    "usage": {
+      "prompt_tokens": 236,
+      "total_tokens": 279,
+      "completion_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 206
+      },
+      "completion_tokens_details": {
+        "text_tokens": 43
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "e115b901e8ea380cac7d7db81d3457c449cfd7fcac51f9f0471a33b792bf906b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e27ab86831477e714646d3dac459edf021e7cbfa0ceb575cc936357e5297da14",
+    "canonical_sha256": "e115b901e8ea380cac7d7db81d3457c449cfd7fcac51f9f0471a33b792bf906b",
+    "pcm_sha256": "f56727e2632a92ea0ab19c85fc87668012b24c87a4c47bec37621b6125882d8b",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 97920,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "你还记得我刚更正的带娃情况吗？现在心里还是堵得慌。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-cecb9370-fadb-9622-ae96-4de07c2a9d38",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 195,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 122
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e27ab86831477e714646d3dac459edf021e7cbfa0ceb575cc936357e5297da14",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e27ab86831477e714646d3dac459edf021e7cbfa0ceb575cc936357e5297da14",
+        "canonical_audio_sha256": "e115b901e8ea380cac7d7db81d3457c449cfd7fcac51f9f0471a33b792bf906b",
+        "pcm_sha256": "f56727e2632a92ea0ab19c85fc87668012b24c87a4c47bec37621b6125882d8b",
+        "same_samples": true
+      }
+    }
+  ]
+}

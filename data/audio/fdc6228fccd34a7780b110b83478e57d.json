@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/fdc6228fccd34a7780b110b83478e57d.wav",
+  "sha256": "03410e0a408ba5b96bd7ee7ae8467af987a72437d10f40405479c94239dd333b",
+  "duration_seconds": 8.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2adb5937-1345-940a-9696-15642df27732",
+  "usage": {
+    "input_tokens": 248,
+    "output_tokens": 1656,
+    "total_tokens": 1904,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我爸看我这个月生活费花得快，以为我乱买东西，其实我买了教材和修了自行车。我想跟他解释，又不想吵起来，怎么讲比较好？",
+  "spoken_text": "我爸看我这个月生活费花得快，以为我乱买东西，其实我买了教材和修了自行车。我想跟他解释，又不想吵起来，怎么讲比较好？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我爸看我这个月生活费花得快，以为我乱买东西。其实我买了教材和修了自行车，我想跟他解释，又不想吵起来，怎么讲比较好？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我爸看我这个月生活费花得快，以为我乱买东西。其实我买了教材和修了自行车，我想跟他解释，又不想吵起来，怎么讲比较好？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a8f04add-95cf-9768-9f43-bf37ddd9bafd",
+    "usage": {
+      "prompt_tokens": 282,
+      "total_tokens": 343,
+      "completion_tokens": 61,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 224
+      },
+      "completion_tokens_details": {
+        "text_tokens": 61
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "03410e0a408ba5b96bd7ee7ae8467af987a72437d10f40405479c94239dd333b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "98f3f85ebe97a53d2b382b659505fb506b001c570e49e126bbd567dec1c05c21",
+    "canonical_sha256": "03410e0a408ba5b96bd7ee7ae8467af987a72437d10f40405479c94239dd333b",
+    "pcm_sha256": "9ae50d77a3e1dc9392cf80af97f5a7481592d1a361d6e97f4a21863dcdcfead5",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 198720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我爸看我这个月生活费花得快，以为我乱买东西。其实我买了教材和修了自行车，我想跟他解释，又不想吵起来，怎么讲比较好？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-197ad663-9d42-9375-a57f-888a2ea2cde1",
+      "usage": {
+        "prompt_tokens": 198,
+        "total_tokens": 259,
+        "completion_tokens": 61,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 61
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "98f3f85ebe97a53d2b382b659505fb506b001c570e49e126bbd567dec1c05c21",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "98f3f85ebe97a53d2b382b659505fb506b001c570e49e126bbd567dec1c05c21",
+        "canonical_audio_sha256": "03410e0a408ba5b96bd7ee7ae8467af987a72437d10f40405479c94239dd333b",
+        "pcm_sha256": "9ae50d77a3e1dc9392cf80af97f5a7481592d1a361d6e97f4a21863dcdcfead5",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/6962a36ce2b7c3f9a97c30865464da1b.wav",
+  "sha256": "6fdf190af868bab47d04bf03b4e8eaedd2aa91be097436e3ab7a73183d90b7d1",
+  "duration_seconds": 8.36,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f2424e53-4f82-97ea-8f10-263002962ccc",
+  "usage": {
+    "input_tokens": 209,
+    "output_tokens": 1672,
+    "total_tokens": 1881,
+    "duration": 8
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "这几天家里事全堆一块儿了，孩子作业、老人复查、还有一堆家务，我快喘不过气了。我就想找你说说，你别给我安排这安排那的。",
+  "spoken_text": "这几天家里事全堆一块儿了，孩子作业、老人复查、还有一堆家务，我快喘不过气了。我就想找你说说，你别给我安排这安排那的。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "这几天家里事儿全堆一块儿了，孩子作业、老人复查，还有一堆家务，我快喘不过气儿了。我就想找你说说，你别给我安排这安排那的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "这几天家里事儿全堆一块儿了，孩子作业、老人复查，还有一堆家务，我快喘不过气儿了。我就想找你说说，你别给我安排这安排那的。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7a314212-8fa5-9655-8351-af58ae522f59",
+    "usage": {
+      "prompt_tokens": 286,
+      "total_tokens": 353,
+      "completion_tokens": 67,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "text_tokens": 228
+      },
+      "completion_tokens_details": {
+        "text_tokens": 67
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6fdf190af868bab47d04bf03b4e8eaedd2aa91be097436e3ab7a73183d90b7d1"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "5bd8ff21f163aa41897db6fe4266f6464779b8113fb798337ae07f7e660fc65d",
+    "canonical_sha256": "6fdf190af868bab47d04bf03b4e8eaedd2aa91be097436e3ab7a73183d90b7d1",
+    "pcm_sha256": "f018d5906174cb1c3681db7490fc1f655cba7a70b41d60466ae8ef0b18287a72",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 200640,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "这几天家里事儿全堆一块儿了，孩子作业、老人复查还有一堆家务，我快喘不过气儿了。我就想找你说说，你别给我安排这安排那的。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-97af351e-8579-976d-b756-cace7d03262d",
+      "usage": {
+        "prompt_tokens": 202,
+        "total_tokens": 268,
+        "completion_tokens": 66,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 66
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "5bd8ff21f163aa41897db6fe4266f6464779b8113fb798337ae07f7e660fc65d",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "5bd8ff21f163aa41897db6fe4266f6464779b8113fb798337ae07f7e660fc65d",
+        "canonical_audio_sha256": "6fdf190af868bab47d04bf03b4e8eaedd2aa91be097436e3ab7a73183d90b7d1",
+        "pcm_sha256": "f018d5906174cb1c3681db7490fc1f655cba7a70b41d60466ae8ef0b18287a72",
+        "same_samples": true
+      }
+    }
+  ]
+}

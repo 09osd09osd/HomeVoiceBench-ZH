@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/55c5e28d5de755fa4469a1d29bbcad2c.wav",
+  "sha256": "41fc856201344fda7b081e0ceee6ec816124261e71e90d62059d11039da84fed",
+  "duration_seconds": 4.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "9a514228-c748-9eef-8d74-7b98e82a246e",
+  "usage": {
+    "input_tokens": 190,
+    "output_tokens": 880,
+    "total_tokens": 1070,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "早上起来想听点新闻，帮我留意一下本地的晨间新闻。",
+  "spoken_text": "早上起来想听点新闻，帮我留意一下本地的晨间新闻。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "早上起来想听点新闻，帮我留意一下本地的晨间新闻。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "早上起来想听点新闻，帮我留意一下本地的晨间新闻。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-a7639eaa-a23b-9f82-b451-118ef4a55435",
+    "usage": {
+      "prompt_tokens": 234,
+      "total_tokens": 275,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 204
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "41fc856201344fda7b081e0ceee6ec816124261e71e90d62059d11039da84fed"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "739610d246f2db54b5612cb6cf0ab5bc4c11d9eedfaf06b96eee3066532915ae",
+    "canonical_sha256": "41fc856201344fda7b081e0ceee6ec816124261e71e90d62059d11039da84fed",
+    "pcm_sha256": "0e2a804eb375cc4f442f376c4750ae97685dc2bdf6bd7b22eed3ddce335cd219",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 105600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "早上起来想听点新闻，帮我留意一下本地的晨间新闻。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ca74c958-79e3-9e44-8111-376f767672ca",
+      "usage": {
+        "prompt_tokens": 150,
+        "total_tokens": 191,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 120
+        },
+        "completion_tokens_details": {
+          "text_tokens": 41
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "739610d246f2db54b5612cb6cf0ab5bc4c11d9eedfaf06b96eee3066532915ae",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "739610d246f2db54b5612cb6cf0ab5bc4c11d9eedfaf06b96eee3066532915ae",
+        "canonical_audio_sha256": "41fc856201344fda7b081e0ceee6ec816124261e71e90d62059d11039da84fed",
+        "pcm_sha256": "0e2a804eb375cc4f442f376c4750ae97685dc2bdf6bd7b22eed3ddce335cd219",
+        "same_samples": true
+      }
+    }
+  ]
+}

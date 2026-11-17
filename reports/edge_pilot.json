@@ -1,0 +1,1580 @@
+{
+  "record_kind": "infrastructure_pilot_not_benchmark_score",
+  "outputs": [
+    {
+      "raw_output": "<tool_call>\n<function=device_set>\n<parameter=device_id>\nliving_room_light\n</parameter>\n<parameter=changes>\n{\"power\": true, \"brightness_pct\": 40}\n</parameter>\n</function>\n</tool_call>",
+      "input_tokens": 3767,
+      "generated_tokens": 52,
+      "finish_reason": "stop",
+      "audio_evidence": [
+        {
+          "sha256": "8b1df789fa4cbbc526c618beaf2ad3dc3e6d95d1b9e0548c2b8ea0b529161cdd",
+          "seconds": 4.0
+        }
+      ],
+      "external_asr": false,
+      "worker_wall_seconds": 1.4059999999590218
+    },
+    {
+      "raw_output": "客厅的灯不存在或不可见，无法打开。",
+      "input_tokens": 3933,
+      "generated_tokens": 12,
+      "finish_reason": "stop",
+      "audio_evidence": [
+        {
+          "sha256": "8b1df789fa4cbbc526c618beaf2ad3dc3e6d95d1b9e0548c2b8ea0b529161cdd",
+          "seconds": 4.0
+        }
+      ],
+      "external_asr": false,
+      "worker_wall_seconds": 0.6560000000754371
+    }
+  ],
+  "tool_trace": [
+    {
+      "call": {
+        "tool_name": "device_set",
+        "arguments": {
+          "device_id": "living_room_light",
+          "changes": {
+            "power": true,
+            "brightness_pct": 40
+          }
+        }
+      },
+      "request_id": "REQ_0001",
+      "response": {
+        "request_id": "REQ_0001",
+        "ok": false,
+        "status": "failed",
+        "data": null,
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "指定对象不存在或不可见。",
+          "retryable": false
+        },
+        "operation_id": null,
+        "clock_time": "2026-12-01T18:00:00.000+08:00"
+      },
+      "state_before": {
+        "clock": {
+          "start_at": "2026-12-01T18:00:00+08:00",
+          "current_at": "2026-12-01T18:00:00+08:00",
+          "timezone": "Asia/Taipei",
+          "advance_after_user_turn_ms": 1000,
+          "advance_after_tool_call_ms": 100
+        },
+        "home": {
+          "home_id": "synthetic_home",
+          "name": "安和之家",
+          "rooms": [
+            {
+              "id": "living",
+              "name": "客厅"
+            },
+            {
+              "id": "bedroom",
+              "name": "卧室"
+            },
+            {
+              "id": "study",
+              "name": "书房"
+            },
+            {
+              "id": "kitchen",
+              "name": "厨房"
+            }
+          ],
+          "public_preferences": [
+            {
+              "key": "睡前音量",
+              "value": "20%"
+            },
+            {
+              "key": "阅读色温",
+              "value": "4000K"
+            }
+          ]
+        },
+        "devices": [
+          {
+            "id": "light_living",
+            "name": "客厅灯",
+            "type": "light",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": 30,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "brightness_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              },
+              {
+                "field": "color_temperature_k",
+                "allowed_values": null,
+                "minimum": 2700,
+                "maximum": 6500,
+                "unit": "K"
+              }
+            ]
+          },
+          {
+            "id": "light_bedroom",
+            "name": "卧室灯",
+            "type": "light",
+            "room_id": "bedroom",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": 30,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "brightness_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              },
+              {
+                "field": "color_temperature_k",
+                "allowed_values": null,
+                "minimum": 2700,
+                "maximum": 6500,
+                "unit": "K"
+              }
+            ]
+          },
+          {
+            "id": "light_study",
+            "name": "书房灯",
+            "type": "light",
+            "room_id": "study",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": 30,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "brightness_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              },
+              {
+                "field": "color_temperature_k",
+                "allowed_values": null,
+                "minimum": 2700,
+                "maximum": 6500,
+                "unit": "K"
+              }
+            ]
+          },
+          {
+            "id": "ac_living",
+            "name": "客厅空调",
+            "type": "air_conditioner",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": 26,
+              "mode": "cool",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "target_temperature_c",
+                "allowed_values": null,
+                "minimum": 16,
+                "maximum": 30,
+                "unit": "C"
+              },
+              {
+                "field": "mode",
+                "allowed_values": [
+                  "cool",
+                  "heat",
+                  "dry",
+                  "fan",
+                  "auto"
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "fan_speed",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 3,
+                "unit": null
+              }
+            ]
+          },
+          {
+            "id": "curtain_bedroom",
+            "name": "卧室窗帘",
+            "type": "curtain",
+            "room_id": "bedroom",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": 50,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "opening_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              }
+            ]
+          },
+          {
+            "id": "fan_study",
+            "name": "书房风扇",
+            "type": "fan",
+            "room_id": "study",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": 1,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "fan_speed",
+                "allowed_values": null,
+                "minimum": 1,
+                "maximum": 3,
+                "unit": null
+              }
+            ]
+          },
+          {
+            "id": "purifier_living",
+            "name": "客厅净化器",
+            "type": "purifier",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": "auto",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "mode",
+                "allowed_values": [
+                  "auto",
+                  "sleep",
+                  "manual"
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "fan_speed",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 3,
+                "unit": null
+              }
+            ]
+          },
+          {
+            "id": "speaker_living",
+            "name": "客厅音箱",
+            "type": "speaker",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "volume_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              }
+            ]
+          },
+          {
+            "id": "speaker_bedroom",
+            "name": "卧室音箱",
+            "type": "speaker",
+            "room_id": "bedroom",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "volume_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              }
+            ]
+          },
+          {
+            "id": "tv_living",
+            "name": "客厅电视",
+            "type": "tv",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "volume_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              }
+            ]
+          },
+          {
+            "id": "vacuum",
+            "name": "扫地机器人",
+            "type": "vacuum",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": "idle",
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "target_room_ids",
+                "allowed_values": null,
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "cleaning_action",
+                "allowed_values": [
+                  "start",
+                  "pause",
+                  "resume",
+                  "return_home"
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              }
+            ]
+          }
+        ],
+        "sensors": [
+          {
+            "id": "sensor_living_temperature_c",
+            "room_id": "living",
+            "metric": "temperature_c",
+            "value": 23,
+            "unit": "C",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_living_humidity_pct",
+            "room_id": "living",
+            "metric": "humidity_pct",
+            "value": 38,
+            "unit": "percent",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_living_illuminance_lux",
+            "room_id": "living",
+            "metric": "illuminance_lux",
+            "value": 117,
+            "unit": "lux",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_living_co2_ppm",
+            "room_id": "living",
+            "metric": "co2_ppm",
+            "value": 521,
+            "unit": "ppm",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_living_presence",
+            "room_id": "living",
+            "metric": "presence",
+            "value": false,
+            "unit": "boolean",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_temperature_c",
+            "room_id": "bedroom",
+            "metric": "temperature_c",
+            "value": 24,
+            "unit": "C",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_humidity_pct",
+            "room_id": "bedroom",
+            "metric": "humidity_pct",
+            "value": 39,
+            "unit": "percent",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_illuminance_lux",
+            "room_id": "bedroom",
+            "metric": "illuminance_lux",
+            "value": 257,
+            "unit": "lux",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_co2_ppm",
+            "room_id": "bedroom",
+            "metric": "co2_ppm",
+            "value": 691,
+            "unit": "ppm",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_presence",
+            "room_id": "bedroom",
+            "metric": "presence",
+            "value": true,
+            "unit": "boolean",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_temperature_c",
+            "room_id": "study",
+            "metric": "temperature_c",
+            "value": 25,
+            "unit": "C",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_humidity_pct",
+            "room_id": "study",
+            "metric": "humidity_pct",
+            "value": 40,
+            "unit": "percent",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_illuminance_lux",
+            "room_id": "study",
+            "metric": "illuminance_lux",
+            "value": 397,
+            "unit": "lux",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_co2_ppm",
+            "room_id": "study",
+            "metric": "co2_ppm",
+            "value": 861,
+            "unit": "ppm",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_presence",
+            "room_id": "study",
+            "metric": "presence",
+            "value": false,
+            "unit": "boolean",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_temperature_c",
+            "room_id": "kitchen",
+            "metric": "temperature_c",
+            "value": 26,
+            "unit": "C",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_humidity_pct",
+            "room_id": "kitchen",
+            "metric": "humidity_pct",
+            "value": 41,
+            "unit": "percent",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_illuminance_lux",
+            "room_id": "kitchen",
+            "metric": "illuminance_lux",
+            "value": 537,
+            "unit": "lux",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_co2_ppm",
+            "room_id": "kitchen",
+            "metric": "co2_ppm",
+            "value": 1031,
+            "unit": "ppm",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_presence",
+            "room_id": "kitchen",
+            "metric": "presence",
+            "value": true,
+            "unit": "boolean",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          }
+        ],
+        "schedules": [],
+        "media_catalog": [
+          {
+            "id": "media_1",
+            "title": "雨后散步",
+            "type": "music",
+            "duration_s": 180,
+            "source": "fixture",
+            "asset_id": "simulated_media_1"
+          },
+          {
+            "id": "media_2",
+            "title": "安静钢琴",
+            "type": "music",
+            "duration_s": 240,
+            "source": "fixture",
+            "asset_id": "simulated_media_2"
+          },
+          {
+            "id": "media_3",
+            "title": "小熊找月亮",
+            "type": "story",
+            "duration_s": 420,
+            "source": "fixture",
+            "asset_id": "simulated_media_3"
+          },
+          {
+            "id": "media_4",
+            "title": "星空小知识",
+            "type": "podcast",
+            "duration_s": 600,
+            "source": "fixture",
+            "asset_id": "simulated_media_4"
+          }
+        ],
+        "playbacks": [],
+        "tasks": []
+      },
+      "state_after": {
+        "clock": {
+          "start_at": "2026-12-01T18:00:00+08:00",
+          "current_at": "2026-12-01T18:00:00+08:00",
+          "timezone": "Asia/Taipei",
+          "advance_after_user_turn_ms": 1000,
+          "advance_after_tool_call_ms": 100
+        },
+        "home": {
+          "home_id": "synthetic_home",
+          "name": "安和之家",
+          "rooms": [
+            {
+              "id": "living",
+              "name": "客厅"
+            },
+            {
+              "id": "bedroom",
+              "name": "卧室"
+            },
+            {
+              "id": "study",
+              "name": "书房"
+            },
+            {
+              "id": "kitchen",
+              "name": "厨房"
+            }
+          ],
+          "public_preferences": [
+            {
+              "key": "睡前音量",
+              "value": "20%"
+            },
+            {
+              "key": "阅读色温",
+              "value": "4000K"
+            }
+          ]
+        },
+        "devices": [
+          {
+            "id": "light_living",
+            "name": "客厅灯",
+            "type": "light",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": 30,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "brightness_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              },
+              {
+                "field": "color_temperature_k",
+                "allowed_values": null,
+                "minimum": 2700,
+                "maximum": 6500,
+                "unit": "K"
+              }
+            ]
+          },
+          {
+            "id": "light_bedroom",
+            "name": "卧室灯",
+            "type": "light",
+            "room_id": "bedroom",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": 30,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "brightness_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              },
+              {
+                "field": "color_temperature_k",
+                "allowed_values": null,
+                "minimum": 2700,
+                "maximum": 6500,
+                "unit": "K"
+              }
+            ]
+          },
+          {
+            "id": "light_study",
+            "name": "书房灯",
+            "type": "light",
+            "room_id": "study",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": 30,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "brightness_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              },
+              {
+                "field": "color_temperature_k",
+                "allowed_values": null,
+                "minimum": 2700,
+                "maximum": 6500,
+                "unit": "K"
+              }
+            ]
+          },
+          {
+            "id": "ac_living",
+            "name": "客厅空调",
+            "type": "air_conditioner",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": 26,
+              "mode": "cool",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "target_temperature_c",
+                "allowed_values": null,
+                "minimum": 16,
+                "maximum": 30,
+                "unit": "C"
+              },
+              {
+                "field": "mode",
+                "allowed_values": [
+                  "cool",
+                  "heat",
+                  "dry",
+                  "fan",
+                  "auto"
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "fan_speed",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 3,
+                "unit": null
+              }
+            ]
+          },
+          {
+            "id": "curtain_bedroom",
+            "name": "卧室窗帘",
+            "type": "curtain",
+            "room_id": "bedroom",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": 50,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "opening_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              }
+            ]
+          },
+          {
+            "id": "fan_study",
+            "name": "书房风扇",
+            "type": "fan",
+            "room_id": "study",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": 1,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "fan_speed",
+                "allowed_values": null,
+                "minimum": 1,
+                "maximum": 3,
+                "unit": null
+              }
+            ]
+          },
+          {
+            "id": "purifier_living",
+            "name": "客厅净化器",
+            "type": "purifier",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": "auto",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "mode",
+                "allowed_values": [
+                  "auto",
+                  "sleep",
+                  "manual"
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "fan_speed",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 3,
+                "unit": null
+              }
+            ]
+          },
+          {
+            "id": "speaker_living",
+            "name": "客厅音箱",
+            "type": "speaker",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "volume_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              }
+            ]
+          },
+          {
+            "id": "speaker_bedroom",
+            "name": "卧室音箱",
+            "type": "speaker",
+            "room_id": "bedroom",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "volume_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              }
+            ]
+          },
+          {
+            "id": "tv_living",
+            "name": "客厅电视",
+            "type": "tv",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "volume_pct",
+                "allowed_values": null,
+                "minimum": 0,
+                "maximum": 100,
+                "unit": "percent"
+              }
+            ]
+          },
+          {
+            "id": "vacuum",
+            "name": "扫地机器人",
+            "type": "vacuum",
+            "room_id": "living",
+            "online": true,
+            "state": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": "idle",
+              "target_room_ids": []
+            },
+            "capabilities": [
+              {
+                "field": "power",
+                "allowed_values": [
+                  true,
+                  false
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "target_room_ids",
+                "allowed_values": null,
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              },
+              {
+                "field": "cleaning_action",
+                "allowed_values": [
+                  "start",
+                  "pause",
+                  "resume",
+                  "return_home"
+                ],
+                "minimum": null,
+                "maximum": null,
+                "unit": null
+              }
+            ]
+          }
+        ],
+        "sensors": [
+          {
+            "id": "sensor_living_temperature_c",
+            "room_id": "living",
+            "metric": "temperature_c",
+            "value": 23,
+            "unit": "C",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_living_humidity_pct",
+            "room_id": "living",
+            "metric": "humidity_pct",
+            "value": 38,
+            "unit": "percent",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_living_illuminance_lux",
+            "room_id": "living",
+            "metric": "illuminance_lux",
+            "value": 117,
+            "unit": "lux",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_living_co2_ppm",
+            "room_id": "living",
+            "metric": "co2_ppm",
+            "value": 521,
+            "unit": "ppm",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_living_presence",
+            "room_id": "living",
+            "metric": "presence",
+            "value": false,
+            "unit": "boolean",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_temperature_c",
+            "room_id": "bedroom",
+            "metric": "temperature_c",
+            "value": 24,
+            "unit": "C",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_humidity_pct",
+            "room_id": "bedroom",
+            "metric": "humidity_pct",
+            "value": 39,
+            "unit": "percent",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_illuminance_lux",
+            "room_id": "bedroom",
+            "metric": "illuminance_lux",
+            "value": 257,
+            "unit": "lux",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_co2_ppm",
+            "room_id": "bedroom",
+            "metric": "co2_ppm",
+            "value": 691,
+            "unit": "ppm",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_bedroom_presence",
+            "room_id": "bedroom",
+            "metric": "presence",
+            "value": true,
+            "unit": "boolean",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_temperature_c",
+            "room_id": "study",
+            "metric": "temperature_c",
+            "value": 25,
+            "unit": "C",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_humidity_pct",
+            "room_id": "study",
+            "metric": "humidity_pct",
+            "value": 40,
+            "unit": "percent",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_illuminance_lux",
+            "room_id": "study",
+            "metric": "illuminance_lux",
+            "value": 397,
+            "unit": "lux",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_co2_ppm",
+            "room_id": "study",
+            "metric": "co2_ppm",
+            "value": 861,
+            "unit": "ppm",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_study_presence",
+            "room_id": "study",
+            "metric": "presence",
+            "value": false,
+            "unit": "boolean",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_temperature_c",
+            "room_id": "kitchen",
+            "metric": "temperature_c",
+            "value": 26,
+            "unit": "C",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_humidity_pct",
+            "room_id": "kitchen",
+            "metric": "humidity_pct",
+            "value": 41,
+            "unit": "percent",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_illuminance_lux",
+            "room_id": "kitchen",
+            "metric": "illuminance_lux",
+            "value": 537,
+            "unit": "lux",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_co2_ppm",
+            "room_id": "kitchen",
+            "metric": "co2_ppm",
+            "value": 1031,
+            "unit": "ppm",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          },
+          {
+            "id": "sensor_kitchen_presence",
+            "room_id": "kitchen",
+            "metric": "presence",
+            "value": true,
+            "unit": "boolean",
+            "observed_at": "2026-12-01T18:00:00+08:00",
+            "online": true
+          }
+        ],
+        "schedules": [],
+        "media_catalog": [
+          {
+            "id": "media_1",
+            "title": "雨后散步",
+            "type": "music",
+            "duration_s": 180,
+            "source": "fixture",
+            "asset_id": "simulated_media_1"
+          },
+          {
+            "id": "media_2",
+            "title": "安静钢琴",
+            "type": "music",
+            "duration_s": 240,
+            "source": "fixture",
+            "asset_id": "simulated_media_2"
+          },
+          {
+            "id": "media_3",
+            "title": "小熊找月亮",
+            "type": "story",
+            "duration_s": 420,
+            "source": "fixture",
+            "asset_id": "simulated_media_3"
+          },
+          {
+            "id": "media_4",
+            "title": "星空小知识",
+            "type": "podcast",
+            "duration_s": 600,
+            "source": "fixture",
+            "asset_id": "simulated_media_4"
+          }
+        ],
+        "playbacks": [],
+        "tasks": []
+      }
+    }
+  ],
+  "speech": {
+    "raw_text": "客厅的灯不存在或不可见，无法打开。",
+    "spoken_text": "客厅的灯不存在或不可见，无法打开。",
+    "normalizer_version": "zh_spoken_v1",
+    "path": "assets/audio/edge/be2cf7ea25e8ae2ae2fb36a45ec3466f4dff854c296807900ee3d79c4cf7b609.wav",
+    "sha256": "e7d542037cbccf527f435ab90445430171fbe6ef61c88425402ee635e4410421",
+    "duration_s": 3.36,
+    "sample_rate_hz": 24000,
+    "model": "EdgeInstant-Omni-2B-1106-Preview",
+    "external_tts": false,
+    "ended": true,
+    "hit_frame_budget": false,
+    "wall_seconds": 0.39000000001396984,
+    "worker_wall_seconds": 0.39000000001396984
+  },
+  "number_speech": {
+    "raw_text": "编号122，温度26℃，亮度40%，时间07:30。",
+    "spoken_text": "编号一百二十二，温度二十六摄氏度，亮度百分之四十，时间七点三十分。",
+    "normalizer_version": "zh_spoken_v1",
+    "path": "assets/audio/edge/906e22bf1c0bb8d21d68a69eec53c4648a78339d8d5facae65aaab5f75e23e34.wav",
+    "sha256": "f3c5d82aa62396351031f86138075c4e932fd929d31b47a79b5647620be49aab",
+    "duration_s": 6.4,
+    "sample_rate_hz": 24000,
+    "model": "EdgeInstant-Omni-2B-1106-Preview",
+    "external_tts": false,
+    "ended": true,
+    "hit_frame_budget": false,
+    "wall_seconds": 0.6099999999860302,
+    "worker_wall_seconds": 0.6099999999860302
+  },
+  "wall_seconds": 3.093999999924563
+}

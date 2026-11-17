@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/fadffaf6346f58c63e16e14ad300269a.wav",
+  "sha256": "0d938644fa5eacff50e5ef6e25bd4f39f846bfcb903b895aee8e6f61135dc8d7",
+  "duration_seconds": 5.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "932e077f-4931-9ddb-a99d-6efcce2298b1",
+  "usage": {
+    "input_tokens": 182,
+    "output_tokens": 1104,
+    "total_tokens": 1286,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "晚上好，我睡前习惯先洗漱，然后看十分钟书，最后关灯睡觉。",
+  "spoken_text": "晚上好，我睡前习惯先洗漱，然后看十分钟书，最后关灯睡觉。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "晚上好，我睡前习惯先洗漱，然后看十分钟书，最后关灯睡觉。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "晚上好，我睡前习惯先洗漱，然后看十分钟书，最后关灯睡觉。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0354904b-7b83-9654-974c-2276580d1ff7",
+    "usage": {
+      "prompt_tokens": 244,
+      "total_tokens": 288,
+      "completion_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 207
+      },
+      "completion_tokens_details": {
+        "text_tokens": 44
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0d938644fa5eacff50e5ef6e25bd4f39f846bfcb903b895aee8e6f61135dc8d7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d5d48cacf378630e1b8dd6bb34ded7490bd44bc17fcdfa80fe54d7604bfbd146",
+    "canonical_sha256": "0d938644fa5eacff50e5ef6e25bd4f39f846bfcb903b895aee8e6f61135dc8d7",
+    "pcm_sha256": "0756327240bd96968a9cc1ba5530bde1b2d88105bd4e9b10e13d61b274281c8e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 132480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "晚上好，我睡前习惯先洗漱，然后看十分钟书，最后关灯睡觉。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e643cd37-a1bd-93f4-a49d-601fafbbb3d3",
+      "usage": {
+        "prompt_tokens": 160,
+        "total_tokens": 204,
+        "completion_tokens": 44,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 123
+        },
+        "completion_tokens_details": {
+          "text_tokens": 44
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d5d48cacf378630e1b8dd6bb34ded7490bd44bc17fcdfa80fe54d7604bfbd146",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d5d48cacf378630e1b8dd6bb34ded7490bd44bc17fcdfa80fe54d7604bfbd146",
+        "canonical_audio_sha256": "0d938644fa5eacff50e5ef6e25bd4f39f846bfcb903b895aee8e6f61135dc8d7",
+        "pcm_sha256": "0756327240bd96968a9cc1ba5530bde1b2d88105bd4e9b10e13d61b274281c8e",
+        "same_samples": true
+      }
+    }
+  ]
+}

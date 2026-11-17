@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/a7b07f9a2ee8638dc836812219fcf278.wav",
+  "sha256": "fab8534655b8f2527dc2ffdfd948c1158d167bda4624ea836eeef74b3a4af236",
+  "duration_seconds": 4.96,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "2787ac07-8f30-935d-be54-d7aa3e781257",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 992,
+    "total_tokens": 1177,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我看一下客厅现在的温度和湿度，把读数和测量时间告诉我，只查询就行。",
+  "spoken_text": "帮我看一下客厅现在的温度和湿度，把读数和测量时间告诉我，只查询就行。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我看一下客厅现在的温度和湿度，把读数和测量时间告诉我，只查询就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我看一下客厅现在的温度和湿度，把读数和测量时间告诉我，只查询就行。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-531ba3f6-b247-97d8-8a03-3d39e281e41f",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "fab8534655b8f2527dc2ffdfd948c1158d167bda4624ea836eeef74b3a4af236"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9b802c93b0d9b52e6d20d68ca53ae73bce55813010fa520781821939e1c79fab",
+    "canonical_sha256": "fab8534655b8f2527dc2ffdfd948c1158d167bda4624ea836eeef74b3a4af236",
+    "pcm_sha256": "36d2f1e84b375313c88c1e7b8c8f6edda13a6ca7554b32d6945158dfd4e7318d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 119040,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我看一下客厅现在的温度和湿度，把读数和测量时间告诉我，只查询就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我看一下客厅现在的温度和湿度，把读数和测量时间告诉我，只查询就行。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-0ad31e71-2bec-9a9f-aa03-de0a552927ed",
+      "usage": {
+        "prompt_tokens": 177,
+        "total_tokens": 222,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 147
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9b802c93b0d9b52e6d20d68ca53ae73bce55813010fa520781821939e1c79fab",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9b802c93b0d9b52e6d20d68ca53ae73bce55813010fa520781821939e1c79fab",
+        "canonical_audio_sha256": "fab8534655b8f2527dc2ffdfd948c1158d167bda4624ea836eeef74b3a4af236",
+        "pcm_sha256": "36d2f1e84b375313c88c1e7b8c8f6edda13a6ca7554b32d6945158dfd4e7318d",
+        "same_samples": true
+      }
+    }
+  ]
+}

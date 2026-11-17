@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/48f8fd8b7c89ec49828623594a4ee66a.wav",
+  "sha256": "8eb8651d035c1bb64a9d84f00f249f7e31936bb85aff355534695f4b64181664",
+  "duration_seconds": 5.04,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "3dcfeee2-de0a-92bc-9c9e-18a22c00a277",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 1008,
+    "total_tokens": 1200,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "这次考试没考好，心里挺低落的，想找你说说，不用帮我分析原因。",
+  "spoken_text": "这次考试没考好，心里挺低落的，想找你说说，不用帮我分析原因。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "这次考试没考好，心里挺低落的，想找你说说。不用帮我分析原因。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "这次考试没考好，心里挺低落的，想找你说说。不用帮我分析原因。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-065c4b5e-75a1-9128-abc2-6f7623ab01dd",
+    "usage": {
+      "prompt_tokens": 246,
+      "total_tokens": 292,
+      "completion_tokens": 46,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 209
+      },
+      "completion_tokens_details": {
+        "text_tokens": 46
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8eb8651d035c1bb64a9d84f00f249f7e31936bb85aff355534695f4b64181664"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "b8bad960d0aecd9a585a2283235e5cd17cab0c67d2e93f182ffd5009823dae47",
+    "canonical_sha256": "8eb8651d035c1bb64a9d84f00f249f7e31936bb85aff355534695f4b64181664",
+    "pcm_sha256": "66484ecc921c55f1dba23c42d468dd6e78e9ce4b5fda363f826715061fe43e01",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 120960,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "这次考试没考好，心里挺低落的，想找你说说，不用帮我分析原因。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-6f56e5dd-43a7-924d-ad59-94449cc17b10",
+      "usage": {
+        "prompt_tokens": 162,
+        "total_tokens": 208,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "b8bad960d0aecd9a585a2283235e5cd17cab0c67d2e93f182ffd5009823dae47",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "b8bad960d0aecd9a585a2283235e5cd17cab0c67d2e93f182ffd5009823dae47",
+        "canonical_audio_sha256": "8eb8651d035c1bb64a9d84f00f249f7e31936bb85aff355534695f4b64181664",
+        "pcm_sha256": "66484ecc921c55f1dba23c42d468dd6e78e9ce4b5fda363f826715061fe43e01",
+        "same_samples": true
+      }
+    }
+  ]
+}

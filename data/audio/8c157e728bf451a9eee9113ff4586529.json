@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/8c157e728bf451a9eee9113ff4586529.wav",
+  "sha256": "65c07a8aa2da91fb9924be177f43db43043a78b386e97b66b44cb69b9872819d",
+  "duration_seconds": 5.32,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f4282620-06e8-92bc-b3d9-fbc99539a78b",
+  "usage": {
+    "input_tokens": 193,
+    "output_tokens": 1064,
+    "total_tokens": 1257,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "谢谢你听我说这么多，我心里好受点了。咱们就聊到这儿，你用一两句话帮我收个尾吧。",
+  "spoken_text": "谢谢你听我说这么多，我心里好受点了。咱们就聊到这儿，你用一两句话帮我收个尾吧。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "谢谢你听我说这么多，我心里好受点了。咱们就聊到这儿，你用一两句话帮我收个尾吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "谢谢你听我说这么多，我心里好受点了。咱们就聊到这儿，你用一两句话帮我收个尾吧。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fa684de5-5f67-975a-adda-223878f9a9b6",
+    "usage": {
+      "prompt_tokens": 251,
+      "total_tokens": 302,
+      "completion_tokens": 51,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 214
+      },
+      "completion_tokens_details": {
+        "text_tokens": 51
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "65c07a8aa2da91fb9924be177f43db43043a78b386e97b66b44cb69b9872819d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "68596234cc94ede4108461ac6a8a19b9d9322ac3e07447cf3b061c756b4b5bfc",
+    "canonical_sha256": "65c07a8aa2da91fb9924be177f43db43043a78b386e97b66b44cb69b9872819d",
+    "pcm_sha256": "a9eb8ada3d1c880711dcbd653ef045a3fd069685f2fc708f778563227c2120cf",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 127680,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "谢谢你听我说这么多，我心里好受点儿了。咱们就聊到这儿，你用一两句话帮我收个尾吧。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-792761ee-e509-960a-9e6d-901f0666aa4e",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 219,
+        "completion_tokens": 52,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 130
+        },
+        "completion_tokens_details": {
+          "text_tokens": 52
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "68596234cc94ede4108461ac6a8a19b9d9322ac3e07447cf3b061c756b4b5bfc",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "68596234cc94ede4108461ac6a8a19b9d9322ac3e07447cf3b061c756b4b5bfc",
+        "canonical_audio_sha256": "65c07a8aa2da91fb9924be177f43db43043a78b386e97b66b44cb69b9872819d",
+        "pcm_sha256": "a9eb8ada3d1c880711dcbd653ef045a3fd069685f2fc708f778563227c2120cf",
+        "same_samples": true
+      }
+    }
+  ]
+}

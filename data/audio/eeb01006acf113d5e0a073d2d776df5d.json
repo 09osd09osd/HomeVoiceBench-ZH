@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/eeb01006acf113d5e0a073d2d776df5d.wav",
+  "sha256": "4ae514cf1617cae914658d21b235d948889648ac8426087ffca981148ad8ebea",
+  "duration_seconds": 2.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "116ee8c2-284f-95d7-84ce-91a20dbe4815",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 560,
+    "total_tokens": 747,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我只有周末半天时间，最好能快速搞定。",
+  "spoken_text": "我只有周末半天时间，最好能快速搞定。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我只有周末半天时间，最好能快速搞定。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我只有周末半天时间，最好能快速搞定。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4a702cd1-df73-9010-94c7-bc69b9c8f440",
+    "usage": {
+      "prompt_tokens": 215,
+      "total_tokens": 251,
+      "completion_tokens": 36,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 199
+      },
+      "completion_tokens_details": {
+        "text_tokens": 36
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4ae514cf1617cae914658d21b235d948889648ac8426087ffca981148ad8ebea"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2fb2faa4d9a70fece37492c305e3c16ece743e1d978acec8ad6356e151b1d966",
+    "canonical_sha256": "4ae514cf1617cae914658d21b235d948889648ac8426087ffca981148ad8ebea",
+    "pcm_sha256": "3e2fa19aa43070eb563fe912926f1ee19505044ac823157a62dbfaadef114ac5",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 67200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我只有周末半天时间，最好能快速搞定。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我只有周末半天时间，最好能快速搞定。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-af3c25e4-771e-9a25-b545-691f5db5ff56",
+      "usage": {
+        "prompt_tokens": 154,
+        "total_tokens": 190,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 138
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2fb2faa4d9a70fece37492c305e3c16ece743e1d978acec8ad6356e151b1d966",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2fb2faa4d9a70fece37492c305e3c16ece743e1d978acec8ad6356e151b1d966",
+        "canonical_audio_sha256": "4ae514cf1617cae914658d21b235d948889648ac8426087ffca981148ad8ebea",
+        "pcm_sha256": "3e2fa19aa43070eb563fe912926f1ee19505044ac823157a62dbfaadef114ac5",
+        "same_samples": true
+      }
+    }
+  ]
+}

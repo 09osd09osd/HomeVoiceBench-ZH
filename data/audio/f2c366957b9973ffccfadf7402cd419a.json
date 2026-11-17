@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/f2c366957b9973ffccfadf7402cd419a.wav",
+  "sha256": "54b5e5f11a345719f51eb508e875e4cb7ab96dcb3ba3b240671f85ebe81d507a",
+  "duration_seconds": 4.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e8a0125f-d661-960a-8a0e-b09c16c8dc3a",
+  "usage": {
+    "input_tokens": 177,
+    "output_tokens": 848,
+    "total_tokens": 1025,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，看书是十五分钟，不是十分钟。",
+  "spoken_text": "更正一下，看书是十五分钟，不是十分钟。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，看书是十五分钟，不是十分钟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，看书是十五分钟，不是十分钟。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-b03b1334-0145-9819-94f5-c27572d5dc04",
+    "usage": {
+      "prompt_tokens": 230,
+      "total_tokens": 267,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "54b5e5f11a345719f51eb508e875e4cb7ab96dcb3ba3b240671f85ebe81d507a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "18042e3defdcfc142744fecf040baf1772d4b6793ed0edcf616dcf27effb737c",
+    "canonical_sha256": "54b5e5f11a345719f51eb508e875e4cb7ab96dcb3ba3b240671f85ebe81d507a",
+    "pcm_sha256": "32ab76dddb085ac7c624b1ae6c4044a314cd3f42f363d42299ad89471de3dfba",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 101760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，看书是十五分钟，不是十分钟。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-61a237d9-58ac-9634-91dd-e756438a1665",
+      "usage": {
+        "prompt_tokens": 146,
+        "total_tokens": 183,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 116
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "18042e3defdcfc142744fecf040baf1772d4b6793ed0edcf616dcf27effb737c",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "18042e3defdcfc142744fecf040baf1772d4b6793ed0edcf616dcf27effb737c",
+        "canonical_audio_sha256": "54b5e5f11a345719f51eb508e875e4cb7ab96dcb3ba3b240671f85ebe81d507a",
+        "pcm_sha256": "32ab76dddb085ac7c624b1ae6c4044a314cd3f42f363d42299ad89471de3dfba",
+        "same_samples": true
+      }
+    }
+  ]
+}

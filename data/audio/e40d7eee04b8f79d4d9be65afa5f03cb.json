@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e40d7eee04b8f79d4d9be65afa5f03cb.wav",
+  "sha256": "fdd6d07dfcfbdeedece8df1d6986620c35f4119e90f969a73082fcaadd1635c5",
+  "duration_seconds": 3.64,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "94344a68-7dd4-9b91-8f82-d864ef75fa05",
+  "usage": {
+    "input_tokens": 170,
+    "output_tokens": 728,
+    "total_tokens": 898,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "更正一下，温水是喝一杯，不是半杯。",
+  "spoken_text": "更正一下，温水是喝一杯，不是半杯。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "更正一下，温水是喝一杯，不是半杯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "更正一下，温水是喝一杯，不是半杯。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-17242e87-8758-93f5-b43c-85a4da00918a",
+    "usage": {
+      "prompt_tokens": 223,
+      "total_tokens": 260,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "fdd6d07dfcfbdeedece8df1d6986620c35f4119e90f969a73082fcaadd1635c5"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "27b06aada2745ca5ff0c6b8d80934aa046197e03723ac06b6cf9aaf58faec1cf",
+    "canonical_sha256": "fdd6d07dfcfbdeedece8df1d6986620c35f4119e90f969a73082fcaadd1635c5",
+    "pcm_sha256": "09ac537ccf1418140cf1c1d7c7533f72cbb82881ec278ed500fe241906dfee0e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 87360,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "更正一下，温水是喝一杯不是半杯。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-5953eab0-782d-9f5b-852e-abaf6e8e28fc",
+      "usage": {
+        "prompt_tokens": 139,
+        "total_tokens": 175,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 116
+        },
+        "completion_tokens_details": {
+          "text_tokens": 36
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "27b06aada2745ca5ff0c6b8d80934aa046197e03723ac06b6cf9aaf58faec1cf",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "27b06aada2745ca5ff0c6b8d80934aa046197e03723ac06b6cf9aaf58faec1cf",
+        "canonical_audio_sha256": "fdd6d07dfcfbdeedece8df1d6986620c35f4119e90f969a73082fcaadd1635c5",
+        "pcm_sha256": "09ac537ccf1418140cf1c1d7c7533f72cbb82881ec278ed500fe241906dfee0e",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/15ebb2d7dfbca1c120428489111d35d9.wav",
+  "sha256": "c43f086bf222948246f699e7081edd35fa2713e0c75fa5d08fcb119db6e867d8",
+  "duration_seconds": 2.4,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "260bfe72-6fe9-9e12-a63b-3250e4d6cb78",
+  "usage": {
+    "input_tokens": 174,
+    "output_tokens": 480,
+    "total_tokens": 654,
+    "duration": 2
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "音量再降到10%，其他设置不要动。",
+  "spoken_text": "音量再降到百分之十，其他设置不要动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "音量再降到百分之十，其他设置不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "音量再降到百分之十，其他设置不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5f4aef2d-da5d-9a95-bf7c-3eb475fd2400",
+    "usage": {
+      "prompt_tokens": 216,
+      "total_tokens": 253,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "c43f086bf222948246f699e7081edd35fa2713e0c75fa5d08fcb119db6e867d8"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "31357ac878d311d05da21b87651d498b83fe8da9f826c5db97b74b1e8a4f1b2f",
+    "canonical_sha256": "c43f086bf222948246f699e7081edd35fa2713e0c75fa5d08fcb119db6e867d8",
+    "pcm_sha256": "abf2035cfe0f89f50509fe245f3bb46d7beb74c1b920943132738b3b99f3c90d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 57600,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "音量再降到百分之十，其他设置不要动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "音量再降到百分之十，其他设置不要动。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-ed445ed2-22ca-93be-80db-ce54d6e74ec4",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 192,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "31357ac878d311d05da21b87651d498b83fe8da9f826c5db97b74b1e8a4f1b2f",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "31357ac878d311d05da21b87651d498b83fe8da9f826c5db97b74b1e8a4f1b2f",
+        "canonical_audio_sha256": "c43f086bf222948246f699e7081edd35fa2713e0c75fa5d08fcb119db6e867d8",
+        "pcm_sha256": "abf2035cfe0f89f50509fe245f3bb46d7beb74c1b920943132738b3b99f3c90d",
+        "same_samples": true
+      }
+    }
+  ]
+}

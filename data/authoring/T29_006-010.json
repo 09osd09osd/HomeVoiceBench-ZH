@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "64f539bfe442eed310637fe5940855721e1a31249030edc62cffc040fca1631b",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-069b7b5b-b42a-95b3-a4af-58570b39803e",
+  "usage": {
+    "prompt_tokens": 13438,
+    "total_tokens": 14489,
+    "completion_tokens": 1051,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 13438
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1051
+    }
+  },
+  "review_request_id": "chatcmpl-d755abeb-4617-9650-a990-1f017a544af3",
+  "review_usage": {
+    "prompt_tokens": 14111,
+    "total_tokens": 14197,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14111
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T29_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T29_006",
+        "title": "卧室灯调到四成亮度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到40%。",
+            "reference_text": "好的，正在帮你打开卧室灯并调到40%亮度。现在任务还在处理中，刚开始，有进展我再告诉你。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_007",
+        "title": "卧室灯开后查进度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到40%。",
+            "reference_text": "好的，正在帮你打开卧室灯并调到40%亮度。现在任务还在处理中，刚开始，有进展我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个开灯任务现在完成了吗？",
+            "reference_text": "任务已经完成了。卧室灯现在是开着的，亮度就是40%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_008",
+        "title": "卧室灯状态核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到40%。",
+            "reference_text": "好的，正在帮你打开卧室灯并调到40%亮度。现在任务还在处理中，刚开始，有进展我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个开灯任务现在完成了吗？",
+            "reference_text": "任务已经完成了。卧室灯现在是开着的，亮度就是40%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我确认一下卧室灯现在实际是什么状态。",
+            "reference_text": "我重新查了，卧室灯现在确实是开着的，亮度40%，状态正常。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_009",
+        "title": "开灯核对后再关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到40%。",
+            "reference_text": "好的，正在帮你打开卧室灯并调到40%亮度。现在任务还在处理中，刚开始，有进展我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个开灯任务现在完成了吗？",
+            "reference_text": "任务已经完成了。卧室灯现在是开着的，亮度就是40%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我确认一下卧室灯现在实际是什么状态。",
+            "reference_text": "我重新查了，卧室灯现在确实是开着的，亮度40%，状态正常。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "好，那就只把卧室灯关掉，别的不用动。",
+            "reference_text": "好的，已经把卧室灯关掉了。亮度设置还是40%，其他设备没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_010",
+        "title": "关灯后最终确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把卧室灯打开，亮度调到40%。",
+            "reference_text": "好的，正在帮你打开卧室灯并调到40%亮度。现在任务还在处理中，刚开始，有进展我再告诉你。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个开灯任务现在完成了吗？",
+            "reference_text": "任务已经完成了。卧室灯现在是开着的，亮度就是40%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "你再帮我确认一下卧室灯现在实际是什么状态。",
+            "reference_text": "我重新查了，卧室灯现在确实是开着的，亮度40%，状态正常。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "好，那就只把卧室灯关掉，别的不用动。",
+            "reference_text": "好的，已经把卧室灯关掉了。亮度设置还是40%，其他设备没有动。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再帮我看一眼，灯确实已经关了吧？别拿刚才开灯成功来说现在还开着。",
+            "reference_text": "我又查了一遍，卧室灯现在确实是关着的。刚才开灯成功是之前的状态，现在以关灯为准。"
+          }
+        ]
+      }
+    ]
+  }
+}

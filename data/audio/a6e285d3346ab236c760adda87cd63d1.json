@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/a6e285d3346ab236c760adda87cd63d1.wav",
+  "sha256": "5de86672a9a28b830d5492c67aa2cfa4966566b20ef3919c171c8415fb232317",
+  "duration_seconds": 7.28,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "949f04d9-8a40-9ae6-a13b-4029220f9af9",
+  "usage": {
+    "input_tokens": 206,
+    "output_tokens": 1456,
+    "total_tokens": 1662,
+    "duration": 7
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "今天去菜市场买鱼，结果摊主多找了我十块钱，我犹豫了一下还是还回去了，他连声道谢，弄得我有点不好意思。",
+  "spoken_text": "今天去菜市场买鱼，结果摊主多找了我十块钱，我犹豫了一下还是还回去了，他连声道谢，弄得我有点不好意思。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "今天去菜市场买鱼，结果摊主多找了我十块钱。我犹豫了一下，还是还回去了，他连声道谢，弄得我有点不好意思。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "今天去菜市场买鱼，结果摊主多找了我十块钱。我犹豫了一下，还是还回去了，他连声道谢，弄得我有点不好意思。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-5d818b0c-6584-976a-a7af-9cbf4e8904c4",
+    "usage": {
+      "prompt_tokens": 272,
+      "total_tokens": 331,
+      "completion_tokens": 59,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "text_tokens": 221
+      },
+      "completion_tokens_details": {
+        "text_tokens": 59
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "5de86672a9a28b830d5492c67aa2cfa4966566b20ef3919c171c8415fb232317"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "4c5e7fc287f1a3f4b4f7777ff494a66cf70d36260d4b671b98d5f86853bf13e1",
+    "canonical_sha256": "5de86672a9a28b830d5492c67aa2cfa4966566b20ef3919c171c8415fb232317",
+    "pcm_sha256": "8a0d366870a22e3dd5244bb5c3b606ff3027b5208799fc7cfb91c0286f641058",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 174720,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "今天去菜市场买鱼，结果摊主多找了我十块钱，我犹豫了一下还是还回去了，他连声道谢，弄得我有点不好意思。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-e25f5cd9-d15b-97d9-8aa6-7678c611e14d",
+      "usage": {
+        "prompt_tokens": 188,
+        "total_tokens": 246,
+        "completion_tokens": 58,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 51,
+          "text_tokens": 137
+        },
+        "completion_tokens_details": {
+          "text_tokens": 58
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "4c5e7fc287f1a3f4b4f7777ff494a66cf70d36260d4b671b98d5f86853bf13e1",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "4c5e7fc287f1a3f4b4f7777ff494a66cf70d36260d4b671b98d5f86853bf13e1",
+        "canonical_audio_sha256": "5de86672a9a28b830d5492c67aa2cfa4966566b20ef3919c171c8415fb232317",
+        "pcm_sha256": "8a0d366870a22e3dd5244bb5c3b606ff3027b5208799fc7cfb91c0286f641058",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/e09ee46ba1b864706f79e49cab9af4fd.wav",
+  "sha256": "4ab436838238e7290016d77493bd37506d2fbc2f6cdf70104aa02ae2d18ae71a",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "14f5f26d-e039-9e7d-88f7-a76399a62eed",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 824,
+    "total_tokens": 1018,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气轻快",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我今天有点累，准备睡了，你能说句温柔的话陪我一下吗？",
+  "spoken_text": "我今天有点累，准备睡了，你能说句温柔的话陪我一下吗？",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我今天有点累，准备睡了。你能说句温柔的话陪我一下吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我今天有点累，准备睡了。你能说句温柔的话陪我一下吗？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ace67011-a3fe-9364-870e-cccad6bb7921",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "4ab436838238e7290016d77493bd37506d2fbc2f6cdf70104aa02ae2d18ae71a"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "a3f4d572b843ab42fe31ad6a725819c07789731d46213e3a55cc522247c9daea",
+    "canonical_sha256": "4ab436838238e7290016d77493bd37506d2fbc2f6cdf70104aa02ae2d18ae71a",
+    "pcm_sha256": "c6f761640f4aa1f7fc4d0ea80ed0ff989205cbb25b361355f45a361c46b5e831",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我今天有点累，准备睡了，你能说句温柔的话陪我一下吗？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c226d91e-7e5d-927a-8e10-bec758dbd265",
+      "usage": {
+        "prompt_tokens": 151,
+        "total_tokens": 193,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 121
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "a3f4d572b843ab42fe31ad6a725819c07789731d46213e3a55cc522247c9daea",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "a3f4d572b843ab42fe31ad6a725819c07789731d46213e3a55cc522247c9daea",
+        "canonical_audio_sha256": "4ab436838238e7290016d77493bd37506d2fbc2f6cdf70104aa02ae2d18ae71a",
+        "pcm_sha256": "c6f761640f4aa1f7fc4d0ea80ed0ff989205cbb25b361355f45a361c46b5e831",
+        "same_samples": true
+      }
+    }
+  ]
+}

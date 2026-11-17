@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "59666f9b8229dfb743e66849dc79736b25cc15ff0752386433fa0f5eb33e2421",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-4f3bf926-4b2e-9b06-bda0-e19c41f39248",
+  "usage": {
+    "prompt_tokens": 11973,
+    "total_tokens": 12858,
+    "completion_tokens": 885,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11973
+    },
+    "completion_tokens_details": {
+      "text_tokens": 885
+    }
+  },
+  "review_request_id": "chatcmpl-d443c9cb-0908-9904-a83d-ba21f3dd3962",
+  "review_usage": {
+    "prompt_tokens": 12480,
+    "total_tokens": 12566,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12480
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T26_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T26_006",
+        "title": "客厅音箱播放安静钢琴",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《安静钢琴》。",
+            "reference_text": "好的，已经在客厅音箱上开始播放《安静钢琴》了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_007",
+        "title": "播放安静钢琴后暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《安静钢琴》。",
+            "reference_text": "好的，已经在客厅音箱上开始播放《安静钢琴》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才播放的内容暂停一下。",
+            "reference_text": "好的，已经暂停刚才播放的《安静钢琴》了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_008",
+        "title": "播放安静钢琴后暂停再继续",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《安静钢琴》。",
+            "reference_text": "好的，已经在客厅音箱上开始播放《安静钢琴》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才播放的内容暂停一下。",
+            "reference_text": "好的，已经暂停刚才播放的《安静钢琴》了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已经继续播放《安静钢琴》了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_009",
+        "title": "播放安静钢琴后暂停、继续并跳转",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《安静钢琴》。",
+            "reference_text": "好的，已经在客厅音箱上开始播放《安静钢琴》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才播放的内容暂停一下。",
+            "reference_text": "好的，已经暂停刚才播放的《安静钢琴》了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已经继续播放《安静钢琴》了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "跳到第45秒。",
+            "reference_text": "好的，已经跳到第45秒继续播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_010",
+        "title": "播放安静钢琴后暂停、继续、跳转并停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上播放《安静钢琴》。",
+            "reference_text": "好的，已经在客厅音箱上开始播放《安静钢琴》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才播放的内容暂停一下。",
+            "reference_text": "好的，已经暂停刚才播放的《安静钢琴》了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已经继续播放《安静钢琴》了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "跳到第45秒。",
+            "reference_text": "好的，已经跳到第45秒继续播放。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "好的，已经停止播放当前内容，没有换别的。"
+          }
+        ]
+      }
+    ]
+  }
+}

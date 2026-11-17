@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "a8b2ca8ea1ef51718cac84f1f91c86bd62da24a7773779fda22309a4d47c481e",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-46e81175-6b5b-93a9-93dc-ee0ea3cd8d62",
+  "usage": {
+    "prompt_tokens": 14380,
+    "total_tokens": 15450,
+    "completion_tokens": 1070,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 14380
+    },
+    "completion_tokens_details": {
+      "text_tokens": 1070
+    }
+  },
+  "review_request_id": "chatcmpl-7f933820-d0f1-9970-8744-b2174159def5",
+  "review_usage": {
+    "prompt_tokens": 15072,
+    "total_tokens": 15158,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 15072
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T21_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T21_001",
+        "title": "卧室音箱闹钟一次设置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天7点的闹钟，内容是带钥匙。",
+            "reference_text": "好的，已在卧室音箱设好明天7点的闹钟，提醒内容是带钥匙。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_002",
+        "title": "卧室闹钟改到七点半",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天7点的闹钟，内容是带钥匙。",
+            "reference_text": "好的，已在卧室音箱设好明天7点的闹钟，提醒内容是带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已经把刚才那条闹钟改到明天7点半了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_003",
+        "title": "闹钟更正后查看启用安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天7点的闹钟，内容是带钥匙。",
+            "reference_text": "好的，已在卧室音箱设好明天7点的闹钟，提醒内容是带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已经把刚才那条闹钟改到明天7点半了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用的安排有两条：一是明天7点半在卧室音箱响的带钥匙闹钟，二是后天中午12点的晾衣服提醒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_004",
+        "title": "取消新增闹钟保留晾衣提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天7点的闹钟，内容是带钥匙。",
+            "reference_text": "好的，已在卧室音箱设好明天7点的闹钟，提醒内容是带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已经把刚才那条闹钟改到明天7点半了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用的安排有两条：一是明天7点半在卧室音箱响的带钥匙闹钟，二是后天中午12点的晾衣服提醒。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消了明天7点半带钥匙的闹钟，原来的晾衣服提醒还留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_005",
+        "title": "取消后确认启用与取消状态",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天7点的闹钟，内容是带钥匙。",
+            "reference_text": "好的，已在卧室音箱设好明天7点的闹钟，提醒内容是带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已经把刚才那条闹钟改到明天7点半了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "现在启用的安排有两条：一是明天7点半在卧室音箱响的带钥匙闹钟，二是后天中午12点的晾衣服提醒。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已经取消了明天7点半带钥匙的闹钟，原来的晾衣服提醒还留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "现在启用的只剩后天中午12点的晾衣服提醒。刚才那条明天7点半的带钥匙闹钟已经取消了。"
+          }
+        ]
+      }
+    ]
+  }
+}

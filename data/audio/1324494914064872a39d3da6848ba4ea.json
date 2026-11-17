@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/1324494914064872a39d3da6848ba4ea.wav",
+  "sha256": "7480cd8007071b3c979aabbd940044e24df7e4d59cdd11d06031b97ba86f2768",
+  "duration_seconds": 6.36,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "240fef36-d3a4-930c-9de0-46922fc8c80e",
+  "usage": {
+    "input_tokens": 215,
+    "output_tokens": 1272,
+    "total_tokens": 1487,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "这两天家里事多得喘不过气，我就想跟你念叨念叨，你别劝我，也别急着给办法。",
+  "spoken_text": "这两天家里事多得喘不过气，我就想跟你念叨念叨，你别劝我，也别急着给办法。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "这两天家里事儿多得喘不过气，我就想跟你念叨念叨，你别劝我，也别急着给办法。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "这两天家里事儿多得喘不过气，我就想跟你念叨念叨，你别劝我，也别急着给办法。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": false,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-81d6e82e-2073-95d3-8eb4-2ec7d13adff5",
+    "usage": {
+      "prompt_tokens": 256,
+      "total_tokens": 305,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 44,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "7480cd8007071b3c979aabbd940044e24df7e4d59cdd11d06031b97ba86f2768"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "9a26dd8d94734bb9a96f1bc3b5fc6b2620ac633dd2bbcacd8c93f431648642f6",
+    "canonical_sha256": "7480cd8007071b3c979aabbd940044e24df7e4d59cdd11d06031b97ba86f2768",
+    "pcm_sha256": "2d751306fc606d8c7e933f74fc72fdde2a6a9f5f893fb7c135ee08c6aa10706d",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 152640,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "这两天家里事儿多得喘不过气，我就想跟你念叨念叨，你别劝我，也别急着给办法。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-a45b7f41-78cb-9e67-9b72-061bd381ad73",
+      "usage": {
+        "prompt_tokens": 172,
+        "total_tokens": 221,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 44,
+          "text_tokens": 128
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "9a26dd8d94734bb9a96f1bc3b5fc6b2620ac633dd2bbcacd8c93f431648642f6",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "9a26dd8d94734bb9a96f1bc3b5fc6b2620ac633dd2bbcacd8c93f431648642f6",
+        "canonical_audio_sha256": "7480cd8007071b3c979aabbd940044e24df7e4d59cdd11d06031b97ba86f2768",
+        "pcm_sha256": "2d751306fc606d8c7e933f74fc72fdde2a6a9f5f893fb7c135ee08c6aa10706d",
+        "same_samples": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "b036099d3d983d1c23ce69c92772cdea82dac3eede6848becff3eb5cc03ea109",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-7c56d3b1-57d3-90b6-a66f-ff622bae6a6a",
+  "usage": {
+    "prompt_tokens": 14039,
+    "total_tokens": 15031,
+    "completion_tokens": 992,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 14039
+    },
+    "completion_tokens_details": {
+      "text_tokens": 992
+    }
+  },
+  "review_request_id": "chatcmpl-1f0d2a06-a8fb-9cb1-ab62-019dbfff8c1d",
+  "review_usage": {
+    "prompt_tokens": 14653,
+    "total_tokens": 14739,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 14653
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T08_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T08_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T08_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T08_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T08_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T08_001",
+        "title": "打开客厅空调并设定22度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅空调打开，温度设成22度。",
+            "reference_text": "好的，客厅空调已经打开，设定温度22摄氏度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T08_002",
+        "title": "空调从22度调到25度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅空调打开，温度设成22度。",
+            "reference_text": "好的，客厅空调已经打开，设定温度22摄氏度。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个空调温度改成25度，别的设置别动。",
+            "reference_text": "客厅空调的设定温度已经改成25摄氏度，其他设置没有动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T08_003",
+        "title": "调温后核对空调温度和开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅空调打开，温度设成22度。",
+            "reference_text": "好的，客厅空调已经打开，设定温度22摄氏度。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个空调温度改成25度，别的设置别动。",
+            "reference_text": "客厅空调的设定温度已经改成25摄氏度，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅空调现在温度多少，开着还是关着，别调整。",
+            "reference_text": "客厅空调现在是开着的，设定温度25摄氏度，我没有调整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T08_004",
+        "title": "调温核对后关闭空调保留设定",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅空调打开，温度设成22度。",
+            "reference_text": "好的，客厅空调已经打开，设定温度22摄氏度。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个空调温度改成25度，别的设置别动。",
+            "reference_text": "客厅空调的设定温度已经改成25摄氏度，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅空调现在温度多少，开着还是关着，别调整。",
+            "reference_text": "客厅空调现在是开着的，设定温度25摄氏度，我没有调整。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅空调关掉，温度设定保留着。",
+            "reference_text": "客厅空调已经关掉，设定温度25摄氏度保留着。"
+          }
+        ]
+      },
+      {
+        "case_id": "T08_005",
+        "title": "空调调温核对关闭再查开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅空调打开，温度设成22度。",
+            "reference_text": "好的，客厅空调已经打开，设定温度22摄氏度。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那个空调温度改成25度，别的设置别动。",
+            "reference_text": "客厅空调的设定温度已经改成25摄氏度，其他设置没有动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看客厅空调现在温度多少，开着还是关着，别调整。",
+            "reference_text": "客厅空调现在是开着的，设定温度25摄氏度，我没有调整。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅空调关掉，温度设定保留着。",
+            "reference_text": "客厅空调已经关掉，设定温度25摄氏度保留着。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅空调是开还是关，别的设备不用动。",
+            "reference_text": "客厅空调现在是关着的，设定温度25摄氏度，其他设备没有动。"
+          }
+        ]
+      }
+    ]
+  }
+}

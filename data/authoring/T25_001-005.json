@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "2692761e6745b60dbf73a1359a5aabc1c59306a2de6b518b35eaf255ce169b52",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-b9349222-4f78-99ef-8f80-05be7434dce9",
+  "usage": {
+    "prompt_tokens": 11963,
+    "total_tokens": 12803,
+    "completion_tokens": 840,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11963
+    },
+    "completion_tokens_details": {
+      "text_tokens": 840
+    }
+  },
+  "review_request_id": "chatcmpl-dc8e2e91-37c7-9a66-b874-a55439ac87ee",
+  "review_usage": {
+    "prompt_tokens": 12425,
+    "total_tokens": 12511,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12425
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T25_001",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_002",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_003",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_005",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T25_001",
+        "title": "在客厅音箱播放《雨后散步》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一下《雨后散步》。",
+            "reference_text": "好的，已经在客厅音箱上播放《雨后散步》了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_002",
+        "title": "播放《雨后散步》后暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一下《雨后散步》。",
+            "reference_text": "好的，已经在客厅音箱上播放《雨后散步》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先把刚才放的暂停一下。",
+            "reference_text": "好的，已经暂停了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_003",
+        "title": "播放《雨后散步》暂停后继续",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一下《雨后散步》。",
+            "reference_text": "好的，已经在客厅音箱上播放《雨后散步》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先把刚才放的暂停一下。",
+            "reference_text": "好的，已经暂停了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "接着放吧。",
+            "reference_text": "好的，继续播放了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_004",
+        "title": "播放《雨后散步》并跳至30秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一下《雨后散步》。",
+            "reference_text": "好的，已经在客厅音箱上播放《雨后散步》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先把刚才放的暂停一下。",
+            "reference_text": "好的，已经暂停了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "接着放吧。",
+            "reference_text": "好的，继续播放了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "跳到第30秒。",
+            "reference_text": "好的，已经跳到第30秒了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_005",
+        "title": "播放《雨后散步》跳至30秒后停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱上放一下《雨后散步》。",
+            "reference_text": "好的，已经在客厅音箱上播放《雨后散步》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先把刚才放的暂停一下。",
+            "reference_text": "好的，已经暂停了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "接着放吧。",
+            "reference_text": "好的，继续播放了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "跳到第30秒。",
+            "reference_text": "好的，已经跳到第30秒了。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在把这段停了，别换别的。",
+            "reference_text": "好的，已经停止播放了，没有换别的。"
+          }
+        ]
+      }
+    ]
+  }
+}

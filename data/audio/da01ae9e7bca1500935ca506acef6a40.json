@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/da01ae9e7bca1500935ca506acef6a40.wav",
+  "sha256": "2cf172155039df2156a1f438b0e4649d04aab4ced0862d2e66bd3d6123027085",
+  "duration_seconds": 4.48,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "1d7505a4-4180-9688-8ef8-597b40106990",
+  "usage": {
+    "input_tokens": 188,
+    "output_tokens": 896,
+    "total_tokens": 1084,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我有点累了，让扫地机器人只清扫书房，别去其他房间。",
+  "spoken_text": "我有点累了，让扫地机器人只清扫书房，别去其他房间。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我有点累了，让扫地机器人只清扫书房，别去其他房间。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我有点累了，让扫地机器人只清扫书房，别去其他房间。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-9adf034c-3448-913f-8d1c-99a9ce3ea67a",
+    "usage": {
+      "prompt_tokens": 235,
+      "total_tokens": 277,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2cf172155039df2156a1f438b0e4649d04aab4ced0862d2e66bd3d6123027085"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "22c381d7effda7b09edd8304794c6cfd8647009b43bd4150f8c7dd43def1f69a",
+    "canonical_sha256": "2cf172155039df2156a1f438b0e4649d04aab4ced0862d2e66bd3d6123027085",
+    "pcm_sha256": "b6f2f272a59d679b28cf679c9e0dbe41cf5f9be8c260ec0163607febd38948b2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 107520,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我有点累了，让扫地机器人只清扫书房，别去其他房间。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我有点累了，让扫地机器人只清扫书房，别去其他房间。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-74d7141a-65c5-9cd8-af83-992d41a9f794",
+      "usage": {
+        "prompt_tokens": 174,
+        "total_tokens": 216,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "22c381d7effda7b09edd8304794c6cfd8647009b43bd4150f8c7dd43def1f69a",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "22c381d7effda7b09edd8304794c6cfd8647009b43bd4150f8c7dd43def1f69a",
+        "canonical_audio_sha256": "2cf172155039df2156a1f438b0e4649d04aab4ced0862d2e66bd3d6123027085",
+        "pcm_sha256": "b6f2f272a59d679b28cf679c9e0dbe41cf5f9be8c260ec0163607febd38948b2",
+        "same_samples": true
+      }
+    }
+  ]
+}

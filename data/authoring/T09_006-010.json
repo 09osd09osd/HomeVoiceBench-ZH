@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "6932c248e4bd5e22de84b31e594990605ed1a3bed348e3d560f566546490477d",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-b3955a1d-da32-9bbb-a4c7-d2a64ad549d4",
+  "usage": {
+    "prompt_tokens": 12873,
+    "total_tokens": 13762,
+    "completion_tokens": 889,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 12873
+    },
+    "completion_tokens_details": {
+      "text_tokens": 889
+    }
+  },
+  "review_request_id": "chatcmpl-94d48db9-7b29-9345-85a8-fb2664f6b6ac",
+  "review_usage": {
+    "prompt_tokens": 13385,
+    "total_tokens": 13471,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 13385
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T09_006",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_007",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T09_006",
+        "title": "卧室窗帘打开四成",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到40%，其他别动。",
+            "reference_text": "卧室窗帘已经打开到40%了，其他设备没动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_007",
+        "title": "卧室窗帘先四成再改六成",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到40%，其他别动。",
+            "reference_text": "卧室窗帘已经打开到40%了，其他设备没动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成60%打开。",
+            "reference_text": "卧室窗帘已经改成打开到60%了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_008",
+        "title": "卧室窗帘开合调整并查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到40%，其他别动。",
+            "reference_text": "卧室窗帘已经打开到40%了，其他设备没动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成60%打开。",
+            "reference_text": "卧室窗帘已经改成打开到60%了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "卧室窗帘现在打开到60%了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_009",
+        "title": "卧室窗帘反复调整并关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到40%，其他别动。",
+            "reference_text": "卧室窗帘已经打开到40%了，其他设备没动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成60%打开。",
+            "reference_text": "卧室窗帘已经改成打开到60%了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "卧室窗帘现在打开到60%了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只把卧室窗帘完全关上。",
+            "reference_text": "卧室窗帘已经关上了，开合比例是0%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_010",
+        "title": "卧室窗帘多次调整及确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到40%，其他别动。",
+            "reference_text": "卧室窗帘已经打开到40%了，其他设备没动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成60%打开。",
+            "reference_text": "卧室窗帘已经改成打开到60%了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "卧室窗帘现在打开到60%了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只把卧室窗帘完全关上。",
+            "reference_text": "卧室窗帘已经关上了，开合比例是0%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再确认一次窗帘开合比例。",
+            "reference_text": "卧室窗帘现在开合比例是0%，也就是完全关着。"
+          }
+        ]
+      }
+    ]
+  }
+}

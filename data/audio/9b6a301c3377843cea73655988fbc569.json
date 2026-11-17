@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9b6a301c3377843cea73655988fbc569.wav",
+  "sha256": "369a2e4dc5640f815a50b2517f7fd929ef6e6e10524f1702699111b8db7ee950",
+  "duration_seconds": 4.24,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "4fa44ab1-cc38-98b6-b0a9-cd66a7e2be0f",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 848,
+    "total_tokens": 1042,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我其实不介意多干点，但希望至少有人能分担一半，别全压在我身上。",
+  "spoken_text": "我其实不介意多干点，但希望至少有人能分担一半，别全压在我身上。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我其实不介意多干点，但希望至少有人能分担一半，别全压在我身上。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我其实不介意多干点，但希望至少有人能分担一半，别全压在我身上。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-3457dc39-d92d-9920-b692-af64b1c244a0",
+    "usage": {
+      "prompt_tokens": 241,
+      "total_tokens": 289,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "369a2e4dc5640f815a50b2517f7fd929ef6e6e10524f1702699111b8db7ee950"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "28b7816ed2e66aea041ee2653a1416950d722adf74aee9c3440649d76b6e3655",
+    "canonical_sha256": "369a2e4dc5640f815a50b2517f7fd929ef6e6e10524f1702699111b8db7ee950",
+    "pcm_sha256": "fd6e4565087701db5ea6c7bcf452688369c06dc06c3a03e1fce8c29b5b1a815a",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 101760,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我其实不介意多干点，但希望至少有人能分担一半，别全压在我身上。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-8b5af9e6-1626-9441-87c9-fa652e1e785c",
+      "usage": {
+        "prompt_tokens": 157,
+        "total_tokens": 205,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "28b7816ed2e66aea041ee2653a1416950d722adf74aee9c3440649d76b6e3655",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "28b7816ed2e66aea041ee2653a1416950d722adf74aee9c3440649d76b6e3655",
+        "canonical_audio_sha256": "369a2e4dc5640f815a50b2517f7fd929ef6e6e10524f1702699111b8db7ee950",
+        "pcm_sha256": "fd6e4565087701db5ea6c7bcf452688369c06dc06c3a03e1fce8c29b5b1a815a",
+        "same_samples": true
+      }
+    }
+  ]
+}

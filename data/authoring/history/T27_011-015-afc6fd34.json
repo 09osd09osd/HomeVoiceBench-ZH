@@ -1,0 +1,173 @@
+{
+  "blueprint_sha256": "896efb89d33d47a1533fd39f582eb90d82069a184d3f900d3afb616029d40cd6",
+  "prompt_sha256": "afc6fd345d53f5649f92c38a888ed2446b062d2f53791d8ac2a97868eced152d",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-v4.1-flash",
+  "request_id": "chatcmpl-8db3ff0e-7b60-92fc-aac1-5db25a992109",
+  "usage": {
+    "prompt_tokens": 11998,
+    "total_tokens": 12943,
+    "completion_tokens": 945,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 0,
+      "text_tokens": 11998
+    },
+    "completion_tokens_details": {
+      "text_tokens": 945
+    }
+  },
+  "review_request_id": "chatcmpl-a05620ac-4148-92ce-8038-e26f92855607",
+  "review_usage": {
+    "prompt_tokens": 12565,
+    "total_tokens": 12651,
+    "completion_tokens": 86,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 0,
+      "text_tokens": 12565
+    },
+    "completion_tokens_details": {
+      "text_tokens": 86
+    }
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T27_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_015",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "attempt": 1,
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T27_011",
+        "title": "客厅播放《小熊找月亮》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，帮我用客厅音箱放个《小熊找月亮》吧。",
+            "reference_text": "好的，已经在客厅音箱上播放《小熊找月亮》了。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_012",
+        "title": "客厅播放并跳到60秒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，帮我用客厅音箱放个《小熊找月亮》吧。",
+            "reference_text": "好的，已经在客厅音箱上播放《小熊找月亮》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "往后跳一下，跳到第60秒吧。",
+            "reference_text": "好，已经跳到第60秒，继续播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_013",
+        "title": "播放跳转后继续播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，帮我用客厅音箱放个《小熊找月亮》吧。",
+            "reference_text": "好的，已经在客厅音箱上播放《小熊找月亮》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "往后跳一下，跳到第60秒吧。",
+            "reference_text": "好，已经跳到第60秒，继续播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续放刚才那个吧。",
+            "reference_text": "好的，继续播放《小熊找月亮》，从第60秒接着放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_014",
+        "title": "播放跳转、继续与暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，帮我用客厅音箱放个《小熊找月亮》吧。",
+            "reference_text": "好的，已经在客厅音箱上播放《小熊找月亮》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "往后跳一下，跳到第60秒吧。",
+            "reference_text": "好，已经跳到第60秒，继续播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续放刚才那个吧。",
+            "reference_text": "好的，继续播放《小熊找月亮》，从第60秒接着放。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "先暂停一下吧。",
+            "reference_text": "已经暂停了，停在第60秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_015",
+        "title": "播放跳转、继续、暂停与停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我有点累了，帮我用客厅音箱放个《小熊找月亮》吧。",
+            "reference_text": "好的，已经在客厅音箱上播放《小熊找月亮》了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "往后跳一下，跳到第60秒吧。",
+            "reference_text": "好，已经跳到第60秒，继续播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续放刚才那个吧。",
+            "reference_text": "好的，继续播放《小熊找月亮》，从第60秒接着放。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "先暂停一下吧。",
+            "reference_text": "已经暂停了，停在第60秒。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "好，已经停止播放《小熊找月亮》，没有换别的内容。"
+          }
+        ]
+      }
+    ]
+  }
+}

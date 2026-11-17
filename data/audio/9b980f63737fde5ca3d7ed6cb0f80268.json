@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9b980f63737fde5ca3d7ed6cb0f80268.wav",
+  "sha256": "415b11a3c358c31c44ec700b45547029fd614dff168f28719d2b506bcc0799a7",
+  "duration_seconds": 5.8,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "a200c055-f548-92cb-b385-2c736ca9baf4",
+  "usage": {
+    "input_tokens": 208,
+    "output_tokens": 1160,
+    "total_tokens": 1368,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "好，那今天就先聊到这儿，你帮我用一两句话总结一下，我周六上午该怎么开口。",
+  "spoken_text": "好，那今天就先聊到这儿，你帮我用一两句话总结一下，我周六上午该怎么开口。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "好，那今天就先聊到这儿。你帮我用一两句话总结一下，我周六上午该怎么开口？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "好，那今天就先聊到这儿。你帮我用一两句话总结一下，我周六上午该怎么开口？",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-ec4f1265-75bc-9911-8875-802a067ad242",
+    "usage": {
+      "prompt_tokens": 248,
+      "total_tokens": 296,
+      "completion_tokens": 48,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 211
+      },
+      "completion_tokens_details": {
+        "text_tokens": 48
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "415b11a3c358c31c44ec700b45547029fd614dff168f28719d2b506bcc0799a7"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "e5f6de5fa5c1716b7997f89ad581115c39bc24dbfd85e7e360f75327c5ffa681",
+    "canonical_sha256": "415b11a3c358c31c44ec700b45547029fd614dff168f28719d2b506bcc0799a7",
+    "pcm_sha256": "3faf4143d93cc7bf7c531cfb9856b6557760ce61aca0206f5c2585cb9fe9db66",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 139200,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "好，那今天就先聊到这儿。你帮我用一两句话总结一下，我周六上午该怎么开口？",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-86aef81d-fc5e-9d89-9152-8e2b25a3ec55",
+      "usage": {
+        "prompt_tokens": 164,
+        "total_tokens": 212,
+        "completion_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 37,
+          "text_tokens": 127
+        },
+        "completion_tokens_details": {
+          "text_tokens": 48
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "e5f6de5fa5c1716b7997f89ad581115c39bc24dbfd85e7e360f75327c5ffa681",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "e5f6de5fa5c1716b7997f89ad581115c39bc24dbfd85e7e360f75327c5ffa681",
+        "canonical_audio_sha256": "415b11a3c358c31c44ec700b45547029fd614dff168f28719d2b506bcc0799a7",
+        "pcm_sha256": "3faf4143d93cc7bf7c531cfb9856b6557760ce61aca0206f5c2585cb9fe9db66",
+        "same_samples": true
+      }
+    }
+  ]
+}

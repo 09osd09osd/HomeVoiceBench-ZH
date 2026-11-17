@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/ff0f2ddfa97d800d9baa95bb6f3fc772.wav",
+  "sha256": "0b9ec544716c9cecae698b36f2c24c3006115447bd1cfdf215094a99b21b5564",
+  "duration_seconds": 3.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "c0c2633e-b55a-9150-8669-015eb7fd015b",
+  "usage": {
+    "input_tokens": 176,
+    "output_tokens": 752,
+    "total_tokens": 928,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+  "spoken_text": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-7f2e9029-409f-96fb-9c8d-179458fc4f02",
+    "usage": {
+      "prompt_tokens": 228,
+      "total_tokens": 270,
+      "completion_tokens": 42,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 205
+      },
+      "completion_tokens_details": {
+        "text_tokens": 42
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "0b9ec544716c9cecae698b36f2c24c3006115447bd1cfdf215094a99b21b5564"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "c9cb96a6fa6bde7299cd170bae752b7984afc86ee3864ec22bcf63f19c90ddeb",
+    "canonical_sha256": "0b9ec544716c9cecae698b36f2c24c3006115447bd1cfdf215094a99b21b5564",
+    "pcm_sha256": "bb2bf2baf51bb09965dfacbd1dd6a1e2f70a72fbac661dec01d717911c78c401",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 90240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-d6ae609f-af11-9bfe-9c45-d03a3a769681",
+      "usage": {
+        "prompt_tokens": 167,
+        "total_tokens": 209,
+        "completion_tokens": 42,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 144
+        },
+        "completion_tokens_details": {
+          "text_tokens": 42
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "c9cb96a6fa6bde7299cd170bae752b7984afc86ee3864ec22bcf63f19c90ddeb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "c9cb96a6fa6bde7299cd170bae752b7984afc86ee3864ec22bcf63f19c90ddeb",
+        "canonical_audio_sha256": "0b9ec544716c9cecae698b36f2c24c3006115447bd1cfdf215094a99b21b5564",
+        "pcm_sha256": "bb2bf2baf51bb09965dfacbd1dd6a1e2f70a72fbac661dec01d717911c78c401",
+        "same_samples": true
+      }
+    }
+  ]
+}

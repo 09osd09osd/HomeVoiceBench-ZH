@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/9075e0f6029650689f2b0688430aef95.wav",
+  "sha256": "3dd536ae8d3ce1d15099dffbc3206d7e9dd0b2ffed90b9785c6b8baa89884866",
+  "duration_seconds": 4.16,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "37df7468-b7e5-9512-b826-48504b64688d",
+  "usage": {
+    "input_tokens": 181,
+    "output_tokens": 832,
+    "total_tokens": 1013,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，语气温和，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "请按我已经说过的信息处理，其他信息我暂时补充不了。",
+  "spoken_text": "请按我已经说过的信息处理，其他信息我暂时补充不了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "请按我已经说过的信息处理，其他信息我暂时补充不了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "请按我已经说过的信息处理，其他信息我暂时补充不了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-e6ba2912-bd49-93e7-b687-4e7caf20c3bb",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 273,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "3dd536ae8d3ce1d15099dffbc3206d7e9dd0b2ffed90b9785c6b8baa89884866"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "d42fe2880200fd5b075a8e02311d33a9a6846300781a91581a58428d8b2ac5bb",
+    "canonical_sha256": "3dd536ae8d3ce1d15099dffbc3206d7e9dd0b2ffed90b9785c6b8baa89884866",
+    "pcm_sha256": "ba59e58876424e60667435ae5e83f036a4181517e0daebc77fb9db65d0e902ef",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 99840,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "请按我已经说过的信息处理，其他信息我暂时补充不了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-75ea063c-5a9f-9a23-b90d-1699ee3f7c59",
+      "usage": {
+        "prompt_tokens": 149,
+        "total_tokens": 189,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "d42fe2880200fd5b075a8e02311d33a9a6846300781a91581a58428d8b2ac5bb",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "d42fe2880200fd5b075a8e02311d33a9a6846300781a91581a58428d8b2ac5bb",
+        "canonical_audio_sha256": "3dd536ae8d3ce1d15099dffbc3206d7e9dd0b2ffed90b9785c6b8baa89884866",
+        "pcm_sha256": "ba59e58876424e60667435ae5e83f036a4181517e0daebc77fb9db65d0e902ef",
+        "same_samples": true
+      }
+    }
+  ]
+}

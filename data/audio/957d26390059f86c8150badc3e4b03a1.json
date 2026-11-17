@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/957d26390059f86c8150badc3e4b03a1.wav",
+  "sha256": "f673804949c5fefb948b74e73e16d0256974dc1d50e8a541a490e20525f572d0",
+  "duration_seconds": 2.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "eb5bdca6-571d-9740-a387-f5ef7f3a9fbc",
+  "usage": {
+    "input_tokens": 169,
+    "output_tokens": 544,
+    "total_tokens": 713,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，自然交谈，语气平静",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "明天7点提醒我带钥匙。",
+  "spoken_text": "明天七点提醒我带钥匙。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "明天七点提醒我带钥匙。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "明天七点提醒我带钥匙。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d637e0a9-6226-9ede-89e3-a77fa04461d2",
+    "usage": {
+      "prompt_tokens": 213,
+      "total_tokens": 247,
+      "completion_tokens": 34,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 34
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f673804949c5fefb948b74e73e16d0256974dc1d50e8a541a490e20525f572d0"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "2929bd193a84873ce78c4342c3dd23d22d9ca63ad3a31e7647b47e75286f5da1",
+    "canonical_sha256": "f673804949c5fefb948b74e73e16d0256974dc1d50e8a541a490e20525f572d0",
+    "pcm_sha256": "8a11c62aba6201a1973755ff293edc1595dc8b9bd02d2687153d5c8a719c09b4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 65280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "明天七点提醒我带钥匙。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "明天七点提醒我带钥匙。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-16e93eb6-ccb9-9efa-988a-a0b5194ce876",
+      "usage": {
+        "prompt_tokens": 152,
+        "total_tokens": 186,
+        "completion_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 136
+        },
+        "completion_tokens_details": {
+          "text_tokens": 34
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "2929bd193a84873ce78c4342c3dd23d22d9ca63ad3a31e7647b47e75286f5da1",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "2929bd193a84873ce78c4342c3dd23d22d9ca63ad3a31e7647b47e75286f5da1",
+        "canonical_audio_sha256": "f673804949c5fefb948b74e73e16d0256974dc1d50e8a541a490e20525f572d0",
+        "pcm_sha256": "8a11c62aba6201a1973755ff293edc1595dc8b9bd02d2687153d5c8a719c09b4",
+        "same_samples": true
+      }
+    }
+  ]
+}

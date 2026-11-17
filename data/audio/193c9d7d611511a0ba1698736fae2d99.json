@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/193c9d7d611511a0ba1698736fae2d99.wav",
+  "sha256": "8ad7a87cd2903fa68067dabd1ed0209e53b75eff5f8d85246bbee32700691b1f",
+  "duration_seconds": 2.56,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "926d8fbb-7b54-9899-917c-be795f0bf5f8",
+  "usage": {
+    "input_tokens": 179,
+    "output_tokens": 512,
+    "total_tokens": 691,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "帮我只打开客厅灯，亮度调到百分之八十。",
+  "spoken_text": "帮我只打开客厅灯，亮度调到百分之八十。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我只打开客厅灯，亮度调到百分之八十。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我只打开客厅灯，亮度调到百分之八十。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-0b3d9af5-e936-99e5-b210-44c20ada8437",
+    "usage": {
+      "prompt_tokens": 216,
+      "total_tokens": 253,
+      "completion_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 16,
+        "text_tokens": 200
+      },
+      "completion_tokens_details": {
+        "text_tokens": 37
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "8ad7a87cd2903fa68067dabd1ed0209e53b75eff5f8d85246bbee32700691b1f"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "eb82a2425f6eed1212bd9193496fe5db377fe70dd1633971890ca8d269634e96",
+    "canonical_sha256": "8ad7a87cd2903fa68067dabd1ed0209e53b75eff5f8d85246bbee32700691b1f",
+    "pcm_sha256": "b4096252c676f08bb6bd9945b4bdea64b286010f4bbbd4bc9da9bacf9eb4af0c",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 61440,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "帮我只打开客厅灯，亮度调到80%。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "帮我只打开客厅灯，亮度调到80%。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-993b3eff-a119-9e5f-9c99-818ada9442e0",
+      "usage": {
+        "prompt_tokens": 155,
+        "total_tokens": 193,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 16,
+          "text_tokens": 139
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "eb82a2425f6eed1212bd9193496fe5db377fe70dd1633971890ca8d269634e96",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "eb82a2425f6eed1212bd9193496fe5db377fe70dd1633971890ca8d269634e96",
+        "canonical_audio_sha256": "8ad7a87cd2903fa68067dabd1ed0209e53b75eff5f8d85246bbee32700691b1f",
+        "pcm_sha256": "b4096252c676f08bb6bd9945b4bdea64b286010f4bbbd4bc9da9bacf9eb4af0c",
+        "same_samples": true
+      }
+    }
+  ]
+}

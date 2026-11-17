@@ -1,0 +1,108 @@
+{
+  "path": "assets/audio/input/e52845e325991e71316b6ba48af7fab7.wav",
+  "sha256": "f86cd79ea5cc0f4105a6f93ded28394388ad251a970f4affb618f284de52045d",
+  "duration_seconds": 3.84,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "279eaa04-6b2c-9c01-9444-eb35cf06cbf0",
+  "usage": {
+    "input_tokens": 184,
+    "output_tokens": 768,
+    "total_tokens": 952,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气略疲惫",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "我一周只能看一次，最好别让我天天喷水。",
+  "spoken_text": "我一周只能看一次，最好别让我天天喷水。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我一周只能看一次，最好别让我天天喷水。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我一周只能看一次，最好别让我天天喷水。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-59e0df47-1f53-9a11-a2c8-9cf29308b03c",
+    "usage": {
+      "prompt_tokens": 224,
+      "total_tokens": 262,
+      "completion_tokens": 38,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 201
+      },
+      "completion_tokens_details": {
+        "text_tokens": 38
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "f86cd79ea5cc0f4105a6f93ded28394388ad251a970f4affb618f284de52045d"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "7c740c4c7d119ad1989dbada694d9488224855000eba99d6b195068ae57d2c69",
+    "canonical_sha256": "f86cd79ea5cc0f4105a6f93ded28394388ad251a970f4affb618f284de52045d",
+    "pcm_sha256": "484f423f3bd94ec91700f9d463887f750544ef1560b88b29af86b1ba4fe97ae4",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 92160,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "我一周只能看一次，最好别让我天天喷水。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "raw_result": {
+        "transcript": "我一周只能看一次，最好别让我天天喷水。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "orthography_equivalent": true,
+      "qc_version": "audio_qc_v2",
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-208cd6ac-9568-9575-9227-f5ea50b8afe8",
+      "usage": {
+        "prompt_tokens": 163,
+        "total_tokens": 201,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 23,
+          "text_tokens": 140
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "7c740c4c7d119ad1989dbada694d9488224855000eba99d6b195068ae57d2c69",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "7c740c4c7d119ad1989dbada694d9488224855000eba99d6b195068ae57d2c69",
+        "canonical_audio_sha256": "f86cd79ea5cc0f4105a6f93ded28394388ad251a970f4affb618f284de52045d",
+        "pcm_sha256": "484f423f3bd94ec91700f9d463887f750544ef1560b88b29af86b1ba4fe97ae4",
+        "same_samples": true
+      }
+    }
+  ]
+}

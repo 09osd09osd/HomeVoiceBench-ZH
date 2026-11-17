@@ -1,0 +1,100 @@
+{
+  "path": "assets/audio/input/dc1766214182877cd54f1adcf3d32df8.wav",
+  "sha256": "31c14a3ee396e401c6853e9dc5281af93afe083e52da6bfacd5fbf039a782f9b",
+  "duration_seconds": 4.52,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e2ed0b3c-ed0e-926c-92a3-a8f52fb3d18c",
+  "usage": {
+    "input_tokens": 194,
+    "output_tokens": 904,
+    "total_tokens": 1098,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "source_text": "那你现在知道是明天送了吧？别再按今天安慰我了。",
+  "spoken_text": "那你现在知道是明天送了吧？别再按今天安慰我了。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "那你现在知道是明天送了吧？别再按今天安慰我了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "那你现在知道是明天送了吧？别再按今天安慰我了。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4d282b1f-0aa6-993e-952e-42cf64868a39",
+    "usage": {
+      "prompt_tokens": 233,
+      "total_tokens": 273,
+      "completion_tokens": 40,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 40
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "31c14a3ee396e401c6853e9dc5281af93afe083e52da6bfacd5fbf039a782f9b"
+  },
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "80e372ae6266eb95369775211dda8473168d504872933ba503be90c062087910",
+    "canonical_sha256": "31c14a3ee396e401c6853e9dc5281af93afe083e52da6bfacd5fbf039a782f9b",
+    "pcm_sha256": "fa88b7f7fbf3be44ef04699ffc28a7bf4c783e9cadb3e1a0822c351003eafa25",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 108480,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "qc_history": [
+    {
+      "result": {
+        "transcript": "那你现在知道是明天送了吧？别再按今天安慰我了。",
+        "faithful": true,
+        "intelligibility": 5,
+        "issues": []
+      },
+      "model": "qwen3.8-omni-flash",
+      "request_id": "chatcmpl-c5533576-7a2b-9d38-91aa-45d5e8e63c22",
+      "usage": {
+        "prompt_tokens": 149,
+        "total_tokens": 189,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 30,
+          "text_tokens": 119
+        },
+        "completion_tokens_details": {
+          "text_tokens": 40
+        }
+      },
+      "temperature": 0,
+      "audio_sha256": "80e372ae6266eb95369775211dda8473168d504872933ba503be90c062087910",
+      "equivalent_pcm_header_repair": {
+        "judged_audio_sha256": "80e372ae6266eb95369775211dda8473168d504872933ba503be90c062087910",
+        "canonical_audio_sha256": "31c14a3ee396e401c6853e9dc5281af93afe083e52da6bfacd5fbf039a782f9b",
+        "pcm_sha256": "fa88b7f7fbf3be44ef04699ffc28a7bf4c783e9cadb3e1a0822c351003eafa25",
+        "same_samples": true
+      }
+    }
+  ]
+}
