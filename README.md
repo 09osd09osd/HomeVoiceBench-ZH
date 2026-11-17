@@ -10,6 +10,8 @@
 
 - [交互讲解网页](docs/index.html)：下载后双击HTML，浏览50场景、1000题、链路图和真实语音。
 
+- [在线讲解网页](https://09osd09osd.github.io/HomeVoiceBench-ZH/docs/index.html)。
+- [完整数据和测评证据下载](https://github.com/09osd09osd/HomeVoiceBench-ZH/releases/tag/v0.2.0)。
 - [Excel总览](outputs/homevoicebench-20261117/HomeVoiceBench-ZH.xlsx)。
 - [数据生成](docs/DATASET.md)、[50场景目录](docs/SCENARIOS.md)、[完整工具沙箱](docs/SANDBOX.md)、[评分标准](docs/EVALUATION.md)。
 - [字段字典](docs/FIELDS.md)、[运行复现](docs/REPRODUCIBILITY.md)、[来源与限制](docs/PROVENANCE.md)。
