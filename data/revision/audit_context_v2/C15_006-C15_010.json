@@ -1,0 +1,282 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d5fa14b2-dea3-45a4-88ea-5a43abe6eb6c",
+  "usage": {
+    "prompt_tokens": 2058,
+    "completion_tokens": 1244,
+    "total_tokens": 3302,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1546
+  },
+  "temperature": 0,
+  "source_sha256": "57bd9d1c527ccd43c20237be5d893906c308b5fc5fd190dfd9cd0c9f85fca90d",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出厨房小物件的猜谜",
+            "先只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出厨房小物件的猜谜",
+            "先只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给一点点提示",
+            "保持不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出过多提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_008",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "用户称“我刚才说错了，不是金属的”，但前序用户台词从未说过“金属的”，金属是参考助手在U2自行给出的提示，用户更正引用了尚未由用户提出的内容。",
+          "evidence": "U3：我刚才说错了，不是金属的，是塑料的，你按塑料的来提示。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出厨房小物件的猜谜",
+            "先只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给一点点提示",
+            "保持不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出过多提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按塑料材质给提示",
+            "保持不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "继续按金属材质提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_009",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3",
+            "U4"
+          ],
+          "reason": "用户称“我刚才说错了，不是金属的”，但前序用户台词从未说过“金属的”，金属是参考助手在U2自行给出的提示；U4又追问“还记得我改成塑料的了吧”，依赖该无来源更正。",
+          "evidence": "U3：我刚才说错了，不是金属的，是塑料的，你按塑料的来提示。U4：你还记得我改成塑料的了吧？"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出厨房小物件的猜谜",
+            "先只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给一点点提示",
+            "保持不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出过多提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按塑料材质给提示",
+            "保持不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "继续按金属材质提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得塑料材质",
+            "再给一个不泄底的提示"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "否认塑料材质"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_010",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3",
+            "U4"
+          ],
+          "reason": "用户称“我刚才说错了，不是金属的”，但前序用户台词从未说过“金属的”，金属是参考助手在U2自行给出的提示；U4又追问“还记得我改成塑料的了吧”，依赖该无来源更正。",
+          "evidence": "U3：我刚才说错了，不是金属的，是塑料的，你按塑料的来提示。U4：你还记得我改成塑料的了吧？"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出厨房小物件的猜谜",
+            "先只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给一点点提示",
+            "保持不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出过多提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按塑料材质给提示",
+            "保持不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "继续按金属材质提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得塑料材质",
+            "再给一个不泄底的提示"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "否认塑料材质"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "不直接说出答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "prior_pipeline": {
+    "started_at": "2026-11-17T06:13:14.768693+00:00",
+    "policy": "one GPU engine at a time; native microbatch4, Qwen4 slots, TTS18 with allocator cap and unused-cache release; overlapping cloud judge16",
+    "stages": [
+      {
+        "name": "new_input_asr_batch16",
+        "started_at": "2026-11-17T06:13:14.786703+00:00"
+      },
+      {
+        "name": "edge_native_batch4",
+        "started_at": "2026-11-17T06:14:08.800500+00:00"
+      },
+      {
+        "name": "qwen35_2b",
+        "started_at": "2026-11-17T06:20:53.381271+00:00"
+      },
+      {
+        "name": "qwen35_4b",
+        "started_at": "2026-11-17T06:22:51.598047+00:00"
+      },
+      {
+        "name": "baseline_tts_batch18",
+        "started_at": "2026-11-17T06:25:16.102561+00:00"
+      },
+      {
+        "name": "audio_judging",
+        "started_at": "2026-11-17T06:46:58.384142+00:00"
+      }
+    ],
+    "current_stage": "audio_judging",
+    "status": "needs_attention",
+    "error": "Judge stream heartbeat is stale; inspect the owned process before resuming"
+  },
+  "reason": "Windows sharing violation while atomically replacing judge_stream_status.json; traceback retained in local log. Completed requests drained before restart. Added bounded atomic-replace retries; no prompt, grading or model-output changes."
+}

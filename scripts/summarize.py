@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from homevoice.catalog import SCENES
 from homevoice.speech_text import VERSION
-from scripts.judge_runs import PROMPT,EVIDENCE_VERSION
+from scripts.judge_runs import PROMPT,EVIDENCE_VERSION,judgment_current
 SYSTEMS=['edge_native','qwen35_2b','qwen35_4b']
 def read(p):return json.loads(p.read_text('utf-8'))
 def save(p,x):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n','utf-8')
@@ -17,11 +17,17 @@ def summarize():
     for system in SYSTEMS:
         rr=[read(p) for p in sorted((ROOT/'runs'/system).glob('*.json'))];by_system[system]={r['case_id']:r for r in rr}
         for r in rr:
-            if r.get('audio_judge') and r['audio_judge'].get('prompt_sha256')!=hashlib.sha256(PROMPT.encode()).hexdigest():
+            if r.get('audio_judge') and not judgment_current(byid[r['case_id']],r):
                 r.update(audio_judge=None,case_pass=None,task_achieved=None,judge_status='pending_current_evidence')
             c=byid[r['case_id']];j=r.get('audio_judge');d=j['result'] if j else None
             runrows.append({'case_id':r['case_id'],'system_id':system,'category':c['classification']['category'],'scene_id':c['classification']['scene_id'],'turn_count':len(r['turns']),'execution_status':r['execution']['status'],'flags':r['execution']['flags'],'rule_pass':all(k['passed'] for k in r['rule_checks']),'case_pass':r.get('case_pass'),'task_achieved':r.get('task_achieved'),'judged':j is not None,'mean_score':mean([s['score'] for s in d['dimensions']]) if d else None,'dimensions':{s['dimension_id']:s['score'] for s in d['dimensions']} if d else {},'critical_failures':d['critical_failures'] if d else None,'judge_status':r.get('judge_status','pending'),'tool_calls':r['execution']['tool_calls'],'wall_seconds_interaction':r['execution']['wall_seconds'],'run_path':f'runs/{system}/{r["case_id"]}.json'})
-    for r in runrows:r['planned_user_turns']=len(byid[r['case_id']]['interaction']['nodes'])
+    for r in rows:r['reporting_partition']=byid[r['case_id']]['evaluation'].get('reporting_partition','standard')
+    for r in runrows:
+        r['planned_user_turns']=len(byid[r['case_id']]['interaction']['nodes'])
+        r['reporting_partition']=byid[r['case_id']]['evaluation'].get('reporting_partition','standard')
+        raw=by_system[r['system_id']][r['case_id']]
+        r['execution_origin']=raw.get('revision',{}).get('execution_origin')
+        r['read_tool_calls']=sum(e['call']['tool_name'] in {'home_get','clock_get','policy_get','device_list','device_get','sensor_read','schedule_list','media_search','task_get'} for e in raw['tool_trace'])
     stats=[]
     for system in SYSTEMS:
         for category in ['all','tool','chat']:
@@ -61,7 +67,18 @@ def summarize():
         d=json.loads(line);m=d.get('requested_model') or d.get('returned_model') or 'unknown';u=d.get('usage') or {};z=usage[m];z['requests']+=1
         z['prompt_tokens']+=u.get('prompt_tokens',u.get('input_tokens',0)) or 0;z['completion_tokens']+=u.get('completion_tokens',u.get('output_tokens',0)) or 0;z['reported_total_tokens']+=u.get('total_tokens',0) or 0
     report={'benchmark':'HomeVoiceBench-ZH','version':'0.2.0','generated_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'evaluation_status':'complete' if complete else 'in_progress','dataset':{'cases':len(cases),'tool_cases':sum(c['category']=='tool' for c in rows),'chat_cases':sum(c['category']=='chat' for c in rows),'scenes':len(SCENES),'normal_user_turns':sum(c['turn_count'] for c in rows),'turn_distribution':dict(collections.Counter(c['turn_count'] for c in rows)),'audio_ready_cases':sum(c['audio_ready'] for c in rows),'referenced_verified_unique_audio':len(assets),'referenced_unique_audio_seconds':sum(a.get('duration_s',0) or 0 for a in assets.values()),'normalizer_version':VERSION,'human_review':'not_performed','input_type':'synthetic_clean_mandarin_audio'},'systems':stats,'paired_comparisons':comparisons,'api_usage':dict(usage),'usage_caveat':'Contains authoring, reviews, pilots, regeneration, input QC and response judging; provider pricing/billing may differ. Requests are ledger entries, not unique case costs.','limitations':['Synthetic clean speech, four instructed adult voices; no real-room noise or far-field generalization claim.','Fixed authored follow-ups and bounded clarification; not arbitrary interactive users.','Same-model authoring review is not independent human review.','One seed, one model audio judge; confidence intervals cover scene sampling, not all model/judge uncertainty.','Reference-compatible backbones differ in precision and runtime from native Edge; results compare complete deployed systems.','Offline ASR/TTS caching and batching mean interaction timings are not end-to-end real-time latency.']}
-    report.update(judge_evidence_version=EVIDENCE_VERSION,judge_prompt_sha256=hashlib.sha256(PROMPT.encode()).hexdigest(),by_planned_user_turns=turn_stats)
+    partition_stats=[]
+    for system in SYSTEMS:
+        for partition in ['standard','budget_stress']:
+            for category in ['all','tool','chat']:
+                target=[c for c in rows if c['reporting_partition']==partition and (category=='all' or c['category']==category)]
+                if not target:continue
+                rr=[r for r in runrows if r['system_id']==system and r['reporting_partition']==partition and (category=='all' or r['category']==category)]
+                known=[r for r in rr if r['case_pass'] is not None];passed=sum(r['case_pass'] is True for r in rr)
+                partition_stats.append({'system_id':system,'partition':partition,'category':category,'planned':len(target),'decided_count':len(known),'passed_count':passed,'strict_pass_rate':rate(passed,len(target)) if len(known)==len(target) else None})
+    report.update(version='0.3.0',judge_evidence_version=EVIDENCE_VERSION,judge_prompt_sha256=hashlib.sha256(PROMPT.encode()).hexdigest(),by_planned_user_turns=turn_stats,by_reporting_partition=partition_stats,
+                  revision={'previous_version':'0.2.0','input_changed_cases':46,'symmetric_rerun_cases':51,'actual_new_model_runs':153,'reused_model_runs':2847,'all_audible_outputs_rejudged':complete,'source_machine_audit':'DeepSeek official API; independent human calibration not performed'},
+                  budget_stress_case_ids=[r['case_id'] for r in rows if r['reporting_partition']=='budget_stress'])
     save(ROOT/'reports/summary.json',report);save(ROOT/'reports/case_overview.json',rows);save(ROOT/'reports/run_overview.json',runrows);save(ROOT/'reports/scene_overview.json',scene_rows)
     print(json.dumps({'dataset':report['dataset'],'evaluation_status':report['evaluation_status'],'runs':len(runrows),'judged':sum(r['judged'] for r in runrows)},ensure_ascii=False))
 if __name__=='__main__':summarize()

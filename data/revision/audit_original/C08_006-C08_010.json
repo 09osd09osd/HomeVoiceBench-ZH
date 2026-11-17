@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "74efbcaa-7826-4c1d-b6d6-2832d0e398ce",
+  "usage": {
+    "prompt_tokens": 1930,
+    "completion_tokens": 1072,
+    "total_tokens": 3002,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1546
+  },
+  "temperature": 0,
+  "source_sha256": "441a630286133c4aaaf68e6a7fe27052a16148d25f5fd331cdc2f6d40f0afa5b",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C08_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对客厅闷、想开窗又怕吵给出简单可行的通风建议",
+            "承认无法判断外面是否吵，建议用户自行感受后再决定"
+          ],
+          "must_not": [
+            "声称能直接感知或查询室外噪音",
+            "要求用户购买设备或进行复杂改造"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供不花钱的枕头高度调整办法",
+            "提示脖子持续不适应咨询医生"
+          ],
+          "must_not": [
+            "给出医疗诊断或治疗方案",
+            "推荐购买新枕头等花钱方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认旧浴巾可以替代毛巾使用",
+            "给出简单不麻烦的叠垫方法并提示按感受调整"
+          ],
+          "must_not": [
+            "坚持必须使用毛巾",
+            "建议一次垫得过厚"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "使用家里现成物品给出清洁油污的办法",
+            "提示先小范围试并避开插座电器"
+          ],
+          "must_not": [
+            "要求购买专用清洁剂",
+            "建议把水弄到插座和电器附近"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提供不用洗洁精的更温和清洁办法",
+            "提示先在不显眼处试用"
+          ],
+          "must_not": [
+            "继续推荐洗洁精",
+            "声称白醋对所有材质都安全"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "根据台面为木头这一更正调整建议",
+            "提示木台面不宜直接用白醋并给出更稳妥替代"
+          ],
+          "must_not": [
+            "仍按石材台面给建议",
+            "坚持直接用白醋擦木台面"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供不买烘干机的简单去潮味办法",
+            "建议摊开衣服留间隙并通风"
+          ],
+          "must_not": [
+            "推荐购买烘干机",
+            "声称能保证完全去除潮味"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "针对朝北风小的情况给出更适合的办法",
+            "提示潮湿天气下效果有限"
+          ],
+          "must_not": [
+            "忽略朝北风小的条件",
+            "夸大风扇效果"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "根据阳台改为朝东、早上有太阳进行更正调整",
+            "建议趁上午晾晒并摊开"
+          ],
+          "must_not": [
+            "仍按朝北风小给建议",
+            "忽略更正后的朝向"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆阳台朝东这一信息",
+            "回答早上晾比晚上晾更好"
+          ],
+          "must_not": [
+            "记错阳台朝向",
+            "建议晚上晾更好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供减少镜子起雾的省事办法",
+            "建议先通风散水汽再擦"
+          ],
+          "must_not": [
+            "建议用太湿的布反复抹",
+            "要求用户每天费力擦拭"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认肥皂可用于减少镜子起雾",
+            "提示薄擦并先小面积试"
+          ],
+          "must_not": [
+            "推荐化学喷雾",
+            "建议涂得太厚"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "根据卫生间无排风扇只能开窗进行更正调整",
+            "强调开窗通风散水汽更重要"
+          ],
+          "must_not": [
+            "仍建议使用排风扇",
+            "忽略无排风扇的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆卫生间没有排风扇",
+            "回答肥皂水可以薄擦试用但通风更关键"
+          ],
+          "must_not": [
+            "记错为有排风扇",
+            "声称肥皂水能完全防止起雾"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短的话收尾总结"
+          ],
+          "must_not": [
+            "输出冗长内容",
+            "引入新的复杂方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

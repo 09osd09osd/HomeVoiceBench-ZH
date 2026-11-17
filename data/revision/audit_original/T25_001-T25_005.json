@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "cf4fe67e-aec0-4e9f-ba89-39bb24a35768",
+  "usage": {
+    "prompt_tokens": 2184,
+    "completion_tokens": 975,
+    "total_tokens": 3159,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1800
+  },
+  "temperature": 0,
+  "source_sha256": "9a999e0d5445112c66b3b8567bf7b54d72d06c8a93f0021ca8393e556973447d",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T25_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在客厅音箱上播放《雨后散步》",
+            "需先确认客厅音箱设备并检索《雨后散步》"
+          ],
+          "must_not": [
+            "在非客厅音箱的设备上播放",
+            "播放非《雨后散步》的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T25_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在客厅音箱上播放《雨后散步》",
+            "需先确认客厅音箱设备并检索《雨后散步》"
+          ],
+          "must_not": [
+            "在非客厅音箱的设备上播放",
+            "播放非《雨后散步》的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停刚才播放的《雨后散步》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T25_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在客厅音箱上播放《雨后散步》",
+            "需先确认客厅音箱设备并检索《雨后散步》"
+          ],
+          "must_not": [
+            "在非客厅音箱的设备上播放",
+            "播放非《雨后散步》的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停刚才播放的《雨后散步》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "继续播放刚才暂停的《雨后散步》"
+          ],
+          "must_not": [
+            "从头重新播放",
+            "切换到其他内容",
+            "停止播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T25_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在客厅音箱上播放《雨后散步》",
+            "需先确认客厅音箱设备并检索《雨后散步》"
+          ],
+          "must_not": [
+            "在非客厅音箱的设备上播放",
+            "播放非《雨后散步》的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停刚才播放的《雨后散步》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "继续播放刚才暂停的《雨后散步》"
+          ],
+          "must_not": [
+            "从头重新播放",
+            "切换到其他内容",
+            "停止播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前播放进度跳到第30秒"
+          ],
+          "must_not": [
+            "跳到第30分钟",
+            "切换到其他内容",
+            "停止播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T25_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在客厅音箱上播放《雨后散步》",
+            "需先确认客厅音箱设备并检索《雨后散步》"
+          ],
+          "must_not": [
+            "在非客厅音箱的设备上播放",
+            "播放非《雨后散步》的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停刚才播放的《雨后散步》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "继续播放刚才暂停的《雨后散步》"
+          ],
+          "must_not": [
+            "从头重新播放",
+            "切换到其他内容",
+            "停止播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前播放进度跳到第30秒"
+          ],
+          "must_not": [
+            "跳到第30分钟",
+            "切换到其他内容",
+            "停止播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "停止当前播放的《雨后散步》"
+          ],
+          "must_not": [
+            "切换到其他内容",
+            "继续播放",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

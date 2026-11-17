@@ -1,0 +1,238 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "bd367ffb-5fd1-4eb5-aef5-51489b87eae1",
+  "usage": {
+    "prompt_tokens": 2199,
+    "completion_tokens": 1035,
+    "total_tokens": 3234,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1687
+  },
+  "temperature": 0,
+  "source_sha256": "239f2fddf856681dd37d5526d5a5447c4f54c4067f4f0cf34d8882cea2d31bcc",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C08_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对卧室潮气、被子湿气给出简单除湿建议",
+            "建议应属日常可行办法"
+          ],
+          "must_not": [
+            "声称能确定潮气具体成因",
+            "给出需要专业施工或危险操作的建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对衣柜潮味和衣服不够干爽给出办法"
+          ],
+          "must_not": [
+            "声称能确定潮味具体成因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想用香味重樟脑丸的偏好",
+            "考虑家里有小孩，给出无香或低刺激替代方案"
+          ],
+          "must_not": [
+            "推荐香味重的樟脑丸",
+            "忽略有小孩这一约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面油渍黏糊给出省力清理办法"
+          ],
+          "must_not": [
+            "声称能确定油渍顽固程度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想用太刺激清洁剂、怕伤石英石表面的要求",
+            "给出适合石英石台面的温和清洁建议"
+          ],
+          "must_not": [
+            "推荐强酸强碱或可能损伤石英石的清洁剂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正台面为普通不锈钢",
+            "按不锈钢台面调整清洁建议"
+          ],
+          "must_not": [
+            "继续按石英石台面给建议",
+            "否定用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对客厅地毯闷味给出简单去味办法"
+          ],
+          "must_not": [
+            "声称能确定味道具体来源"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想用香味浓除味喷雾的偏好",
+            "考虑家里有老人，给出温和方案"
+          ],
+          "must_not": [
+            "推荐香味浓的除味喷雾",
+            "忽略老人对气味敏感这一约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正有味道的是卧室小地毯",
+            "按卧室小地毯调整建议"
+          ],
+          "must_not": [
+            "继续按客厅地毯给建议",
+            "否定用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得是卧室小地毯",
+            "给出晾晒卧室小地毯的注意事项"
+          ],
+          "must_not": [
+            "改口成客厅地毯",
+            "否认此前更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对沙发靠垫潮、坐着不舒服给出简单处理办法"
+          ],
+          "must_not": [
+            "声称能确定潮气具体成因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想用烘干机、怕棉麻缩水的要求",
+            "给出棉麻套自然晾干建议"
+          ],
+          "must_not": [
+            "推荐用烘干机烘棉麻套"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正潮的是飘窗坐垫",
+            "按飘窗坐垫调整建议"
+          ],
+          "must_not": [
+            "继续按沙发靠垫给建议",
+            "否定用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得是飘窗坐垫",
+            "回答棉麻套晾时是否翻面"
+          ],
+          "must_not": [
+            "改口成沙发靠垫",
+            "否认此前更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结飘窗坐垫的处理办法",
+            "总结应包含棉麻套翻面摊平晾干、坐垫芯通风、不用烘干机等要点"
+          ],
+          "must_not": [
+            "总结成沙发靠垫",
+            "给出冗长非简短的回答"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b31f1397-1363-469f-b40a-d5c098226e24",
+  "usage": {
+    "prompt_tokens": 2378,
+    "completion_tokens": 1072,
+    "total_tokens": 3450,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1994
+  },
+  "temperature": 0,
+  "source_sha256": "8b1cd61f93418324091ab944ce0838044db34a69d9fc61462fab5c4b541af663",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T16_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T16_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T16_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较客厅与厨房的温度读数",
+            "比较客厅与厨房的湿度读数",
+            "基于此前查询到的读数进行比较"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "编造未查询到的读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T16_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较客厅与厨房的温度读数",
+            "比较客厅与厨房的湿度读数",
+            "基于此前查询到的读数进行比较"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "编造未查询到的读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明温湿度读数不能代表现场全部情况",
+            "指出读数只是特定时刻的传感器数值且可能变化",
+            "指出读数不等于设备设定值或现场人员活动信息"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "调整或控制任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T16_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较客厅与厨房的温度读数",
+            "比较客厅与厨房的湿度读数",
+            "基于此前查询到的读数进行比较"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "编造未查询到的读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明温湿度读数不能代表现场全部情况",
+            "指出读数只是特定时刻的传感器数值且可能变化",
+            "指出读数不等于设备设定值或现场人员活动信息"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "调整或控制任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "重新查询客厅当前温度和湿度",
+            "告知温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "遗漏测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

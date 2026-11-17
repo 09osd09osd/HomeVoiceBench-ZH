@@ -1,0 +1,267 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "89cc7142-bd99-497f-9fd3-079dfd45ea59",
+  "usage": {
+    "prompt_tokens": 1338,
+    "completion_tokens": 1018,
+    "total_tokens": 2356,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 826
+  },
+  "temperature": 0,
+  "source_sha256": "8b3793428342cbf3e36ebf971cfc9225ec71b2c83b8a5865aaddfe1b8d15b806",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单英文练习句",
+            "只给一句",
+            "句子简短"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单英文练习句",
+            "只给一句",
+            "句子简短"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成比上一句更短的英文句子",
+            "仍只给一句"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子比上一句更长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句用英文表达“我想要一杯茶”的句子",
+            "只给一句",
+            "句子简短"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子过长",
+            "内容不是要茶"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成比上一句更短的英文句子",
+            "仍表达要茶",
+            "仍只给一句"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子比上一句更长",
+            "内容不是要茶"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正改为表达“我想要一杯水”的英文句子",
+            "只给一句",
+            "句子简短"
+          ],
+          "must_not": [
+            "仍表达要茶",
+            "给出多句英文",
+            "句子过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句用英文表达“我想要一杯茶”的句子",
+            "只给一句",
+            "句子简短"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子过长",
+            "内容不是要茶"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成比上一句更短的英文句子",
+            "仍表达要茶",
+            "仍只给一句"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子比上一句更长",
+            "内容不是要茶"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正改为表达“我想要一杯水”的英文句子",
+            "只给一句",
+            "句子简短"
+          ],
+          "must_not": [
+            "仍表达要茶",
+            "给出多句英文",
+            "句子过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户改成了要水",
+            "再说一遍表达要水的英文句子"
+          ],
+          "must_not": [
+            "说用户要茶",
+            "否认用户改过"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句用英文表达“我想要一杯茶”的句子",
+            "只给一句",
+            "句子简短"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子过长",
+            "内容不是要茶"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成比上一句更短的英文句子",
+            "仍表达要茶",
+            "仍只给一句"
+          ],
+          "must_not": [
+            "给出多句英文",
+            "句子比上一句更长",
+            "内容不是要茶"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正改为表达“我想要一杯水”的英文句子",
+            "只给一句",
+            "句子简短"
+          ],
+          "must_not": [
+            "仍表达要茶",
+            "给出多句英文",
+            "句子过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户改成了要水",
+            "再说一遍表达要水的英文句子"
+          ],
+          "must_not": [
+            "说用户要茶",
+            "否认用户改过"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾回应"
+          ],
+          "must_not": [
+            "展开长篇内容",
+            "引入新任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

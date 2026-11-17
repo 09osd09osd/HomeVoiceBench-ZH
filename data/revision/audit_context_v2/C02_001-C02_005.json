@@ -1,0 +1,240 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "14720eca-202c-4de4-bc54-c54584304aa5",
+  "usage": {
+    "prompt_tokens": 1783,
+    "completion_tokens": 1008,
+    "total_tokens": 2791,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1783
+  },
+  "temperature": 0,
+  "source_sha256": "25b7cc5ee0c2b8145c8bbcbe23e6428a4634eaeae189b68fe2d47045f811d598",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户六点半起床、先喝温水再活动的早晨习惯",
+            "以陪伴聊天方式讨论早晨安排"
+          ],
+          "must_not": [
+            "虚构用户未提及的早晨习惯",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户睡前听轻音乐、十点半上床",
+            "围绕放松方式聊天"
+          ],
+          "must_not": [
+            "虚构用户未提及的睡前习惯",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认用户偏好没有歌词、音量小的音乐",
+            "保持聊天式回应"
+          ],
+          "must_not": [
+            "推荐有歌词或音量大的音乐",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户拉开窗帘、喝半杯温水、做几分钟拉伸的顺序"
+          ],
+          "must_not": [
+            "虚构用户未提及的早晨习惯",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认拉伸时放轻快但不吵的音乐"
+          ],
+          "must_not": [
+            "推荐太吵的音乐",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认温水更正为一杯而非半杯"
+          ],
+          "must_not": [
+            "继续沿用半杯温水",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户洗漱、看十分钟书、关灯睡觉的睡前流程"
+          ],
+          "must_not": [
+            "虚构用户未提及的睡前流程",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认看书时开小台灯、不喜欢太亮的大灯"
+          ],
+          "must_not": [
+            "建议使用太亮的大灯",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认看书更正为十五分钟而非十分钟"
+          ],
+          "must_not": [
+            "继续沿用十分钟看书",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆睡前看书是十五分钟",
+            "评价该安排并提及小台灯"
+          ],
+          "must_not": [
+            "回答成十分钟",
+            "虚构用户未提及的睡前细节",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户喝温水、做五分钟拉伸、吃早饭的早晨安排"
+          ],
+          "must_not": [
+            "虚构用户未提及的早晨安排",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认拉伸在阳台上做、空气好"
+          ],
+          "must_not": [
+            "否定用户在阳台拉伸的偏好",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认拉伸更正为十分钟而非五分钟"
+          ],
+          "must_not": [
+            "继续沿用五分钟拉伸",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆拉伸十分钟且在阳台上做"
+          ],
+          "must_not": [
+            "回答成五分钟或非阳台",
+            "虚构用户未提及的细节",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾并复述喝温水、阳台拉伸十分钟、吃早饭"
+          ],
+          "must_not": [
+            "展开长篇内容",
+            "虚构用户未提及的细节",
+            "执行设备控制或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

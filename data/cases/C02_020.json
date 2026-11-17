@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C02_020",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "晨间咖啡温度更正",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261136,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C02_016-020.json"
+      "data/authoring/C02_016-020.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -928,7 +929,7 @@
     "nodes": [
       {
         "id": "U1",
-        "user_text": "我早上喜欢喝咖啡，你七点十分提醒我泡咖啡。",
+        "user_text": "我早上喜欢喝咖啡，想七点十分提醒自己泡咖啡。先只讨论提醒方案，不用真的创建。",
         "tone": "自然",
         "next_node_id": "U2",
         "clarification_branches": [],
@@ -944,7 +945,7 @@
       },
       {
         "id": "U3",
-        "user_text": "我改喝热牛奶了，不喝咖啡了，你提醒我泡牛奶吧。",
+        "user_text": "我改喝热牛奶了，不喝咖啡了，提醒方案里的泡咖啡改成热牛奶吧。",
         "tone": "自然",
         "next_node_id": "U4",
         "clarification_branches": [],
@@ -960,7 +961,7 @@
       },
       {
         "id": "U5",
-        "user_text": "好，那以后就按这个来，现在用一句话简单跟我说下你记住了什么。",
+        "user_text": "好，提醒方案就这样，仍然不用创建。现在用一句话说下我们最后讨论的内容。",
         "tone": "自然",
         "next_node_id": null,
         "clarification_branches": [],
@@ -997,9 +998,9 @@
           "asset_id": "C02_020_U1",
           "node_id": "U1",
           "status": "verified",
-          "path": "assets/audio/input/bd631a59f6e12da94968f906199ef506.wav",
-          "sha256": "1924993d516e782070830d01f56c5b01b4ac60323e79b5de8968777efb4bb62e",
-          "duration_s": 3.24,
+          "path": "assets/audio/input/ea8f2b96cfde1d3fb6c5dedd7569622f.wav",
+          "sha256": "72e30b88632df8944922a8499e243d6874e971361502345d567970578c2ba86f",
+          "duration_s": 5.76,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1008,9 +1009,9 @@
           "seed": 42,
           "tone": "自然",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我早上喜欢喝咖啡，你七点十分提醒我泡咖啡。",
+          "transcript_gt": "我早上喜欢喝咖啡，想七点十分提醒自己泡咖啡。先只讨论提醒方案，不用真的创建。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我早上喜欢喝咖啡，你七点十分提醒我泡咖啡。",
+          "qc_asr_text": "我早上喜欢喝咖啡，想7:10提醒自己泡咖啡。先只讨论提醒方案，不用真的创建。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1043,9 +1044,9 @@
           "asset_id": "C02_020_U3",
           "node_id": "U3",
           "status": "verified",
-          "path": "assets/audio/input/60f276303856c470ffb1f3c1ae5b5f37.wav",
-          "sha256": "2ecaa029f8e6de13a777d4e06cbf8e86adcb690a867b57e6c1a2668b8fced4b4",
-          "duration_s": 3.8,
+          "path": "assets/audio/input/9c2b511985b2ad4a238b381cdce0b6df.wav",
+          "sha256": "e65fa198f25c6a8611785c22ab0bcb76a584b931817b0656c7ac8093a83054fb",
+          "duration_s": 4.04,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1054,9 +1055,9 @@
           "seed": 42,
           "tone": "自然",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我改喝热牛奶了，不喝咖啡了，你提醒我泡牛奶吧。",
+          "transcript_gt": "我改喝热牛奶了，不喝咖啡了，提醒方案里的泡咖啡改成热牛奶吧。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我改喝热牛奶了，不喝咖啡了。你提醒我泡牛奶吧。",
+          "qc_asr_text": "我改喝热牛奶了，不喝咖啡了。提醒方案里的泡咖啡改成热牛奶吧。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1089,9 +1090,9 @@
           "asset_id": "C02_020_U5",
           "node_id": "U5",
           "status": "verified",
-          "path": "assets/audio/input/616e30b41d1a44333cbffcb3563d1a9e.wav",
-          "sha256": "e49295de904b3a8dd568472c65b44a2c7b5ed5275e1cec92479a716097198ac4",
-          "duration_s": 4.16,
+          "path": "assets/audio/input/b8e5ea22b6d50f97aa3c2e7a4aa1c68a.wav",
+          "sha256": "adcd9fcf0986b3950acb63a606f221b2c22286cff6821d6fae24a8bce593cfd8",
+          "duration_s": 4.92,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1100,9 +1101,9 @@
           "seed": 42,
           "tone": "自然",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "好，那以后就按这个来，现在用一句话简单跟我说下你记住了什么。",
+          "transcript_gt": "好，提醒方案就这样，仍然不用创建。现在用一句话说下我们最后讨论的内容。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "好，那以后就按这个来。现在用一句话简单跟我说下你记住了什么？",
+          "qc_asr_text": "好，提醒方案就这样，仍然不用创建。现在用一句话说下我们最后讨论的内容。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1135,7 +1136,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1914,7 +1915,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1947,24 +1948,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -2099,7 +2100,134 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "围绕七点十分提醒泡咖啡的方案进行讨论",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "提醒方案中包含水温别太高、喜欢温一点的提示"
+          ],
+          "must_not": [
+            "创建提醒"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "把提醒方案中的泡咖啡改为热牛奶"
+          ],
+          "must_not": [
+            "创建提醒",
+            "仍以咖啡作为最终内容"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "回答用户早上喝热牛奶",
+            "确认提醒包含水温别太高"
+          ],
+          "must_not": [
+            "回答成喝咖啡",
+            "创建提醒"
+          ]
+        },
+        {
+          "node_id": "U5",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "用一句话总结最后讨论的提醒方案内容",
+            "仍然不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -2108,31 +2236,32 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "好的，七点十分提醒你泡咖啡。"
+        "assistant_text": "预期要点：围绕七点十分提醒泡咖啡的方案进行讨论；不创建提醒。避免：创建提醒；调用写操作。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "好的，提醒你泡咖啡时会说一句水温别太高，你喜欢温一点的。"
+        "assistant_text": "预期要点：提醒方案中包含水温别太高、喜欢温一点的提示。避免：创建提醒。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好的，改成七点十分提醒你泡热牛奶，水温别太高。"
+        "assistant_text": "预期要点：把提醒方案中的泡咖啡改为热牛奶。避免：创建提醒；仍以咖啡作为最终内容。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，你早上改喝热牛奶了，我会在七点十分提醒你泡牛奶，并说水温别太高。"
+        "assistant_text": "预期要点：回答用户早上喝热牛奶；确认提醒包含水温别太高。避免：回答成喝咖啡；创建提醒。"
       },
       {
         "node_id": "U5",
         "calls": [],
-        "assistant_text": "好的，我记住了：七点十分提醒你泡热牛奶，水温别太高。"
+        "assistant_text": "预期要点：用一句话总结最后讨论的提醒方案内容；仍然不创建提醒。避免：创建提醒；调用写操作。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -2144,7 +2273,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

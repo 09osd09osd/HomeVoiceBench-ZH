@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-11-17T06:13:14.768693+00:00",
+  "policy": "one GPU engine at a time; native microbatch4, Qwen4 slots, TTS18; cloud judge initially16 then32; interrupted status writer resumed without model reruns",
+  "stages": [
+    {
+      "name": "new_input_asr_batch16",
+      "started_at": "2026-11-17T06:13:14.786703+00:00"
+    },
+    {
+      "name": "edge_native_batch4",
+      "started_at": "2026-11-17T06:14:08.800500+00:00"
+    },
+    {
+      "name": "qwen35_2b",
+      "started_at": "2026-11-17T06:20:53.381271+00:00"
+    },
+    {
+      "name": "qwen35_4b",
+      "started_at": "2026-11-17T06:22:51.598047+00:00"
+    },
+    {
+      "name": "baseline_tts_batch18",
+      "started_at": "2026-11-17T06:25:16.102561+00:00"
+    },
+    {
+      "name": "audio_judging",
+      "started_at": "2026-11-17T06:46:58.384142+00:00"
+    },
+    {
+      "name": "audio_judging_resumed",
+      "started_at": "2026-11-17T07:00:16.618967+00:00",
+      "workers": 32
+    }
+  ],
+  "current_stage": "summarize",
+  "status": "completed",
+  "finished_at": "2026-11-17T07:46:05.105353+00:00"
+}

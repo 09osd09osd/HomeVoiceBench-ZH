@@ -1,0 +1,45 @@
+{
+  "version": "0.3.0",
+  "date": "2026-11-17",
+  "status": "passed",
+  "frozen_manifest_sha256": "f11f77b8ee50cdc5173ed7399409d463263463dbf0e2d55c3dc13e13c3310348",
+  "review_page": {
+    "mode": "loopback HTTP with real local data",
+    "cases_loaded": 1000,
+    "system_summaries_loaded": 3000,
+    "verified_case": "C08_016",
+    "checks": [
+      "Final v0.3 case and standard partition label displayed",
+      "All three final system scores displayed",
+      "Amended unsupported-humidity-claim constraint displayed",
+      "Read-only query allowance and per-turn policy disclosure displayed",
+      "Actual Edge audio play/pause verified during this revision"
+    ]
+  },
+  "explanation_page": {
+    "checks": [
+      "Final 3000 decided records and 2637 audio judgments displayed",
+      "All-system pass rates match summary: 15.1%, 14.3%, 29.8%",
+      "993 standard cases and 7 budget-stress cases displayed separately",
+      "v0.3 revision note and revised workbook link displayed",
+      "Known C13_020 duration disagreement and 21-record audit link displayed"
+    ]
+  },
+  "workbook": {
+    "path": "outputs/homevoicebench-v030-20261117/HomeVoiceBench-ZH.xlsx",
+    "final_images_visually_checked": [
+      "Overview-A1-I29.png",
+      "Overview-A30-I57.png",
+      "Runs-P1-S15.png",
+      "StoryDuration-A1-I25.png"
+    ],
+    "formula_validation": "reports/workbook_validation.json",
+    "checks": [
+      "Final counts and pass rates match summary",
+      "Partition results and percentage-point confidence intervals readable",
+      "Execution origin and read-only call counts readable",
+      "All 21 story-duration rows and the highlighted judge disagreement readable"
+    ]
+  },
+  "limit": "Interface and artifact QA by the coding agent; this is not formal human calibration of model answers. Public deployment bytes are checked separately."
+}

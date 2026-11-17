@@ -1,0 +1,251 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "1e8c0a4a-3afc-4ea2-a59c-52604f8ed0bd",
+  "usage": {
+    "prompt_tokens": 1459,
+    "completion_tokens": 941,
+    "total_tokens": 2400,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 947
+  },
+  "temperature": 0,
+  "source_sha256": "41531a4be3f51740bc42870379877bed0c6e7cd6d365b26a156f09ec619cd4fa",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C13_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个关于小松鼠找松果的故事",
+            "内容简单、温暖",
+            "篇幅不长",
+            "没有吓人的情节"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小熊和月亮灯的故事",
+            "温馨",
+            "情节简单",
+            "适合睡前听"
+          ],
+          "must_not": [
+            "情节复杂",
+            "不温馨"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事中加入一只小刺猬",
+            "小熊和小刺猬一起分享月亮灯的光",
+            "篇幅约六分钟"
+          ],
+          "must_not": [
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小兔子种胡萝卜的故事",
+            "篇幅短",
+            "温暖",
+            "没有吓人的角色"
+          ],
+          "must_not": [
+            "出现吓人的角色",
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事中加入一只小乌龟帮忙浇水",
+            "体现朋友一起做事的开心"
+          ],
+          "must_not": [
+            "偏离小兔子种胡萝卜的主题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小乌龟改为帮忙拔草",
+            "浇水仍由小兔子自己来"
+          ],
+          "must_not": [
+            "让小乌龟帮忙浇水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小狐狸借围巾的故事",
+            "温暖、简单",
+            "篇幅不长",
+            "没有吓人的部分"
+          ],
+          "must_not": [
+            "出现吓人的部分",
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "小狐狸向小松鼠借围巾",
+            "小松鼠的围巾是红色的"
+          ],
+          "must_not": [
+            "说小狐狸向小兔子借围巾"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小狐狸向小松鼠借围巾",
+            "围巾是蓝色的"
+          ],
+          "must_not": [
+            "说围巾是红色的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "承接小狐狸借到蓝色围巾后的情节",
+            "讲述路上遇到谁",
+            "确认围巾是蓝色"
+          ],
+          "must_not": [
+            "说围巾是红色"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小象找朋友的故事",
+            "温暖、简单",
+            "篇幅不长",
+            "没有吓人的情节"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "小象找到三个朋友",
+            "最后一起在河边玩水",
+            "篇幅约七八分钟"
+          ],
+          "must_not": [
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小象找到两个朋友",
+            "最后一起在河边玩水"
+          ],
+          "must_not": [
+            "说小象找到三个朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认小象找到两个朋友",
+            "接着讲他们玩水时发生了什么"
+          ],
+          "must_not": [
+            "说小象找到三个朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短方式收尾",
+            "结尾能让孩子安静下来睡觉"
+          ],
+          "must_not": [
+            "结尾过于冗长或刺激"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

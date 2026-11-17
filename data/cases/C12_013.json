@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C12_013",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "练问路，先要短句后改目的地",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261129,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C12_011-015.json"
+      "data/authoring/C12_011-015.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -928,7 +929,7 @@
     "nodes": [
       {
         "id": "U1",
-        "user_text": "我想练一句问路的话，要短一点，我能在地铁站里直接说的那种。",
+        "user_text": "我想练一句问怎么去火车站的话，要短一点，我能在地铁站里直接说的那种。",
         "tone": "略疲惫",
         "next_node_id": "U2",
         "clarification_branches": [],
@@ -981,9 +982,9 @@
           "asset_id": "C12_013_U1",
           "node_id": "U1",
           "status": "verified",
-          "path": "assets/audio/input/f1cb2f1c6ad70253625ead64a7de2ba9.wav",
-          "sha256": "a0f8b89f4496f82fbbf39a28d7e519c03004cfd81da8bc9a64d1e66c25ab8512",
-          "duration_s": 6.52,
+          "path": "assets/audio/input/bd67ac3e06dff81814827d334f202e20.wav",
+          "sha256": "4e317ab452d2bc46df2a78483a4a0adae05c54cfd8bd711b599b1f1663a5b688",
+          "duration_s": 4.8,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -992,9 +993,9 @@
           "seed": 42,
           "tone": "略疲惫",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我想练一句问路的话，要短一点，我能在地铁站里直接说的那种。",
+          "transcript_gt": "我想练一句问怎么去火车站的话，要短一点，我能在地铁站里直接说的那种。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我想练一句问路的话，要短一点，我能在地铁站里直接说的那种。",
+          "qc_asr_text": "我想练一句问怎么去火车站的话，要短一点，我能在地铁站里直接说的那种。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1073,7 +1074,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1542,7 +1543,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1575,24 +1576,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1727,7 +1728,85 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "提供一句问怎么去火车站的中文表达",
+            "句子短，适合在地铁站直接说"
+          ],
+          "must_not": [
+            "输出过长或过于书面的句子"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "表达口语化、不太正式"
+          ],
+          "must_not": [
+            "使用过于正式的措辞"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "目的地改为机场",
+            "保留问路和简短口语的要求"
+          ],
+          "must_not": [
+            "仍以火车站为目的地"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -1736,21 +1815,22 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "可以练：“请问，去火车站怎么走？”句子短，地铁站里问路也自然。"
+        "assistant_text": "预期要点：提供一句问怎么去火车站的中文表达；句子短，适合在地铁站直接说。避免：输出过长或过于书面的句子。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "那可以改成：“麻烦问一下，火车站怎么走？”听起来更接近平时说话。"
+        "assistant_text": "预期要点：表达口语化、不太正式。避免：使用过于正式的措辞。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好，换掉目的地以后可以说：“麻烦问一下，机场怎么走？”还是保持刚才那种日常说法。"
+        "assistant_text": "预期要点：目的地改为机场；保留问路和简短口语的要求。避免：仍以火车站为目的地。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -1762,7 +1842,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

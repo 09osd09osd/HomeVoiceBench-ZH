@@ -1,0 +1,252 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "926a8b8c-e81e-44c2-bc7c-c9a4636aa830",
+  "usage": {
+    "prompt_tokens": 1718,
+    "completion_tokens": 979,
+    "total_tokens": 2697,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1334
+  },
+  "temperature": 0,
+  "source_sha256": "788a614558de33165b3a2257605261c1bc92ea52aeea5565540d4cdc3954c275",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C14_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "以餐厅小厨师身份回应点彩虹披萨的请求"
+          ],
+          "must_not": [
+            "拒绝角色扮演",
+            "脱离餐厅小厨师设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "以餐厅小厨师身份回应点彩虹披萨的请求"
+          ],
+          "must_not": [
+            "拒绝角色扮演",
+            "脱离餐厅小厨师设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不放青椒",
+            "确认其他颜色配料均可",
+            "确认配料切成小星星形状"
+          ],
+          "must_not": [
+            "加入青椒",
+            "否定小星星形状要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "以餐厅小厨师身份回应点彩虹披萨的请求"
+          ],
+          "must_not": [
+            "拒绝角色扮演",
+            "脱离餐厅小厨师设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不放青椒",
+            "确认其他颜色配料均可",
+            "确认配料切成小星星形状"
+          ],
+          "must_not": [
+            "加入青椒",
+            "否定小星星形状要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受形状更正为小圆片",
+            "保留不放青椒的约束"
+          ],
+          "must_not": [
+            "仍坚持小星星形状",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "以餐厅小厨师身份回应点彩虹披萨的请求"
+          ],
+          "must_not": [
+            "拒绝角色扮演",
+            "脱离餐厅小厨师设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不放青椒",
+            "确认其他颜色配料均可",
+            "确认配料切成小星星形状"
+          ],
+          "must_not": [
+            "加入青椒",
+            "否定小星星形状要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受形状更正为小圆片",
+            "保留不放青椒的约束"
+          ],
+          "must_not": [
+            "仍坚持小星星形状",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆形状为小圆片",
+            "正确回忆不放青椒"
+          ],
+          "must_not": [
+            "回答小星星形状",
+            "遗漏不放青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "以餐厅小厨师身份回应点彩虹披萨的请求"
+          ],
+          "must_not": [
+            "拒绝角色扮演",
+            "脱离餐厅小厨师设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不放青椒",
+            "确认其他颜色配料均可",
+            "确认配料切成小星星形状"
+          ],
+          "must_not": [
+            "加入青椒",
+            "否定小星星形状要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受形状更正为小圆片",
+            "保留不放青椒的约束"
+          ],
+          "must_not": [
+            "仍坚持小星星形状",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆形状为小圆片",
+            "正确回忆不放青椒"
+          ],
+          "must_not": [
+            "回答小星星形状",
+            "遗漏不放青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话告知披萨已完成",
+            "保持小厨师角色"
+          ],
+          "must_not": [
+            "超过一句话",
+            "脱离角色设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

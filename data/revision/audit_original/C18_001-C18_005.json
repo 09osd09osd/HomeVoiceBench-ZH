@@ -1,0 +1,253 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b470a429-6acb-4f55-9246-c367e0a4c91c",
+  "usage": {
+    "prompt_tokens": 2195,
+    "completion_tokens": 1214,
+    "total_tokens": 3409,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1811
+  },
+  "temperature": 0,
+  "source_sha256": "c259d519a139b796d24a04b47c7cefd2e395ce7e7bf4f77788b64627e1998143",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出是否长根",
+            "说明每片叶子状态不同、不能仅凭外表断定生根"
+          ],
+          "must_not": [
+            "声称仅凭表面观察就能确定已生根",
+            "给出必须翻土或必须浇水的强制指令"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出是否长根",
+            "说明每片叶子状态不同、不能仅凭外表断定生根"
+          ],
+          "must_not": [
+            "声称仅凭表面观察就能确定已生根",
+            "给出必须翻土或必须浇水的强制指令"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想翻土怕弄伤的顾虑",
+            "提供不翻土、仅从表面判断大概情况的方法",
+            "说明表面状态好不能直接断定已长根"
+          ],
+          "must_not": [
+            "要求用户必须翻土检查",
+            "声称仅凭表面就能确定生根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出是否长根",
+            "说明每片叶子状态不同、不能仅凭外表断定生根"
+          ],
+          "must_not": [
+            "声称仅凭表面观察就能确定已生根",
+            "给出必须翻土或必须浇水的强制指令"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想翻土怕弄伤的顾虑",
+            "提供不翻土、仅从表面判断大概情况的方法",
+            "说明表面状态好不能直接断定已长根"
+          ],
+          "must_not": [
+            "要求用户必须翻土检查",
+            "声称仅凭表面就能确定生根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为只有两片叶子",
+            "回答观察时间是否需随数量调整"
+          ],
+          "must_not": [
+            "继续沿用“好几片”的数量",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出是否长根",
+            "说明每片叶子状态不同、不能仅凭外表断定生根"
+          ],
+          "must_not": [
+            "声称仅凭表面观察就能确定已生根",
+            "给出必须翻土或必须浇水的强制指令"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想翻土怕弄伤的顾虑",
+            "提供不翻土、仅从表面判断大概情况的方法",
+            "说明表面状态好不能直接断定已长根"
+          ],
+          "must_not": [
+            "要求用户必须翻土检查",
+            "声称仅凭表面就能确定生根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为只有两片叶子",
+            "回答观察时间是否需随数量调整"
+          ],
+          "must_not": [
+            "继续沿用“好几片”的数量",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来更正为两片",
+            "回答一片边缘发软是否正常"
+          ],
+          "must_not": [
+            "说成好几片或忘记更正",
+            "断言发软一定正常或一定异常"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出是否长根",
+            "说明每片叶子状态不同、不能仅凭外表断定生根"
+          ],
+          "must_not": [
+            "声称仅凭表面观察就能确定已生根",
+            "给出必须翻土或必须浇水的强制指令"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想翻土怕弄伤的顾虑",
+            "提供不翻土、仅从表面判断大概情况的方法",
+            "说明表面状态好不能直接断定已长根"
+          ],
+          "must_not": [
+            "要求用户必须翻土检查",
+            "声称仅凭表面就能确定生根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为只有两片叶子",
+            "回答观察时间是否需随数量调整"
+          ],
+          "must_not": [
+            "继续沿用“好几片”的数量",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来更正为两片",
+            "回答一片边缘发软是否正常"
+          ],
+          "must_not": [
+            "说成好几片或忘记更正",
+            "断言发软一定正常或一定异常"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结接下来该观察什么",
+            "总结基于两片叶子及一片发软的情况"
+          ],
+          "must_not": [
+            "输出冗长内容",
+            "要求用户频繁翻土",
+            "给出必须浇水的强制指令"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "24ff7434-6d5b-4367-b693-530e7539698f",
+  "usage": {
+    "prompt_tokens": 2739,
+    "completion_tokens": 1108,
+    "total_tokens": 3847,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2355
+  },
+  "temperature": 0,
+  "source_sha256": "e84c183496a6ee8a594d21e26a668fb3b4583d1fc5b870fef68c5fa3f6962394",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T20_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为收阳台毛巾",
+            "提醒时间为明天9点（需结合当前日期确定具体日期）"
+          ],
+          "must_not": [
+            "创建非提醒类日程",
+            "遗漏收阳台毛巾这一提醒内容",
+            "把时间设为非明天9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为收阳台毛巾",
+            "提醒时间为明天9点（需结合当前日期确定具体日期）"
+          ],
+          "must_not": [
+            "创建非提醒类日程",
+            "遗漏收阳台毛巾这一提醒内容",
+            "把时间设为非明天9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将U1创建的收阳台毛巾提醒时间改为明天9点半",
+            "保留提醒内容收阳台毛巾"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "取消该提醒",
+            "改动提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为收阳台毛巾",
+            "提醒时间为明天9点（需结合当前日期确定具体日期）"
+          ],
+          "must_not": [
+            "创建非提醒类日程",
+            "遗漏收阳台毛巾这一提醒内容",
+            "把时间设为非明天9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将U1创建的收阳台毛巾提醒时间改为明天9点半",
+            "保留提醒内容收阳台毛巾"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "取消该提醒",
+            "改动提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建提醒或日程",
+            "取消或修改已有安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为收阳台毛巾",
+            "提醒时间为明天9点（需结合当前日期确定具体日期）"
+          ],
+          "must_not": [
+            "创建非提醒类日程",
+            "遗漏收阳台毛巾这一提醒内容",
+            "把时间设为非明天9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将U1创建的收阳台毛巾提醒时间改为明天9点半",
+            "保留提醒内容收阳台毛巾"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "取消该提醒",
+            "改动提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建提醒或日程",
+            "取消或修改已有安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的收阳台毛巾提醒",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排",
+            "新增安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为收阳台毛巾",
+            "提醒时间为明天9点（需结合当前日期确定具体日期）"
+          ],
+          "must_not": [
+            "创建非提醒类日程",
+            "遗漏收阳台毛巾这一提醒内容",
+            "把时间设为非明天9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将U1创建的收阳台毛巾提醒时间改为明天9点半",
+            "保留提醒内容收阳台毛巾"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "取消该提醒",
+            "改动提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建提醒或日程",
+            "取消或修改已有安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的收阳台毛巾提醒",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排",
+            "新增安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排还剩什么",
+            "确认刚才那条收阳台毛巾提醒是否已取消"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改或取消晾衣服提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

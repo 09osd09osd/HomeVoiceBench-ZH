@@ -1,0 +1,256 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "41ffa423-db86-4848-a596-f2f19c2919f3",
+  "usage": {
+    "prompt_tokens": 2826,
+    "completion_tokens": 1074,
+    "total_tokens": 3900,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2442
+  },
+  "temperature": 0,
+  "source_sha256": "209d603b281de46f0acfe12b3344faa6f65c12785639451f34e5e7640763aded",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T21_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱创建闹钟",
+            "时间为明天10点",
+            "闹钟内容为整理书包"
+          ],
+          "must_not": [
+            "创建非闹钟类型的安排",
+            "把闹钟设到非卧室音箱的设备",
+            "遗漏整理书包内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱创建闹钟",
+            "时间为明天10点",
+            "闹钟内容为整理书包"
+          ],
+          "must_not": [
+            "创建非闹钟类型的安排",
+            "把闹钟设到非卧室音箱的设备",
+            "遗漏整理书包内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的整理书包闹钟时间改为明天10点半",
+            "保留原闹钟内容整理书包"
+          ],
+          "must_not": [
+            "新建另一条闹钟而非修改刚才那条",
+            "改动闹钟内容",
+            "取消该闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱创建闹钟",
+            "时间为明天10点",
+            "闹钟内容为整理书包"
+          ],
+          "must_not": [
+            "创建非闹钟类型的安排",
+            "把闹钟设到非卧室音箱的设备",
+            "遗漏整理书包内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的整理书包闹钟时间改为明天10点半",
+            "保留原闹钟内容整理书包"
+          ],
+          "must_not": [
+            "新建另一条闹钟而非修改刚才那条",
+            "改动闹钟内容",
+            "取消该闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱创建闹钟",
+            "时间为明天10点",
+            "闹钟内容为整理书包"
+          ],
+          "must_not": [
+            "创建非闹钟类型的安排",
+            "把闹钟设到非卧室音箱的设备",
+            "遗漏整理书包内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的整理书包闹钟时间改为明天10点半",
+            "保留原闹钟内容整理书包"
+          ],
+          "must_not": [
+            "新建另一条闹钟而非修改刚才那条",
+            "改动闹钟内容",
+            "取消该闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条整理书包闹钟",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他非刚才新增或修改的安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱创建闹钟",
+            "时间为明天10点",
+            "闹钟内容为整理书包"
+          ],
+          "must_not": [
+            "创建非闹钟类型的安排",
+            "把闹钟设到非卧室音箱的设备",
+            "遗漏整理书包内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的整理书包闹钟时间改为明天10点半",
+            "保留原闹钟内容整理书包"
+          ],
+          "must_not": [
+            "新建另一条闹钟而非修改刚才那条",
+            "改动闹钟内容",
+            "取消该闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条整理书包闹钟",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他非刚才新增或修改的安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排还剩什么",
+            "确认刚才那条整理书包闹钟是否已取消"
+          ],
+          "must_not": [
+            "新增或修改任何安排",
+            "取消任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

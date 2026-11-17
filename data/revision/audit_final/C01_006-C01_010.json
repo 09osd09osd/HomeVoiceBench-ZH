@@ -1,0 +1,249 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "29979e4f-5455-4d6f-976e-f02c9f3bd165",
+  "usage": {
+    "prompt_tokens": 1425,
+    "completion_tokens": 973,
+    "total_tokens": 2398,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 913
+  },
+  "temperature": 0,
+  "source_sha256": "6641cd9310a3a7494e9174e0d912d4f423971edef30a72e438073467aae78cdd",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C01_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户看到小猫和感到累的内容",
+            "简短，约两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户散步遇到同事小刘和感到累",
+            "语气轻松简短"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户小刘学做面包、送面包、不爱吃甜",
+            "简短，约两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户超市买水果排队和感到累",
+            "简短，约两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户买了苹果和橙子、苹果8块一斤",
+            "简短"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正苹果为6块一斤"
+          ],
+          "must_not": [
+            "继续坚持8块一斤",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户浇花打翻水壶、弄一地水并安慰",
+            "简短"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户擦干净、绿萝长得好",
+            "简短，不追问太多"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正植物为吊兰而非绿萝"
+          ],
+          "must_not": [
+            "继续称绿萝",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户养的是吊兰",
+            "简短回应累"
+          ],
+          "must_not": [
+            "说成绿萝",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户坐过站多走两站路和感到累",
+            "简短"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户买了热豆浆",
+            "简短"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为热牛奶而非豆浆"
+          ],
+          "must_not": [
+            "继续称豆浆",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户买的是热牛奶",
+            "简短回应折腾"
+          ],
+          "must_not": [
+            "说成豆浆",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话收尾"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

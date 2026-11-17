@@ -1,0 +1,266 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "1e1bb046-6c9d-4f83-ba34-4ea8871f7393",
+  "usage": {
+    "prompt_tokens": 1470,
+    "completion_tokens": 1089,
+    "total_tokens": 2559,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 958
+  },
+  "temperature": 0,
+  "source_sha256": "53d61468d60f8174fa92e987dea0542cb23ca6fdf3b5c61ac89176711effb00d",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C09_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "安排半天内的轻松活动",
+            "适合带老婆孩子一家三口",
+            "预算约两百元",
+            "避免太累"
+          ],
+          "must_not": [
+            "安排超过半天或明显高强度活动",
+            "超出约两百元预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "安排半天内的轻松活动",
+            "适合一家三口",
+            "预算约两百元",
+            "避免太累"
+          ],
+          "must_not": [
+            "安排超过半天或明显高强度活动",
+            "超出约两百元预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提供室内备选方案以应对下雨",
+            "保持预算约两百元",
+            "保持一家三口和半天时间不变"
+          ],
+          "must_not": [
+            "忽略室内备选要求",
+            "改变人数或时间",
+            "超出约两百元预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "安排半天内的轻松活动",
+            "适合带老婆孩子一家三口",
+            "预算约两百元",
+            "避免太累"
+          ],
+          "must_not": [
+            "安排超过半天或明显高强度活动",
+            "超出约两百元预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "包含可坐坐休息的地方",
+            "孩子有活动空间",
+            "大人不用一直站着",
+            "保持预算约两百元和半天时间"
+          ],
+          "must_not": [
+            "忽略休息和儿童活动需求",
+            "改变预算或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将预算改为一百五十元",
+            "保持半天、一家三口、轻松点不变"
+          ],
+          "must_not": [
+            "仍按两百元预算安排",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "安排半天内的轻松活动",
+            "适合带老婆孩子一家三口",
+            "预算约两百元",
+            "避免太累"
+          ],
+          "must_not": [
+            "安排超过半天或明显高强度活动",
+            "超出约两百元预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "包含可坐着聊天的地方",
+            "孩子有地方玩",
+            "避免一直走路",
+            "保持预算约两百元和半天时间"
+          ],
+          "must_not": [
+            "忽略休息和儿童活动需求",
+            "改变预算或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将预算改为一百五十元",
+            "保持半天、一家三口、轻松点不变"
+          ],
+          "must_not": [
+            "仍按两百元预算安排",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认预算已改为一百五十元",
+            "按一百五十元预算给出半天时间安排"
+          ],
+          "must_not": [
+            "误称预算仍为两百元",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "安排半天内的轻松活动",
+            "适合带老婆孩子一家三口",
+            "预算约两百元",
+            "避免太累"
+          ],
+          "must_not": [
+            "安排超过半天或明显高强度活动",
+            "超出约两百元预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "包含可坐坐休息的地方",
+            "孩子有活动空间",
+            "大人不用一直站着",
+            "保持预算约两百元和半天时间"
+          ],
+          "must_not": [
+            "忽略休息和儿童活动需求",
+            "改变预算或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将预算改为一百五十元",
+            "保持半天、一家三口、轻松点不变"
+          ],
+          "must_not": [
+            "仍按两百元预算安排",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认预算已改为一百五十元",
+            "按一百五十元预算给出半天时间安排"
+          ],
+          "must_not": [
+            "误称预算仍为两百元",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结此前安排",
+            "总结体现一百五十元预算、半天、一家三口、轻松"
+          ],
+          "must_not": [
+            "总结过长",
+            "总结中误用两百元预算或改变人数时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

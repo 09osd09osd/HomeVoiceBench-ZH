@@ -7,7 +7,7 @@
 | 字段路径 | 类型 | 要求 | 说明 |
 |---|---|---|---|
 | $ | object | 必需 | 完整基础用例；运行结果另存，避免把真实结果和参考答案混在一起。 |
-| $.schema_version | string | 必需 | 数据结构版本。 enum=["0.2.0"] |
+| $.schema_version | string | 必需 | 数据结构版本。 enum=["0.2.0", "0.3.0"] |
 | $.identity | object | 必需 | 题目标识。 |
 | $.identity.case_id | string | 必需 | 全局唯一题目 ID。 |
 | $.identity.case_version | string | 必需 | 题目内容版本；修改需升版。 |
@@ -72,6 +72,21 @@
 | $.evaluation.critical_failure_definitions | array | 必需 | 提前定义；尝试与实际执行分开。 |
 | $.evaluation.critical_failure_definitions[] | string | 必需 | 严重错误及范围。 |
 | $.evaluation.judge_profile | string | 必需 | 语义评分器配置版本，实际模型版本写入运行记录。 |
+| $.evaluation.behavior_policy | object | 可选 | 按实际到达轮次约束查询和写操作；禁止未来授权，含语义要求。 |
+| $.evaluation.behavior_policy.version | string | 必需 |  |
+| $.evaluation.behavior_policy.nodes | array | 必需 |  |
+| $.evaluation.behavior_policy.nodes[] | object | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].node_id | string | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].allowed_read_tools | array | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].allowed_read_tools[] | string | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].allowed_writes | array | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].allowed_writes[] | object | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].must_satisfy | array | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].must_satisfy[] | string | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].must_not | array | 必需 |  |
+| $.evaluation.behavior_policy.nodes[].must_not[] | string | 必需 |  |
+| $.evaluation.reporting_partition | string | 可选 | 普通任务与超出现有短答预算的长语音要求分开统计，同时保留全量成绩。 enum=["standard", "budget_stress"] |
+| $.evaluation.constraint_reference_version | string | 可选 | 可核验约束版本；开放式回答不匹配固定示例剧本。 |
 | $.reference | object | 必需 | 隐藏参考过程。 |
 | $.reference.record_kind | string | 必需 | 明确这是示范而非模型测试。 enum=["authored_reference_not_model_run"] |
 | $.reference.unique_answer | any | 必需 | 参考答案不唯一。 const=false |
@@ -95,7 +110,7 @@
 |---|---|---|---|
 | $ | object | 必需 | 真实运行记录；参考答案在 case 文件中独立保存 |
 | $.record_kind | string | 必需 | 仅真实运行 const="actual_model_run" |
-| $.schema_version | string | 必需 | 结构版本 const="0.2.0" |
+| $.schema_version | string | 必需 | 结构版本 enum=["0.2.0", "0.3.0"] |
 | $.case_id | string | 必需 | 用例ID |
 | $.case_sha256 | string | 必需 | 运行当时完整用例的规范JSON SHA256：sort_keys=True, ensure_ascii=False 默认分隔符 UTF-8 |
 | $.system_id | string | 必需 | 系统ID enum=["qwen35_2b", "qwen35_4b", "edge_native"] |
@@ -148,6 +163,7 @@
 | $.case_pass | boolean / null | 必需 | 严格整题通过；未完成评判为null，执行失败可为false且维度分数仍未知 |
 | $.task_achieved | boolean / null | 必需 | 判官判断用户主要目标是否达到；与严格通过率分开 |
 | $.judge_status | string | 可选 | scored，或没有可评分回答时的明确原因 |
+| $.revision | object | 可选 | 本次执行/复用来源、各协议哈希、版本和规则变更证据。 |
 
 
 ## 共享类型 Error
@@ -608,7 +624,7 @@
 | Check.scope | string | 必需 | 检查时机。 enum=["after_node", "trajectory", "final"] |
 | Check.node_id | string / null | 必需 | after_node 对应节点。 |
 | Check.method | string | 必需 | 规则或语义检查。 enum=["rule", "semantic_judge"] |
-| Check.operator | string | 必需 | 检查算子。 enum=["count_equals", "value_equals", "unchanged", "tool_count_equals", "semantic", "state_matches", "no_unrequested_mutation", "read_evidence", "no_unauthorized_write"] |
+| Check.operator | string | 必需 | 检查算子。 enum=["count_equals", "value_equals", "unchanged", "tool_count_equals", "semantic", "state_matches", "no_unrequested_mutation", "read_evidence", "no_unauthorized_write", "read_policy_respected"] |
 | Check.path | string / null | 必需 | 状态 JSON Pointer；语义检查可为 null。 |
 | Check.filters | array | 必需 | 集合筛选条件，按 AND 连接。 |
 | Check.filters[] | reference | 必需 | 筛选。 引用 /$defs/Filter |
@@ -783,7 +799,7 @@
 
 generation保存实际参数，固定值见evaluation_profiles.json。model_raw_responses保存模型原始协议、结束原因、token数、批次和耗时；Edge的audio_evidence记录实际送入编码器的音频哈希/时长，batch_members是批次输入标识，batch_index是批内位置。Qwen响应遵循llama.cpp的OpenAI-compatible格式，扩展字段原样保留。
 
-audio_judge含requested_model、返回model、temperature、enable_thinking、request_id、usage、prompt_sha256、evidence_version、audio_sha256、user_audio_sha256、model_answer_text_supplied=false、format_attempts、schema_adapter和result。result.dimensions含dimension_id/score/reason/evidence；semantic_checks含check_id/passed/reason/evidence；critical_failures为严重错误数组；heard_turns逐轮含user_turn_index/assistant_transcript/acoustic_notes；task_achieved是任务完成布尔值。usage缺失不补造，format_attempts链接格式校验的原始尝试。
+audio_judge含requested_model、返回model、temperature、enable_thinking、request_id、usage、prompt_sha256、evidence_version、evidence_sha256、audio_sha256、user_audio_sha256、model_answer_text_supplied=false、format_attempts、schema_adapter和result。result.dimensions含dimension_id/score/reason/evidence；semantic_checks含check_id/passed/reason/evidence；critical_failures为严重错误数组；heard_turns逐轮含user_turn_index/assistant_transcript/acoustic_notes；task_achieved是任务完成布尔值。usage缺失不补造，format_attempts链接格式校验的原始尝试。
 
 assistant_audio含路径、文件哈希、时长、采样率、模型、规范化版本和实际朗读文本。Edge还记录raw_text/external_tts=false/ended/hit_frame_budget/wall_seconds；baseline记录text/external_cloud_tts=false/batch_offset/batch_seed/batch_keys，以及termination_evidence_version/ended/hit_frame_budget/codec_generated_tokens/max_codec_tokens；音色与完整生成参数见reports/tts_effective.json。复用缓存波形不是重新采样。
 

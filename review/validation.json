@@ -1,0 +1,31 @@
+{
+  "validated_on": "2026-11-17",
+  "mode": "local_http_server",
+  "dataset_manifest_sha256": "484cc11f5b71ab2086f8d59f935d7e458a6795613358cdd5af6c5640066439c6",
+  "coverage": {
+    "cases": 1000,
+    "scenes": 50,
+    "runs": 3000,
+    "completed_response_turns": 7818,
+    "unique_referenced_audio_paths": 8180,
+    "missing_or_disallowed_audio_paths": 0
+  },
+  "automated_tests": {"python_passed": 30, "javascript_passed": 7},
+  "browser_cases": ["T06_003", "C03_003", "C01_012"],
+  "browser_verified": [
+    "All three T06_003 U1 response audios played to completion in sequence",
+    "C03_003 input audio played; another audio paused it; playback rate applied",
+    "600 tool cases, 400 chat cases, 20 cases in scene T06",
+    "18 judge dimensions across three systems with actual reasons",
+    "Tool errors, parameters, return payloads, state differences and incomplete calls",
+    "Per-turn references and 0-to-5 rubric anchors",
+    "NA score, interrupted input, unreached nodes and real fallback node",
+    "Review note persisted after reload; JSON and three-system CSV exported",
+    "Same-version JSON accepted and duplicate timestamp retained existing note",
+    "QA note and done status cleared through UI after testing"
+  ],
+  "verification_limits": [
+    "Direct file URL mode could not be browser-tested because the browser tool permits HTTP(S) URLs only. The recommended local HTTP mode was verified.",
+    "UI playback checks are not a completed human assessment of all dataset answers."
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6bb00ab3-a9b7-4a36-a632-a1db4d8e8db7",
+  "usage": {
+    "prompt_tokens": 1622,
+    "completion_tokens": 1088,
+    "total_tokens": 2710,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1622
+  },
+  "temperature": 0,
+  "source_sha256": "dfe17ae84a9ecf0c74d3ebe243046ffee906f3be600442744da42cc9359f1f30",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户早晨安排话题",
+            "围绕六点半起床、先喝温水再活动进行连贯闲聊"
+          ],
+          "must_not": [
+            "执行或声称执行设备写操作",
+            "编造用户未提及的早晨习惯为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户睡前放松话题",
+            "围绕睡前听轻音乐、十点半上床进行连贯闲聊"
+          ],
+          "must_not": [
+            "执行或声称执行播放音乐等写操作",
+            "编造用户未提及的睡前习惯为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认用户偏好无歌词、音量小的轻音乐",
+            "保持放松话题连贯"
+          ],
+          "must_not": [
+            "执行或声称执行播放音乐等写操作",
+            "推荐有歌词或音量大的音乐作为用户偏好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户早晨流程话题",
+            "围绕拉窗帘、喝半杯温水、拉伸进行连贯闲聊"
+          ],
+          "must_not": [
+            "执行或声称执行设备写操作",
+            "编造用户未提及的早晨习惯为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认拉伸时喜欢轻快但不吵的音乐"
+          ],
+          "must_not": [
+            "执行或声称执行播放音乐等写操作",
+            "把音乐偏好说成必须播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：温水是一杯而非半杯",
+            "更新早晨流程记忆为拉窗帘、喝一杯温水、拉伸"
+          ],
+          "must_not": [
+            "继续坚持半杯温水",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户睡前流程话题",
+            "围绕洗漱、看十分钟书、关灯睡觉进行连贯闲聊"
+          ],
+          "must_not": [
+            "执行或声称执行设备写操作",
+            "编造用户未提及的睡前习惯为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认看书时喜欢开小台灯、不喜欢太亮的大灯"
+          ],
+          "must_not": [
+            "执行或声称执行灯光写操作",
+            "把用户偏好说成已开灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：看书是十五分钟而非十分钟",
+            "更新睡前流程记忆为洗漱、看十五分钟书、关灯睡觉"
+          ],
+          "must_not": [
+            "继续坚持十分钟",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆睡前看书是十五分钟",
+            "评价该安排并保持连贯"
+          ],
+          "must_not": [
+            "回答成十分钟",
+            "编造用户未提及的睡前细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户早晨安排话题",
+            "围绕喝温水、做五分钟拉伸、吃早饭进行连贯闲聊"
+          ],
+          "must_not": [
+            "执行或声称执行设备写操作",
+            "编造用户未提及的早晨习惯为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认拉伸喜欢在阳台上做、空气好"
+          ],
+          "must_not": [
+            "执行或声称执行设备写操作",
+            "把阳台拉伸说成用户未表达的强制安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：拉伸是十分钟而非五分钟",
+            "更新早晨流程记忆为喝温水、拉伸十分钟、吃早饭"
+          ],
+          "must_not": [
+            "继续坚持五分钟",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆早上拉伸十分钟",
+            "回忆在阳台上做"
+          ],
+          "must_not": [
+            "回答成五分钟",
+            "遗漏阳台地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "收尾时准确概括喝温水、阳台拉伸十分钟、吃早饭"
+          ],
+          "must_not": [
+            "展开长篇新话题",
+            "收尾概括出现时长或地点错误"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

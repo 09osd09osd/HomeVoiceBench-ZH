@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C08_008",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "厨房台面油渍想用家常办法",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261124,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C08_006-010.json"
+      "data/authoring/C08_006-010.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -936,7 +937,7 @@
       },
       {
         "id": "U2",
-        "user_text": "我不想用洗洁精，味道有点冲，有没有更温和的？",
+        "user_text": "我家台面是石材的。我不想用洗洁精，味道有点冲，有没有更温和的？",
         "tone": "轻快",
         "next_node_id": "U3",
         "clarification_branches": [],
@@ -1004,9 +1005,9 @@
           "asset_id": "C08_008_U2",
           "node_id": "U2",
           "status": "verified",
-          "path": "assets/audio/input/7b53ba690061f65a232ddf8b26e67035.wav",
-          "sha256": "fddd5d4ae78c8af88bdb405a8fbe964e3b343e741a2e7c19b03718f4b4253948",
-          "duration_s": 4.28,
+          "path": "assets/audio/input/78fe9728be943528fc6c2843e647ed84.wav",
+          "sha256": "9742d0f2a2a7d5736c35a250a4d046d595716808a005422c4b9b5d75e70b368e",
+          "duration_s": 6.36,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1015,9 +1016,9 @@
           "seed": 42,
           "tone": "轻快",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我不想用洗洁精，味道有点冲，有没有更温和的？",
+          "transcript_gt": "我家台面是石材的。我不想用洗洁精，味道有点冲，有没有更温和的？",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我不想用洗洁精，味道有点冲，有没有更温和的？",
+          "qc_asr_text": "我家台面是石材的，我不想用洗洁精，味道有点冲，有没有更温和的？",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1073,7 +1074,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1542,7 +1543,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1575,24 +1576,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1727,7 +1728,86 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "针对厨房台面油污，给出用家里现成东西、不买专用清洁剂的清洁办法"
+          ],
+          "must_not": [
+            "不得要求购买专用清洁剂作为唯一方案"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "考虑台面为石材，给出不用洗洁精的更温和办法"
+          ],
+          "must_not": [
+            "不得推荐洗洁精",
+            "不得忽略石材台面的材质限制"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "接受用户更正台面为木头，重新判断白醋是否可用",
+            "针对木质台面给出合适建议"
+          ],
+          "must_not": [
+            "不得继续按石材台面回答",
+            "不得无视用户对台面材质的更正"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -1736,21 +1816,22 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "可以先用温水加一点洗洁精擦一遍，再用清水抹布过一下。油渍厚不厚我看不到，先小范围试试，别把水弄到插座和电器附近。"
+        "assistant_text": "预期要点：针对厨房台面油污，给出用家里现成东西、不买专用清洁剂的清洁办法。避免：不得要求购买专用清洁剂作为唯一方案。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "那可以试试温水加少量白醋擦，最后用清水布再过一遍。白醋去油效果因台面材质和油渍程度而异，先在不显眼处试一下更稳妥。"
+        "assistant_text": "预期要点：考虑台面为石材，给出不用洗洁精的更温和办法。避免：不得推荐洗洁精；不得忽略石材台面的材质限制。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "木头台面我不太建议直接用白醋擦，可能影响表面。更稳妥的是用拧干的温水布擦，再马上擦干；油渍顽固的话先小面积试温和的肥皂水。"
+        "assistant_text": "预期要点：接受用户更正台面为木头，重新判断白醋是否可用；针对木质台面给出合适建议。避免：不得继续按石材台面回答；不得无视用户对台面材质的更正。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -1762,7 +1843,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

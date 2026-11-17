@@ -1,0 +1,259 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "61de7bf2-c9dc-4079-a992-f0c83bc37dd6",
+  "usage": {
+    "prompt_tokens": 1386,
+    "completion_tokens": 1097,
+    "total_tokens": 2483,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 874
+  },
+  "temperature": 0,
+  "source_sha256": "ac4d60cda53e40b3c0cd7326bb9e5f5f2075009a02304b5069b392958e885ec7",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩词语接龙",
+            "规则：用户说一个词，助手接一个词",
+            "不能用重复的词",
+            "每人最多接3次",
+            "错了就重来"
+          ],
+          "must_not": [
+            "忽略“不能用重复的词”限制",
+            "忽略“每人最多接3次”限制",
+            "忽略“错了就重来”规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩数字记忆游戏",
+            "用户说一串数字，助手重复一遍",
+            "一共玩3轮"
+          ],
+          "must_not": [
+            "改变游戏为倒背或其他形式",
+            "忽略3轮限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受新增限制：数字里不能出现0",
+            "若出现0则算助手输"
+          ],
+          "must_not": [
+            "忽略0的限制",
+            "把“出现0算输”归为其他后果"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩词语联想",
+            "用户说一个主题词，助手说出3个相关词",
+            "不能重复",
+            "一共玩5轮"
+          ],
+          "must_not": [
+            "忽略3个相关词的数量",
+            "忽略不能重复",
+            "忽略5轮"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受条件规则：若用户说的词是动物类，助手要说植物类词",
+            "不能再说动物类词"
+          ],
+          "must_not": [
+            "在动物类主题下仍说动物类词",
+            "忽略该条件规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将轮数从5轮更正为3轮",
+            "其他规则不变"
+          ],
+          "must_not": [
+            "仍按5轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩数字倒背游戏",
+            "用户说3个数字，助手倒着说出来",
+            "一共玩4轮"
+          ],
+          "must_not": [
+            "改变为顺背",
+            "忽略3个数字",
+            "忽略4轮"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受限制：数字里不能有重复数字",
+            "示例112不行"
+          ],
+          "must_not": [
+            "忽略重复数字限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将轮数从4轮更正为2轮",
+            "其他规则不变"
+          ],
+          "must_not": [
+            "仍按4轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答当前玩2轮",
+            "回答数字限制为不能有重复数字"
+          ],
+          "must_not": [
+            "回答4轮",
+            "遗漏重复数字限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩词语分类记忆",
+            "用户说5个词，助手按水果和蔬菜分类记住后说出来",
+            "一共玩3轮"
+          ],
+          "must_not": [
+            "忽略5个词",
+            "忽略水果和蔬菜分类",
+            "忽略3轮"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受规则：若词里有不是水果也不是蔬菜的，要指出来",
+            "不能忽略非水果非蔬菜词"
+          ],
+          "must_not": [
+            "忽略非水果非蔬菜词",
+            "强行归入水果或蔬菜"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将轮数从3轮更正为2轮",
+            "其他规则不变"
+          ],
+          "must_not": [
+            "仍按3轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答当前玩2轮",
+            "回答遇到非水果非蔬菜词要指出来"
+          ],
+          "must_not": [
+            "回答3轮",
+            "遗漏指出非水果非蔬菜词的规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话总结游戏规则",
+            "总结应包含2轮、5个词按水果蔬菜分类、非水果非蔬菜要指出等当前规则"
+          ],
+          "must_not": [
+            "总结成多句或遗漏关键规则",
+            "使用已更正的旧轮数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

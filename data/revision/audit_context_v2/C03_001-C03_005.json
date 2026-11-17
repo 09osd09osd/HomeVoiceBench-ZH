@@ -1,0 +1,253 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "3a0e7631-0efe-429c-83f4-4b87fe531de6",
+  "usage": {
+    "prompt_tokens": 1969,
+    "completion_tokens": 1068,
+    "total_tokens": 3037,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1969
+  },
+  "temperature": 0,
+  "source_sha256": "84f54eaa7c9c2a06e58286a1f1e443aca39a47473cd8c1876ad1b30b9213dea2",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C03_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户加班很晚、被领导挑刺、心里堵的感受",
+            "明确表示愿意倾听、不给建议"
+          ],
+          "must_not": [
+            "给出建议或解决方案",
+            "分析对错",
+            "追问过多细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户被老朋友一句话伤到、委屈难受的感受",
+            "明确不劝用户大度、愿意倾听"
+          ],
+          "must_not": [
+            "劝用户大度",
+            "分析谁对谁错",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认用户不需要判对错、只想把话说完被听见",
+            "表示不分析对错、跟随用户节奏倾听"
+          ],
+          "must_not": [
+            "分析谁对谁错",
+            "给建议",
+            "劝用户大度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户独自大扫除后腰酸、委屈的感受",
+            "明确不出主意、愿意倾听抱怨"
+          ],
+          "must_not": [
+            "给建议或出主意",
+            "否定用户的委屈"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户觉得自己的累没被看见、连句辛苦了都没有的感受"
+          ],
+          "must_not": [
+            "给建议",
+            "分析对错",
+            "劝用户大度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：不是大扫除，而是搬换季衣服和被子来回好几趟",
+            "基于更正后的内容回应"
+          ],
+          "must_not": [
+            "继续沿用大扫除的说法",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户陪孩子写作业到十点、发火后后悔又累的感受",
+            "明确不讲大道理、愿意倾听"
+          ],
+          "must_not": [
+            "讲大道理",
+            "给建议",
+            "评判用户发火"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户最难受的是孩子被吼后低头不说话、心里过不去"
+          ],
+          "must_not": [
+            "讲大道理",
+            "给建议",
+            "评判用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：时间是九点半左右，不是十点",
+            "基于更正后的时间回应"
+          ],
+          "must_not": [
+            "继续沿用十点",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆并确认更正后的时间是九点半左右",
+            "表示愿意继续听孩子后来主动来找用户的部分"
+          ],
+          "must_not": [
+            "回答成十点",
+            "记错更正内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户工作出错被当众指出、脸上挂不住的难堪",
+            "明确不上课、愿意倾听"
+          ],
+          "must_not": [
+            "给用户上课或讲道理",
+            "否定用户的难堪"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户认错但被盯着的感觉让一整天不自在"
+          ],
+          "must_not": [
+            "讲道理",
+            "否定用户感受",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：不是同事，是小组长当众说的",
+            "基于更正后的内容回应"
+          ],
+          "must_not": [
+            "继续沿用同事",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆并确认是小组长当众说的",
+            "表示愿意继续听用户再说两句"
+          ],
+          "must_not": [
+            "回答成同事",
+            "记错更正内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾，回应被小组长当众指出后的难堪与不自在",
+            "体现用户已认错并扛了一天"
+          ],
+          "must_not": [
+            "长篇大论",
+            "给建议或讲道理",
+            "继续追问新细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

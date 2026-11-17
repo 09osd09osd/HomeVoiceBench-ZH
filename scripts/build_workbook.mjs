@@ -5,10 +5,10 @@ import {Workbook,SpreadsheetFile} from '@oai/artifact-tool';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=async p=>JSON.parse(await fs.readFile(path.join(root,p),'utf8'));
 const [summary,cases,scenes,runs,sandbox]=await Promise.all(['summary','case_overview','scene_overview','run_overview'].map(x=>read(`reports/${x}.json`)).concat(read('spec/sandbox.json')));
-const out=path.join(root,'outputs/homevoicebench-20261117');
+const out=path.join(root,'outputs/homevoicebench-v030-20261117');
 const qa=path.join(root,'cache/workbook-preview');await fs.mkdir(out,{recursive:true});await fs.mkdir(qa,{recursive:true});
 const wb=Workbook.create();
-const sheets=Object.fromEntries(['Overview','Scenarios','Cases','Runs','Tools'].map(n=>[n,wb.worksheets.add(n)]));
+const sheets=Object.fromEntries(['Overview','Scenarios','Cases','Runs','Tools','StoryDuration'].map(n=>[n,wb.worksheets.add(n)]));
 const colors={ink:'#25384A',header:'#314C67',light:'#EAF0F6',muted:'#647587',line:'#BBC8D4'};
 const col=n=>{let s='';while(n){n--;s=String.fromCharCode(65+n%26)+s;n=Math.floor(n/26);}return s;};
 function base(sh,title,headers,rows,widths,source){
@@ -25,12 +25,17 @@ function base(sh,title,headers,rows,widths,source){
  if(rows.length)sh.tables.add(`A4:${last}${end}`,true,`${sh.name}Data`);
  return end;
 }
-const caseRows=cases.map(c=>[c.case_id,c.category,c.scene_id,c.difficulty,c.turn_count,c.title,...Array.from({length:5},(_,i)=>c.user_texts[i]??null),c.audio_ready?1:0,c.reference_tool_calls,c.source_path]);
-const ce=base(sheets.Cases,'1,000道冻结测试题',['题目ID','类别','场景','难度','用户轮数','题目标题','用户第1轮','用户第2轮','用户第3轮','用户第4轮','用户第5轮','语音就绪','参考工具数','原始JSON路径'],caseRows,[15,10,9,12,10,31,64,64,64,64,64,12,12,45],'来源：data/cases/*.json；作者原稿只用于制题与音频合成，模型没有文字输入。');
+const caseRows=cases.map(c=>[c.case_id,c.category,c.scene_id,c.difficulty,c.turn_count,c.title,...Array.from({length:5},(_,i)=>c.user_texts[i]??null),c.audio_ready?1:0,c.reference_tool_calls,c.source_path,c.reporting_partition]);
+const ce=base(sheets.Cases,'1,000道冻结测试题',['题目ID','类别','场景','难度','用户轮数','题目标题','用户第1轮','用户第2轮','用户第3轮','用户第4轮','用户第5轮','语音就绪','参考工具数','原始JSON路径','评测分组'],caseRows,[15,10,9,12,10,31,64,64,64,64,64,12,12,45,18],'来源：data/cases/*.json；作者原稿只用于制题与音频合成，模型没有文字输入。');
 sheets.Cases.getRange(`F5:K${ce}`).format.wrapText=true;sheets.Cases.getRange(`A5:N${ce}`).format.rowHeight=48;sheets.Cases.getRange(`F5:K${ce}`).format.autofitRows();
 const systems=['edge_native','qwen35_2b','qwen35_4b'];const lookup=new Map(runs.map(r=>[r.system_id+'/'+r.case_id,r]));
-const runRows=systems.flatMap(system=>cases.map(c=>{const r=lookup.get(system+'/'+c.case_id);return [system,c.case_id,c.category,c.scene_id,r?.execution_status??'pending',r?.judged?1:0,typeof r?.case_pass==='boolean'?1:0,typeof r?.case_pass==='boolean'?(r.case_pass?1:0):null,r?.mean_score??null,r?.tool_calls??null,r?.turn_count??null,(r?.flags??[]).join(' | '),r?.judge_status??'pending',r?.wall_seconds_interaction??null,r?.run_path??null,c.turn_count];}));
-const re=base(sheets.Runs,'三条系统逐题运行记录',['系统ID','题目ID','类别','场景','执行状态','听音评分','已判定','严格通过','六维均分','工具调用','完成轮数','失败标记','判官状态','交互秒数','证据路径','预设轮数'],runRows,[19,15,10,10,14,12,10,12,12,12,12,60,38,14,48,12],'来源：runs/<system>/<case>.json；空分数=不适用/尚未评分；交互秒数不是端到端延迟。');
+const durationAudit=await read('reports/revision/story_duration_audit.json');
+const durationRows=durationAudit.rows.map(r=>[r.case_id,r.system_id,r.request_node_id,r.duration_phrase,r.nominal_or_lower_seconds,r.request_window_audio_seconds,r.whole_case_audio_seconds,r.formal_case_pass?'通过':'未通过',r.judge_pass_with_duration_discrepancy?'判官通过但实际时长不足':'查看内容及阶段要求']);
+const de=base(sheets.StoryDuration,'长故事实际时长与判官分歧',['题目ID','系统ID','请求节点','用户时长要求','标称/下限秒','对应阶段秒','全题音频秒','原始结论','独立核验说明'],durationRows,[15,19,12,24,17,15,15,13,42],'读取真实WAV帧数；全题秒数包括非故事回复。原始分数保留；C02_013在U3改为十分钟以内。');
+sheets.StoryDuration.getRange(`F5:G${de}`).setNumberFormat('0.00');
+durationRows.forEach((r,i)=>{if(r[8].startsWith('判官通过'))sheets.StoryDuration.getRange(`A${i+5}:I${i+5}`).format.fill='#FFF0D9';});
+const runRows=systems.flatMap(system=>cases.map(c=>{const r=lookup.get(system+'/'+c.case_id);return [system,c.case_id,c.category,c.scene_id,r?.execution_status??'pending',r?.judged?1:0,typeof r?.case_pass==='boolean'?1:0,typeof r?.case_pass==='boolean'?(r.case_pass?1:0):null,r?.mean_score??null,r?.tool_calls??null,r?.turn_count??null,(r?.flags??[]).join(' | '),r?.judge_status??'pending',r?.wall_seconds_interaction??null,r?.run_path??null,c.turn_count,c.reporting_partition,r?.execution_origin??null,r?.read_tool_calls??null];}));
+const re=base(sheets.Runs,'三条系统逐题运行记录',['系统ID','题目ID','类别','场景','执行状态','听音评分','已判定','严格通过','六维均分','工具调用','完成轮数','失败标记','判官状态','交互秒数','证据路径','预设轮数','评测分组','执行来源','只读调用次数'],runRows,[19,15,10,10,14,12,10,12,12,12,12,60,38,14,48,12,18,42,14],'来源：runs/<system>/<case>.json；空分数=不适用/尚未评分；交互秒数不是端到端延迟。');
 sheets.Runs.getRange(`I5:I${re}`).setNumberFormat('0.00');sheets.Runs.getRange(`N5:N${re}`).setNumberFormat('0.00');
 sheets.Runs.getRange(`H5:H${re}`).conditionalFormats.add('cellIs',{operator:'equal',formula:0,format:{fill:'#FCE6E3',font:{color:'#A43C2B'}}});
 const scenarioRows=scenes.map(s=>[s.scene_id,s.category,s.subcategory,s.title,s.case_count,s.normal_user_turns,s.ready_cases,s.focus??s.family,...systems.map(id=>s.systems[id].strict_pass_rate)]);
@@ -41,7 +46,7 @@ const te=base(sheets.Tools,'16个可执行家庭工具',['工具名','用途','�
 sheets.Tools.getRange(`B5:F${te}`).format.wrapText=true;sheets.Tools.getRange(`A5:G${te}`).format.rowHeight=72;sheets.Tools.getRange(`B5:F${te}`).format.autofitRows();
 const ov=sheets.Overview;ov.showGridLines=false;ov.tabColor=colors.header;ov.getRange('A1:I30').format={font:{name:'Arial',size:11,color:colors.ink},verticalAlignment:'center',rowHeight:25};
 [21,12,12,12,12,13,13,15,15].forEach((w,i)=>ov.getRange(`${col(i+1)}1:${col(i+1)}30`).format.columnWidth=w);
-ov.getRange('A2').values=[['HomeVoiceBench-ZH · 数据集与测评总览']];ov.getRange('A2').format.font={name:'Arial',size:16,bold:true,color:colors.ink};
+ov.getRange('A2').values=[[`HomeVoiceBench-ZH v${summary.version} 数据集与测评总览`]];ov.getRange('A2').format.font={name:'Arial',size:16,bold:true,color:colors.ink};
 ov.getRange('A4').values=[['报告状态']];ov.getRange('B4').values=[[summary.evaluation_status==='complete'?'全部判定':'测评进行中']];ov.getRange('D4').values=[['更新（UTC）']];ov.getRange('E4').values=[[summary.generated_at.slice(0,19).replace('T',' ')]];
 ov.getRange('A6:C6').values=[['构成','题数','场景数']];ov.getRange('A7:A9').values=[['工具调用'],['聊天'],['合计']];
 ov.getRange('B7:C9').formulas=[
@@ -62,22 +67,46 @@ ov.getRange('C15:I23').formulas=formulas;ov.getRange('H15:H23').setNumberFormat(
 ov.getRange('H15:H23').format.horizontalAlignment='center';
 for(const range of ['A6:C6','E6:I6','A14:I14'])ov.getRange(range).format={fill:colors.header,font:{name:'Arial',size:11,color:'#FFFFFF',bold:true},rowHeight:30,horizontalAlignment:'center'};
 for(const row of [15,18,21])ov.getRange(`A${row}:I${row}`).format.fill=colors.light;
-ov.getRange('A26').values=[['冻结输入：1,648段去重语音，约2小时；合成普通话，未进行人工审核。']];
+ov.getRange('A26').values=[[`冻结输入：${summary.dataset.referenced_verified_unique_audio}段去重语音，约2小时；合成普通话，尚无人评校准。`]];
 ov.getRange('A27').values=[['同一家族共享前缀；完整比较使用按场景聚类的配对置信区间。']];
 ov.getRange('A28').values=[['详细评分与限制见 docs/EVALUATION.md、docs/PROVENANCE.md。']];
 ov.getRange('A26:I28').format.font={name:'Arial',size:10,color:colors.muted};
+ov.getRange('A30:I53').format={font:{name:'Arial',size:11,color:colors.ink},verticalAlignment:'center',rowHeight:25};
+ov.getRange('A30').values=[['普通任务与长语音预算压力分开观察；全量成绩仍保留全部1,000题。']];
+ov.getRange('A31:F31').values=[['系统','任务分组','计划题数','已判定','通过题数','最终通过率']];
+const partitions=systems.flatMap(system=>['standard','budget_stress'].map(partition=>({system,partition})));
+ov.getRange('A32:B37').values=partitions.map(x=>[x.system,x.partition==='standard'?'普通任务':'预算压力']);
+const rpartition=`Runs!$Q$5:$Q$${re}`,cpartition=`Cases!$O$5:$O$${ce}`;
+ov.getRange('C32:F37').formulas=partitions.map((x,i)=>{const row=32+i,cond=`${ra},$A${row},${rpartition},"${x.partition}"`;return [`=COUNTIF(${cpartition},"${x.partition}")`,`=SUMIFS(${rd},${cond})`,`=SUMIFS(${rp},${cond})`,`=IF(D${row}=C${row},E${row}/C${row},"待完成")`];});
+ov.getRange('F32:F37').setNumberFormat('0.0%');
+ov.getRange('A39').values=[['系统两两比较：严格通过率之差，单位为百分点（A−B）。']];
+ov.getRange('A40:G40').values=[['系统A','系统B','类别','差值/百分点','95%下界','95%上界','区间判断']];
+const comparisonRows=[['edge_native','qwen35_2b'],['edge_native','qwen35_4b'],['qwen35_4b','qwen35_2b']].flatMap(([a,b])=>['all','tool','chat'].map(category=>{
+ const s=summary.paired_comparisons.find(x=>x.system_a===a&&x.system_b===b&&x.category===category);
+ return s?[a,b,category,100*s.pass_rate_difference,100*s.cluster_bootstrap_95_ci[0],100*s.cluster_bootstrap_95_ci[1],s.cluster_bootstrap_95_ci[0]>0?'支持A更高':s.cluster_bootstrap_95_ci[1]<0?'支持A更低':'差异不明确']:[a,b,category,null,null,null,'待完成'];
+}));
+ov.getRange('A41:G49').values=comparisonRows;ov.getRange('D41:F49').setNumberFormat('+0.0;-0.0;0.0');
+for(const range of ['A31:F31','A40:G40'])ov.getRange(range).format={fill:colors.header,font:{name:'Arial',size:10,bold:true,color:'#FFFFFF'},rowHeight:30,horizontalAlignment:'center'};
+for(const row of [32,34,36,41,44,47])ov.getRange(`A${row}:G${row}`).format.fill=colors.light;
+ov.getRange('A51:I51').merge();ov.getRange('A52:I53').merge();
+ov.getRange('A51').values=[['区间跨过0：当前证据不足以明确区分两组；不等于两组完全一样。']];
+ov.getRange('A52').values=[['区间由按场景聚类、工具/聊天分层的配对bootstrap得到：2,000次，seed=42。仅反映场景抽样不确定性，不包含全部模型与判官误差。']];
+ov.getRange('A51:I53').format={font:{name:'Arial',size:10,color:colors.muted},wrapText:true};
+ov.getRange('A55:I57').merge();ov.getRange('A55').values=[['长故事注意：4B的1道压力题被判通过，但全题音频仅185.84秒，未满足七八分钟要求。原始分数保留；21条实际时长见 StoryDuration 表。']];
+ov.getRange('A55:I57').format={font:{name:'Arial',size:11,color:colors.ink},fill:'#FFF0D9',wrapText:true,verticalAlignment:'center'};
 wb.recalculate();
 // Independently reconcile formulas, then prove a real input change updates a total.
 const observed=ov.getRange('C15:I23').values;
 summary.systems.forEach((s,i)=>{const row=observed[i];for(const [j,n] of [[0,'planned'],[1,'run_count'],[2,'decided_count'],[3,'passed_count'],[4,'judged_count']])if(row[j]!==s[n])throw Error(`Summary mismatch ${s.system_id}/${s.category} ${n}: ${row[j]} != ${s[n]}`);});
+partitions.forEach((x,i)=>{const s=summary.by_reporting_partition.find(p=>p.system_id===x.system&&p.partition===x.partition&&p.category==='all'),row=ov.getRange(`C${32+i}:E${32+i}`).values[0];if(row.some((v,j)=>v!==s[['planned','decided_count','passed_count'][j]]))throw Error('Partition formula mismatch '+x.system+'/'+x.partition);});
 const original=sheets.Runs.getRange('H5').values;const before=ov.getRange('F15').values[0][0];sheets.Runs.getRange('H5').values=[[original[0][0]===1?0:1]];wb.recalculate();if(ov.getRange('F15').values[0][0]===before)throw Error('Input-change recalculation failed');sheets.Runs.getRange('H5').values=original;wb.recalculate();
 const errors=await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:100},summary:'formula verification'});
 await fs.writeFile(path.join(qa,'formula_inspection.json'),JSON.stringify(errors,null,2));
 console.log(errors.ndjson);
-for(const [name,range] of [['Overview','A1:I29'],['Scenarios','A1:H14'],['Cases','A1:G12'],['Runs','A1:K15'],['Tools','A1:E10']]){
- const preview=await wb.render({sheetName:name,range,scale:1.5,format:'png'});await fs.writeFile(path.join(qa,`${name}.png`),new Uint8Array(await preview.arrayBuffer()));
+for(const [name,range] of [['Overview','A1:I29'],['Overview','A30:I57'],['Scenarios','A1:H14'],['Cases','A1:G12'],['Cases','L1:O12'],['Runs','A1:K15'],['Runs','P1:S15'],['Tools','A1:E10'],['StoryDuration','A1:I25']]){
+ const preview=await wb.render({sheetName:name,range,scale:1.5,format:'png'});await fs.writeFile(path.join(qa,`${name}-${range.replace(':','-')}.png`),new Uint8Array(await preview.arrayBuffer()));
 }
 const runFieldsPreview=await wb.render({sheetName:'Runs',range:'J1:P15',scale:1.5,format:'png'});await fs.writeFile(path.join(qa,'RunFields.png'),new Uint8Array(await runFieldsPreview.arrayBuffer()));
 const output=await SpreadsheetFile.exportXlsx(wb);const target=path.join(out,'HomeVoiceBench-ZH.xlsx');await output.save(target);
 await fs.writeFile(path.join(root,'reports/workbook_validation.json'),JSON.stringify({path:path.relative(root,target).replaceAll('\\','/'),generated_at:new Date().toISOString(),sheets:Object.keys(sheets),case_rows:cases.length,run_slots:runRows.length,actual_run_rows:runs.length,formula_reconciled:true,input_change_recalculation:true,rendered_all_sheets:true,evaluation_status:summary.evaluation_status},null,2));
-console.log(JSON.stringify({output:target,actual_runs:runs.length,sheets:5}));
+console.log(JSON.stringify({output:target,actual_runs:runs.length,sheets:Object.keys(sheets).length,version:summary.version}));

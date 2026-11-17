@@ -1,0 +1,239 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "bdb04b9f-ce84-4947-ab35-15127c401808",
+  "usage": {
+    "prompt_tokens": 1452,
+    "completion_tokens": 1037,
+    "total_tokens": 2489,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 940
+  },
+  "temperature": 0,
+  "source_sha256": "9902ab2bf50f21dedd40353970c88a87d74fbed5446446100440abdf701c6fd6",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C01_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户在菜市场还回多找的十块钱这件事",
+            "保持闲聊语气，简短自然"
+          ],
+          "must_not": [
+            "编造用户未提及的细节作为事实",
+            "进行说教或道德评判"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户傍晚散步遇见老李并聊了半小时这件事",
+            "保持闲聊语气"
+          ],
+          "must_not": [
+            "编造老李的具体身份或对话内容作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户更想听老李现在的生活而非以前加班的事",
+            "承接前文老李的话题"
+          ],
+          "must_not": [
+            "否定用户的感受",
+            "编造老李现在生活的具体内容作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应对门张姐送粽子这件事",
+            "保持闲聊语气"
+          ],
+          "must_not": [
+            "编造用户未提及的细节作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户觉得粽子稍咸但可以接受",
+            "承接前文粽子话题"
+          ],
+          "must_not": [
+            "把用户对咸度的评价说成完全不能吃"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：粽子是张姐自己包的，婆婆帮忙打下手",
+            "按更正后的信息回应"
+          ],
+          "must_not": [
+            "继续坚持是婆婆包的",
+            "把更正说成用户之前没说过"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户翻相册看到十几年前出游照片的感慨",
+            "保持闲聊语气"
+          ],
+          "must_not": [
+            "编造照片的具体内容作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户描述青岛海边红衣照片及当时的开心",
+            "承接前文相册话题"
+          ],
+          "must_not": [
+            "编造用户未提及的照片细节作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：照片是在烟台拍的，不是青岛",
+            "按更正后的地点回应"
+          ],
+          "must_not": [
+            "继续坚持是青岛",
+            "把更正说成用户之前没说过"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "根据前文回答照片是在烟台拍的",
+            "回应用户想确认自己没记错"
+          ],
+          "must_not": [
+            "回答成青岛",
+            "声称无法知道或反问用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户学做红烧肉糖色炒过发苦但吃完了",
+            "保持闲聊语气"
+          ],
+          "must_not": [
+            "编造用户未提及的细节作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户下次想做得偏甜但别太腻",
+            "承接前文红烧肉话题"
+          ],
+          "must_not": [
+            "给出超出闲聊范围的冗长菜谱"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回应用户用的是前腿肉而非五花肉、口感更柴",
+            "承接前文做肉话题"
+          ],
+          "must_not": [
+            "把用户用的肉说成五花肉"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "根据前文回答用户今天用的是前腿肉",
+            "回应用户怕下次买错"
+          ],
+          "must_not": [
+            "回答成五花肉",
+            "声称无法知道或反问用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾，呼应今天聊的内容",
+            "保持自然告别语气"
+          ],
+          "must_not": [
+            "开启新话题或提出冗长问题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

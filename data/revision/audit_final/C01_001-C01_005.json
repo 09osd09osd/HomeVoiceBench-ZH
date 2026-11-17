@@ -1,0 +1,233 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9b5bdc00-49bb-406c-af24-6b58d795c19e",
+  "usage": {
+    "prompt_tokens": 1364,
+    "completion_tokens": 982,
+    "total_tokens": 2346,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 852
+  },
+  "temperature": 0,
+  "source_sha256": "d150f57248cfb216a94fc0237f6c39c97804b2d975a3c4e2eb6f48610036b786",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C01_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户分享的橘猫见闻，保持闲聊语气"
+          ],
+          "must_not": [
+            "编造用户未提及的细节作为事实",
+            "执行任何设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户做番茄炒蛋且番茄放多偏酸的情况"
+          ],
+          "must_not": [
+            "声称尝过或看到用户的菜",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户偏好甜口、下次想放糖又怕太甜的顾虑"
+          ],
+          "must_not": [
+            "把放糖说成用户已决定执行",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户周末打算去爬香山、想活动身体"
+          ],
+          "must_not": [
+            "把香山说成用户已确认的最终地点（后续会更正）",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户想八点前到山脚下、避开人流的计划"
+          ],
+          "must_not": [
+            "擅自创建提醒或日程",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别用户把香山更正为百望山，并接受更正"
+          ],
+          "must_not": [
+            "继续坚持香山",
+            "把更正说成用户从未提过香山"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户翻出旧照片、多为小时候照片"
+          ],
+          "must_not": [
+            "编造照片内容",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户描述的小学毕业全班合影、自己站最后一排"
+          ],
+          "must_not": [
+            "把小学毕业当作最终正确信息（后续会更正）",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别用户把小学毕业更正为初中毕业"
+          ],
+          "must_not": [
+            "继续坚持小学毕业",
+            "把更正说成用户从未提过小学"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "根据前文更正回答是初中毕业的合影"
+          ],
+          "must_not": [
+            "回答成小学毕业",
+            "声称用户没说过"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户说邻居养小狗一直叫有点吵"
+          ],
+          "must_not": [
+            "把邻居位置当作最终正确信息（后续会更正）",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户说晚上叫得厉害、自己睡觉轻易被吵醒"
+          ],
+          "must_not": [
+            "擅自创建提醒或调整设备",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别用户把隔壁邻居更正为楼下邻居"
+          ],
+          "must_not": [
+            "继续坚持隔壁",
+            "把更正说成用户从未提过隔壁"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "根据前文更正回答是楼下邻居"
+          ],
+          "must_not": [
+            "回答成隔壁",
+            "声称用户没说过"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "按用户要求简短总结前文"
+          ],
+          "must_not": [
+            "长篇展开",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b45f39c3-b79b-4fc5-a0a6-a8c5944c1638",
+  "usage": {
+    "prompt_tokens": 1461,
+    "completion_tokens": 928,
+    "total_tokens": 2389,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 949
+  },
+  "temperature": 0,
+  "source_sha256": "9778c46384e9b3b8c2bc96f7628a6cccc13733fdcaa1978e341e33a1a9eb7047",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C11_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用五岁孩子能听懂的话解释天为什么是蓝的",
+            "解释需科学正确、不讲错"
+          ],
+          "must_not": [
+            "使用过于复杂或学术化的表述",
+            "讲错科学原理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释手泡水久了为什么会皱",
+            "语气不吓唬孩子"
+          ],
+          "must_not": [
+            "使用吓唬或恐吓性表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "进一步简化到一年级孩子能懂",
+            "用孩子玩过的东西打比方"
+          ],
+          "must_not": [
+            "使用“保护层”这一说法",
+            "使用吓唬性表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单、不深奥的话解释冰箱里面为什么总是冷的"
+          ],
+          "must_not": [
+            "讲得过于深入复杂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "解释时说明摸冰箱里面不会受伤",
+            "安抚孩子对冰箱的害怕"
+          ],
+          "must_not": [
+            "鼓励或引导孩子自己去碰插头"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按九岁孩子能听懂的水平解释"
+          ],
+          "must_not": [
+            "继续按八岁的理解水平表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单比喻解释影子为什么总跟着他走",
+            "解释需正确"
+          ],
+          "must_not": [
+            "讲错科学原理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "解释时避免说“暗地方”，改用温和说法"
+          ],
+          "must_not": [
+            "使用“暗地方”等可能让孩子害怕的表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按五岁半孩子能听懂的水平解释"
+          ],
+          "must_not": [
+            "继续按六岁的理解水平表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认孩子现在是五岁半",
+            "用之前那种温和说法解释晚上开灯时影子为什么变长"
+          ],
+          "must_not": [
+            "使用“暗地方”等吓人表述",
+            "按六岁水平表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用特别简单的话解释下雨后地上的水去哪儿了"
+          ],
+          "must_not": [
+            "讲得过于复杂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用一个小动物相关的例子打比方"
+          ],
+          "must_not": [
+            "编造动物会说话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按三岁半孩子能听懂的水平解释",
+            "讲得更短"
+          ],
+          "must_not": [
+            "继续按四岁的理解水平表述",
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认孩子现在是三岁半",
+            "用短话解释水飞到天上以后还会不会回来"
+          ],
+          "must_not": [
+            "按四岁水平表述",
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结帮助孩子记住"
+          ],
+          "must_not": [
+            "篇幅过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

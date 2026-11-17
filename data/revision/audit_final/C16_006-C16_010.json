@@ -1,0 +1,243 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "722dbb6f-c69f-4c26-be4c-67564b644b58",
+  "usage": {
+    "prompt_tokens": 1367,
+    "completion_tokens": 878,
+    "total_tokens": 2245,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 855
+  },
+  "temperature": 0,
+  "source_sha256": "208b7c54bfc9ecc1a0d7acff27c069e8e848cd6b6f4909e02e0fe77705f3c143",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供简单温和的记词游戏",
+            "只进行一轮",
+            "不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "进行多轮游戏"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供两轮数字记忆游戏",
+            "语气温和简短",
+            "不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "进行超过两轮游戏"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "数字不超过十",
+            "每轮三个数字"
+          ],
+          "must_not": [
+            "数字超过十",
+            "每轮数字数量不是三个"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供三轮词语记忆游戏",
+            "简短温和",
+            "先不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "进行超过三轮游戏"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "每轮三个词",
+            "保持简短"
+          ],
+          "must_not": [
+            "每轮词数不是三个",
+            "内容过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将禁用词从水果词更正为动物词"
+          ],
+          "must_not": [
+            "继续禁用水果词",
+            "使用动物词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供四轮词语记忆游戏",
+            "简短温和",
+            "不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "进行超过四轮游戏"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "每轮三个词"
+          ],
+          "must_not": [
+            "每轮词数不是三个"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将禁用词从水果词更正为动物词"
+          ],
+          "must_not": [
+            "继续禁用水果词",
+            "使用动物词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认当前禁用词为动物词"
+          ],
+          "must_not": [
+            "回答禁用词为水果词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供五轮数字记忆游戏",
+            "简短温和",
+            "不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "进行超过五轮游戏"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "数字不超过十",
+            "每轮三个数字"
+          ],
+          "must_not": [
+            "数字超过十",
+            "每轮数字数量不是三个"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将禁用词从水果词更正为动物词"
+          ],
+          "must_not": [
+            "继续禁用水果词",
+            "使用动物词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认当前禁用词为动物词"
+          ],
+          "must_not": [
+            "回答禁用词为水果词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短总结规则和当前进度"
+          ],
+          "must_not": [
+            "总结过长",
+            "遗漏规则或进度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

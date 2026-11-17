@@ -1,0 +1,260 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b92b2734-bff6-4ab5-af39-95348a32d99e",
+  "usage": {
+    "prompt_tokens": 1766,
+    "completion_tokens": 1072,
+    "total_tokens": 2838,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1382
+  },
+  "temperature": 0,
+  "source_sha256": "abaf9dd78b905f27c765fc903774b2daa2390da168f90bf602e10e106fe9f9c4",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道生活用品谜题",
+            "提示一次只给一个",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道动物谜题",
+            "每次只给一个提示",
+            "不提前泄底"
+          ],
+          "must_not": [
+            "提前说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应“猫”的猜测",
+            "再给一个更具体的提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道日用品谜题",
+            "一次只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应“牙刷”的猜测",
+            "再给一个不太笼统的提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认将第一个提示由“每天都会用到”更正为“经常用到”",
+            "保留此前已给出的其他提示"
+          ],
+          "must_not": [
+            "忽略更正仍称每天都会用到",
+            "提前泄露谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道文具谜题",
+            "一次只给一个提示",
+            "不提前泄底"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应“铅笔”的猜测",
+            "再给一个更具体的提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回应“橡皮”的猜测",
+            "确认将第一个提示由“放在笔袋里”更正为“放在书桌上”"
+          ],
+          "must_not": [
+            "忽略更正仍称放在笔袋里",
+            "提前泄露谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述更正后的第一个提示“通常放在书桌上”",
+            "再给一个提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "复述成未更正的“放在笔袋里”",
+            "提前泄露谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道水果谜题",
+            "一次只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应“香蕉”的猜测",
+            "再给一个更具体的提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回应“橘子”的猜测",
+            "确认将第一个提示由“外皮是黄色的”更正为“外皮是橙色的”"
+          ],
+          "must_not": [
+            "忽略更正仍称外皮是黄色",
+            "提前泄露谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述更正后的第一个提示“外皮是橙色的”",
+            "再给一个提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "复述成未更正的“外皮是黄色的”",
+            "提前泄露谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认答案为橙子",
+            "用一句话简短收尾",
+            "收尾包含更正后的提示和答案"
+          ],
+          "must_not": [
+            "使用未更正的“外皮是黄色的”",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

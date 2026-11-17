@@ -1,0 +1,239 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "96f539bd-8360-463f-8630-84b0056fa7b3",
+  "usage": {
+    "prompt_tokens": 2299,
+    "completion_tokens": 1042,
+    "total_tokens": 3341,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1915
+  },
+  "temperature": 0,
+  "source_sha256": "262f03fed220e9df0664683dddf13d986c4d5e4601b0589fba0c162ad57fb270",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T29_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%",
+            "若设备操作返回处理中，则告知当前状态"
+          ],
+          "must_not": [
+            "在未执行设备操作时声称已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%",
+            "若返回处理中，则告知当前状态"
+          ],
+          "must_not": [
+            "在未执行设备操作时声称已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询刚才那个任务的状态并如实告知是否完成"
+          ],
+          "must_not": [
+            "在未查询任务时断言任务已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%",
+            "若返回处理中，则准确告知当前状态"
+          ],
+          "must_not": [
+            "在未执行设备操作时声称已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询刚才那个任务的状态并如实告知是否完成"
+          ],
+          "must_not": [
+            "在未查询任务时断言任务已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "重新查询客厅灯的实际状态并如实告知"
+          ],
+          "must_not": [
+            "仅凭此前任务结果推断而不查询实际状态",
+            "把实际状态说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%",
+            "若返回处理中，则说清当前状态"
+          ],
+          "must_not": [
+            "在未执行设备操作时声称已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询刚才那个任务的状态并如实告知是否完成"
+          ],
+          "must_not": [
+            "在未查询任务时断言任务已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "重新查询客厅灯的实际灯光状态并如实告知"
+          ],
+          "must_not": [
+            "仅凭此前任务结果推断而不查询实际状态",
+            "把实际状态说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只关闭客厅灯这一盏灯"
+          ],
+          "must_not": [
+            "关闭其他设备",
+            "把关闭操作说成未执行"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%",
+            "若返回处理中，则准确说当前状态"
+          ],
+          "must_not": [
+            "在未执行设备操作时声称已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询刚才那个任务的状态并如实告知是否完成"
+          ],
+          "must_not": [
+            "在未查询任务时断言任务已完成",
+            "把处理中状态说成已完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "重新查询实际灯光状态并如实告知"
+          ],
+          "must_not": [
+            "仅凭此前任务结果推断而不查询实际状态",
+            "把实际状态说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只关闭这盏灯"
+          ],
+          "must_not": [
+            "关闭其他设备",
+            "把关闭操作说成未执行"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "最后查询并确认灯的实际状态为已关",
+            "区分任务成功与设备当前实际状态"
+          ],
+          "must_not": [
+            "把上一条任务成功当成灯现在还开着",
+            "在未查询实际状态时断言灯已关"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -41,6 +41,7 @@ def execute(case,system,url):
     try:
         if case['variants'][0]['status']!='ready':raise ValueError('input_audio_not_verified')
         while node_id and len(turns)<budget['max_user_turns']:
+            sim.begin_turn(node_id,len(turns)+1)
             audio=assets[node_id];path=ROOT/audio['path'];digest=hashlib.sha256(path.read_bytes()).hexdigest()
             if digest!=audio['sha256']:raise ValueError('input_audio_hash_mismatch')
             asr=None
@@ -91,4 +92,5 @@ def execute(case,system,url):
     except Exception as e:
         flags.append(type(e).__name__+': '+str(e));status='failed'
     checks=grade_rules(case,sim)
-    return {'record_kind':'actual_model_run','schema_version':'0.2.0','case_id':case['identity']['case_id'],'case_sha256':hashlib.sha256(json.dumps(case,sort_keys=True,ensure_ascii=False).encode()).hexdigest(),'system_id':system,'model_id':model_id,'input_modality':'audio','asr_model':None if edge else 'Qwen3-ASR-0.6B','tts_model':'native_talker' if edge else 'Qwen3-TTS-0.6B','normalizer_version':VERSION,'generation':{'do_sample':False,'max_tokens':256,'seed':42} if edge else OFFICIAL,'execution':{'status':status,'model_calls':requests,'tool_calls':len(sim.trace),'wall_seconds':time.monotonic()-started,'flags':flags,'timing_scope':'interaction_stage; offline ASR and baseline batch TTS reported separately'},'turns':turns,'tool_trace':sim.trace,'incomplete_turn':incomplete,'rule_checks':checks,'final_state':sim.state,'audio_judge':None,'case_pass':None,'task_achieved':None}
+    from .revision import protocol_metadata
+    return {'record_kind':'actual_model_run','schema_version':'0.3.0','revision':protocol_metadata(case,'v0.3_actual_execution'),'case_id':case['identity']['case_id'],'case_sha256':hashlib.sha256(json.dumps(case,sort_keys=True,ensure_ascii=False).encode()).hexdigest(),'system_id':system,'model_id':model_id,'input_modality':'audio','asr_model':None if edge else 'Qwen3-ASR-0.6B','tts_model':'native_talker' if edge else 'Qwen3-TTS-0.6B','normalizer_version':VERSION,'generation':{'do_sample':False,'max_tokens':256,'seed':42} if edge else OFFICIAL,'execution':{'status':status,'model_calls':requests,'tool_calls':len(sim.trace),'wall_seconds':time.monotonic()-started,'flags':flags,'timing_scope':'interaction_stage; offline ASR and baseline batch TTS reported separately'},'turns':turns,'tool_trace':sim.trace,'incomplete_turn':incomplete,'rule_checks':checks,'final_state':sim.state,'audio_judge':None,'case_pass':None,'task_achieved':None}

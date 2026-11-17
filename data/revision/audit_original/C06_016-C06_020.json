@@ -1,0 +1,261 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "1133f6d8-5b4e-4c37-b9c9-837d42bf5dc8",
+  "usage": {
+    "prompt_tokens": 2187,
+    "completion_tokens": 1085,
+    "total_tokens": 3272,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1803
+  },
+  "temperature": 0,
+  "source_sha256": "8bb458ca66aaa031a8b95aad0c5180193aeed71852cc4b695dfd3443151070e3",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C06_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对母亲说出口的道歉话",
+            "承认自己昨天说话态度不好",
+            "表达不要求母亲必须原谅"
+          ],
+          "must_not": [
+            "让母亲觉得被操控",
+            "要求母亲必须原谅",
+            "使用正式书面腔或长篇大论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对父亲说出口的道歉话",
+            "承认前天因借车说话态度冲",
+            "表达不逼迫父亲马上原谅"
+          ],
+          "must_not": [
+            "让父亲觉得被逼着原谅",
+            "要求父亲必须立刻回应"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "语气像平时家里人聊天，不正式",
+            "控制在两三句",
+            "只认一次错，不反复认错"
+          ],
+          "must_not": [
+            "使用特别正式的措辞",
+            "让用户一遍遍认错",
+            "超过两三句的篇幅"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对姐姐说出口的道歉话",
+            "承认没提前沟通",
+            "表达不是找借口"
+          ],
+          "must_not": [
+            "让姐姐觉得在找借口",
+            "把没去聚会的责任推给加班"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "语气不太随意也不太生硬",
+            "表达真心觉得没提前说不好",
+            "表达不是故意放鸽子"
+          ],
+          "must_not": [
+            "措辞过于随意",
+            "措辞过于生硬",
+            "让姐姐觉得是故意放鸽子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把聚会日期更正为上周日",
+            "重新组织道歉话且日期用上周日"
+          ],
+          "must_not": [
+            "继续使用上周六",
+            "把日期说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对老公说出口的道歉话",
+            "承认忘了纪念日且态度不好",
+            "表达不是敷衍"
+          ],
+          "must_not": [
+            "让老公觉得在敷衍",
+            "把责任推给老公"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说得短一点、实在一点",
+            "不煽情",
+            "不保证以后一定记得"
+          ],
+          "must_not": [
+            "长篇大论",
+            "过于煽情",
+            "承诺以后一定记得"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把日子更正为第一次约会的日子",
+            "重新组织道歉话且不再说结婚纪念日"
+          ],
+          "must_not": [
+            "继续使用结婚纪念日",
+            "把日子说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述更正后的日子是第一次约会的日子",
+            "接着提供开口道歉的话"
+          ],
+          "must_not": [
+            "说成结婚纪念日",
+            "忘记更正内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对婆婆说出口的解释话",
+            "承认说话没顾及婆婆感受",
+            "表达不是嫌婆婆多事"
+          ],
+          "must_not": [
+            "让婆婆觉得在怪她",
+            "让婆婆觉得被嫌弃多事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "表达感激婆婆帮忙",
+            "说明当时只是嘴快",
+            "语气不轻飘"
+          ],
+          "must_not": [
+            "说得太轻飘",
+            "承诺以后厨房都听婆婆的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把时间更正为前天下午",
+            "重新组织解释话且时间用前天下午"
+          ],
+          "must_not": [
+            "继续使用昨天",
+            "把时间说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述更正后的时间是前天下午",
+            "接着提供跟婆婆开口的话"
+          ],
+          "must_not": [
+            "说成昨天",
+            "忘记更正内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "把最后要说的话压短到两三句",
+            "保留感激和解释不是嫌多事的意思"
+          ],
+          "must_not": [
+            "超过两三句",
+            "丢失感激或解释的核心意思"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

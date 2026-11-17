@@ -1,0 +1,734 @@
+{
+  "version": "0.3.0",
+  "generated_at": "2026-11-17T07:58:48.448498+00:00",
+  "scope": "all 7 preselected budget-stress cases, all 3 systems",
+  "measurement": "WAV frame count divided by sample rate; all assistant audio, including non-story replies",
+  "scoring_policy": "Diagnostic only. Original audio-judge scores and formal pass rates are preserved; approximate durations are not retroactively assigned a hard tolerance.",
+  "interpretation": "Even whole-case audio shorter than the nominal/range lower duration signals a budget mismatch, but this is not a complete semantic story evaluator. C02_013 later changes to an upper-bound-only request.",
+  "rows": [
+    {
+      "system_id": "edge_native",
+      "case_id": "C02_013",
+      "request_node_id": "U1",
+      "source_user_text": "晚上想听个睡前故事放松一下，大概二十分钟左右的。",
+      "duration_phrase": "二十分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 1200,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2"
+      ],
+      "window_end_note": "U3 changes the request to at most ten minutes; no lower bound after U3",
+      "request_window_audio_seconds": 0,
+      "whole_case_audio_seconds": 0,
+      "whole_case_to_target_ratio": 0.0,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [],
+      "run_sha256": "40009b27318b079a62ba8ab3f827be0d55f9ab91081dc119660ab87527baac59"
+    },
+    {
+      "system_id": "qwen35_2b",
+      "case_id": "C02_013",
+      "request_node_id": "U1",
+      "source_user_text": "晚上想听个睡前故事放松一下，大概二十分钟左右的。",
+      "duration_phrase": "二十分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 1200,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2"
+      ],
+      "window_end_note": "U3 changes the request to at most ten minutes; no lower bound after U3",
+      "request_window_audio_seconds": 83.76,
+      "whole_case_audio_seconds": 160.24,
+      "whole_case_to_target_ratio": 0.1335,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 39.2
+        },
+        {
+          "node_id": "U2",
+          "seconds": 44.56
+        },
+        {
+          "node_id": "U3",
+          "seconds": 76.48
+        }
+      ],
+      "run_sha256": "0d737a8640aa4e5203a15babbaa2e163bfc5f48df75f5629ec187c8b73a5742e"
+    },
+    {
+      "system_id": "qwen35_4b",
+      "case_id": "C02_013",
+      "request_node_id": "U1",
+      "source_user_text": "晚上想听个睡前故事放松一下，大概二十分钟左右的。",
+      "duration_phrase": "二十分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 1200,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2"
+      ],
+      "window_end_note": "U3 changes the request to at most ten minutes; no lower bound after U3",
+      "request_window_audio_seconds": 71.52,
+      "whole_case_audio_seconds": 99.84,
+      "whole_case_to_target_ratio": 0.0832,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 35.28
+        },
+        {
+          "node_id": "U2",
+          "seconds": 36.24
+        },
+        {
+          "node_id": "U3",
+          "seconds": 28.32
+        }
+      ],
+      "run_sha256": "8cb2c9c1fdf199bef5dacacc7d2c8bb3e0fe936729efa11c55f242eef547e7ad"
+    },
+    {
+      "system_id": "edge_native",
+      "case_id": "C13_001",
+      "request_node_id": "U1",
+      "source_user_text": "我想给女儿编个睡前故事，主角是小刺猬，在森林里找朋友，要温暖不吓人，长度三四分钟就好。",
+      "duration_phrase": "三四分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": 240,
+      "request_window_nodes": [
+        "U1"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 0,
+      "whole_case_audio_seconds": 0,
+      "whole_case_to_target_ratio": 0.0,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [],
+      "run_sha256": "2c922ac04ed78084dbbe2b81b358541e90d1533c60e0770dfcad411523ab9236"
+    },
+    {
+      "system_id": "qwen35_2b",
+      "case_id": "C13_001",
+      "request_node_id": "U1",
+      "source_user_text": "我想给女儿编个睡前故事，主角是小刺猬，在森林里找朋友，要温暖不吓人，长度三四分钟就好。",
+      "duration_phrase": "三四分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": 240,
+      "request_window_nodes": [
+        "U1"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 0,
+      "whole_case_audio_seconds": 0,
+      "whole_case_to_target_ratio": 0.0,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [],
+      "run_sha256": "5b51d24756c1db4acf3fc3aed38fe13cfbf685306a13539ab0dc735482e12868"
+    },
+    {
+      "system_id": "qwen35_4b",
+      "case_id": "C13_001",
+      "request_node_id": "U1",
+      "source_user_text": "我想给女儿编个睡前故事，主角是小刺猬，在森林里找朋友，要温暖不吓人，长度三四分钟就好。",
+      "duration_phrase": "三四分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": 240,
+      "request_window_nodes": [
+        "U1"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 18.96,
+      "whole_case_audio_seconds": 18.96,
+      "whole_case_to_target_ratio": 0.1053,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 18.96
+        }
+      ],
+      "run_sha256": "5beed260351a47d82c43993c9b9c594cb89a372535b87b557757e9e44bdde22f"
+    },
+    {
+      "system_id": "edge_native",
+      "case_id": "C13_002",
+      "request_node_id": "U1",
+      "source_user_text": "给我儿子讲个小刺猬在森林里找朋友的故事，要温暖不吓人，三分钟左右。",
+      "duration_phrase": "三分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 20.64,
+      "whole_case_audio_seconds": 20.64,
+      "whole_case_to_target_ratio": 0.1147,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 10.24
+        },
+        {
+          "node_id": "U2",
+          "seconds": 10.4
+        }
+      ],
+      "run_sha256": "6f394cfc44f9dd6703898062b464a33542c9c061403a81ef113560e05e606b60"
+    },
+    {
+      "system_id": "qwen35_2b",
+      "case_id": "C13_002",
+      "request_node_id": "U1",
+      "source_user_text": "给我儿子讲个小刺猬在森林里找朋友的故事，要温暖不吓人，三分钟左右。",
+      "duration_phrase": "三分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 39.2,
+      "whole_case_audio_seconds": 39.2,
+      "whole_case_to_target_ratio": 0.2178,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 27.2
+        },
+        {
+          "node_id": "U2",
+          "seconds": 12.0
+        }
+      ],
+      "run_sha256": "2cea884c55d5680dd6591497b0feb6145b1a7a23b720b031c603d5def1ee4efa"
+    },
+    {
+      "system_id": "qwen35_4b",
+      "case_id": "C13_002",
+      "request_node_id": "U1",
+      "source_user_text": "给我儿子讲个小刺猬在森林里找朋友的故事，要温暖不吓人，三分钟左右。",
+      "duration_phrase": "三分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 100.56,
+      "whole_case_audio_seconds": 100.56,
+      "whole_case_to_target_ratio": 0.5587,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 18.72
+        },
+        {
+          "node_id": "U2",
+          "seconds": 81.84
+        }
+      ],
+      "run_sha256": "2e61753b7617b2aa992cf48e4b652aef9017d6add5e2672f7371665ec3f5aa3f"
+    },
+    {
+      "system_id": "edge_native",
+      "case_id": "C13_003",
+      "request_node_id": "U1",
+      "source_user_text": "给我编个小狐狸找朋友的睡前故事，要温暖不吓人，三四分钟，孩子五岁。",
+      "duration_phrase": "三四分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": 240,
+      "request_window_nodes": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 22.8,
+      "whole_case_audio_seconds": 22.8,
+      "whole_case_to_target_ratio": 0.1267,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 7.6
+        },
+        {
+          "node_id": "U2",
+          "seconds": 7.6
+        },
+        {
+          "node_id": "U3",
+          "seconds": 7.6
+        }
+      ],
+      "run_sha256": "bd53c5ac6691125382accfa9337d177c1831c204167cd39fa127bd698071e1cc"
+    },
+    {
+      "system_id": "qwen35_2b",
+      "case_id": "C13_003",
+      "request_node_id": "U1",
+      "source_user_text": "给我编个小狐狸找朋友的睡前故事，要温暖不吓人，三四分钟，孩子五岁。",
+      "duration_phrase": "三四分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": 240,
+      "request_window_nodes": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 245.12,
+      "whole_case_audio_seconds": 245.12,
+      "whole_case_to_target_ratio": 1.3618,
+      "whole_case_below_nominal_or_lower": false,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 81.84
+        },
+        {
+          "node_id": "U2",
+          "seconds": 81.44
+        },
+        {
+          "node_id": "U3",
+          "seconds": 81.84
+        }
+      ],
+      "run_sha256": "1b672378df11a76ddb925e726d14a1d8123c116e31a8147c472992e99ded4a0b"
+    },
+    {
+      "system_id": "qwen35_4b",
+      "case_id": "C13_003",
+      "request_node_id": "U1",
+      "source_user_text": "给我编个小狐狸找朋友的睡前故事，要温暖不吓人，三四分钟，孩子五岁。",
+      "duration_phrase": "三四分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": 240,
+      "request_window_nodes": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 245.52,
+      "whole_case_audio_seconds": 245.52,
+      "whole_case_to_target_ratio": 1.364,
+      "whole_case_below_nominal_or_lower": false,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 81.84
+        },
+        {
+          "node_id": "U2",
+          "seconds": 81.84
+        },
+        {
+          "node_id": "U3",
+          "seconds": 81.84
+        }
+      ],
+      "run_sha256": "385feb97aad49680228ff37a60c1b219a6bf325901bf9b43476fc3349eaff68c"
+    },
+    {
+      "system_id": "edge_native",
+      "case_id": "C13_004",
+      "request_node_id": "U1",
+      "source_user_text": "给我讲个小熊找蜂蜜的睡前故事，要温暖不吓人，三分钟左右。",
+      "duration_phrase": "三分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 161.28,
+      "whole_case_audio_seconds": 161.28,
+      "whole_case_to_target_ratio": 0.896,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 45.84
+        },
+        {
+          "node_id": "U2",
+          "seconds": 61.2
+        },
+        {
+          "node_id": "U3",
+          "seconds": 42.96
+        },
+        {
+          "node_id": "U4",
+          "seconds": 11.28
+        }
+      ],
+      "run_sha256": "bd1641f490a9153cde0804989b78eafba2b07bf412a9306a8244a8b50a8fc22b"
+    },
+    {
+      "system_id": "qwen35_2b",
+      "case_id": "C13_004",
+      "request_node_id": "U1",
+      "source_user_text": "给我讲个小熊找蜂蜜的睡前故事，要温暖不吓人，三分钟左右。",
+      "duration_phrase": "三分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 167.36,
+      "whole_case_audio_seconds": 167.36,
+      "whole_case_to_target_ratio": 0.9298,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 25.6
+        },
+        {
+          "node_id": "U2",
+          "seconds": 43.04
+        },
+        {
+          "node_id": "U3",
+          "seconds": 35.84
+        },
+        {
+          "node_id": "U4",
+          "seconds": 62.88
+        }
+      ],
+      "run_sha256": "0f4df4efc5f594a733d75b9a73951006910116c4f35052e7d5c6a0225c37552e"
+    },
+    {
+      "system_id": "qwen35_4b",
+      "case_id": "C13_004",
+      "request_node_id": "U1",
+      "source_user_text": "给我讲个小熊找蜂蜜的睡前故事，要温暖不吓人，三分钟左右。",
+      "duration_phrase": "三分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 180,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U1",
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 327.36,
+      "whole_case_audio_seconds": 327.36,
+      "whole_case_to_target_ratio": 1.8187,
+      "whole_case_below_nominal_or_lower": false,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 81.84
+        },
+        {
+          "node_id": "U2",
+          "seconds": 81.84
+        },
+        {
+          "node_id": "U3",
+          "seconds": 81.84
+        },
+        {
+          "node_id": "U4",
+          "seconds": 81.84
+        }
+      ],
+      "run_sha256": "1564feeadc87a0e9901191d30251ee43dd1383546eb5a48975d08044f4230cb2"
+    },
+    {
+      "system_id": "edge_native",
+      "case_id": "C13_017",
+      "request_node_id": "U2",
+      "source_user_text": "故事里加一只小刺猬吧，小熊和它一起分享月亮灯的光。别太长，六分钟左右就行。",
+      "duration_phrase": "六分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 360,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U2"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 0,
+      "whole_case_audio_seconds": 0,
+      "whole_case_to_target_ratio": 0.0,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [],
+      "run_sha256": "ea2b7280f2ef4b1686378b0f69a8407e6b282f8fe7378a07045a1f727099f224"
+    },
+    {
+      "system_id": "qwen35_2b",
+      "case_id": "C13_017",
+      "request_node_id": "U2",
+      "source_user_text": "故事里加一只小刺猬吧，小熊和它一起分享月亮灯的光。别太长，六分钟左右就行。",
+      "duration_phrase": "六分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 360,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U2"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 35.04,
+      "whole_case_audio_seconds": 60.64,
+      "whole_case_to_target_ratio": 0.1684,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 25.6
+        },
+        {
+          "node_id": "U2",
+          "seconds": 35.04
+        }
+      ],
+      "run_sha256": "9d630eecf9da8b70465427472815be1b0116c3833290687ce19307f3f7903d79"
+    },
+    {
+      "system_id": "qwen35_4b",
+      "case_id": "C13_017",
+      "request_node_id": "U2",
+      "source_user_text": "故事里加一只小刺猬吧，小熊和它一起分享月亮灯的光。别太长，六分钟左右就行。",
+      "duration_phrase": "六分钟左右",
+      "target_kind": "approximate",
+      "nominal_or_lower_seconds": 360,
+      "upper_seconds": null,
+      "request_window_nodes": [
+        "U2"
+      ],
+      "window_end_note": "end of case",
+      "request_window_audio_seconds": 33.12,
+      "whole_case_audio_seconds": 67.04,
+      "whole_case_to_target_ratio": 0.1862,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 33.92
+        },
+        {
+          "node_id": "U2",
+          "seconds": 33.12
+        }
+      ],
+      "run_sha256": "d35c4c30487f62d1ad3d964283adc4897d1811f12c75d165934445ff6c1f0eb7"
+    },
+    {
+      "system_id": "edge_native",
+      "case_id": "C13_020",
+      "request_node_id": "U2",
+      "source_user_text": "故事里小象要找到三个朋友，最后一起在河边玩水。别太长，七八分钟就行。",
+      "duration_phrase": "七八分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 420,
+      "upper_seconds": 480,
+      "request_window_nodes": [
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "window_end_note": "U5 explicitly asks for a brief ending",
+      "request_window_audio_seconds": 33.92,
+      "whole_case_audio_seconds": 56.16,
+      "whole_case_to_target_ratio": 0.1337,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 11.12
+        },
+        {
+          "node_id": "U2",
+          "seconds": 11.2
+        },
+        {
+          "node_id": "U3",
+          "seconds": 11.12
+        },
+        {
+          "node_id": "U4",
+          "seconds": 11.6
+        },
+        {
+          "node_id": "U5",
+          "seconds": 11.12
+        }
+      ],
+      "run_sha256": "aba6d221b9f910e0f51c8d3b168b2fe01fa3d918e300b32e35b6fd34040d9d16"
+    },
+    {
+      "system_id": "qwen35_2b",
+      "case_id": "C13_020",
+      "request_node_id": "U2",
+      "source_user_text": "故事里小象要找到三个朋友，最后一起在河边玩水。别太长，七八分钟就行。",
+      "duration_phrase": "七八分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 420,
+      "upper_seconds": 480,
+      "request_window_nodes": [
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "window_end_note": "U5 explicitly asks for a brief ending",
+      "request_window_audio_seconds": 138.72,
+      "whole_case_audio_seconds": 232.32,
+      "whole_case_to_target_ratio": 0.5531,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": false,
+      "judge_pass_with_duration_discrepancy": false,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 40.32
+        },
+        {
+          "node_id": "U2",
+          "seconds": 30.4
+        },
+        {
+          "node_id": "U3",
+          "seconds": 64.4
+        },
+        {
+          "node_id": "U4",
+          "seconds": 43.92
+        },
+        {
+          "node_id": "U5",
+          "seconds": 53.28
+        }
+      ],
+      "run_sha256": "2232945d9b9ee48b92f85e57e118508e4c9ea22274ca5bc44336123e4dc5d225"
+    },
+    {
+      "system_id": "qwen35_4b",
+      "case_id": "C13_020",
+      "request_node_id": "U2",
+      "source_user_text": "故事里小象要找到三个朋友，最后一起在河边玩水。别太长，七八分钟就行。",
+      "duration_phrase": "七八分钟",
+      "target_kind": "range",
+      "nominal_or_lower_seconds": 420,
+      "upper_seconds": 480,
+      "request_window_nodes": [
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "window_end_note": "U5 explicitly asks for a brief ending",
+      "request_window_audio_seconds": 133.92,
+      "whole_case_audio_seconds": 185.84,
+      "whole_case_to_target_ratio": 0.4425,
+      "whole_case_below_nominal_or_lower": true,
+      "formal_case_pass": true,
+      "judge_pass_with_duration_discrepancy": true,
+      "per_turn_durations": [
+        {
+          "node_id": "U1",
+          "seconds": 28.32
+        },
+        {
+          "node_id": "U2",
+          "seconds": 39.6
+        },
+        {
+          "node_id": "U3",
+          "seconds": 30.32
+        },
+        {
+          "node_id": "U4",
+          "seconds": 64.0
+        },
+        {
+          "node_id": "U5",
+          "seconds": 23.6
+        }
+      ],
+      "run_sha256": "b4ecad01fc27a22987adfe222568dd4c3ed68776324ff200707ba968d89f5343"
+    }
+  ],
+  "judge_disagreements": [
+    {
+      "system_id": "qwen35_4b",
+      "case_id": "C13_020"
+    }
+  ]
+}

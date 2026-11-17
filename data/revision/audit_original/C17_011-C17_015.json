@@ -1,0 +1,253 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a814b7da-a401-425e-94c1-d83ae11eef7a",
+  "usage": {
+    "prompt_tokens": 1861,
+    "completion_tokens": 1025,
+    "total_tokens": 2886,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1477
+  },
+  "temperature": 0,
+  "source_sha256": "18f0edeb8c8f1115a0796c2e85e536f45f64c4594e4bbdf556d70b4fb5101282",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C17_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户今天累、不想动的状态",
+            "提供轻松、不吵的音乐方向建议"
+          ],
+          "must_not": [
+            "推荐太吵的音乐",
+            "播放音乐或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供睡前放松的有声书方向",
+            "避开吓人和费脑子的内容"
+          ],
+          "must_not": [
+            "推荐恐怖或烧脑内容",
+            "播放有声书或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受短篇合集、每篇不长的要求",
+            "延续睡前放松且不吓人不费脑子的方向"
+          ],
+          "must_not": [
+            "推荐长篇或单章过长的内容",
+            "播放有声书或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供怀旧老歌方向",
+            "避开太伤感的内容"
+          ],
+          "must_not": [
+            "推荐太伤感的歌",
+            "播放音乐或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受节奏慢一点的要求",
+            "保持不苦情的方向"
+          ],
+          "must_not": [
+            "推荐快节奏或苦情的歌",
+            "播放音乐或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认年代更正为九十年代而非八十年代",
+            "延续慢一点、不苦情的方向"
+          ],
+          "must_not": [
+            "仍按八十年代推荐",
+            "推荐快节奏或苦情的歌",
+            "播放音乐或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供周末轻松阅读方向",
+            "避开太厚的大部头"
+          ],
+          "must_not": [
+            "推荐厚书大部头",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受不压抑的要求",
+            "延续轻松阅读方向"
+          ],
+          "must_not": [
+            "推荐压抑内容",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认体裁更正为短篇散文而非短篇小说",
+            "保持不厚、不压抑"
+          ],
+          "must_not": [
+            "仍按短篇小说推荐",
+            "推荐厚书或压抑内容",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得改为短篇散文",
+            "按短篇散文给出可读方向",
+            "保持不厚、不压抑"
+          ],
+          "must_not": [
+            "误记为短篇小说",
+            "推荐厚书或压抑内容",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供在家学乐器的方向",
+            "避开太吵的乐器"
+          ],
+          "must_not": [
+            "推荐太吵的乐器",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受不要太贵、入门成本低的要求",
+            "延续不吵的方向"
+          ],
+          "must_not": [
+            "推荐昂贵设备或高入门花费",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认乐器更正为口琴而非笛子",
+            "保持不吵、不贵"
+          ],
+          "must_not": [
+            "仍按笛子推荐",
+            "推荐昂贵或吵闹方案",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得选的是口琴",
+            "给出初学口琴不扰民的练习建议"
+          ],
+          "must_not": [
+            "误记为笛子",
+            "建议在休息时间长时间吹奏",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结口琴初学注意事项两三点"
+          ],
+          "must_not": [
+            "输出冗长内容",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

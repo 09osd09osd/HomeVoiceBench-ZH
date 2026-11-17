@@ -1,0 +1,244 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2c859494-82f1-4614-ac7e-a454f2346fe3",
+  "usage": {
+    "prompt_tokens": 2055,
+    "completion_tokens": 1015,
+    "total_tokens": 3070,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1671
+  },
+  "temperature": 0,
+  "source_sha256": "14af7d2249f5af8bb11634096c1b54a786f12b1d09f5bc81fcebf2262bdb4332",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C04_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户等待体检报告的焦虑并陪伴交谈",
+            "不承诺或保证体检结果"
+          ],
+          "must_not": [
+            "提供医疗诊断或对检查结果作专业判断",
+            "保证结果一定没问题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户等待面试结果的坐立不安并陪伴交谈",
+            "不保证面试结果"
+          ],
+          "must_not": [
+            "保证面试一定通过或结果如何"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提供室内、不费脑子的活动建议",
+            "尊重用户不想下楼和外面太晒的意愿"
+          ],
+          "must_not": [
+            "建议用户下楼或外出",
+            "保证面试结果"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户孩子晚归失联的慌张",
+            "不保证孩子具体情况或到家时间"
+          ],
+          "must_not": [
+            "断言孩子一定出事或一定没事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想惊动老师的意愿",
+            "提供在家可做的简单事情以缓解胡思乱想"
+          ],
+          "must_not": [
+            "建议联系老师或学校",
+            "保证孩子情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受并复述更正后的放学时间六点半而非六点",
+            "基于六点半重新评估已过时间"
+          ],
+          "must_not": [
+            "继续使用六点作为放学时间",
+            "保证孩子到家时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户等待检查结果的坐立不安",
+            "不保证检查结果"
+          ],
+          "must_not": [
+            "提供医疗诊断或判断结果好坏",
+            "保证结果一定正常"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想打电话催的意愿",
+            "提供不催问的替代办法"
+          ],
+          "must_not": [
+            "坚持建议用户打电话催问",
+            "保证结果何时出来"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受并复述更正后的出结果时间为明天下午而非今天下午"
+          ],
+          "must_not": [
+            "继续使用今天下午出结果",
+            "保证检查结果"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆并回答出结果时间是明天下午",
+            "体现记得用户此前的更正"
+          ],
+          "must_not": [
+            "回答今天下午出结果",
+            "保证检查结果"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户家人航班晚点未联系的担心",
+            "不保证航班或家人具体情况"
+          ],
+          "must_not": [
+            "断言航班一定出事或家人一定安全"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提供比手机查航班更简单的办法",
+            "尊重用户不太会用手机查航班的困难"
+          ],
+          "must_not": [
+            "仅重复让用户用手机查航班",
+            "保证航班情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受并复述更正后的到达时间十一点而非十点",
+            "基于十一点重新评估当前时间"
+          ],
+          "must_not": [
+            "继续使用十点作为到达时间",
+            "保证到家时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆并回答航班到达时间是十一点",
+            "体现记得用户此前的更正"
+          ],
+          "must_not": [
+            "回答十点到",
+            "保证到家时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短回应并确认航班十一点到",
+            "不保证到家时间"
+          ],
+          "must_not": [
+            "输出冗长内容",
+            "保证具体到家时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

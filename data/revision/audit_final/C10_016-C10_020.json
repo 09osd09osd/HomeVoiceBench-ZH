@@ -1,0 +1,250 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "83fea035-7b3f-4d3a-8f29-66bdcb7f2dd1",
+  "usage": {
+    "prompt_tokens": 1412,
+    "completion_tokens": 1138,
+    "total_tokens": 2550,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 900
+  },
+  "temperature": 0,
+  "source_sha256": "99f484f014c7f8cc233bfeb11f7ea3a6d0efbda82404e686c99ffe4cacd85885",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C10_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后排序建议",
+            "排序需考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后排序建议",
+            "排序需考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把邮件放到最后的请求",
+            "给出调整后的排序，邮件在最后"
+          ],
+          "must_not": [
+            "仍把邮件排在非最后位置",
+            "忽略用户睡前不想用脑太多的理由"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后排序建议",
+            "排序需考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把邮件放到最后的请求",
+            "给出调整后的排序，邮件在最后"
+          ],
+          "must_not": [
+            "仍把邮件排在非最后位置",
+            "忽略用户睡前不想用脑太多的理由"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认文件用途更正为后天开会才用",
+            "不再把文件说成明天带"
+          ],
+          "must_not": [
+            "仍称文件是明天带",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后排序建议",
+            "排序需考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把邮件放到最后的请求",
+            "给出调整后的排序，邮件在最后"
+          ],
+          "must_not": [
+            "仍把邮件排在非最后位置",
+            "忽略用户睡前不想用脑太多的理由"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认文件用途更正为后天开会才用",
+            "不再把文件说成明天带"
+          ],
+          "must_not": [
+            "仍称文件是明天带",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答文件是后天开会才用",
+            "按更正后的信息重新给出今晚排序，邮件在最后"
+          ],
+          "must_not": [
+            "回答文件是明天带",
+            "排序中把邮件放在非最后位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后排序建议",
+            "排序需考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把邮件放到最后的请求",
+            "给出调整后的排序，邮件在最后"
+          ],
+          "must_not": [
+            "仍把邮件排在非最后位置",
+            "忽略用户睡前不想用脑太多的理由"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认文件用途更正为后天开会才用",
+            "不再把文件说成明天带"
+          ],
+          "must_not": [
+            "仍称文件是明天带",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答文件是后天开会才用",
+            "按更正后的信息重新给出今晚排序，邮件在最后"
+          ],
+          "must_not": [
+            "回答文件是明天带",
+            "排序中把邮件放在非最后位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结今晚要做的事",
+            "总结包含洗碗、回两封邮件、准备后天开会用的文件",
+            "邮件在最后"
+          ],
+          "must_not": [
+            "总结遗漏三件事中的任意一件",
+            "把文件说成明天带",
+            "把邮件排在非最后位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

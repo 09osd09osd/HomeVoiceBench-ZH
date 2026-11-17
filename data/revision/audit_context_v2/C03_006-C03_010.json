@@ -1,0 +1,252 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "5df0413a-47d2-411a-a073-861ea482b896",
+  "usage": {
+    "prompt_tokens": 1825,
+    "completion_tokens": 962,
+    "total_tokens": 2787,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1825
+  },
+  "temperature": 0,
+  "source_sha256": "c4e8a676e0e61f647c3c174e1dfb06fef9516af8789943f8d5b90ffbc1d804a9",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C03_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户被领导当众批评后的难受情绪",
+            "表明愿意倾听",
+            "不主动给建议或出主意"
+          ],
+          "must_not": [
+            "给出具体建议或解决方案",
+            "分析原因或说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户连续加班到十点的疲惫",
+            "表明愿意倾听"
+          ],
+          "must_not": [
+            "给出建议或解决方案",
+            "否定用户的感受"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不劝用户辞职",
+            "表明愿意继续倾听用户发牢骚"
+          ],
+          "must_not": [
+            "劝用户辞职",
+            "讲大道理或说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户被朋友放鸽子的委屈",
+            "表明愿意倾听"
+          ],
+          "must_not": [
+            "讲大道理",
+            "催促用户去质问朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不讲大道理",
+            "确认不催用户去质问",
+            "表明愿意听用户把闷气说出来"
+          ],
+          "must_not": [
+            "讲大道理",
+            "让用户去质问朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为昨天晚上而非周末",
+            "继续倾听用户的情绪"
+          ],
+          "must_not": [
+            "坚持说是周末",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户一个人带两个孩子的疲惫",
+            "表明愿意倾听"
+          ],
+          "must_not": [
+            "说用户矫情",
+            "催促用户去休息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不说用户矫情",
+            "确认不催用户去休息",
+            "表达理解"
+          ],
+          "must_not": [
+            "说用户矫情",
+            "让用户去休息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为一个孩子另一个是邻居家的",
+            "继续倾听"
+          ],
+          "must_not": [
+            "坚持说两个孩子",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆更正后的带娃情况：一个孩子，另一个是邻居家的",
+            "继续倾听用户心里堵的感受"
+          ],
+          "must_not": [
+            "说成两个孩子",
+            "忘记用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户考试没考好的低落",
+            "表明愿意倾听",
+            "不主动分析原因"
+          ],
+          "must_not": [
+            "分析考试没考好的原因",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不说下次一定行",
+            "表明安静倾听"
+          ],
+          "must_not": [
+            "说下次一定行",
+            "灌鸡汤或安慰套话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为昨天的模拟考而非期末考",
+            "继续倾听"
+          ],
+          "must_not": [
+            "坚持说是期末考",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆是昨天的模拟考",
+            "回应用户提不起劲的状态"
+          ],
+          "must_not": [
+            "说成期末考",
+            "忘记用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "体现记得用户说的是模拟考的低落"
+          ],
+          "must_not": [
+            "长篇大论",
+            "给出建议或说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

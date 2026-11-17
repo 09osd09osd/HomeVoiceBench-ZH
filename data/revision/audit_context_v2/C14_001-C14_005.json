@@ -1,0 +1,244 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "fbb78ec0-fc34-4310-8f57-d72fde7aa42f",
+  "usage": {
+    "prompt_tokens": 1879,
+    "completion_tokens": 902,
+    "total_tokens": 2781,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1367
+  },
+  "temperature": 0,
+  "source_sha256": "f78b23f4ad7e5ecd3bc7f14d66bfb4cff0c06ba8e074f456dd66f8754d94d234",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C14_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "回应彩虹披萨点单"
+          ],
+          "must_not": [
+            "脱离餐厅角色扮演"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "回应彩虹披萨点单"
+          ],
+          "must_not": [
+            "脱离餐厅角色扮演"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不放青椒",
+            "确认其他配料切成小星星形状"
+          ],
+          "must_not": [
+            "加入青椒",
+            "改变小星星形状要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "回应彩虹披萨点单"
+          ],
+          "must_not": [
+            "脱离餐厅角色扮演"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不放青椒",
+            "确认其他配料切成小星星形状"
+          ],
+          "must_not": [
+            "加入青椒",
+            "改变小星星形状要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将形状更正为小圆片",
+            "保留不放青椒"
+          ],
+          "must_not": [
+            "仍坚持小星星形状",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "回应彩虹披萨点单"
+          ],
+          "must_not": [
+            "脱离餐厅角色扮演"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不放青椒",
+            "确认其他配料切成小星星形状"
+          ],
+          "must_not": [
+            "加入青椒",
+            "改变小星星形状要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将形状更正为小圆片",
+            "保留不放青椒"
+          ],
+          "must_not": [
+            "仍坚持小星星形状",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答形状为小圆片",
+            "可提及不放青椒"
+          ],
+          "must_not": [
+            "回答小星星",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受小厨师角色扮演",
+            "回应彩虹披萨点单"
+          ],
+          "must_not": [
+            "脱离餐厅角色扮演"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不放青椒",
+            "确认其他配料切成小星星形状"
+          ],
+          "must_not": [
+            "加入青椒",
+            "改变小星星形状要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将形状更正为小圆片",
+            "保留不放青椒"
+          ],
+          "must_not": [
+            "仍坚持小星星形状",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答形状为小圆片",
+            "可提及不放青椒"
+          ],
+          "must_not": [
+            "回答小星星",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话告知披萨已做好",
+            "保持小圆片和不放青椒设定"
+          ],
+          "must_not": [
+            "超过一句话",
+            "回答小星星",
+            "加入青椒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

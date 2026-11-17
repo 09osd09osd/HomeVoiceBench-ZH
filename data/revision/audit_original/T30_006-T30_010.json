@@ -1,0 +1,314 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "bc3b5d4f-698e-42e0-835e-1397fc7250b6",
+  "usage": {
+    "prompt_tokens": 2383,
+    "completion_tokens": 1684,
+    "total_tokens": 4067,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1999
+  },
+  "temperature": 0,
+  "source_sha256": "c90ee3a97112f536e09d046711a2c9be15e6d5fb5a23327a170abfc45080f83d",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T30_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%",
+            "完成后向用户确认"
+          ],
+          "must_not": [
+            "改变卧室灯以外的设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T30_007",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U2"
+          ],
+          "reason": "U2要求取消“刚才那个任务”，但U1只是直接执行开灯，并未产生可取消的任务；参考却假设存在任务TASK_T30_007_001，依赖尚未产生的助手任务。",
+          "evidence": "我改主意了，把刚才那个任务取消掉；要是已经完成了就告诉我，别自己再把灯关上。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%",
+            "完成后向用户确认"
+          ],
+          "must_not": [
+            "改变卧室灯以外的设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "处理取消“刚才那个任务”的请求",
+            "若任务已完成则告知用户",
+            "不自动关灯"
+          ],
+          "must_not": [
+            "在用户未要求时把灯关掉",
+            "声称取消了一个不存在的任务而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T30_008",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U2",
+            "U3"
+          ],
+          "reason": "U2取消“刚才那个任务”依赖U1产生任务，但U1只是直接执行开灯；U3又要求核对“那个任务”状态，参考假设存在TASK_T30_008_001，均依赖尚未产生的助手任务。",
+          "evidence": "我改主意了，把刚才那个任务取消掉；要是已经完成了就告诉我，别自己再把灯关上。"
+        },
+        {
+          "kind": "reference_error",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "参考称卧室灯“现在是关着的，亮度停在百分之四十”，但此前用户只要求开灯到40%，没有关灯操作；该状态与对话历史不一致。",
+          "evidence": "卧室灯现在是关着的，亮度停在百分之四十。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%",
+            "完成后向用户确认"
+          ],
+          "must_not": [
+            "改变卧室灯以外的设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "处理取消“刚才那个任务”的请求",
+            "若任务已完成则告知用户",
+            "不自动关灯"
+          ],
+          "must_not": [
+            "在用户未要求时把灯关掉",
+            "声称取消了一个不存在的任务而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "核对并报告任务当前状态",
+            "核对并报告卧室灯实际开关状态"
+          ],
+          "must_not": [
+            "编造与设备实际状态不符的亮度或开关状态",
+            "在核对时改变灯的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T30_009",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U2",
+            "U3"
+          ],
+          "reason": "U2取消“刚才那个任务”依赖U1产生任务，但U1只是直接执行开灯；U3又要求核对“那个任务”状态，参考假设存在TASK_T30_009_001，均依赖尚未产生的助手任务。",
+          "evidence": "我改主意了，把刚才那个任务取消掉；要是已经完成了就告诉我，别自己再把灯关上。"
+        },
+        {
+          "kind": "reference_error",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "参考称卧室灯“现在是关着的，亮度停在百分之五十”，但用户只要求过40%，且没有关灯操作；亮度50%与用户要求及历史不一致。",
+          "evidence": "卧室灯现在是关着的，亮度停在百分之五十。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%",
+            "完成后向用户确认"
+          ],
+          "must_not": [
+            "改变卧室灯以外的设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "处理取消“刚才那个任务”的请求",
+            "若任务已完成则告知用户",
+            "不自动关灯"
+          ],
+          "must_not": [
+            "在用户未要求时把灯关掉",
+            "声称取消了一个不存在的任务而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "核对并报告任务当前状态",
+            "核对并报告卧室灯实际开关状态"
+          ],
+          "must_not": [
+            "编造与设备实际状态不符的亮度或开关状态",
+            "在核对时改变灯的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行关闭卧室灯"
+          ],
+          "must_not": [
+            "关闭卧室灯以外的设备",
+            "在关灯时改变亮度设定（除非用户要求）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T30_010",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U2",
+            "U3",
+            "U5"
+          ],
+          "reason": "U2取消“刚才那个任务”依赖U1产生任务，但U1只是直接执行开灯；U3和U5继续核对“那个任务”状态及回滚，参考假设存在TASK_T30_010_001，均依赖尚未产生的助手任务。",
+          "evidence": "我改主意了，把刚才那个任务取消掉；要是已经完成了就告诉我，别自己再把灯关上。"
+        },
+        {
+          "kind": "reference_error",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "参考称卧室灯“现在是关着的，亮度停在百分之六十”，但用户只要求过40%，且没有关灯操作；亮度60%与用户要求及历史不一致。",
+          "evidence": "卧室灯现在是关着的，亮度停在百分之六十。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%",
+            "完成后向用户确认"
+          ],
+          "must_not": [
+            "改变卧室灯以外的设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "处理取消“刚才那个任务”的请求",
+            "若任务已完成则告知用户",
+            "不自动关灯"
+          ],
+          "must_not": [
+            "在用户未要求时把灯关掉",
+            "声称取消了一个不存在的任务而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "核对并报告任务当前状态",
+            "核对并报告卧室灯实际开关状态"
+          ],
+          "must_not": [
+            "编造与设备实际状态不符的亮度或开关状态",
+            "在核对时改变灯的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行关闭卧室灯"
+          ],
+          "must_not": [
+            "关闭卧室灯以外的设备",
+            "在关灯时改变亮度设定（除非用户要求）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认卧室灯确实已关闭",
+            "说明取消任务是否导致灯状态回滚"
+          ],
+          "must_not": [
+            "在确认时改变灯的状态",
+            "编造与设备实际状态不符的开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "058788c4-5144-46d1-bb87-d0b638b40a0b",
+  "usage": {
+    "prompt_tokens": 1952,
+    "completion_tokens": 1010,
+    "total_tokens": 2962,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1440
+  },
+  "temperature": 0,
+  "source_sha256": "d163f41746699e7e96e3d6ee90402b3ca53a1cad5996ee5007ea4b555e3e9997",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C13_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小刺猬",
+            "场景在森林里找朋友",
+            "温暖不吓人",
+            "长度三四分钟"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小刺猬",
+            "场景在森林里找朋友",
+            "温暖不吓人",
+            "三分钟左右"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事中加入月亮",
+            "小刺猬最后回到妈妈身边",
+            "保持温暖"
+          ],
+          "must_not": [
+            "加入打雷",
+            "加入黑漆漆的洞"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小狐狸",
+            "场景在森林里找朋友",
+            "温暖不吓人",
+            "三四分钟",
+            "适合五岁孩子"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入小溪",
+            "小狐狸在小溪边遇到朋友",
+            "保持温暖"
+          ],
+          "must_not": [
+            "出现争吵情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小狐狸在苹果树下遇到朋友",
+            "小溪作为背景保留",
+            "保持温暖"
+          ],
+          "must_not": [
+            "小狐狸在小溪边遇到朋友",
+            "出现争吵情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_004",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "用户称“我前面说三只朋友”，但前序用户台词从未提到“三只朋友”，只提到加一只小乌龟；该更正引用的是不存在的用户前文。",
+          "evidence": "我前面说三只朋友，其实改成两只朋友就行，小乌龟和小鸟就够了。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小熊",
+            "情节是找蜂蜜",
+            "温暖不吓人",
+            "三分钟左右"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事中加入小乌龟",
+            "小熊最后把蜂蜜分给大家",
+            "保持温暖"
+          ],
+          "must_not": [
+            "出现蜜蜂追人的情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "朋友数量改为两只",
+            "朋友是小乌龟和小鸟",
+            "小熊把蜂蜜分给大家"
+          ],
+          "must_not": [
+            "保留三只朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答当前朋友数量为两只",
+            "朋友是小乌龟和小鸟",
+            "接着讲小熊分蜂蜜的情节"
+          ],
+          "must_not": [
+            "回答朋友数量为三只"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小兔子",
+            "情节是种胡萝卜",
+            "温暖不吓人",
+            "五分钟以内"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入小鸭子帮忙浇水",
+            "结尾大家一起吃胡萝卜",
+            "保持温暖"
+          ],
+          "must_not": [
+            "出现虫子吃菜叶的情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小鸭子改为帮忙拔草",
+            "浇水由小兔子自己来",
+            "结尾大家一起吃胡萝卜"
+          ],
+          "must_not": [
+            "小鸭子帮忙浇水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答小鸭子帮忙拔草",
+            "接着讲收获胡萝卜那天的事"
+          ],
+          "must_not": [
+            "回答小鸭子帮忙浇水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短收尾",
+            "结尾让孩子安心睡觉"
+          ],
+          "must_not": [
+            "展开长篇情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

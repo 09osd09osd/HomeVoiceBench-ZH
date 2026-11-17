@@ -1,0 +1,243 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "02889f32-14bd-4c03-bc31-e4518a25628c",
+  "usage": {
+    "prompt_tokens": 2065,
+    "completion_tokens": 894,
+    "total_tokens": 2959,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1681
+  },
+  "temperature": 0,
+  "source_sha256": "7989f84476578d49e1a6c729d6395de279dce35417fcb73613fef9e4fb82e27c",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T12_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅音箱",
+            "将客厅音箱音量设为20%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T12_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅音箱",
+            "将客厅音箱音量设为20%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅音箱音量改为10%"
+          ],
+          "must_not": [
+            "改动客厅音箱音量以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T12_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅音箱",
+            "将客厅音箱音量设为20%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅音箱音量改为10%"
+          ],
+          "must_not": [
+            "改动客厅音箱音量以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅音箱当前音量",
+            "查询客厅音箱当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅音箱",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T12_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅音箱",
+            "将客厅音箱音量设为20%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅音箱音量改为10%"
+          ],
+          "must_not": [
+            "改动客厅音箱音量以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅音箱当前音量",
+            "查询客厅音箱当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅音箱",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅音箱",
+            "保留客厅音箱音量设置不变"
+          ],
+          "must_not": [
+            "改动客厅音箱音量",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T12_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅音箱",
+            "将客厅音箱音量设为20%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅音箱音量改为10%"
+          ],
+          "must_not": [
+            "改动客厅音箱音量以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅音箱当前音量",
+            "查询客厅音箱当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅音箱",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅音箱",
+            "保留客厅音箱音量设置不变"
+          ],
+          "must_not": [
+            "改动客厅音箱音量",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅音箱当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅音箱",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

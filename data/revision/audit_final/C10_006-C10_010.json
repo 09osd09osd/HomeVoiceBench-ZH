@@ -1,0 +1,253 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "dc9bcca4-fdc7-4748-86e7-5b26d0c8976c",
+  "usage": {
+    "prompt_tokens": 1384,
+    "completion_tokens": 1011,
+    "total_tokens": 2395,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 872
+  },
+  "temperature": 0,
+  "source_sha256": "bc11e73aa660dcc477cffddb659514f1104afb96fc5fcae224e76092ee01b020",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C10_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以聊天方式帮助用户安排今晚先做什么后做什么",
+            "保持简短口语化"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以聊天方式帮助用户安排今晚先做什么后做什么",
+            "保持简短口语化"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户先做轻松、难的后置的偏好",
+            "继续以聊天方式讨论安排"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以聊天方式帮助用户安排今晚先做什么后做什么",
+            "保持简短口语化"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户先做轻松、难的后置的偏好",
+            "继续以聊天方式讨论安排"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为按简单程度而非轻松程度排序",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "继续沿用先做轻松的说法",
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以聊天方式帮助用户安排今晚先做什么后做什么",
+            "保持简短口语化"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户先做轻松、难的后置的偏好",
+            "继续以聊天方式讨论安排"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为按简单程度而非轻松程度排序",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "继续沿用先做轻松的说法",
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述用户刚才的更正：从先做轻松改为先做简单的",
+            "按更正后的规则继续讨论"
+          ],
+          "must_not": [
+            "声称用户改的是其他内容",
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以聊天方式帮助用户安排今晚先做什么后做什么",
+            "保持简短口语化"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户先做轻松、难的后置的偏好",
+            "继续以聊天方式讨论安排"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为按简单程度而非轻松程度排序",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "继续沿用先做轻松的说法",
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述用户刚才的更正：从先做轻松改为先做简单的",
+            "按更正后的规则继续讨论"
+          ],
+          "must_not": [
+            "声称用户改的是其他内容",
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短方式收尾",
+            "保持聊天口吻"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ccaf8758-e062-43ee-abfa-a8565ad93936",
+  "usage": {
+    "prompt_tokens": 1952,
+    "completion_tokens": 970,
+    "total_tokens": 2922,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1568
+  },
+  "temperature": 0,
+  "source_sha256": "ff9363d44c30a7b09590e699a4a7d800798ca02fa5c52bc56cca0e111d8f5718",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C07_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对阳台角落旧杂志和空花盆给出收拾建议",
+            "建议需适配半小时时限",
+            "建议需利用两个纸箱和几个挂钩"
+          ],
+          "must_not": [
+            "建议购买新收纳用品",
+            "忽略半小时时限"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对换季收厚衣服给出快速方案",
+            "方案需适配晚上一小时时限",
+            "方案需利用真空袋和收纳箱"
+          ],
+          "must_not": [
+            "忽略一小时时限"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "不再建议使用真空袋",
+            "给出替代收纳办法",
+            "考虑羽绒服不宜压坏"
+          ],
+          "must_not": [
+            "继续推荐真空袋",
+            "建议压扁羽绒服"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对客厅玩具给出快速分类方案",
+            "方案需适配四十分钟时限",
+            "方案需利用三个收纳筐和标签纸"
+          ],
+          "must_not": [
+            "忽略四十分钟时限"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "明确不扔孩子的东西",
+            "只做分类分开存放"
+          ],
+          "must_not": [
+            "建议丢弃或处理掉玩具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按两个大筐和一个扁浅筐重新安排",
+            "保持不扔只分类"
+          ],
+          "must_not": [
+            "仍按三个收纳筐安排",
+            "建议扔东西"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面瓶罐给出收拾方案",
+            "方案需适配二十分钟时限",
+            "方案需利用转盘和壁挂架"
+          ],
+          "must_not": [
+            "忽略二十分钟时限"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "常用物品放台面伸手可及处",
+            "减少弯腰开柜门"
+          ],
+          "must_not": [
+            "建议常用物品放低处柜内",
+            "忽略腰部不便"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按十五分钟重新安排"
+          ],
+          "must_not": [
+            "仍按二十分钟安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得腰不好和常用放台面",
+            "按十五分钟给出顺序"
+          ],
+          "must_not": [
+            "遗忘腰部限制",
+            "仍按二十分钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对书房桌面和书架给出安排",
+            "方案需适配一小时时限",
+            "方案需利用两个文件盒和书立"
+          ],
+          "must_not": [
+            "忽略一小时时限"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只用现有两个文件盒和书立",
+            "不添置新物品"
+          ],
+          "must_not": [
+            "建议购买新收纳用品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按周日晚上一小时重新安排"
+          ],
+          "must_not": [
+            "仍按周末上午安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得周日晚上和不添东西",
+            "指出一小时先弄哪块最见效"
+          ],
+          "must_not": [
+            "遗忘周日晚上",
+            "建议添置物品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用两三句话收尾",
+            "收尾内容与周日晚上、不添东西、一小时一致"
+          ],
+          "must_not": [
+            "超过两三句话",
+            "建议添置物品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

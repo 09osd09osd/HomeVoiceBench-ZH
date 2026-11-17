@@ -1,0 +1,250 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2402c4ff-db53-45c0-849e-3659e1a1b2dc",
+  "usage": {
+    "prompt_tokens": 2105,
+    "completion_tokens": 1079,
+    "total_tokens": 3184,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1721
+  },
+  "temperature": 0,
+  "source_sha256": "a238dcb550c93c37add706fc5455e3a176c856cc279007b1e7b14194076064ba",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C07_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对衣柜上层空间不大的空箱子给出具体收纳建议",
+            "建议需在半小时内可执行"
+          ],
+          "must_not": [
+            "声称已实际整理或操作衣柜",
+            "要求购买未提及的收纳用品作为唯一方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对三层收纳架给出按类别或使用频率分层的整理建议",
+            "建议需在二十分钟内可执行"
+          ],
+          "must_not": [
+            "声称已实际整理玩具",
+            "忽略三层收纳架这一条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "孩子容易够到的地方不放小零件",
+            "保留最喜欢的五件玩具在外面"
+          ],
+          "must_not": [
+            "把小零件放在孩子容易够到的低层",
+            "把最喜欢的五件玩具全部收起来"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "利用一个抽屉和两个台面角落给出整理建议",
+            "建议需在十五分钟内可执行"
+          ],
+          "must_not": [
+            "声称已实际整理厨房",
+            "要求使用未提及的收纳工具作为必需条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "使用现成的空玻璃罐和纸袋作为收纳方案",
+            "不购买新收纳盒"
+          ],
+          "must_not": [
+            "建议购买新收纳盒",
+            "忽略玻璃罐或纸袋的利用"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的二十五分钟给出建议",
+            "利用柜子下面空着的一层",
+            "保持只有一个抽屉"
+          ],
+          "must_not": [
+            "继续按十五分钟安排",
+            "声称有两个抽屉"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "利用两层文件架和两个空纸箱给出整理建议",
+            "建议需在半小时内可执行",
+            "整理出能办公的桌面空间"
+          ],
+          "must_not": [
+            "声称已实际整理书房",
+            "忽略文件架或纸箱条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "常用物品能一眼看到",
+            "纸箱尽量少用"
+          ],
+          "must_not": [
+            "把常用物品全塞进纸箱",
+            "建议大量使用纸箱收纳常用物品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的三层文件架给出建议",
+            "按更正后的二十分钟安排"
+          ],
+          "must_not": [
+            "继续按两层文件架安排",
+            "继续按半小时安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得三层和二十分钟的更正",
+            "按三层和二十分钟排出先后步骤"
+          ],
+          "must_not": [
+            "否认或忘记三层和二十分钟的更正",
+            "重新按两层或半小时安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对四层鞋柜给出整理建议",
+            "建议需在二十分钟内可执行",
+            "处理地上常穿的鞋"
+          ],
+          "must_not": [
+            "声称已实际整理鞋柜",
+            "忽略四层鞋柜条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "最下层不放容易掉的鞋以免绊倒",
+            "留一个空层放快递"
+          ],
+          "must_not": [
+            "把容易掉的鞋放在最下层",
+            "不预留放快递的空层"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的五层鞋柜给出建议",
+            "时间仍为二十分钟"
+          ],
+          "must_not": [
+            "继续按四层鞋柜安排",
+            "改变二十分钟这一时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得五层",
+            "确认快递层的位置并复述顺序"
+          ],
+          "must_not": [
+            "否认或忘记五层的更正",
+            "给出与五层不符的层数安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话总结可执行的整理顺序"
+          ],
+          "must_not": [
+            "输出多段长篇总结",
+            "遗漏五层鞋柜的关键安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

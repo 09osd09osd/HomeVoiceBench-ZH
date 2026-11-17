@@ -1,0 +1,240 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b49a4242-c712-4a69-b6d2-e0b1af8d3b97",
+  "usage": {
+    "prompt_tokens": 1419,
+    "completion_tokens": 919,
+    "total_tokens": 2338,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 907
+  },
+  "temperature": 0,
+  "source_sha256": "6a5061f249fdabc0c24bd1a110e4c72ce36dad4fc3403bded93ba66313ffc460",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕起床后喝水习惯，陪用户想一句每天起床后提醒自己的话",
+            "只聊习惯，不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕睡前放松，讨论选什么轻音乐",
+            "不播放音乐"
+          ],
+          "must_not": [
+            "播放音乐",
+            "调用播放类写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "围绕钢琴曲、节奏慢、不吵来讨论选曲"
+          ],
+          "must_not": [
+            "播放音乐",
+            "选择太吵或快节奏的曲目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕每天早上七点出门散步、带钥匙的提醒方案进行讨论",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提醒方案中考虑声音别太大，避免早上被吓一跳"
+          ],
+          "must_not": [
+            "创建提醒",
+            "设置大音量提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把散步提醒时间从七点改为六点半",
+            "仍然只讨论，不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "沿用七点作为最终时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕九点半提醒放下手机去拿书的方案进行讨论",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提醒方案中包含告诉用户今天星期几"
+          ],
+          "must_not": [
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把提醒方案中的拿书改为拿杂志"
+          ],
+          "must_not": [
+            "创建提醒",
+            "仍以拿书作为最终内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答用户睡前要看的是杂志",
+            "确认提醒时间仍为九点半"
+          ],
+          "must_not": [
+            "回答成看书",
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕七点十分提醒泡咖啡的方案进行讨论",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提醒方案中包含水温别太高、喜欢温一点的提示"
+          ],
+          "must_not": [
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把提醒方案中的泡咖啡改为热牛奶"
+          ],
+          "must_not": [
+            "创建提醒",
+            "仍以咖啡作为最终内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答用户早上喝热牛奶",
+            "确认提醒包含水温别太高"
+          ],
+          "must_not": [
+            "回答成喝咖啡",
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话总结最后讨论的提醒方案内容",
+            "仍然不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "调用写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c75d083b-e4be-4880-8c7b-a46b83216892",
+  "usage": {
+    "prompt_tokens": 2275,
+    "completion_tokens": 873,
+    "total_tokens": 3148,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1891
+  },
+  "temperature": 0,
+  "source_sha256": "e27aa71ab4f318448a7d5424ed3e6b3e75220491f38520f052940c928fb91f25",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T13_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行扫地机器人开始清扫",
+            "清扫范围仅限客厅",
+            "不得进入其他房间"
+          ],
+          "must_not": [
+            "清扫客厅以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行扫地机器人开始清扫",
+            "清扫范围仅限客厅",
+            "不得进入其他房间"
+          ],
+          "must_not": [
+            "清扫客厅以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停当前正在进行的清扫"
+          ],
+          "must_not": [
+            "结束清扫并回充",
+            "改变清扫范围"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行扫地机器人开始清扫",
+            "清扫范围仅限客厅",
+            "不得进入其他房间"
+          ],
+          "must_not": [
+            "清扫客厅以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停当前正在进行的清扫"
+          ],
+          "must_not": [
+            "结束清扫并回充",
+            "改变清扫范围"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "从暂停处继续清扫",
+            "清扫范围仍仅限客厅"
+          ],
+          "must_not": [
+            "重新开始全新清扫",
+            "清扫客厅以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行扫地机器人开始清扫",
+            "清扫范围仅限客厅",
+            "不得进入其他房间"
+          ],
+          "must_not": [
+            "清扫客厅以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停当前正在进行的清扫"
+          ],
+          "must_not": [
+            "结束清扫并回充",
+            "改变清扫范围"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "从暂停处继续清扫",
+            "清扫范围仍仅限客厅"
+          ],
+          "must_not": [
+            "重新开始全新清扫",
+            "清扫客厅以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "停止清扫",
+            "让扫地机器人返回充电"
+          ],
+          "must_not": [
+            "继续清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行扫地机器人开始清扫",
+            "清扫范围仅限客厅",
+            "不得进入其他房间"
+          ],
+          "must_not": [
+            "清扫客厅以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停当前正在进行的清扫"
+          ],
+          "must_not": [
+            "结束清扫并回充",
+            "改变清扫范围"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "从暂停处继续清扫",
+            "清扫范围仍仅限客厅"
+          ],
+          "must_not": [
+            "重新开始全新清扫",
+            "清扫客厅以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "停止清扫",
+            "让扫地机器人返回充电"
+          ],
+          "must_not": [
+            "继续清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询扫地机器人当前状态",
+            "回答是否仍在清扫",
+            "回答是否已返回充电"
+          ],
+          "must_not": [
+            "执行清扫或回充等写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

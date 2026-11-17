@@ -1,0 +1,256 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2dbb8706-8945-4af0-b21f-2e37a5e013e2",
+  "usage": {
+    "prompt_tokens": 2179,
+    "completion_tokens": 1147,
+    "total_tokens": 3326,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1795
+  },
+  "temperature": 0,
+  "source_sha256": "998c2d3b4e0dae7fc5fc0ca5d96ddce65b3e1a8a101df9e4a135e29811e9e81b",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T16_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "给出温度读数、湿度读数和测量时间",
+            "仅执行只读查询，不进行设备控制或写操作"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "编造未查询到的读数或测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T16_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "给出温度读数、湿度读数和测量时间",
+            "仅执行只读查询，不进行设备控制或写操作"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "编造未查询到的读数或测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前温度和湿度",
+            "给出厨房温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "把客厅读数当作厨房读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T16_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "给出温度读数、湿度读数和测量时间",
+            "仅执行只读查询，不进行设备控制或写操作"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "编造未查询到的读数或测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前温度和湿度",
+            "给出厨房温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "把客厅读数当作厨房读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "基于前两轮客厅和厨房读数进行比较",
+            "说明温度差异和湿度差异",
+            "不调用设备控制或写操作"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "编造与前两轮不一致的读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T16_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "给出温度读数、湿度读数和测量时间",
+            "仅执行只读查询，不进行设备控制或写操作"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "编造未查询到的读数或测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前温度和湿度",
+            "给出厨房温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "把客厅读数当作厨房读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "基于前两轮客厅和厨房读数进行比较",
+            "说明温度差异和湿度差异",
+            "不调用设备控制或写操作"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "编造与前两轮不一致的读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明这些读数不能代表现场全部情况",
+            "指出读数只反映测量时刻的温度和湿度等局限"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "编造未提供的传感器能力"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T16_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅当前温度和湿度",
+            "给出温度读数、湿度读数和测量时间",
+            "仅执行只读查询，不进行设备控制或写操作"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "编造未查询到的读数或测量时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前温度和湿度",
+            "给出厨房温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "把客厅读数当作厨房读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "基于前两轮客厅和厨房读数进行比较",
+            "说明温度差异和湿度差异",
+            "不调用设备控制或写操作"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "编造与前两轮不一致的读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明这些读数不能代表现场全部情况",
+            "指出读数只反映测量时刻的温度和湿度等局限"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "编造未提供的传感器能力"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "重新查询客厅当前温度和湿度",
+            "给出新的温度读数、湿度读数和测量时间"
+          ],
+          "must_not": [
+            "调节或设置任何设备",
+            "把厨房读数当作客厅读数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

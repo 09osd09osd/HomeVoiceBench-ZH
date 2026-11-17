@@ -1,0 +1,235 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "281f7354-bc99-4a69-8977-933061fd8777",
+  "usage": {
+    "prompt_tokens": 2010,
+    "completion_tokens": 934,
+    "total_tokens": 2944,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1626
+  },
+  "temperature": 0,
+  "source_sha256": "780ec61db14cff6e4cec5dccaa9d00e5d954f98155f31cc0aa7194d8cd9d4747",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T27_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《安静钢琴》定位到第45秒"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T27_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《安静钢琴》定位到第45秒"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才的《安静钢琴》内容"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T27_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《安静钢琴》定位到第45秒"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才的《安静钢琴》内容"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前这段《安静钢琴》内容"
+          ],
+          "must_not": [
+            "停止并清空播放进度",
+            "更换为其他曲目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T27_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《安静钢琴》定位到第45秒"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才的《安静钢琴》内容"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前这段《安静钢琴》内容"
+          ],
+          "must_not": [
+            "停止并清空播放进度",
+            "更换为其他曲目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前这段内容定位到第70秒",
+            "定位后保持暂停状态"
+          ],
+          "must_not": [
+            "定位后自动开始播放",
+            "更换为其他曲目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T27_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《安静钢琴》定位到第45秒"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才的《安静钢琴》内容"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前这段《安静钢琴》内容"
+          ],
+          "must_not": [
+            "停止并清空播放进度",
+            "更换为其他曲目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前这段内容定位到第70秒",
+            "定位后保持暂停状态"
+          ],
+          "must_not": [
+            "定位后自动开始播放",
+            "更换为其他曲目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "停止当前这段内容的播放"
+          ],
+          "must_not": [
+            "更换为其他曲目",
+            "开始播放其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "86c282e8-c5c9-4ce1-8302-0f0b52a3cf3b",
+  "usage": {
+    "prompt_tokens": 1694,
+    "completion_tokens": 1007,
+    "total_tokens": 2701,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1310
+  },
+  "temperature": 0,
+  "source_sha256": "61463cca24ffc7bc3c25f9db19378a887a78059e9ccbd2c29389c7b098ec09cf",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C10_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想安排先做什么后做什么的聊天意图",
+            "保持只聊不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想安排先做什么后做什么的聊天意图",
+            "保持只聊不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户先做轻松、难的后置的排序偏好",
+            "保持聊天不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "把用户未说的具体事项当成既定内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想安排先做什么后做什么的聊天意图",
+            "保持只聊不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户先做轻松、难的后置的排序偏好",
+            "保持聊天不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "把用户未说的具体事项当成既定内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为先做简单的而非先做轻松的",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "继续沿用先做轻松的说法",
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想安排先做什么后做什么的聊天意图",
+            "保持只聊不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户先做轻松、难的后置的排序偏好",
+            "保持聊天不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "把用户未说的具体事项当成既定内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为先做简单的而非先做轻松的",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "继续沿用先做轻松的说法",
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户更正的是先做简单的而非先做轻松的",
+            "按该更正继续聊"
+          ],
+          "must_not": [
+            "记错更正内容",
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想安排先做什么后做什么的聊天意图",
+            "保持只聊不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户先做轻松、难的后置的排序偏好",
+            "保持聊天不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "把用户未说的具体事项当成既定内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为先做简单的而非先做轻松的",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "继续沿用先做轻松的说法",
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户更正的是先做简单的而非先做轻松的",
+            "按该更正继续聊"
+          ],
+          "must_not": [
+            "记错更正内容",
+            "创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短方式收尾",
+            "保持不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "输出冗长内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

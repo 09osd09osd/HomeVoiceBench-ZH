@@ -1,0 +1,268 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d3ca57a0-101a-4aeb-adba-063b5e913bfe",
+  "usage": {
+    "prompt_tokens": 2926,
+    "completion_tokens": 1020,
+    "total_tokens": 3946,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2542
+  },
+  "temperature": 0,
+  "source_sha256": "73a61d61b17ab1b71e018400b6252d6a2032663650c535865d7ab8ac5be68aab",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T21_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性闹钟",
+            "时间为明天早上9点",
+            "提醒内容为收阳台毛巾",
+            "目标设备为卧室音箱"
+          ],
+          "must_not": [
+            "创建重复闹钟",
+            "更改提醒内容",
+            "更改目标设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性闹钟",
+            "时间为明天早上9点",
+            "提醒内容为收阳台毛巾",
+            "目标设备为卧室音箱"
+          ],
+          "must_not": [
+            "创建重复闹钟",
+            "更改提醒内容",
+            "更改目标设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的闹钟时间改为明天9点半",
+            "保留原提醒内容收阳台毛巾"
+          ],
+          "must_not": [
+            "新建另一个闹钟",
+            "更改提醒内容",
+            "取消该闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性闹钟",
+            "时间为明天早上9点",
+            "提醒内容为收阳台毛巾",
+            "目标设备为卧室音箱"
+          ],
+          "must_not": [
+            "创建重复闹钟",
+            "更改提醒内容",
+            "更改目标设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的闹钟时间改为明天9点半",
+            "保留原提醒内容收阳台毛巾"
+          ],
+          "must_not": [
+            "新建另一个闹钟",
+            "更改提醒内容",
+            "取消该闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性闹钟",
+            "时间为明天早上9点",
+            "提醒内容为收阳台毛巾",
+            "目标设备为卧室音箱"
+          ],
+          "must_not": [
+            "创建重复闹钟",
+            "更改提醒内容",
+            "更改目标设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的闹钟时间改为明天9点半",
+            "保留原提醒内容收阳台毛巾"
+          ],
+          "must_not": [
+            "新建另一个闹钟",
+            "更改提醒内容",
+            "取消该闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条闹钟",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性闹钟",
+            "时间为明天早上9点",
+            "提醒内容为收阳台毛巾",
+            "目标设备为卧室音箱"
+          ],
+          "must_not": [
+            "创建重复闹钟",
+            "更改提醒内容",
+            "更改目标设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的闹钟时间改为明天9点半",
+            "保留原提醒内容收阳台毛巾"
+          ],
+          "must_not": [
+            "新建另一个闹钟",
+            "更改提醒内容",
+            "取消该闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条闹钟",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排",
+            "确认刚才那条闹钟是否已取消"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

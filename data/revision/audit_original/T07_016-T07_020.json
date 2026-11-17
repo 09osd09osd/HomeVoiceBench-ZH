@@ -1,0 +1,256 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a7530070-a0c0-49dc-9a40-6e83c69ac4c1",
+  "usage": {
+    "prompt_tokens": 2335,
+    "completion_tokens": 1075,
+    "total_tokens": 3410,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1951
+  },
+  "temperature": 0,
+  "source_sha256": "0e6b55d2756472eeecf5e15e429b500618519e28360f267bd21b4867ac877453",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T07_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "先查询客厅灯是否支持色温调节",
+            "若不支持则告知支持的色温范围",
+            "不修改客厅灯任何设置"
+          ],
+          "must_not": [
+            "在用户未授权前调整客厅灯色温",
+            "声称已把色温设为9000K"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "先查询客厅灯是否支持色温调节",
+            "若不支持则告知支持的色温范围",
+            "不修改客厅灯任何设置"
+          ],
+          "must_not": [
+            "在用户未授权前调整客厅灯色温",
+            "声称已把色温设为9000K"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯色温设为3500K",
+            "仅调整色温"
+          ],
+          "must_not": [
+            "改动客厅灯其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "先查询客厅灯是否支持色温调节",
+            "若不支持则告知支持的色温范围",
+            "不修改客厅灯任何设置"
+          ],
+          "must_not": [
+            "在用户未授权前调整客厅灯色温",
+            "声称已把色温设为9000K"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯色温设为3500K",
+            "仅调整色温"
+          ],
+          "must_not": [
+            "改动客厅灯其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前色温",
+            "查询客厅灯当前开关状态",
+            "不调整客厅灯"
+          ],
+          "must_not": [
+            "修改客厅灯色温或开关状态",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "先查询客厅灯是否支持色温调节",
+            "若不支持则告知支持的色温范围",
+            "不修改客厅灯任何设置"
+          ],
+          "must_not": [
+            "在用户未授权前调整客厅灯色温",
+            "声称已把色温设为9000K"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯色温设为3500K",
+            "仅调整色温"
+          ],
+          "must_not": [
+            "改动客厅灯其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前色温",
+            "查询客厅灯当前开关状态",
+            "不调整客厅灯"
+          ],
+          "must_not": [
+            "修改客厅灯色温或开关状态",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "保留客厅灯色温设置"
+          ],
+          "must_not": [
+            "修改客厅灯色温",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "先查询客厅灯是否支持色温调节",
+            "若不支持则告知支持的色温范围",
+            "不修改客厅灯任何设置"
+          ],
+          "must_not": [
+            "在用户未授权前调整客厅灯色温",
+            "声称已把色温设为9000K"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯色温设为3500K",
+            "仅调整色温"
+          ],
+          "must_not": [
+            "改动客厅灯其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前色温",
+            "查询客厅灯当前开关状态",
+            "不调整客厅灯"
+          ],
+          "must_not": [
+            "修改客厅灯色温或开关状态",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "保留客厅灯色温设置"
+          ],
+          "must_not": [
+            "修改客厅灯色温",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅灯当前开关状态",
+            "不改动其他设备"
+          ],
+          "must_not": [
+            "修改客厅灯开关状态",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

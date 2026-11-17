@@ -1,0 +1,281 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d8f70951-b41a-45f2-bd25-549f71ba678d",
+  "usage": {
+    "prompt_tokens": 1552,
+    "completion_tokens": 1209,
+    "total_tokens": 2761,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1040
+  },
+  "temperature": 0,
+  "source_sha256": "db98f479cc41bf2a22ef6997e3b2465806d3014afe7a213fa95adfcdf8681b62",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C09_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周末带妻子和两个孩子去公园野餐给出推荐",
+            "考虑预算300元",
+            "考虑游玩约4小时",
+            "考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "编造用户未提供的具体地点或价格事实",
+            "忽略预算或人数约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周末带妻子和两个孩子去公园野餐给出推荐",
+            "考虑预算300元",
+            "考虑游玩约4小时",
+            "考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "编造用户未提供的具体地点或价格事实",
+            "忽略预算或人数约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按六人重新考虑安排",
+            "保持预算300元",
+            "保持游玩约4小时",
+            "考虑草坪和游乐设施"
+          ],
+          "must_not": [
+            "沿用两人或四人的旧人数",
+            "擅自提高预算或改变时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六带妻子和两个孩子去公园野餐给出推荐",
+            "考虑预算300元",
+            "考虑游玩约4小时",
+            "考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "编造用户未提供的具体地点或价格事实",
+            "忽略预算或人数约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按六人重新考虑安排",
+            "保持预算300元",
+            "保持游玩约4小时",
+            "考虑草坪和游乐设施"
+          ],
+          "must_not": [
+            "沿用两人或四人的旧人数",
+            "擅自提高预算或改变时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将出行日期更正为周日",
+            "保持六人",
+            "保持预算300元",
+            "保持游玩约4小时",
+            "保持草坪和游乐设施要求"
+          ],
+          "must_not": [
+            "仍按周六安排",
+            "改变人数、预算或时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六带妻子和两个孩子去公园野餐给出推荐",
+            "考虑预算300元",
+            "考虑游玩约4小时",
+            "考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "编造用户未提供的具体地点或价格事实",
+            "忽略预算或人数约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按六人重新考虑安排",
+            "保持预算300元",
+            "保持游玩约4小时",
+            "考虑草坪和游乐设施"
+          ],
+          "must_not": [
+            "沿用两人或四人的旧人数",
+            "擅自提高预算或改变时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将出行日期更正为周日",
+            "保持六人",
+            "保持预算300元",
+            "保持游玩约4小时",
+            "保持草坪和游乐设施要求"
+          ],
+          "must_not": [
+            "仍按周六安排",
+            "改变人数、预算或时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认出行日期为周日",
+            "考虑无车需坐公交",
+            "说明推荐地点公交是否方便"
+          ],
+          "must_not": [
+            "忘记周日这一更正",
+            "假设用户有车"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六带妻子和两个孩子去公园野餐给出推荐",
+            "考虑预算300元",
+            "考虑游玩约4小时",
+            "考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "编造用户未提供的具体地点或价格事实",
+            "忽略预算或人数约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按六人重新考虑安排",
+            "保持预算300元",
+            "保持游玩约4小时",
+            "考虑草坪和游乐设施"
+          ],
+          "must_not": [
+            "沿用两人或四人的旧人数",
+            "擅自提高预算或改变时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将出行日期更正为周日",
+            "保持六人",
+            "保持预算300元",
+            "保持游玩约4小时",
+            "保持草坪和游乐设施要求"
+          ],
+          "must_not": [
+            "仍按周六安排",
+            "改变人数、预算或时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认出行日期为周日",
+            "考虑无车需坐公交",
+            "说明推荐地点公交是否方便"
+          ],
+          "must_not": [
+            "忘记周日这一更正",
+            "假设用户有车"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用两三句话总结安排",
+            "包含周日",
+            "包含六个人",
+            "包含预算300元",
+            "包含4小时",
+            "包含有草坪和游乐设施的公园"
+          ],
+          "must_not": [
+            "总结遗漏周日或六人等关键约束",
+            "超过两三句话的篇幅"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

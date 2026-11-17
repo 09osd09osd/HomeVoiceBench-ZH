@@ -1,0 +1,240 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d3558320-eb33-42e8-b593-36644c0ff3b5",
+  "usage": {
+    "prompt_tokens": 1956,
+    "completion_tokens": 1012,
+    "total_tokens": 2968,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1444
+  },
+  "temperature": 0,
+  "source_sha256": "72a6221bb118db7e02b202e4d47a993f46704273bdd6e7eaa2a009357e3cc0b4",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C11_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单、孩子能懂的话解释彩虹成因",
+            "语气简短温和，体谅用户有点累"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "提及用户未要求的设备操作或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释下雨成因"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "提及用户未要求的设备操作或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用孩子能懂的小比喻解释下雨",
+            "回答简短，体谅用户有点累"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "忽略简短要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释白天和黑夜成因"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "提及用户未要求的设备操作或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用孩子能懂的话解释白天和黑夜",
+            "回答简短，体谅用户有点累"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "忽略简短要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正，把比喻从陀螺改为旋转木马重新解释白天和黑夜"
+          ],
+          "must_not": [
+            "继续使用陀螺比喻",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释月亮圆缺成因"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "提及用户未要求的设备操作或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用孩子能懂的话解释月亮圆缺",
+            "回答简短，体谅用户有点累"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "忽略简短要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正，把比喻中的手电筒改为台灯重新解释"
+          ],
+          "must_not": [
+            "继续使用手电筒比喻",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户改的是台灯而非手电筒",
+            "用台灯比喻再向孩子解释一遍"
+          ],
+          "must_not": [
+            "说成手电筒",
+            "否认或忘记用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释风的成因"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "提及用户未要求的设备操作或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用孩子能懂的话解释风",
+            "回答简短，体谅用户有点累"
+          ],
+          "must_not": [
+            "使用过于专业或冗长的解释",
+            "忽略简短要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正，把比喻从小蚂蚁改为小气球重新解释"
+          ],
+          "must_not": [
+            "继续使用小蚂蚁比喻",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户改的是小气球而非小蚂蚁",
+            "用小气球比喻再向孩子解释一遍"
+          ],
+          "must_not": [
+            "说成小蚂蚁",
+            "否认或忘记用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短收尾解释风"
+          ],
+          "must_not": [
+            "输出冗长内容",
+            "忽略用户太累、要求简短收尾"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

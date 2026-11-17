@@ -1,0 +1,246 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "27a67005-5c1a-4a4d-ac3d-887055cc0f2c",
+  "usage": {
+    "prompt_tokens": 1740,
+    "completion_tokens": 869,
+    "total_tokens": 2609,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1228
+  },
+  "temperature": 0,
+  "source_sha256": "5433006176de98a4dd2a9a97712022513002882d21ad8e100b71a1db8e59c467",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出厨房用品谜语",
+            "一次给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出动物谜语",
+            "给三次提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给提示",
+            "提示包含生活在哪里"
+          ],
+          "must_not": [
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出水果谜语",
+            "每次给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给提示",
+            "提示包含一般长在哪儿"
+          ],
+          "must_not": [
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：主要长在亚热带",
+            "不再说热带"
+          ],
+          "must_not": [
+            "否认用户更正",
+            "继续坚持热带"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出家用电器谜语",
+            "一次给一条提示",
+            "不提前说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "给第二条提示",
+            "提示包含怎么用"
+          ],
+          "must_not": [
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：放在卧室",
+            "不再说放在客厅"
+          ],
+          "must_not": [
+            "否认用户更正",
+            "继续坚持客厅"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得放在卧室"
+          ],
+          "must_not": [
+            "回答放在客厅",
+            "否认此前更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出交通工具谜语",
+            "每次给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给提示",
+            "提示包含一般停在哪儿"
+          ],
+          "must_not": [
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：三个轮子",
+            "不再说两个轮子"
+          ],
+          "must_not": [
+            "否认用户更正",
+            "继续坚持两个轮子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得是三个轮子"
+          ],
+          "must_not": [
+            "回答两个轮子",
+            "否认此前更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "直接说答案"
+          ],
+          "must_not": [
+            "继续给提示",
+            "拒绝揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

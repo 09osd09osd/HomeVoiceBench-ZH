@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C15_020",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "猜交通工具，更正数量后收尾",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261136,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C15_016-020.json"
+      "data/authoring/C15_016-020.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -928,7 +929,7 @@
     "nodes": [
       {
         "id": "U1",
-        "user_text": "我们猜交通工具吧，你出题，每次给一条提示，别直接说答案。",
+        "user_text": "我们猜交通工具吧，先限定是两个轮子的。你自选一种，每次给一条提示，别直接说答案。",
         "tone": "自然",
         "next_node_id": "U2",
         "clarification_branches": [],
@@ -944,7 +945,7 @@
       },
       {
         "id": "U3",
-        "user_text": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+        "user_text": "把轮子数量从两个改成三个，你可以重新选一种符合条件的交通工具，其他规则不变。",
         "tone": "自然",
         "next_node_id": "U4",
         "clarification_branches": [],
@@ -997,9 +998,9 @@
           "asset_id": "C15_020_U1",
           "node_id": "U1",
           "status": "verified",
-          "path": "assets/audio/input/748b98fafc5868ca6733c3c0d1829cf0.wav",
-          "sha256": "1527b4cef00cc31c4756117dff95fa472fc6bfc6b282e2fb032a0dcb15f177ca",
-          "duration_s": 3.8,
+          "path": "assets/audio/input/3c4c35d8703056c9a9f75ff6de7d7c2d.wav",
+          "sha256": "b171a4e63697845d9adeb06310849bfa918d6fc003c9226c2bb4c9a10376c9ec",
+          "duration_s": 5.08,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1008,9 +1009,9 @@
           "seed": 42,
           "tone": "自然",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我们猜交通工具吧，你出题，每次给一条提示，别直接说答案。",
+          "transcript_gt": "我们猜交通工具吧，先限定是两个轮子的。你自选一种，每次给一条提示，别直接说答案。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我们猜交通工具吧，你出题，每次给一条提示，别直接说答案。",
+          "qc_asr_text": "我们猜交通工具吧，先限定是两个轮子的。你自选一种，每次给一条提示，别直接说答案。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1043,9 +1044,9 @@
           "asset_id": "C15_020_U3",
           "node_id": "U3",
           "status": "verified",
-          "path": "assets/audio/input/3cf48aba16da8836dae6672e990b4bb8.wav",
-          "sha256": "9389eaae4b578a75f503e63687c32c7689d1af5cd4eebef7e9265cc72e3c3b39",
-          "duration_s": 2.6,
+          "path": "assets/audio/input/e7eb91fc6f64cd8a2a515ec8bf3fe858.wav",
+          "sha256": "e7dc2c08fbb0333ec7a4d4ef0eb9891692f46e31edd3f5e3db488fdfbc7e8640",
+          "duration_s": 5.32,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1054,9 +1055,9 @@
           "seed": 42,
           "tone": "自然",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+          "transcript_gt": "把轮子数量从两个改成三个，你可以重新选一种符合条件的交通工具，其他规则不变。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "更正一下，刚才说两个轮子不对，是三个轮子的。",
+          "qc_asr_text": "把轮子数量从两个改成三个，你可以重新选一种符合条件的交通工具，其他规则不变。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1135,7 +1136,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1914,7 +1915,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1947,24 +1948,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -2099,7 +2100,142 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "猜交通工具",
+            "限定两个轮子",
+            "助手自选一种",
+            "每次给一条提示",
+            "不直接说答案",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给多条提示"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "再给提示",
+            "提示说明一般停在哪儿",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "直接说出谜底"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "轮子数量从两个改为三个",
+            "可重新选一种符合三轮条件的交通工具",
+            "其他规则不变",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "仍坚持两个轮子",
+            "直接说出谜底"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "回答轮子数量为三个",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "回答两个轮子"
+          ]
+        },
+        {
+          "node_id": "U5",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "简短收尾",
+            "直接说出答案",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "继续只给提示不说答案"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -2108,31 +2244,32 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "好，猜一种交通工具：它有两个轮子，用脚蹬才能走。你猜是什么？"
+        "assistant_text": "预期要点：猜交通工具；限定两个轮子；助手自选一种；每次给一条提示；不直接说答案；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：直接说出谜底；一次给多条提示。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "它一般停在车棚或者路边，很多人短途出行会用它。有答案了吗？"
+        "assistant_text": "预期要点：再给提示；提示说明一般停在哪儿；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：直接说出谜底。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "明白，更正记住了：这种交通工具是三个轮子的。还要再提示吗？"
+        "assistant_text": "预期要点：轮子数量从两个改为三个；可重新选一种符合三轮条件的交通工具；其他规则不变；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：仍坚持两个轮子；直接说出谜底。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，你更正过，是三个轮子。现在能猜出来了吗？"
+        "assistant_text": "预期要点：回答轮子数量为三个；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：回答两个轮子。"
       },
       {
         "node_id": "U5",
         "calls": [],
-        "assistant_text": "答案是三轮车。谜底揭晓，游戏结束。"
+        "assistant_text": "预期要点：简短收尾；直接说出答案；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：继续只给提示不说答案。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -2144,7 +2281,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

@@ -1,0 +1,244 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "37cf10e6-c39b-4bea-8bea-11909c7cdd86",
+  "usage": {
+    "prompt_tokens": 1691,
+    "completion_tokens": 1002,
+    "total_tokens": 2693,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1691
+  },
+  "temperature": 0,
+  "source_sha256": "9a946b67df0c15aa883a6432421c3d06070d4fbd60c1249061b4e3cf24839f1d",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C03_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户加班到八点、很累的感受",
+            "明确表示不给建议、愿意倾听"
+          ],
+          "must_not": [
+            "给出建议或解决办法",
+            "追问加班细节以推动分析"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户被领导当众批评后的憋闷感受",
+            "明确表示不出主意、愿意倾听"
+          ],
+          "must_not": [
+            "给出建议或主意",
+            "评价领导或用户对错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不分析谁对谁错、不评价",
+            "继续表示愿意倾听"
+          ],
+          "must_not": [
+            "分析事件对错",
+            "评价用户或领导"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户家里事多、喘不过气的感受",
+            "明确表示不劝、不急着给办法"
+          ],
+          "must_not": [
+            "劝说或给办法",
+            "催促用户快速解决"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不说“想开点”之类的话",
+            "表达陪伴和倾听"
+          ],
+          "must_not": [
+            "说“想开点”等劝慰套话",
+            "给出建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为“这一个星期”而非“这两天”",
+            "复述事情越堆越多并表达理解"
+          ],
+          "must_not": [
+            "仍沿用“这两天”",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户项目出问题后心里堵的感受",
+            "明确表示不讲大道理、愿意倾听"
+          ],
+          "must_not": [
+            "讲大道理",
+            "给出建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不问下一步打算",
+            "继续表示陪伴倾听"
+          ],
+          "must_not": [
+            "追问接下来怎么办",
+            "催促用户想办法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为“汇报时出了岔子、项目本身没失败”"
+          ],
+          "must_not": [
+            "仍说项目搞砸/失败",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得更正内容：汇报出岔子而非项目失败"
+          ],
+          "must_not": [
+            "表示不记得或弄混",
+            "重新说成项目失败"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户孩子发烧折腾、快撑不住的感受",
+            "明确表示不给建议、愿意倾听"
+          ],
+          "must_not": [
+            "给出建议",
+            "提供医疗判断"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不说“当妈都这样”之类的话",
+            "表达理解用户累和心疼"
+          ],
+          "must_not": [
+            "说“当妈都这样”等套话",
+            "给出建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为“半夜两点到早上六点、断断续续没睡成”而非一整夜"
+          ],
+          "must_not": [
+            "仍说一整夜",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得时间是半夜两点到早上六点、不是一整夜"
+          ],
+          "must_not": [
+            "表示不记得或弄混",
+            "重新说成一整夜"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短收尾",
+            "表达辛苦了、好好歇着"
+          ],
+          "must_not": [
+            "展开长篇分析或建议",
+            "继续追问细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

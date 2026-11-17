@@ -1,0 +1,251 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "93249cfb-51df-4b3a-bdd3-c069a5f1e3dc",
+  "usage": {
+    "prompt_tokens": 2128,
+    "completion_tokens": 1128,
+    "total_tokens": 3256,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1744
+  },
+  "temperature": 0,
+  "source_sha256": "171a3c194cda28bce56314bc78e70ae73970c816e5d8068ed8c7014f38a9c283",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C06_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句可直接对妈妈说的缓和/道歉话",
+            "话中承认自己因洗碗的事语气/态度不好",
+            "表达愿意晚点再聊、不逼迫对方立刻回应"
+          ],
+          "must_not": [
+            "要求妈妈立刻原谅或立刻回应",
+            "把责任全部推给妈妈"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句可直接对爸爸说的道歉话",
+            "承认早上说话冲/语气急是自己的问题",
+            "表达今晚回家说、不让事情过夜"
+          ],
+          "must_not": [
+            "要求爸爸立刻回应或原谅"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把道歉话缩短到一句",
+            "不煽情",
+            "不提及具体时间，只说回头聊"
+          ],
+          "must_not": [
+            "出现具体时间点或时间约定",
+            "保留煽情或冗长表达"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句可直接对妹妹说的缓和/道歉话",
+            "承认自己因妹妹动东西发火、说话重",
+            "表达愿意沟通如何避免再发生"
+          ],
+          "must_not": [
+            "要求妹妹立刻接受或原谅"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在道歉话中加入让妹妹下次先问自己的边界要求",
+            "不把错全揽在自己身上"
+          ],
+          "must_not": [
+            "把责任全部推给妹妹",
+            "省略下次先问的边界"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把时间从昨天更正为前天晚上",
+            "保留U2中道歉加边界的内容"
+          ],
+          "must_not": [
+            "仍说昨天",
+            "丢失下次先问的边界要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句可直接对爱人说的缓和/道歉话",
+            "承认自己因孩子写作业的事语气不好",
+            "表达愿意找机会单独聊、不让孩子觉得冷战"
+          ],
+          "must_not": [
+            "要求爱人立刻回应或原谅",
+            "当着孩子面提这件事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "改为等孩子睡了再说、不当着孩子面提",
+            "避开“对不起”三个字，用其他说法表达歉意"
+          ],
+          "must_not": [
+            "出现“对不起”三个字",
+            "当着孩子面提这件事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把起因从写作业更正为练琴",
+            "保留等孩子睡了再说、避开“对不起”的要求"
+          ],
+          "must_not": [
+            "仍说写作业",
+            "出现“对不起”三个字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得改的是练琴的事",
+            "复述更正后的那句道歉话"
+          ],
+          "must_not": [
+            "说成写作业",
+            "出现“对不起”三个字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句可直接对婆婆说的缓和/道歉话",
+            "承认自己因婆婆不敲门进房间说了重话",
+            "表达希望进房间前敲门"
+          ],
+          "must_not": [
+            "要求婆婆立刻原谅或回应"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "表明自己直接跟婆婆说、不让爱人传话",
+            "去掉“不欢迎”这类解释性表达"
+          ],
+          "must_not": [
+            "出现“不欢迎”字样",
+            "让爱人夹在中间传话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把时间从前两天更正为上周日",
+            "保留自己直接说、不出现“不欢迎”、进房间前敲门的内容"
+          ],
+          "must_not": [
+            "仍说前两天",
+            "出现“不欢迎”字样"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得改的是上周日",
+            "复述更正后的那句道歉话"
+          ],
+          "must_not": [
+            "说成前两天",
+            "出现“不欢迎”字样"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "把最后那句收短成一句能说完的话",
+            "保留上周日、道歉、敲门、好好说的核心内容"
+          ],
+          "must_not": [
+            "拆成多句冗长表达",
+            "丢失上周日或敲门要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

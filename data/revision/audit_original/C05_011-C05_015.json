@@ -1,0 +1,257 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c4be12e8-8b71-4123-9529-ab69156818b9",
+  "usage": {
+    "prompt_tokens": 2006,
+    "completion_tokens": 1203,
+    "total_tokens": 3209,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1622
+  },
+  "temperature": 0,
+  "source_sha256": "83fdc41cf322fe94cd9c68d29377028ee4546f5db032d1de5b8a0b8de42969eb",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C05_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户下班后做饭打扫撑不住的感受",
+            "提供与家人商量分担家务且不指责的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户下班后做饭打扫撑不住的感受",
+            "提供与家人商量分担家务且不指责的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户周一到周五晚上没空、最好周末白天谈的时间限制给出沟通建议",
+            "保持不指责的表达方向"
+          ],
+          "must_not": [
+            "建议安排在周一到周五晚上",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户下班后做饭打扫撑不住的感受",
+            "提供与家人商量分担家务且不指责的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户周一到周五晚上没空、最好周末白天谈的时间限制给出沟通建议",
+            "保持不指责的表达方向"
+          ],
+          "must_not": [
+            "建议安排在周一到周五晚上",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "采纳更正后的时间：周六上午",
+            "体现周日要陪孩子上课外班",
+            "保持不指责的表达方向"
+          ],
+          "must_not": [
+            "仍建议周末白天泛指而不采纳周六上午的更正",
+            "建议周日谈家务分工",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户下班后做饭打扫撑不住的感受",
+            "提供与家人商量分担家务且不指责的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户周一到周五晚上没空、最好周末白天谈的时间限制给出沟通建议",
+            "保持不指责的表达方向"
+          ],
+          "must_not": [
+            "建议安排在周一到周五晚上",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "采纳更正后的时间：周六上午",
+            "体现周日要陪孩子上课外班",
+            "保持不指责的表达方向"
+          ],
+          "must_not": [
+            "仍建议周末白天泛指而不采纳周六上午的更正",
+            "建议周日谈家务分工",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认时间是周六上午",
+            "针对把做饭和倒垃圾先分出去提供不伤人的开口建议"
+          ],
+          "must_not": [
+            "否认或记错周六上午",
+            "建议指责家人的表达",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户下班后做饭打扫撑不住的感受",
+            "提供与家人商量分担家务且不指责的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户周一到周五晚上没空、最好周末白天谈的时间限制给出沟通建议",
+            "保持不指责的表达方向"
+          ],
+          "must_not": [
+            "建议安排在周一到周五晚上",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "采纳更正后的时间：周六上午",
+            "体现周日要陪孩子上课外班",
+            "保持不指责的表达方向"
+          ],
+          "must_not": [
+            "仍建议周末白天泛指而不采纳周六上午的更正",
+            "建议周日谈家务分工",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认时间是周六上午",
+            "针对把做饭和倒垃圾先分出去提供不伤人的开口建议"
+          ],
+          "must_not": [
+            "否认或记错周六上午",
+            "建议指责家人的表达",
+            "将建议表述为唯一正确说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结周六上午该怎么开口",
+            "总结中体现周一到周五晚上没空、做饭和倒垃圾想分担、不指责"
+          ],
+          "must_not": [
+            "总结超过一两句话的篇幅要求",
+            "总结中出现指责性表达",
+            "遗漏周六上午这一时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

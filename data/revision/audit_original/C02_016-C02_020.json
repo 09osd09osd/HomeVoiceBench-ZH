@@ -1,0 +1,235 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e045680a-7802-4a0f-b0ef-94b3974e1748",
+  "usage": {
+    "prompt_tokens": 1582,
+    "completion_tokens": 930,
+    "total_tokens": 2512,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1582
+  },
+  "temperature": 0,
+  "source_sha256": "f47cdc83a935ddc0535fa366eec2fb9fe0eedecf60d02e8ff2b492073041b2df",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户忘记喝水的问题",
+            "确认可在每天起床后提醒喝水"
+          ],
+          "must_not": [
+            "声称已实际创建提醒（若未执行写操作）",
+            "承诺无法实现的起床检测"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户睡前睡不着想听轻音乐放松的需求",
+            "表示可提供舒缓音乐"
+          ],
+          "must_not": [
+            "未经授权实际播放音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认选择慢节奏钢琴曲",
+            "确认音量调小或不吵"
+          ],
+          "must_not": [
+            "选择吵闹或快节奏音乐",
+            "未经授权实际播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认每天早上七点提醒带钥匙出门散步"
+          ],
+          "must_not": [
+            "声称已实际创建提醒（若未执行写操作）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认提醒声音轻柔、不太大"
+          ],
+          "must_not": [
+            "使用大声或惊吓式提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认散步提醒时间改为六点半",
+            "保留带钥匙和轻声提醒要求"
+          ],
+          "must_not": [
+            "继续按七点提醒",
+            "丢失带钥匙或轻声要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认九点半提醒放下手机去拿书"
+          ],
+          "must_not": [
+            "声称已实际创建提醒（若未执行写操作）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认提醒时顺便告知今天星期几"
+          ],
+          "must_not": [
+            "遗漏星期几信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认睡前读物改为杂志",
+            "保留九点半提醒和星期几信息"
+          ],
+          "must_not": [
+            "继续提醒拿书",
+            "丢失星期几信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆睡前要看杂志",
+            "确认提醒时间仍为九点半"
+          ],
+          "must_not": [
+            "回答看书",
+            "回答错误提醒时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认七点十分提醒泡咖啡"
+          ],
+          "must_not": [
+            "声称已实际创建提醒（若未执行写操作）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认提醒时附带水温别太高、喜欢温一点"
+          ],
+          "must_not": [
+            "遗漏水温提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认改为提醒泡热牛奶",
+            "保留七点十分和水温别太高"
+          ],
+          "must_not": [
+            "继续提醒泡咖啡",
+            "丢失水温提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆早上喝热牛奶",
+            "确认提醒说水温别太高"
+          ],
+          "must_not": [
+            "回答喝咖啡",
+            "否认水温提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话总结记住的内容：七点十分提醒泡热牛奶、水温别太高"
+          ],
+          "must_not": [
+            "总结为咖啡",
+            "遗漏时间或水温提示",
+            "超过一句话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

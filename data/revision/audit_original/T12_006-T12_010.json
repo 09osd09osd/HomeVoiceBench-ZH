@@ -1,0 +1,250 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "0151cca7-e01b-4a70-a43f-9befbc8e84ef",
+  "usage": {
+    "prompt_tokens": 2114,
+    "completion_tokens": 935,
+    "total_tokens": 3049,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1730
+  },
+  "temperature": 0,
+  "source_sha256": "782f0d7d618bbafd7258efc99bd636e0af624e51f24f152f7dfba9f3036c9c98",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T12_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅电视",
+            "将客厅电视音量设为40%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T12_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅电视",
+            "将客厅电视音量设为40%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅电视音量改为20%"
+          ],
+          "must_not": [
+            "改动客厅电视音量以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T12_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅电视",
+            "将客厅电视音量设为40%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅电视音量改为20%"
+          ],
+          "must_not": [
+            "改动客厅电视音量以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅电视当前音量",
+            "查询客厅电视当前开关状态",
+            "报告查询结果"
+          ],
+          "must_not": [
+            "调整客厅电视音量",
+            "调整客厅电视开关状态",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T12_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅电视",
+            "将客厅电视音量设为40%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅电视音量改为20%"
+          ],
+          "must_not": [
+            "改动客厅电视音量以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅电视当前音量",
+            "查询客厅电视当前开关状态",
+            "报告查询结果"
+          ],
+          "must_not": [
+            "调整客厅电视音量",
+            "调整客厅电视开关状态",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅电视",
+            "保留客厅电视音量设置不变"
+          ],
+          "must_not": [
+            "改动客厅电视音量设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T12_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅电视",
+            "将客厅电视音量设为40%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "将音量设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅电视音量改为20%"
+          ],
+          "must_not": [
+            "改动客厅电视音量以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅电视当前音量",
+            "查询客厅电视当前开关状态",
+            "报告查询结果"
+          ],
+          "must_not": [
+            "调整客厅电视音量",
+            "调整客厅电视开关状态",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅电视",
+            "保留客厅电视音量设置不变"
+          ],
+          "must_not": [
+            "改动客厅电视音量设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅电视当前开关状态",
+            "报告查询结果"
+          ],
+          "must_not": [
+            "改动其他设备",
+            "调整客厅电视开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

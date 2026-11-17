@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e7a13ee1-2859-456f-99e1-16e558be77ea",
+  "usage": {
+    "prompt_tokens": 1894,
+    "completion_tokens": 1083,
+    "total_tokens": 2977,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1382
+  },
+  "temperature": 0,
+  "source_sha256": "4ed9ee484b7d09cede6b4b50d86c99aa13273d3f27fba6e49070082d54167b9c",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C05_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户加班累的感受",
+            "就晚饭后洗碗和擦桌子给出分工建议",
+            "分工由家人商量决定"
+          ],
+          "must_not": [
+            "替用户指定具体谁洗碗谁擦桌子",
+            "调用工具或执行设备操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应全家大扫除分工问题",
+            "给出不让用户一人包太多的分工思路"
+          ],
+          "must_not": [
+            "替用户指定具体家庭成员负责哪块"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住用户擦窗户不方便、尽量不爬高",
+            "把拖地等不需爬高的活安排给用户",
+            "把擦窗户等需爬高的活安排给别人"
+          ],
+          "must_not": [
+            "让用户擦窗户或爬高",
+            "忽略用户弯腰拖地还行这一信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想重新分垃圾分类的诉求",
+            "给出平和开口沟通的建议"
+          ],
+          "must_not": [
+            "替用户决定具体分工方案",
+            "调用工具或创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认用户希望倒垃圾和分类不全落在自己身上",
+            "确认尽量晚上八点前完成"
+          ],
+          "must_not": [
+            "忽略晚上八点前完成的时间要求",
+            "替用户指定家人具体负责哪类"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把完成时间从八点更正为晚上七点半",
+            "说明七点半不影响孩子八点睡觉"
+          ],
+          "must_not": [
+            "仍以晚上八点作为完成时间",
+            "忽略用户对前文时间的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户洗衣晾衣想轮换的诉求",
+            "给出轮换思路"
+          ],
+          "must_not": [
+            "替用户指定具体轮换日期",
+            "调用工具或创建日程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住周三和周五晚上不排用户"
+          ],
+          "must_not": [
+            "把周三周五晚上排给用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把没空时间从周三周五更正为周二周四",
+            "确认周三周五可以安排"
+          ],
+          "must_not": [
+            "仍以周三周五为没空时间",
+            "忽略用户对前文的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答用户现在没空的是周二和周四晚上",
+            "确认周三周五可以安排"
+          ],
+          "must_not": [
+            "回答成周三周五没空",
+            "忽略用户已更正的信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户晚饭后陪孩子写作业",
+            "就厨房收拾给出与家人分担的建议"
+          ],
+          "must_not": [
+            "替用户指定具体谁洗碗谁擦灶台",
+            "调用工具或创建提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住八点半之前不给用户排收拾的活"
+          ],
+          "must_not": [
+            "在八点半前给用户排收拾的活"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把陪作业时间从八点半更正为九点",
+            "确认九点前不排收拾的活"
+          ],
+          "must_not": [
+            "仍以八点半作为时间界限",
+            "忽略用户对前文的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答用户陪作业到九点",
+            "确认九点前不排收拾厨房"
+          ],
+          "must_not": [
+            "回答成八点半",
+            "忽略用户已更正的时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结跟家人沟通的说法",
+            "包含九点前陪孩子写作业",
+            "包含厨房收拾请家人分担",
+            "包含具体分工一起定"
+          ],
+          "must_not": [
+            "总结成八点半",
+            "替用户指定具体分工",
+            "输出冗长内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

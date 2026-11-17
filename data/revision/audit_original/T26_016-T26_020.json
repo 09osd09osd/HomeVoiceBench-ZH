@@ -1,0 +1,242 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e2d87b0e-7f7f-413f-952d-0a38e9cb0fed",
+  "usage": {
+    "prompt_tokens": 2022,
+    "completion_tokens": 875,
+    "total_tokens": 2897,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1638
+  },
+  "temperature": 0,
+  "source_sha256": "e0c2a2a282df05e0fd2f2e11ce31fb8af8b6fa6e3df84d583549ee90071932e3",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T26_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱正在播放的《星空小知识》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T26_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱正在播放的《星空小知识》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才暂停的《星空小知识》"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T26_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱正在播放的《星空小知识》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才暂停的《星空小知识》"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前正在播放的这段内容"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T26_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱正在播放的《星空小知识》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才暂停的《星空小知识》"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前正在播放的这段内容"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前内容定位到第90秒",
+            "定位后保持暂停状态"
+          ],
+          "must_not": [
+            "开始播放",
+            "停止播放",
+            "切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T26_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱正在播放的《星空小知识》"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容",
+            "调整音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才暂停的《星空小知识》"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前正在播放的这段内容"
+          ],
+          "must_not": [
+            "停止播放",
+            "切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前内容定位到第90秒",
+            "定位后保持暂停状态"
+          ],
+          "must_not": [
+            "开始播放",
+            "停止播放",
+            "切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "停止当前这段内容的播放"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "切换到别的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

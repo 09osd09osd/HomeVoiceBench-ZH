@@ -1,0 +1,242 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "55ea7ebc-dd45-4681-b86b-5af91d01fafe",
+  "usage": {
+    "prompt_tokens": 2335,
+    "completion_tokens": 1041,
+    "total_tokens": 3376,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1951
+  },
+  "temperature": 0,
+  "source_sha256": "14e689b2e0f461417c3a88ac430b0cd16c7f8c1a3236f96d495693543ed02643",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T13_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行让扫地机器人开始清扫的写操作",
+            "清扫范围仅限书房，不进入其他房间"
+          ],
+          "must_not": [
+            "让扫地机器人清扫书房以外的房间",
+            "声称已清扫但未实际调用设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行让扫地机器人开始清扫的写操作",
+            "清扫范围仅限书房，不进入其他房间"
+          ],
+          "must_not": [
+            "让扫地机器人清扫书房以外的房间",
+            "声称已清扫但未实际调用设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "执行暂停扫地机器人清扫的写操作"
+          ],
+          "must_not": [
+            "继续清扫",
+            "让扫地机器人回充或结束清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行让扫地机器人开始清扫的写操作",
+            "清扫范围仅限书房，不进入其他房间"
+          ],
+          "must_not": [
+            "让扫地机器人清扫书房以外的房间",
+            "声称已清扫但未实际调用设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "执行暂停扫地机器人清扫的写操作"
+          ],
+          "must_not": [
+            "继续清扫",
+            "让扫地机器人回充或结束清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "执行恢复扫地机器人清扫的写操作",
+            "恢复后清扫范围仍仅限书房"
+          ],
+          "must_not": [
+            "让扫地机器人清扫书房以外的房间",
+            "重新开始一次全新清扫而非恢复"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行让扫地机器人开始清扫的写操作",
+            "清扫范围仅限书房，不进入其他房间"
+          ],
+          "must_not": [
+            "让扫地机器人清扫书房以外的房间",
+            "声称已清扫但未实际调用设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "执行暂停扫地机器人清扫的写操作"
+          ],
+          "must_not": [
+            "继续清扫",
+            "让扫地机器人回充或结束清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "执行恢复扫地机器人清扫的写操作",
+            "恢复后清扫范围仍仅限书房"
+          ],
+          "must_not": [
+            "让扫地机器人清扫书房以外的房间",
+            "重新开始一次全新清扫而非恢复"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行让扫地机器人回充的写操作"
+          ],
+          "must_not": [
+            "继续清扫",
+            "声称已充好电"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行让扫地机器人开始清扫的写操作",
+            "清扫范围仅限书房，不进入其他房间"
+          ],
+          "must_not": [
+            "让扫地机器人清扫书房以外的房间",
+            "声称已清扫但未实际调用设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "执行暂停扫地机器人清扫的写操作"
+          ],
+          "must_not": [
+            "继续清扫",
+            "让扫地机器人回充或结束清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "执行恢复扫地机器人清扫的写操作",
+            "恢复后清扫范围仍仅限书房"
+          ],
+          "must_not": [
+            "让扫地机器人清扫书房以外的房间",
+            "重新开始一次全新清扫而非恢复"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行让扫地机器人回充的写操作"
+          ],
+          "must_not": [
+            "继续清扫",
+            "声称已充好电"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询扫地机器人当前状态",
+            "如实说明当前不在清扫、正在返回充电座、尚未充好电"
+          ],
+          "must_not": [
+            "把正在返回说成已经充好电",
+            "声称它仍在清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

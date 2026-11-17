@@ -39,7 +39,14 @@ summary=read(ROOT/'reports/summary.json');audit=read(ROOT/'reports/release_audit
 if summary['evaluation_status']!='complete' or audit['status']!='passed' or audit['scope']!='complete_release':raise ValueError('Complete, audited evaluation required for publication')
 assets=read(ROOT/'reports/release_assets.json')
 if not assets.get('inputs') or not assets.get('evaluation'):raise ValueError('All evidence archives must be ready')
+if any(not a['name'].startswith('homevoicebench-zh-v0.3-') for a in assets['inputs']+assets['evaluation']):raise ValueError('Mixed release archive versions')
 publication_path=ROOT/'reports/publication.json';record=read(publication_path) if publication_path.exists() else {}
+if record.get('release_url') and not record['release_url'].endswith('/v0.3.0'):
+    history=ROOT/'reports/revision/v0.2_publication.json'
+    if not history.exists():history.write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n','utf-8')
+    for key in ['uploaded_assets','source_archive','release_asset_count','all_assets_verified_at','release_id','commit']:
+        record.pop(key,None)
+    record.update(status='preparing_v0.3',release_url=record['repository_url']+'/releases/tag/v0.3.0')
 def save():publication_path.write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n','utf-8')
 record.pop('reason',None)
 record.update(authenticated_login=user['login'],last_auth_check_at=datetime.datetime.now(datetime.timezone.utc).isoformat())
@@ -59,7 +66,7 @@ subprocess.run([sys.executable,'-X','utf8','scripts/check_public_files.py'],cwd=
 subprocess.run([git,'-c','core.safecrlf=false','add','reports/public_file_audit.json'],cwd=ROOT,check=True)
 changed=subprocess.run([git,'diff','--cached','--quiet'],cwd=ROOT).returncode
 if changed:
-    subprocess.run([git,'-c','user.name='+user['login'],'-c',f'user.email={user["id"]}+{user["login"]}@users.noreply.github.com','commit','--quiet','-m','Release HomeVoiceBench-ZH: 1000 audio cases and audited three-system evaluation'],cwd=ROOT,check=True)
+    subprocess.run([git,'-c','user.name='+user['login'],'-c',f'user.email={user["id"]}+{user["login"]}@users.noreply.github.com','commit','--quiet','-m','Release v0.3: correct rules and source constraints; symmetric reruns and uniform audio rejudging'],cwd=ROOT,check=True)
 remote=subprocess.run([git,'remote','get-url','origin'],cwd=ROOT,capture_output=True,text=True)
 if remote.returncode:subprocess.run([git,'remote','add','origin',repo['clone_url']],cwd=ROOT,check=True)
 elif remote.stdout.strip()!=repo['clone_url']:raise ValueError('Existing origin is not the authorized new repository')
@@ -72,9 +79,9 @@ try:
     if record['pages_url']:api('PATCH',f'/repos/{repo["full_name"]}',{'homepage':record['pages_url']})
 except Exception as e:record['pages_status']='unavailable';record['pages_error']=str(e).replace(token,'[REDACTED]')[:600]
 save()
-tag='v0.2.0';release=api('GET',f'/repos/{repo["full_name"]}/releases/tags/{tag}',allow404=True)
+tag='v0.3.0';release=api('GET',f'/repos/{repo["full_name"]}/releases/tags/{tag}',allow404=True)
 if not release:
-    release=api('POST',f'/repos/{repo["full_name"]}/releases',{'tag_name':tag,'target_commitish':'main','name':'HomeVoiceBench-ZH v0.2 · 1000 audio cases','body':'包含1000道冻结题目、1648段输入语音及三条系统实际运行证据。各ZIP按内部相对路径解压至仓库根目录；SHA256见reports/release_assets.json。模型权重与密钥不分发。评分、局限及字段说明见README。','draft':True,'prerelease':False})
+    release=api('POST',f'/repos/{repo["full_name"]}/releases',{'tag_name':tag,'target_commitish':'main','name':'HomeVoiceBench-ZH v0.3 · 1000 audio cases','body':'v0.3修复时间等价、聊天只读查询、逐轮授权、开放题约束及沙箱合同。包含1000道冻结题目、1650段输入语音；51题三系统对称重跑，全部可听结果统一重新评分。各ZIP按内部相对路径解压至仓库根目录；SHA256见reports/release_assets.json。模型权重与密钥不分发。评分、局限及字段说明见README。','draft':True,'prerelease':False})
 def list_assets():return {a['name']:a for a in api('GET',f'/repos/{repo["full_name"]}/releases/{release["id"]}/assets?per_page=100')}
 def verify_asset(item,entry):
     if item.get('state')!='uploaded' or item['size']!=entry['bytes'] or item.get('digest')!='sha256:'+entry['sha256']:
@@ -143,7 +150,7 @@ def commit_and_push(message):
         subprocess.run([git,'-c','user.name='+user['login'],'-c',f'user.email={user["id"]}+{user["login"]}@users.noreply.github.com','commit','--quiet','-m',message],cwd=ROOT,check=True)
         subprocess.run([git,'push','origin','main'],cwd=ROOT,env=push_env,check=True)
 commit_and_push('Link public benchmark release and explanation website')
-if 'homevoicebench-zh-v0.2-source.zip' not in list_assets():
+if 'homevoicebench-zh-v0.3-source.zip' not in list_assets():
     subprocess.run([sys.executable,'-X','utf8','scripts/package_source.py'],cwd=ROOT,env={**env,'HOMEVOICE_GIT':git},check=True)
 source=read(ROOT/'reports/source_archive.json');record['source_archive']=source;save()
 subprocess.run([sys.executable,'-X','utf8','scripts/build_delivery_index.py'],cwd=ROOT,check=True)

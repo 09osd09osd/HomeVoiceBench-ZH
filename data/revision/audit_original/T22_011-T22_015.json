@@ -1,0 +1,256 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6ef1ddab-66d1-4325-bbb5-ba9deddb6eb0",
+  "usage": {
+    "prompt_tokens": 2586,
+    "completion_tokens": 1063,
+    "total_tokens": 3649,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2202
+  },
+  "temperature": 0,
+  "source_sha256": "8bb9c2085ac6862f9ddbb0d676355ae9101ddd5dec84d15cee0b431306faa59c",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T22_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建每天9点的提醒，内容为收阳台毛巾",
+            "从下一次（明天）开始生效"
+          ],
+          "must_not": [
+            "创建为一次性提醒",
+            "遗漏收阳台毛巾内容",
+            "把时间设为非9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T22_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建每天9点的提醒，内容为收阳台毛巾",
+            "从下一次（明天）开始生效"
+          ],
+          "must_not": [
+            "创建为一次性提醒",
+            "遗漏收阳台毛巾内容",
+            "把时间设为非9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把已创建的每天收阳台毛巾提醒时间改为9点半",
+            "保持每天重复的日期规则不变"
+          ],
+          "must_not": [
+            "改变重复频率或日期",
+            "新增另一条提醒",
+            "取消该提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T22_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建每天9点的提醒，内容为收阳台毛巾",
+            "从下一次（明天）开始生效"
+          ],
+          "must_not": [
+            "创建为一次性提醒",
+            "遗漏收阳台毛巾内容",
+            "把时间设为非9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把已创建的每天收阳台毛巾提醒时间改为9点半",
+            "保持每天重复的日期规则不变"
+          ],
+          "must_not": [
+            "改变重复频率或日期",
+            "新增另一条提醒",
+            "取消该提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排",
+            "修改或取消任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T22_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建每天9点的提醒，内容为收阳台毛巾",
+            "从下一次（明天）开始生效"
+          ],
+          "must_not": [
+            "创建为一次性提醒",
+            "遗漏收阳台毛巾内容",
+            "把时间设为非9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把已创建的每天收阳台毛巾提醒时间改为9点半",
+            "保持每天重复的日期规则不变"
+          ],
+          "must_not": [
+            "改变重复频率或日期",
+            "新增另一条提醒",
+            "取消该提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排",
+            "修改或取消任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条（每天收阳台毛巾提醒）",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排",
+            "新增安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T22_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建每天9点的提醒，内容为收阳台毛巾",
+            "从下一次（明天）开始生效"
+          ],
+          "must_not": [
+            "创建为一次性提醒",
+            "遗漏收阳台毛巾内容",
+            "把时间设为非9点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把已创建的每天收阳台毛巾提醒时间改为9点半",
+            "保持每天重复的日期规则不变"
+          ],
+          "must_not": [
+            "改变重复频率或日期",
+            "新增另一条提醒",
+            "取消该提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排",
+            "修改或取消任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条（每天收阳台毛巾提醒）",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排",
+            "新增安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排还剩什么",
+            "确认刚才那条（每天收阳台毛巾提醒）是否已取消"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改或取消任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

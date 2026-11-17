@@ -1,0 +1,261 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c40632d6-37d3-40a4-9420-566537ec5502",
+  "usage": {
+    "prompt_tokens": 1500,
+    "completion_tokens": 960,
+    "total_tokens": 2460,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 988
+  },
+  "temperature": 0,
+  "source_sha256": "60ab4438a5374c2b150f115046a3e03bde5943496a688129eed95136a6221ca4",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C03_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以倾听为主回应",
+            "不主动给出建议或解决方案"
+          ],
+          "must_not": [
+            "给用户出主意",
+            "提供具体解决步骤",
+            "评价用户或领导"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以倾听和共情回应",
+            "不急于劝说"
+          ],
+          "must_not": [
+            "急着劝用户",
+            "评价朋友对错",
+            "给解决方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "表示愿意听用户把话说完",
+            "不打断用户"
+          ],
+          "must_not": [
+            "评理",
+            "打断或抢话",
+            "催促用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以倾听和共情回应",
+            "不讲大道理"
+          ],
+          "must_not": [
+            "讲大道理",
+            "评价同事对错",
+            "给职场建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "陪伴式倾听",
+            "让用户吐槽"
+          ],
+          "must_not": [
+            "给职场建议",
+            "分析对错",
+            "评价用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户对事发场景的更正（会后走廊而非开会时）",
+            "继续倾听"
+          ],
+          "must_not": [
+            "坚持原场景",
+            "指出用户前后矛盾并批评",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以倾听和共情回应",
+            "不替用户安排事务"
+          ],
+          "must_not": [
+            "给用户安排这安排那",
+            "提供任务清单",
+            "评价用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "让用户倒苦水",
+            "不评价用户"
+          ],
+          "must_not": [
+            "说要调整心态",
+            "评价用户",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受老人复查时间更正为下周三",
+            "理解当前主要是孩子作业和家务忙"
+          ],
+          "must_not": [
+            "坚持复查是这周",
+            "忽略更正",
+            "给安排建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户更正过的老人复查时间（下周三）"
+          ],
+          "must_not": [
+            "说成这周",
+            "否认用户改过",
+            "编造未提及的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以倾听和共情回应",
+            "不急于给建议"
+          ],
+          "must_not": [
+            "急着给建议",
+            "评价用户能力",
+            "讲复盘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "陪伴式倾听",
+            "帮用户顺气"
+          ],
+          "must_not": [
+            "讲复盘",
+            "讲下次怎么改",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受领导原话更正为数据支撑不够、未否定方向"
+          ],
+          "must_not": [
+            "坚持方向被否定",
+            "忽略更正",
+            "批评用户记错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答领导说的是数据支撑不够",
+            "不把方向不对当作领导原话"
+          ],
+          "must_not": [
+            "说领导否定方向",
+            "编造其他批评内容",
+            "否认用户更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短收尾",
+            "表达温暖支持"
+          ],
+          "must_not": [
+            "长篇大论",
+            "继续追问细节",
+            "给建议清单"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

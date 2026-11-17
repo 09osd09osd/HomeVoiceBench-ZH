@@ -1,0 +1,242 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "f6292ba6-2a7f-42cd-8a24-243ed4347fc6",
+  "usage": {
+    "prompt_tokens": 2154,
+    "completion_tokens": 927,
+    "total_tokens": 3081,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1770
+  },
+  "temperature": 0,
+  "source_sha256": "4701c373943aec87ecb92cbc44787ea254de69b84803e834095a57b252d82015",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T11_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅净化器",
+            "将客厅净化器模式设为睡眠"
+          ],
+          "must_not": [
+            "调整客厅净化器以外的设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T11_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅净化器",
+            "将客厅净化器模式设为睡眠"
+          ],
+          "must_not": [
+            "调整客厅净化器以外的设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的客厅净化器模式改为自动"
+          ],
+          "must_not": [
+            "改变客厅净化器的开关状态",
+            "调整客厅净化器的其他设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T11_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅净化器",
+            "将客厅净化器模式设为睡眠"
+          ],
+          "must_not": [
+            "调整客厅净化器以外的设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的客厅净化器模式改为自动"
+          ],
+          "must_not": [
+            "改变客厅净化器的开关状态",
+            "调整客厅净化器的其他设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅净化器当前模式",
+            "查询客厅净化器当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅净化器",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T11_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅净化器",
+            "将客厅净化器模式设为睡眠"
+          ],
+          "must_not": [
+            "调整客厅净化器以外的设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的客厅净化器模式改为自动"
+          ],
+          "must_not": [
+            "改变客厅净化器的开关状态",
+            "调整客厅净化器的其他设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅净化器当前模式",
+            "查询客厅净化器当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅净化器",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅净化器",
+            "保留客厅净化器的模式设置"
+          ],
+          "must_not": [
+            "改变客厅净化器的模式设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T11_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅净化器",
+            "将客厅净化器模式设为睡眠"
+          ],
+          "must_not": [
+            "调整客厅净化器以外的设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的客厅净化器模式改为自动"
+          ],
+          "must_not": [
+            "改变客厅净化器的开关状态",
+            "调整客厅净化器的其他设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅净化器当前模式",
+            "查询客厅净化器当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅净化器",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅净化器",
+            "保留客厅净化器的模式设置"
+          ],
+          "must_not": [
+            "改变客厅净化器的模式设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅净化器当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅净化器",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

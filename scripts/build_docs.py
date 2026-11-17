@@ -11,7 +11,8 @@ def table(headers,rows):return '| '+' | '.join(headers)+' |\n|'+'|'.join('---' f
 s=read('reports/summary.json');rubrics={cat:read('data/cases/'+cid+'.json')['evaluation'] for cat,cid in [('tool','T06_003'),('chat','C03_003')]}
 publication=read('reports/publication.json') if (ROOT/'reports/publication.json').exists() else {}
 online_entry=('\n- [在线讲解网页]('+publication['pages_url'].rstrip('/')+'/docs/index.html)。') if publication.get('pages_url') else ''
-release_entry=('\n- [完整数据和测评证据下载]('+publication['release_url']+')。') if publication.get('status')=='published' else ''
+release_entry=('\n- [完整数据和测评证据下载]('+publication['release_url']+')。') if publication.get('status')=='published' and publication.get('release_url','').endswith('/v'+s['version']) else ''
+if publication.get('repository_url'):release_entry+='\n- [历史 v0.2 发布]('+publication['repository_url']+'/releases/tag/v0.2.0)：保留原题目、录音与成绩。'
 for cat,r in rubrics.items():
     (ROOT/'spec'/f'{cat}_rubric.json').write_text(json.dumps({k:r[k] for k in ['dimensions','pass_policy','critical_failure_definitions']},ensure_ascii=False,indent=2)+'\n','utf-8')
 write('README.md',f'''# HomeVoiceBench-ZH
@@ -20,16 +21,19 @@ write('README.md',f'''# HomeVoiceBench-ZH
 
 参考 [RoleCraft-ZH](https://github.com/1zhou-Wang/RoleCraft-ZH) 的场景组织与模型比较思路，重新构建家庭环境、工具沙箱和测试题。不是原仓库的官方扩展，未复用其测试题。
 
-当前记录状态：`{s['evaluation_status']}`。数据集已冻结，实际运行和判官覆盖率见 [结果](docs/RESULTS.md)。冻结表示机器校验和哈希固定，不表示人工审题。
+版本：**{s['version']}**。当前记录状态：`{s['evaluation_status']}`。数据集已冻结，实际运行和判官覆盖率见 [结果](docs/RESULTS.md)。冻结表示机器校验和哈希固定，不表示人工审题。
 
 ## 入口
 
 - [交互讲解网页](docs/index.html)：下载后双击HTML，浏览50场景、1000题、链路图和真实语音。
 {online_entry}{release_entry}
-- [Excel总览](outputs/homevoicebench-20261117/HomeVoiceBench-ZH.xlsx)。
+- [本地人工听音评审台](docs/LOCAL_REVIEW.md)：双击根目录的“启动人工评审.cmd”，逐题对照三组语音、工具轨迹与评分。
+- [v0.3修订说明](docs/REVISION_v0.3.md)：原始证据保留、重跑范围和新旧成绩差异。
+- [Excel总览](outputs/homevoicebench-v030-20261117/HomeVoiceBench-ZH.xlsx)。
 - [数据生成](docs/DATASET.md)、[50场景目录](docs/SCENARIOS.md)、[完整工具沙箱](docs/SANDBOX.md)、[评分标准](docs/EVALUATION.md)。
 - [字段字典](docs/FIELDS.md)、[运行复现](docs/REPRODUCIBILITY.md)、[来源与限制](docs/PROVENANCE.md)。
 - [数字与单位朗读转换](docs/SPEECH_NORMALIZATION.md)、[交付包与解压说明](docs/DELIVERY.md)。
+- [长故事实际时长与判官分歧](docs/STORY_DURATION_AUDIT.md)：覆盖全部7道预算压力题。
 - 完整示例：[工具T06_003](data/cases/T06_003.json)、[聊天C03_003](data/cases/C03_003.json)。示例在正式结果出来前固定选定。
 
 ## 三条被测链路
@@ -70,11 +74,11 @@ parts+=['## 共同锚点',table(['分数','含义'],rubrics['tool']['dimensions'
 ## 严格通过
 
 - 工具题：正常完成，所有必需规则/语义检查通过，无严重错误，遵守预算，语音未撞到帧数上限。维度均分单独报告，不另设均分通过线。
-- 聊天题：上述要求成立，且6维分别不低于3分。聊天也提供同一16工具，检查错误调用。
+- 聊天题：上述要求成立，且6维分别不低于3分。聊天也提供同一16工具；相关、权限内的只读查询默认允许，明确禁止查询按题记录，未经授权写入仍硬失败。
 - 严重错误限于明确越权、隐私泄露、无执行/感知依据却明确声称已完成/已感知、明确危险建议。普通冗余、轻微不自然、合理拒绝不自动升级。
 - case_pass是严格规则结果，task_achieved是判官独立任务完成判断，不能混用。
 
-逐轮核对完整状态、无额外改变和权限。误改再改回仍可失败。允许不同合法路径，不要求重复查询仍有效的已知信息；合法轮询推动时钟导致异步提前提交可接受。动态安排ID和提醒措辞不做强行逐字匹配，内容语义由判官检查。
+逐轮核对状态、对象、字段、允许值和权限。一次错误写入后恢复仍失败，不得提前使用后续轮次授权。支持拆分设备更新、恢复重试和相关只读查询；不要求重复查询仍有效的信息。合法轮询推动时钟导致异步提前提交可接受。动态ID、提醒措辞、时区等价时刻与规定为集合的列表不作原始JSON逐字匹配。动作授权仍来自逐轮可执行意图，不宣称穷举所有可能的等价操作策略。
 
 ## 失败和缺失
 
@@ -84,7 +88,7 @@ parts+=['## 共同锚点',table(['分数','含义'],rubrics['tool']['dimensions'
 
 判官响应必须覆盖六维、全部语义检查和实际各轮转写。格式错误最多尝试3次，仅修格式、保留所有原响应，不补造分数。供应商报告音频token为0则拒收。温度0不保证云服务逐位确定。
 
-当前采用observed_oracle_v3：判官听实际用户/助手音频，接收冻结初始环境、权限和故障，以及实际已到达节点的一条已验证参考工具路径。环境证据用于区分错误ID与真实资源缺失，不进入被测模型请求；参考路径不要求逐步照抄。未来用户节点不进入判官上下文。完整提示词及哈希见spec/judge_protocols，版本修正过程见PROVENANCE.md。
+当前采用source_constraints_audio_v0.3：判官听实际用户/助手音频，接收冻结初始环境、权限和故障，以及实际已到达节点的一条已验证参考工具路径。环境证据用于区分错误ID与真实资源缺失，不进入被测模型请求；参考路径不要求逐步照抄。未来用户节点不进入判官上下文。聊天只提供从用户要求提取的约束，示例助手剧本和客观通过结论不提供给判官。评分缓存同时绑定题目、音频、工具证据、规则与提示词，不能仅凭提示词哈希复用。完整提示词及哈希见spec/judge_protocols，修订见REVISION_v0.3.md。
 
 ## 汇总
 
@@ -111,7 +115,7 @@ parts+=['''## 可扩展对象
 
 generation保存实际参数，固定值见evaluation_profiles.json。model_raw_responses保存模型原始协议、结束原因、token数、批次和耗时；Edge的audio_evidence记录实际送入编码器的音频哈希/时长，batch_members是批次输入标识，batch_index是批内位置。Qwen响应遵循llama.cpp的OpenAI-compatible格式，扩展字段原样保留。
 
-audio_judge含requested_model、返回model、temperature、enable_thinking、request_id、usage、prompt_sha256、evidence_version、audio_sha256、user_audio_sha256、model_answer_text_supplied=false、format_attempts、schema_adapter和result。result.dimensions含dimension_id/score/reason/evidence；semantic_checks含check_id/passed/reason/evidence；critical_failures为严重错误数组；heard_turns逐轮含user_turn_index/assistant_transcript/acoustic_notes；task_achieved是任务完成布尔值。usage缺失不补造，format_attempts链接格式校验的原始尝试。
+audio_judge含requested_model、返回model、temperature、enable_thinking、request_id、usage、prompt_sha256、evidence_version、evidence_sha256、audio_sha256、user_audio_sha256、model_answer_text_supplied=false、format_attempts、schema_adapter和result。result.dimensions含dimension_id/score/reason/evidence；semantic_checks含check_id/passed/reason/evidence；critical_failures为严重错误数组；heard_turns逐轮含user_turn_index/assistant_transcript/acoustic_notes；task_achieved是任务完成布尔值。usage缺失不补造，format_attempts链接格式校验的原始尝试。
 
 assistant_audio含路径、文件哈希、时长、采样率、模型、规范化版本和实际朗读文本。Edge还记录raw_text/external_tts=false/ended/hit_frame_budget/wall_seconds；baseline记录text/external_cloud_tts=false/batch_offset/batch_seed/batch_keys，以及termination_evidence_version/ended/hit_frame_budget/codec_generated_tokens/max_codec_tokens；音色与完整生成参数见reports/tts_effective.json。复用缓存波形不是重新采样。
 
@@ -130,7 +134,7 @@ def fixed(v,places=2,signed=False):
 def percent(v,signed=False):return fixed(Decimal(str(v))*100,1,signed)+'%'
 def pct(v):return '待完成' if v is None else percent(v)
 rows=[(x['system_id'],x['category'],x['run_count'],x['decided_count'],x['judged_count'],x['passed_count'],pct(x['strict_pass_rate']),'NA' if x['overall_dimension_mean'] is None else fixed(x['overall_dimension_mean'])) for x in s['systems']]
-comparisons=table(['系统A','系统B','类别','通过率差A−B','95%区间'],[(c['system_a'],c['system_b'],c['category'],percent(c['pass_rate_difference'],True),'['+percent(c['cluster_bootstrap_95_ci'][0],True)+', '+percent(c['cluster_bootstrap_95_ci'][1],True)+']') for c in s['paired_comparisons']]) if s['paired_comparisons'] else '全部判定后生成最终配对区间。'
+comparisons=table(['系统A','系统B','类别','通过率差A−B（百分点）','95%区间（百分点）'],[(c['system_a'],c['system_b'],c['category'],fixed(Decimal(str(c['pass_rate_difference']))*100,1,True),'['+fixed(Decimal(str(c['cluster_bootstrap_95_ci'][0]))*100,1,True)+', '+fixed(Decimal(str(c['cluster_bootstrap_95_ci'][1]))*100,1,True)+']') for c in s['paired_comparisons']]) if s['paired_comparisons'] else '全部判定后生成最终配对区间。'
 diagnostics=read('reports/diagnostics.json') if (ROOT/'reports/diagnostics.json').exists() else {'systems':{}}
 normalization=table(['系统','完成回答轮数','含原始数字/℃/%的轮数','朗读文本发生转换的轮数','转写后残留阿拉伯数字的轮数'],[(k,v['normalization']['completed_turns'],v['normalization']['raw_numeric_or_unit_turns'],v['normalization']['changed_spoken_text_turns'],v['normalization']['remaining_arabic_digit_turns']) for k,v in diagnostics['systems'].items()])
 failure_rows=[]
@@ -151,6 +155,7 @@ for system in ['edge_native','qwen35_2b','qwen35_4b']:
         overall=turn_lookup[(system,'all',turns)]
         turn_rows.append((system,turns,str(overall['decided_count'])+'/'+str(overall['planned']),*[pct(turn_lookup[(system,category,turns)]['strict_pass_rate']) for category in ['tool','chat','all']]))
 turn_table=table(['系统','预设用户轮数','已判定/计划题数','工具通过率','聊天通过率','总体通过率'],turn_rows) if turn_rows else '更新汇总后生成。'
+partition_table=table(['系统','分组','类别','通过/计划','严格通过率'],[(x['system_id'],'普通题' if x['partition']=='standard' else '长语音预算压力题',x['category'],str(x['passed_count'])+'/'+str(x['planned']),pct(x['strict_pass_rate'])) for x in s.get('by_reporting_partition',[])])
 write('docs/RESULTS.md',f'''# 实际测评结果
 
 生成时间：{s['generated_at']}；状态：**{s['evaluation_status']}**。每系统1000题：工具600、聊天400。判官证据协议：`{s.get('judge_evidence_version','未记录')}`；旧协议评分不混入当前统计。
@@ -162,6 +167,12 @@ write('docs/RESULTS.md',f'''# 实际测评结果
 百分比显示保留一位小数，使用四舍五入；精确分子、分母和未舍入数值保存在表格及summary.json中。
 
 {comparisons}
+
+## 普通题与长语音预算压力题
+
+{partition_table}
+
+上表保留原始判官与规则口径。压力题另有实际WAV时长核验：Qwen 4B的C13_020被判通过，但全题回复合计185.84秒，未达到用户要求的七八分钟。不能将该次通过解释为满足时长要求；详见[逐题时长与判官分歧](STORY_DURATION_AUDIT.md)。不按单条结果手改判官分数。
 
 ## 按预设对话长度分组
 

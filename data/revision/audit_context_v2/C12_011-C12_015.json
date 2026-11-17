@@ -1,0 +1,234 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "859019f2-00ec-4e51-9276-1385a7455be7",
+  "usage": {
+    "prompt_tokens": 1819,
+    "completion_tokens": 896,
+    "total_tokens": 2715,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1307
+  },
+  "temperature": 0,
+  "source_sha256": "9c0b2c24ad8184ba0f411466b408feb1dae5982368987a35d86cc706dd9ab4e7",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简短的中文自我介绍练习句",
+            "句子不过长"
+          ],
+          "must_not": [
+            "展开成多句长段落"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句咖啡店点单练习句",
+            "句子简单不难"
+          ],
+          "must_not": [
+            "给出多句复杂点单对话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "替换掉“拿铁”",
+            "改用更常见的饮料词",
+            "保持一句简单点单句"
+          ],
+          "must_not": [
+            "继续使用“拿铁”"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简短问路练习句",
+            "适合地铁站直接说"
+          ],
+          "must_not": [
+            "给出过长或多句问路对话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把问路句改得更日常、不正式"
+          ],
+          "must_not": [
+            "保持过于正式的表达"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把目的地从火车站改为机场",
+            "保持日常不正式说法"
+          ],
+          "must_not": [
+            "仍使用“火车站”作为目的地"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句向同事说明天请假的练习句",
+            "简单清楚不绕"
+          ],
+          "must_not": [
+            "表达过于复杂绕口"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "去掉“手头的事”",
+            "换成更口语的说法"
+          ],
+          "must_not": [
+            "继续使用“手头的事”"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把请假时间从明天改为后天"
+          ],
+          "must_not": [
+            "仍说“明天”请假"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户改的是后天请假",
+            "再用一句话继续练习"
+          ],
+          "must_not": [
+            "回答成明天请假",
+            "展开多句"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简短道歉练习句",
+            "不过于肉麻"
+          ],
+          "must_not": [
+            "使用过于肉麻的表达"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "去掉“别生气啦”这类哄人说法",
+            "换成更实在的表达"
+          ],
+          "must_not": [
+            "继续使用“别生气啦”"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把道歉对象从朋友改为同事",
+            "调整称呼和语气为对同事自然不过分熟络"
+          ],
+          "must_not": [
+            "仍按朋友关系使用过分熟络语气"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户改的是跟同事道歉",
+            "再用一句话继续练习"
+          ],
+          "must_not": [
+            "回答成跟朋友道歉",
+            "展开多句"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用特别短的一句话收尾",
+            "不展开"
+          ],
+          "must_not": [
+            "展开解释或多句"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

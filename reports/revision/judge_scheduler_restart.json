@@ -1,0 +1,18 @@
+{
+  "status": "restarted_for_scheduler_efficiency",
+  "pid": 69268,
+  "workers": 16,
+  "started_at_unix": 1794895995.4942708,
+  "heartbeat": 1794896100.6547241,
+  "prompt_sha256": "420d24fa6fdea2f89a6f77240e6f27438c7c5ad7eade424385408acd34717fde",
+  "resolved_cases": 27,
+  "observed_run_files": 2847,
+  "ready_unresolved": 2811,
+  "in_flight": 16,
+  "counts": {
+    "scored": 22,
+    "execution_failure_no_audio": 5
+  },
+  "persistent_errors": [],
+  "reason": "Avoid scanning every full trajectory when all cloud workers are occupied; completed full-evidence judgments are reused. Incomplete cloud requests may be retried without selecting on scores."
+}

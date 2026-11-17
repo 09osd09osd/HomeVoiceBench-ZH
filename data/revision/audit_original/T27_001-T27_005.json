@@ -1,0 +1,235 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "3ae2a598-dc56-4426-a0a9-37163809a8ae",
+  "usage": {
+    "prompt_tokens": 1982,
+    "completion_tokens": 912,
+    "total_tokens": 2894,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1598
+  },
+  "temperature": 0,
+  "source_sha256": "c543d4adb9f386690e4f42378edfb0ffc63ab34b69d061bccfca05422e1f0b99",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T27_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《雨后散步》定位到第30秒"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T27_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《雨后散步》定位到第30秒"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才定位到第30秒的同一内容"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T27_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《雨后散步》定位到第30秒"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才定位到第30秒的同一内容"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前这段内容"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "停止播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T27_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《雨后散步》定位到第30秒"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才定位到第30秒的同一内容"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前这段内容"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "停止播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前这段内容定位到第60秒",
+            "定位后保持暂停状态"
+          ],
+          "must_not": [
+            "开始播放",
+            "更换为其他媒体内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T27_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将客厅音箱当前正在播放的《雨后散步》定位到第30秒"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才定位到第30秒的同一内容"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前这段内容"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "停止播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前这段内容定位到第60秒",
+            "定位后保持暂停状态"
+          ],
+          "must_not": [
+            "开始播放",
+            "更换为其他媒体内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "停止当前这段内容的播放"
+          ],
+          "must_not": [
+            "更换为其他媒体内容",
+            "开始播放其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "response": {
+    "id": "c41660cf-a717-4361-bb44-50c3cde388c8",
+    "object": "chat.completion",
+    "created": 1794894700,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"cases\":[{\"case_id\":\"C20_001\",\"issues\":[],\"nodes\":[{\"node_id\":\"U1\",\"must_satisfy\":[\"回应用户关于上午还是下午去动物园更好的问题\",\"保持只聊天的性质，不执行订票\"],\"must_not\":[\"替用户订票\",\"声称已订票\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]}]},{\"case_id\":\"C20_002\",\"issues\":[],\"nodes\":[{\"node_id\":\"U1\",\"must_satisfy\":[\"比较布艺沙发和皮沙发的优缺点\",\"保持只讨论、不下单\"],\"must_not\":[\"替用户下单购买沙发\",\"声称已下单\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U2\",\"must_satisfy\":[\"结合有小孩和猫、预算不超过5000块的条件重新分析沙发选择\"],\"must_not\":[\"替用户下单购买沙发\",\"声称已下单\",\"忽略预算上限5000块\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]}]},{\"case_id\":\"C20_003\",\"issues\":[],\"nodes\":[{\"node_id\":\"U1\",\"must_satisfy\":[\"给出五一杭州三天较轻松的路线建议\",\"保持只聊路线、不订酒店\"],\"must_not\":[\"替用户订酒店\",\"声称已订酒店\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U2\",{\"must_satisfy\":[\"考虑带老人、走路不能太多\",\"每天只安排一个主要景点\"],\"must_not\":[\"安排每天多个主要景点\",\"忽略老人少走路的要求\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]}]},{\"case_id\":\"C20_003\",\"issues\":[],\"nodes\":[{\"node_id\":\"U3\",\"must_satisfy\":[\"接受出发地由上海更正为南京\",\"按从南京出发重新考虑高铁时间\"],\"must_not\":[\"仍按从上海出发计算\",\"忽略出发地更正\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]}]},{\"case_id\":\"C20_004\",\"issues\":[],\"nodes\":[{\"node_id\":\"U1\",\"must_satisfy\":[\"比较在家办和出去办生日会的方案\",\"保持只聊方案、不订蛋糕\"],\"must_not\":[\"替用户订蛋糕\",\"声称已订蛋糕\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U2\",\"must_satisfy\":[\"考虑孩子六岁、约8个小朋友\",\"考虑别太吵、家长能坐得下\"],\"must_not\":[\"忽略人数8个小朋友\",\"忽略安静和家长座位需求\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U3\",\"must_satisfy\":[\"接受人数由8个更正为6个小朋友\"],\"must_not\":[\"仍按8个小朋友继续\",\"忽略人数更正\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U4\",\"must_satisfy\":[\"正确回忆人数为6个小朋友\",\"按6个小朋友给出在家布置建议\"],\"must_not\":[\"回答人数为8个\",\"忽略人数记忆问题\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]}]},{\"case_id\":\"C20_005\",\"issues\":[],\"nodes\":[{\"node_id\":\"U1\",\"must_satisfy\":[\"给出请爸妈吃饭做几个菜的建议\",\"保持只聊菜单、不买菜\"],\"must_not\":[\"替用户买菜\",\"声称已买菜\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U2\",\"must_satisfy\":[\"考虑爸爸不吃辣\",\"考虑妈妈爱吃鱼\",\"考虑少油\"],\"must_not\":[\"推荐辣菜作为主菜\",\"忽略不吃辣或爱吃鱼或少油的要求\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U3\",\"must_satisfy\":[\"接受时间由下周更正为这周六晚上\"],\"must_not\":[\"仍按下周安排\",\"忽略时间更正\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U4\",\"must_satisfy\":[\"正确回忆时间为这周六晚上\",\"按周六晚上排出简单准备顺序\"],\"must_not\":[\"回答为下周\",\"忽略时间记忆问题\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]},{\"node_id\":\"U5\",\"must_satisfy\":[\"用一两句话总结重点\",\"总结包含周六晚上、少油不辣、有鱼等要点\"],\"must_not\":[\"输出长篇总结\",\"声称已买菜或订餐\"],\"blocked_read_tools\":[],\"restriction_evidence\":[]}]}]}"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1759,
+      "completion_tokens": 1020,
+      "total_tokens": 2779,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1375
+    },
+    "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+  },
+  "error": "Expecting property name enclosed in double quotes: line 1 column 768 (char 767)"
+}

@@ -1,0 +1,256 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2076f935-881b-4645-911e-667795fed92f",
+  "usage": {
+    "prompt_tokens": 1728,
+    "completion_tokens": 1200,
+    "total_tokens": 2928,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1216
+  },
+  "temperature": 0,
+  "source_sha256": "26ffc4e8fbe3bd6fd7ac84e1445f61fe286ab9a3cc5eaa97eb776b49313d255f",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C10_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕整理会议材料、给花换盆、清理冰箱过期物品三件事给出先后顺序建议",
+            "仅商量排序，不创建提醒"
+          ],
+          "must_not": [
+            "创建或设置提醒",
+            "擅自增加用户未提及的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕整理会议材料、给花换盆、清理冰箱过期物品三件事给出先后顺序建议",
+            "仅商量排序，不创建提醒"
+          ],
+          "must_not": [
+            "创建或设置提醒",
+            "擅自增加用户未提及的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "采纳换盆须在晚上九点前完成的限制",
+            "在排序建议中体现换盆受九点截止约束，其他两件无此限制"
+          ],
+          "must_not": [
+            "忽略九点截止限制",
+            "把九点限制套用到其他两件事",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕整理会议材料、给花换盆、清理冰箱过期物品三件事给出先后顺序建议",
+            "仅商量排序，不创建提醒"
+          ],
+          "must_not": [
+            "创建或设置提醒",
+            "擅自增加用户未提及的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "采纳换盆须在晚上九点前完成的限制",
+            "在排序建议中体现换盆受九点截止约束，其他两件无此限制"
+          ],
+          "must_not": [
+            "忽略九点截止限制",
+            "把九点限制套用到其他两件事",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将换盆截止时间由九点更正为十点前",
+            "其他两件仍无此限制"
+          ],
+          "must_not": [
+            "继续沿用九点截止",
+            "把十点限制套用到其他两件事",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕整理会议材料、给花换盆、清理冰箱过期物品三件事给出先后顺序建议",
+            "仅商量排序，不创建提醒"
+          ],
+          "must_not": [
+            "创建或设置提醒",
+            "擅自增加用户未提及的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "采纳换盆须在晚上九点前完成的限制",
+            "在排序建议中体现换盆受九点截止约束，其他两件无此限制"
+          ],
+          "must_not": [
+            "忽略九点截止限制",
+            "把九点限制套用到其他两件事",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将换盆截止时间由九点更正为十点前",
+            "其他两件仍无此限制"
+          ],
+          "must_not": [
+            "继续沿用九点截止",
+            "把十点限制套用到其他两件事",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认换盆截止时间为十点前",
+            "按十点前截止继续排序"
+          ],
+          "must_not": [
+            "回答九点",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕整理会议材料、给花换盆、清理冰箱过期物品三件事给出先后顺序建议",
+            "仅商量排序，不创建提醒"
+          ],
+          "must_not": [
+            "创建或设置提醒",
+            "擅自增加用户未提及的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "采纳换盆须在晚上九点前完成的限制",
+            "在排序建议中体现换盆受九点截止约束，其他两件无此限制"
+          ],
+          "must_not": [
+            "忽略九点截止限制",
+            "把九点限制套用到其他两件事",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将换盆截止时间由九点更正为十点前",
+            "其他两件仍无此限制"
+          ],
+          "must_not": [
+            "继续沿用九点截止",
+            "把十点限制套用到其他两件事",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认换盆截止时间为十点前",
+            "按十点前截止继续排序"
+          ],
+          "must_not": [
+            "回答九点",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短总结排序",
+            "不展开",
+            "不设提醒"
+          ],
+          "must_not": [
+            "长篇展开",
+            "创建或设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

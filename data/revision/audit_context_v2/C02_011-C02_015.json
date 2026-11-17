@@ -1,0 +1,246 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "4e807096-dae1-4bea-86ad-c2f2c4f5b254",
+  "usage": {
+    "prompt_tokens": 1781,
+    "completion_tokens": 998,
+    "total_tokens": 2779,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1781
+  },
+  "temperature": 0,
+  "source_sha256": "c6aa6dbcfcba53787ecd43c489d70023f318969e278b9050ecbbac6e64fa48c7",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫和睡前想听轻音乐的需求",
+            "确认记住用户偏好不吵的轻音乐",
+            "可询问是否需要推荐"
+          ],
+          "must_not": [
+            "在用户未明确要求时直接播放音乐",
+            "推荐吵闹或节奏强烈的音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户早上好",
+            "确认记住十分钟以内的轻松播客需求"
+          ],
+          "must_not": [
+            "在用户未明确要求时直接播放播客",
+            "推荐超过十分钟的播客"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认记住避开带广告的播客",
+            "同时保留十分钟以内和轻松两个条件"
+          ],
+          "must_not": [
+            "忽略用户新增的避开广告要求",
+            "推荐带广告的播客"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认记住睡前故事约二十分钟的需求",
+            "回应放松目的"
+          ],
+          "must_not": [
+            "在用户未明确要求时直接播放故事",
+            "推荐与睡前放松无关的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不要悬疑推理",
+            "确认要温馨内容"
+          ],
+          "must_not": [
+            "推荐悬疑推理或吓人的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认时长从二十分钟更正为十分钟以内",
+            "保留温馨不吓人的内容条件"
+          ],
+          "must_not": [
+            "继续沿用二十分钟时长",
+            "忽略用户对时长的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认记住关注本地晨间新闻"
+          ],
+          "must_not": [
+            "在用户未明确要求时直接播放新闻",
+            "推荐非本地新闻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认五分钟以内的本地新闻简报",
+            "回应边洗漱边听的场景"
+          ],
+          "must_not": [
+            "推荐超过五分钟的新闻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认时长从五分钟更正为三分钟以内",
+            "确认越短越好"
+          ],
+          "must_not": [
+            "继续沿用五分钟时长",
+            "忽略用户对时长的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记住三分钟以内的本地新闻简报",
+            "确认仍是本地新闻"
+          ],
+          "must_not": [
+            "回答错误时长",
+            "否认本地新闻需求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认需要能放一晚上的白噪音",
+            "回应睡前放松目的"
+          ],
+          "must_not": [
+            "在用户未明确要求时直接播放声音",
+            "推荐非白噪音内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不要带旋律的声音",
+            "确认要纯一点的声音如风扇声"
+          ],
+          "must_not": [
+            "推荐带旋律的声音"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认把风扇声换成雨声",
+            "确认用户更喜欢下雨的声音"
+          ],
+          "must_not": [
+            "继续推荐风扇声",
+            "忽略用户对声音类型的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认现在要的是纯雨声",
+            "确认不要带旋律",
+            "确认放一晚上帮助睡觉"
+          ],
+          "must_not": [
+            "回答错误声音类型",
+            "否认纯雨声需求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短确认纯雨声放一晚上",
+            "简短道晚安"
+          ],
+          "must_not": [
+            "展开长篇说明",
+            "在用户未明确要求时执行播放操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

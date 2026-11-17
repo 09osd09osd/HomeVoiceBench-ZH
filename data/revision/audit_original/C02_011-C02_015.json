@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "57e565ce-f8ee-49e3-baa1-f8e2514f0488",
+  "usage": {
+    "prompt_tokens": 1620,
+    "completion_tokens": 1077,
+    "total_tokens": 2697,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1620
+  },
+  "temperature": 0,
+  "source_sha256": "26ee1b0cfe279acf22d96b297ded70495467708d73da9603724b48c0a6172241",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫和睡前想听轻音乐的需求",
+            "确认记住用户偏好不吵的轻音乐"
+          ],
+          "must_not": [
+            "播放音乐或执行任何写操作",
+            "声称已找到或推荐具体曲目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户早上好并确认边做早饭边听轻松播客的需求",
+            "确认记住十分钟以内的时长偏好"
+          ],
+          "must_not": [
+            "播放播客或执行任何写操作",
+            "声称已找到具体节目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认记住避开带广告播客的额外条件",
+            "同时保留十分钟以内和轻松两个条件"
+          ],
+          "must_not": [
+            "播放播客或执行任何写操作",
+            "声称已找到具体节目"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户睡前听故事放松的需求",
+            "确认记住二十分钟左右的时长"
+          ],
+          "must_not": [
+            "播放故事或执行任何写操作",
+            "声称已找到具体故事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认记住不要悬疑推理、要温馨不吓人的内容方向"
+          ],
+          "must_not": [
+            "播放故事或执行任何写操作",
+            "声称已找到具体故事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认将时长从二十分钟更正为十分钟以内",
+            "保留温馨不吓人的内容条件"
+          ],
+          "must_not": [
+            "继续沿用二十分钟时长",
+            "播放故事或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户早上听新闻的需求",
+            "确认记住关注本地晨间新闻"
+          ],
+          "must_not": [
+            "播放新闻或执行任何写操作",
+            "声称已找到具体新闻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认记住五分钟以内的本地新闻简报",
+            "保留本地新闻条件"
+          ],
+          "must_not": [
+            "播放新闻或执行任何写操作",
+            "声称已找到具体新闻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认将时长从五分钟更正为三分钟以内",
+            "保留本地新闻和越短越好的要求"
+          ],
+          "must_not": [
+            "继续沿用五分钟时长",
+            "播放新闻或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述当前记住的时长是三分钟以内",
+            "复述内容是本地新闻简报"
+          ],
+          "must_not": [
+            "错误复述为五分钟或二十分钟",
+            "播放新闻或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户睡前听白噪音的需求",
+            "确认记住需要能放一晚上的白噪音"
+          ],
+          "must_not": [
+            "播放白噪音或执行任何写操作",
+            "声称已找到具体音频"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认记住不要带旋律、要纯一点的声音",
+            "确认记住风扇声这一示例"
+          ],
+          "must_not": [
+            "播放白噪音或执行任何写操作",
+            "声称已找到具体音频"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认将风扇声更正为雨声",
+            "保留不要带旋律、纯声音的条件"
+          ],
+          "must_not": [
+            "继续以风扇声作为目标声音",
+            "播放白噪音或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述当前要的是纯雨声",
+            "复述不要带旋律、放一晚上助眠"
+          ],
+          "must_not": [
+            "错误复述为风扇声",
+            "播放白噪音或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短确认纯雨声放一晚上助眠",
+            "简短道晚安"
+          ],
+          "must_not": [
+            "播放白噪音或执行任何写操作",
+            "展开长篇内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

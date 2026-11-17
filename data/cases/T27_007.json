@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "T27_007",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "客厅音箱跳转并继续播放《安静钢琴》",
     "language": "zh-CN",
     "status": "frozen"
@@ -30,7 +30,8 @@
     "seed": 20261123,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/T27_006-010.json"
+      "data/authoring/T27_006-010.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -1052,7 +1053,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1382,7 +1383,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1416,7 +1417,7 @@
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1551,7 +1552,70 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [
+            {
+              "tool_name": "media_control",
+              "arguments": {
+                "playback_id": "play_existing",
+                "action": "seek",
+                "position_s": 45
+              }
+            }
+          ],
+          "must_satisfy": [],
+          "must_not": []
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [
+            {
+              "tool_name": "media_control",
+              "arguments": {
+                "playback_id": "play_existing",
+                "action": "resume"
+              }
+            }
+          ],
+          "must_satisfy": [],
+          "must_not": []
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -1624,7 +1688,8 @@
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -1636,7 +1701,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

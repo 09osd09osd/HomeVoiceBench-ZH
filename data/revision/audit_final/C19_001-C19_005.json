@@ -1,0 +1,241 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9587946e-886d-4132-ab11-c9a3252ba505",
+  "usage": {
+    "prompt_tokens": 1359,
+    "completion_tokens": 982,
+    "total_tokens": 2341,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 847
+  },
+  "temperature": 0,
+  "source_sha256": "9a508da42bbf7ac64071392e8a990c641d74d0df73034d5e0e868a6ac4690a91",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C19_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户寻找钥匙的请求",
+            "说明无法直接看到或定位钥匙（如无相关视觉/定位能力）",
+            "可提供在客厅寻找的合理建议"
+          ],
+          "must_not": [
+            "声称已看到钥匙的具体位置",
+            "编造钥匙在客厅某处的确定结论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C19_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户寻找白色小药盒的请求",
+            "说明无法记得或查询到上次放置位置"
+          ],
+          "must_not": [
+            "编造上次放置的具体位置",
+            "声称记得用户上次放哪儿"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "基于卧室和客厅给出有序的寻找顺序",
+            "顺序清晰、避免乱翻"
+          ],
+          "must_not": [
+            "引入用户未提及的房间作为主要寻找范围",
+            "声称知道药盒确切位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C19_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户寻找眼镜的请求",
+            "说明无法看见桌上是否有眼镜"
+          ],
+          "must_not": [
+            "声称看见眼镜在桌上或不在桌上",
+            "编造眼镜位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "基于书房和卧室给出寻找方法"
+          ],
+          "must_not": [
+            "引入用户未提及的房间",
+            "声称知道眼镜确切位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正，将餐厅纳入寻找范围",
+            "更新寻找方案包含书房、卧室、餐厅"
+          ],
+          "must_not": [
+            "忽略餐厅这一新增地点",
+            "仍只提书房和卧室"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C19_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户寻找遥控器的请求",
+            "说明无法看见沙发上是否有遥控器"
+          ],
+          "must_not": [
+            "声称看见遥控器在或不在沙发上",
+            "编造遥控器位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "基于客厅给出简单寻找方法"
+          ],
+          "must_not": [
+            "引入用户未提及的房间",
+            "方案过于复杂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正，将卧室纳入寻找范围"
+          ],
+          "must_not": [
+            "忽略卧室这一新增地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户刚说过卧室也要找",
+            "就客厅与卧室的先后顺序给出建议"
+          ],
+          "must_not": [
+            "否认用户说过卧室也要找",
+            "遗漏卧室"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C19_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户寻找老花镜的请求",
+            "说明无法看见或定位老花镜"
+          ],
+          "must_not": [
+            "声称看见老花镜位置",
+            "编造放置地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "基于书房和阳台列出两个先找的地方"
+          ],
+          "must_not": [
+            "引入用户未提及的房间",
+            "声称知道老花镜确切位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正，将厨房纳入寻找范围"
+          ],
+          "must_not": [
+            "忽略厨房这一新增地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户加了厨房",
+            "就当前先找哪儿给出建议"
+          ],
+          "must_not": [
+            "否认用户加了厨房",
+            "遗漏厨房"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结寻找地点或顺序"
+          ],
+          "must_not": [
+            "输出冗长内容",
+            "遗漏已确认的寻找地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

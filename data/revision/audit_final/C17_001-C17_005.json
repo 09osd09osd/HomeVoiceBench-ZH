@@ -1,0 +1,231 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "06cefe48-4fbf-4ed1-bad9-7078b77a63eb",
+  "usage": {
+    "prompt_tokens": 1413,
+    "completion_tokens": 902,
+    "total_tokens": 2315,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 901
+  },
+  "temperature": 0,
+  "source_sha256": "37480debe1527c82d60880eea3d3fa327bfdf16a001e35218ec134eabfef32d8",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C17_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐适合通勤路上听的爵士乐入门专辑",
+            "推荐内容面向爵士乐初学者"
+          ],
+          "must_not": [
+            "假定用户已有爵士乐知识",
+            "推荐非爵士乐内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐篇幅短、读起来轻松的历史读物"
+          ],
+          "must_not": [
+            "推荐厚重难读的历史书"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "优先推荐中国史读物",
+            "推荐讲宋代日常生活的书",
+            "推荐轻松易读的读物"
+          ],
+          "must_not": [
+            "推荐以年号和战争为主线的书",
+            "推荐非中国史优先的读物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户每天最多二十分钟能否学吉他的问题"
+          ],
+          "must_not": [
+            "否定用户学习吉他的可能性"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "围绕弹唱民谣方向给建议",
+            "回应按弦手指疼的问题"
+          ],
+          "must_not": [
+            "忽略手指疼痛的顾虑"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为每天三十分钟"
+          ],
+          "must_not": [
+            "继续按每天二十分钟作答"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "给出周末在家看经典电影的类型建议"
+          ],
+          "must_not": [
+            "假定用户已有明确类型偏好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐带幽默但有深度的电影",
+            "推荐时长两小时以内的电影"
+          ],
+          "must_not": [
+            "推荐纯搞笑无深度的电影",
+            "推荐超过两小时的电影"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为不介意超过两小时"
+          ],
+          "must_not": [
+            "继续坚持两小时以内的限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户此前说过时长不是问题",
+            "按不限时长给出选片思路"
+          ],
+          "must_not": [
+            "否认用户此前关于时长的更正",
+            "重新引入两小时以内限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "给出睡前读书替代刷手机的类型建议"
+          ],
+          "must_not": [
+            "推荐不适合睡前阅读的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐纸质书",
+            "推荐轻松、不沉重的题材"
+          ],
+          "must_not": [
+            "推荐沉重题材",
+            "推荐电子书优先"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正为更喜欢植物类随笔"
+          ],
+          "must_not": [
+            "继续推荐人物回忆录"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户更喜欢植物类随笔",
+            "说明睡前读植物类随笔的注意事项"
+          ],
+          "must_not": [
+            "否认用户此前关于植物类随笔的偏好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结此前给出的建议"
+          ],
+          "must_not": [
+            "输出冗长总结"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

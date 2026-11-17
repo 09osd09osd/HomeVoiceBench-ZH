@@ -1,7 +1,7 @@
 {
   "benchmark": "HomeVoiceBench-ZH",
-  "version": "0.2.0",
-  "generated_at": "2026-11-16T23:47:12.408150+00:00",
+  "version": "0.3.0",
+  "generated_at": "2026-11-17T07:48:37.811877+00:00",
   "evaluation_status": "complete",
   "dataset": {
     "cases": 1000,
@@ -17,8 +17,8 @@
       "5": 200
     },
     "audio_ready_cases": 1000,
-    "referenced_verified_unique_audio": 1648,
-    "referenced_unique_audio_seconds": 7193.28,
+    "referenced_verified_unique_audio": 1650,
+    "referenced_unique_audio_seconds": 7300.72,
     "normalizer_version": "zh_spoken_v1",
     "human_review": "not_performed",
     "input_type": "synthetic_clean_mandarin_audio"
@@ -30,27 +30,27 @@
       "planned": 1000,
       "run_count": 1000,
       "decided_count": 1000,
-      "judged_count": 853,
-      "passed_count": 116,
-      "strict_pass_rate": 0.116,
-      "observed_pass_rate": 0.116,
+      "judged_count": 847,
+      "passed_count": 151,
+      "strict_pass_rate": 0.151,
+      "observed_pass_rate": 0.151,
       "dimension_mean": {
-        "relevance": 2.1462686567164178,
-        "truthfulness": 3.8985074626865672,
-        "context": 3.1453692848769053,
-        "adaptation": 2.382089552238806,
-        "clarity": 4.092537313432836,
-        "naturalness": 2.8776119402985074,
-        "intent": 2.7142857142857144,
-        "tool_use": 1.774131274131274,
-        "outcome_constraints": 1.386100386100386,
-        "feedback": 2.77992277992278,
-        "efficiency": 2.9806949806949805
+        "relevance": 2.2583586626139818,
+        "truthfulness": 4.100303951367781,
+        "context": 3.216056670602125,
+        "adaptation": 2.6048632218844983,
+        "clarity": 4.179331306990881,
+        "naturalness": 2.9939209726443767,
+        "intent": 2.8687258687258685,
+        "tool_use": 1.7915057915057915,
+        "outcome_constraints": 1.3281853281853282,
+        "feedback": 2.8764478764478763,
+        "efficiency": 2.781853281853282
       },
-      "overall_dimension_mean": 2.7096522078937086,
-      "execution_failures": 200,
-      "critical_failure_count": 118,
-      "critical_failure_rate_among_judged": 0.13833528722157093
+      "overall_dimension_mean": 2.7678079496261314,
+      "execution_failures": 208,
+      "critical_failure_count": 121,
+      "critical_failure_rate_among_judged": 0.14285714285714285
     },
     {
       "system_id": "edge_native",
@@ -59,21 +59,21 @@
       "run_count": 600,
       "decided_count": 600,
       "judged_count": 518,
-      "passed_count": 75,
-      "strict_pass_rate": 0.125,
-      "observed_pass_rate": 0.125,
+      "passed_count": 81,
+      "strict_pass_rate": 0.135,
+      "observed_pass_rate": 0.135,
       "dimension_mean": {
-        "intent": 2.7142857142857144,
-        "tool_use": 1.774131274131274,
-        "outcome_constraints": 1.386100386100386,
-        "context": 3.27027027027027,
-        "feedback": 2.77992277992278,
-        "efficiency": 2.9806949806949805
+        "intent": 2.8687258687258685,
+        "tool_use": 1.7915057915057915,
+        "outcome_constraints": 1.3281853281853282,
+        "context": 3.332046332046332,
+        "feedback": 2.8764478764478763,
+        "efficiency": 2.781853281853282
       },
-      "overall_dimension_mean": 2.484234234234234,
+      "overall_dimension_mean": 2.4964607464607464,
       "execution_failures": 85,
-      "critical_failure_count": 92,
-      "critical_failure_rate_among_judged": 0.1776061776061776
+      "critical_failure_count": 99,
+      "critical_failure_rate_among_judged": 0.19111969111969113
     },
     {
       "system_id": "edge_native",
@@ -81,22 +81,22 @@
       "planned": 400,
       "run_count": 400,
       "decided_count": 400,
-      "judged_count": 335,
-      "passed_count": 41,
-      "strict_pass_rate": 0.1025,
-      "observed_pass_rate": 0.1025,
+      "judged_count": 329,
+      "passed_count": 70,
+      "strict_pass_rate": 0.175,
+      "observed_pass_rate": 0.175,
       "dimension_mean": {
-        "relevance": 2.1462686567164178,
-        "truthfulness": 3.8985074626865672,
-        "context": 2.952238805970149,
-        "adaptation": 2.382089552238806,
-        "clarity": 4.092537313432836,
-        "naturalness": 2.8776119402985074
+        "relevance": 2.2583586626139818,
+        "truthfulness": 4.100303951367781,
+        "context": 3.033434650455927,
+        "adaptation": 2.6048632218844983,
+        "clarity": 4.179331306990881,
+        "naturalness": 2.9939209726443767
       },
-      "overall_dimension_mean": 3.0582089552238805,
-      "execution_failures": 115,
-      "critical_failure_count": 26,
-      "critical_failure_rate_among_judged": 0.07761194029850746
+      "overall_dimension_mean": 3.1950354609929077,
+      "execution_failures": 123,
+      "critical_failure_count": 22,
+      "critical_failure_rate_among_judged": 0.0668693009118541
     },
     {
       "system_id": "qwen35_2b",
@@ -104,27 +104,27 @@
       "planned": 1000,
       "run_count": 1000,
       "decided_count": 1000,
-      "judged_count": 824,
-      "passed_count": 105,
-      "strict_pass_rate": 0.105,
-      "observed_pass_rate": 0.105,
+      "judged_count": 825,
+      "passed_count": 143,
+      "strict_pass_rate": 0.143,
+      "observed_pass_rate": 0.143,
       "dimension_mean": {
-        "relevance": 1.8681948424068768,
-        "truthfulness": 2.7421203438395416,
-        "context": 2.9490291262135924,
-        "adaptation": 2.2177650429799427,
-        "clarity": 3.189111747851003,
-        "naturalness": 2.5272206303724927,
-        "intent": 2.781052631578947,
-        "tool_use": 2.3810526315789473,
-        "outcome_constraints": 2.08,
-        "feedback": 2.446315789473684,
-        "efficiency": 3.1052631578947367
+        "relevance": 1.977142857142857,
+        "truthfulness": 3.0314285714285716,
+        "context": 3.0327272727272727,
+        "adaptation": 2.5171428571428573,
+        "clarity": 3.3,
+        "naturalness": 2.7,
+        "intent": 2.8947368421052633,
+        "tool_use": 2.4589473684210525,
+        "outcome_constraints": 2.24,
+        "feedback": 2.5410526315789475,
+        "efficiency": 3.0926315789473686
       },
-      "overall_dimension_mean": 2.6061893203883497,
-      "execution_failures": 245,
-      "critical_failure_count": 252,
-      "critical_failure_rate_among_judged": 0.3058252427184466
+      "overall_dimension_mean": 2.7311111111111113,
+      "execution_failures": 248,
+      "critical_failure_count": 243,
+      "critical_failure_rate_among_judged": 0.29454545454545455
     },
     {
       "system_id": "qwen35_2b",
@@ -133,21 +133,21 @@
       "run_count": 600,
       "decided_count": 600,
       "judged_count": 475,
-      "passed_count": 100,
-      "strict_pass_rate": 0.16666666666666666,
-      "observed_pass_rate": 0.16666666666666666,
+      "passed_count": 116,
+      "strict_pass_rate": 0.19333333333333333,
+      "observed_pass_rate": 0.19333333333333333,
       "dimension_mean": {
-        "intent": 2.781052631578947,
-        "tool_use": 2.3810526315789473,
-        "outcome_constraints": 2.08,
-        "context": 3.258947368421053,
-        "feedback": 2.446315789473684,
-        "efficiency": 3.1052631578947367
+        "intent": 2.8947368421052633,
+        "tool_use": 2.4589473684210525,
+        "outcome_constraints": 2.24,
+        "context": 3.3263157894736843,
+        "feedback": 2.5410526315789475,
+        "efficiency": 3.0926315789473686
       },
-      "overall_dimension_mean": 2.675438596491228,
+      "overall_dimension_mean": 2.758947368421053,
       "execution_failures": 157,
-      "critical_failure_count": 151,
-      "critical_failure_rate_among_judged": 0.3178947368421053
+      "critical_failure_count": 158,
+      "critical_failure_rate_among_judged": 0.33263157894736844
     },
     {
       "system_id": "qwen35_2b",
@@ -155,22 +155,22 @@
       "planned": 400,
       "run_count": 400,
       "decided_count": 400,
-      "judged_count": 349,
-      "passed_count": 5,
-      "strict_pass_rate": 0.0125,
-      "observed_pass_rate": 0.0125,
+      "judged_count": 350,
+      "passed_count": 27,
+      "strict_pass_rate": 0.0675,
+      "observed_pass_rate": 0.0675,
       "dimension_mean": {
-        "relevance": 1.8681948424068768,
-        "truthfulness": 2.7421203438395416,
-        "context": 2.5272206303724927,
-        "adaptation": 2.2177650429799427,
-        "clarity": 3.189111747851003,
-        "naturalness": 2.5272206303724927
+        "relevance": 1.977142857142857,
+        "truthfulness": 3.0314285714285716,
+        "context": 2.6342857142857143,
+        "adaptation": 2.5171428571428573,
+        "clarity": 3.3,
+        "naturalness": 2.7
       },
-      "overall_dimension_mean": 2.5119388729703918,
-      "execution_failures": 88,
-      "critical_failure_count": 101,
-      "critical_failure_rate_among_judged": 0.28939828080229224
+      "overall_dimension_mean": 2.6933333333333334,
+      "execution_failures": 91,
+      "critical_failure_count": 85,
+      "critical_failure_rate_among_judged": 0.24285714285714285
     },
     {
       "system_id": "qwen35_4b",
@@ -179,26 +179,26 @@
       "run_count": 1000,
       "decided_count": 1000,
       "judged_count": 965,
-      "passed_count": 259,
-      "strict_pass_rate": 0.259,
-      "observed_pass_rate": 0.259,
+      "passed_count": 298,
+      "strict_pass_rate": 0.298,
+      "observed_pass_rate": 0.298,
       "dimension_mean": {
-        "relevance": 3.1259445843828715,
-        "truthfulness": 3.972292191435768,
-        "context": 3.5098445595854924,
-        "adaptation": 3.5491183879093198,
-        "clarity": 3.6120906801007555,
-        "naturalness": 3.350125944584383,
-        "intent": 2.903169014084507,
-        "tool_use": 2.3028169014084505,
-        "outcome_constraints": 2.1496478873239435,
-        "feedback": 2.6038732394366195,
-        "efficiency": 3.237676056338028
+        "relevance": 3.3299748110831233,
+        "truthfulness": 4.307304785894207,
+        "context": 3.639378238341969,
+        "adaptation": 3.881612090680101,
+        "clarity": 3.722921914357683,
+        "naturalness": 3.5516372795969775,
+        "intent": 3.0264084507042255,
+        "tool_use": 2.4225352112676055,
+        "outcome_constraints": 2.211267605633803,
+        "feedback": 2.7411971830985915,
+        "efficiency": 3.0475352112676055
       },
-      "overall_dimension_mean": 3.0870466321243524,
-      "execution_failures": 52,
-      "critical_failure_count": 178,
-      "critical_failure_rate_among_judged": 0.1844559585492228
+      "overall_dimension_mean": 3.2145077720207254,
+      "execution_failures": 53,
+      "critical_failure_count": 176,
+      "critical_failure_rate_among_judged": 0.18238341968911917
     },
     {
       "system_id": "qwen35_4b",
@@ -207,21 +207,21 @@
       "run_count": 600,
       "decided_count": 600,
       "judged_count": 568,
-      "passed_count": 143,
-      "strict_pass_rate": 0.23833333333333334,
-      "observed_pass_rate": 0.23833333333333334,
+      "passed_count": 156,
+      "strict_pass_rate": 0.26,
+      "observed_pass_rate": 0.26,
       "dimension_mean": {
-        "intent": 2.903169014084507,
-        "tool_use": 2.3028169014084505,
-        "outcome_constraints": 2.1496478873239435,
-        "context": 3.3838028169014085,
-        "feedback": 2.6038732394366195,
-        "efficiency": 3.237676056338028
+        "intent": 3.0264084507042255,
+        "tool_use": 2.4225352112676055,
+        "outcome_constraints": 2.211267605633803,
+        "context": 3.4242957746478875,
+        "feedback": 2.7411971830985915,
+        "efficiency": 3.0475352112676055
       },
-      "overall_dimension_mean": 2.7634976525821595,
+      "overall_dimension_mean": 2.812206572769953,
       "execution_failures": 41,
-      "critical_failure_count": 138,
-      "critical_failure_rate_among_judged": 0.24295774647887325
+      "critical_failure_count": 140,
+      "critical_failure_rate_among_judged": 0.24647887323943662
     },
     {
       "system_id": "qwen35_4b",
@@ -230,21 +230,21 @@
       "run_count": 400,
       "decided_count": 400,
       "judged_count": 397,
-      "passed_count": 116,
-      "strict_pass_rate": 0.29,
-      "observed_pass_rate": 0.29,
+      "passed_count": 142,
+      "strict_pass_rate": 0.355,
+      "observed_pass_rate": 0.355,
       "dimension_mean": {
-        "relevance": 3.1259445843828715,
-        "truthfulness": 3.972292191435768,
-        "context": 3.690176322418136,
-        "adaptation": 3.5491183879093198,
-        "clarity": 3.6120906801007555,
-        "naturalness": 3.350125944584383
+        "relevance": 3.3299748110831233,
+        "truthfulness": 4.307304785894207,
+        "context": 3.947103274559194,
+        "adaptation": 3.881612090680101,
+        "clarity": 3.722921914357683,
+        "naturalness": 3.5516372795969775
       },
-      "overall_dimension_mean": 3.549958018471872,
-      "execution_failures": 11,
-      "critical_failure_count": 40,
-      "critical_failure_rate_among_judged": 0.10075566750629723
+      "overall_dimension_mean": 3.7900923593618807,
+      "execution_failures": 12,
+      "critical_failure_count": 36,
+      "critical_failure_rate_among_judged": 0.0906801007556675
     }
   ],
   "paired_comparisons": [
@@ -252,10 +252,10 @@
       "system_a": "edge_native",
       "system_b": "qwen35_2b",
       "category": "all",
-      "pass_rate_difference": 0.011,
+      "pass_rate_difference": 0.008,
       "cluster_bootstrap_95_ci": [
-        -0.031,
-        0.05
+        -0.037,
+        0.051
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -266,10 +266,10 @@
       "system_a": "edge_native",
       "system_b": "qwen35_2b",
       "category": "tool",
-      "pass_rate_difference": -0.041666666666666664,
+      "pass_rate_difference": -0.058333333333333334,
       "cluster_bootstrap_95_ci": [
-        -0.10666666666666667,
-        0.016666666666666666
+        -0.12833333333333333,
+        0.005
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -280,10 +280,10 @@
       "system_a": "edge_native",
       "system_b": "qwen35_2b",
       "category": "chat",
-      "pass_rate_difference": 0.09,
+      "pass_rate_difference": 0.1075,
       "cluster_bootstrap_95_ci": [
-        0.05,
-        0.1325
+        0.0475,
+        0.1725
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -294,10 +294,10 @@
       "system_a": "edge_native",
       "system_b": "qwen35_4b",
       "category": "all",
-      "pass_rate_difference": -0.143,
+      "pass_rate_difference": -0.147,
       "cluster_bootstrap_95_ci": [
-        -0.185,
-        -0.1
+        -0.201,
+        -0.092
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -308,10 +308,10 @@
       "system_a": "edge_native",
       "system_b": "qwen35_4b",
       "category": "tool",
-      "pass_rate_difference": -0.11333333333333333,
+      "pass_rate_difference": -0.125,
       "cluster_bootstrap_95_ci": [
-        -0.17666666666666667,
-        -0.04666666666666667
+        -0.19666666666666666,
+        -0.058333333333333334
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -322,10 +322,10 @@
       "system_a": "edge_native",
       "system_b": "qwen35_4b",
       "category": "chat",
-      "pass_rate_difference": -0.1875,
+      "pass_rate_difference": -0.18,
       "cluster_bootstrap_95_ci": [
-        -0.2375,
-        -0.14
+        -0.2725,
+        -0.095
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -336,10 +336,10 @@
       "system_a": "qwen35_4b",
       "system_b": "qwen35_2b",
       "category": "all",
-      "pass_rate_difference": 0.154,
+      "pass_rate_difference": 0.155,
       "cluster_bootstrap_95_ci": [
-        0.105,
-        0.201
+        0.1,
+        0.206
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -350,10 +350,10 @@
       "system_a": "qwen35_4b",
       "system_b": "qwen35_2b",
       "category": "tool",
-      "pass_rate_difference": 0.07166666666666667,
+      "pass_rate_difference": 0.06666666666666667,
       "cluster_bootstrap_95_ci": [
-        -0.0016666666666666668,
-        0.13833333333333334
+        -0.016666666666666666,
+        0.14333333333333334
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -364,10 +364,10 @@
       "system_a": "qwen35_4b",
       "system_b": "qwen35_2b",
       "category": "chat",
-      "pass_rate_difference": 0.2775,
+      "pass_rate_difference": 0.2875,
       "cluster_bootstrap_95_ci": [
-        0.2125,
-        0.3375
+        0.22,
+        0.3525
       ],
       "cluster_unit": "scene",
       "stratification": "tool/chat",
@@ -389,22 +389,22 @@
       "reported_total_tokens": 3771408
     },
     "qwen-audio-3.1-tts-next": {
-      "requests": 1844,
-      "prompt_tokens": 335656,
-      "completion_tokens": 1539368,
-      "reported_total_tokens": 1875024
+      "requests": 1929,
+      "prompt_tokens": 346675,
+      "completion_tokens": 1610224,
+      "reported_total_tokens": 1956899
     },
     "qwen3.8-omni-flash": {
-      "requests": 8761,
-      "prompt_tokens": 40565079,
-      "completion_tokens": 6432332,
-      "reported_total_tokens": 46997411
+      "requests": 13798,
+      "prompt_tokens": 78000222,
+      "completion_tokens": 11253499,
+      "reported_total_tokens": 89253721
     },
     "deepseek-flash": {
-      "requests": 1,
-      "prompt_tokens": 32,
-      "completion_tokens": 704,
-      "reported_total_tokens": 736
+      "requests": 363,
+      "prompt_tokens": 700825,
+      "completion_tokens": 372375,
+      "reported_total_tokens": 1073200
     }
   },
   "usage_caveat": "Contains authoring, reviews, pilots, regeneration, input QC and response judging; provider pricing/billing may differ. Requests are ledger entries, not unique case costs.",
@@ -416,8 +416,8 @@
     "Reference-compatible backbones differ in precision and runtime from native Edge; results compare complete deployed systems.",
     "Offline ASR/TTS caching and batching mean interaction timings are not end-to-end real-time latency."
   ],
-  "judge_evidence_version": "observed_oracle_v3",
-  "judge_prompt_sha256": "79a553f8525af1303af367d566fc7b754ba093a3df7e221bc4308358515109e8",
+  "judge_evidence_version": "source_constraints_audio_v0.3",
+  "judge_prompt_sha256": "420d24fa6fdea2f89a6f77240e6f27438c7c5ad7eade424385408acd34717fde",
   "by_planned_user_turns": [
     {
       "system_id": "edge_native",
@@ -426,8 +426,8 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 38,
-      "strict_pass_rate": 0.19
+      "passed_count": 47,
+      "strict_pass_rate": 0.235
     },
     {
       "system_id": "edge_native",
@@ -436,13 +436,23 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 21,
-      "strict_pass_rate": 0.105
+      "passed_count": 30,
+      "strict_pass_rate": 0.15
     },
     {
       "system_id": "edge_native",
       "category": "all",
       "planned_user_turns": 3,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 29,
+      "strict_pass_rate": 0.145
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 4,
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
@@ -452,22 +462,12 @@
     {
       "system_id": "edge_native",
       "category": "all",
-      "planned_user_turns": 4,
-      "planned": 200,
-      "run_count": 200,
-      "decided_count": 200,
-      "passed_count": 20,
-      "strict_pass_rate": 0.1
-    },
-    {
-      "system_id": "edge_native",
-      "category": "all",
       "planned_user_turns": 5,
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 15,
-      "strict_pass_rate": 0.075
+      "passed_count": 23,
+      "strict_pass_rate": 0.115
     },
     {
       "system_id": "edge_native",
@@ -476,8 +476,8 @@
       "planned": 120,
       "run_count": 120,
       "decided_count": 120,
-      "passed_count": 20,
-      "strict_pass_rate": 0.16666666666666666
+      "passed_count": 21,
+      "strict_pass_rate": 0.175
     },
     {
       "system_id": "edge_native",
@@ -486,8 +486,8 @@
       "planned": 120,
       "run_count": 120,
       "decided_count": 120,
-      "passed_count": 14,
-      "strict_pass_rate": 0.11666666666666667
+      "passed_count": 15,
+      "strict_pass_rate": 0.125
     },
     {
       "system_id": "edge_native",
@@ -496,8 +496,8 @@
       "planned": 120,
       "run_count": 120,
       "decided_count": 120,
-      "passed_count": 12,
-      "strict_pass_rate": 0.1
+      "passed_count": 14,
+      "strict_pass_rate": 0.11666666666666667
     },
     {
       "system_id": "edge_native",
@@ -516,48 +516,48 @@
       "planned": 120,
       "run_count": 120,
       "decided_count": 120,
-      "passed_count": 13,
-      "strict_pass_rate": 0.10833333333333334
-    },
-    {
-      "system_id": "edge_native",
-      "category": "chat",
-      "planned_user_turns": 1,
-      "planned": 80,
-      "run_count": 80,
-      "decided_count": 80,
-      "passed_count": 18,
-      "strict_pass_rate": 0.225
-    },
-    {
-      "system_id": "edge_native",
-      "category": "chat",
-      "planned_user_turns": 2,
-      "planned": 80,
-      "run_count": 80,
-      "decided_count": 80,
-      "passed_count": 7,
-      "strict_pass_rate": 0.0875
-    },
-    {
-      "system_id": "edge_native",
-      "category": "chat",
-      "planned_user_turns": 3,
-      "planned": 80,
-      "run_count": 80,
-      "decided_count": 80,
-      "passed_count": 10,
+      "passed_count": 15,
       "strict_pass_rate": 0.125
     },
     {
       "system_id": "edge_native",
       "category": "chat",
+      "planned_user_turns": 1,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 26,
+      "strict_pass_rate": 0.325
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 2,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 15,
+      "strict_pass_rate": 0.1875
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 3,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 15,
+      "strict_pass_rate": 0.1875
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
       "planned_user_turns": 4,
       "planned": 80,
       "run_count": 80,
       "decided_count": 80,
-      "passed_count": 4,
-      "strict_pass_rate": 0.05
+      "passed_count": 6,
+      "strict_pass_rate": 0.075
     },
     {
       "system_id": "edge_native",
@@ -566,8 +566,8 @@
       "planned": 80,
       "run_count": 80,
       "decided_count": 80,
-      "passed_count": 2,
-      "strict_pass_rate": 0.025
+      "passed_count": 8,
+      "strict_pass_rate": 0.1
     },
     {
       "system_id": "qwen35_2b",
@@ -576,8 +576,8 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 31,
-      "strict_pass_rate": 0.155
+      "passed_count": 40,
+      "strict_pass_rate": 0.2
     },
     {
       "system_id": "qwen35_2b",
@@ -586,8 +586,8 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 22,
-      "strict_pass_rate": 0.11
+      "passed_count": 32,
+      "strict_pass_rate": 0.16
     },
     {
       "system_id": "qwen35_2b",
@@ -596,8 +596,8 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 18,
-      "strict_pass_rate": 0.09
+      "passed_count": 26,
+      "strict_pass_rate": 0.13
     },
     {
       "system_id": "qwen35_2b",
@@ -606,8 +606,8 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 16,
-      "strict_pass_rate": 0.08
+      "passed_count": 25,
+      "strict_pass_rate": 0.125
     },
     {
       "system_id": "qwen35_2b",
@@ -616,13 +616,23 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 18,
-      "strict_pass_rate": 0.09
+      "passed_count": 20,
+      "strict_pass_rate": 0.1
     },
     {
       "system_id": "qwen35_2b",
       "category": "tool",
       "planned_user_turns": 1,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 26,
+      "strict_pass_rate": 0.21666666666666667
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 2,
       "planned": 120,
       "run_count": 120,
       "decided_count": 120,
@@ -632,7 +642,7 @@
     {
       "system_id": "qwen35_2b",
       "category": "tool",
-      "planned_user_turns": 2,
+      "planned_user_turns": 3,
       "planned": 120,
       "run_count": 120,
       "decided_count": 120,
@@ -642,22 +652,12 @@
     {
       "system_id": "qwen35_2b",
       "category": "tool",
-      "planned_user_turns": 3,
-      "planned": 120,
-      "run_count": 120,
-      "decided_count": 120,
-      "passed_count": 18,
-      "strict_pass_rate": 0.15
-    },
-    {
-      "system_id": "qwen35_2b",
-      "category": "tool",
       "planned_user_turns": 4,
       "planned": 120,
       "run_count": 120,
       "decided_count": 120,
-      "passed_count": 15,
-      "strict_pass_rate": 0.125
+      "passed_count": 21,
+      "strict_pass_rate": 0.175
     },
     {
       "system_id": "qwen35_2b",
@@ -666,13 +666,33 @@
       "planned": 120,
       "run_count": 120,
       "decided_count": 120,
-      "passed_count": 18,
-      "strict_pass_rate": 0.15
+      "passed_count": 20,
+      "strict_pass_rate": 0.16666666666666666
     },
     {
       "system_id": "qwen35_2b",
       "category": "chat",
       "planned_user_turns": 1,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 14,
+      "strict_pass_rate": 0.175
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 2,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 5,
+      "strict_pass_rate": 0.0625
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 3,
       "planned": 80,
       "run_count": 80,
       "decided_count": 80,
@@ -682,32 +702,12 @@
     {
       "system_id": "qwen35_2b",
       "category": "chat",
-      "planned_user_turns": 2,
-      "planned": 80,
-      "run_count": 80,
-      "decided_count": 80,
-      "passed_count": 0,
-      "strict_pass_rate": 0.0
-    },
-    {
-      "system_id": "qwen35_2b",
-      "category": "chat",
-      "planned_user_turns": 3,
-      "planned": 80,
-      "run_count": 80,
-      "decided_count": 80,
-      "passed_count": 0,
-      "strict_pass_rate": 0.0
-    },
-    {
-      "system_id": "qwen35_2b",
-      "category": "chat",
       "planned_user_turns": 4,
       "planned": 80,
       "run_count": 80,
       "decided_count": 80,
-      "passed_count": 1,
-      "strict_pass_rate": 0.0125
+      "passed_count": 4,
+      "strict_pass_rate": 0.05
     },
     {
       "system_id": "qwen35_2b",
@@ -726,8 +726,8 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 70,
-      "strict_pass_rate": 0.35
+      "passed_count": 76,
+      "strict_pass_rate": 0.38
     },
     {
       "system_id": "qwen35_4b",
@@ -736,8 +736,8 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 60,
-      "strict_pass_rate": 0.3
+      "passed_count": 73,
+      "strict_pass_rate": 0.365
     },
     {
       "system_id": "qwen35_4b",
@@ -746,8 +746,8 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
-      "passed_count": 49,
-      "strict_pass_rate": 0.245
+      "passed_count": 54,
+      "strict_pass_rate": 0.27
     },
     {
       "system_id": "qwen35_4b",
@@ -756,78 +756,78 @@
       "planned": 200,
       "run_count": 200,
       "decided_count": 200,
+      "passed_count": 48,
+      "strict_pass_rate": 0.24
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 5,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 47,
+      "strict_pass_rate": 0.235
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 1,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 37,
+      "strict_pass_rate": 0.30833333333333335
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 2,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 33,
+      "strict_pass_rate": 0.275
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 3,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 32,
+      "strict_pass_rate": 0.26666666666666666
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 4,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 28,
+      "strict_pass_rate": 0.23333333333333334
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 5,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 26,
+      "strict_pass_rate": 0.21666666666666667
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 1,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
       "passed_count": 39,
-      "strict_pass_rate": 0.195
-    },
-    {
-      "system_id": "qwen35_4b",
-      "category": "all",
-      "planned_user_turns": 5,
-      "planned": 200,
-      "run_count": 200,
-      "decided_count": 200,
-      "passed_count": 41,
-      "strict_pass_rate": 0.205
-    },
-    {
-      "system_id": "qwen35_4b",
-      "category": "tool",
-      "planned_user_turns": 1,
-      "planned": 120,
-      "run_count": 120,
-      "decided_count": 120,
-      "passed_count": 35,
-      "strict_pass_rate": 0.2916666666666667
-    },
-    {
-      "system_id": "qwen35_4b",
-      "category": "tool",
-      "planned_user_turns": 2,
-      "planned": 120,
-      "run_count": 120,
-      "decided_count": 120,
-      "passed_count": 31,
-      "strict_pass_rate": 0.25833333333333336
-    },
-    {
-      "system_id": "qwen35_4b",
-      "category": "tool",
-      "planned_user_turns": 3,
-      "planned": 120,
-      "run_count": 120,
-      "decided_count": 120,
-      "passed_count": 26,
-      "strict_pass_rate": 0.21666666666666667
-    },
-    {
-      "system_id": "qwen35_4b",
-      "category": "tool",
-      "planned_user_turns": 4,
-      "planned": 120,
-      "run_count": 120,
-      "decided_count": 120,
-      "passed_count": 26,
-      "strict_pass_rate": 0.21666666666666667
-    },
-    {
-      "system_id": "qwen35_4b",
-      "category": "tool",
-      "planned_user_turns": 5,
-      "planned": 120,
-      "run_count": 120,
-      "decided_count": 120,
-      "passed_count": 25,
-      "strict_pass_rate": 0.20833333333333334
-    },
-    {
-      "system_id": "qwen35_4b",
-      "category": "chat",
-      "planned_user_turns": 1,
-      "planned": 80,
-      "run_count": 80,
-      "decided_count": 80,
-      "passed_count": 35,
-      "strict_pass_rate": 0.4375
+      "strict_pass_rate": 0.4875
     },
     {
       "system_id": "qwen35_4b",
@@ -836,8 +836,8 @@
       "planned": 80,
       "run_count": 80,
       "decided_count": 80,
-      "passed_count": 29,
-      "strict_pass_rate": 0.3625
+      "passed_count": 40,
+      "strict_pass_rate": 0.5
     },
     {
       "system_id": "qwen35_4b",
@@ -846,8 +846,8 @@
       "planned": 80,
       "run_count": 80,
       "decided_count": 80,
-      "passed_count": 23,
-      "strict_pass_rate": 0.2875
+      "passed_count": 22,
+      "strict_pass_rate": 0.275
     },
     {
       "system_id": "qwen35_4b",
@@ -856,8 +856,8 @@
       "planned": 80,
       "run_count": 80,
       "decided_count": 80,
-      "passed_count": 13,
-      "strict_pass_rate": 0.1625
+      "passed_count": 20,
+      "strict_pass_rate": 0.25
     },
     {
       "system_id": "qwen35_4b",
@@ -866,8 +866,163 @@
       "planned": 80,
       "run_count": 80,
       "decided_count": 80,
-      "passed_count": 16,
-      "strict_pass_rate": 0.2
+      "passed_count": 21,
+      "strict_pass_rate": 0.2625
     }
+  ],
+  "by_reporting_partition": [
+    {
+      "system_id": "edge_native",
+      "partition": "standard",
+      "category": "all",
+      "planned": 993,
+      "decided_count": 993,
+      "passed_count": 151,
+      "strict_pass_rate": 0.15206445115810674
+    },
+    {
+      "system_id": "edge_native",
+      "partition": "standard",
+      "category": "tool",
+      "planned": 600,
+      "decided_count": 600,
+      "passed_count": 81,
+      "strict_pass_rate": 0.135
+    },
+    {
+      "system_id": "edge_native",
+      "partition": "standard",
+      "category": "chat",
+      "planned": 393,
+      "decided_count": 393,
+      "passed_count": 70,
+      "strict_pass_rate": 0.178117048346056
+    },
+    {
+      "system_id": "edge_native",
+      "partition": "budget_stress",
+      "category": "all",
+      "planned": 7,
+      "decided_count": 7,
+      "passed_count": 0,
+      "strict_pass_rate": 0.0
+    },
+    {
+      "system_id": "edge_native",
+      "partition": "budget_stress",
+      "category": "chat",
+      "planned": 7,
+      "decided_count": 7,
+      "passed_count": 0,
+      "strict_pass_rate": 0.0
+    },
+    {
+      "system_id": "qwen35_2b",
+      "partition": "standard",
+      "category": "all",
+      "planned": 993,
+      "decided_count": 993,
+      "passed_count": 143,
+      "strict_pass_rate": 0.14400805639476336
+    },
+    {
+      "system_id": "qwen35_2b",
+      "partition": "standard",
+      "category": "tool",
+      "planned": 600,
+      "decided_count": 600,
+      "passed_count": 116,
+      "strict_pass_rate": 0.19333333333333333
+    },
+    {
+      "system_id": "qwen35_2b",
+      "partition": "standard",
+      "category": "chat",
+      "planned": 393,
+      "decided_count": 393,
+      "passed_count": 27,
+      "strict_pass_rate": 0.06870229007633588
+    },
+    {
+      "system_id": "qwen35_2b",
+      "partition": "budget_stress",
+      "category": "all",
+      "planned": 7,
+      "decided_count": 7,
+      "passed_count": 0,
+      "strict_pass_rate": 0.0
+    },
+    {
+      "system_id": "qwen35_2b",
+      "partition": "budget_stress",
+      "category": "chat",
+      "planned": 7,
+      "decided_count": 7,
+      "passed_count": 0,
+      "strict_pass_rate": 0.0
+    },
+    {
+      "system_id": "qwen35_4b",
+      "partition": "standard",
+      "category": "all",
+      "planned": 993,
+      "decided_count": 993,
+      "passed_count": 297,
+      "strict_pass_rate": 0.2990936555891239
+    },
+    {
+      "system_id": "qwen35_4b",
+      "partition": "standard",
+      "category": "tool",
+      "planned": 600,
+      "decided_count": 600,
+      "passed_count": 156,
+      "strict_pass_rate": 0.26
+    },
+    {
+      "system_id": "qwen35_4b",
+      "partition": "standard",
+      "category": "chat",
+      "planned": 393,
+      "decided_count": 393,
+      "passed_count": 141,
+      "strict_pass_rate": 0.35877862595419846
+    },
+    {
+      "system_id": "qwen35_4b",
+      "partition": "budget_stress",
+      "category": "all",
+      "planned": 7,
+      "decided_count": 7,
+      "passed_count": 1,
+      "strict_pass_rate": 0.14285714285714285
+    },
+    {
+      "system_id": "qwen35_4b",
+      "partition": "budget_stress",
+      "category": "chat",
+      "planned": 7,
+      "decided_count": 7,
+      "passed_count": 1,
+      "strict_pass_rate": 0.14285714285714285
+    }
+  ],
+  "revision": {
+    "previous_version": "0.2.0",
+    "input_changed_cases": 46,
+    "symmetric_rerun_cases": 51,
+    "actual_new_model_runs": 153,
+    "reused_model_runs": 2847,
+    "all_audible_outputs_rejudged": true,
+    "source_machine_audit": "DeepSeek official API; independent human calibration not performed"
+  },
+  "budget_stress_case_ids": [
+    "C02_013",
+    "C13_001",
+    "C13_002",
+    "C13_003",
+    "C13_004",
+    "C13_017",
+    "C13_020"
   ]
 }

@@ -48,7 +48,7 @@ local_commit = subprocess.check_output([git, 'rev-parse', 'HEAD'], cwd=ROOT, tex
 remote_commit = api(repo_path + '/git/ref/heads/main')['object']['sha']
 if repo['private'] or repo['default_branch'] != 'main' or remote_commit != local_commit:
     raise ValueError('Public visibility or pushed commit mismatch')
-release = api(repo_path + '/releases/tags/v0.2.0')
+release = api(repo_path + '/releases/tags/v0.3.0')
 if release['draft'] or release['prerelease']:
     raise ValueError('Release is not publicly published')
 actual_assets = {x['name']: x for x in api(repo_path + '/releases/' + str(release['id']) + '/assets?per_page=100')}
@@ -79,7 +79,7 @@ site = pages['html_url'].rstrip('/') + '/'
 run = read('runs/qwen35_4b/T06_003.json')
 audio_path = Path(run['turns'][0]['assistant_audio']['path'])
 audio_copy = 'docs/audio/' + audio_path.parent.name + '-' + audio_path.name
-targets = ['docs/index.html', 'outputs/homevoicebench-20261117/HomeVoiceBench-ZH.xlsx', 'data/cases/T06_003.json', audio_copy]
+targets = ['docs/index.html', 'outputs/homevoicebench-v030-20261117/HomeVoiceBench-ZH.xlsx', 'data/cases/T06_003.json', audio_copy]
 def check_file(relative):
     status, address, content = fetch(site + relative)
     local = (ROOT / relative).read_bytes()
@@ -98,6 +98,6 @@ for name in ['SHA256SUMS.txt', 'README.md']:
         raise ValueError('Public release download mismatch: ' + name)
     http_checks.append({'path': 'release/' + name, 'status': status, 'bytes': len(content), 'matches_local': True})
 
-report = {'status': 'passed', 'verified_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'repository_url': repo['html_url'], 'visibility': 'public', 'verified_code_commit': local_commit, 'release_url': release['html_url'], 'release_assets': len(expected), 'release_bytes': sum(x['bytes'] for x in expected), 'all_server_sha256_match': True, 'pages_url': site, 'pages_build': {'status': build['status'], 'commit': build['commit']}, 'public_http_checks': http_checks, 'browser_note': 'Public browser automation timed out. Served HTML matches the local page previously checked visually; no additional public-browser playback claim.'}
+report = {'status': 'passed', 'verified_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'repository_url': repo['html_url'], 'visibility': 'public', 'verified_code_commit': local_commit, 'release_url': release['html_url'], 'release_assets': len(expected), 'release_bytes': sum(x['bytes'] for x in expected), 'all_server_sha256_match': True, 'pages_url': site, 'pages_build': {'status': build['status'], 'commit': build['commit']}, 'public_http_checks': http_checks, 'browser_note': 'This report verifies public HTTP bytes and deployment metadata. Browser interaction checks are reported separately.'}
 (ROOT / 'reports/publication_verification.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', 'utf-8')
 print(json.dumps({k: report[k] for k in ['status', 'visibility', 'release_assets', 'all_server_sha256_match', 'pages_url']}), flush=True)

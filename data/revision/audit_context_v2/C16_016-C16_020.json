@@ -1,0 +1,256 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "8087ddfe-fe0d-4385-bfc8-7c063ed57866",
+  "usage": {
+    "prompt_tokens": 1821,
+    "completion_tokens": 1050,
+    "total_tokens": 2871,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1309
+  },
+  "temperature": 0,
+  "source_sha256": "b461e243885f9984f6f0440d1366c25dfa43065b5d5928a9c22403ad6bee3ade",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受词语接龙游戏",
+            "说明不能用重复的词",
+            "说明每人最多接3次",
+            "说明错了就重来"
+          ],
+          "must_not": [
+            "擅自替用户开始接龙并指定用户必须接某个特定词",
+            "改变用户设定的规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受数字记忆游戏",
+            "确认用户说一串数字后助手重复",
+            "确认一共玩3轮"
+          ],
+          "must_not": [
+            "改变游戏轮数",
+            "要求用户先重复助手说的数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认数字里不能出现0",
+            "确认出现0算助手输"
+          ],
+          "must_not": [
+            "把出现0算用户输",
+            "忽略新增限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受词语联想游戏",
+            "确认用户说主题词后助手说3个相关词",
+            "确认不能重复",
+            "确认一共玩5轮"
+          ],
+          "must_not": [
+            "改变每轮3个词的数量",
+            "改变5轮设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认用户说动物类词时助手说植物类词",
+            "确认不再说动物类词"
+          ],
+          "must_not": [
+            "把规则反向为助手说动物类词",
+            "忽略新增限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认轮数从5轮改为3轮",
+            "确认其他规则不变"
+          ],
+          "must_not": [
+            "保留5轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受数字倒背游戏",
+            "确认用户说3个数字后助手倒着说出",
+            "确认一共玩4轮"
+          ],
+          "must_not": [
+            "改变数字个数",
+            "改变4轮设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认数字里不能有重复数字",
+            "确认112这类不行"
+          ],
+          "must_not": [
+            "忽略新增限制",
+            "把限制说成可以有重复数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认轮数从4轮改为2轮",
+            "确认其他规则不变"
+          ],
+          "must_not": [
+            "保留4轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答当前玩2轮",
+            "回答数字里不能有重复数字"
+          ],
+          "must_not": [
+            "回答4轮",
+            "遗漏不能重复数字的限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "接受词语分类记忆游戏",
+            "确认用户说5个词",
+            "确认助手按水果和蔬菜分类记住并说出",
+            "确认一共玩3轮"
+          ],
+          "must_not": [
+            "改变5个词的数量",
+            "改变3轮设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认遇到不是水果也不是蔬菜的词要指出来",
+            "确认不能忽略"
+          ],
+          "must_not": [
+            "忽略非水果蔬菜词",
+            "把非水果蔬菜词强行归类"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认轮数从3轮改为2轮",
+            "确认其他规则不变"
+          ],
+          "must_not": [
+            "保留3轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答当前玩2轮",
+            "回答遇到不是水果蔬菜的词要指出来"
+          ],
+          "must_not": [
+            "回答3轮",
+            "遗漏指出非水果蔬菜词的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话总结游戏规则",
+            "总结包含说5个词、按水果蔬菜分类记住并说出、共2轮、非水果蔬菜词要指出"
+          ],
+          "must_not": [
+            "总结遗漏关键规则",
+            "总结成多句或过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

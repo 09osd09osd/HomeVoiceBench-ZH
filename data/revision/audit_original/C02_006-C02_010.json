@@ -1,0 +1,231 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "72d68ef6-029b-420c-a590-d19e9147760f",
+  "usage": {
+    "prompt_tokens": 1673,
+    "completion_tokens": 807,
+    "total_tokens": 2480,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1673
+  },
+  "temperature": 0,
+  "source_sha256": "70aceb52c8072a4ac1dfe6b982045062be53e5c3858007d27545e861bf916a55",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用温柔的语气回应",
+            "表达陪伴"
+          ],
+          "must_not": [
+            "语气生硬或说教",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应早上好",
+            "简短聊两句"
+          ],
+          "must_not": [
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "语气轻、声音轻",
+            "只说一两句提醒"
+          ],
+          "must_not": [
+            "说太热闹的话",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应晚上好",
+            "语气不热闹、放松"
+          ],
+          "must_not": [
+            "过于热闹或兴奋"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认记住十点半左右关灯的习惯"
+          ],
+          "must_not": [
+            "否认或记错时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将关灯时间更正为十点四十左右"
+          ],
+          "must_not": [
+            "仍沿用十点半"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应早上好",
+            "简短陪聊"
+          ],
+          "must_not": [
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认先喝半杯温水再坐一会儿",
+            "说话简短"
+          ],
+          "must_not": [
+            "一醒来就说很多话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将温水更正为大半杯"
+          ],
+          "must_not": [
+            "仍说半杯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆先喝大半杯温水再坐一会儿",
+            "再说一句提醒"
+          ],
+          "must_not": [
+            "记错顺序或用量",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应晚上好",
+            "语气轻、不兴奋"
+          ],
+          "must_not": [
+            "过于兴奋"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认睡前听轻音乐",
+            "避开工作话题"
+          ],
+          "must_not": [
+            "聊工作上的事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将睡前听的内容更正为雨声"
+          ],
+          "must_not": [
+            "仍说轻音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆睡前听雨声",
+            "说一句放松的话"
+          ],
+          "must_not": [
+            "记错为轻音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短收尾"
+          ],
+          "must_not": [
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

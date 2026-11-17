@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C13_020",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "小象找朋友的故事",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261136,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C13_016-020.json"
+      "data/authoring/C13_016-020.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -1135,7 +1136,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1914,7 +1915,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1947,24 +1948,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -2099,7 +2100,136 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "budget_stress",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "讲一个小象找朋友的故事",
+            "温暖、简单",
+            "篇幅不长",
+            "没有吓人的情节"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "篇幅过长"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "小象找到三个朋友",
+            "最后一起在河边玩水",
+            "篇幅约七八分钟"
+          ],
+          "must_not": [
+            "篇幅过长"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "小象找到两个朋友",
+            "最后一起在河边玩水"
+          ],
+          "must_not": [
+            "说小象找到三个朋友"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "确认小象找到两个朋友",
+            "接着讲他们玩水时发生了什么"
+          ],
+          "must_not": [
+            "说小象找到三个朋友"
+          ]
+        },
+        {
+          "node_id": "U5",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "用简短方式收尾",
+            "结尾能让孩子安静下来睡觉"
+          ],
+          "must_not": [
+            "结尾过于冗长或刺激"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -2108,31 +2238,32 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "好，我讲一个小象在森林里找朋友的故事。小象遇到小猴子、小兔子，大家一起玩，最后成了好朋友。"
+        "assistant_text": "预期要点：讲一个小象找朋友的故事；温暖、简单；篇幅不长；没有吓人的情节。避免：出现吓人的情节；篇幅过长。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "好，小象在森林里找到三个朋友，最后大家一起在河边玩水，故事大概七八分钟。"
+        "assistant_text": "预期要点：小象找到三个朋友；最后一起在河边玩水；篇幅约七八分钟。避免：篇幅过长。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好，我改过来：小象找到两个朋友，最后一起在河边玩水，温暖又简单。"
+        "assistant_text": "预期要点：小象找到两个朋友；最后一起在河边玩水。避免：说小象找到三个朋友。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，小象找到两个朋友。他们玩水时，小象用鼻子喷水，两个朋友笑着躲开，大家玩得很开心。"
+        "assistant_text": "预期要点：确认小象找到两个朋友；接着讲他们玩水时发生了什么。避免：说小象找到三个朋友。"
       },
       {
         "node_id": "U5",
         "calls": [],
-        "assistant_text": "好，小象和两个朋友玩累了，一起坐在河边看夕阳，慢慢回家，安静地睡着了。故事就到这里。"
+        "assistant_text": "预期要点：用简短方式收尾；结尾能让孩子安静下来睡觉。避免：结尾过于冗长或刺激。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -2144,7 +2275,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

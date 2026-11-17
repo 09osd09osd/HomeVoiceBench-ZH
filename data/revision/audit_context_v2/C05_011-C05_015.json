@@ -1,0 +1,264 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "465f7d9b-3730-4324-bd2b-4e3d0c784ed2",
+  "usage": {
+    "prompt_tokens": 2167,
+    "completion_tokens": 1390,
+    "total_tokens": 3557,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1655
+  },
+  "temperature": 0,
+  "source_sha256": "ec3ddff60f17368c14ded0459f91918f52f50dbbae6af1edf19c931afff22662",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C05_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应与家人商量分担家务且不想一开口就指责的沟通需求",
+            "给出以表达自身感受和需要为主、不评价对方的开口建议"
+          ],
+          "must_not": [
+            "指责或评价家人谁做得不够",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应与家人商量分担家务且不想一开口就指责的沟通需求",
+            "给出以表达自身感受和需要为主、不评价对方的开口建议"
+          ],
+          "must_not": [
+            "指责或评价家人谁做得不够",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户周一到周五晚上没空、最好周末白天谈的时间限制给出开口建议",
+            "保持不指责的表达方式"
+          ],
+          "must_not": [
+            "建议安排在工作日晚上",
+            "把周末白天说成用户未提出的具体时段",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应与家人商量分担家务且不想一开口就指责的沟通需求",
+            "给出以表达自身感受和需要为主、不评价对方的开口建议"
+          ],
+          "must_not": [
+            "指责或评价家人谁做得不够",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户周一到周五晚上没空、最好周末白天谈的时间限制给出开口建议",
+            "保持不指责的表达方式"
+          ],
+          "must_not": [
+            "建议安排在工作日晚上",
+            "把周末白天说成用户未提出的具体时段",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户将时间从周末白天更正为周六上午",
+            "结合周日要陪孩子上课外班说明周六上午更合适",
+            "给出不指责的开口建议"
+          ],
+          "must_not": [
+            "仍按周末白天笼统安排",
+            "建议周日谈",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应与家人商量分担家务且不想一开口就指责的沟通需求",
+            "给出以表达自身感受和需要为主、不评价对方的开口建议"
+          ],
+          "must_not": [
+            "指责或评价家人谁做得不够",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户周一到周五晚上没空、最好周末白天谈的时间限制给出开口建议",
+            "保持不指责的表达方式"
+          ],
+          "must_not": [
+            "建议安排在工作日晚上",
+            "把周末白天说成用户未提出的具体时段",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户将时间从周末白天更正为周六上午",
+            "结合周日要陪孩子上课外班说明周六上午更合适",
+            "给出不指责的开口建议"
+          ],
+          "must_not": [
+            "仍按周末白天笼统安排",
+            "建议周日谈",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认时间确实是周六上午",
+            "针对把做饭和倒垃圾先分出去给出不伤人的开口建议"
+          ],
+          "must_not": [
+            "否认或改掉周六上午",
+            "把做饭和倒垃圾说成用户未提出的其他家务",
+            "用指责家人的措辞",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应与家人商量分担家务且不想一开口就指责的沟通需求",
+            "给出以表达自身感受和需要为主、不评价对方的开口建议"
+          ],
+          "must_not": [
+            "指责或评价家人谁做得不够",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户周一到周五晚上没空、最好周末白天谈的时间限制给出开口建议",
+            "保持不指责的表达方式"
+          ],
+          "must_not": [
+            "建议安排在工作日晚上",
+            "把周末白天说成用户未提出的具体时段",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户将时间从周末白天更正为周六上午",
+            "结合周日要陪孩子上课外班说明周六上午更合适",
+            "给出不指责的开口建议"
+          ],
+          "must_not": [
+            "仍按周末白天笼统安排",
+            "建议周日谈",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认时间确实是周六上午",
+            "针对把做饭和倒垃圾先分出去给出不伤人的开口建议"
+          ],
+          "must_not": [
+            "否认或改掉周六上午",
+            "把做饭和倒垃圾说成用户未提出的其他家务",
+            "用指责家人的措辞",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结周六上午该怎么开口",
+            "总结中包含周一到周五晚上没空、做饭和倒垃圾想分担、不指责的表达"
+          ],
+          "must_not": [
+            "总结超过一两句话的篇幅",
+            "把时间说成周末白天或周日",
+            "使用指责家人的措辞",
+            "替用户向家人发送消息或执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

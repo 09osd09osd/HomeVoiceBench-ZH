@@ -1,0 +1,262 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "12e4d2f8-dd92-49d6-a178-dbc9094f6519",
+  "usage": {
+    "prompt_tokens": 2022,
+    "completion_tokens": 1169,
+    "total_tokens": 3191,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1510
+  },
+  "temperature": 0,
+  "source_sha256": "02b2506bf3b557cc5d507f44bdfec1b7c37a82dcebb2e9bd353940abf1512bb2",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C17_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户今天累、想放松的状态",
+            "推荐轻松舒缓的音乐方向",
+            "避免推荐太吵的音乐"
+          ],
+          "must_not": [
+            "推荐吵闹或高刺激的音乐",
+            "忽略用户不想动、想放松的语境"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐适合睡前放松的有声书方向",
+            "避开吓人或太费脑的内容"
+          ],
+          "must_not": [
+            "推荐恐怖、惊悚或烧脑内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受短篇合集、每篇不长的要求",
+            "延续睡前放松且不吓人不烧脑的方向"
+          ],
+          "must_not": [
+            "推荐长篇或一章听不完的内容",
+            "推荐吓人或费脑内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_013",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "用户U3说“我刚才说年代说错了，不是八十年代”，但前序用户台词U1、U2从未提到八十年代或任何具体年代，属于引用未出现的前文。",
+          "evidence": "U3：我刚才说年代说错了，不是八十年代，是九十年代的老歌。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐怀旧老歌方向",
+            "避开太伤感的内容"
+          ],
+          "must_not": [
+            "推荐伤感、容易让人低落的老歌"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受节奏慢一点的要求",
+            "避开苦情内容"
+          ],
+          "must_not": [
+            "推荐节奏太快或苦情的老歌"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受改为九十年代老歌",
+            "延续慢一点、不苦情的方向"
+          ],
+          "must_not": [
+            "继续按八十年代推荐",
+            "推荐苦情或节奏太快的老歌"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐适合周末轻松阅读的短内容",
+            "避开太厚的大部头"
+          ],
+          "must_not": [
+            "推荐厚重的大部头"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "避开压抑内容",
+            "推荐让心情放松的读物"
+          ],
+          "must_not": [
+            "推荐压抑、让人更闷的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受改为短篇散文而非短篇小说",
+            "延续不厚、不压抑的方向"
+          ],
+          "must_not": [
+            "继续推荐短篇小说",
+            "推荐厚书或压抑内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得改为短篇散文",
+            "按短篇散文方向给出可读内容建议",
+            "延续不厚、不压抑的限制"
+          ],
+          "must_not": [
+            "误认为仍是短篇小说",
+            "推荐厚书或压抑内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_015",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "用户U3说“我刚才想的是口琴，不是笛子”，但前序用户台词U1、U2从未提到口琴或笛子，属于引用未出现的前文。",
+          "evidence": "U3：我刚才想的是口琴，不是笛子，你别弄混了。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐在家学且不太吵的乐器方向",
+            "考虑不扰邻"
+          ],
+          "must_not": [
+            "推荐吵闹、扰邻的乐器"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受入门成本低、不花太多钱的要求",
+            "延续声音不大的限制"
+          ],
+          "must_not": [
+            "推荐昂贵设备或高成本入门方案",
+            "推荐吵闹乐器"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户选口琴而非笛子",
+            "说明口琴符合声音可控、成本不高"
+          ],
+          "must_not": [
+            "继续按笛子推荐",
+            "推荐昂贵或吵闹方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户选的是口琴",
+            "给出初学口琴不扰民的练习建议"
+          ],
+          "must_not": [
+            "误认为用户选笛子",
+            "建议在休息时间长时间大声练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结口琴初学注意事项",
+            "控制在两三点"
+          ],
+          "must_not": [
+            "长篇展开或超过两三点",
+            "偏离口琴初学主题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

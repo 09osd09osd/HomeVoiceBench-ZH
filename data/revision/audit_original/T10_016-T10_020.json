@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7b66f652-5705-4e84-952f-e8bacb2dfb77",
+  "usage": {
+    "prompt_tokens": 2319,
+    "completion_tokens": 952,
+    "total_tokens": 3271,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1935
+  },
+  "temperature": 0,
+  "source_sha256": "db5b80b009a60e22b2fb793c93c73bff70b447e3f9525c6e08b6a33b27558879",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T10_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房风扇",
+            "将书房风扇风速设为1档"
+          ],
+          "must_not": [
+            "调整书房风扇以外的设备",
+            "将风速设为1档以外的档位"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T10_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房风扇",
+            "将书房风扇风速设为1档"
+          ],
+          "must_not": [
+            "调整书房风扇以外的设备",
+            "将风速设为1档以外的档位"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的书房风扇风速改为2档"
+          ],
+          "must_not": [
+            "改动书房风扇风速以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T10_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房风扇",
+            "将书房风扇风速设为1档",
+            "首次失败或超时后允许再试一次",
+            "成功后不重复操作"
+          ],
+          "must_not": [
+            "成功后继续重复执行同一操作",
+            "调整书房风扇以外的设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的书房风扇风速改为2档"
+          ],
+          "must_not": [
+            "改动书房风扇风速以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房风扇当前风速",
+            "查询书房风扇当前开关状态"
+          ],
+          "must_not": [
+            "调整书房风扇",
+            "改动任何设备设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T10_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房风扇",
+            "将书房风扇风速设为1档",
+            "首次失败或超时后允许再试一次",
+            "成功后不重复操作"
+          ],
+          "must_not": [
+            "成功后继续重复执行同一操作",
+            "调整书房风扇以外的设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的书房风扇风速改为2档"
+          ],
+          "must_not": [
+            "改动书房风扇风速以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房风扇当前风速",
+            "查询书房风扇当前开关状态"
+          ],
+          "must_not": [
+            "调整书房风扇",
+            "改动任何设备设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭书房风扇",
+            "保留书房风扇风速设置"
+          ],
+          "must_not": [
+            "改动书房风扇风速设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T10_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房风扇",
+            "将书房风扇风速设为1档"
+          ],
+          "must_not": [
+            "调整书房风扇以外的设备",
+            "将风速设为1档以外的档位"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的书房风扇风速改为2档"
+          ],
+          "must_not": [
+            "改动书房风扇风速以外的设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房风扇当前风速",
+            "查询书房风扇当前开关状态"
+          ],
+          "must_not": [
+            "调整书房风扇",
+            "改动任何设备设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭书房风扇",
+            "保留书房风扇风速设置"
+          ],
+          "must_not": [
+            "改动书房风扇风速设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询书房风扇当前开关状态"
+          ],
+          "must_not": [
+            "改动其他设备",
+            "调整书房风扇"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

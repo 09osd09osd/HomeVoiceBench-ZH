@@ -1,0 +1,251 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "54abc764-ce58-4744-a7ba-32ea8614f962",
+  "usage": {
+    "prompt_tokens": 1389,
+    "completion_tokens": 914,
+    "total_tokens": 2303,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 877
+  },
+  "temperature": 0,
+  "source_sha256": "2bfe123e0c363fcbcc28ddd0a984e7ff965c63c72fc7cb58cfd75402731ba9f9",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C14_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "扮演森林里的小兔邮差",
+            "用户是小松鼠",
+            "明天用户过生日",
+            "帮用户给三个好朋友送邀请",
+            "路不远但别跑太快"
+          ],
+          "must_not": [
+            "改变角色设定",
+            "遗漏三个好朋友的邀请任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "扮演太空飞船上的厨师",
+            "用户是船长",
+            "准备一顿庆祝晚餐",
+            "先说明准备做什么菜"
+          ],
+          "must_not": [
+            "改变角色设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "所有菜都不放辣椒",
+            "口味清淡"
+          ],
+          "must_not": [
+            "在任何菜中使用辣椒",
+            "推荐重口味菜"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "扮演魔法图书馆管理员",
+            "用户是来借书的小学徒",
+            "推荐一本会发光的睡前故事书"
+          ],
+          "must_not": [
+            "改变角色设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐不厚的书",
+            "最好一页一个小故事",
+            "考虑只有十分钟"
+          ],
+          "must_not": [
+            "推荐太厚的书"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按五分钟而非十分钟来推荐",
+            "推荐更快能读完的书"
+          ],
+          "must_not": [
+            "仍按十分钟推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "扮演忠诚的骑士",
+            "用户是小王子",
+            "天黑前回到城堡",
+            "走安全的小路"
+          ],
+          "must_not": [
+            "改变角色设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "路线不经过闹市",
+            "考虑用户带着一只胆小的小狗"
+          ],
+          "must_not": [
+            "安排经过闹市的路线"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "动物更正为小猫",
+            "小猫更怕吵",
+            "仍避开闹市"
+          ],
+          "must_not": [
+            "仍说用户带着小狗"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户带着小猫",
+            "正确回忆要避开闹市"
+          ],
+          "must_not": [
+            "说成小狗",
+            "遗漏避开闹市"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "扮演海底向导",
+            "用户是潜水员",
+            "寻找红色珊瑚",
+            "不去太深的地方"
+          ],
+          "must_not": [
+            "改变角色设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "路线要短",
+            "不绕远",
+            "考虑氧气只够半小时"
+          ],
+          "must_not": [
+            "安排绕远的长路线"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "目标更正为橙色珊瑚",
+            "其他条件不变"
+          ],
+          "must_not": [
+            "仍说寻找红色珊瑚"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认要找橙色珊瑚",
+            "确认氧气够半小时"
+          ],
+          "must_not": [
+            "说成红色珊瑚",
+            "说错氧气时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话收尾",
+            "告诉用户接下来往哪游"
+          ],
+          "must_not": [
+            "超过一句话",
+            "遗漏方向指引"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

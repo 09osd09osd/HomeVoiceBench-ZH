@@ -1,0 +1,259 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "f88272f9-7c27-4b55-bed8-3ace4c5873e7",
+  "usage": {
+    "prompt_tokens": 2863,
+    "completion_tokens": 1184,
+    "total_tokens": 4047,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2479
+  },
+  "temperature": 0,
+  "source_sha256": "124dcf7f20a8fa53f93521bb1d626038c53febbbc00afa97f6f17c7d74343473",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T24_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时安排：明天早上9点自动关闭书房灯",
+            "确认设备为书房灯并执行关闭动作"
+          ],
+          "must_not": [
+            "把时间设为非明天早上9点",
+            "把目标设备设为书房灯以外的设备",
+            "执行非关闭（如打开）动作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T24_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时安排：明天早上9点自动关闭书房灯",
+            "确认设备为书房灯并执行关闭动作"
+          ],
+          "must_not": [
+            "把时间设为非明天早上9点",
+            "把目标设备设为书房灯以外的设备",
+            "执行非关闭（如打开）动作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的关书房灯安排时间改为明天9点半",
+            "保留原设备与关闭动作"
+          ],
+          "must_not": [
+            "新建另一条安排而非修改原安排",
+            "改动设备或动作内容",
+            "把时间改为非明天9点半"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T24_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时安排：明天早上9点自动关闭书房灯",
+            "确认设备为书房灯并执行关闭动作"
+          ],
+          "must_not": [
+            "把时间设为非明天早上9点",
+            "把目标设备设为书房灯以外的设备",
+            "执行非关闭（如打开）动作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的关书房灯安排时间改为明天9点半",
+            "保留原设备与关闭动作"
+          ],
+          "must_not": [
+            "新建另一条安排而非修改原安排",
+            "改动设备或动作内容",
+            "把时间改为非明天9点半"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建或修改任何安排",
+            "把未启用的安排列为启用"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T24_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时安排：明天早上9点自动关闭书房灯",
+            "确认设备为书房灯并执行关闭动作"
+          ],
+          "must_not": [
+            "把时间设为非明天早上9点",
+            "把目标设备设为书房灯以外的设备",
+            "执行非关闭（如打开）动作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的关书房灯安排时间改为明天9点半",
+            "保留原设备与关闭动作"
+          ],
+          "must_not": [
+            "新建另一条安排而非修改原安排",
+            "改动设备或动作内容",
+            "把时间改为非明天9点半"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建或修改任何安排",
+            "把未启用的安排列为启用"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条关书房灯安排",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排",
+            "新增安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T24_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时安排：明天早上9点自动关闭书房灯",
+            "确认设备为书房灯并执行关闭动作"
+          ],
+          "must_not": [
+            "把时间设为非明天早上9点",
+            "把目标设备设为书房灯以外的设备",
+            "执行非关闭（如打开）动作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的关书房灯安排时间改为明天9点半",
+            "保留原设备与关闭动作"
+          ],
+          "must_not": [
+            "新建另一条安排而非修改原安排",
+            "改动设备或动作内容",
+            "把时间改为非明天9点半"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建或修改任何安排",
+            "把未启用的安排列为启用"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条关书房灯安排",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排",
+            "新增安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排只剩晾衣服提醒",
+            "确认刚才那条关书房灯安排已取消"
+          ],
+          "must_not": [
+            "新增或修改安排",
+            "把已取消的关书房灯安排说成仍启用"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

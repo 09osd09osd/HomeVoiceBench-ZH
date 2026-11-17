@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "16fd7916-1177-4bb0-ba29-e959a8ca1e6b",
+  "usage": {
+    "prompt_tokens": 1962,
+    "completion_tokens": 1091,
+    "total_tokens": 3053,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1578
+  },
+  "temperature": 0,
+  "source_sha256": "6e0616c922eb57cdc3ec000433a633d4312a3d298317993a3c26191c71fdd641",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T15_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把灯打开到40%",
+            "因未指定哪盏灯，应先查询设备列表以澄清目标灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把灯打开到40%",
+            "因未指定哪盏灯，应先查询设备列表以澄清目标灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用户澄清目标是卧室灯",
+            "将卧室灯打开并设置亮度为40%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "操作客厅灯或书房灯",
+            "改变其他灯的开关或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把灯打开到40%",
+            "因未指定哪盏灯，应先查询设备列表以澄清目标灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用户澄清目标是卧室灯",
+            "将卧室灯打开并设置亮度为40%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "操作客厅灯或书房灯",
+            "改变其他灯的开关或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户明确不是要关灯",
+            "只查询卧室灯当前亮度"
+          ],
+          "must_not": [
+            "执行关灯操作",
+            "改变卧室灯亮度或开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把灯打开到40%",
+            "因未指定哪盏灯，应先查询设备列表以澄清目标灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用户澄清目标是卧室灯",
+            "将卧室灯打开并设置亮度为40%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "操作客厅灯或书房灯",
+            "改变其他灯的开关或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户明确不是要关灯",
+            "只查询卧室灯当前亮度"
+          ],
+          "must_not": [
+            "执行关灯操作",
+            "改变卧室灯亮度或开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "明确关闭刚才那盏卧室灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改变卧室灯亮度设置",
+            "操作其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把灯打开到40%",
+            "因未指定哪盏灯，应先查询设备列表以澄清目标灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用户澄清目标是卧室灯",
+            "将卧室灯打开并设置亮度为40%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "操作客厅灯或书房灯",
+            "改变其他灯的开关或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户明确不是要关灯",
+            "只查询卧室灯当前亮度"
+          ],
+          "must_not": [
+            "执行关灯操作",
+            "改变卧室灯亮度或开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "明确关闭刚才那盏卧室灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改变卧室灯亮度设置",
+            "操作其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结最终操作的是哪盏灯",
+            "总结该灯当前开关状态",
+            "总结该灯当前亮度设置"
+          ],
+          "must_not": [
+            "改变任何灯的开关或亮度状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

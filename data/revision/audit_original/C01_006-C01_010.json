@@ -1,0 +1,256 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e4bd68c5-8001-4e49-ab91-408e05494a3c",
+  "usage": {
+    "prompt_tokens": 1697,
+    "completion_tokens": 1120,
+    "total_tokens": 2817,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1697
+  },
+  "temperature": 0,
+  "source_sha256": "a5743397dfd4315134209989256e1e67e07fdbae30d5e6320908bea923aacd68",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C01_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户看到小猫蹲在花坛边这件事",
+            "语气轻松简短，符合用户说累、要求简单说两句"
+          ],
+          "must_not": [
+            "长篇大论或追问过多",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户晚饭后散步碰到小刘聊了几句",
+            "语气轻松简短，符合用户说累、想听轻松的"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户小刘学做面包并送了一个",
+            "回应用户不太爱吃甜的",
+            "保持简短，符合用户说别说太长、只想听两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户去超市买水果排了很久队",
+            "语气简短，符合用户说累、简单陪说两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户买了苹果和橙子",
+            "正确复述苹果8块钱一斤",
+            "保持简短，符合用户说不想聊太久"
+          ],
+          "must_not": [
+            "把苹果价格说错",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正，苹果是6块钱一斤不是8块",
+            "不再坚持8块一斤"
+          ],
+          "must_not": [
+            "继续使用8块钱一斤的错误价格",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户在阳台浇花打翻水壶弄一地水",
+            "简短安慰，符合用户说累、简单安慰两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户擦了半天才弄干净",
+            "回应用户养的绿萝最近长得不错",
+            "保持简短，符合用户说别跟我说太多、听着就行"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正，养的是吊兰不是绿萝"
+          ],
+          "must_not": [
+            "继续称用户养的是绿萝",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户养的是吊兰",
+            "回应用户今天有点累"
+          ],
+          "must_not": [
+            "说成绿萝",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户坐公交坐过站多走两站路",
+            "简短陪伴，符合用户说累、简单陪说两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户路上买了杯热豆浆",
+            "保持简短，符合用户说不想多聊"
+          ],
+          "must_not": [
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正，买的是热牛奶不是豆浆"
+          ],
+          "must_not": [
+            "继续说是豆浆",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户买的是热牛奶",
+            "回应用户今天这趟真折腾"
+          ],
+          "must_not": [
+            "说成豆浆",
+            "长篇大论",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话收尾",
+            "符合用户想安静会儿的意愿"
+          ],
+          "must_not": [
+            "超过一两句的长篇回应",
+            "继续追问或开启新话题",
+            "发起写操作或设备控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

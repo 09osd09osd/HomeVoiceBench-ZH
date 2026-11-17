@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6dfb668b-bb9e-4297-8cfa-f972b31c201d",
+  "usage": {
+    "prompt_tokens": 2663,
+    "completion_tokens": 912,
+    "total_tokens": 3575,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2279
+  },
+  "temperature": 0,
+  "source_sha256": "ff9a43ee93de282a5b641917110a296a0362e51879fead40626893692743a439",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T20_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为整理书包",
+            "提醒时间为明天10点"
+          ],
+          "must_not": [
+            "创建重复提醒",
+            "更改提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为整理书包",
+            "提醒时间为明天10点"
+          ],
+          "must_not": [
+            "创建重复提醒",
+            "更改提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的整理书包提醒改为明天10点半"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "取消该提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为整理书包",
+            "提醒时间为明天10点"
+          ],
+          "must_not": [
+            "创建重复提醒",
+            "更改提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的整理书包提醒改为明天10点半"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "取消该提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建提醒",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为整理书包",
+            "提醒时间为明天10点"
+          ],
+          "must_not": [
+            "创建重复提醒",
+            "更改提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的整理书包提醒改为明天10点半"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "取消该提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建提醒",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的整理书包提醒",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性提醒，内容为整理书包",
+            "提醒时间为明天10点"
+          ],
+          "must_not": [
+            "创建重复提醒",
+            "更改提醒内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的整理书包提醒改为明天10点半"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "取消该提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建提醒",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的整理书包提醒",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排还剩什么",
+            "确认刚才那条整理书包提醒是否已取消"
+          ],
+          "must_not": [
+            "新增提醒",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

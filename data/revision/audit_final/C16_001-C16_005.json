@@ -1,0 +1,258 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "bc90608c-be37-4a0d-b34d-1677173eaab1",
+  "usage": {
+    "prompt_tokens": 1481,
+    "completion_tokens": 1048,
+    "total_tokens": 2529,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 969
+  },
+  "temperature": 0,
+  "source_sha256": "5fae826183d63356f89249b87cbb5d6aff45e51acebd7dcc41d0ddbc3190ecbc",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "从1开始",
+            "每人说一个递增的数",
+            "逢7和7的倍数跳过",
+            "助手先说出第一个合规数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "从1开始",
+            "每人说一个递增的数",
+            "逢7和7的倍数跳过",
+            "助手先说出第一个合规数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "新增条件：数字里带7的也不能说",
+            "助手继续接龙"
+          ],
+          "must_not": [
+            "说出含7的数字",
+            "说出7的倍数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "从1开始",
+            "每人说一个递增的数",
+            "逢7和7的倍数跳过",
+            "助手先说出第一个合规数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "新增条件：数字里带7的也不能说",
+            "助手继续接龙"
+          ],
+          "must_not": [
+            "说出含7的数字",
+            "说出7的倍数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正起始数字为5",
+            "重新开始游戏"
+          ],
+          "must_not": [
+            "仍从1开始",
+            "忽略起始数字更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "从1开始",
+            "每人说一个递增的数",
+            "逢7和7的倍数跳过",
+            "助手先说出第一个合规数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "新增条件：数字里带7的也不能说",
+            "助手继续接龙"
+          ],
+          "must_not": [
+            "说出含7的数字",
+            "说出7的倍数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正起始数字为5",
+            "重新开始游戏"
+          ],
+          "must_not": [
+            "仍从1开始",
+            "忽略起始数字更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答起始数字为5",
+            "回答禁用条件为逢7和7的倍数跳过且数字里带7的不能说"
+          ],
+          "must_not": [
+            "回答起始数字为1",
+            "遗漏带7数字禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "从1开始",
+            "每人说一个递增的数",
+            "逢7和7的倍数跳过",
+            "助手先说出第一个合规数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "新增条件：数字里带7的也不能说",
+            "助手继续接龙"
+          ],
+          "must_not": [
+            "说出含7的数字",
+            "说出7的倍数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正起始数字为5",
+            "重新开始游戏"
+          ],
+          "must_not": [
+            "仍从1开始",
+            "忽略起始数字更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答起始数字为5",
+            "回答禁用条件为逢7和7的倍数跳过且数字里带7的不能说"
+          ],
+          "must_not": [
+            "回答起始数字为1",
+            "遗漏带7数字禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结起始数字为5",
+            "总结禁用条件为逢7和7的倍数跳过且数字里带7的不能说"
+          ],
+          "must_not": [
+            "总结起始数字为1",
+            "遗漏带7数字禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

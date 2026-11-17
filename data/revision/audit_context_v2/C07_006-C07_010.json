@@ -1,0 +1,252 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "569268d6-794a-4662-ad6b-5dfcad341058",
+  "usage": {
+    "prompt_tokens": 2117,
+    "completion_tokens": 1170,
+    "total_tokens": 3287,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1605
+  },
+  "temperature": 0,
+  "source_sha256": "ed542f1ac92955d5aea2cb52c85e7cffdba9614653ca3dd9030e5be6076993a8",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C07_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对衣柜太小、换季衣服没地方放、只有两个收纳箱、今晚有半小时整理给出具体建议",
+            "建议应可在半小时内完成并利用现有两个收纳箱"
+          ],
+          "must_not": [
+            "要求用户购买新收纳工具",
+            "给出与半小时时间预算明显不符的复杂方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对书桌杂物多、抽屉满、周末一小时、手头有空盒子和文件夹给出整理建议",
+            "建议应利用现有空盒子和文件夹"
+          ],
+          "must_not": [
+            "要求用户购买新收纳用品",
+            "忽略一小时的时间限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户累、希望方法简单",
+            "遵守不买新东西",
+            "遵守不把东西全倒出来"
+          ],
+          "must_not": [
+            "建议购买新收纳用品",
+            "建议把抽屉或桌面物品全部倒出来重新整理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对玩具满地、客厅不大、晚上20分钟、有几个塑料筐给出快速收纳建议",
+            "建议应利用塑料筐并适配20分钟"
+          ],
+          "must_not": [
+            "要求购买新收纳工具",
+            "给出明显超过20分钟的复杂流程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "同意不过度细分分类",
+            "建议让孩子自己能收",
+            "建议给每个筐贴简单标记"
+          ],
+          "must_not": [
+            "设计过于复杂的分类体系",
+            "要求购买新筐或新标签工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认时间更正为早上出门前10分钟",
+            "按刚才思路给出适配10分钟的收纳建议"
+          ],
+          "must_not": [
+            "仍按晚上20分钟安排",
+            "给出10分钟内无法完成的复杂步骤"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面多、抽屉乱、周末两小时、有空罐子和旧盒子给出整理建议",
+            "建议应利用现有空罐子和旧盒子"
+          ],
+          "must_not": [
+            "要求购买新收纳盒",
+            "忽略两小时时间预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户累、希望少搬来搬去",
+            "遵守不买新收纳盒",
+            "建议使用现有收纳容器"
+          ],
+          "must_not": [
+            "建议购买新收纳盒",
+            "设计需要反复搬动大量物品的流程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认时间更正为工作日晚上40分钟",
+            "按原思路给出适配40分钟的建议"
+          ],
+          "must_not": [
+            "仍按周末两小时安排",
+            "给出40分钟内无法完成的完整清理要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得时间改为工作日晚上40分钟",
+            "回答40分钟先收台面还是先收抽屉并给出理由"
+          ],
+          "must_not": [
+            "否认或记错用户已更正的时间",
+            "同时要求40分钟内完成台面和抽屉全部整理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对玄关鞋子乱、柜子满、周末一小时、有空鞋盒给出整理建议",
+            "建议应利用空鞋盒并适配一小时"
+          ],
+          "must_not": [
+            "要求购买新鞋架",
+            "忽略一小时时间限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户累、希望简单",
+            "遵守不把鞋全拿出来",
+            "遵守不买新鞋架"
+          ],
+          "must_not": [
+            "建议购买新鞋架",
+            "建议把所有鞋全部取出重新整理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认时间更正为明天早上30分钟",
+            "按原思路给出适配30分钟的建议"
+          ],
+          "must_not": [
+            "仍按周末一小时安排",
+            "给出30分钟内无法完成的复杂步骤"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得时间改为明天早上30分钟",
+            "回答30分钟是否够收门口那一排"
+          ],
+          "must_not": [
+            "否认或记错用户已更正的时间",
+            "要求30分钟内完成全部门厅整理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短收尾",
+            "告诉用户明天早上先做什么"
+          ],
+          "must_not": [
+            "展开长篇多步骤方案",
+            "忽略明天早上30分钟这一已更正时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "4c6a32af-9ca6-4362-ad31-fd1273857696",
+  "usage": {
+    "prompt_tokens": 2002,
+    "completion_tokens": 891,
+    "total_tokens": 2893,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1618
+  },
+  "temperature": 0,
+  "source_sha256": "7c467e63c8644e92b00d4593d8e5b9f562115ea4226ccc8e38eead463986f725",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T26_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱当前正在播放的《小熊找月亮》"
+          ],
+          "must_not": [
+            "切换到其他媒体或设备",
+            "停止播放而非暂停"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T26_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱当前正在播放的《小熊找月亮》"
+          ],
+          "must_not": [
+            "切换到其他媒体或设备",
+            "停止播放而非暂停"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才暂停的《小熊找月亮》"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T26_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱当前正在播放的《小熊找月亮》"
+          ],
+          "must_not": [
+            "切换到其他媒体或设备",
+            "停止播放而非暂停"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才暂停的《小熊找月亮》"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前正在播放的这段内容"
+          ],
+          "must_not": [
+            "停止播放而非暂停",
+            "切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T26_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱当前正在播放的《小熊找月亮》"
+          ],
+          "must_not": [
+            "切换到其他媒体或设备",
+            "停止播放而非暂停"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才暂停的《小熊找月亮》"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前正在播放的这段内容"
+          ],
+          "must_not": [
+            "停止播放而非暂停",
+            "切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前内容定位到第80秒",
+            "定位后保持暂停状态"
+          ],
+          "must_not": [
+            "定位后开始播放",
+            "定位到其他时间点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T26_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "暂停客厅音箱当前正在播放的《小熊找月亮》"
+          ],
+          "must_not": [
+            "切换到其他媒体或设备",
+            "停止播放而非暂停"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "继续播放刚才暂停的《小熊找月亮》"
+          ],
+          "must_not": [
+            "播放其他内容",
+            "从头开始播放"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "暂停当前正在播放的这段内容"
+          ],
+          "must_not": [
+            "停止播放而非暂停",
+            "切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将当前内容定位到第80秒",
+            "定位后保持暂停状态"
+          ],
+          "must_not": [
+            "定位后开始播放",
+            "定位到其他时间点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "停止当前这段内容的播放"
+          ],
+          "must_not": [
+            "播放或切换到其他内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

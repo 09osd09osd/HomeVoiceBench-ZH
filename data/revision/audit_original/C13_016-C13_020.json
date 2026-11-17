@@ -1,0 +1,275 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2ec41fbb-40cf-499b-b973-b827bdfa3bbe",
+  "usage": {
+    "prompt_tokens": 1886,
+    "completion_tokens": 1100,
+    "total_tokens": 2986,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1502
+  },
+  "temperature": 0,
+  "source_sha256": "0228ac076195f93ef1f1b03be53316e8f7a0a63b515137d46b985d19b8ece914",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C13_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个关于小松鼠找松果的故事",
+            "内容简单、温暖",
+            "适合五岁孩子睡前听",
+            "不包含吓人的情节"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_017",
+      "issues": [
+        {
+          "kind": "budget_pressure",
+          "node_ids": [
+            "U2"
+          ],
+          "reason": "用户要求约六分钟的故事，远超最多512输出token（实验组256）的短答预算，无法在预算内完整讲完六分钟内容。",
+          "evidence": "别太长，六分钟左右就行。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小熊和月亮灯的故事",
+            "温馨",
+            "情节简单",
+            "适合睡前听"
+          ],
+          "must_not": [
+            "情节复杂",
+            "不温馨"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事中加入一只小刺猬",
+            "小熊和小刺猬一起分享月亮灯的光",
+            "保持温馨简单"
+          ],
+          "must_not": [
+            "遗漏小刺猬",
+            "小刺猬不参与分享月亮灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小兔子种胡萝卜的故事",
+            "适合三岁女儿",
+            "短一点",
+            "温暖",
+            "没有吓人的角色"
+          ],
+          "must_not": [
+            "出现吓人的角色",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事中加入一只小乌龟帮忙浇水",
+            "体现朋友一起做事的开心"
+          ],
+          "must_not": [
+            "遗漏小乌龟帮忙浇水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "改为小乌龟帮忙拔草",
+            "浇水仍由小兔子自己来"
+          ],
+          "must_not": [
+            "仍说小乌龟帮忙浇水",
+            "让小乌龟负责浇水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小狐狸借围巾的故事",
+            "温暖",
+            "简单",
+            "别太长",
+            "没有吓人的部分"
+          ],
+          "must_not": [
+            "出现吓人的部分",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "小狐狸向小松鼠借围巾",
+            "小松鼠的围巾是红色的"
+          ],
+          "must_not": [
+            "说小狐狸向小兔子借围巾"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小狐狸向小松鼠借围巾",
+            "围巾是蓝色的"
+          ],
+          "must_not": [
+            "说围巾是红色的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "记得围巾是蓝色",
+            "接着讲小狐狸借到蓝色围巾后路上遇到谁"
+          ],
+          "must_not": [
+            "说围巾是红色",
+            "忘记围巾颜色"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_020",
+      "issues": [
+        {
+          "kind": "budget_pressure",
+          "node_ids": [
+            "U2"
+          ],
+          "reason": "用户要求七八分钟的故事，远超最多512输出token（实验组256）的短答预算，无法在预算内完整讲完七八分钟内容。",
+          "evidence": "别太长，七八分钟就行。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小象找朋友的故事",
+            "温暖",
+            "简单",
+            "别太长",
+            "没有吓人的情节"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "小象找到三个朋友",
+            "最后一起在河边玩水"
+          ],
+          "must_not": [
+            "朋友数量不是三个",
+            "不在河边玩水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小象找到两个朋友",
+            "最后一起在河边玩水"
+          ],
+          "must_not": [
+            "说小象找到三个朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "记得小象找到两个朋友",
+            "接着讲他们玩水时发生的事"
+          ],
+          "must_not": [
+            "说小象找到三个朋友",
+            "忘记朋友数量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短方式收尾",
+            "结尾安静、适合孩子入睡"
+          ],
+          "must_not": [
+            "结尾过于刺激或冗长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6f67a884-18ef-4b28-b787-4a70702f9429",
+  "usage": {
+    "prompt_tokens": 2211,
+    "completion_tokens": 965,
+    "total_tokens": 3176,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1827
+  },
+  "temperature": 0,
+  "source_sha256": "a6d73a5aef2ef33ed120e4f598da82ab580b8fdfb26cfc8c40929820c0e456cb",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T07_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯",
+            "将卧室灯色温设为3500K"
+          ],
+          "must_not": [
+            "改动卧室灯以外的设备",
+            "设置与3500K不同的色温"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯",
+            "将卧室灯色温设为3500K"
+          ],
+          "must_not": [
+            "改动卧室灯以外的设备",
+            "设置与3500K不同的色温"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将卧室灯色温改为4500K"
+          ],
+          "must_not": [
+            "改动卧室灯开关状态",
+            "改动卧室灯其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯",
+            "将卧室灯色温设为3500K"
+          ],
+          "must_not": [
+            "改动卧室灯以外的设备",
+            "设置与3500K不同的色温"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将卧室灯色温改为4500K"
+          ],
+          "must_not": [
+            "改动卧室灯开关状态",
+            "改动卧室灯其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室灯当前色温",
+            "查询卧室灯当前开关状态"
+          ],
+          "must_not": [
+            "调整卧室灯任何设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯",
+            "将卧室灯色温设为3500K"
+          ],
+          "must_not": [
+            "改动卧室灯以外的设备",
+            "设置与3500K不同的色温"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将卧室灯色温改为4500K"
+          ],
+          "must_not": [
+            "改动卧室灯开关状态",
+            "改动卧室灯其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室灯当前色温",
+            "查询卧室灯当前开关状态"
+          ],
+          "must_not": [
+            "调整卧室灯任何设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭卧室灯",
+            "保留卧室灯色温设置"
+          ],
+          "must_not": [
+            "改动卧室灯色温",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯",
+            "将卧室灯色温设为3500K"
+          ],
+          "must_not": [
+            "改动卧室灯以外的设备",
+            "设置与3500K不同的色温"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将卧室灯色温改为4500K"
+          ],
+          "must_not": [
+            "改动卧室灯开关状态",
+            "改动卧室灯其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室灯当前色温",
+            "查询卧室灯当前开关状态"
+          ],
+          "must_not": [
+            "调整卧室灯任何设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭卧室灯",
+            "保留卧室灯色温设置"
+          ],
+          "must_not": [
+            "改动卧室灯色温",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询卧室灯当前开关状态"
+          ],
+          "must_not": [
+            "改动卧室灯任何设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

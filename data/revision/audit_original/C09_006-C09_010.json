@@ -1,0 +1,259 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "593d0d1f-5c1d-4921-b9ab-ba5f8646ca63",
+  "usage": {
+    "prompt_tokens": 1981,
+    "completion_tokens": 1110,
+    "total_tokens": 3091,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1597
+  },
+  "temperature": 0,
+  "source_sha256": "a69850a2c82dfd70feebe94dbb7db7c9a1b1c2fcc43916614bb13f4ead51f7dd",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C09_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应一家三口周末半天出游需求",
+            "给出轻松不累的活动建议",
+            "建议需符合预算两百块左右"
+          ],
+          "must_not": [
+            "安排明显超出两百块预算的活动",
+            "安排高强度或长时间行程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应一家三口周末半天出游需求",
+            "给出轻松不累的活动建议",
+            "建议需符合预算两百块左右"
+          ],
+          "must_not": [
+            "安排明显超出两百块预算的活动",
+            "安排高强度或长时间行程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提供室内备选活动",
+            "保持预算两百块左右",
+            "保持一家三口和半天时间不变"
+          ],
+          "must_not": [
+            "只给室外方案而不提供室内备选",
+            "改变人数或时间设定",
+            "明显超出两百块预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应一家三口周末半天出游需求",
+            "给出轻松不累的活动建议",
+            "建议需符合预算两百块左右"
+          ],
+          "must_not": [
+            "安排明显超出两百块预算的活动",
+            "安排高强度或长时间行程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议包含可坐坐休息的地方",
+            "建议包含孩子能跑动的空间",
+            "保持预算两百块左右和半天时间"
+          ],
+          "must_not": [
+            "建议需要大人一直站着的活动",
+            "改变预算或时间设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认预算改为一百五十块",
+            "保持一家三口、半天、轻松不累不变"
+          ],
+          "must_not": [
+            "仍按两百块预算安排",
+            "改变人数或时间设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应一家三口周末半天出游需求",
+            "给出轻松不累的活动建议",
+            "建议需符合预算两百块左右"
+          ],
+          "must_not": [
+            "安排明显超出两百块预算的活动",
+            "安排高强度或长时间行程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议包含可坐着聊天的地方",
+            "建议包含孩子能玩的空间",
+            "避免一直走路",
+            "保持预算两百块左右和半天时间"
+          ],
+          "must_not": [
+            "建议以长时间步行为主",
+            "改变预算或时间设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认预算改为一百五十块",
+            "保持一家三口、半天、轻松不累不变"
+          ],
+          "must_not": [
+            "仍按两百块预算安排",
+            "改变人数或时间设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得预算已改为一百五十块",
+            "给出半天时间的具体顺路安排"
+          ],
+          "must_not": [
+            "说预算仍是两百块",
+            "给出超出半天时长的安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应一家三口周末半天出游需求",
+            "给出轻松不累的活动建议",
+            "建议需符合预算两百块左右"
+          ],
+          "must_not": [
+            "安排明显超出两百块预算的活动",
+            "安排高强度或长时间行程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议包含可坐坐休息的地方",
+            "建议包含孩子能跑动的空间",
+            "保持预算两百块左右和半天时间"
+          ],
+          "must_not": [
+            "建议需要大人一直站着的活动",
+            "改变预算或时间设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认预算改为一百五十块",
+            "保持一家三口、半天、轻松不累不变"
+          ],
+          "must_not": [
+            "仍按两百块预算安排",
+            "改变人数或时间设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得预算已改为一百五十块",
+            "给出半天时间的具体顺路安排"
+          ],
+          "must_not": [
+            "说预算仍是两百块",
+            "给出超出半天时长的安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "给出简短总结",
+            "总结包含一家三口、半天、预算一百五十块、轻松活动等要点"
+          ],
+          "must_not": [
+            "总结冗长",
+            "总结中预算写成两百块"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

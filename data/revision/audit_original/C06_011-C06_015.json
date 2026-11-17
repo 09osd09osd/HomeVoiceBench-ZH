@@ -1,0 +1,245 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "0e97dabc-9f89-4f7c-9411-66934349d6a9",
+  "usage": {
+    "prompt_tokens": 2184,
+    "completion_tokens": 1005,
+    "total_tokens": 3189,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1800
+  },
+  "temperature": 0,
+  "source_sha256": "a9f7318c8e60231ea4e6b667afaaa3c13631dc48fbb74dc9c698873aa8b971dc",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C06_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可直接说出口的道歉话",
+            "包含对昨天发脾气/态度不好的道歉",
+            "表达仍愿意接受妈妈帮忙，而非以后完全不要她帮忙"
+          ],
+          "must_not": [
+            "暗示以后完全拒绝妈妈帮忙",
+            "使用操控性话术"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可直接说出口的缓和/道歉话",
+            "包含对说话冲的道歉",
+            "表达以后仍会管家里的事"
+          ],
+          "must_not": [
+            "暗示以后不管家里的事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "道歉话中不提及具体借款金额",
+            "不翻旧账",
+            "仍表达会管家里的事"
+          ],
+          "must_not": [
+            "提及具体借了多少钱",
+            "提及过去的旧账细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可直接说出口的和好/道歉话",
+            "包含对说话重的道歉",
+            "表达以后仍会关心姐姐家孩子"
+          ],
+          "must_not": [
+            "暗示以后不管姐姐家孩子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "道歉话中不提及具体是哪件事",
+            "建议私下沟通以避免孩子听到"
+          ],
+          "must_not": [
+            "提及具体争执事件",
+            "让孩子听到道歉内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时间更正为前天晚上",
+            "其余约束保持不变"
+          ],
+          "must_not": [
+            "仍使用上周这一时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可直接说出口的道歉话",
+            "包含对说伤人话的道歉",
+            "表达以后仍希望老公参与家务分担"
+          ],
+          "must_not": [
+            "暗示以后什么都不让老公干"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "道歉话中不提及具体哪件家务没做",
+            "不向婆婆透露吵架的事"
+          ],
+          "must_not": [
+            "提及具体未做的家务",
+            "让婆婆知道吵架的事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时间更正为上周六晚上",
+            "其余约束保持不变"
+          ],
+          "must_not": [
+            "仍使用前几天这一时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认更正后的时间为上周六晚上",
+            "继续提供开口说法"
+          ],
+          "must_not": [
+            "记错或使用旧时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可直接说出口的道歉话",
+            "包含对吼弟弟的道歉",
+            "表达不是完全不让家人进房间，但希望先敲门"
+          ],
+          "must_not": [
+            "暗示以后完全不让家人进房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "道歉话中不提及弟弟以前不敲门的事",
+            "不向爸妈透露吵架的事"
+          ],
+          "must_not": [
+            "提及以前不敲门的旧事",
+            "让爸妈知道吵架的事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时间更正为今天下午",
+            "其余约束保持不变"
+          ],
+          "must_not": [
+            "仍使用昨天这一时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认更正后的时间为今天下午",
+            "继续提供开口说法"
+          ],
+          "must_not": [
+            "记错或使用旧时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短的话收尾",
+            "保留道歉、敲门边界、不翻旧账等核心意思"
+          ],
+          "must_not": [
+            "输出冗长内容",
+            "引入新的具体旧账细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "22022b97-4798-40e8-b37c-e45a27cc5e36",
+  "usage": {
+    "prompt_tokens": 2307,
+    "completion_tokens": 1026,
+    "total_tokens": 3333,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1923
+  },
+  "temperature": 0,
+  "source_sha256": "1d448aab5d14836c2e6cd34e04b406dba2ef77fa6613ad687a219e1bd6c2226a",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T06_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只操作客厅灯，不涉及其他设备",
+            "打开客厅灯",
+            "亮度设为百分之八十"
+          ],
+          "must_not": [
+            "操作客厅灯以外的设备",
+            "改变亮度以外的设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只操作客厅灯，不涉及其他设备",
+            "打开客厅灯",
+            "亮度设为百分之八十"
+          ],
+          "must_not": [
+            "操作客厅灯以外的设备",
+            "改变亮度以外的设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才操作的客厅灯亮度改为百分之二十",
+            "保持其他设置不变"
+          ],
+          "must_not": [
+            "改变亮度以外的设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只操作客厅灯，不涉及其他设备",
+            "打开客厅灯",
+            "亮度设为百分之八十",
+            "失败或超时后最多重试一次",
+            "成功后不重复操作"
+          ],
+          "must_not": [
+            "操作客厅灯以外的设备",
+            "改变亮度以外的设置",
+            "成功后再次重复操作",
+            "失败后重试超过一次"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才操作的客厅灯亮度改为百分之二十",
+            "保持其他设置不变"
+          ],
+          "must_not": [
+            "改变亮度以外的设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前亮度和开关状态",
+            "仅核对不调整"
+          ],
+          "must_not": [
+            "调整客厅灯",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只操作客厅灯，不涉及其他设备",
+            "打开客厅灯",
+            "亮度设为百分之八十",
+            "失败或超时后最多重试一次",
+            "成功后不重复操作"
+          ],
+          "must_not": [
+            "操作客厅灯以外的设备",
+            "改变亮度以外的设置",
+            "成功后再次重复操作",
+            "失败后重试超过一次"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才操作的客厅灯亮度改为百分之二十",
+            "保持其他设置不变"
+          ],
+          "must_not": [
+            "改变亮度以外的设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前亮度和开关状态",
+            "仅核对不调整"
+          ],
+          "must_not": [
+            "调整客厅灯",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改变亮度设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只操作客厅灯，不涉及其他设备",
+            "打开客厅灯",
+            "亮度设为百分之八十",
+            "失败或超时后最多重试一次",
+            "成功后不重复操作"
+          ],
+          "must_not": [
+            "操作客厅灯以外的设备",
+            "改变亮度以外的设置",
+            "成功后再次重复操作",
+            "失败后重试超过一次"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才操作的客厅灯亮度改为百分之二十",
+            "保持其他设置不变"
+          ],
+          "must_not": [
+            "改变亮度以外的设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前亮度和开关状态",
+            "仅核对不调整"
+          ],
+          "must_not": [
+            "调整客厅灯",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改变亮度设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅灯开关状态",
+            "不修改其他设备"
+          ],
+          "must_not": [
+            "修改其他设备",
+            "调整客厅灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

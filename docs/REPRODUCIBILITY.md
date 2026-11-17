@@ -33,7 +33,9 @@
 python -m unittest discover -s tests -v
 python scripts/validate_dataset.py
 # 已下载冻结音频时无需重新生成
-# 全新版本：generate_dataset.py → synthesize_inputs.py → freeze_dataset.py
+# 全新版本须先审题和迁移约束：generate_dataset.py → migrate_revision_dataset.py edits
+# → audit_revision_cases.py --category chat --constraints-only --out data/revision/audit_final
+# → migrate_revision_dataset.py policies → synthesize_inputs.py → freeze_dataset.py
 # 新版本使用新目录，不覆盖当前冻结数据
 .venv-asr/Scripts/python.exe scripts/batch_speech.py asr --batch-size 32
 python scripts/complete_evaluation.py
@@ -58,10 +60,24 @@ python scripts/audit_release.py
 
 缩批后又完成240段，12条批次约70秒、活跃显存峰值约8.3GiB。为提高余下长回复的吞吐，保留累计4216段后，将后续起始和最大批量设置为18，沿用70%分配器容量限制与OOM自动减半。这个中间批量的选择仅依据资源计量；调度事件和保留记录见speech_resource_attempts。每次续跑的实际批次成员和种子均记录，不能仅凭全局seed复建本次所有音频。
 
-judge_stream.py最多16个云端评分并发：一题的实际输出语音准备好就评分，可与GPU推理和TTS重叠。每题只排入一个在途任务；管线结束时等待流式评分退出再做最后补漏，避免两个评分进程同时改同一条记录。
+v0.3 judge_stream.py采用32个云端评分并发（--workers 32）：一题的实际输出语音准备好就评分，可与GPU推理和TTS重叠。每题只排入一个在途任务；管线结束时等待流式评分退出再做最后补漏，避免两个评分进程同时改同一条记录。
 
 已有完整记录（包括模型失败）默认跳过。只有明确的基础设施错误才能移入 `runs/infra_attempts` 后重试，保留原因与原记录。预算耗尽、错误工具或错误回答不能因分数低而重跑。随机采样受batch成员和调度影响，seed固定不代表跨GPU/运行库逐位复现；实际输出和批次证据完整保存。
 
 Excel由 `@oai/artifact-tool` 的单一builder读取reports生成，含公式汇总、公式检查和渲染检查。网页为内嵌数据的独立HTML。重新生成报告不需要重新跑模型。
 
 Excel成品随仓库分发，可直接打开。重新运行 `build_workbook.mjs` 需要Node和可解析的 `@oai/artifact-tool`；本次使用Codex随附的2.8.145版本，该库不包含在Python的requirements.txt内，也不随仓库复制。若当前环境没有这套库，可直接使用已导出的Excel及reports中的JSON总览；Python生成统计、Markdown和HTML的步骤独立可用。最终发布前还会从Git索引导出干净副本，运行语法与单元测试，并核对1000道冻结题的字节哈希；结果见 `reports/clean_export_validation.json`。
+
+## 从 v0.2 迁移到 v0.3
+
+本机迁移由 begin_revision.py 先创建逐文件核验的私有快照，再执行显式 edits、约束审查与 policies、增量语音QC和冻结。replay_revision.py plan 对原始3000条轨迹核验工具返回和状态；apply 仅移出已核验备份的153条待重跑记录，其余输出重新计算规则。complete_revision.py 分阶段运行53段新增ASR、51题×3模型、缺失baseline TTS及统一听音评分。新输入或沙箱返回改变同题三系统一起重跑，未按成绩选择。迁移脚本需要保留完整 v0.2 源目录；首次下载 v0.3 直接使用已冻结数据及完整证据，无需再跑迁移。
+
+本次评分调度先验证16并发，随后改为32；服务繁忙与格式错误保留原始尝试后重试，已完成结果由完整证据哈希缓存。规则、提示词、输入/输出WAV或当前题目变化都会失效缓存。仅提供新密钥不会把 v0.2 的分数改写成 v0.3。
+
+更新文档与交付：summarize.py → diagnostics.py → build_revision_report.py → audit_release.py --require-complete → build_docs.py → build_workbook.mjs → build_site.py。发布使用独立 v0.3.0 标签，v0.2.0 Release 保留。
+
+试听页与同类源数据排查另澄清了7题的查询声明边界。clarify_read_claims.py 在评分写入停止后更新这7题的语义约束与哈希，验证模型输入、轨迹及客观规则均未改变；随后三组共21条记录重评。原文件保存在本机私有快照，公开前后约束与哈希见 reports/revision/read_claim_clarification.json。finalize_revision.py 顺序执行该补正及最终文档重建，不会自动发布。
+
+一次Windows共享占用使进度文件的原子替换返回WinError 5，调度器在等待在途请求结束时心跳中断。所有在途结果完成落盘后，用resume_revision_judging.py仅恢复云端评分；新增带退避的原子替换重试及回归测试，未改变模型输出、判官提示或通过标准。原异常与恢复依据见reports/revision/judge_windows_lock_recovery.json。
+
+生成最终Excel前运行 `python scripts/audit_story_duration.py`。该脚本按预先划分的全部7道压力题检查真实WAV时长，输出21条诊断记录及STORY_DURATION_AUDIT.md，不写入题目、执行记录或判官分数。C02_013的后续时间更正与C13_020的简短收尾有单独阶段边界；完整音频总长包含非故事回复，不能代替内容验证。Excel的StoryDuration页公开实际时长与判官通过的分歧。

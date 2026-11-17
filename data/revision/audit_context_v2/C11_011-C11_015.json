@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "489cc4ff-f143-4b29-b35b-a4f58b2acdcd",
+  "usage": {
+    "prompt_tokens": 2214,
+    "completion_tokens": 1005,
+    "total_tokens": 3219,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1702
+  },
+  "temperature": 0,
+  "source_sha256": "00f66348bc3ad912909210b2be35ce254c291df2c77b5240a04fd345c7f70ff3",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C11_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用五岁孩子能听懂的话解释天为什么是蓝的",
+            "解释需科学正确、不误导"
+          ],
+          "must_not": [
+            "说天空本身被涂成蓝色",
+            "讲错科学原理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释手泡水久了会皱",
+            "不吓唬孩子"
+          ],
+          "must_not": [
+            "说成皮肤生病或需要处理",
+            "吓唬孩子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "比上一轮更简单",
+            "用孩子玩过的东西打比方",
+            "不用“保护层”说法"
+          ],
+          "must_not": [
+            "使用“保护层”一词",
+            "添加新的操作要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释冰箱里面为什么总是冷的",
+            "讲得不太深"
+          ],
+          "must_not": [
+            "说冰箱自己造冷气",
+            "讲复杂循环"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明摸冰箱里面不会受伤",
+            "提醒不要碰插头"
+          ],
+          "must_not": [
+            "让孩子自己去碰插头",
+            "展开电气细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按九岁孩子能听懂的程度解释",
+            "确认年龄更正为九岁"
+          ],
+          "must_not": [
+            "仍按八岁解释",
+            "变成复杂物理课"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单比喻解释影子为什么跟着人走",
+            "解释正确"
+          ],
+          "must_not": [
+            "说影子有生命或会追人",
+            "讲错科学原理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "不用“暗地方”说法，换成温和说法",
+            "语气温和，强调影子不会伤害人"
+          ],
+          "must_not": [
+            "使用“暗地方”一词",
+            "添加新的操作要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按五岁半孩子的理解程度解释",
+            "确认年龄更正为五岁半"
+          ],
+          "must_not": [
+            "仍按六岁解释",
+            "改变影子由挡光形成的事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得孩子是五岁半",
+            "解释晚上开灯时影子为什么变长",
+            "沿用光被挡住的温和说法"
+          ],
+          "must_not": [
+            "否认或忘记五岁半的年龄",
+            "引入复杂光线图"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用特别简单的话解释下雨后地上的水去哪儿了"
+          ],
+          "must_not": [
+            "说水消失了或凭空没了",
+            "讲得复杂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用一个小动物的例子打比方"
+          ],
+          "must_not": [
+            "编动物会说话",
+            "添加新的操作要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按三岁半孩子能听懂的程度讲得更短",
+            "确认年龄更正为三岁半"
+          ],
+          "must_not": [
+            "仍按四岁解释",
+            "讲得复杂冗长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得孩子是三岁半",
+            "用短话回答水飞到天上后还会不会回来"
+          ],
+          "must_not": [
+            "否认或忘记三岁半的年龄",
+            "展开水循环术语"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话帮孩子记住",
+            "简洁"
+          ],
+          "must_not": [
+            "太长",
+            "添加新事实或操作要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

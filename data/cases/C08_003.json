@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C08_003",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "厨房台面总是黏糊糊",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261119,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C08_001-005.json"
+      "data/authoring/C08_001-005.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -936,7 +937,7 @@
       },
       {
         "id": "U2",
-        "user_text": "我不想用太多洗洁精，有没有更省事的日常办法？",
+        "user_text": "我家是不锈钢台面。我不想用太多洗洁精，有没有更省事的日常办法？",
         "tone": "平静",
         "next_node_id": "U3",
         "clarification_branches": [],
@@ -1004,9 +1005,9 @@
           "asset_id": "C08_003_U2",
           "node_id": "U2",
           "status": "verified",
-          "path": "assets/audio/input/1bdb2875752c1cc51bce6eb17b928e57.wav",
-          "sha256": "32efc8116745b0db17c9101b8e51649c342b0c864c25bff1115455d0b1e76f2d",
-          "duration_s": 3.96,
+          "path": "assets/audio/input/f828106f94c7b3360b837ef97057d131.wav",
+          "sha256": "f568499f3657db4d5a8e65d67c9f8a4269a0190c76fd7df323794a34b9295eb2",
+          "duration_s": 6.96,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1015,9 +1016,9 @@
           "seed": 42,
           "tone": "平静",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我不想用太多洗洁精，有没有更省事的日常办法？",
+          "transcript_gt": "我家是不锈钢台面。我不想用太多洗洁精，有没有更省事的日常办法？",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我不想用太多洗洁精，有没有更省事的日常办法？",
+          "qc_asr_text": "我家是不锈钢台面。我不想用太多洗洁精，有没有更省事的日常办法？",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1073,7 +1074,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1542,7 +1543,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1575,24 +1576,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1727,7 +1728,86 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "针对厨房台面黏糊给出简单清洁办法"
+          ],
+          "must_not": [
+            "声称已实际清洁台面"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "针对不锈钢台面给出少用洗洁精的日常办法"
+          ],
+          "must_not": [
+            "忽略不锈钢材质",
+            "要求大量使用洗洁精"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "接受台面材质更正为浅色人造石",
+            "按人造石台面给出相应建议"
+          ],
+          "must_not": [
+            "继续按不锈钢台面给建议",
+            "忽略用户的材质更正"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -1736,21 +1816,22 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "可以先用温水加一点洗洁精擦一遍，再用清水布擦掉残留，最后用干布抹干。黏的感觉多半是油膜没去掉，干布收尾会清爽很多。"
+        "assistant_text": "预期要点：针对厨房台面黏糊给出简单清洁办法。避免：声称已实际清洁台面。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "那可以试试热水拧干的抹布先擦一遍，趁热把油化开，再用干布擦干。日常轻度油渍这样够用，重油的地方再少放一点洗洁精。"
+        "assistant_text": "预期要点：针对不锈钢台面给出少用洗洁精的日常办法。避免：忽略不锈钢材质；要求大量使用洗洁精。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "浅色人造石台面的话，热水加少量中性洗洁精擦完及时用清水抹布过一遍，再擦干，避免清洁剂长时间留着。别用强酸强碱或粗糙刷子，免得伤表面。"
+        "assistant_text": "预期要点：接受台面材质更正为浅色人造石；按人造石台面给出相应建议。避免：继续按不锈钢台面给建议；忽略用户的材质更正。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -1762,7 +1843,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

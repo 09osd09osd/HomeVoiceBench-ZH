@@ -1,0 +1,260 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c297d268-2fa5-43dd-846e-ccd5cc69aa42",
+  "usage": {
+    "prompt_tokens": 1460,
+    "completion_tokens": 1025,
+    "total_tokens": 2485,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 948
+  },
+  "temperature": 0,
+  "source_sha256": "e1b4496a3d8bbd4468c873d4a5763a8d4a68ea15afc0facc1047bcdd1a9e4c9e",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C14_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以海边灯塔守护人身份讲述",
+            "内容为晚上巡逻的小片段",
+            "语气安静温和",
+            "篇幅为几句话的短故事"
+          ],
+          "must_not": [
+            "输出过长故事",
+            "偏离灯塔守护人设定",
+            "加入喧闹或恐怖内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以老茶馆掌柜身份讲述",
+            "讲述今天店里来了什么客人",
+            "语气轻松",
+            "内容简短温和"
+          ],
+          "must_not": [
+            "偏离茶馆掌柜设定",
+            "内容沉重或紧张"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "介绍一款不苦的茶",
+            "茶不要太浓",
+            "延续茶馆掌柜轻松语境"
+          ],
+          "must_not": [
+            "推荐苦味明显的茶",
+            "推荐过浓的茶"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以森林小邮差身份讲述",
+            "内容为今天送信遇到的小趣事",
+            "语气温柔",
+            "篇幅为短短几句话"
+          ],
+          "must_not": [
+            "输出过长故事",
+            "偏离小邮差设定",
+            "内容喧闹或紧张"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入小邮差把给河狸的信送错的情节",
+            "动作描写慢一点",
+            "不增加太多新角色"
+          ],
+          "must_not": [
+            "加入大量新角色",
+            "节奏过快"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将送错对象更正为给刺猬的信",
+            "不再把送错对象说成河狸"
+          ],
+          "must_not": [
+            "继续称送错的是给河狸的信"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以小烘焙屋店主身份讲述",
+            "讲述今天店里发生的一件小事",
+            "简短温和"
+          ],
+          "must_not": [
+            "偏离烘焙屋店主设定",
+            "内容冗长或激烈"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入小朋友想给奶奶留一个小圆包的情节",
+            "不增加太多客人",
+            "不让面包卖光"
+          ],
+          "must_not": [
+            "加入大量客人",
+            "让面包全部卖光"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将小圆包留给的对象更正为爷爷"
+          ],
+          "must_not": [
+            "继续称小圆包是留给奶奶的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答小圆包是留给爷爷的",
+            "接着讲述后续发生的事"
+          ],
+          "must_not": [
+            "回答留给奶奶",
+            "忽略后续情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以夜间小火车列车员身份讲述",
+            "讲述今晚车厢里的一件小事",
+            "语气温和",
+            "篇幅为几句话"
+          ],
+          "must_not": [
+            "偏离列车员设定",
+            "内容喧闹或激烈"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "安排一个乘客把车票夹在书里的情节",
+            "故事中没有争吵",
+            "只出现一两个乘客",
+            "氛围不太热闹"
+          ],
+          "must_not": [
+            "出现争吵情节",
+            "出现大量乘客",
+            "氛围过于热闹"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将车票情节更正为票落在座位上"
+          ],
+          "must_not": [
+            "继续称票夹在书里"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答票落在座位上",
+            "接着讲述后来车厢里的情况"
+          ],
+          "must_not": [
+            "回答票夹在书里",
+            "忽略后续情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话收尾",
+            "结尾简短"
+          ],
+          "must_not": [
+            "结尾过长",
+            "开启新情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

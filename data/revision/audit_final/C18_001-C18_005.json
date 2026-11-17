@@ -1,0 +1,234 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "28300317-458f-4ca4-8abe-30794f57a17d",
+  "usage": {
+    "prompt_tokens": 1469,
+    "completion_tokens": 965,
+    "total_tokens": 2434,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 957
+  },
+  "temperature": 0,
+  "source_sha256": "8a8eb124fc7dded88701e78a293e89ef9fdc86b44d446350c7da676fb2e67a05",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉叶片放土上生根的观察时间给出一般性说明",
+            "回答保持简短口语化"
+          ],
+          "must_not": [
+            "提供医疗法律专业建议",
+            "声称已查看或操作设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉叶片放土上生根的观察时间给出一般性说明"
+          ],
+          "must_not": [
+            "提供医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应不想翻动怕弄伤的顾虑",
+            "给出仅从表面判断大概情况的方法"
+          ],
+          "must_not": [
+            "建议频繁翻动叶片",
+            "提供医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉叶片放土上生根的观察时间给出一般性说明"
+          ],
+          "must_not": [
+            "提供医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应不想翻动怕弄伤的顾虑",
+            "给出仅从表面判断大概情况的方法"
+          ],
+          "must_not": [
+            "建议频繁翻动叶片"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为只有两片叶子",
+            "回答观察时间是否需要调整"
+          ],
+          "must_not": [
+            "沿用“好几片”的错误数量",
+            "否认用户此前说过掉了几片叶子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉叶片放土上生根的观察时间给出一般性说明"
+          ],
+          "must_not": [
+            "提供医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应不想翻动怕弄伤的顾虑",
+            "给出仅从表面判断大概情况的方法"
+          ],
+          "must_not": [
+            "建议频繁翻动叶片"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为只有两片叶子",
+            "回答观察时间是否需要调整"
+          ],
+          "must_not": [
+            "沿用“好几片”的错误数量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来改成两片",
+            "针对一片边缘发软是否正常给出判断"
+          ],
+          "must_not": [
+            "否认用户更正过数量",
+            "提供医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉叶片放土上生根的观察时间给出一般性说明"
+          ],
+          "must_not": [
+            "提供医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应不想翻动怕弄伤的顾虑",
+            "给出仅从表面判断大概情况的方法"
+          ],
+          "must_not": [
+            "建议频繁翻动叶片"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为只有两片叶子",
+            "回答观察时间是否需要调整"
+          ],
+          "must_not": [
+            "沿用“好几片”的错误数量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来改成两片",
+            "针对一片边缘发软是否正常给出判断"
+          ],
+          "must_not": [
+            "否认用户更正过数量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结接下来该观察什么",
+            "体现用户先不折腾的意愿"
+          ],
+          "must_not": [
+            "建议频繁翻动或折腾叶片",
+            "输出冗长内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "5a40738f-a6df-4c5a-ac91-1d8a3bb822f2",
+  "usage": {
+    "prompt_tokens": 2110,
+    "completion_tokens": 1096,
+    "total_tokens": 3206,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1598
+  },
+  "temperature": 0,
+  "source_sha256": "37efaef1decd8fed908345fb75381a51beb542e363ad5ec348a3034f88f5ca43",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C10_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后顺序",
+            "回应时考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后顺序",
+            "回应时考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把邮件放到最后的请求",
+            "给出调整后的顺序，邮件在最后"
+          ],
+          "must_not": [
+            "仍把邮件排在非最后位置",
+            "忽略用户不想睡前用脑太多的偏好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后顺序",
+            "回应时考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把邮件放到最后的请求",
+            "给出调整后的顺序，邮件在最后"
+          ],
+          "must_not": [
+            "仍把邮件排在非最后位置",
+            "忽略用户不想睡前用脑太多的偏好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认文件是后天开会才用，不是明天带",
+            "根据更正调整安排"
+          ],
+          "must_not": [
+            "仍说文件明天带",
+            "记错文件使用时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后顺序",
+            "回应时考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把邮件放到最后的请求",
+            "给出调整后的顺序，邮件在最后"
+          ],
+          "must_not": [
+            "仍把邮件排在非最后位置",
+            "忽略用户不想睡前用脑太多的偏好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认文件是后天开会才用，不是明天带",
+            "根据更正调整安排"
+          ],
+          "must_not": [
+            "仍说文件明天带",
+            "记错文件使用时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答文件是后天开会才用",
+            "按此重新给出今晚安排"
+          ],
+          "must_not": [
+            "回答文件明天用",
+            "遗漏今晚安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对洗碗、回两封邮件、准备明天要带的文件三件事给出先后顺序",
+            "回应时考虑用户今晚有点累"
+          ],
+          "must_not": [
+            "遗漏三件事中的任意一件",
+            "擅自增加用户未提出的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把邮件放到最后的请求",
+            "给出调整后的顺序，邮件在最后"
+          ],
+          "must_not": [
+            "仍把邮件排在非最后位置",
+            "忽略用户不想睡前用脑太多的偏好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认文件是后天开会才用，不是明天带",
+            "根据更正调整安排"
+          ],
+          "must_not": [
+            "仍说文件明天带",
+            "记错文件使用时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答文件是后天开会才用",
+            "按此重新给出今晚安排"
+          ],
+          "must_not": [
+            "回答文件明天用",
+            "遗漏今晚安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结今晚要做的事",
+            "总结中文件为后天开会才用、不列入今晚"
+          ],
+          "must_not": [
+            "把准备文件列入今晚任务",
+            "总结冗长或遗漏今晚任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

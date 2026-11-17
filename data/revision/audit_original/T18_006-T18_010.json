@@ -1,0 +1,266 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "af2d068c-9c4b-4bc1-9785-9df73e208ed3",
+  "usage": {
+    "prompt_tokens": 2267,
+    "completion_tokens": 1038,
+    "total_tokens": 3305,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1883
+  },
+  "temperature": 0,
+  "source_sha256": "6071348f2fc907de3ec0f9b2cf6f9ea89f017f3ea60ca1d2d1141a0f408317d7",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T18_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室当前照度",
+            "报告照度读数",
+            "报告测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T18_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室当前照度",
+            "报告照度读数",
+            "报告测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前照度",
+            "报告厨房照度读数",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T18_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室当前照度",
+            "报告照度读数",
+            "报告测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前照度",
+            "报告厨房照度读数",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较卧室与厨房的照度读数",
+            "给出两房间读数差异",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T18_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室当前照度",
+            "报告照度读数",
+            "报告测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前照度",
+            "报告厨房照度读数",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较卧室与厨房的照度读数",
+            "给出两房间读数差异",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明照度读数不能代表现场全部情况",
+            "指出读数只反映测量时刻的光照"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "调整或控制任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T18_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室当前照度",
+            "报告照度读数",
+            "报告测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前照度",
+            "报告厨房照度读数",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较卧室与厨房的照度读数",
+            "给出两房间读数差异",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明照度读数不能代表现场全部情况",
+            "指出读数只反映测量时刻的光照"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "调整或控制任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "重新查询卧室同一照度指标",
+            "报告重新查询的照度读数",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "调整或控制任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

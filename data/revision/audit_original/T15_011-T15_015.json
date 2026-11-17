@@ -1,0 +1,241 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "01da0b3e-8ece-4602-8c1b-11d5840d423a",
+  "usage": {
+    "prompt_tokens": 1974,
+    "completion_tokens": 1048,
+    "total_tokens": 3022,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1590
+  },
+  "temperature": 0,
+  "source_sha256": "3f7b775276a9c5fb1d371ad44fe4c5820987b6668bb2f5dbb7bb1d59db44866a",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T15_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到60%",
+            "因未指明房间，需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或调亮度写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到60%",
+            "因未指明房间，需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或调亮度写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯打开并设置亮度为60%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "改动书房灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到60%",
+            "因未指明房间，需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或调亮度写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯打开并设置亮度为60%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "改动书房灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户更正为不关灯，只查询书房灯当前亮度",
+            "查询书房灯状态"
+          ],
+          "must_not": [
+            "执行关灯写操作",
+            "改动亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到60%",
+            "因未指明房间，需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或调亮度写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯打开并设置亮度为60%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "改动书房灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户更正为不关灯，只查询书房灯当前亮度",
+            "查询书房灯状态"
+          ],
+          "must_not": [
+            "执行关灯写操作",
+            "改动亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "明确关闭书房灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改动亮度设置",
+            "关闭其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到60%",
+            "因未指明房间，需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认具体灯具前直接对某盏灯执行开关或调亮度写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯打开并设置亮度为60%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "改动书房灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户更正为不关灯，只查询书房灯当前亮度",
+            "查询书房灯状态"
+          ],
+          "must_not": [
+            "执行关灯写操作",
+            "改动亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "明确关闭书房灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改动亮度设置",
+            "关闭其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结最终是哪盏灯",
+            "总结开关状态",
+            "总结亮度设置"
+          ],
+          "must_not": [
+            "把最终灯误报为书房灯以外的灯",
+            "把开关状态误报为开着",
+            "把亮度设置误报为60%以外"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

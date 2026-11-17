@@ -1,0 +1,255 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2417cb16-d052-444a-96f5-1c2cabdf8311",
+  "usage": {
+    "prompt_tokens": 1934,
+    "completion_tokens": 1197,
+    "total_tokens": 3131,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1550
+  },
+  "temperature": 0,
+  "source_sha256": "3ff5e197d28a51137e512520913b07bcdd1d4457ad17dc70394c89dc66ed5c44",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户的疲惫并保持轻松语气",
+            "针对多肉叶边粉色小芽是否长新株给出基于描述的推测",
+            "说明无法亲眼看到只能根据描述判断"
+          ],
+          "must_not": [
+            "断言必然长成新株",
+            "给出需要专业鉴定的诊断"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对水培薄荷茎发黏是否正常给出基于描述的判断",
+            "说明无法亲眼看到只能根据描述判断",
+            "认可叶子还绿这一积极信息"
+          ],
+          "must_not": [
+            "断言具体病因",
+            "要求用户必须立即换水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想换水、只想听观察重点的要求",
+            "给出可观察的重点而非要求换水"
+          ],
+          "must_not": [
+            "要求用户现在换水",
+            "给出具体病因结论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对绿萝扦插叶子发黄是否水浇多给出基于描述的推测",
+            "说明无法看到土的情况不好断定",
+            "给出可自行检查土湿度的建议"
+          ],
+          "must_not": [
+            "断言一定是水浇多了",
+            "要求必须立即浇水或换土"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "基于用户确认土湿给出水培与土培分配建议",
+            "尊重用户想留几段水培、土培只留一段的意愿"
+          ],
+          "must_not": [
+            "要求土培那段现在浇水",
+            "否定用户的分法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为4段并复述水培3段土培1段",
+            "基于更正后的数量给出省心建议"
+          ],
+          "must_not": [
+            "继续沿用“几段”的模糊数量",
+            "把水培土培数量说反"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答叶插不需要每天喷水",
+            "说明土面微潮即可、太湿易烂",
+            "说明无法看到土只能建议观察"
+          ],
+          "must_not": [
+            "要求每天喷水",
+            "断言必须浇多少水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户累、不想天天惦记喷水，给出少管方案",
+            "说明隔几天观察、土干再少量喷"
+          ],
+          "must_not": [
+            "要求每天喷水",
+            "增加用户日常负担"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为6片叶子并复述",
+            "基于6片给出不挤在一起、少喷水的建议"
+          ],
+          "must_not": [
+            "继续沿用5片",
+            "把数量说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户放的是6片多肉叶子",
+            "回应用户犯困并让其休息"
+          ],
+          "must_not": [
+            "记成5片或其他数量",
+            "要求用户现在做操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对茎底发黑那段给出基于描述的谨慎判断",
+            "说明无法看到实物不能下结论",
+            "认可另外两段还行可继续观察长根"
+          ],
+          "must_not": [
+            "断言发黑那段必死或必活",
+            "给出专业诊断"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户累、不想老换水，给出可隔久一点换的方案",
+            "说明水明显变浑或有味道再换"
+          ],
+          "must_not": [
+            "要求用户频繁换水",
+            "要求现在换水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为4段并复述发黑的是其中一段",
+            "基于4段给出另外3段继续观察的建议"
+          ],
+          "must_not": [
+            "继续沿用3段",
+            "把发黑段数说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户剪的是4段薄荷且一段发黑",
+            "复述另外3段继续观察、水浑再换"
+          ],
+          "must_not": [
+            "记成3段或其他数量",
+            "要求用户天天换水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话收尾",
+            "收尾中正确包含4段薄荷、发黑段观察、另外3段水别太满水浑再换",
+            "让用户先歇着"
+          ],
+          "must_not": [
+            "超过一两句话的简短收尾",
+            "记错数量",
+            "要求用户现在操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

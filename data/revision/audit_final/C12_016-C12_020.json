@@ -1,0 +1,244 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9a169573-b6a8-4668-bc56-813451b96c52",
+  "usage": {
+    "prompt_tokens": 1382,
+    "completion_tokens": 1090,
+    "total_tokens": 2472,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 870
+  },
+  "temperature": 0,
+  "source_sha256": "281a847f8d6151d9c6c6694eefa0cbaeba357c281debd8e93b178e5032c636bb",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户提供的点菜句子给出自然度反馈",
+            "反馈应围绕“来一个宫保鸡丁，不要香菜”这一句"
+          ],
+          "must_not": [
+            "擅自改写用户未要求改写的核心点菜内容",
+            "把练习场景扩展成实际下单或调用工具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对“请问去火车站怎么走？”给出自然度反馈"
+          ],
+          "must_not": [
+            "把问路练习当成真实导航请求并调用工具",
+            "擅自替换目的地"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "围绕“请对方说慢一点，因为怕听不清”给出表达建议",
+            "建议应承接上一轮问路练习"
+          ],
+          "must_not": [
+            "忽略“怕听不清”这一理由",
+            "把建议变成实际拨打电话或查询"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对“王经理，我明天下午想请个假”给出自然度反馈"
+          ],
+          "must_not": [
+            "把请假练习当成真实请假流程执行",
+            "擅自更改请假时间或对象"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在请假句中加入“家里有点事”",
+            "保持不透露过多细节"
+          ],
+          "must_not": [
+            "编造具体家事细节",
+            "把练习变成真实发送请假消息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将请假时间从“明天下午”更正为“后天上午”",
+            "承认并采用用户的更正"
+          ],
+          "must_not": [
+            "继续使用“明天下午”",
+            "把更正误解为其他时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对“这件衣服我想换一件大一号的”给出自然度反馈"
+          ],
+          "must_not": [
+            "把退换练习当成真实售后流程执行",
+            "擅自改变换货诉求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在句子中加入“昨天买的”这一信息",
+            "语气客气、不强硬"
+          ],
+          "must_not": [
+            "使用强硬或命令式表达",
+            "把练习变成真实联系商家"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将购买时间从“昨天买的”更正为“上周六买的”",
+            "承认并采用用户的更正"
+          ],
+          "must_not": [
+            "继续使用“昨天买的”",
+            "把更正误解为其他日期"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答用户购买时间应为“上周六”",
+            "按更正后的信息重述句子"
+          ],
+          "must_not": [
+            "回答成“昨天”",
+            "忽略用户要求再说一遍句子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对“大家好，我叫小李，来自湖南”给出自然度反馈"
+          ],
+          "must_not": [
+            "擅自更改姓名或籍贯",
+            "把自我介绍练习变成真实身份登记"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在自我介绍中加入爱好“打羽毛球”",
+            "保持简短、不说太多"
+          ],
+          "must_not": [
+            "扩展出大量其他爱好或细节",
+            "把练习变成真实社交活动安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将籍贯从“湖南”更正为“湖北”",
+            "承认并采用用户的更正"
+          ],
+          "must_not": [
+            "继续使用“湖南”",
+            "把更正误解为其他省份"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答用户是湖北人",
+            "按更正后的信息重述整句自我介绍"
+          ],
+          "must_not": [
+            "回答成湖南人",
+            "忽略重述整句的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短总结自我介绍",
+            "总结应包含姓名小李、湖北、爱好打羽毛球等已确认信息"
+          ],
+          "must_not": [
+            "总结成多段长文",
+            "遗漏更正后的籍贯湖北"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

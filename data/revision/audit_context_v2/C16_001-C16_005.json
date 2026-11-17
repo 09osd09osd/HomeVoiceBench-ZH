@@ -1,0 +1,263 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "49f3cb1e-9398-408c-8bb0-e80d7a39a15a",
+  "usage": {
+    "prompt_tokens": 1817,
+    "completion_tokens": 1128,
+    "total_tokens": 2945,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1305
+  },
+  "temperature": 0,
+  "source_sha256": "a4cddda3369a1e2a1d1d67704988d99f02179ef023fcc1c0a9de650227557663",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩数字接龙",
+            "从1开始递增",
+            "逢7和7的倍数跳过",
+            "助手先说出一个符合规则的数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩数字接龙",
+            "从1开始递增",
+            "逢7和7的倍数跳过",
+            "助手先说出一个符合规则的数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增带7数字也跳过",
+            "继续接龙并说出符合全部规则的下一个数"
+          ],
+          "must_not": [
+            "说出含7的数字",
+            "说出7的倍数",
+            "重复已说过的数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩数字接龙",
+            "从1开始递增",
+            "逢7和7的倍数跳过",
+            "助手先说出一个符合规则的数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增带7数字也跳过",
+            "继续接龙并说出符合全部规则的下一个数"
+          ],
+          "must_not": [
+            "说出含7的数字",
+            "说出7的倍数",
+            "重复已说过的数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认起始数字改为5并重新开始",
+            "说出符合规则的下一个数"
+          ],
+          "must_not": [
+            "继续沿用起始数字1",
+            "说出含7或7的倍数的数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩数字接龙",
+            "从1开始递增",
+            "逢7和7的倍数跳过",
+            "助手先说出一个符合规则的数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增带7数字也跳过",
+            "继续接龙并说出符合全部规则的下一个数"
+          ],
+          "must_not": [
+            "说出含7的数字",
+            "说出7的倍数",
+            "重复已说过的数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认起始数字改为5并重新开始",
+            "说出符合规则的下一个数"
+          ],
+          "must_not": [
+            "继续沿用起始数字1",
+            "说出含7或7的倍数的数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答当前起始数字是5",
+            "回答禁用条件为逢7和7的倍数跳过且含7数字跳过"
+          ],
+          "must_not": [
+            "回答起始数字为1",
+            "遗漏带7数字禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩数字接龙",
+            "从1开始递增",
+            "逢7和7的倍数跳过",
+            "助手先说出一个符合规则的数字"
+          ],
+          "must_not": [
+            "说出7或7的倍数",
+            "跳过非7相关数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增带7数字也跳过",
+            "继续接龙并说出符合全部规则的下一个数"
+          ],
+          "must_not": [
+            "说出含7的数字",
+            "说出7的倍数",
+            "重复已说过的数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认起始数字改为5并重新开始",
+            "说出符合规则的下一个数"
+          ],
+          "must_not": [
+            "继续沿用起始数字1",
+            "说出含7或7的倍数的数字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答当前起始数字是5",
+            "回答禁用条件为逢7和7的倍数跳过且含7数字跳过"
+          ],
+          "must_not": [
+            "回答起始数字为1",
+            "遗漏带7数字禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结起始数字为5",
+            "总结逢7和7的倍数跳过",
+            "总结含7数字跳过"
+          ],
+          "must_not": [
+            "总结起始数字为1",
+            "遗漏带7数字禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

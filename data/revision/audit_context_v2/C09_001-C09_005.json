@@ -1,0 +1,290 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "3d8007df-63ae-4d37-8667-5a0068ae564a",
+  "usage": {
+    "prompt_tokens": 2415,
+    "completion_tokens": 1296,
+    "total_tokens": 3711,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1903
+  },
+  "temperature": 0,
+  "source_sha256": "b7b95fe08e2ba0f1dbfa7090a7464ad68288fb18a438bcab89340c06b2dcff75",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C09_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供适合一家三口周六上午的户外活动建议",
+            "活动时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "推荐非户外活动作为主要方案",
+            "超出三百元预算",
+            "安排与周六上午冲突的时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供适合一家三口周六上午的户外活动建议",
+            "活动时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "推荐非户外活动作为主要方案",
+            "超出三百元预算",
+            "安排与周六上午冲突的时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "更新为五个人同行",
+            "考虑老人腿脚不好、不能走太久",
+            "仍为户外活动",
+            "时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "忽略老人行动不便",
+            "推荐需要长时间步行的方案",
+            "超出三百元预算",
+            "改变为室内活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供适合一家三口周六上午的户外活动建议",
+            "活动时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "推荐非户外活动作为主要方案",
+            "超出三百元预算",
+            "安排与周六上午冲突的时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "更新为五个人同行",
+            "考虑老人腿脚不好、不能走太久",
+            "仍为户外活动",
+            "时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "忽略老人行动不便",
+            "推荐需要长时间步行的方案",
+            "超出三百元预算",
+            "改变为室内活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时间从周六更正为周日",
+            "将预算从三百元更正为两百元以内",
+            "保持五个人、约两小时、户外"
+          ],
+          "must_not": [
+            "仍按周六安排",
+            "预算仍按三百元",
+            "忽略五个人或两小时或户外条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供适合一家三口周六上午的户外活动建议",
+            "活动时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "推荐非户外活动作为主要方案",
+            "超出三百元预算",
+            "安排与周六上午冲突的时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "更新为五个人同行",
+            "考虑老人腿脚不好、不能走太久",
+            "仍为户外活动",
+            "时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "忽略老人行动不便",
+            "推荐需要长时间步行的方案",
+            "超出三百元预算",
+            "改变为室内活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时间从周六更正为周日",
+            "将预算从三百元更正为两百元以内",
+            "保持五个人、约两小时、户外"
+          ],
+          "must_not": [
+            "仍按周六安排",
+            "预算仍按三百元",
+            "忽略五个人或两小时或户外条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆最后时间为周日",
+            "正确回忆最后预算为两百元以内",
+            "按五个人、约两小时给出推荐"
+          ],
+          "must_not": [
+            "回忆成周六或三百元",
+            "忽略五个人或两小时条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供适合一家三口周六上午的户外活动建议",
+            "活动时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "推荐非户外活动作为主要方案",
+            "超出三百元预算",
+            "安排与周六上午冲突的时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "更新为五个人同行",
+            "考虑老人腿脚不好、不能走太久",
+            "仍为户外活动",
+            "时长约两小时",
+            "总花费在三百元以内"
+          ],
+          "must_not": [
+            "忽略老人行动不便",
+            "推荐需要长时间步行的方案",
+            "超出三百元预算",
+            "改变为室内活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时间从周六更正为周日",
+            "将预算从三百元更正为两百元以内",
+            "保持五个人、约两小时、户外"
+          ],
+          "must_not": [
+            "仍按周六安排",
+            "预算仍按三百元",
+            "忽略五个人或两小时或户外条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆最后时间为周日",
+            "正确回忆最后预算为两百元以内",
+            "按五个人、约两小时给出推荐"
+          ],
+          "must_not": [
+            "回忆成周六或三百元",
+            "忽略五个人或两小时条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认周日去公园野餐",
+            "总结中包含人数为五个人",
+            "总结中包含时间周日",
+            "总结中包含预算两百元以内",
+            "简短总结"
+          ],
+          "must_not": [
+            "遗漏人数、时间或预算",
+            "总结成周六或三百元",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "da6cb5e3-9995-4772-b6cf-5133f0c93e38",
+  "usage": {
+    "prompt_tokens": 1422,
+    "completion_tokens": 969,
+    "total_tokens": 2391,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 910
+  },
+  "temperature": 0,
+  "source_sha256": "a09a7dfb7110e5ebc4c88554a4fb462e6318e70e76b9d43758bdd342bfe5ba65",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C17_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐一本与《小王子》类似的书",
+            "推荐应体现温柔、带哲理的故事风格"
+          ],
+          "must_not": [
+            "推荐与温柔哲理风格明显无关的书"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕民谣给出适合晚上写东西时听的背景音乐推荐方向"
+          ],
+          "must_not": [
+            "推荐与民谣或背景音乐无关的方向"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐方向应避免太伤感",
+            "推荐方向应旋律简单",
+            "推荐方向应人声不过度用力"
+          ],
+          "must_not": [
+            "推荐伤感、旋律复杂或人声强烈的音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐明朝历史入门书"
+          ],
+          "must_not": [
+            "推荐非历史类或明显非入门级的书"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐聚焦社会生活的历史书",
+            "推荐应关注普通人日常生活而非战争和皇帝"
+          ],
+          "must_not": [
+            "推荐以战争或皇帝为主线的书"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将朝代兴趣更正为宋朝",
+            "推荐宋朝社会生活类入门书"
+          ],
+          "must_not": [
+            "继续按明朝推荐",
+            "推荐以战争或皇帝为主线的书"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "给出适合吉他初学者的练习曲建议"
+          ],
+          "must_not": [
+            "推荐明显超出初学者水平的曲子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐可边弹边唱的曲子",
+            "推荐应简单、速度不快，适合手指不灵活"
+          ],
+          "must_not": [
+            "推荐速度过快或技巧复杂的曲子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将练习方向更正为指弹而非弹唱",
+            "给出适合指弹入门的曲类建议"
+          ],
+          "must_not": [
+            "继续按弹唱方向推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认当前目标是练指弹",
+            "推荐旋律清楚且不难的指弹入门曲"
+          ],
+          "must_not": [
+            "误认为用户仍想练弹唱",
+            "推荐难度过高的指弹曲"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐适合睡前读的科幻短篇集"
+          ],
+          "must_not": [
+            "推荐非短篇集或非科幻作品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐与人工智能、日常生活相关的科幻短篇集",
+            "避免太空歌剧类型"
+          ],
+          "must_not": [
+            "推荐太空歌剧类作品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将兴趣方向更正为生物科技如基因编辑",
+            "推荐生物科技方向的科幻短篇集"
+          ],
+          "must_not": [
+            "继续按人工智能方向推荐",
+            "推荐太空歌剧类作品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认当前想看生物科技而非人工智能",
+            "推荐符合生物科技方向的短篇集"
+          ],
+          "must_not": [
+            "误认为用户仍想看人工智能方向"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结该找什么样的书"
+          ],
+          "must_not": [
+            "总结内容偏离生物科技方向科幻短篇集",
+            "总结超过一两句话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

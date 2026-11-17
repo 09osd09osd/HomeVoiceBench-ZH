@@ -6,7 +6,8 @@
       "type": "string",
       "description": "数据结构版本。",
       "enum": [
-        "0.2.0"
+        "0.2.0",
+        "0.3.0"
       ]
     },
     "identity": {
@@ -446,6 +447,74 @@
         "judge_profile": {
           "type": "string",
           "description": "语义评分器配置版本，实际模型版本写入运行记录。"
+        },
+        "behavior_policy": {
+          "type": "object",
+          "description": "按实际到达轮次约束查询和写操作；禁止未来授权，含语义要求。",
+          "required": [
+            "version",
+            "nodes"
+          ],
+          "properties": {
+            "version": {
+              "type": "string"
+            },
+            "nodes": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "node_id",
+                  "allowed_read_tools",
+                  "allowed_writes",
+                  "must_satisfy",
+                  "must_not"
+                ],
+                "properties": {
+                  "node_id": {
+                    "type": "string"
+                  },
+                  "allowed_read_tools": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "allowed_writes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "must_satisfy": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "must_not": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "reporting_partition": {
+          "type": "string",
+          "enum": [
+            "standard",
+            "budget_stress"
+          ],
+          "description": "普通任务与超出现有短答预算的长语音要求分开统计，同时保留全量成绩。"
+        },
+        "constraint_reference_version": {
+          "type": "string",
+          "description": "可核验约束版本；开放式回答不匹配固定示例剧本。"
         }
       },
       "required": [

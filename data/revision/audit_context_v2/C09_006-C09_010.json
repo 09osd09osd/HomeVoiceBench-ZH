@@ -1,0 +1,251 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "5a88528d-2c6d-4440-b3d0-144320db419f",
+  "usage": {
+    "prompt_tokens": 2142,
+    "completion_tokens": 1105,
+    "total_tokens": 3247,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1630
+  },
+  "temperature": 0,
+  "source_sha256": "95e0786a029b0c644f58c8aad76ff18e55e4018c5f52bdf6e9204cb9ed1aefca",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C09_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕一家三口周末半天、预算两百块左右、轻松不累来安排活动",
+            "给出具体可执行的活动建议"
+          ],
+          "must_not": [
+            "超出半天时间或两百块预算",
+            "安排高强度或累人的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕一家三口周末半天、预算两百块左右、轻松不累来安排活动",
+            "给出具体可执行的活动建议"
+          ],
+          "must_not": [
+            "超出半天时间或两百块预算",
+            "安排高强度或累人的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在原有半天、一家三口、两百块预算基础上增加室内备选方案",
+            "室内备选需适合下雨天"
+          ],
+          "must_not": [
+            "改变人数、时间或预算",
+            "只给室外方案而不给室内备选"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕一家三口周末半天、预算两百块左右、轻松不累来安排活动",
+            "给出具体可执行的活动建议"
+          ],
+          "must_not": [
+            "超出半天时间或两百块预算",
+            "安排高强度或累人的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "方案包含可坐的地方",
+            "方案包含孩子能跑动的空间",
+            "保持半天、一家三口、两百块预算"
+          ],
+          "must_not": [
+            "改变人数、时间或预算",
+            "安排需要一直站着的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "预算改为一百五十块",
+            "保持半天、一家三口、轻松不累"
+          ],
+          "must_not": [
+            "仍按两百块预算安排",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕一家三口周末半天、预算两百块左右、轻松不累来安排活动",
+            "给出具体可执行的活动建议"
+          ],
+          "must_not": [
+            "超出半天时间或两百块预算",
+            "安排高强度或累人的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "方案包含可坐着聊天的地方",
+            "方案包含孩子能玩的空间",
+            "保持半天、一家三口、两百块预算"
+          ],
+          "must_not": [
+            "改变人数、时间或预算",
+            "安排需要一直走路的方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "预算改为一百五十块",
+            "保持半天、一家三口、轻松不累"
+          ],
+          "must_not": [
+            "仍按两百块预算安排",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得预算已改为一百五十块",
+            "给出半天时间的具体安排顺序"
+          ],
+          "must_not": [
+            "说预算仍是两百块",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕一家三口周末半天、预算两百块左右、轻松不累来安排活动",
+            "给出具体可执行的活动建议"
+          ],
+          "must_not": [
+            "超出半天时间或两百块预算",
+            "安排高强度或累人的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "方案包含可坐的地方",
+            "方案包含孩子能跑动的空间",
+            "保持半天、一家三口、两百块预算"
+          ],
+          "must_not": [
+            "改变人数、时间或预算",
+            "安排需要一直站着的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "预算改为一百五十块",
+            "保持半天、一家三口、轻松不累"
+          ],
+          "must_not": [
+            "仍按两百块预算安排",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得预算已改为一百五十块",
+            "给出半天时间的具体安排顺序"
+          ],
+          "must_not": [
+            "说预算仍是两百块",
+            "改变人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结方案",
+            "总结包含一家三口、半天、一百五十块预算、轻松活动等要点"
+          ],
+          "must_not": [
+            "总结过长",
+            "改变预算、人数或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

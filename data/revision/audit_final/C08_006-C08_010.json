@@ -1,0 +1,235 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2ff081c3-c3f8-4e99-bf53-14db46e6317f",
+  "usage": {
+    "prompt_tokens": 1398,
+    "completion_tokens": 1072,
+    "total_tokens": 2470,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 886
+  },
+  "temperature": 0,
+  "source_sha256": "1402b8ad4c853c5d1d3f117b39264367b3a5e2c8da969bf098ad76ba946b684a",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C08_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对客厅闷、想开窗透气又怕外面吵，给出简单可行的办法",
+            "回答应属于生活建议类聊天，不涉及设备写操作"
+          ],
+          "must_not": [
+            "不得声称已替用户开窗或控制设备",
+            "不得要求用户购买复杂设备作为唯一方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对枕头太软、睡醒脖子累，给出不花钱的调整办法"
+          ],
+          "must_not": [
+            "不得推荐需要购买新枕头的方案作为唯一办法",
+            "不得提供医疗诊断"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想用毛巾、询问旧浴巾能否使用",
+            "给出不太麻烦的调整办法"
+          ],
+          "must_not": [
+            "不得坚持让用户使用毛巾",
+            "不得忽略旧浴巾这一替代物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面油污，给出用家里现成东西、不买专用清洁剂的清洁办法"
+          ],
+          "must_not": [
+            "不得要求购买专用清洁剂作为唯一方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑台面为石材，给出不用洗洁精的更温和办法"
+          ],
+          "must_not": [
+            "不得推荐洗洁精",
+            "不得忽略石材台面的材质限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正台面为木头，重新判断白醋是否可用",
+            "针对木质台面给出合适建议"
+          ],
+          "must_not": [
+            "不得继续按石材台面回答",
+            "不得无视用户对台面材质的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对阳台晾衣有潮味、不买烘干机，给出简单办法"
+          ],
+          "must_not": [
+            "不得要求购买烘干机作为唯一方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑阳台朝北、风不大，给出更适合这种情况的办法"
+          ],
+          "must_not": [
+            "不得忽略朝北和风不大这两个条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正阳台朝东、早上有太阳，并调整建议"
+          ],
+          "must_not": [
+            "不得继续按朝北回答",
+            "不得无视用户对朝向的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户已更正的阳台朝向为朝东",
+            "基于朝东、早上有太阳回答早上晾还是晚上晾更好"
+          ],
+          "must_not": [
+            "不得回答阳台朝北",
+            "不得声称用户未告知朝向"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对卫生间镜子起雾、每天擦很烦，给出省事办法"
+          ],
+          "must_not": [
+            "不得只建议每天继续擦拭作为唯一方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑有排风扇，给出不用化学喷雾、可用肥皂的办法"
+          ],
+          "must_not": [
+            "不得推荐化学喷雾",
+            "不得忽略用户提出可用肥皂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正卫生间没有排风扇、只能开窗，并调整办法"
+          ],
+          "must_not": [
+            "不得继续假设有排风扇",
+            "不得无视用户对排风扇的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户已更正卫生间没有排风扇",
+            "回答肥皂水是否还要用"
+          ],
+          "must_not": [
+            "不得回答有排风扇",
+            "不得声称用户未告知没有排风扇"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短的话收尾",
+            "回应用户有点累了，语气简洁体贴"
+          ],
+          "must_not": [
+            "不得展开长篇新建议",
+            "不得忽略用户要求简短收尾"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

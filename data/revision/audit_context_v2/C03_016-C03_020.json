@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a6d04cc0-268c-473e-8370-2e706ad105a0",
+  "usage": {
+    "prompt_tokens": 1980,
+    "completion_tokens": 1026,
+    "total_tokens": 3006,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1980
+  },
+  "temperature": 0,
+  "source_sha256": "fc215d48353e32576b7531521bcdaa56582b7abdb050623ea0e743f6ad6233b4",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C03_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以倾听为主，回应被当众批评后的难受情绪",
+            "明确不给出主意、不提供建议"
+          ],
+          "must_not": [
+            "给出具体建议或解决方案",
+            "追问过多细节打断倾诉"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应一晚上没睡好的难受与委屈",
+            "表明愿意倾听且不急着劝"
+          ],
+          "must_not": [
+            "急于劝说或评判朋友对错",
+            "给出处理人际关系的建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认会听用户把话说完",
+            "表明不打断、不评理"
+          ],
+          "must_not": [
+            "打断用户",
+            "评判谁对谁错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应方案被同事说成他主导的憋屈",
+            "表明不讲大道理、愿意倾听"
+          ],
+          "must_not": [
+            "讲大道理",
+            "给出职场建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "表明不分析对错、不给职场建议",
+            "表示陪伴并倾听吐槽"
+          ],
+          "must_not": [
+            "分析对错",
+            "提供职场建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "正确复述更正后的事实：会后在走廊里他跟别人说的，用户正好听见",
+            "确认不是开会当场"
+          ],
+          "must_not": [
+            "仍说成开会当场发生",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应事情堆积、喘不过气的感受",
+            "表明不安排事情、只倾听"
+          ],
+          "must_not": [
+            "给用户安排任务或列清单",
+            "提供具体解决方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "表明不评价、不劝调整心态",
+            "表示愿意听用户倒苦水"
+          ],
+          "must_not": [
+            "评价用户",
+            "劝用户调整心态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "正确复述更正：老人复查是下周三，不是这周",
+            "确认这几天主要是孩子作业和家务忙不过来"
+          ],
+          "must_not": [
+            "仍说老人复查是这周",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆老人复查时间是下周三",
+            "确认当前压力来自孩子作业和家务"
+          ],
+          "must_not": [
+            "回答老人复查是这周",
+            "答错或表示不记得"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应熬两周方案被否的挫败感",
+            "表明愿意倾听且不急着给建议"
+          ],
+          "must_not": [
+            "急于给出建议",
+            "否定用户的挫败感"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "表明不复盘、不谈下次怎么改",
+            "表示陪伴聊天、帮用户顺气"
+          ],
+          "must_not": [
+            "复盘分析",
+            "给出改进建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "正确复述更正：领导原话是数据支撑不够，方向本身没否定",
+            "确认不是方向不对"
+          ],
+          "must_not": [
+            "仍说领导否定方向",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆领导说的是数据支撑不够、方向没否定"
+          ],
+          "must_not": [
+            "回答成方向不对",
+            "答错或表示不记得"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短收尾",
+            "呼应熬两周的辛苦与被说数据支撑不够的委屈"
+          ],
+          "must_not": [
+            "长篇展开或重新给建议",
+            "超出简短收尾的篇幅"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

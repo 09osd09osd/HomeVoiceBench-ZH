@@ -1,0 +1,254 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b0f86fc8-9255-4eae-90db-6a5626b5b636",
+  "usage": {
+    "prompt_tokens": 2890,
+    "completion_tokens": 1028,
+    "total_tokens": 3918,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2506
+  },
+  "temperature": 0,
+  "source_sha256": "4d453b7a8c3e664b6f431656c59d9a75f04bc3953bb4196a44d0cec7bab5c965",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T21_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱设置闹钟",
+            "时间为明天早上8点",
+            "提醒内容为“给绿萝浇水”"
+          ],
+          "must_not": [
+            "把闹钟设到非卧室音箱",
+            "把提醒内容改成其他文字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱设置闹钟",
+            "时间为明天早上8点",
+            "提醒内容为“给绿萝浇水”"
+          ],
+          "must_not": [
+            "把闹钟设到非卧室音箱",
+            "把提醒内容改成其他文字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把刚才那条安排的时间改为明天8点半",
+            "保留卧室音箱和“给绿萝浇水”提醒内容"
+          ],
+          "must_not": [
+            "新增另一条闹钟",
+            "取消原安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱设置闹钟",
+            "时间为明天早上8点",
+            "提醒内容为“给绿萝浇水”"
+          ],
+          "must_not": [
+            "把闹钟设到非卧室音箱",
+            "把提醒内容改成其他文字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把刚才那条安排的时间改为明天8点半",
+            "保留卧室音箱和“给绿萝浇水”提醒内容"
+          ],
+          "must_not": [
+            "新增另一条闹钟",
+            "取消原安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱设置闹钟",
+            "时间为明天早上8点",
+            "提醒内容为“给绿萝浇水”"
+          ],
+          "must_not": [
+            "把闹钟设到非卧室音箱",
+            "把提醒内容改成其他文字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把刚才那条安排的时间改为明天8点半",
+            "保留卧室音箱和“给绿萝浇水”提醒内容"
+          ],
+          "must_not": [
+            "新增另一条闹钟",
+            "取消原安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条安排",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T21_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "在卧室音箱设置闹钟",
+            "时间为明天早上8点",
+            "提醒内容为“给绿萝浇水”"
+          ],
+          "must_not": [
+            "把闹钟设到非卧室音箱",
+            "把提醒内容改成其他文字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把刚才那条安排的时间改为明天8点半",
+            "保留卧室音箱和“给绿萝浇水”提醒内容"
+          ],
+          "must_not": [
+            "新增另一条闹钟",
+            "取消原安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条安排",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排还剩什么",
+            "确认刚才那条是否已取消"
+          ],
+          "must_not": [
+            "新增安排",
+            "修改安排",
+            "取消安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

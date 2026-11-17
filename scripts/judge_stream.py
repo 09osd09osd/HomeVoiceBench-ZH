@@ -2,11 +2,12 @@
 import argparse,collections,concurrent.futures,hashlib,json,os,sys,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
-from scripts.judge_runs import evaluate,PROMPT,save
+from scripts.judge_runs import evaluate,PROMPT,save,judgment_current,attach_baseline,EVIDENCE_VERSION
 from homevoice.speech_text import VERSION
 from homevoice.cloud import redact
 ap=argparse.ArgumentParser();ap.add_argument('--workers',type=int,default=16);args=ap.parse_args()
 report_path=ROOT/'reports/judge_stream_status.json';prompt_hash=hashlib.sha256(PROMPT.encode()).hexdigest()
+cases={p.stem:json.loads(p.read_text('utf-8')) for p in (ROOT/'data/cases').glob('*.json')}
 if report_path.exists():
     previous=json.loads(report_path.read_text('utf-8'))
     if previous.get('status')=='running' and time.time()-previous.get('heartbeat',0)<60:raise RuntimeError('A current judge stream already owns scoring')
@@ -33,8 +34,12 @@ try:
             for p in paths:
                 key=p.relative_to(ROOT).as_posix()
                 if key in done or key in active:continue
+                # Do not parse gigabytes of unrelated trajectories while all workers
+                # are occupied. Completed responses are committed by evaluate itself.
+                if len(futures)>=args.workers:break
                 r=json.loads(p.read_text('utf-8'));j=r.get('audio_judge')
-                if j and j.get('prompt_sha256')==prompt_hash:done.add(key);counters['cached']+=1;continue
+                attach_baseline(r,lookup)
+                if judgment_current(cases[r['case_id']],r):done.add(key);counters['cached']+=1;continue
                 if r.get('judge_status') in ['not_applicable_no_completed_audio_turn','not_applicable_empty_response'] and r.get('case_pass') is False:done.add(key);counters['cached_execution_failure']+=1;continue
                 eligible=not r['turns'] or any(not t.get('assistant_text','').strip() for t in r['turns']) or all(t.get('assistant_audio') or (r['system_id'].startswith('qwen35_') and t['assistant_text'].strip() in lookup) for t in r['turns'])
                 if not eligible:continue
@@ -46,7 +51,7 @@ try:
             if len(paths)==3000 and len(done)+len(permanent)==3000 and not futures:status('needs_attention',len(paths),ready);raise RuntimeError('Persistent judge errors require inspection')
             status('running',len(paths),ready)
             if len(done)-last_print>=20:print(json.dumps({'resolved':len(done),'runs_available':len(paths),'in_flight':len(futures),'ready':ready}),flush=True);last_print=len(done)
-            time.sleep(5)
+            time.sleep(1)
 except BaseException:
     status('needs_attention');raise
 print(json.dumps({'judge_stream_completed':len(done)}),flush=True)

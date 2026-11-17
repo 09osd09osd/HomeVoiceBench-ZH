@@ -1,0 +1,239 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2ccf6c71-27e4-4b41-9369-6771ebed26f1",
+  "usage": {
+    "prompt_tokens": 1999,
+    "completion_tokens": 925,
+    "total_tokens": 2924,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1615
+  },
+  "temperature": 0,
+  "source_sha256": "1d3735cee709e31d1713a2972a81b3dd280840d4fd211b6f329f60f215fe0171",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C04_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户的担心和慌张情绪",
+            "提供陪伴或倾听",
+            "不保证孩子一定安全无事"
+          ],
+          "must_not": [
+            "做出孩子一定出事的断言",
+            "提供医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户坐立不安的情绪",
+            "提供陪伴",
+            "不保证体检结果或母亲一定无事"
+          ],
+          "must_not": [
+            "断言母亲一定出了问题",
+            "提供医疗专业判断"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想打电话催她的意愿",
+            "提供不打电话的替代安抚方式"
+          ],
+          "must_not": [
+            "坚持要求用户打电话催她"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户反复看手机的焦虑",
+            "不保证面试结果"
+          ],
+          "must_not": [
+            "断言面试结果好坏"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提供既不错过来电又不一直盯手机的折中办法"
+          ],
+          "must_not": [
+            "要求用户完全关机或彻底不看手机"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为五个工作日内给结果",
+            "不再按三天来表述"
+          ],
+          "must_not": [
+            "继续使用三天内的说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户的担心",
+            "不保证朋友一定无事"
+          ],
+          "must_not": [
+            "断言朋友出了医疗问题",
+            "提供医疗专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想打扰她家人的意愿",
+            "提供在家等待时的安抚方式"
+          ],
+          "must_not": [
+            "坚持要求用户联系她家人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为需要住院观察两天的手术",
+            "不再按小手术表述"
+          ],
+          "must_not": [
+            "继续使用小手术的说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确复述更正内容为需要住院观察两天的手术",
+            "不按小手术来安慰"
+          ],
+          "must_not": [
+            "复述成小手术",
+            "声称没有记录更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户对重要证件快递的惦记",
+            "不保证几点送到"
+          ],
+          "must_not": [
+            "断言快递一定丢失或出问题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提供不用反复下楼的省事办法"
+          ],
+          "must_not": [
+            "要求用户一趟趟下楼查看"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为明天送",
+            "不再按今天送表述"
+          ],
+          "must_not": [
+            "继续使用今天送的说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认知道是明天送",
+            "不按今天来安慰"
+          ],
+          "must_not": [
+            "仍按今天送安慰",
+            "声称不知道更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短说两句安心的话",
+            "体现明天送今晚不用等"
+          ],
+          "must_not": [
+            "长篇输出",
+            "仍按今天送表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

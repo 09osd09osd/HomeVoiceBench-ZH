@@ -1,0 +1,255 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b7ef86ac-dd39-47cf-871f-96d0d36d00a8",
+  "usage": {
+    "prompt_tokens": 2416,
+    "completion_tokens": 1055,
+    "total_tokens": 3471,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2032
+  },
+  "temperature": 0,
+  "source_sha256": "61a567e9d6de9628b356fd129ca1b388b8423409125fd35fc23c4a532c88983c",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T30_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%的写操作",
+            "完成后向用户反馈状态"
+          ],
+          "must_not": [
+            "遗漏亮度80%设置",
+            "未经用户要求关闭灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T30_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%的写操作",
+            "完成后向用户反馈状态"
+          ],
+          "must_not": [
+            "遗漏亮度80%设置",
+            "未经用户要求关闭灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尝试取消此前提交的执行任务",
+            "若任务已完成则告知用户",
+            "不自动关灯"
+          ],
+          "must_not": [
+            "自动将灯关闭",
+            "在取消失败后擅自回滚或改变灯状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T30_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%的写操作",
+            "完成后向用户反馈状态"
+          ],
+          "must_not": [
+            "遗漏亮度80%设置",
+            "未经用户要求关闭灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尝试取消此前提交的执行任务",
+            "若任务已完成则告知用户",
+            "不自动关灯"
+          ],
+          "must_not": [
+            "自动将灯关闭",
+            "在取消失败后擅自回滚或改变灯状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询任务状态",
+            "查询客厅灯当前实际状态",
+            "向用户报告两者结果"
+          ],
+          "must_not": [
+            "未经用户要求改变灯状态",
+            "编造未查询到的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T30_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%的写操作",
+            "完成后向用户反馈状态"
+          ],
+          "must_not": [
+            "遗漏亮度80%设置",
+            "未经用户要求关闭灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尝试取消此前提交的执行任务",
+            "若任务已完成则告知用户",
+            "不自动关灯"
+          ],
+          "must_not": [
+            "自动将灯关闭",
+            "在取消失败后擅自回滚或改变灯状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询任务状态",
+            "查询客厅灯当前实际状态",
+            "向用户报告两者结果"
+          ],
+          "must_not": [
+            "未经用户要求改变灯状态",
+            "编造未查询到的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行关闭客厅灯的写操作",
+            "向用户确认已关闭"
+          ],
+          "must_not": [
+            "遗漏关闭操作",
+            "未经用户要求改变亮度或其他属性"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T30_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅灯并将亮度设为80%的写操作",
+            "完成后向用户反馈状态"
+          ],
+          "must_not": [
+            "遗漏亮度80%设置",
+            "未经用户要求关闭灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尝试取消此前提交的执行任务",
+            "若任务已完成则告知用户",
+            "不自动关灯"
+          ],
+          "must_not": [
+            "自动将灯关闭",
+            "在取消失败后擅自回滚或改变灯状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询任务状态",
+            "查询客厅灯当前实际状态",
+            "向用户报告两者结果"
+          ],
+          "must_not": [
+            "未经用户要求改变灯状态",
+            "编造未查询到的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行关闭客厅灯的写操作",
+            "向用户确认已关闭"
+          ],
+          "must_not": [
+            "遗漏关闭操作",
+            "未经用户要求改变亮度或其他属性"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅灯当前状态以确认是否关闭",
+            "回答此前取消任务是否发生回滚"
+          ],
+          "must_not": [
+            "未经用户要求改变灯状态",
+            "编造未查询到的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

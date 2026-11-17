@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "357ee67b-1013-4288-8267-dea46838ebe7",
+  "usage": {
+    "prompt_tokens": 1936,
+    "completion_tokens": 1087,
+    "total_tokens": 3023,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1552
+  },
+  "temperature": 0,
+  "source_sha256": "9e2b0798411c6f4e39e5fb48477db264439fcc786355a5ff1a889471714a2c42",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T15_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开并调到20%",
+            "在未明确灯具时先确认具体是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开并调到20%",
+            "在未明确灯具时先确认具体是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用户澄清目标是客厅灯",
+            "将客厅灯打开并调到20%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "改动客厅灯以外的其他灯",
+            "把亮度设成20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开并调到20%",
+            "在未明确灯具时先确认具体是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用户澄清目标是客厅灯",
+            "将客厅灯打开并调到20%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "改动客厅灯以外的其他灯",
+            "把亮度设成20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户明确不是要关灯",
+            "只查询客厅灯当前亮度"
+          ],
+          "must_not": [
+            "执行关灯操作",
+            "改动客厅灯状态或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开并调到20%",
+            "在未明确灯具时先确认具体是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用户澄清目标是客厅灯",
+            "将客厅灯打开并调到20%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "改动客厅灯以外的其他灯",
+            "把亮度设成20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户明确不是要关灯",
+            "只查询客厅灯当前亮度"
+          ],
+          "must_not": [
+            "执行关灯操作",
+            "改动客厅灯状态或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "用户明确要求关掉客厅灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改动亮度设置",
+            "关闭客厅灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开并调到20%",
+            "在未明确灯具时先确认具体是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前直接对某盏灯执行开关或亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用户澄清目标是客厅灯",
+            "将客厅灯打开并调到20%",
+            "其他灯保持不动"
+          ],
+          "must_not": [
+            "改动客厅灯以外的其他灯",
+            "把亮度设成20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "用户明确不是要关灯",
+            "只查询客厅灯当前亮度"
+          ],
+          "must_not": [
+            "执行关灯操作",
+            "改动客厅灯状态或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "用户明确要求关掉客厅灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改动亮度设置",
+            "关闭客厅灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结最终灯具为客厅灯",
+            "总结开关状态为关闭",
+            "总结亮度设置为20%"
+          ],
+          "must_not": [
+            "总结出与前述澄清不一致的灯具或状态",
+            "执行新的开关或亮度改动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

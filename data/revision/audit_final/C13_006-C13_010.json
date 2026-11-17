@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7b406c51-0540-41fe-bcbf-79e3f2bbe8ff",
+  "usage": {
+    "prompt_tokens": 1428,
+    "completion_tokens": 994,
+    "total_tokens": 2422,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 916
+  },
+  "temperature": 0,
+  "source_sha256": "50a9491ba0c0ccbcb12ccb5fa95781e86b5fded2c1bd86e7483caf653fafa0bb",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C13_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个短小、温和的睡前故事",
+            "故事角色包含小兔子",
+            "故事元素包含月亮灯",
+            "内容不吓人"
+          ],
+          "must_not": [
+            "讲得太长",
+            "出现恐怖或惊吓情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个短故事",
+            "故事围绕小熊捡到一块会唱歌的石头",
+            "内容温和",
+            "情节不复杂"
+          ],
+          "must_not": [
+            "故事太长",
+            "情节过于复杂",
+            "出现吓人内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入小熊的好朋友小刺猬",
+            "石头唱歌时小刺猬在旁边听"
+          ],
+          "must_not": [
+            "忽略小刺猬这一角色",
+            "改变石头会唱歌的设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小狐狸的故事",
+            "故事包含星星毯子",
+            "小狐狸晚上盖着毯子睡觉",
+            "故事短、温和、不吓人"
+          ],
+          "must_not": [
+            "故事太长",
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "小狐狸住在树洞里",
+            "毯子是奶奶送的"
+          ],
+          "must_not": [
+            "遗漏树洞或奶奶送的细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将毯子来源更正为妈妈亲手缝的"
+          ],
+          "must_not": [
+            "仍说毯子是奶奶送的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小松鼠的故事",
+            "故事包含窗边挂的风铃",
+            "风吹风铃叮叮响",
+            "故事短、温和"
+          ],
+          "must_not": [
+            "故事太长",
+            "出现吓人内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入小松鼠有一个软软的云朵形状小枕头"
+          ],
+          "must_not": [
+            "遗漏云朵形状小枕头这一细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将风铃位置更正为挂在门边"
+          ],
+          "must_not": [
+            "仍说风铃挂在窗边"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答风铃挂在门边",
+            "接着讲小松鼠听着风铃要睡着了"
+          ],
+          "must_not": [
+            "回答风铃挂在窗边",
+            "忽略继续讲故事的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个小鹿的故事",
+            "小鹿晚上走一条有萤火虫的小路回家",
+            "故事温和、不吓人"
+          ],
+          "must_not": [
+            "出现吓人内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "小鹿背着小书包",
+            "书包里装着给妹妹采的果子"
+          ],
+          "must_not": [
+            "遗漏小书包或果子细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将果子对象更正为弟弟",
+            "果子是给弟弟采的"
+          ],
+          "must_not": [
+            "仍说果子是给妹妹采的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答果子是给弟弟采的",
+            "接着讲小鹿快到家了"
+          ],
+          "must_not": [
+            "回答果子是给妹妹采的",
+            "忽略继续讲故事的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用两三句话收尾",
+            "结尾包含小鹿到家并安静地睡觉"
+          ],
+          "must_not": [
+            "收尾过长",
+            "结尾偏离小鹿到家睡觉"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

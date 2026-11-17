@@ -1,0 +1,236 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "fc2598b0-164b-4022-9930-5820eebb3f3f",
+  "usage": {
+    "prompt_tokens": 1408,
+    "completion_tokens": 904,
+    "total_tokens": 2312,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 896
+  },
+  "temperature": 0,
+  "source_sha256": "a570e8aa747521e0a9f7bb21ac3c3517bbd148872c632efa9499ff2707c51246",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C17_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐轻松的音乐",
+            "避免太吵的音乐"
+          ],
+          "must_not": [
+            "推荐吵闹的音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐适合晚上躺床上放松听的书"
+          ],
+          "must_not": [
+            "推荐吓人的内容",
+            "推荐太费脑子的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐短篇合集",
+            "避免太长篇"
+          ],
+          "must_not": [
+            "推荐长篇"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐八十年代老歌"
+          ],
+          "must_not": [
+            "推荐太伤感的歌"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐节奏慢的歌",
+            "避免苦情"
+          ],
+          "must_not": [
+            "推荐节奏太快的歌",
+            "推荐苦情歌"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将年代更正为九十年代老歌"
+          ],
+          "must_not": [
+            "继续按八十年代推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐短篇小说",
+            "避免太厚的大部头"
+          ],
+          "must_not": [
+            "推荐太厚的大部头"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "避免太压抑的推荐"
+          ],
+          "must_not": [
+            "推荐太压抑的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将阅读类型更正为短篇散文"
+          ],
+          "must_not": [
+            "继续按短篇小说推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户已改为短篇散文",
+            "按短篇散文推荐可读内容"
+          ],
+          "must_not": [
+            "误认为仍是短篇小说"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_015",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "用户称“我刚才想的是口琴，不是笛子”，但前序用户台词从未提到口琴或笛子，属于引用未实际出现的前文。",
+          "evidence": "我刚才想的是口琴，不是笛子，你别弄混了。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐在家学且不太吵的乐器"
+          ],
+          "must_not": [
+            "推荐太吵的乐器"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐不太贵的乐器或方案"
+          ],
+          "must_not": [
+            "推荐需要一开始花很多钱买设备的方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正理解为口琴而非笛子"
+          ],
+          "must_not": [
+            "把口琴和笛子弄混"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户选的是口琴",
+            "回答初学口琴如何练比较不扰民"
+          ],
+          "must_not": [
+            "误认为用户选的是笛子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结口琴初学注意事项",
+            "控制在两三点"
+          ],
+          "must_not": [
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

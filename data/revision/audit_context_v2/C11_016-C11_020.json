@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "70744c2b-210e-41b1-bc1e-0d2af6606b44",
+  "usage": {
+    "prompt_tokens": 2209,
+    "completion_tokens": 1061,
+    "total_tokens": 3270,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1697
+  },
+  "temperature": 0,
+  "source_sha256": "b3c3d6befa3e0ae37a19ad9bdf349ed3a33be27a2cd5605059234048dcf0c87d",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C11_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用适合五岁孩子理解的简单语言解释彩虹为什么有七种颜色",
+            "解释应包含阳光含多种颜色、水珠分光形成彩虹等可核验要点"
+          ],
+          "must_not": [
+            "使用超出五岁理解水平的大量专业术语",
+            "偏离彩虹成因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单语言解释冰块为什么能浮在水面上",
+            "解释适合六岁孩子理解"
+          ],
+          "must_not": [
+            "使用复杂物理术语而不作通俗化",
+            "偏离浮力/密度相关成因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "沿用前文冰块浮水的解释",
+            "使用小鱼或小鸭子等小动物比喻"
+          ],
+          "must_not": [
+            "放弃小动物比喻",
+            "改变前文关于冰块浮水的基本解释"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单语言解释影子为什么跟着人走",
+            "解释适合五岁孩子理解"
+          ],
+          "must_not": [
+            "使用复杂光学术语而不作通俗化",
+            "偏离影子由遮挡光形成的成因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "语气温柔",
+            "把影子说成好朋友或陪伴者以缓解害怕"
+          ],
+          "must_not": [
+            "使用吓人的描述",
+            "否定孩子怕黑的感受"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认孩子年龄更正为四岁半",
+            "后续按四岁半孩子的理解水平讲述"
+          ],
+          "must_not": [
+            "继续按五岁讲述",
+            "忽略年龄更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单语言解释天为什么会下雨",
+            "解释适合六岁孩子理解"
+          ],
+          "must_not": [
+            "使用复杂气象术语而不作通俗化",
+            "偏离水汽成云降雨的成因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "沿用前文下雨解释",
+            "把云朵比作小棉花糖"
+          ],
+          "must_not": [
+            "放弃棉花糖比喻",
+            "改变前文关于下雨的基本解释"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认孩子年龄更正为刚满五岁",
+            "后续按五岁孩子的理解水平讲述"
+          ],
+          "must_not": [
+            "继续按六岁讲述",
+            "忽略年龄更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆孩子刚满五岁",
+            "用五岁能懂的话再讲一遍雨的形成"
+          ],
+          "must_not": [
+            "年龄回答错误",
+            "使用超出五岁理解水平的表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单语言解释种子为什么能长成植物",
+            "解释适合七岁孩子理解"
+          ],
+          "must_not": [
+            "使用复杂植物学术语而不作通俗化",
+            "偏离种子发芽生长所需条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "沿用前文种子长成植物的解释",
+            "把发芽说成小种子醒过来"
+          ],
+          "must_not": [
+            "放弃小种子醒来的说法",
+            "改变前文关于种子发芽的基本解释"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认孩子年龄更正为六岁",
+            "后续按六岁孩子的理解水平讲述"
+          ],
+          "must_not": [
+            "继续按七岁讲述",
+            "忽略年龄更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆孩子六岁",
+            "用六岁能懂的话说明种子发芽需要什么"
+          ],
+          "must_not": [
+            "年龄回答错误",
+            "遗漏水、阳光、空气等发芽条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简单收尾",
+            "内容围绕种子发芽让孩子记住"
+          ],
+          "must_not": [
+            "展开长篇解释",
+            "偏离前文种子发芽主题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C12_015",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "练道歉短句，改对象后简短收尾",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261131,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C12_011-015.json"
+      "data/authoring/C12_011-015.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -1135,7 +1136,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1914,7 +1915,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1947,24 +1948,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -2099,7 +2100,131 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "提供一句向朋友道歉的中文表达",
+            "简短、不肉麻"
+          ],
+          "must_not": [
+            "表达过长或过于肉麻"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "不使用“别生气啦”",
+            "换成更实在的说法"
+          ],
+          "must_not": [
+            "出现“别生气啦”"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "道歉对象改为同事",
+            "调整称呼和语气"
+          ],
+          "must_not": [
+            "仍以朋友为道歉对象"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "正确回答改的是跟同事道歉",
+            "再用一句话继续练习"
+          ],
+          "must_not": [
+            "回答成朋友或其他对象"
+          ]
+        },
+        {
+          "node_id": "U5",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "用一句特别短的话收尾"
+          ],
+          "must_not": [
+            "展开成多句或长篇"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -2108,31 +2233,32 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "可以练：“刚才是我不好，别生气啦。”句子短，也不会太肉麻。"
+        "assistant_text": "预期要点：提供一句向朋友道歉的中文表达；简短、不肉麻。避免：表达过长或过于肉麻。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "那可以改成：“刚才是我不好，我下次注意。”这样更实在。"
+        "assistant_text": "预期要点：不使用“别生气啦”；换成更实在的说法。避免：出现“别生气啦”。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好，跟同事可以说：“刚才是我不好，我下次注意。”语气保持自然、不过分熟络。"
+        "assistant_text": "预期要点：道歉对象改为同事；调整称呼和语气。避免：仍以朋友为道歉对象。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，是跟同事道歉。可以接着说：“刚才是我不好，我下次注意。”"
+        "assistant_text": "预期要点：正确回答改的是跟同事道歉；再用一句话继续练习。避免：回答成朋友或其他对象。"
       },
       {
         "node_id": "U5",
         "calls": [],
-        "assistant_text": "好，收尾就一句：“刚才是我不好，我下次注意。”"
+        "assistant_text": "预期要点：用一句特别短的话收尾。避免：展开成多句或长篇。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -2144,7 +2270,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

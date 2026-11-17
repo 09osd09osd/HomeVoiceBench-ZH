@@ -1,0 +1,255 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "810007f9-d0be-4541-aca3-3dab44b22476",
+  "usage": {
+    "prompt_tokens": 2341,
+    "completion_tokens": 1100,
+    "total_tokens": 3441,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1957
+  },
+  "temperature": 0,
+  "source_sha256": "2a40d8f45e046986ffda98760c57ed10a8d9c5e3a41820cc76fd252e913e166d",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T08_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅空调并设定温度为25度的写操作",
+            "确认客厅空调已打开且设定温度为25摄氏度"
+          ],
+          "must_not": [
+            "改动客厅空调以外的设备",
+            "将温度设为25度以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T08_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅空调并设定温度为25度的写操作",
+            "确认客厅空调已打开且设定温度为25摄氏度"
+          ],
+          "must_not": [
+            "改动客厅空调以外的设备",
+            "将温度设为25度以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅空调设定温度改为28度",
+            "确认温度已改为28摄氏度且其他设置未动"
+          ],
+          "must_not": [
+            "改动客厅空调温度以外的设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T08_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅空调并设定温度为25度的写操作",
+            "若首次未成功则重试一次",
+            "成功后不再重复操作",
+            "确认客厅空调已打开且设定温度为25摄氏度"
+          ],
+          "must_not": [
+            "成功后重复执行写操作",
+            "改动客厅空调以外的设备",
+            "将温度设为25度以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅空调设定温度改为28度",
+            "确认温度已改为28摄氏度且其他设置未动"
+          ],
+          "must_not": [
+            "改动客厅空调温度以外的设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅空调当前开关状态和设定温度",
+            "报告当前为开着且设定温度为28摄氏度"
+          ],
+          "must_not": [
+            "调整客厅空调任何设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T08_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅空调并设定温度为25度的写操作",
+            "若首次未成功则重试一次",
+            "成功后不再重复操作",
+            "确认客厅空调已打开且设定温度为25摄氏度"
+          ],
+          "must_not": [
+            "成功后重复执行写操作",
+            "改动客厅空调以外的设备",
+            "将温度设为25度以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅空调设定温度改为28度",
+            "确认温度已改为28摄氏度且其他设置未动"
+          ],
+          "must_not": [
+            "改动客厅空调温度以外的设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅空调当前开关状态和设定温度",
+            "报告当前为开着且设定温度为28摄氏度"
+          ],
+          "must_not": [
+            "调整客厅空调任何设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅空调",
+            "保留设定温度不变",
+            "确认空调已关且设定温度仍为28摄氏度"
+          ],
+          "must_not": [
+            "改动设定温度",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T08_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅空调并设定温度为25度的写操作",
+            "确认客厅空调已打开且设定温度为25摄氏度"
+          ],
+          "must_not": [
+            "改动客厅空调以外的设备",
+            "将温度设为25度以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅空调设定温度改为28度",
+            "确认温度已改为28摄氏度且其他设置未动"
+          ],
+          "must_not": [
+            "改动客厅空调温度以外的设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅空调当前开关状态和设定温度",
+            "报告当前为开着且设定温度为28摄氏度"
+          ],
+          "must_not": [
+            "调整客厅空调任何设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅空调",
+            "保留设定温度不变",
+            "确认空调已关且设定温度仍为28摄氏度"
+          ],
+          "must_not": [
+            "改动设定温度",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅空调当前开关状态",
+            "报告当前为关着"
+          ],
+          "must_not": [
+            "改动客厅空调或其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "207cee00-2ccb-40af-8145-902d03efbf34",
+  "usage": {
+    "prompt_tokens": 1460,
+    "completion_tokens": 1073,
+    "total_tokens": 2533,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 948
+  },
+  "temperature": 0,
+  "source_sha256": "41452c584a24a04ca13c2de30b3bbd8ce91a7fe1b55db0e0eec5637d42fcaa2f",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C07_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对阳台角落旧杂志和空花盆给出收拾建议",
+            "在半小时内可完成",
+            "使用两个纸箱和几个挂钩",
+            "适合空间不大的条件"
+          ],
+          "must_not": [
+            "建议购买新收纳用品",
+            "忽略时间限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对换季收纳厚衣服给出较快方案",
+            "在晚上一小时内可完成",
+            "使用真空袋和收纳箱",
+            "适合空间小的条件"
+          ],
+          "must_not": [
+            "忽略时间限制",
+            "建议大量购买新收纳用品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "不再使用真空袋",
+            "提供不用真空袋的替代收纳办法",
+            "考虑羽绒服不宜压坏"
+          ],
+          "must_not": [
+            "继续建议用真空袋压缩羽绒服",
+            "忽略怕压坏羽绒服的顾虑"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对客厅孩子玩具给出快速分类方案",
+            "在晚上四十分钟内可完成",
+            "使用收纳筐和标签纸"
+          ],
+          "must_not": [
+            "忽略时间限制",
+            "建议丢弃孩子玩具"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "不建议扔孩子东西",
+            "所有孩子物品先保留只是分开放"
+          ],
+          "must_not": [
+            "建议丢弃或捐赠孩子玩具",
+            "把分类等同于淘汰"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按两个大筐和一个扁浅筐来调整分类方案",
+            "承认用户更正了收纳筐数量"
+          ],
+          "must_not": [
+            "继续按三个收纳筐安排",
+            "忽略浅筐的存在"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面瓶瓶罐罐给出做饭前收拾方案",
+            "在二十分钟内可完成",
+            "使用一个转盘和一个壁挂架"
+          ],
+          "must_not": [
+            "忽略时间限制",
+            "建议购买新收纳用品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑用户腰不好",
+            "常用物品尽量放台面伸手可及处",
+            "减少弯腰开柜门"
+          ],
+          "must_not": [
+            "建议常用物品放低处柜内",
+            "忽略腰部限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按十五分钟而非二十分钟调整方案",
+            "承认时间更正"
+          ],
+          "must_not": [
+            "继续按二十分钟安排",
+            "忽略时间更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户腰不好和常用物品放台面",
+            "按十五分钟给出操作顺序"
+          ],
+          "must_not": [
+            "忘记腰部限制",
+            "按二十分钟安排",
+            "建议常用物品放低处"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对书房桌面和书架给出整理安排",
+            "在周末上午一小时内可完成",
+            "使用两个文件盒和几个书立"
+          ],
+          "must_not": [
+            "忽略时间限制",
+            "建议购买新收纳用品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只用现有两个文件盒和书立",
+            "不添置新东西"
+          ],
+          "must_not": [
+            "建议购买新收纳用品",
+            "建议添置文件盒或书立"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把时间从周末上午更正为周日晚上",
+            "保持一小时时长"
+          ],
+          "must_not": [
+            "继续按周末上午安排",
+            "改变一小时时长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得周日晚上和不添东西",
+            "指出一小时内先整理哪块最见效"
+          ],
+          "must_not": [
+            "忘记周日晚上",
+            "建议添置物品",
+            "忽略一小时限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用两三句话收尾",
+            "给出可照着做的简短总结"
+          ],
+          "must_not": [
+            "输出长篇分点清单",
+            "超过两三句话的收尾"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

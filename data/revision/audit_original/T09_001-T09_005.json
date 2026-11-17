@@ -1,0 +1,236 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "44b4cfab-f6f6-4399-a964-9c8138b523e0",
+  "usage": {
+    "prompt_tokens": 2079,
+    "completion_tokens": 942,
+    "total_tokens": 3021,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1695
+  },
+  "temperature": 0,
+  "source_sha256": "031267e40d3ad32c335e24a5b18a338fe6f2e8b6bd660bf26c024b22b503ef50",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T09_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将卧室窗帘打开到20%",
+            "其他设备保持不变"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T09_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将卧室窗帘打开到20%",
+            "其他设备保持不变"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的卧室窗帘改为80%打开"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为80%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T09_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将卧室窗帘打开到20%",
+            "其他设备保持不变"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的卧室窗帘改为80%打开"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为80%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室窗帘当前开合比例"
+          ],
+          "must_not": [
+            "改动任何设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T09_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将卧室窗帘打开到20%",
+            "其他设备保持不变"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的卧室窗帘改为80%打开"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为80%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室窗帘当前开合比例"
+          ],
+          "must_not": [
+            "改动任何设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将卧室窗帘完全关上（开合比例0%）",
+            "其他设备保持不变"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为0%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T09_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将卧室窗帘打开到20%",
+            "其他设备保持不变"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前操作的卧室窗帘改为80%打开"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为80%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室窗帘当前开合比例"
+          ],
+          "must_not": [
+            "改动任何设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "将卧室窗帘完全关上（开合比例0%）",
+            "其他设备保持不变"
+          ],
+          "must_not": [
+            "改动卧室窗帘以外的设备",
+            "将开合比例设为0%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "再次查询确认卧室窗帘当前开合比例"
+          ],
+          "must_not": [
+            "改动任何设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

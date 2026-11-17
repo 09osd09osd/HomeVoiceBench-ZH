@@ -1,0 +1,233 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b992040e-6990-4119-99ed-db9ec1ad16f9",
+  "usage": {
+    "prompt_tokens": 1795,
+    "completion_tokens": 909,
+    "total_tokens": 2704,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1411
+  },
+  "temperature": 0,
+  "source_sha256": "bc39843536ea4b41c886c8141c12e6252cc6a43f907f09156a54b8e34fddb9f1",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C11_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单易懂的话解释彩虹的成因",
+            "语气适合讲给孩子听"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释下雨的成因"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "使用孩子能懂的小比喻解释下雨",
+            "回答简短"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释白天和黑夜的成因"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用孩子能懂的话解释白天和黑夜",
+            "回答简短"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正把比喻从陀螺改为旋转木马重新解释白天和黑夜"
+          ],
+          "must_not": [
+            "继续使用陀螺作为比喻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释月亮圆缺的成因"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用孩子能懂的话解释月亮圆缺",
+            "回答简短"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正把比喻从手电筒改为台灯重新解释月亮圆缺"
+          ],
+          "must_not": [
+            "继续使用手电筒作为比喻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户改的是台灯",
+            "用台灯比喻再向孩子解释一遍月亮圆缺"
+          ],
+          "must_not": [
+            "使用手电筒作为比喻",
+            "否认或忘记用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释风的成因"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "用孩子能懂的话解释风",
+            "回答简短"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按用户更正把比喻从小蚂蚁改为小气球重新解释风"
+          ],
+          "must_not": [
+            "继续使用小蚂蚁作为比喻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户改的是小气球",
+            "用小气球比喻再向孩子解释一遍风"
+          ],
+          "must_not": [
+            "使用小蚂蚁作为比喻",
+            "否认或忘记用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短收尾解释风"
+          ],
+          "must_not": [
+            "输出过长",
+            "使用多句话展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

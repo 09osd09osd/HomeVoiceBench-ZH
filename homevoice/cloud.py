@@ -1,5 +1,5 @@
 """Cloud transport. Credentials are read at runtime, never copied or logged."""
-import base64, hashlib, http.client, json, os, random, re, threading, time, urllib.error, urllib.request
+import base64, datetime, hashlib, http.client, json, os, random, re, threading, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 from .audio import canonical_wav
 
@@ -44,14 +44,16 @@ class CloudError(RuntimeError):
     pass
 
 def request(url, provider, payload=None, attempts=4, timeout=180):
+    if provider=='deepseek' and urllib.parse.urlsplit(url).hostname!='api.deepseek.com':
+        raise CloudError('DeepSeek requests must use the official api.deepseek.com endpoint')
     key = load_key(provider)
     started = time.monotonic()
     for attempt in range(attempts):
         req = urllib.request.Request(url, data=json.dumps(payload, ensure_ascii=False).encode() if payload is not None else None,
-            headers={'Authorization': 'Bearer '+key, 'Content-Type': 'application/json', 'User-Agent':'HomeVoiceBench-ZH/0.2'})
+            headers={'Authorization': 'Bearer '+key, 'Content-Type': 'application/json', 'User-Agent':'HomeVoiceBench-ZH/0.3'})
         try:
             with urllib.request.urlopen(req, timeout=timeout) as res: result = json.load(res)
-            ledger({'provider':provider, 'requested_model':(payload or {}).get('model'), 'returned_model':result.get('model'),
+            ledger({'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'endpoint_host':urllib.parse.urlsplit(url).hostname if provider=='deepseek' else 'configured_bailian_workspace','provider':provider, 'requested_model':(payload or {}).get('model'), 'returned_model':result.get('model'),
                 'request_id':result.get('request_id',result.get('id')), 'usage':result.get('usage'), 'attempt':attempt+1,
                 'wall_seconds':round(time.monotonic()-started,3), 'status':'succeeded', 'cost_amount':None, 'cost_basis':'not_invoiced'})
             return result
@@ -72,6 +74,11 @@ def request(url, provider, payload=None, attempts=4, timeout=180):
 
 def chat(model, messages, *, temperature, provider='bailian', max_tokens=4096):
     c = config()
+    # User-mandated separation: DeepSeek is never served through Alibaba Cloud.
+    if model.lower().startswith('deepseek'):
+        provider='deepseek'
+        if model in ('deepseek-v4.1-flash','deepseek-flash'):
+            model=c.get('deepseek_model','deepseek-flash')
     base = c.get('bailian_base_url','https://dashscope.aliyuncs.com/compatible-mode/v1') if provider=='bailian' else c.get('deepseek_base_url','https://api.deepseek.com/v1')
     body = {'model':model,'messages':messages,'temperature':temperature,'max_tokens':max_tokens,'stream':False}
     if provider=='bailian': body['enable_thinking']=False

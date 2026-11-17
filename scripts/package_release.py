@@ -14,6 +14,10 @@ def digest(p):
 ap=argparse.ArgumentParser();ap.add_argument('--part',choices=['inputs','evaluation'],required=True);ap.add_argument('--max-mib',type=int,default=450);args=ap.parse_args()
 if args.part=='inputs':
     manifest=read(ROOT/'data/manifest.json');files=[ROOT/a['path'] for a in manifest['audio']]
+    # Preserve cached v0.2 inputs referenced by retained authoring/QC metadata too.
+    for p in (ROOT/'data/audio').glob('*.json'):
+        meta=read(p);wave=ROOT/meta['path']
+        if wave.is_file():files.append(wave)
 else:
     audit=read(ROOT/'reports/release_audit.json')
     if audit['status']!='passed' or audit['scope']!='complete_release':raise ValueError('Complete audited evaluation required before packaging')
@@ -26,6 +30,8 @@ else:
         for p in (ROOT/'runs'/kind).glob('*.json'):
             meta=read(p);wave=ROOT/meta['path']
             if wave.is_file():files.append(wave)
+    for kind in ['revision_controls','revision_probe']:
+        files.extend((ROOT/'assets/audio'/kind).glob('*.wav'))
 files=sorted(set(files));out=ROOT/'release_parts';out.mkdir(exist_ok=True);groups=[];current=[];size=0;limit=args.max_mib*1024**2
 for p in files:
     resolved=p.resolve()
@@ -36,7 +42,7 @@ for p in files:
 if current:groups.append(current)
 records=[]
 for i,group in enumerate(groups,1):
-    name=f'homevoicebench-zh-v0.2-{args.part}-{i:03d}.zip';target=out/name;index=out/(name+'.manifest.json')
+    name=f'homevoicebench-zh-v0.3-{args.part}-{i:03d}.zip';target=out/name;index=out/(name+'.manifest.json')
     members=[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':digest(p)} for p in group]
     source_hash=hashlib.sha256(json.dumps(members,sort_keys=True).encode()).hexdigest()
     old=read(index) if index.exists() else None

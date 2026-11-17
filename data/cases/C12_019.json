@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C12_019",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "练习购物退换时更正购买时间",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261135,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C12_016-020.json"
+      "data/authoring/C12_016-020.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -936,7 +937,7 @@
       },
       {
         "id": "U2",
-        "user_text": "加上吧，不过我不想说得太强硬，想客气一点。",
+        "user_text": "加上昨天买的这个信息吧，不过我不想说得太强硬，想客气一点。",
         "tone": "自然",
         "next_node_id": "U3",
         "clarification_branches": [],
@@ -1012,9 +1013,9 @@
           "asset_id": "C12_019_U2",
           "node_id": "U2",
           "status": "verified",
-          "path": "assets/audio/input/0cc29d76242d7e2a637244dfa64fefa4.wav",
-          "sha256": "5ef0fa9a197314b7637abbe09dec4ebce0f0030e25a52f4b7ea16362e98b1c0c",
-          "duration_s": 3.64,
+          "path": "assets/audio/input/f0e11cb244966eb4fc93c26b464abc11.wav",
+          "sha256": "888246d49fe4799a1e4c0e16aa706f168b8c154a9308cfde84fefd4ce6887d9d",
+          "duration_s": 4.32,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1023,9 +1024,9 @@
           "seed": 42,
           "tone": "自然",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "加上吧，不过我不想说得太强硬，想客气一点。",
+          "transcript_gt": "加上昨天买的这个信息吧，不过我不想说得太强硬，想客气一点。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "加上吧，不过我不想说得太强硬，想客气一点。",
+          "qc_asr_text": "加上昨天买的这个信息吧，不过我不想说得太强硬，想客气一点。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1104,7 +1105,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1728,7 +1729,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1761,24 +1762,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1913,7 +1914,112 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "针对“这件衣服我想换一件大一号的”给出自然度反馈"
+          ],
+          "must_not": [
+            "把退换练习当成真实售后流程执行",
+            "擅自改变换货诉求"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "在句子中加入“昨天买的”这一信息",
+            "语气客气、不强硬"
+          ],
+          "must_not": [
+            "使用强硬或命令式表达",
+            "把练习变成真实联系商家"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "将购买时间从“昨天买的”更正为“上周六买的”",
+            "承认并采用用户的更正"
+          ],
+          "must_not": [
+            "继续使用“昨天买的”",
+            "把更正误解为其他日期"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "回答用户购买时间应为“上周六”",
+            "按更正后的信息重述句子"
+          ],
+          "must_not": [
+            "回答成“昨天”",
+            "忽略用户要求再说一遍句子"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -1922,26 +2028,27 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "这句话很自然，店员一听就明白。可以再加一句“我昨天买的”，说明情况会更完整。你想加上吗？"
+        "assistant_text": "预期要点：针对“这件衣服我想换一件大一号的”给出自然度反馈。避免：把退换练习当成真实售后流程执行；擅自改变换货诉求。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "那可以这样说：“麻烦您，这件衣服我昨天买的，想换一件大一号的，可以吗？”加了“麻烦您”和“可以吗”，语气更客气。"
+        "assistant_text": "预期要点：在句子中加入“昨天买的”这一信息；语气客气、不强硬。避免：使用强硬或命令式表达；把练习变成真实联系商家。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好的，我记住了，是上周六买的，不是昨天。那句子就改成“麻烦您，这件衣服我上周六买的，想换一件大一号的，可以吗？”"
+        "assistant_text": "预期要点：将购买时间从“昨天买的”更正为“上周六买的”；承认并采用用户的更正。避免：继续使用“昨天买的”；把更正误解为其他日期。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，是上周六买的。句子是：“麻烦您，这件衣服我上周六买的，想换一件大一号的，可以吗？”这样既客气又说清了时间。"
+        "assistant_text": "预期要点：回答用户购买时间应为“上周六”；按更正后的信息重述句子。避免：回答成“昨天”；忽略用户要求再说一遍句子。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -1953,7 +2060,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

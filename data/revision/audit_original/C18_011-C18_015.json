@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "db333622-1aee-4e74-b5cf-ede0ee2f38b1",
+  "usage": {
+    "prompt_tokens": 2271,
+    "completion_tokens": 1176,
+    "total_tokens": 3447,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1887
+  },
+  "temperature": 0,
+  "source_sha256": "bd18f6b812135782ccbffc9591e692720f4ec2a037944d25a9cd3bfca3c49315",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户观察到的底下两片叶子软黄、其他叶子硬",
+            "说明仅凭描述不能确认现场情况",
+            "给出叶插是否可行的判断或建议"
+          ],
+          "must_not": [
+            "断言已确诊具体病因",
+            "要求用户必须使用生根粉或肥料"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户观察到的底下两片软黄、上面还硬",
+            "针对只有一个小空盆和普通营养土的条件给出叶插建议"
+          ],
+          "must_not": [
+            "断言已确诊具体病因",
+            "忽略盆需有排水孔这一条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户很忙、希望少管一点的需求",
+            "给出不需要每天喷水的叶插管理方式"
+          ],
+          "must_not": [
+            "要求用户每天喷水或每天查看"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户观察到的底下两片软黄、上面还硬",
+            "针对只有一个小空盆和普通土、平时忙不想天天管的条件给出简单思路"
+          ],
+          "must_not": [
+            "断言已确诊具体病因",
+            "要求用户每天管理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想用生根粉、不想放肥、只用清水和土是否可行",
+            "给出不用生根粉和肥也能尝试的说明"
+          ],
+          "must_not": [
+            "要求用户必须使用生根粉",
+            "要求用户必须施肥"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：原盆无孔，改用带孔小塑料盆",
+            "建议使用带孔小塑料盆"
+          ],
+          "must_not": [
+            "继续建议使用无孔盆直接种植",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户观察到的底下两片软黄、上面还硬",
+            "针对有小空盆和普通营养土、不用生根粉和肥的条件给出叶插说明"
+          ],
+          "must_not": [
+            "断言已确诊具体病因",
+            "要求用户使用生根粉或施肥"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户平时忙、希望一周只看一次、不要天天喷水的需求",
+            "给出符合一周看一次节奏的管理建议"
+          ],
+          "must_not": [
+            "要求用户每天喷水",
+            "要求用户每天查看"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：原盆无排水孔，改用带孔小塑料盆",
+            "建议使用带孔小塑料盆"
+          ],
+          "must_not": [
+            "继续建议使用无孔盆直接种植",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来换成带孔小塑料盆",
+            "回答一周看一次时主要该看什么"
+          ],
+          "must_not": [
+            "否认或忘记用户已换成带孔小塑料盆",
+            "要求用户每天查看"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户观察到的底下两片软黄、上面还硬",
+            "针对只有普通营养土、不用生根粉和肥、平时忙的条件给出简单办法"
+          ],
+          "must_not": [
+            "断言已确诊具体病因",
+            "要求用户使用生根粉或施肥"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户一周只能看一次、不要天天喷水的需求",
+            "给出符合一周看一次节奏的管理建议"
+          ],
+          "must_not": [
+            "要求用户每天喷水",
+            "要求用户每天查看"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：原盆无孔，改用带孔小塑料盆",
+            "建议使用带孔小塑料盆"
+          ],
+          "must_not": [
+            "继续建议使用无孔盆直接种植",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户换成带孔小塑料盆",
+            "回答一周看一次时主要该看什么"
+          ],
+          "must_not": [
+            "否认或忘记用户已换成带孔小塑料盆",
+            "要求用户每天查看"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结重点",
+            "总结内容与前述叶插建议一致"
+          ],
+          "must_not": [
+            "输出冗长多段总结",
+            "引入与前述矛盾的新要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "213c03ce-7ce6-4d52-bc82-059134f8a06d",
+  "usage": {
+    "prompt_tokens": 1852,
+    "completion_tokens": 957,
+    "total_tokens": 2809,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1852
+  },
+  "temperature": 0,
+  "source_sha256": "18b48bd2d2b8f1b6d4d93e1f8d0cf18032799a2073698d1a4afab754ca7c4eff",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C03_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫感受",
+            "明确不提供建议",
+            "邀请或允许用户继续倾诉"
+          ],
+          "must_not": [
+            "给出建议或解决方案",
+            "分析问题",
+            "说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "共情被当众批评的难受",
+            "明确不出主意",
+            "邀请用户倾诉"
+          ],
+          "must_not": [
+            "给出建议或主意",
+            "评价领导或事件对错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不分析对错",
+            "确认不评价",
+            "继续倾听"
+          ],
+          "must_not": [
+            "分析谁对谁错",
+            "评价事件或人物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "共情家里事多的压力",
+            "明确不劝",
+            "明确不急着给办法",
+            "邀请用户慢慢说"
+          ],
+          "must_not": [
+            "劝说",
+            "提供解决办法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不说想开点之类的话",
+            "接纳用户难受情绪",
+            "继续倾听"
+          ],
+          "must_not": [
+            "说想开点",
+            "讲道理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为这一个星期",
+            "不再说这两天",
+            "共情事情越堆越多"
+          ],
+          "must_not": [
+            "仍称这两天",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "共情项目搞砸后的堵心",
+            "明确不讲大道理",
+            "邀请用户说"
+          ],
+          "must_not": [
+            "讲大道理",
+            "说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不问下一步打算",
+            "确认不催想办法",
+            "继续陪伴倾听"
+          ],
+          "must_not": [
+            "询问接下来打算怎么办",
+            "催促想办法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为汇报出岔子",
+            "确认项目本身没失败",
+            "继续倾听"
+          ],
+          "must_not": [
+            "仍说项目搞砸了",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得更正内容",
+            "复述为汇报出岔子而非项目失败"
+          ],
+          "must_not": [
+            "否认记得",
+            "复述错误"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "共情孩子发烧折腾的疲惫担心",
+            "明确不给建议",
+            "邀请诉苦"
+          ],
+          "must_not": [
+            "给建议",
+            "说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不说当妈都这样之类的话",
+            "接纳用户情绪"
+          ],
+          "must_not": [
+            "说当妈都这样",
+            "用套话堵用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正时间为半夜两点到早上六点",
+            "确认断断续续没睡成",
+            "不再说一整夜"
+          ],
+          "must_not": [
+            "仍说一整夜",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得时间",
+            "复述为半夜两点到早上六点而非一整夜"
+          ],
+          "must_not": [
+            "否认记得",
+            "复述错误"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话收尾",
+            "体现陪伴与让用户歇息"
+          ],
+          "must_not": [
+            "展开长篇",
+            "再次给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

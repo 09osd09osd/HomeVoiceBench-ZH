@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "52030c25-9709-4622-90af-5c77502d8716",
+  "usage": {
+    "prompt_tokens": 1971,
+    "completion_tokens": 1144,
+    "total_tokens": 3115,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1587
+  },
+  "temperature": 0,
+  "source_sha256": "2ef61b71c7ab14c93dc0f7e47e25b33c592a832750782a462bc8470a82bfcf0f",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕阳台薄荷叶子发黄，讨论如何观察和判断是否缺水",
+            "保持聊天口吻，不声称能直接看到现场"
+          ],
+          "must_not": [
+            "声称已直接观察到植物状态",
+            "给出超出聊天范围的医疗法律等专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕多肉叶插，讨论如何观察叶片基部有无小芽或细根等动静",
+            "保持聊天口吻，不把推断当成已发生事实"
+          ],
+          "must_not": [
+            "声称能直接看到叶片",
+            "断言已经生根发芽"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户每天看一次、简单记录的做法是否可行",
+            "给出轻松不复杂的记录建议"
+          ],
+          "must_not": [
+            "要求用户采用复杂方法",
+            "否定用户每天看一次的意愿"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕水培绿萝生根，讨论如何清楚记录",
+            "保持聊天口吻，不声称能直接看到瓶中状态"
+          ],
+          "must_not": [
+            "声称能直接看到瓶子里的状态",
+            "断言已经生根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受用户两三天看一次的频率",
+            "给出简单记录建议，不增加负担"
+          ],
+          "must_not": [
+            "要求用户每天折腾",
+            "否定两三天看一次的频率"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：只剪了两段绿萝，不是几段",
+            "后续按两段来讨论"
+          ],
+          "must_not": [
+            "继续沿用“几段”的说法",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕厨房窗边豌豆苗，讨论如何判断是否该多晒太阳",
+            "保持聊天口吻，不声称能直接看到苗"
+          ],
+          "must_not": [
+            "声称能直接看到窗边的苗",
+            "断言光照不足已确定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不搬位置、只调整浇水或遮一遮的意愿",
+            "给出在现位置观察和微调的建议"
+          ],
+          "must_not": [
+            "建议搬动豌豆苗位置",
+            "要求大幅调整环境"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：位置是客厅窗边，不是厨房窗边",
+            "后续按客厅窗边记录"
+          ],
+          "must_not": [
+            "继续沿用厨房窗边的说法",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得位置是客厅窗边",
+            "给出稳妥的观察建议，如看颜色、茎和土表干湿，不频繁搬动"
+          ],
+          "must_not": [
+            "回答成厨房窗边",
+            "建议频繁搬动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕书桌旁苔藓微景观，讨论如何观察状态好不好",
+            "保持聊天口吻，不声称能直接看到微景观"
+          ],
+          "must_not": [
+            "声称能直接看到微景观",
+            "断言状态好坏已确定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想经常开盖、只在明显干了时处理的意愿",
+            "给出少开盖、从外部观察的建议"
+          ],
+          "must_not": [
+            "建议频繁开盖",
+            "要求经常打开盖子处理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：位置是书架第二层，不是书桌旁边",
+            "后续按书架第二层记录"
+          ],
+          "must_not": [
+            "继续沿用书桌旁边的说法",
+            "忽略用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得位置是书架第二层",
+            "按现位置给出观察注意事项，如光线、颜色、内壁水雾、少开盖"
+          ],
+          "must_not": [
+            "回答成书桌旁边",
+            "建议频繁开盖"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结观察重点",
+            "包含位置书架第二层、少开盖、看颜色和内壁水雾、明显发干再处理等要点"
+          ],
+          "must_not": [
+            "总结超过一两句话",
+            "遗漏位置或观察重点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

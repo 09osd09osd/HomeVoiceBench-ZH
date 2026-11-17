@@ -1,0 +1,272 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d2d589f8-f425-45c2-bdd3-c275e80f19e7",
+  "usage": {
+    "prompt_tokens": 1954,
+    "completion_tokens": 1089,
+    "total_tokens": 3043,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1442
+  },
+  "temperature": 0,
+  "source_sha256": "ead97a7162bdb10ddd382a12e24ff05723d1b608b462380038090313a8b410f6",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认开始猜谜并选定一个厨房常见物品作为谜底",
+            "一次只给一条提示",
+            "不直接说出答案",
+            "等用户猜后再确认"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "选定一种可带出门的饮品作为谜底",
+            "一次只给一条提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受不含酒精的限制",
+            "继续只给一条提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "给出含酒精的谜底",
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "选定一个家里常用物品作为谜底",
+            "一次只给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受不是电器的限制",
+            "继续只给一条提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "给出电器类谜底",
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受位置更正为书房",
+            "记住不是电器",
+            "继续只给一条提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "沿用客厅或卧室的位置",
+            "给出电器类谜底",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "选定一种文具作为谜底",
+            "一次只给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受不带电的限制",
+            "继续只给一条提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "给出带电的谜底",
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受位置更正为书包里",
+            "记住不带电",
+            "继续只给一条提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "沿用笔袋或书桌的位置",
+            "给出带电的谜底",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答位置更正为书包里",
+            "不提前揭晓谜底"
+          ],
+          "must_not": [
+            "回答成笔袋或书桌",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "选定一种可放进包里的日常物品作为谜底",
+            "一次只给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受不是电子产品的限制",
+            "继续只给一条提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "给出电子产品谜底",
+            "提前揭晓谜底",
+            "一次给出多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用途更正为装东西",
+            "记住不是电子产品",
+            "继续只给一条提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "沿用擦东西的用途",
+            "给出电子产品谜底",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用途更正为装东西",
+            "再给最后一条提示",
+            "不提前揭晓谜底"
+          ],
+          "must_not": [
+            "回答成擦东西",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认用户猜的布袋正确",
+            "简短收尾"
+          ],
+          "must_not": [
+            "否定用户猜对",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ def read(p):return json.loads(p.read_text('utf-8'))
 if read(ROOT/'reports/summary.json')['evaluation_status']!='complete':raise ValueError('Complete evaluation required')
 subprocess.run([os.sys.executable,'-X','utf8','scripts/check_public_files.py'],cwd=ROOT,check=True)
 tree=subprocess.check_output([git,'write-tree'],cwd=ROOT,text=True).strip()
-out=ROOT/'release_parts/homevoicebench-zh-v0.2-source.zip'
+out=ROOT/'release_parts/homevoicebench-zh-v0.3-source.zip'
 out.parent.mkdir(exist_ok=True)
 subprocess.run([git,'archive','--format=zip','--output='+str(out),tree],cwd=ROOT,check=True)
 with zipfile.ZipFile(out) as z:

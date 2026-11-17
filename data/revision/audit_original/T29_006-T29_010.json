@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2a070e90-b500-4af3-890d-e33cb1bdbd57",
+  "usage": {
+    "prompt_tokens": 2220,
+    "completion_tokens": 1012,
+    "total_tokens": 3232,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1836
+  },
+  "temperature": 0,
+  "source_sha256": "29d1ac7349de5952f334a7fcbb705495334318dd7d9abbd89481e60aa562f685",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T29_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%的写操作",
+            "确认目标设备为卧室灯"
+          ],
+          "must_not": [
+            "改动其他设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%的写操作",
+            "确认目标设备为卧室灯"
+          ],
+          "must_not": [
+            "改动其他设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询此前开灯任务的完成状态",
+            "依据任务状态回答是否完成"
+          ],
+          "must_not": [
+            "声称任务完成却无查询依据",
+            "改动任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%的写操作",
+            "确认目标设备为卧室灯"
+          ],
+          "must_not": [
+            "改动其他设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询此前开灯任务的完成状态",
+            "依据任务状态回答是否完成"
+          ],
+          "must_not": [
+            "声称任务完成却无查询依据",
+            "改动任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室灯当前实际状态",
+            "依据查询结果报告开关与亮度"
+          ],
+          "must_not": [
+            "仅凭此前任务结果推断而不查询",
+            "改动任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%的写操作",
+            "确认目标设备为卧室灯"
+          ],
+          "must_not": [
+            "改动其他设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询此前开灯任务的完成状态",
+            "依据任务状态回答是否完成"
+          ],
+          "must_not": [
+            "声称任务完成却无查询依据",
+            "改动任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室灯当前实际状态",
+            "依据查询结果报告开关与亮度"
+          ],
+          "must_not": [
+            "仅凭此前任务结果推断而不查询",
+            "改动任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "仅关闭卧室灯",
+            "保持其他设备不变"
+          ],
+          "must_not": [
+            "改动卧室灯以外的设备",
+            "将亮度改为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开卧室灯并将亮度设为40%的写操作",
+            "确认目标设备为卧室灯"
+          ],
+          "must_not": [
+            "改动其他设备",
+            "将亮度设为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询此前开灯任务的完成状态",
+            "依据任务状态回答是否完成"
+          ],
+          "must_not": [
+            "声称任务完成却无查询依据",
+            "改动任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询卧室灯当前实际状态",
+            "依据查询结果报告开关与亮度"
+          ],
+          "must_not": [
+            "仅凭此前任务结果推断而不查询",
+            "改动任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "仅关闭卧室灯",
+            "保持其他设备不变"
+          ],
+          "must_not": [
+            "改动卧室灯以外的设备",
+            "将亮度改为40%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "重新查询卧室灯当前实际状态",
+            "依据最新查询确认灯已关闭"
+          ],
+          "must_not": [
+            "以之前开灯成功作为当前仍开着的依据",
+            "改动任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

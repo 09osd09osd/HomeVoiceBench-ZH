@@ -1,0 +1,262 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "45e410fd-0ad8-41ca-917c-1e41841893f0",
+  "usage": {
+    "prompt_tokens": 2632,
+    "completion_tokens": 1150,
+    "total_tokens": 3782,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2248
+  },
+  "temperature": 0,
+  "source_sha256": "776b9fabc16b7c2a13555cf72b0d988c754efef701dff50387a4aa9e9900a29a",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T14_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都设为80%",
+            "若某台离线导致未成功，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把未成功原因说成非离线原因",
+            "声称卧室灯已成功打开并调到80%"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都设为80%",
+            "若某台离线导致未成功，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把未成功原因说成非离线原因",
+            "声称卧室灯已成功打开并调到80%"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只把客厅灯亮度改为30%",
+            "不重试卧室灯"
+          ],
+          "must_not": [
+            "再次操作卧室灯",
+            "改变客厅灯开关状态或设置其他亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都设为80%",
+            "若某台离线导致未成功，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把未成功原因说成非离线原因",
+            "声称卧室灯已成功打开并调到80%"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只把客厅灯亮度改为30%",
+            "不重试卧室灯"
+          ],
+          "must_not": [
+            "再次操作卧室灯",
+            "改变客厅灯开关状态或设置其他亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前状态",
+            "查询卧室灯当前状态",
+            "分别报告两盏灯状态"
+          ],
+          "must_not": [
+            "对灯执行写操作",
+            "遗漏任一盏灯的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都设为80%",
+            "若某台离线导致未成功，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把未成功原因说成非离线原因",
+            "声称卧室灯已成功打开并调到80%"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只把客厅灯亮度改为30%",
+            "不重试卧室灯"
+          ],
+          "must_not": [
+            "再次操作卧室灯",
+            "改变客厅灯开关状态或设置其他亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前状态",
+            "查询卧室灯当前状态",
+            "分别报告两盏灯状态"
+          ],
+          "must_not": [
+            "对灯执行写操作",
+            "遗漏任一盏灯的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "不操作卧室灯"
+          ],
+          "must_not": [
+            "改变卧室灯状态",
+            "改变客厅灯亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都设为80%",
+            "若某台离线导致未成功，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把未成功原因说成非离线原因",
+            "声称卧室灯已成功打开并调到80%"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只把客厅灯亮度改为30%",
+            "不重试卧室灯"
+          ],
+          "must_not": [
+            "再次操作卧室灯",
+            "改变客厅灯开关状态或设置其他亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前状态",
+            "查询卧室灯当前状态",
+            "分别报告两盏灯状态"
+          ],
+          "must_not": [
+            "对灯执行写操作",
+            "遗漏任一盏灯的状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "不操作卧室灯"
+          ],
+          "must_not": [
+            "改变卧室灯状态",
+            "改变客厅灯亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结哪些操作成功",
+            "总结哪些操作未成功",
+            "说明卧室灯未重试且未再动"
+          ],
+          "must_not": [
+            "重新执行任何设备操作",
+            "遗漏卧室灯初始失败"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

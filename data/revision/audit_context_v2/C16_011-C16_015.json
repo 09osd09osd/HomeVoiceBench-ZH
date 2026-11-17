@@ -1,0 +1,254 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e820c118-d38f-4ead-8438-496d7257a019",
+  "usage": {
+    "prompt_tokens": 2036,
+    "completion_tokens": 1075,
+    "total_tokens": 3111,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1524
+  },
+  "temperature": 0,
+  "source_sha256": "90e944cfb444daa09b678c11a238e0100417c467b699926c4d640aad009aebf6",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同意玩词语接龙",
+            "确认用户先出词、助手接词",
+            "确认接词避开吃的词"
+          ],
+          "must_not": [
+            "替用户先出词",
+            "使用吃的词作为接龙示例"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同意玩词语接龙",
+            "确认用户先出词、助手接词",
+            "确认接词不带数字"
+          ],
+          "must_not": [
+            "替用户先出词",
+            "使用带数字的词作为接龙示例"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增规则：接词不用颜色词",
+            "同时保留不带数字的规则"
+          ],
+          "must_not": [
+            "遗漏颜色词限制",
+            "使用颜色词作为接龙示例"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同意记词游戏",
+            "说出3个词供用户记忆",
+            "说明之后会问用户刚才的词"
+          ],
+          "must_not": [
+            "直接开始提问而不先给词",
+            "给出超过或少于3个词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认提问时打乱顺序、不按原顺序"
+          ],
+          "must_not": [
+            "改为按原顺序提问"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为4个词",
+            "重新给出4个词",
+            "保留打乱顺序提问的规则"
+          ],
+          "must_not": [
+            "仍按3个词",
+            "忽略打乱顺序要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同意记词游戏",
+            "说出4个词供用户记忆",
+            "说明之后会提问"
+          ],
+          "must_not": [
+            "直接提问而不先给词",
+            "给出超过或少于4个词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认提问时打乱顺序、不按原顺序"
+          ],
+          "must_not": [
+            "改为按原顺序提问"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为5个词",
+            "在原有4个词基础上加入“水杯”",
+            "保留打乱顺序提问的规则"
+          ],
+          "must_not": [
+            "仍按4个词",
+            "替换掉原有词而非增加"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答最后定的是5个词",
+            "列出5个词：桌子、月亮、信封、小草、水杯"
+          ],
+          "must_not": [
+            "回答4个词",
+            "遗漏“水杯”"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同意记忆游戏",
+            "说出5个词供用户记忆",
+            "说明之后会问记住了几个"
+          ],
+          "must_not": [
+            "直接提问而不先给词",
+            "给出超过或少于5个词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认提问不提示",
+            "确认不问词序/排第几",
+            "确认随便问"
+          ],
+          "must_not": [
+            "提问时给出提示",
+            "询问哪个词排第几"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为6个词",
+            "在原有5个词基础上加入“雨伞”",
+            "保留不提示、不问顺序的规则"
+          ],
+          "must_not": [
+            "仍按5个词",
+            "替换掉原有词而非增加"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答最初说的是5个词",
+            "说明后来更正为6个词"
+          ],
+          "must_not": [
+            "回答最初就是6个词",
+            "否认曾说过5个词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话说明最后是6个词",
+            "列出6个词：铅笔、窗户、毛巾、帽子、石头、雨伞",
+            "同意先歇着"
+          ],
+          "must_not": [
+            "回答5个词",
+            "遗漏“雨伞”"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

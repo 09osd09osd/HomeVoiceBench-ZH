@@ -1,0 +1,263 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a210faed-43e8-49d8-97bb-d1bd4f15c5ee",
+  "usage": {
+    "prompt_tokens": 2230,
+    "completion_tokens": 1097,
+    "total_tokens": 3327,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1846
+  },
+  "temperature": 0,
+  "source_sha256": "f1f92c1097435935a85c8f243f414668f1912a8d9e7df50ed07e6be96fe83c67",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T07_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房灯",
+            "将书房灯色温设为4300K",
+            "不改变其他灯的状态"
+          ],
+          "must_not": [
+            "调整书房灯以外的灯",
+            "改变书房灯色温到4300K以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房灯",
+            "将书房灯色温设为4300K",
+            "不改变其他灯的状态"
+          ],
+          "must_not": [
+            "调整书房灯以外的灯",
+            "改变书房灯色温到4300K以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯色温改为4000K",
+            "保持书房灯其他设置不变"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "改变书房灯色温到4000K以外的值",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房灯",
+            "将书房灯色温设为4300K",
+            "不改变其他灯的状态"
+          ],
+          "must_not": [
+            "调整书房灯以外的灯",
+            "改变书房灯色温到4300K以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯色温改为4000K",
+            "保持书房灯其他设置不变"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "改变书房灯色温到4000K以外的值",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯当前色温",
+            "查询书房灯当前开关状态",
+            "不调整任何设置"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "改变书房灯色温",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房灯",
+            "将书房灯色温设为4300K",
+            "不改变其他灯的状态"
+          ],
+          "must_not": [
+            "调整书房灯以外的灯",
+            "改变书房灯色温到4300K以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯色温改为4000K",
+            "保持书房灯其他设置不变"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "改变书房灯色温到4000K以外的值",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯当前色温",
+            "查询书房灯当前开关状态",
+            "不调整任何设置"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "改变书房灯色温",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭书房灯",
+            "保留书房灯色温设置不变"
+          ],
+          "must_not": [
+            "改变书房灯色温",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T07_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开书房灯",
+            "将书房灯色温设为4300K",
+            "不改变其他灯的状态"
+          ],
+          "must_not": [
+            "调整书房灯以外的灯",
+            "改变书房灯色温到4300K以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯色温改为4000K",
+            "保持书房灯其他设置不变"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "改变书房灯色温到4000K以外的值",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯当前色温",
+            "查询书房灯当前开关状态",
+            "不调整任何设置"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "改变书房灯色温",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭书房灯",
+            "保留书房灯色温设置不变"
+          ],
+          "must_not": [
+            "改变书房灯色温",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询书房灯当前开关状态",
+            "不调整其他设备"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

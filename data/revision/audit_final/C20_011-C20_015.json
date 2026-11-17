@@ -1,0 +1,245 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a548f080-7626-4bfd-b174-57abd75b8763",
+  "usage": {
+    "prompt_tokens": 1398,
+    "completion_tokens": 969,
+    "total_tokens": 2367,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 886
+  },
+  "temperature": 0,
+  "source_sha256": "c887b4f4744023af362417f76c5ee75132c33b7d15c332c7baa45d384a4eb076",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C20_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕用户周末安排进行轻松聊天式建议",
+            "回应用户今天有点累的状态"
+          ],
+          "must_not": [
+            "执行设备写操作",
+            "创建提醒或日程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕下周六在家请几个朋友吃饭聊准备事项",
+            "保持聊天性质，不实际执行安排"
+          ],
+          "must_not": [
+            "执行设备写操作",
+            "创建提醒或日程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议菜数控制在四个菜以内",
+            "保持简单不复杂的准备思路"
+          ],
+          "must_not": [
+            "建议超过四个菜",
+            "建议过于复杂的菜式"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕周五晚上家庭电影夜聊选片类型"
+          ],
+          "must_not": [
+            "执行设备写操作",
+            "实际播放影片"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "选片类型适合全家一起看",
+            "避免太吓人的类型"
+          ],
+          "must_not": [
+            "推荐恐怖或惊吓类影片"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将电影夜时间更正为周六晚上",
+            "继续保留适合全家、不吓人的限制"
+          ],
+          "must_not": [
+            "仍按周五晚上安排",
+            "推荐恐怖或惊吓类影片"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕换季衣服整理聊方法",
+            "保持聊天性质，不实际动手"
+          ],
+          "must_not": [
+            "执行设备写操作",
+            "实际整理或创建任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议尽量使用现有物品",
+            "不购买收纳箱"
+          ],
+          "must_not": [
+            "建议购买收纳箱"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将衣柜情况更正为衣柜挺大但分区乱",
+            "继续不购买收纳箱"
+          ],
+          "must_not": [
+            "仍说衣柜不大",
+            "建议购买收纳箱"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得更正后的衣柜情况是挺大但分区乱",
+            "针对分区乱给出整理建议"
+          ],
+          "must_not": [
+            "说衣柜不大",
+            "建议购买收纳箱"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕周末带家人出去走走聊方向",
+            "保持聊天性质，不大量查询"
+          ],
+          "must_not": [
+            "执行设备写操作",
+            "创建出行日程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议车程一小时内",
+            "避免推荐需要门票的地方"
+          ],
+          "must_not": [
+            "推荐车程超过一小时的地点",
+            "推荐需要门票的地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将出行时间更正为下周末",
+            "继续保留车程一小时内和不要门票的限制"
+          ],
+          "must_not": [
+            "仍按这周末安排",
+            "推荐车程超过一小时的地点",
+            "推荐需要门票的地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得是下周末",
+            "比较免费公园和河边步道哪个更适合带老人"
+          ],
+          "must_not": [
+            "说成这周末",
+            "推荐需要门票的地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短收尾"
+          ],
+          "must_not": [
+            "展开长篇内容",
+            "执行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

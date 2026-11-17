@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a0e2d393-d592-40cc-b7d1-40d2aa5bcc80",
+  "usage": {
+    "prompt_tokens": 1991,
+    "completion_tokens": 1325,
+    "total_tokens": 3316,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1607
+  },
+  "temperature": 0,
+  "source_sha256": "e398528b6e05a4b935b5a42bd98f1f0d40a39ca46fbcd025b8ab0aee5d00311d",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C05_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户想与家人商量大扫除分工、不知如何开口的请求，提供可用的沟通说法或思路",
+            "建议内容围绕邀请家人一起商量分工，不预设谁该干什么"
+          ],
+          "must_not": [
+            "替用户直接给家人发消息或执行任何写操作",
+            "预设具体某位家人应承担某项任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户想提出轮流洗碗的请求，提供可用的沟通说法或思路",
+            "建议表达自己的感受和轮流想法，不指责家人"
+          ],
+          "must_not": [
+            "指责某位家人懒或直接替用户向家人发消息",
+            "预设轮换的具体安排为用户未提出的方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户提出的周一到周五轮流、周末一起收拾的具体方案",
+            "帮助用户把该时间和方式表达清楚以便与家人商量"
+          ],
+          "must_not": [
+            "擅自更改用户提出的轮换时间安排",
+            "替用户执行排班或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户想重新分配倒垃圾任务、不知如何开口的请求，提供可用的沟通说法或思路",
+            "建议表达自己的需求并留出与家人商量的空间"
+          ],
+          "must_not": [
+            "指责家人或替用户直接向家人发消息",
+            "预设用户未提出的具体分配方案为必须内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不介意多干但希望至少有人分担一半的意愿",
+            "帮助用户把分担期望表达清楚"
+          ],
+          "must_not": [
+            "忽略用户提出的分担一半这一期望",
+            "替用户执行任务分配或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别并接受用户对上一轮“分担一半”说法的更正",
+            "按更正后的“每个人轮流倒一周”帮助用户表达"
+          ],
+          "must_not": [
+            "继续沿用已被更正的“分担一半”作为当前方案",
+            "把更正前的说法当作最终安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户想商量擦桌子和扫地轮换、不知如何开口的请求，提供可用的沟通说法或思路",
+            "建议说出固定几人做的现状并提出轮换想法"
+          ],
+          "must_not": [
+            "指责具体家人或替用户直接向家人发消息",
+            "预设用户未提出的轮换周期为必须内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户提出的按周轮换、每人轮到不同活儿的方案",
+            "帮助用户把周期和轮换方式表达清楚"
+          ],
+          "must_not": [
+            "擅自把按周轮换改为其他周期",
+            "替用户执行排班或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别并接受用户把按周轮换更正为按天轮换",
+            "按更正后的按天轮换帮助用户表达"
+          ],
+          "must_not": [
+            "继续把按周轮换当作当前方案",
+            "忽略用户给出的更正理由或更正内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户已把轮换周期改为按天轮换",
+            "基于该记忆帮助用户向家人表达"
+          ],
+          "must_not": [
+            "回答成按周轮换或其他未更正的周期",
+            "声称不记得用户刚说过的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户想商量定卫生间值日表、不知如何提的请求，提供可用的沟通说法或思路",
+            "建议把清洁拖到很晚的问题和定值日表的想法一起表达"
+          ],
+          "must_not": [
+            "指责具体家人或替用户直接向家人发消息",
+            "预设用户未提出的值日安排为必须内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户提出的值日表简单、每人负责一天、周末一起大扫除的方案",
+            "帮助用户把该安排表达清楚"
+          ],
+          "must_not": [
+            "擅自更改每人负责一天或周末一起大扫除的安排",
+            "替用户执行排班或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别并接受用户把每人负责一天更正为每人负责两天",
+            "按更正后的每人负责两天帮助用户表达"
+          ],
+          "must_not": [
+            "继续把每人负责一天当作当前方案",
+            "忽略用户给出的更正理由"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户已把每人负责天数改为两天",
+            "基于该记忆帮助用户向家人表达"
+          ],
+          "must_not": [
+            "回答成一天或其他未更正的安排",
+            "声称不记得用户刚说过的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短的话总结如何向家人提卫生间值日表这件事",
+            "总结中包含每人负责两天和周末一起大扫除等已确认安排"
+          ],
+          "must_not": [
+            "总结中沿用已被更正的一天安排",
+            "输出冗长内容或替用户执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

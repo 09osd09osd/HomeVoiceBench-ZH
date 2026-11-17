@@ -1,0 +1,243 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "13026f1a-bac7-4a58-8cee-556a74593d33",
+  "usage": {
+    "prompt_tokens": 2161,
+    "completion_tokens": 909,
+    "total_tokens": 3070,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1777
+  },
+  "temperature": 0,
+  "source_sha256": "a46912f71376320bbd619866d195b404da53f4ccfabc60ab369523a255c0aebe",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T06_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅灯",
+            "将客厅灯亮度设为20%"
+          ],
+          "must_not": [
+            "改动客厅灯以外的设备",
+            "将亮度设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅灯",
+            "将客厅灯亮度设为20%"
+          ],
+          "must_not": [
+            "改动客厅灯以外的设备",
+            "将亮度设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯亮度调到80%"
+          ],
+          "must_not": [
+            "改动客厅灯亮度以外的设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅灯",
+            "将客厅灯亮度设为20%"
+          ],
+          "must_not": [
+            "改动客厅灯以外的设备",
+            "将亮度设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯亮度调到80%"
+          ],
+          "must_not": [
+            "改动客厅灯亮度以外的设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前亮度",
+            "查询客厅灯当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅灯",
+            "改动任何设备设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅灯",
+            "将客厅灯亮度设为20%"
+          ],
+          "must_not": [
+            "改动客厅灯以外的设备",
+            "将亮度设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯亮度调到80%"
+          ],
+          "must_not": [
+            "改动客厅灯亮度以外的设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前亮度",
+            "查询客厅灯当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅灯",
+            "改动任何设备设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "保留客厅灯亮度设置不变"
+          ],
+          "must_not": [
+            "改动客厅灯亮度设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅灯",
+            "将客厅灯亮度设为20%"
+          ],
+          "must_not": [
+            "改动客厅灯以外的设备",
+            "将亮度设为20%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯亮度调到80%"
+          ],
+          "must_not": [
+            "改动客厅灯亮度以外的设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯当前亮度",
+            "查询客厅灯当前开关状态"
+          ],
+          "must_not": [
+            "调整客厅灯",
+            "改动任何设备设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "保留客厅灯亮度设置不变"
+          ],
+          "must_not": [
+            "改动客厅灯亮度设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅灯当前开关状态"
+          ],
+          "must_not": [
+            "改动客厅灯",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

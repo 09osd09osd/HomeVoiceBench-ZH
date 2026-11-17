@@ -1,0 +1,249 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7eb14d52-949c-494a-bf63-44a303259e88",
+  "usage": {
+    "prompt_tokens": 1410,
+    "completion_tokens": 1021,
+    "total_tokens": 2431,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 898
+  },
+  "temperature": 0,
+  "source_sha256": "04d63859c535a810ad0a785f54e7df7cf37d5bd18a6e2d90a8f7db949d2fc62d",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户朗读的句子给出普通话发音/表达方面的反馈",
+            "保持简短口语化"
+          ],
+          "must_not": [
+            "声称能精确听辨音频或录音",
+            "要求用户提供额外设备或文件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "评价“老板，这个西红柿怎么卖？”在菜市场问价场景是否自然",
+            "给出简短可操作建议"
+          ],
+          "must_not": [
+            "替用户完成购买或下单",
+            "声称已实际到菜市场"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "针对用户再次试说的语气是否生硬给出反馈",
+            "承接上一轮菜市场问价场景"
+          ],
+          "must_not": [
+            "要求用户重新说明场景",
+            "声称能精确听辨音频"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮用户组织明天上午十点开会的语音消息表达",
+            "给出清楚简短的示范"
+          ],
+          "must_not": [
+            "实际发送消息或创建提醒",
+            "擅自更改开会时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把“请大家”换成“咱们”是否更好",
+            "给出简短判断和示范"
+          ],
+          "must_not": [
+            "忽略用户对正式程度的偏好",
+            "实际发送消息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别用户更正开会时间为下午三点",
+            "按下午三点重新组织表达"
+          ],
+          "must_not": [
+            "继续使用上午十点",
+            "声称用户此前说过下午三点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮用户练习通知周末聚会改到周日下午两点",
+            "表达自然口语化"
+          ],
+          "must_not": [
+            "实际通知朋友或发送消息",
+            "擅自更改时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把语气调整得更随意、不像通知",
+            "保留周日下午两点这一信息"
+          ],
+          "must_not": [
+            "使用过于正式的通知腔",
+            "实际发送消息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别用户更正时间为下午三点半",
+            "按下午三点半重新表达"
+          ],
+          "must_not": [
+            "继续使用下午两点",
+            "声称用户此前说过三点半"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认最后改的时间是下午三点半",
+            "按下午三点半再说一遍完整的话"
+          ],
+          "must_not": [
+            "回答成下午两点",
+            "声称用户此前说过三点半"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮用户练习向领导口头请假",
+            "包含孩子发烧和明天请一天假两个要点",
+            "给出合适表达"
+          ],
+          "must_not": [
+            "实际提交请假或创建日程",
+            "编造用户未说的病情细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把请假表达缩短",
+            "保留原因和请假时间"
+          ],
+          "must_not": [
+            "删掉原因或请假时间",
+            "实际提交请假"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把原因从发烧改为肠胃不舒服",
+            "其他信息保持不变"
+          ],
+          "must_not": [
+            "继续使用发烧",
+            "声称用户此前说过肠胃不舒服"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认改后的原因是肠胃不舒服",
+            "把整句请假话再说一遍"
+          ],
+          "must_not": [
+            "回答成发烧",
+            "声称用户此前说过肠胃不舒服"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短总结请假要点",
+            "包含肠胃不舒服和明天请一天假"
+          ],
+          "must_not": [
+            "总结成发烧",
+            "实际提交请假"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,10 @@
     "schema_version": {
       "type": "string",
       "description": "结构版本",
-      "const": "0.2.0"
+      "enum": [
+        "0.2.0",
+        "0.3.0"
+      ]
     },
     "case_id": {
       "type": "string",
@@ -351,6 +354,10 @@
     "judge_status": {
       "type": "string",
       "description": "scored，或没有可评分回答时的明确原因"
+    },
+    "revision": {
+      "type": "object",
+      "description": "本次执行/复用来源、各协议哈希、版本和规则变更证据。"
     }
   },
   "required": [

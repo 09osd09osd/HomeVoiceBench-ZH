@@ -1,0 +1,230 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ad487fd7-9334-47ce-ad20-10ccc08bd5d5",
+  "usage": {
+    "prompt_tokens": 2004,
+    "completion_tokens": 890,
+    "total_tokens": 2894,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1620
+  },
+  "temperature": 0,
+  "source_sha256": "d744a6754975ec49770fae996481b412b31369eebd1231aa160ee6058c9cda09",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T02_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室窗帘支持的设置类型",
+            "查询可调范围"
+          ],
+          "must_not": [
+            "执行任何写操作或实际调整窗帘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T02_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室窗帘支持的设置类型",
+            "查询可调范围"
+          ],
+          "must_not": [
+            "执行任何写操作或实际调整窗帘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答是否支持调节颜色",
+            "仅解释不执行设备操作"
+          ],
+          "must_not": [
+            "对窗帘执行任何写操作或调整"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T02_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室窗帘支持的设置类型",
+            "查询可调范围"
+          ],
+          "must_not": [
+            "执行任何写操作或实际调整窗帘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答是否支持调节颜色",
+            "仅解释不执行设备操作"
+          ],
+          "must_not": [
+            "对窗帘执行任何写操作或调整"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明超出支持范围时的处理方式",
+            "不擅自截断或执行超范围设置"
+          ],
+          "must_not": [
+            "实际执行任何设置或调整"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T02_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室窗帘支持的设置类型",
+            "查询可调范围"
+          ],
+          "must_not": [
+            "执行任何写操作或实际调整窗帘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答是否支持调节颜色",
+            "仅解释不执行设备操作"
+          ],
+          "must_not": [
+            "对窗帘执行任何写操作或调整"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明超出支持范围时的处理方式",
+            "不擅自截断或执行超范围设置"
+          ],
+          "must_not": [
+            "实际执行任何设置或调整"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认不做任何调整"
+          ],
+          "must_not": [
+            "执行任何写操作或调整窗帘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T02_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室窗帘支持的设置类型",
+            "查询可调范围"
+          ],
+          "must_not": [
+            "执行任何写操作或实际调整窗帘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答是否支持调节颜色",
+            "仅解释不执行设备操作"
+          ],
+          "must_not": [
+            "对窗帘执行任何写操作或调整"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明超出支持范围时的处理方式",
+            "不擅自截断或执行超范围设置"
+          ],
+          "must_not": [
+            "实际执行任何设置或调整"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认不做任何调整"
+          ],
+          "must_not": [
+            "执行任何写操作或调整窗帘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结该设备的能力与限制"
+          ],
+          "must_not": [
+            "执行任何写操作或调整窗帘"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

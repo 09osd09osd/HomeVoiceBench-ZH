@@ -1,0 +1,284 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "56a67d20-d6bc-49b9-b895-dac39700e840",
+  "usage": {
+    "prompt_tokens": 1927,
+    "completion_tokens": 1275,
+    "total_tokens": 3202,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1415
+  },
+  "temperature": 0,
+  "source_sha256": "543aece8103f85298515598fd6c1963f583da2be243d4a2b758b8b43cbf5e457",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道生活用品谜题",
+            "提示一次只给一个",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道动物谜题",
+            "每次只给一个提示",
+            "不提前泄底"
+          ],
+          "must_not": [
+            "提前说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户猜猫",
+            "再给一个具体提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_003",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "用户称“我刚才说每天都会用到”，但前序用户台词从未出现该提示；该提示只出现在参考助手的U1回答中，属于引用未由用户实际说出的前文。",
+          "evidence": "U3：我刚才说每天都会用到，其实改成经常用到，不是每天。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道日用品谜题",
+            "一次只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户猜牙刷",
+            "再给一个不太笼统的提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "处理用户对提示的更正意图"
+          ],
+          "must_not": [
+            "把用户未实际说过的“每天都会用到”当作已确认前文",
+            "提前泄露谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_004",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "用户称“刚才我说放在笔袋里”，但前序用户台词从未出现该提示；该提示只出现在参考助手的U1回答中，属于引用未由用户实际说出的前文。",
+          "evidence": "U3：我猜是橡皮。对了，刚才我说放在笔袋里，更正一下，是放在书桌上。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道文具谜题",
+            "一次只给一个提示",
+            "不提前泄底"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户猜铅笔",
+            "再给一个更具体的提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "处理用户对提示的更正意图"
+          ],
+          "must_not": [
+            "把用户未实际说过的“放在笔袋里”当作已确认前文",
+            "提前泄露谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回应用户询问是否记得改过的第一个提示",
+            "再给一个提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_005",
+      "issues": [
+        {
+          "kind": "input_script_dependency",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "用户称“刚才我说外皮是黄色的”，但前序用户台词从未出现该提示；该提示只出现在参考助手的U1回答中，属于引用未由用户实际说出的前文。",
+          "evidence": "U3：我猜是橘子。对了，刚才我说外皮是黄色的，更正一下，是橙色的。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道水果谜题",
+            "一次只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户猜香蕉",
+            "再给一个更具体的提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "处理用户对提示的更正意图"
+          ],
+          "must_not": [
+            "把用户未实际说过的“外皮是黄色的”当作已确认前文",
+            "提前泄露谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回应用户询问是否记得改过的第一个提示",
+            "再给一个提示",
+            "仍不提前说出答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "回应用户猜橙子",
+            "用一句话简短收尾",
+            "收尾包含更正后的提示和答案"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

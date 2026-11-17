@@ -1,0 +1,235 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e65bd1b8-1e6e-4af4-a995-d84d04ae4036",
+  "usage": {
+    "prompt_tokens": 2117,
+    "completion_tokens": 922,
+    "total_tokens": 3039,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1733
+  },
+  "temperature": 0,
+  "source_sha256": "9607aaf9e094ae4943b0241e384f4a605efd7f57dfe386ba3d314e5c805f0fdc",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T01_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答家里有哪些房间",
+            "回答书房里有什么设备",
+            "只进行查询，不操作设备"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T01_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答家里有哪些房间",
+            "回答书房里有什么设备",
+            "只进行查询，不操作设备"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答家里灯的总数",
+            "分别说明每盏灯所在位置"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T01_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答家里有哪些房间",
+            "回答书房里有什么设备",
+            "只进行查询，不操作设备"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答家里灯的总数",
+            "分别说明每盏灯所在位置"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明书房灯可调的参数"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T01_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答家里有哪些房间",
+            "回答书房里有什么设备",
+            "只进行查询，不操作设备"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答家里灯的总数",
+            "分别说明每盏灯所在位置"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明书房灯可调的参数"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答厨房是否有空调",
+            "若没有则明确说没有"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T01_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答家里有哪些房间",
+            "回答书房里有什么设备",
+            "只进行查询，不操作设备"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答家里灯的总数",
+            "分别说明每盏灯所在位置"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明书房灯可调的参数"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答厨房是否有空调",
+            "若没有则明确说没有"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "汇总此前查询到的房间、设备、灯数量与位置、书房灯参数、厨房空调情况",
+            "明确未操作设备"
+          ],
+          "must_not": [
+            "执行任何设备写操作或控制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

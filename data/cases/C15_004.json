@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C15_004",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "猜文具，记住更正继续猜",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261120,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C15_001-005.json"
+      "data/authoring/C15_001-005.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -928,7 +929,7 @@
     "nodes": [
       {
         "id": "U1",
-        "user_text": "来猜文具吧，你出题，一次一个提示，别提前泄底。",
+        "user_text": "来猜文具吧，先限定是放在笔袋里的。你出题，一次一个提示，别提前泄底。",
         "tone": "平静",
         "next_node_id": "U2",
         "clarification_branches": [],
@@ -952,7 +953,7 @@
       },
       {
         "id": "U4",
-        "user_text": "你还记得我改过的第一个提示吗？现在再给一个提示。",
+        "user_text": "你还记得我把文具的摆放位置改成哪里了吗？现在再给一个提示。",
         "tone": "平静",
         "next_node_id": null,
         "clarification_branches": [],
@@ -989,9 +990,9 @@
           "asset_id": "C15_004_U1",
           "node_id": "U1",
           "status": "verified",
-          "path": "assets/audio/input/9b9a6814bf7d6dbd177a9d2f79006c6a.wav",
-          "sha256": "96606e6a2bdaa148e93d55ac78fea858aa390ebbb575cb662ee489edc34b05a1",
-          "duration_s": 3.36,
+          "path": "assets/audio/input/854fc351072e5b24e1f3db66ad04c58d.wav",
+          "sha256": "601b77837cf57962037c940ce38c4ec2680a1426160a2d2cfc7fa40671c113a2",
+          "duration_s": 5.92,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1000,9 +1001,9 @@
           "seed": 42,
           "tone": "平静",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "来猜文具吧，你出题，一次一个提示，别提前泄底。",
+          "transcript_gt": "来猜文具吧，先限定是放在笔袋里的。你出题，一次一个提示，别提前泄底。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "来猜文具吧，你出题，一次一个提示，别提前泄底。",
+          "qc_asr_text": "来猜文具吧，先限定是放在笔袋里的。你出题，一次一个提示，别提前泄底。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1058,9 +1059,9 @@
           "asset_id": "C15_004_U4",
           "node_id": "U4",
           "status": "verified",
-          "path": "assets/audio/input/25cb73d12a1d4f91463df3f091538112.wav",
-          "sha256": "107033fb6a6126acdc33f2d978443f798967079bff0a5bd8ba293a5e2d76cb03",
-          "duration_s": 3.36,
+          "path": "assets/audio/input/65519786900398655cb1094ee4ca9d63.wav",
+          "sha256": "d55660efed0cc5298c60a19382b68dd8ee89a55280a9b3c142d581eb02acd84b",
+          "duration_s": 4.52,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1069,9 +1070,9 @@
           "seed": 42,
           "tone": "平静",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "你还记得我改过的第一个提示吗？现在再给一个提示。",
+          "transcript_gt": "你还记得我把文具的摆放位置改成哪里了吗？现在再给一个提示。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "你还记得我改过的第一个提示吗？现在再给一个提示。",
+          "qc_asr_text": "你还记得我把文具的摆放位置改成哪里了吗？现在再给一个提示。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1104,7 +1105,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1728,7 +1729,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1761,24 +1762,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1913,7 +1914,117 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "出一道文具类谜题",
+            "限定为放在笔袋里的文具",
+            "提示一次只给一个",
+            "不提前泄露谜底",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "再给一个具体提示",
+            "不泄露谜底",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "提前揭晓谜底"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "将文具摆放位置限定从“放在笔袋里”更正为“放在书桌上”",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "继续沿用“放在笔袋里”作为限定"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "回答文具摆放位置已改为书桌上",
+            "再给一个不泄底的提示",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "回答仍为笔袋里",
+            "提前揭晓谜底"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -1922,26 +2033,27 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "好，我出个文具谜。第一个提示：它通常放在笔袋里。你猜猜看，答案我先不说。"
+        "assistant_text": "预期要点：出一道文具类谜题；限定为放在笔袋里的文具；提示一次只给一个；不提前泄露谜底；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：提前泄露谜底；一次给出多个提示。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "不是铅笔。第二个提示：它用来擦掉写错的字。你继续猜，我还是不提前说答案。"
+        "assistant_text": "预期要点：再给一个具体提示；不泄露谜底；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：提前揭晓谜底。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好，我记住了：第一个提示更正为“通常放在书桌上”。现在提示是：放在书桌上，用来擦掉写错的字。你接着猜，答案我还是不说。"
+        "assistant_text": "预期要点：将文具摆放位置限定从“放在笔袋里”更正为“放在书桌上”；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：继续沿用“放在笔袋里”作为限定。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，第一个提示是“通常放在书桌上”。再给一个提示：它一般是长方形的。你猜猜看，答案我还是不提前说。"
+        "assistant_text": "预期要点：回答文具摆放位置已改为书桌上；再给一个不泄底的提示；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：回答仍为笔袋里；提前揭晓谜底。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -1953,7 +2065,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

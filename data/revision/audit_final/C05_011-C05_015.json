@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7b8c4ed9-c20e-44cf-8994-eddb98d2a6a1",
+  "usage": {
+    "prompt_tokens": 1502,
+    "completion_tokens": 1038,
+    "total_tokens": 2540,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 990
+  },
+  "temperature": 0,
+  "source_sha256": "639d6b80311cf79e1e7ddb5b96214a45699c21225caebc48f5703f0cdf4a8130",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C05_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫和想商量分担家务的感受",
+            "提供不指责家人的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫和想商量分担家务的感受",
+            "提供不指责家人的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住周一到周五晚上没空",
+            "建议把商量分工安排在周末白天"
+          ],
+          "must_not": [
+            "建议周一到周五晚上谈分工",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫和想商量分担家务的感受",
+            "提供不指责家人的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住周一到周五晚上没空",
+            "建议把商量分工安排在周末白天"
+          ],
+          "must_not": [
+            "建议周一到周五晚上谈分工",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为周六上午",
+            "记住周日要陪孩子上课外班"
+          ],
+          "must_not": [
+            "仍建议周日谈分工",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫和想商量分担家务的感受",
+            "提供不指责家人的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住周一到周五晚上没空",
+            "建议把商量分工安排在周末白天"
+          ],
+          "must_not": [
+            "建议周一到周五晚上谈分工",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为周六上午",
+            "记住周日要陪孩子上课外班"
+          ],
+          "must_not": [
+            "仍建议周日谈分工",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认时间记忆为周六上午",
+            "针对分出做饭和倒垃圾给出不伤人的开口建议"
+          ],
+          "must_not": [
+            "否认此前周六上午的更正",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫和想商量分担家务的感受",
+            "提供不指责家人的沟通建议"
+          ],
+          "must_not": [
+            "指责用户或其家人",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住周一到周五晚上没空",
+            "建议把商量分工安排在周末白天"
+          ],
+          "must_not": [
+            "建议周一到周五晚上谈分工",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为周六上午",
+            "记住周日要陪孩子上课外班"
+          ],
+          "must_not": [
+            "仍建议周日谈分工",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认时间记忆为周六上午",
+            "针对分出做饭和倒垃圾给出不伤人的开口建议"
+          ],
+          "must_not": [
+            "否认此前周六上午的更正",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结周六上午如何开口",
+            "总结应体现不指责的沟通方式"
+          ],
+          "must_not": [
+            "输出冗长多段总结",
+            "擅自创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

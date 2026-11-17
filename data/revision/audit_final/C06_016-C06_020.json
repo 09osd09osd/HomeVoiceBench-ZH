@@ -1,0 +1,271 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "3fa213e0-0590-48e4-817a-34be6f6790d9",
+  "usage": {
+    "prompt_tokens": 1667,
+    "completion_tokens": 1099,
+    "total_tokens": 2766,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1155
+  },
+  "temperature": 0,
+  "source_sha256": "88d93e67dd6a18cd87c7cd7525aecb940ee454cad584d183246d6f940ed3636f",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C06_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对母亲说出口的话",
+            "承认自己态度不好",
+            "表达想好好说开",
+            "避免让母亲觉得被操控",
+            "不要求母亲必须原谅"
+          ],
+          "must_not": [
+            "要求母亲必须原谅",
+            "使用操控性表达",
+            "把道歉写成强迫对方接受"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对父亲说出口的话",
+            "承认当时态度不好",
+            "表达想主动说开",
+            "避免让父亲觉得被逼原谅"
+          ],
+          "must_not": [
+            "要求父亲必须原谅",
+            "让父亲觉得被逼迫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "语言像平时家里人聊天",
+            "控制在两三句",
+            "承认态度不好但不反复认错"
+          ],
+          "must_not": [
+            "使用特别正式的话",
+            "让用户一遍遍认错",
+            "超过两三句的篇幅"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对姐姐说出口的话",
+            "承认没提前沟通",
+            "表达道歉",
+            "避免让姐姐觉得在找借口"
+          ],
+          "must_not": [
+            "让姐姐觉得在找借口",
+            "把临时加班作为推脱理由"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "语气不太随意也不太生硬",
+            "表达真心觉得没提前说不好",
+            "说明不是故意放鸽子"
+          ],
+          "must_not": [
+            "说话太随意",
+            "说话太生硬",
+            "让姐姐觉得是故意放鸽子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把聚会日期更正为上周日",
+            "重新组织道歉话术",
+            "日期不再说成周六"
+          ],
+          "must_not": [
+            "继续把聚会说成上周六",
+            "把日期弄错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对老公说出口的话",
+            "承认忘了日子",
+            "承认态度不好",
+            "避免让老公觉得在敷衍"
+          ],
+          "must_not": [
+            "让老公觉得在敷衍",
+            "把道歉写成敷衍"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说得短一点、实在一点",
+            "不煽情",
+            "不保证以后一定记得"
+          ],
+          "must_not": [
+            "长篇大论",
+            "太煽情",
+            "保证以后一定记得"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把日子更正为第一次约会的日子",
+            "重新顺道歉话术",
+            "不再说结婚纪念日"
+          ],
+          "must_not": [
+            "继续称结婚纪念日",
+            "把日子说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述刚刚更正的日子是第一次约会的日子",
+            "接着提供怎么开口跟他说"
+          ],
+          "must_not": [
+            "把更正后的日子说成结婚纪念日",
+            "忘记用户刚更正的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供几句可对婆婆说出口的话",
+            "承认说话没顾及她感受",
+            "避免让婆婆觉得在怪她"
+          ],
+          "must_not": [
+            "让婆婆觉得在怪她",
+            "把解释写成责怪"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "语气不轻飘",
+            "表达感激婆婆帮忙",
+            "说明当时只是嘴快",
+            "不说以后厨房都听她的"
+          ],
+          "must_not": [
+            "说得太轻飘",
+            "说以后厨房都听她的",
+            "让婆婆觉得被责怪"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把时间更正为前天下午",
+            "重新组织话术",
+            "时间说前天下午"
+          ],
+          "must_not": [
+            "继续说昨天",
+            "把时间说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述刚刚更正的时间是前天下午",
+            "接着提供怎么跟婆婆开口"
+          ],
+          "must_not": [
+            "把更正后的时间说成昨天",
+            "忘记用户刚更正的时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "把最后要说的话压短",
+            "控制在两三句"
+          ],
+          "must_not": [
+            "篇幅超过两三句",
+            "重新长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

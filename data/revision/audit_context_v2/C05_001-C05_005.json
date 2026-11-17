@@ -1,0 +1,250 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2861b0f5-3d1c-448b-96eb-2aaf45bbbbe8",
+  "usage": {
+    "prompt_tokens": 2029,
+    "completion_tokens": 1051,
+    "total_tokens": 3080,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1517
+  },
+  "temperature": 0,
+  "source_sha256": "72aff79639c6a1b5fd3ad5b9d8ed7c7d1e838a6d08f5108f5b2d0284b6243acf",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C05_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助用户把晚饭后家务分工的需求表达清楚",
+            "表述具体事情且不评价家人勤快或懒"
+          ],
+          "must_not": [
+            "对家人进行勤快或懒的评价",
+            "擅自替用户做分工决定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助用户组织周六上午大扫除分工的说法",
+            "涵盖客厅、厨房、卫生间分给三个人"
+          ],
+          "must_not": [
+            "给人贴标签或评价勤快懒",
+            "擅自指定具体谁负责哪块"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把上午十点前做完的时间限制纳入说法",
+            "说明下午孩子写作业需要安静"
+          ],
+          "must_not": [
+            "忽略十点前完成的时间要求",
+            "忽略下午需要安静的限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助组织工作日接孩子和做晚饭的分工说法",
+            "表述具体安排且不指责谁不负责任"
+          ],
+          "must_not": [
+            "说谁不负责任",
+            "擅自替用户决定具体安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明周二和周四赶不回来",
+            "说明其他三天可以做饭",
+            "说明接孩子需要别人帮忙"
+          ],
+          "must_not": [
+            "遗漏周二周四赶不回来",
+            "遗漏其他三天可做饭"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为周二、周三、周四都不行",
+            "保留周一和周五晚饭可做",
+            "说明接孩子这三天需要他人帮忙"
+          ],
+          "must_not": [
+            "仍说周三可以做饭",
+            "遗漏周三也不行"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助说明垃圾轮流值日办法",
+            "表述规则且不评价谁懒"
+          ],
+          "must_not": [
+            "说谁懒",
+            "擅自确定具体值日人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明按周轮换、一人一周",
+            "说明周末交接"
+          ],
+          "must_not": [
+            "遗漏按周轮换",
+            "遗漏周末交接"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为每周一早上交接",
+            "保留按周轮换、一人一周"
+          ],
+          "must_not": [
+            "仍说周末交接",
+            "遗漏周一早上交接"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得改成周一早上交接",
+            "就这一周谁先开始给出商量建议"
+          ],
+          "must_not": [
+            "否认周一早上交接",
+            "擅自替用户指定具体先开始的人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助起头说明洗衣、晾衣、叠衣分工",
+            "表述具体事情且不评价谁做得多"
+          ],
+          "must_not": [
+            "评价谁做得多",
+            "擅自替用户分配具体人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明早上出门早、晾衣服不方便",
+            "说明晚上叠衣服可以负责"
+          ],
+          "must_not": [
+            "遗漏晾衣服不方便",
+            "遗漏晚上可叠衣服"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为叠衣服只负责周一和周三",
+            "保留早上出门早、晾衣服不方便"
+          ],
+          "must_not": [
+            "仍说晚上每天都能叠衣服",
+            "遗漏只负责周一和周三"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得叠衣服只负责周一和周三",
+            "就剩余洗衣和晾晒给出排序建议"
+          ],
+          "must_not": [
+            "否认周一和周三",
+            "擅自替用户指定具体人负责"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短的话收尾",
+            "把分工说清楚"
+          ],
+          "must_not": [
+            "输出冗长内容",
+            "给人贴标签"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

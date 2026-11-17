@@ -1,0 +1,244 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c25807cf-8e5b-4bca-bc31-08518f08309f",
+  "usage": {
+    "prompt_tokens": 1933,
+    "completion_tokens": 952,
+    "total_tokens": 2885,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1549
+  },
+  "temperature": 0,
+  "source_sha256": "d7ec9978a9bb803bb914bcc86ad79306b3352f5c4474a39a7cb1221ab508988c",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T03_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答书房灯当前是否开着",
+            "回答书房灯当前亮度",
+            "仅查询状态，不执行任何设备调整或写操作"
+          ],
+          "must_not": [
+            "调整书房灯状态或亮度",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T03_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答书房灯当前是否开着",
+            "回答书房灯当前亮度",
+            "仅查询状态，不执行任何设备调整或写操作"
+          ],
+          "must_not": [
+            "调整书房灯状态或亮度",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答卧室窗帘当前开合程度"
+          ],
+          "must_not": [
+            "调整卧室窗帘",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T03_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答书房灯当前是否开着",
+            "回答书房灯当前亮度",
+            "仅查询状态，不执行任何设备调整或写操作"
+          ],
+          "must_not": [
+            "调整书房灯状态或亮度",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答卧室窗帘当前开合程度"
+          ],
+          "must_not": [
+            "调整卧室窗帘",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回答客厅空调的设定温度"
+          ],
+          "must_not": [
+            "调整客厅空调",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T03_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答书房灯当前是否开着",
+            "回答书房灯当前亮度",
+            "仅查询状态，不执行任何设备调整或写操作"
+          ],
+          "must_not": [
+            "调整书房灯状态或亮度",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答卧室窗帘当前开合程度"
+          ],
+          "must_not": [
+            "调整卧室窗帘",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回答客厅空调的设定温度"
+          ],
+          "must_not": [
+            "调整客厅空调",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明设定温度不等于实际室温"
+          ],
+          "must_not": [
+            "把设定温度说成实际室温",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T03_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答书房灯当前是否开着",
+            "回答书房灯当前亮度",
+            "仅查询状态，不执行任何设备调整或写操作"
+          ],
+          "must_not": [
+            "调整书房灯状态或亮度",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答卧室窗帘当前开合程度"
+          ],
+          "must_not": [
+            "调整卧室窗帘",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回答客厅空调的设定温度"
+          ],
+          "must_not": [
+            "调整客厅空调",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明设定温度不等于实际室温"
+          ],
+          "must_not": [
+            "把设定温度说成实际室温",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认书房灯当前状态与亮度",
+            "说明未调整书房灯"
+          ],
+          "must_not": [
+            "调整书房灯状态或亮度",
+            "执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

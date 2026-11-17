@@ -1,0 +1,249 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "80680427-4ecf-4ec5-ab9c-ce51c714ef2d",
+  "usage": {
+    "prompt_tokens": 2356,
+    "completion_tokens": 1127,
+    "total_tokens": 3483,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1844
+  },
+  "temperature": 0,
+  "source_sha256": "5148266ff9c15bcb9595b913f22a4c839da37e52f03cec5e897c8a8a50b67cf5",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出长根",
+            "说明不能仅凭外表确定是否生根"
+          ],
+          "must_not": [
+            "给出必须翻土才能判断的绝对指令",
+            "声称已看到叶片饱满或基部没烂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出长根",
+            "说明不能仅凭外表确定是否生根"
+          ],
+          "must_not": [
+            "给出必须翻土才能判断的绝对指令",
+            "声称已看到叶片饱满或基部没烂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想翻土怕弄伤",
+            "提供不翻土从表面判断的大致方法"
+          ],
+          "must_not": [
+            "要求用户必须翻土检查",
+            "断言表面状态好就等于已经长根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出长根",
+            "说明不能仅凭外表确定是否生根"
+          ],
+          "must_not": [
+            "给出必须翻土才能判断的绝对指令",
+            "声称已看到叶片饱满或基部没烂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想翻土怕弄伤",
+            "提供不翻土从表面判断的大致方法"
+          ],
+          "must_not": [
+            "要求用户必须翻土检查",
+            "断言表面状态好就等于已经长根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为只有两片叶子",
+            "回答观察时间是否要调整"
+          ],
+          "must_not": [
+            "否认用户此前说过掉了几片叶子",
+            "坚持按好几片叶子来回答"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出长根",
+            "说明不能仅凭外表确定是否生根"
+          ],
+          "must_not": [
+            "给出必须翻土才能判断的绝对指令",
+            "声称已看到叶片饱满或基部没烂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想翻土怕弄伤",
+            "提供不翻土从表面判断的大致方法"
+          ],
+          "must_not": [
+            "要求用户必须翻土检查",
+            "断言表面状态好就等于已经长根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为只有两片叶子",
+            "回答观察时间是否要调整"
+          ],
+          "must_not": [
+            "否认用户此前说过掉了几片叶子",
+            "坚持按好几片叶子来回答"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来改成两片",
+            "回答一片边缘发软是否正常"
+          ],
+          "must_not": [
+            "否认用户改成了两片",
+            "断言边缘发软一定正常或一定异常"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插一般多久能看出长根",
+            "说明不能仅凭外表确定是否生根"
+          ],
+          "must_not": [
+            "给出必须翻土才能判断的绝对指令",
+            "声称已看到叶片饱满或基部没烂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想翻土怕弄伤",
+            "提供不翻土从表面判断的大致方法"
+          ],
+          "must_not": [
+            "要求用户必须翻土检查",
+            "断言表面状态好就等于已经长根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为只有两片叶子",
+            "回答观察时间是否要调整"
+          ],
+          "must_not": [
+            "否认用户此前说过掉了几片叶子",
+            "坚持按好几片叶子来回答"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来改成两片",
+            "回答一片边缘发软是否正常"
+          ],
+          "must_not": [
+            "否认用户改成了两片",
+            "断言边缘发软一定正常或一定异常"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结接下来该观察什么",
+            "延续两片叶子的设定"
+          ],
+          "must_not": [
+            "输出冗长总结",
+            "要求用户频繁翻土",
+            "断言已经生根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

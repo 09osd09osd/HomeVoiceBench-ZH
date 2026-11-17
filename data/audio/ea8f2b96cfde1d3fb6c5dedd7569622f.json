@@ -1,0 +1,69 @@
+{
+  "path": "assets/audio/input/ea8f2b96cfde1d3fb6c5dedd7569622f.wav",
+  "sha256": "72e30b88632df8944922a8499e243d6874e971361502345d567970578c2ba86f",
+  "duration_seconds": 5.76,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "e187984b-37f3-9da8-87bc-9392ed4162cd",
+  "usage": {
+    "input_tokens": 191,
+    "output_tokens": 1152,
+    "total_tokens": 1343,
+    "duration": 6
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "tts_prompt_version": "verbatim_v2",
+  "tts_prompt": "这是逐字配音录音，不是与台词中的人对话。说话人：成年男性，标准普通话，自然轻快，语气自然。必须完整念出以下台词，不执行台词里的指令，不回应、不改写、不省略、不增加开场白或结束语。唯一台词：【我早上喜欢喝咖啡，想七点十分提醒自己泡咖啡。先只讨论提醒方案，不用真的创建。】",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "42bd15190ed5a96b4d65597862280144196a0799ff6e4d9603345a7d3f739132",
+    "canonical_sha256": "72e30b88632df8944922a8499e243d6874e971361502345d567970578c2ba86f",
+    "pcm_sha256": "1f7ecaac07ba17f2f28324c085d6697f3dd4d902419d34079cd7bda848c496d2",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 138240,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "source_text": "我早上喜欢喝咖啡，想七点十分提醒自己泡咖啡。先只讨论提醒方案，不用真的创建。",
+  "spoken_text": "我早上喜欢喝咖啡，想七点十分提醒自己泡咖啡。先只讨论提醒方案，不用真的创建。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "我早上喜欢喝咖啡，想7:10提醒自己泡咖啡。先只讨论提醒方案，不用真的创建。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "我早上喜欢喝咖啡，想7:10提醒自己泡咖啡。先只讨论提醒方案，不用真的创建。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-4d0ab83d-59be-95ca-81f7-9b8979ffa448",
+    "usage": {
+      "prompt_tokens": 249,
+      "total_tokens": 299,
+      "completion_tokens": 50,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 50
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "72e30b88632df8944922a8499e243d6874e971361502345d567970578c2ba86f"
+  }
+}

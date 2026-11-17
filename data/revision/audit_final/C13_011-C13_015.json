@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ad606973-7919-4c83-9dfc-08e87c0fb919",
+  "usage": {
+    "prompt_tokens": 1499,
+    "completion_tokens": 966,
+    "total_tokens": 2465,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 987
+  },
+  "temperature": 0,
+  "source_sha256": "1a891e9901dafdf547ea024ca252784360e1ccffc504e72e1dd3256d320a97d4",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C13_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个睡前故事",
+            "故事要短",
+            "故事不吓人",
+            "故事讲小动物在森林里找到回家的路"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个睡前故事",
+            "故事讲小熊在河边捡到一只小船",
+            "故事别太长"
+          ],
+          "must_not": [
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事不要有吓人的情节",
+            "故事要温暖",
+            "适合睡前听"
+          ],
+          "must_not": [
+            "出现吓人的情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个睡前故事",
+            "故事讲一个叫小圆的小女孩在院子里种向日葵",
+            "故事要短",
+            "故事别吓人"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事里有邻居家的小狗帮忙",
+            "小狗别太吵",
+            "适合睡前听"
+          ],
+          "must_not": [
+            "小狗太吵"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小女孩名字改为小月",
+            "后续都用小月"
+          ],
+          "must_not": [
+            "后续继续使用小圆作为小女孩名字"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个短点的睡前故事",
+            "故事讲一只小兔子去菜园里拔萝卜",
+            "故事别吓人"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事里有月亮",
+            "适合睡前听"
+          ],
+          "must_not": [
+            "有打雷场景",
+            "有黑漆漆的吓人场景"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小兔子拔萝卜地点改为山坡上的萝卜地",
+            "后续都用山坡上的萝卜地"
+          ],
+          "must_not": [
+            "后续继续使用菜园作为拔萝卜地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认小兔子是在山坡上的萝卜地拔萝卜",
+            "接着讲月亮下它们怎么把萝卜运回家"
+          ],
+          "must_not": [
+            "确认成菜园"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讲一个睡前故事",
+            "故事讲一只小猫在雨停后去小花园里找蜗牛",
+            "故事短一点",
+            "故事别吓人"
+          ],
+          "must_not": [
+            "出现吓人的情节",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "小猫手里拿着一片小叶子当伞",
+            "适合睡前听"
+          ],
+          "must_not": [
+            "有闪电打雷"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "小猫拿的伞改为小蘑菇",
+            "后续都用小蘑菇"
+          ],
+          "must_not": [
+            "后续继续使用小叶子当伞"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认小猫拿的是小蘑菇当伞",
+            "接着讲它找到蜗牛后一起在花园里慢慢走"
+          ],
+          "must_not": [
+            "确认成小叶子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用很简短的话收尾",
+            "让小猫和蜗牛都安静回家睡觉"
+          ],
+          "must_not": [
+            "收尾过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

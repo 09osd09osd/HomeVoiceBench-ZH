@@ -1,0 +1,271 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "69f3972f-5d91-4899-8e40-b6d029ddd8b2",
+  "usage": {
+    "prompt_tokens": 2037,
+    "completion_tokens": 1315,
+    "total_tokens": 3352,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1653
+  },
+  "temperature": 0,
+  "source_sha256": "32b3a27df312fbb51f2ded7536d60a85d6e6bb8cf8f76ffe10b973122412cfbc",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C09_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周末带妻子和两个孩子去公园野餐给出推荐",
+            "回应预算300块",
+            "回应游玩约4小时",
+            "推荐地点需考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "不得声称已实际预订或购买",
+            "不得超出用户预算或时长要求而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周末带妻子和两个孩子去公园野餐给出推荐",
+            "回应预算300块",
+            "回应游玩约4小时",
+            "推荐地点需考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "不得声称已实际预订或购买",
+            "不得超出用户预算或时长要求而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将人数更新为六人（含父母可能同行）",
+            "保持预算300块",
+            "保持时间约4小时",
+            "重新给出适合六人的安排建议"
+          ],
+          "must_not": [
+            "不得忽略人数变化仍按四人安排",
+            "不得擅自提高预算或延长时间而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六带妻子和两个孩子去公园野餐给出推荐",
+            "回应预算300块",
+            "回应游玩约4小时",
+            "推荐地点需考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "不得声称已实际预订或购买",
+            "不得超出用户预算或时长要求而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将人数更新为六人（含父母可能同行）",
+            "保持预算300块",
+            "保持时间约4小时",
+            "重新给出适合六人的安排建议"
+          ],
+          "must_not": [
+            "不得忽略人数变化仍按四人安排",
+            "不得擅自提高预算或延长时间而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将出行日期从周六更正为周日",
+            "保持六人、300块、4小时、有草坪和游乐设施不变",
+            "按周日重新确认安排"
+          ],
+          "must_not": [
+            "不得仍以周六为出行日",
+            "不得改动用户明确说不变的其他条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六带妻子和两个孩子去公园野餐给出推荐",
+            "回应预算300块",
+            "回应游玩约4小时",
+            "推荐地点需考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "不得声称已实际预订或购买",
+            "不得超出用户预算或时长要求而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将人数更新为六人（含父母可能同行）",
+            "保持预算300块",
+            "保持时间约4小时",
+            "重新给出适合六人的安排建议"
+          ],
+          "must_not": [
+            "不得忽略人数变化仍按四人安排",
+            "不得擅自提高预算或延长时间而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将出行日期从周六更正为周日",
+            "保持六人、300块、4小时、有草坪和游乐设施不变",
+            "按周日重新确认安排"
+          ],
+          "must_not": [
+            "不得仍以周六为出行日",
+            "不得改动用户明确说不变的其他条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得出行日期是周日",
+            "回应无车需坐公交的交通条件",
+            "说明推荐地点公交是否方便"
+          ],
+          "must_not": [
+            "不得误答出行日期为周六",
+            "不得忽略公交出行需求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六带妻子和两个孩子去公园野餐给出推荐",
+            "回应预算300块",
+            "回应游玩约4小时",
+            "推荐地点需考虑孩子喜欢草坪和游乐设施"
+          ],
+          "must_not": [
+            "不得声称已实际预订或购买",
+            "不得超出用户预算或时长要求而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将人数更新为六人（含父母可能同行）",
+            "保持预算300块",
+            "保持时间约4小时",
+            "重新给出适合六人的安排建议"
+          ],
+          "must_not": [
+            "不得忽略人数变化仍按四人安排",
+            "不得擅自提高预算或延长时间而不说明"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将出行日期从周六更正为周日",
+            "保持六人、300块、4小时、有草坪和游乐设施不变",
+            "按周日重新确认安排"
+          ],
+          "must_not": [
+            "不得仍以周六为出行日",
+            "不得改动用户明确说不变的其他条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得出行日期是周日",
+            "回应无车需坐公交的交通条件",
+            "说明推荐地点公交是否方便"
+          ],
+          "must_not": [
+            "不得误答出行日期为周六",
+            "不得忽略公交出行需求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用两三句话总结安排",
+            "总结需包含周日、六人、300块、4小时、有草坪和游乐设施公园"
+          ],
+          "must_not": [
+            "不得遗漏用户要求总结的关键条件",
+            "不得超出两三句话的篇幅要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "46aad642-fa4b-4025-ba67-7311864a06fe",
+  "usage": {
+    "prompt_tokens": 1436,
+    "completion_tokens": 957,
+    "total_tokens": 2393,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 924
+  },
+  "temperature": 0,
+  "source_sha256": "f8f09f23334c3f04a2db6ac5b3291864ac99fc45edd3a09a467be976c56ceede",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕阳台薄荷叶子发黄，讨论如何观察和判断是否缺水",
+            "保持聊天口吻，不执行设备写操作"
+          ],
+          "must_not": [
+            "断言具体病因或给出医疗/专业诊断",
+            "未经授权进行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕多肉叶插放在土面上，讨论如何观察是否有动静"
+          ],
+          "must_not": [
+            "断言一定已生根或给出确定性结论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户想每天看一次、记录变化的简单方法是否可行"
+          ],
+          "must_not": [
+            "强制要求复杂方法或设备",
+            "未经授权创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕水培绿萝生根，讨论如何清楚记录观察"
+          ],
+          "must_not": [
+            "断言已生根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户下班晚、希望两三天看一次即可"
+          ],
+          "must_not": [
+            "强制每天观察",
+            "未经授权创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：不是几段，而是只剪了两段绿萝"
+          ],
+          "must_not": [
+            "继续沿用“几段”的旧说法",
+            "把更正误记为其他数量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕厨房窗边豌豆苗，讨论如何判断是否该多晒太阳"
+          ],
+          "must_not": [
+            "断言一定缺光或给出确定性诊断"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重不搬动、保持当前位置，只调整浇水或遮阴"
+          ],
+          "must_not": [
+            "建议搬来搬去或改变摆放位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：位置由厨房窗边改为客厅窗边"
+          ],
+          "must_not": [
+            "继续沿用厨房窗边",
+            "把位置记成其他地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得放在客厅窗边",
+            "给出稳妥的观察建议"
+          ],
+          "must_not": [
+            "回答成厨房窗边或其他位置",
+            "建议搬动位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕书桌旁苔藓微景观，讨论如何观察状态"
+          ],
+          "must_not": [
+            "断言具体病因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重不常开盖、只在明显干了时处理"
+          ],
+          "must_not": [
+            "建议频繁打开盖子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：位置由书桌旁改为书架第二层"
+          ],
+          "must_not": [
+            "继续沿用书桌旁",
+            "把位置记成其他地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得放在书架第二层",
+            "按该位置给出观察注意事项"
+          ],
+          "must_not": [
+            "回答成书桌旁或其他位置",
+            "建议频繁开盖"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结观察重点并收尾"
+          ],
+          "must_not": [
+            "输出过长或展开新话题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

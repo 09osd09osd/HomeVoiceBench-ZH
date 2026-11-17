@@ -1,0 +1,242 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "fc57e217-cb31-4444-9326-294b943b9a7b",
+  "usage": {
+    "prompt_tokens": 2590,
+    "completion_tokens": 983,
+    "total_tokens": 3573,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2206
+  },
+  "temperature": 0,
+  "source_sha256": "2cb9670dfeda04788ce54e3812c89e01a1277b2475aea287281a81328c9e15ff",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T23_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "识别并定位明天9点的收阳台毛巾提醒",
+            "将该提醒时间延后半小时至9点半",
+            "仅修改该条提醒，其他提醒保持不变"
+          ],
+          "must_not": [
+            "修改或取消其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T23_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "识别并定位明天9点的收阳台毛巾提醒",
+            "将该提醒时间延后半小时至9点半",
+            "仅修改该条提醒，其他提醒保持不变"
+          ],
+          "must_not": [
+            "修改或取消其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将上一轮修改的收阳台毛巾提醒改为明天10点整"
+          ],
+          "must_not": [
+            "修改其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T23_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "识别并定位明天9点的收阳台毛巾提醒",
+            "将该提醒时间延后半小时至9点半",
+            "仅修改该条提醒，其他提醒保持不变"
+          ],
+          "must_not": [
+            "修改或取消其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将上一轮修改的收阳台毛巾提醒改为明天10点整"
+          ],
+          "must_not": [
+            "修改其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T23_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "识别并定位明天9点的收阳台毛巾提醒",
+            "将该提醒时间延后半小时至9点半",
+            "仅修改该条提醒，其他提醒保持不变"
+          ],
+          "must_not": [
+            "修改或取消其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将上一轮修改的收阳台毛巾提醒改为明天10点整"
+          ],
+          "must_not": [
+            "修改其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "仅取消刚才新增或修改的那条收阳台毛巾提醒",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他未涉及的提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T23_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "识别并定位明天9点的收阳台毛巾提醒",
+            "将该提醒时间延后半小时至9点半",
+            "仅修改该条提醒，其他提醒保持不变"
+          ],
+          "must_not": [
+            "修改或取消其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将上一轮修改的收阳台毛巾提醒改为明天10点整"
+          ],
+          "must_not": [
+            "修改其他提醒",
+            "新增提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "仅取消刚才新增或修改的那条收阳台毛巾提醒",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他未涉及的提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排还剩什么",
+            "确认刚才那条收阳台毛巾提醒是否已取消"
+          ],
+          "must_not": [
+            "新增或修改任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

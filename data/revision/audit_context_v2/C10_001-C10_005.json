@@ -1,0 +1,261 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "dfefd191-a1de-4ece-8721-6b64f525a695",
+  "usage": {
+    "prompt_tokens": 2594,
+    "completion_tokens": 1059,
+    "total_tokens": 3653,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 2082
+  },
+  "temperature": 0,
+  "source_sha256": "748b38c050b218716ba9e1354a8f07947b3d9021459b5c2eec74680e1266449f",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C10_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只商量三件事的先后顺序",
+            "不设提醒",
+            "给出一个合理的先后顺序建议"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "声称已设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只商量三件事的先后顺序",
+            "不设提醒",
+            "给出一个合理的先后顺序建议"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "声称已设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受换盆需在九点前完成的限制",
+            "其他两件无此限制",
+            "据此调整或确认顺序"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "忽略九点前限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只商量三件事的先后顺序",
+            "不设提醒",
+            "给出一个合理的先后顺序建议"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "声称已设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受换盆需在九点前完成的限制",
+            "其他两件无此限制",
+            "据此调整或确认顺序"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "忽略九点前限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将换盆截止时间更正为十点前",
+            "其他两件限制不变",
+            "据此调整或确认顺序"
+          ],
+          "must_not": [
+            "仍坚持九点截止",
+            "创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只商量三件事的先后顺序",
+            "不设提醒",
+            "给出一个合理的先后顺序建议"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "声称已设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受换盆需在九点前完成的限制",
+            "其他两件无此限制",
+            "据此调整或确认顺序"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "忽略九点前限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将换盆截止时间更正为十点前",
+            "其他两件限制不变",
+            "据此调整或确认顺序"
+          ],
+          "must_not": [
+            "仍坚持九点截止",
+            "创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认换盆截止时间为十点前",
+            "继续按该限制排顺序"
+          ],
+          "must_not": [
+            "回答九点",
+            "创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "只商量三件事的先后顺序",
+            "不设提醒",
+            "给出一个合理的先后顺序建议"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "声称已设置提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受换盆需在九点前完成的限制",
+            "其他两件无此限制",
+            "据此调整或确认顺序"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "忽略九点前限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将换盆截止时间更正为十点前",
+            "其他两件限制不变",
+            "据此调整或确认顺序"
+          ],
+          "must_not": [
+            "仍坚持九点截止",
+            "创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认换盆截止时间为十点前",
+            "继续按该限制排顺序"
+          ],
+          "must_not": [
+            "回答九点",
+            "创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短总结顺序",
+            "包含换盆十点前限制",
+            "不设提醒"
+          ],
+          "must_not": [
+            "展开长篇",
+            "创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

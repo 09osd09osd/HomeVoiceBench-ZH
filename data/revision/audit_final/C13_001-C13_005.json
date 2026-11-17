@@ -1,0 +1,249 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "53fc3ace-54dd-4a2f-b89a-4a571c64dde2",
+  "usage": {
+    "prompt_tokens": 1435,
+    "completion_tokens": 929,
+    "total_tokens": 2364,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 923
+  },
+  "temperature": 0,
+  "source_sha256": "78397f8725dc56bca8dc29d1130e16464add060ea8292e906778ae4c13b2c558",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C13_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小刺猬",
+            "场景在森林里",
+            "情节是找朋友",
+            "温暖不吓人",
+            "长度约三四分钟"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小刺猬",
+            "场景在森林里",
+            "情节是找朋友",
+            "温暖不吓人",
+            "长度约三分钟"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事中加入月亮",
+            "结尾小刺猬回到妈妈身边"
+          ],
+          "must_not": [
+            "加入打雷情节",
+            "加入黑漆漆的洞"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小狐狸",
+            "情节是找朋友",
+            "睡前故事",
+            "温暖不吓人",
+            "长度约三四分钟",
+            "适合五岁孩子"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入一条小溪",
+            "小狐狸在小溪边遇到朋友"
+          ],
+          "must_not": [
+            "出现争吵情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "改为小狐狸在苹果树下遇到朋友",
+            "小溪保留作为背景"
+          ],
+          "must_not": [
+            "把遇到朋友的地点仍设为小溪边"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小熊",
+            "情节是找蜂蜜",
+            "睡前故事",
+            "温暖不吓人",
+            "长度约三分钟"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "安排三个朋友：小乌龟、小鸟和小鹿",
+            "小熊最后把蜂蜜分给大家"
+          ],
+          "must_not": [
+            "出现蜜蜂追人的情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "朋友改为两只：小乌龟和小鸟"
+          ],
+          "must_not": [
+            "保留小鹿作为朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答当前故事里是两个朋友",
+            "接着讲小熊分蜂蜜的那段"
+          ],
+          "must_not": [
+            "回答成三个朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C13_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "主角是小兔子",
+            "情节是种胡萝卜",
+            "睡前故事",
+            "温暖不吓人",
+            "长度五分钟以内"
+          ],
+          "must_not": [
+            "出现吓人情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入一只小鸭子帮忙浇水",
+            "结尾大家一起吃胡萝卜"
+          ],
+          "must_not": [
+            "出现虫子吃菜叶的情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "改为小鸭子帮忙拔草",
+            "浇水仍由小兔子自己来"
+          ],
+          "must_not": [
+            "让小鸭子帮忙浇水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答小鸭子帮忙拔草",
+            "接着讲收获胡萝卜那天的事"
+          ],
+          "must_not": [
+            "回答成小鸭子帮忙浇水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短收尾",
+            "结尾让孩子安心睡觉"
+          ],
+          "must_not": [
+            "展开长篇新情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

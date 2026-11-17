@@ -1,0 +1,254 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ab146d7a-f0fa-4626-97ce-106250196586",
+  "usage": {
+    "prompt_tokens": 2126,
+    "completion_tokens": 985,
+    "total_tokens": 3111,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1614
+  },
+  "temperature": 0,
+  "source_sha256": "727942341548859ed989bbbfc8f02b2b7e8eecd011fc3e3749ed4812120dc8c8",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C10_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "仅讨论三件事的先后顺序",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "仅讨论报告、洗衣服、准备午饭的先后顺序",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将准备午饭安排在十点前完成",
+            "延续只讨论不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "仅讨论写周报、收拾厨房、给猫铲屎的先后顺序",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受周报今晚必须写掉、不能拖到明早的约束",
+            "调整安排使周报今晚完成"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将周报截止时间更正为明天下午两点前",
+            "不再坚持周报今晚必须写掉"
+          ],
+          "must_not": [
+            "沿用上午十点截止",
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "仅讨论擦桌子、给花浇水、改PPT的先后顺序",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受PPT今晚必须改完、不能留到明早的约束",
+            "调整安排使PPT今晚完成"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将PPT使用时间更正为后天一早",
+            "不再坚持PPT今晚必须改完"
+          ],
+          "must_not": [
+            "沿用明天一早",
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆PPT是后天一早用",
+            "按更正后的时间重新顺先后"
+          ],
+          "must_not": [
+            "回答成明天一早",
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "仅讨论拖地、整理包、回邮件的先后顺序",
+            "不创建提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "接受领导邮件今晚必须回、不能拖到明早的约束",
+            "调整安排使该邮件今晚回复"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将领导邮件时间更正为明天下午才要",
+            "不再坚持今晚必须回"
+          ],
+          "must_not": [
+            "沿用今晚必须回",
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆邮件是明天下午才要",
+            "按更正后的时间重新顺先后"
+          ],
+          "must_not": [
+            "回答成今晚必须回",
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简单收尾",
+            "不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

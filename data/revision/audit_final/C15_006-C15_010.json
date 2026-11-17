@@ -1,0 +1,263 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a49205dd-809e-4c72-aa82-2a4629c9d30e",
+  "usage": {
+    "prompt_tokens": 1478,
+    "completion_tokens": 1005,
+    "total_tokens": 2483,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 966
+  },
+  "temperature": 0,
+  "source_sha256": "77066a4e5017c9dbdca78049e82984e7ae6c667d92606e22a945172826f981a7",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一次厨房小东西的猜谜",
+            "只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一次厨房小东西的猜谜",
+            "只给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提示简单",
+            "一次只给一点点提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "直接说出答案",
+            "一次给出过多提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一次金属做的厨房小东西的猜谜",
+            "一次给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提示简单",
+            "一次只给一点点提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "直接说出答案",
+            "一次给出过多提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把材质条件从金属改为塑料",
+            "重新选一个符合塑料条件的厨房用品",
+            "继续给提示",
+            "不揭晓答案"
+          ],
+          "must_not": [
+            "揭晓答案",
+            "仍按金属材质出题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一次金属做的厨房小东西的猜谜",
+            "一次给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提示简单",
+            "一次只给一点点提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "直接说出答案",
+            "一次给出过多提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把材质条件从金属改为塑料",
+            "重新选一个符合塑料条件的厨房用品",
+            "继续给提示",
+            "不揭晓答案"
+          ],
+          "must_not": [
+            "揭晓答案",
+            "仍按金属材质出题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得材质已改为塑料",
+            "再给一个不泄底的提示"
+          ],
+          "must_not": [
+            "揭晓答案",
+            "否认或忽略塑料条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一次金属做的厨房小东西的猜谜",
+            "一次给一个提示",
+            "不提前说出答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提示简单",
+            "一次只给一点点提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "直接说出答案",
+            "一次给出过多提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把材质条件从金属改为塑料",
+            "重新选一个符合塑料条件的厨房用品",
+            "继续给提示",
+            "不揭晓答案"
+          ],
+          "must_not": [
+            "揭晓答案",
+            "仍按金属材质出题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得材质已改为塑料",
+            "再给一个不泄底的提示"
+          ],
+          "must_not": [
+            "揭晓答案",
+            "否认或忽略塑料条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "不直接说出答案"
+          ],
+          "must_not": [
+            "直接说出答案",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

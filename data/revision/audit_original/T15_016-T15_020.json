@@ -1,0 +1,240 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "f6b383e0-0026-41e8-bed6-3c35952801dc",
+  "usage": {
+    "prompt_tokens": 1937,
+    "completion_tokens": 972,
+    "total_tokens": 2909,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1553
+  },
+  "temperature": 0,
+  "source_sha256": "43cd30c7842aeb64469d0b2af85a84263630d7bae21db8c43429d586334d1602",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T15_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到80%",
+            "在未明确灯具时需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前擅自打开任意一盏灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到80%",
+            "在未明确灯具时需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前擅自打开任意一盏灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯打开并设置亮度为80%",
+            "保持其他灯不变"
+          ],
+          "must_not": [
+            "改动客厅灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到80%",
+            "在未明确灯具时需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前擅自打开任意一盏灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯打开并设置亮度为80%",
+            "保持其他灯不变"
+          ],
+          "must_not": [
+            "改动客厅灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "仅查询客厅灯当前亮度",
+            "不执行关灯操作"
+          ],
+          "must_not": [
+            "关闭客厅灯",
+            "改动亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到80%",
+            "在未明确灯具时需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前擅自打开任意一盏灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯打开并设置亮度为80%",
+            "保持其他灯不变"
+          ],
+          "must_not": [
+            "改动客厅灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "仅查询客厅灯当前亮度",
+            "不执行关灯操作"
+          ],
+          "must_not": [
+            "关闭客厅灯",
+            "改动亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "保留亮度设置为80%"
+          ],
+          "must_not": [
+            "改动亮度设置",
+            "关闭其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T15_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用户要求把某盏灯打开到80%",
+            "在未明确灯具时需先确认是哪一盏灯"
+          ],
+          "must_not": [
+            "在未确认灯具前擅自打开任意一盏灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将客厅灯打开并设置亮度为80%",
+            "保持其他灯不变"
+          ],
+          "must_not": [
+            "改动客厅灯以外的其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "仅查询客厅灯当前亮度",
+            "不执行关灯操作"
+          ],
+          "must_not": [
+            "关闭客厅灯",
+            "改动亮度设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅灯",
+            "保留亮度设置为80%"
+          ],
+          "must_not": [
+            "改动亮度设置",
+            "关闭其他灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结最终灯具为客厅灯",
+            "说明开关状态为关",
+            "说明亮度设置为80%"
+          ],
+          "must_not": [
+            "声称客厅灯仍亮着",
+            "改动任何设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "f1b432f6-3f22-4272-95cf-073b25893782",
+  "usage": {
+    "prompt_tokens": 1770,
+    "completion_tokens": 984,
+    "total_tokens": 2754,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1386
+  },
+  "temperature": 0,
+  "source_sha256": "f1ec92fea7b581b0e85cadde52627531948bc2453faa78499f6dd940b2780060",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C07_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对卧室小、衣柜满、夏季衣物多且乱给出整理建议"
+          ],
+          "must_not": [
+            "声称已查看或操作家中设备",
+            "要求用户提供未提及的隐私信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对阳台杂物多、不知从何下手给出可操作的整理起步建议"
+          ],
+          "must_not": [
+            "声称已查看或操作家中设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合家里有小孩、不能放太高、怕孩子爬上去拿的约束调整收纳建议"
+          ],
+          "must_not": [
+            "建议把物品放在孩子容易攀爬够取的高处",
+            "忽略儿童安全约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对换季收冬衣且收纳空间不够给出建议"
+          ],
+          "must_not": [
+            "声称已查看或操作家中设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按只有周末半天时间给出快速完成的整理方案"
+          ],
+          "must_not": [
+            "给出需要远超半天才能完成的方案作为主要建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的周末只有两小时重新给出快速整理方案"
+          ],
+          "must_not": [
+            "继续按半天时间安排",
+            "忽略用户对时长的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对孩子玩具多、客厅到处都是给出整理建议"
+          ],
+          "must_not": [
+            "声称已查看或操作家中设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按孩子能自己拿到和自己收的要求调整收纳建议"
+          ],
+          "must_not": [
+            "建议使用孩子无法自行取放的高处收纳作为主要方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的重点整理儿童房、客厅还好调整建议"
+          ],
+          "must_not": [
+            "仍把客厅作为主要整理重点",
+            "忽略用户对房间重点的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答主要想整理的是儿童房"
+          ],
+          "must_not": [
+            "回答主要整理客厅",
+            "忘记用户已更正房间重点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面瓶瓶罐罐乱给出收拾建议"
+          ],
+          "must_not": [
+            "声称已查看或操作家中设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按做饭时喜欢顺手拿、不想每次开柜门调整收纳建议"
+          ],
+          "must_not": [
+            "建议把所有常用调料都收进柜子作为主要方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的灶台左边更顺手、用户是左撇子调整开放收纳位置"
+          ],
+          "must_not": [
+            "仍把开放收纳区放在灶台右边",
+            "忽略用户对左右位置的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答调料主要放灶台左边"
+          ],
+          "must_not": [
+            "回答调料主要放灶台右边",
+            "忘记用户是左撇子及位置更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结整理方案",
+            "总结中包含灶台左边放常用调料"
+          ],
+          "must_not": [
+            "总结冗长超出简短要求",
+            "总结中把常用调料位置说成右边"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

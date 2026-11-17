@@ -1,0 +1,262 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "96ea1f49-7d39-42e8-93fd-6f14f5034e26",
+  "usage": {
+    "prompt_tokens": 1888,
+    "completion_tokens": 936,
+    "total_tokens": 2824,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1376
+  },
+  "temperature": 0,
+  "source_sha256": "e105cc558eaabc709abb2b0cb6c1de6760b9b8d2e18f34a4bd2a4d766f145a76",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认可以玩",
+            "游戏为一轮记词",
+            "不使用水果词",
+            "简短温和"
+          ],
+          "must_not": [
+            "使用水果词",
+            "超过一轮"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认两轮数字记忆",
+            "温和简短",
+            "不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "超过两轮"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "数字不超过十",
+            "每轮三个数",
+            "保持温和简短"
+          ],
+          "must_not": [
+            "数字超过十",
+            "每轮超过三个数",
+            "使用水果词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认三轮词语记忆",
+            "简短温和",
+            "先不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "超过三轮"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "每轮三个词",
+            "保持简短"
+          ],
+          "must_not": [
+            "每轮超过三个词",
+            "使用水果词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为禁用动物词",
+            "水果词可以",
+            "保持三轮每轮三个词"
+          ],
+          "must_not": [
+            "仍禁用水果词",
+            "使用动物词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认四轮词语记忆",
+            "简短温和",
+            "不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "超过四轮"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "每轮三个词",
+            "保持简短"
+          ],
+          "must_not": [
+            "每轮超过三个词",
+            "使用水果词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为禁用动物词",
+            "水果词可以",
+            "保持四轮每轮三个词"
+          ],
+          "must_not": [
+            "仍禁用水果词",
+            "使用动物词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认当前禁用动物词",
+            "确认水果词可用"
+          ],
+          "must_not": [
+            "说禁用水果词",
+            "使用动物词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认五轮数字记忆",
+            "简短温和",
+            "不使用水果词"
+          ],
+          "must_not": [
+            "使用水果词",
+            "超过五轮"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "数字不超过十",
+            "每轮三个数"
+          ],
+          "must_not": [
+            "数字超过十",
+            "每轮超过三个数",
+            "使用水果词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为禁用动物词",
+            "水果词可以",
+            "保持五轮每轮三个十以内数字"
+          ],
+          "must_not": [
+            "仍禁用水果词",
+            "使用动物词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认当前禁用动物词",
+            "确认水果词可用"
+          ],
+          "must_not": [
+            "说禁用水果词",
+            "使用动物词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短总结规则",
+            "说明当前进度",
+            "规则含五轮、每轮三个十以内数字、禁用动物词"
+          ],
+          "must_not": [
+            "使用动物词",
+            "说禁用水果词",
+            "超过一句话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

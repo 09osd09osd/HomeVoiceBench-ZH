@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "122a2333-622d-4cfb-a2ad-bbb8eca45151",
+  "usage": {
+    "prompt_tokens": 1365,
+    "completion_tokens": 950,
+    "total_tokens": 2315,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 853
+  },
+  "temperature": 0,
+  "source_sha256": "a7ac2379fc64e50b09020c51f19f2f9f6bebd5cc2d0cefe3d921681956eb3e87",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用温柔的语气回应",
+            "提供一句简短的陪伴话语"
+          ],
+          "must_not": [
+            "进行设备写操作",
+            "输出过长或过于热闹的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以简短轻松的方式回应早安",
+            "配合用户想简单聊两句再起床的意愿"
+          ],
+          "must_not": [
+            "输出过长内容",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "声音轻、语气温和",
+            "只说一两句提醒"
+          ],
+          "must_not": [
+            "说太热闹的话",
+            "输出超过一两句的长内容",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以安静温和的方式简短回应",
+            "配合睡前随便聊几句"
+          ],
+          "must_not": [
+            "内容太热闹",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认记住用户十点半左右关灯的习惯"
+          ],
+          "must_not": [
+            "未经授权创建提醒或写操作",
+            "把十点半说成其他时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为十点四十左右关灯",
+            "更新记忆中的关灯时间"
+          ],
+          "must_not": [
+            "仍坚持十点半",
+            "进行未经授权的写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "简短回应早安",
+            "控制篇幅不过长"
+          ],
+          "must_not": [
+            "输出过长内容",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住用户早上先喝半杯温水再坐一会儿的习惯",
+            "尊重用户不喜欢一醒来听很多话"
+          ],
+          "must_not": [
+            "输出很多话",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为喝大半杯温水",
+            "更新记忆中的水量"
+          ],
+          "must_not": [
+            "仍坚持半杯",
+            "进行未经授权的写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆用户早上先喝大半杯温水再坐一会儿",
+            "再说一句简短提醒"
+          ],
+          "must_not": [
+            "说成半杯",
+            "输出过长内容",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以轻柔温和的方式简短回应",
+            "配合睡前聊天"
+          ],
+          "must_not": [
+            "内容太兴奋",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "记住用户睡前一般听一会儿轻音乐",
+            "避免聊太多工作上的事"
+          ],
+          "must_not": [
+            "主动聊很多工作话题",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为睡前听雨声",
+            "更新记忆中的睡前音频"
+          ],
+          "must_not": [
+            "仍坚持轻音乐",
+            "进行未经授权的写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆用户睡前听雨声",
+            "说一句放松的话"
+          ],
+          "must_not": [
+            "说成轻音乐",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短收尾"
+          ],
+          "must_not": [
+            "输出超过一句话的长内容",
+            "进行设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

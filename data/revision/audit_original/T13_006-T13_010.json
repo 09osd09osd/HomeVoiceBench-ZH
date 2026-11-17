@@ -1,0 +1,237 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2c88c180-69cb-442b-b60b-099db5d87ddb",
+  "usage": {
+    "prompt_tokens": 2277,
+    "completion_tokens": 916,
+    "total_tokens": 3193,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1893
+  },
+  "temperature": 0,
+  "source_sha256": "019b3db373fe16a14160bff9934f1537602bbdf6885be49b85e18fd8104d4a9b",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T13_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将扫地机器人的清扫目标限定为卧室",
+            "启动清扫"
+          ],
+          "must_not": [
+            "让扫地机器人进入卧室以外的房间清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将扫地机器人的清扫目标限定为卧室",
+            "启动清扫"
+          ],
+          "must_not": [
+            "让扫地机器人进入卧室以外的房间清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停刚才启动的清扫"
+          ],
+          "must_not": [
+            "继续清扫",
+            "让扫地机器人进入卧室以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将扫地机器人的清扫目标限定为卧室",
+            "启动清扫"
+          ],
+          "must_not": [
+            "让扫地机器人进入卧室以外的房间清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停刚才启动的清扫"
+          ],
+          "must_not": [
+            "继续清扫",
+            "让扫地机器人进入卧室以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "继续刚才暂停的清扫",
+            "保持清扫区域仅为卧室"
+          ],
+          "must_not": [
+            "让扫地机器人进入卧室以外的房间清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将扫地机器人的清扫目标限定为卧室",
+            "启动清扫"
+          ],
+          "must_not": [
+            "让扫地机器人进入卧室以外的房间清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停刚才启动的清扫"
+          ],
+          "must_not": [
+            "继续清扫",
+            "让扫地机器人进入卧室以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "继续刚才暂停的清扫",
+            "保持清扫区域不变（仍为卧室）"
+          ],
+          "must_not": [
+            "让扫地机器人进入卧室以外的房间清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "停止继续清扫",
+            "让扫地机器人返回充电座"
+          ],
+          "must_not": [
+            "继续清扫",
+            "声称已经充好电"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T13_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "将扫地机器人的清扫目标限定为卧室",
+            "启动清扫"
+          ],
+          "must_not": [
+            "让扫地机器人进入卧室以外的房间清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "暂停刚才启动的清扫"
+          ],
+          "must_not": [
+            "继续清扫",
+            "让扫地机器人进入卧室以外的房间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "继续刚才暂停的清扫",
+            "保持清扫区域不变（仍为卧室）"
+          ],
+          "must_not": [
+            "让扫地机器人进入卧室以外的房间清扫"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "停止继续清扫",
+            "让扫地机器人返回充电座"
+          ],
+          "must_not": [
+            "继续清扫",
+            "声称已经充好电"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询扫地机器人当前状态",
+            "如实说明当前是否在清扫",
+            "如实说明正在返回充电座而非已充好电"
+          ],
+          "must_not": [
+            "把返回充电座说成已经充好电",
+            "声称它仍在清扫（若实际未清扫）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

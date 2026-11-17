@@ -1,0 +1,237 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d5ed6fe3-7903-47a6-8dac-3a9fff0b3985",
+  "usage": {
+    "prompt_tokens": 2575,
+    "completion_tokens": 891,
+    "total_tokens": 3466,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2191
+  },
+  "temperature": 0,
+  "source_sha256": "590412412ebcf33a41d8ada5c2c9fad3f1f0d914d17df8e9a4d5b95f00f823d4",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T20_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一条明天7点的提醒",
+            "提醒内容为带钥匙"
+          ],
+          "must_not": [
+            "创建非提醒类安排",
+            "遗漏带钥匙内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一条明天7点的提醒",
+            "提醒内容为带钥匙"
+          ],
+          "must_not": [
+            "创建非提醒类安排",
+            "遗漏带钥匙内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的带钥匙提醒时间改为明天7点半"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "改动其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一条明天7点的提醒",
+            "提醒内容为带钥匙"
+          ],
+          "must_not": [
+            "创建非提醒类安排",
+            "遗漏带钥匙内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的带钥匙提醒时间改为明天7点半"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "改动其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一条明天7点的提醒",
+            "提醒内容为带钥匙"
+          ],
+          "must_not": [
+            "创建非提醒类安排",
+            "遗漏带钥匙内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的带钥匙提醒时间改为明天7点半"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "改动其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的带钥匙提醒",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T20_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一条明天7点的提醒",
+            "提醒内容为带钥匙"
+          ],
+          "must_not": [
+            "创建非提醒类安排",
+            "遗漏带钥匙内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的带钥匙提醒时间改为明天7点半"
+          ],
+          "must_not": [
+            "新建另一条提醒",
+            "改动其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排"
+          ],
+          "must_not": [
+            "新增任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的带钥匙提醒",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他无关安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的剩余安排",
+            "确认刚才那条带钥匙提醒是否已取消"
+          ],
+          "must_not": [
+            "新增或修改任何安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "4b90334c-ffa3-45ed-a24d-cdafd6932971",
+  "usage": {
+    "prompt_tokens": 1660,
+    "completion_tokens": 1177,
+    "total_tokens": 2837,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1276
+  },
+  "temperature": 0,
+  "source_sha256": "7d9f2b5d51eed943c4f0783926bb01714bf9c8b41ffa5fc1f859cd2aac01021a",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_016",
+      "issues": [
+        {
+          "kind": "ambiguous_rule",
+          "node_ids": [
+            "U1"
+          ],
+          "reason": "用户说“我说一个词，你接一个”，但参考让助手先开始说“苹果”，与用户先说的轮流顺序不一致；且“每人最多接3次”与“错了就重来”的触发条件未明确，参考未澄清。",
+          "evidence": "用户：我说一个词，你接一个……每人最多接3次，错了就重来。参考：好的，那我先开始。我说“苹果”，你接一个词语吧。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认进行词语接龙",
+            "遵守不能用重复词",
+            "遵守每人最多接3次",
+            "确认错了就重来"
+          ],
+          "must_not": [
+            "擅自改变用户先说的轮流顺序而不说明",
+            "忽略重复词限制",
+            "忽略次数上限"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认玩数字记忆游戏",
+            "确认用户说一串数字后助手重复",
+            "确认共玩3轮"
+          ],
+          "must_not": [
+            "提前替用户说数字",
+            "改变游戏为倒背或其他形式"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增限制：数字中不能出现0",
+            "确认出现0算助手输"
+          ],
+          "must_not": [
+            "忽略0的限制",
+            "把出现0算作用户输"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认词语联想游戏",
+            "确认用户给主题词后助手说出3个相关词",
+            "确认不能重复",
+            "确认共玩5轮"
+          ],
+          "must_not": [
+            "提前替用户给主题词",
+            "改变每轮3个词的数量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认若用户说动物类词，助手说植物类词",
+            "确认助手不能再说动物类词"
+          ],
+          "must_not": [
+            "忽略动物转植物的限制",
+            "仍说动物类词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认轮数由5轮改为3轮",
+            "确认其他规则不变"
+          ],
+          "must_not": [
+            "仍按5轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认数字倒背游戏",
+            "确认用户说3个数字后助手倒着说出",
+            "确认共玩4轮"
+          ],
+          "must_not": [
+            "提前替用户说数字",
+            "改变倒背形式"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认数字里不能有重复数字",
+            "确认如112不行"
+          ],
+          "must_not": [
+            "忽略重复数字限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认轮数由4轮改为2轮",
+            "确认其他规则不变"
+          ],
+          "must_not": [
+            "仍按4轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得玩2轮",
+            "回答数字不能有重复数字，如112不行"
+          ],
+          "must_not": [
+            "回答错误轮数",
+            "遗漏重复数字限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认词语分类记忆游戏",
+            "确认用户说5个词",
+            "确认助手按水果和蔬菜分类记住并说出",
+            "确认共玩3轮"
+          ],
+          "must_not": [
+            "提前替用户说词",
+            "改变每轮5个词的数量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认若词不是水果也不是蔬菜，助手要指出来",
+            "确认不能忽略非水果蔬菜词"
+          ],
+          "must_not": [
+            "忽略非水果蔬菜词",
+            "不指出异常词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认轮数由3轮改为2轮",
+            "确认其他规则不变"
+          ],
+          "must_not": [
+            "仍按3轮",
+            "改变其他规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得玩2轮",
+            "回答遇到不是水果也不是蔬菜的词要指出来"
+          ],
+          "must_not": [
+            "回答错误轮数",
+            "遗漏异常词处理规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话总结游戏规则",
+            "总结包含5个词、水果蔬菜分类、共2轮、非水果蔬菜词要指出"
+          ],
+          "must_not": [
+            "总结遗漏轮数或异常词规则",
+            "总结成多句或偏离规则"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

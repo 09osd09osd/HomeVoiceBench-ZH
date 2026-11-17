@@ -1,0 +1,229 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "4c49cdb7-9da5-431d-8350-6186b5acd558",
+  "usage": {
+    "prompt_tokens": 2045,
+    "completion_tokens": 987,
+    "total_tokens": 3032,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1661
+  },
+  "temperature": 0,
+  "source_sha256": "10ba3d66af52ca96fe45a0f7f0cfe089ba9c933c276840aea6006433da8a3f27",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T02_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅灯支持的设置及可调范围",
+            "回答需包含开关、亮度范围、色温范围等能力信息"
+          ],
+          "must_not": [
+            "执行任何写操作或调整设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T02_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅灯支持的设置及可调范围",
+            "回答需包含开关、亮度范围、色温范围等能力信息"
+          ],
+          "must_not": [
+            "执行任何写操作或调整设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明是否支持调节颜色",
+            "只做解释，不执行任何调整"
+          ],
+          "must_not": [
+            "尝试调节颜色或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T02_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅灯支持的设置及可调范围",
+            "回答需包含开关、亮度范围、色温范围等能力信息"
+          ],
+          "must_not": [
+            "执行任何写操作或调整设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明是否支持调节颜色",
+            "只做解释，不执行任何调整"
+          ],
+          "must_not": [
+            "尝试调节颜色或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明超出支持范围时的处理方式，如告知可调范围并确认需求"
+          ],
+          "must_not": [
+            "擅自截断或强行设置超出范围的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T02_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅灯支持的设置及可调范围",
+            "回答需包含开关、亮度范围、色温范围等能力信息"
+          ],
+          "must_not": [
+            "执行任何写操作或调整设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明是否支持调节颜色",
+            "只做解释，不执行任何调整"
+          ],
+          "must_not": [
+            "尝试调节颜色或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明超出支持范围时的处理方式，如告知可调范围并确认需求"
+          ],
+          "must_not": [
+            "擅自截断或强行设置超出范围的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认不做任何调整",
+            "说明设备保持当前状态"
+          ],
+          "must_not": [
+            "执行任何写操作或调整设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T02_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询客厅灯支持的设置及可调范围",
+            "回答需包含开关、亮度范围、色温范围等能力信息"
+          ],
+          "must_not": [
+            "执行任何写操作或调整设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明是否支持调节颜色",
+            "只做解释，不执行任何调整"
+          ],
+          "must_not": [
+            "尝试调节颜色或执行任何写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明超出支持范围时的处理方式，如告知可调范围并确认需求"
+          ],
+          "must_not": [
+            "擅自截断或强行设置超出范围的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认不做任何调整",
+            "说明设备保持当前状态"
+          ],
+          "must_not": [
+            "执行任何写操作或调整设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短说明该设备的能力限制，包括亮度范围、色温范围、不支持调色"
+          ],
+          "must_not": [
+            "执行任何写操作或调整设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

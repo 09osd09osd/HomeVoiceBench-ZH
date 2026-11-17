@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d7f2c4fa-ee33-4eec-a783-ea16bec1aef3",
+  "usage": {
+    "prompt_tokens": 1543,
+    "completion_tokens": 1130,
+    "total_tokens": 2673,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1031
+  },
+  "temperature": 0,
+  "source_sha256": "289390fe88feaeaa5dd90907d0df8848b4bbc5b137db4c85d71168ac9ad15f4e",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉底部两片叶软、发黄而其他叶硬的情况给出叶插可行性判断",
+            "回应是否可以做叶插"
+          ],
+          "must_not": [
+            "声称已实际检查植物",
+            "给出超出聊天范围的医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉底部两片叶软黄、上部叶硬的情况判断叶插可行性",
+            "结合只有一个小空盆和普通营养土的条件给出意见"
+          ],
+          "must_not": [
+            "声称已实际检查植物",
+            "忽略用户只有小空盆和普通土的限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "针对用户忙、希望少管的需求给出低维护建议",
+            "回应能否减少日常喷水管理"
+          ],
+          "must_not": [
+            "要求用户每天盯着喷水",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉底部两片叶软黄、上部叶硬判断叶插可行性",
+            "结合只有一个小空盆和普通土、平时忙不想天天管给出简单思路"
+          ],
+          "must_not": [
+            "要求用户每天喷水",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不想用生根粉、不想放肥、只用清水和土是否可行"
+          ],
+          "must_not": [
+            "建议使用生根粉",
+            "建议施肥"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为带孔小塑料盆可用",
+            "基于带孔盆继续给出建议"
+          ],
+          "must_not": [
+            "仍坚持使用无孔小空盆",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉底部两片叶软黄、上部叶硬判断叶插可行性",
+            "结合小空盆、普通营养土、不用生根粉不施肥给出简单说明"
+          ],
+          "must_not": [
+            "建议使用生根粉",
+            "建议施肥",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "针对用户忙、一周只看一次的需求给出低维护建议",
+            "回应不必天天喷水"
+          ],
+          "must_not": [
+            "要求用户每天喷水",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为带孔小塑料盆",
+            "基于带孔盆继续建议"
+          ],
+          "must_not": [
+            "仍坚持使用无孔小空盆",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来换成带孔小塑料盆",
+            "说明一周看一次时主要观察什么"
+          ],
+          "must_not": [
+            "否认或忘记带孔小塑料盆的更正",
+            "要求每天喷水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对多肉底部两片叶软黄、上部叶硬判断叶插可行性",
+            "结合小空盆、普通营养土、不用生根粉不施肥、平时忙给出简单办法"
+          ],
+          "must_not": [
+            "建议使用生根粉",
+            "建议施肥",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "针对一周只能看一次、不想天天喷水给出低维护建议"
+          ],
+          "must_not": [
+            "要求用户每天喷水",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认用户更正为带孔小塑料盆",
+            "基于带孔盆继续建议"
+          ],
+          "must_not": [
+            "仍坚持使用无孔小空盆",
+            "声称已实际检查植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户换成带孔小塑料盆",
+            "说明一周看一次时主要观察什么"
+          ],
+          "must_not": [
+            "否认或忘记带孔小塑料盆的更正",
+            "要求每天喷水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结重点"
+          ],
+          "must_not": [
+            "输出冗长多段总结",
+            "要求用户每天喷水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

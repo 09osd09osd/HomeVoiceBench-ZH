@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C05_005",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "洗衣晾晒和叠衣分工",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261121,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C05_001-005.json"
+      "data/authoring/C05_001-005.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -1135,7 +1136,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1914,7 +1915,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1947,24 +1948,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -2099,7 +2100,134 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "围绕洗衣、晾衣、叠衣分工起头组织说法"
+          ],
+          "must_not": [
+            "擅自指定最终分工",
+            "执行设备写操作"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "记录用户早上出门早、晾衣不便",
+            "记录用户晚上可负责叠衣"
+          ],
+          "must_not": [
+            "安排用户早上晾衣",
+            "忽略用户可叠衣"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "更正为用户叠衣只负责周一和周三"
+          ],
+          "must_not": [
+            "仍称用户每天可叠衣",
+            "遗漏仅周一和周三"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "确认用户叠衣只负责周一和周三",
+            "就剩余洗衣和晾晒给出合理安排建议"
+          ],
+          "must_not": [
+            "否认周一和周三",
+            "把叠衣安排给用户其他天"
+          ]
+        },
+        {
+          "node_id": "U5",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "用简短语言收尾并说清分工"
+          ],
+          "must_not": [
+            "输出冗长展开",
+            "引入未讨论的新分工"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -2108,31 +2236,32 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "你可以说：洗衣、晾晒和叠衣想分开安排，看看谁负责哪一段，别都堆到一个人身上。只提事情，不评价谁做得多。"
+        "assistant_text": "预期要点：围绕洗衣、晾衣、叠衣分工起头组织说法。避免：擅自指定最终分工；执行设备写操作。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "可以这样讲：我早上出门早，晾衣服需要别人帮忙，晚上叠衣服我可以负责。把时间和能做的部分说清楚。"
+        "assistant_text": "预期要点：记录用户早上出门早、晾衣不便；记录用户晚上可负责叠衣。避免：安排用户早上晾衣；忽略用户可叠衣。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好的，改成：我早上出门早，晾衣服不方便；叠衣服我只负责周一和周三，其他时间需要大家再分。"
+        "assistant_text": "预期要点：更正为用户叠衣只负责周一和周三。避免：仍称用户每天可叠衣；遗漏仅周一和周三。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，你叠衣服只负责周一和周三。剩下的洗衣和晾晒可以按天轮，比如谁在家谁负责晾，洗衣提前一晚放好，大家再确认。"
+        "assistant_text": "预期要点：确认用户叠衣只负责周一和周三；就剩余洗衣和晾晒给出合理安排建议。避免：否认周一和周三；把叠衣安排给用户其他天。"
       },
       {
         "node_id": "U5",
         "calls": [],
-        "assistant_text": "简短收尾：洗衣大家轮着来，晾衣服谁方便谁做，叠衣服你负责周一和周三，其余时间再商量。这样分工清楚，也不给谁贴标签。"
+        "assistant_text": "预期要点：用简短语言收尾并说清分工。避免：输出冗长展开；引入未讨论的新分工。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -2144,7 +2273,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

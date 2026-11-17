@@ -1,0 +1,263 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ff56f31f-15f3-4c03-98c3-044be6f4fd23",
+  "usage": {
+    "prompt_tokens": 2446,
+    "completion_tokens": 1233,
+    "total_tokens": 3679,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1934
+  },
+  "temperature": 0,
+  "source_sha256": "32e542940e64274fbc1c6b4e83845aa2d5e0edaf716fb8812f9e2a9e046c1e6c",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C06_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户与姐姐因耳机产生的误会给出开口建议",
+            "建议应包含澄清事实（耳机是妈妈收进抽屉）并表达想把话说开",
+            "语气平和、不逼迫对方立刻回应"
+          ],
+          "must_not": [
+            "认定用户确实偷拿耳机",
+            "建议争吵或指责姐姐",
+            "编造用户未提及的事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户向父亲解释生活费开销给出沟通建议",
+            "建议应说明钱用于教材和修自行车而非乱花",
+            "建议应兼顾不引发争吵"
+          ],
+          "must_not": [
+            "认定用户乱花钱",
+            "建议隐瞒实际开销",
+            "编造用户未提及的消费"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议应表达只让父亲知道大开销、几十块小钱不必报备",
+            "建议应自然表达个人空间边界"
+          ],
+          "must_not": [
+            "要求用户每笔小钱都报备",
+            "否定用户希望保留空间的诉求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户与弟弟因飞机模型产生的误会给出开口建议",
+            "建议应包含先理解弟弟情绪并澄清自己没进房间",
+            "建议应避免显得推卸责任"
+          ],
+          "must_not": [
+            "认定用户碰坏模型",
+            "建议直接否认而不顾弟弟情绪",
+            "编造用户未提及的情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议应先安抚弟弟情绪再说明事实",
+            "建议应明确不替自己认没做过的事"
+          ],
+          "must_not": [
+            "建议直接说“不是我”而不先安抚",
+            "建议用户背锅认错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的时间“前天下午”组织表达",
+            "建议应保持先接情绪再讲事实的语气"
+          ],
+          "must_not": [
+            "继续使用“昨天”这一时间",
+            "认定用户碰坏模型"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户向母亲解释未接电话给出沟通建议",
+            "建议应说明当时在开会手机静音",
+            "建议应先表达让母亲担心的歉意"
+          ],
+          "must_not": [
+            "认定用户故意不理母亲",
+            "建议找借口推脱",
+            "编造用户未提及的原因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议应表达不是故意不接、忙完会回",
+            "建议应表达不希望被一直追问的边界"
+          ],
+          "must_not": [
+            "建议敷衍或完全回避母亲",
+            "要求用户每次详细解释一堆"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的“四个电话”组织表达",
+            "建议应保持先安抚的语气"
+          ],
+          "must_not": [
+            "继续使用“三个电话”这一数量",
+            "认定用户故意不接"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认是四个电话",
+            "建议应表达不是故意不理母亲且不希望被连环打",
+            "建议应给出收尾句"
+          ],
+          "must_not": [
+            "否认四个电话",
+            "建议用户接受连环催打",
+            "认定用户故意不理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户与丈夫因临时聚餐未提前告知的误会给出开口建议",
+            "建议应说明是临时被叫去而非故意隐瞒",
+            "建议应先承认对方未被提前告知的感受"
+          ],
+          "must_not": [
+            "认定用户故意瞒着丈夫",
+            "建议争吵或指责丈夫",
+            "编造用户未提及的情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议应答应临时局先发消息",
+            "建议应表达不想事事报备、需要个人空间"
+          ],
+          "must_not": [
+            "要求用户每次出门都像请假报备",
+            "否定丈夫会担心的合理性"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的时间“上周五晚上”组织表达",
+            "建议应保持先认感受再说明的态度"
+          ],
+          "must_not": [
+            "继续使用“昨天”这一时间",
+            "认定用户故意隐瞒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认是上周五",
+            "建议应表达不是故意瞒丈夫且不想每回都报备",
+            "建议应给出收尾句"
+          ],
+          "must_not": [
+            "否认上周五",
+            "要求用户每回都报备",
+            "认定用户故意隐瞒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话收尾",
+            "收尾应包含道歉、以后临时局先发消息、以及不想被当成请假的边界"
+          ],
+          "must_not": [
+            "输出过长内容",
+            "遗漏边界表达",
+            "认定用户故意隐瞒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,9 @@ from homevoice.sandbox import validate
 from homevoice.speech_text import normalize,VERSION
 from homevoice.runner import OFFICIAL
 from homevoice.judge_schema import validate_judgment
-from scripts.judge_runs import PROMPT,EVIDENCE_VERSION
+from scripts.judge_runs import PROMPT,EVIDENCE_VERSION,judgment_current
+from homevoice.revision import protocol_metadata,replay
+from homevoice.grading import grade_rules
 def read(p):return json.loads(p.read_text('utf-8'))
 def sha(p):
     with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
@@ -46,6 +48,12 @@ for system in ['edge_native','qwen35_2b','qwen35_4b']:
         try:
             r=read(p);validate(r,run_schema);c=cases[r['case_id']]
             if r['case_sha256']!=byid[r['case_id']]['canonical_sha256']:raise ValueError('run did not use frozen case')
+            if r.get('schema_version')!='0.3.0' or r.get('revision',{}).get('benchmark_version')!='0.3.0':raise ValueError('old run protocol')
+            expected_protocol=protocol_metadata(c,r['revision']['execution_origin'])
+            if any(r['revision'].get(k)!=v for k,v in expected_protocol.items()):raise ValueError('revision protocol mismatch')
+            sim,differences=replay(c,r)
+            if differences:raise ValueError('actual trace cannot replay under published sandbox')
+            if grade_rules(c,sim)!=r['rule_checks']:raise ValueError('saved deterministic checks differ from replay')
             if r['input_modality']!='audio' or r['normalizer_version']!=VERSION:raise ValueError('input/normalizer mismatch')
             expected={'do_sample':False,'max_tokens':256,'seed':42} if system=='edge_native' else OFFICIAL
             if r['generation']!=expected:raise ValueError('generation setting mismatch')
@@ -73,7 +81,7 @@ for system in ['edge_native','qwen35_2b','qwen35_4b']:
                 check_audio(incomplete['input_audio'],incomplete['input_audio_sha256'])
             j=r.get('audio_judge')
             if j:
-                if j.get('prompt_sha256')!=hashlib.sha256(PROMPT.encode()).hexdigest() or j.get('evidence_version')!=EVIDENCE_VERSION:raise ValueError('stale judgment evidence scope')
+                if not judgment_current(c,r):raise ValueError('stale complete judgment evidence')
                 d=validate_judgment(j['result'],[d['id'] for d in c['evaluation']['dimensions']],[x['id'] for x in c['evaluation']['checks'] if x['method']=='semantic_judge'],[t['user_turn_index'] for t in r['turns']])
                 if j['requested_model']!='qwen3.8-omni-flash' or j['temperature']!=0 or j['model_answer_text_supplied'] is not False:raise ValueError('wrong judge modality/config')
                 if j['audio_sha256']!=[t['assistant_audio']['sha256'] for t in r['turns']]:raise ValueError('judge audio mismatch')

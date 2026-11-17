@@ -1,0 +1,250 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6ced513d-cedf-4864-b4c5-6b42390ba487",
+  "usage": {
+    "prompt_tokens": 1444,
+    "completion_tokens": 978,
+    "total_tokens": 2422,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 932
+  },
+  "temperature": 0,
+  "source_sha256": "37ba47365b4e1f1290cb57f02ac932eb506415d3a97bd5608c8b313692457ae2",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "心里选定一个厨房常见物品作为谜底",
+            "一次只给一条提示",
+            "不直接说出答案",
+            "用户猜到时再确认"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "选定一种能带出门的饮品作为谜底",
+            "每次只给一句提示",
+            "不提前揭晓答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "谜底不是含酒精饮品",
+            "继续给一条提示"
+          ],
+          "must_not": [
+            "给出含酒精的谜底",
+            "提前揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "选定客厅或卧室常用物品作为谜底",
+            "一次给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "谜底不是电器类",
+            "继续给一条提示"
+          ],
+          "must_not": [
+            "给出电器类谜底",
+            "提前揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将位置更正为书房",
+            "记住更正后继续给提示"
+          ],
+          "must_not": [
+            "仍按客厅或卧室给提示",
+            "提前揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "选定放在笔袋或书桌上的文具作为谜底",
+            "一次只给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "谜底不是带电的",
+            "继续给一条提示"
+          ],
+          "must_not": [
+            "给出带电文具作为谜底",
+            "提前揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将位置更正为放在书包里",
+            "记住改动后继续给提示"
+          ],
+          "must_not": [
+            "仍按笔袋或书桌给提示",
+            "提前揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答更正后的位置是放在书包里"
+          ],
+          "must_not": [
+            "回答成笔袋或书桌"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "选定能放进包里、用来擦东西的日常物品作为谜底",
+            "一次只给一条提示",
+            "不直接说答案"
+          ],
+          "must_not": [
+            "提前揭晓谜底",
+            "一次给多条提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "谜底不是电子产品",
+            "继续给一条提示"
+          ],
+          "must_not": [
+            "给出电子产品作为谜底",
+            "提前揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将用途更正为用来装东西",
+            "记住变化后继续给提示"
+          ],
+          "must_not": [
+            "仍按用来擦东西给提示",
+            "提前揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用途已改为用来装东西",
+            "再给最后一条提示"
+          ],
+          "must_not": [
+            "回答成用来擦东西",
+            "提前揭晓答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾回应"
+          ],
+          "must_not": [
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

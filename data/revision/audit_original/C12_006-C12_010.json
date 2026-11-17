@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "5d1a82ea-5039-4af4-9083-88a66d806cd3",
+  "usage": {
+    "prompt_tokens": 1688,
+    "completion_tokens": 1092,
+    "total_tokens": 2780,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1304
+  },
+  "temperature": 0,
+  "source_sha256": "86b768c4b51f60af2feff865d5da60e9d363794b8031b55df3fd3b317a2b8680",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单、不太长的英文练习句",
+            "语气照顾用户疲惫状态，鼓励慢慢来"
+          ],
+          "must_not": [
+            "提供多句或过长的英文练习内容",
+            "引入与练一句简单英文无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单、不太长的英文练习句",
+            "语气照顾用户疲惫状态，鼓励慢慢来"
+          ],
+          "must_not": [
+            "提供多句或过长的英文练习内容",
+            "引入与练一句简单英文无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成一个比上一句更短的英文句子",
+            "保持简单、适合疲惫状态"
+          ],
+          "must_not": [
+            "继续使用上一句较长的句子",
+            "提供多句或过长的英文练习内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单、不太长的英文练习句",
+            "语气照顾用户疲惫状态，鼓励慢慢来"
+          ],
+          "must_not": [
+            "提供多句或过长的英文练习内容",
+            "引入与练一句简单英文无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成一个比上一句更短的英文句子",
+            "保持简单、适合疲惫状态"
+          ],
+          "must_not": [
+            "继续使用上一句较长的句子",
+            "提供多句或过长的英文练习内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正，把练习句改为表达要一杯水的英文",
+            "保持句子简短简单"
+          ],
+          "must_not": [
+            "继续坚持茶相关的句子",
+            "忽略用户改要水的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单、不太长的英文练习句",
+            "语气照顾用户疲惫状态，鼓励慢慢来"
+          ],
+          "must_not": [
+            "提供多句或过长的英文练习内容",
+            "引入与练一句简单英文无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成一个比上一句更短的英文句子",
+            "保持简单、适合疲惫状态"
+          ],
+          "must_not": [
+            "继续使用上一句较长的句子",
+            "提供多句或过长的英文练习内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正，把练习句改为表达要一杯水的英文",
+            "保持句子简短简单"
+          ],
+          "must_not": [
+            "继续坚持茶相关的句子",
+            "忽略用户改要水的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户已改为要一杯水",
+            "再说一遍对应的英文句子"
+          ],
+          "must_not": [
+            "说成用户仍要茶",
+            "否认或忘记用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单、不太长的英文练习句",
+            "语气照顾用户疲惫状态，鼓励慢慢来"
+          ],
+          "must_not": [
+            "提供多句或过长的英文练习内容",
+            "引入与练一句简单英文无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成一个比上一句更短的英文句子",
+            "保持简单、适合疲惫状态"
+          ],
+          "must_not": [
+            "继续使用上一句较长的句子",
+            "提供多句或过长的英文练习内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正，把练习句改为表达要一杯水的英文",
+            "保持句子简短简单"
+          ],
+          "must_not": [
+            "继续坚持茶相关的句子",
+            "忽略用户改要水的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户已改为要一杯水",
+            "再说一遍对应的英文句子"
+          ],
+          "must_not": [
+            "说成用户仍要茶",
+            "否认或忘记用户的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "可回顾当天练习的水相关句子"
+          ],
+          "must_not": [
+            "展开长篇新内容",
+            "引入与收尾无关的新任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

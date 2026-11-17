@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "149461b4-0cb7-49f5-99b3-47a9e49ddc27",
+  "usage": {
+    "prompt_tokens": 1617,
+    "completion_tokens": 1108,
+    "total_tokens": 2725,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1617
+  },
+  "temperature": 0,
+  "source_sha256": "10a0186a436918d9a7644443d9293293cdd636aecd1cb8eefc47dd6d1ae6544b",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C01_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户分享的橘猫见闻",
+            "可围绕橘猫在花坛边蹲着或是否靠近进行自然追问"
+          ],
+          "must_not": [
+            "虚构用户未提及的细节作为事实",
+            "禁止用户继续分享"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户做番茄炒蛋及番茄放多偏酸的情况",
+            "可给出减少番茄用量的建议"
+          ],
+          "must_not": [
+            "否定用户尝试或嘲讽",
+            "给出与番茄炒蛋无关的强行指令"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户喜欢甜口但怕太甜的矛盾",
+            "可建议少量加糖、逐步调整"
+          ],
+          "must_not": [
+            "强制要求加固定大量糖",
+            "忽略用户怕太甜的顾虑"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户周末去爬香山的计划",
+            "可询问出发时间或提醒人流"
+          ],
+          "must_not": [
+            "擅自更改爬山地点",
+            "否定用户运动计划"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户希望八点前到山脚以避开人流",
+            "可围绕早出门或路程时间追问"
+          ],
+          "must_not": [
+            "忽略八点前到山脚这一时间要求",
+            "建议晚于八点到达"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别并接受用户将地点从香山更正为百望山",
+            "回应百望山离住处更近"
+          ],
+          "must_not": [
+            "继续坚持地点是香山",
+            "把更正误认为其他地点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户翻出旧照片及小时候照片的感受",
+            "可询问是否有特别喜欢的照片"
+          ],
+          "must_not": [
+            "虚构照片内容作为事实",
+            "贬低用户怀旧"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户小学毕业全班合影及站在最后一排",
+            "可围绕合影或站位自然追问"
+          ],
+          "must_not": [
+            "否认用户所述照片内容",
+            "擅自补充照片中不存在的人物细节为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别并接受用户将合影从小学毕业更正为初中毕业",
+            "回应初中毕业合影及当时身高情况"
+          ],
+          "must_not": [
+            "继续坚持是小学毕业合影",
+            "忽略用户更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户已更正为初中毕业合影",
+            "可提及用户站在最后一排"
+          ],
+          "must_not": [
+            "回答成小学毕业合影",
+            "表示完全不记得或拒绝回忆"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户邻居养小狗一直叫有点吵",
+            "可询问是否影响休息"
+          ],
+          "must_not": [
+            "断言狗叫一定会持续很久作为事实",
+            "建议伤害动物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户白天还好但晚上狗叫厉害且睡觉轻",
+            "可建议与邻居沟通或调整狗夜间安置"
+          ],
+          "must_not": [
+            "忽略用户睡眠受影响",
+            "建议用户忍气吞声且不提供任何可行沟通方向"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别并接受用户将邻居从隔壁新搬来更正为楼下邻居",
+            "回应楼下声音传上来更明显"
+          ],
+          "must_not": [
+            "继续坚持是隔壁新搬来的邻居",
+            "忽略用户更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户已更正为楼下邻居",
+            "明确不是隔壁新搬来的"
+          ],
+          "must_not": [
+            "回答成隔壁新搬来的邻居",
+            "表示完全不记得或拒绝回忆"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "按用户要求简单总结楼下邻居的狗晚上叫影响睡觉",
+            "可简要建议先与邻居沟通"
+          ],
+          "must_not": [
+            "展开长篇大论",
+            "忽略用户要求简单总结"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

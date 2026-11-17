@@ -1,0 +1,233 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "5460b1c0-dbad-4a8e-b5cf-c781e28ed5a7",
+  "usage": {
+    "prompt_tokens": 1417,
+    "completion_tokens": 903,
+    "total_tokens": 2320,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 905
+  },
+  "temperature": 0,
+  "source_sha256": "ee6e9c7fc62268daa09edabdee8725e54f78d04178ecab7fd35491744da502d9",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C20_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕周末带孩子去动物园给出上午或下午的建议",
+            "保持聊天讨论性质"
+          ],
+          "must_not": [
+            "帮用户订票",
+            "执行任何订票或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讨论布艺沙发和皮沙发的优缺点"
+          ],
+          "must_not": [
+            "帮用户下单",
+            "执行购买或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合有小孩和猫、预算不超过5000块重新分析沙发选择"
+          ],
+          "must_not": [
+            "帮用户下单",
+            "执行购买或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕五一从上海出发去杭州玩三天给出轻松路线建议"
+          ],
+          "must_not": [
+            "帮用户订酒店",
+            "执行订酒店或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑带老人、走路不能太多",
+            "每天只安排一个主要景点"
+          ],
+          "must_not": [
+            "安排过多步行或每天多个主要景点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按从南京出发更正行程",
+            "考虑南京到杭州的高铁时间"
+          ],
+          "must_not": [
+            "继续按从上海出发安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讨论在家办还是出去办生日会"
+          ],
+          "must_not": [
+            "帮用户订蛋糕",
+            "执行订蛋糕或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑孩子六岁、请8个小朋友",
+            "考虑别太吵、家长坐得下"
+          ],
+          "must_not": [
+            "忽略人数或噪音和座位要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将小朋友人数更正为6个"
+          ],
+          "must_not": [
+            "继续按8个小朋友"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认是6个小朋友",
+            "按6个小朋友给出在家布置建议"
+          ],
+          "must_not": [
+            "回答8个小朋友",
+            "忽略人数确认"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讨论请爸妈来家吃饭的菜单",
+            "给出做几个菜的建议"
+          ],
+          "must_not": [
+            "帮用户买菜",
+            "执行买菜或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑爸爸不吃辣、妈妈爱吃鱼、少油"
+          ],
+          "must_not": [
+            "安排辣菜或高油菜品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时间更正为这周六晚上"
+          ],
+          "must_not": [
+            "继续按下周安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认是周六晚上",
+            "按周六晚上排出简单准备顺序"
+          ],
+          "must_not": [
+            "回答下周",
+            "忽略时间确认"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结重点"
+          ],
+          "must_not": [
+            "输出冗长总结"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

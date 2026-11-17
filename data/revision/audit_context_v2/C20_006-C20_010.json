@@ -1,0 +1,246 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e38af9f8-f1f2-4e64-9f01-473910e2dc09",
+  "usage": {
+    "prompt_tokens": 1907,
+    "completion_tokens": 971,
+    "total_tokens": 2878,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1395
+  },
+  "temperature": 0,
+  "source_sha256": "b3584fae7d8c92d547d24674026f7b8575a496b99cc723122b9a2be50f5780f2",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C20_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户有点累、想简单聊聊",
+            "就周末天气好时全家大扫除给出简短建议"
+          ],
+          "must_not": [
+            "调用或声称执行设备写操作",
+            "给出冗长复杂的大扫除计划"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "比较米色和浅灰色窗帘的耐看程度",
+            "给出简短建议"
+          ],
+          "must_not": [
+            "替用户做最终购买决定",
+            "调用写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合用户喜欢暖色和家里有小孩、耐脏重要来建议",
+            "保持简短"
+          ],
+          "must_not": [
+            "忽略耐脏需求",
+            "忽略暖色偏好"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "比较湖边和公园两条路线",
+            "给出简短选择建议"
+          ],
+          "must_not": [
+            "替用户做最终决定",
+            "调用写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合爸妈腿脚一般、不想走太久、最好有地方坐来建议",
+            "保持简短"
+          ],
+          "must_not": [
+            "忽略休息和少走路需求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为岳父母腿脚一般",
+            "基于岳父母腿脚一般继续给简短建议"
+          ],
+          "must_not": [
+            "继续称爸妈",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "就晚饭后全家散步几点出门给出简短建议"
+          ],
+          "must_not": [
+            "调用写操作",
+            "设定提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合孩子八点半洗漱、散步不超过四十分钟来建议",
+            "保持简短"
+          ],
+          "must_not": [
+            "忽略四十分钟上限",
+            "忽略八点半洗漱"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为孩子九点洗漱",
+            "基于九点洗漱调整简短建议"
+          ],
+          "must_not": [
+            "继续使用八点半洗漱",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆孩子九点洗漱",
+            "给出简短散步路线建议"
+          ],
+          "must_not": [
+            "说错洗漱时间",
+            "忽略路线建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐好养、不太占地方的花",
+            "保持简短"
+          ],
+          "must_not": [
+            "推荐难养或占地大的植物",
+            "调用写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐能开花、颜色亮、不太招虫的植物",
+            "保持简短"
+          ],
+          "must_not": [
+            "忽略开花和颜色亮需求",
+            "忽略少招虫需求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为窗台、地方更小",
+            "基于窗台更小给简短建议"
+          ],
+          "must_not": [
+            "继续按阳台建议",
+            "忽略地方更小"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆是窗台",
+            "给出窗台浇水注意事项"
+          ],
+          "must_not": [
+            "说成阳台",
+            "忽略浇水问题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用两句左右简短总结",
+            "包含窗台选小盆花和浇水要点"
+          ],
+          "must_not": [
+            "展开长篇总结",
+            "忽略用户累了要简短"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

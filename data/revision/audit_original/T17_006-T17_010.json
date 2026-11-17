@@ -1,0 +1,235 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "53db665e-3bb4-4542-b4cc-4c54d38d3be5",
+  "usage": {
+    "prompt_tokens": 2095,
+    "completion_tokens": 880,
+    "total_tokens": 2975,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1711
+  },
+  "temperature": 0,
+  "source_sha256": "71ae6fcc43a054debde2c2b7a88caba78cbfad4b051fa853dec2c2e40cf87ecf",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T17_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室二氧化碳浓度",
+            "告知测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T17_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室二氧化碳浓度",
+            "告知测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房二氧化碳浓度"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T17_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室二氧化碳浓度",
+            "告知测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房二氧化碳浓度"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较卧室与厨房的二氧化碳读数"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T17_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室二氧化碳浓度",
+            "告知测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房二氧化碳浓度"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较卧室与厨房的二氧化碳读数"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明这些读数不能代表现场全部情况",
+            "指出读数有时效或传感器范围等局限"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "执行写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T17_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询卧室二氧化碳浓度",
+            "告知测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房二氧化碳浓度"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较卧室与厨房的二氧化碳读数"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明这些读数不能代表现场全部情况",
+            "指出读数有时效或传感器范围等局限"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "执行写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "重新查询卧室同一指标（二氧化碳浓度）"
+          ],
+          "must_not": [
+            "执行写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

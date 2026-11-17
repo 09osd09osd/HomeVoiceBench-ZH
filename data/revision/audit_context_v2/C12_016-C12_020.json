@@ -1,0 +1,235 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "99dd809e-c337-488f-bb9a-9c8f0bf8c66f",
+  "usage": {
+    "prompt_tokens": 2006,
+    "completion_tokens": 909,
+    "total_tokens": 2915,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1494
+  },
+  "temperature": 0,
+  "source_sha256": "88711f3cb425c902e505b5f75fee60c32617b46ea1c956f5dac3da02d5cbc2c3",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户提供的点菜句子给出自然度反馈",
+            "可提出更自然的说法建议"
+          ],
+          "must_not": [
+            "声称用户说过未出现的内容",
+            "执行点菜或下单等写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对问路句子给出自然度反馈"
+          ],
+          "must_not": [
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "给出请对方说慢一点的表达建议",
+            "结合前文问路句子"
+          ],
+          "must_not": [
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对请假句子给出自然度反馈"
+          ],
+          "must_not": [
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入“家里有点事”且不细化原因",
+            "保持请假句子自然"
+          ],
+          "must_not": [
+            "追问或编造具体请假原因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将请假时间从明天下午更正为后天上午",
+            "保留家里有点事"
+          ],
+          "must_not": [
+            "仍使用明天下午",
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对退换衣服句子给出自然度反馈"
+          ],
+          "must_not": [
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入购买时间说明",
+            "语气客气不强硬"
+          ],
+          "must_not": [
+            "使用强硬语气",
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将购买时间从昨天更正为上周六"
+          ],
+          "must_not": [
+            "仍使用昨天",
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆购买时间为上周六",
+            "复述更新后的句子"
+          ],
+          "must_not": [
+            "回答昨天",
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对自我介绍句子给出自然度反馈"
+          ],
+          "must_not": [
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入爱好“喜欢打羽毛球”且简洁"
+          ],
+          "must_not": [
+            "扩展过多爱好内容",
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将籍贯从湖南更正为湖北"
+          ],
+          "must_not": [
+            "仍使用湖南",
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆籍贯为湖北",
+            "复述更新后的整句"
+          ],
+          "must_not": [
+            "回答湖南",
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短总结自我介绍",
+            "包含湖北人和喜欢打羽毛球"
+          ],
+          "must_not": [
+            "遗漏更正后的籍贯",
+            "声称用户说过未出现的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b981fdb1-b480-4e7d-a9e0-a72cce59e2a5",
+  "usage": {
+    "prompt_tokens": 2258,
+    "completion_tokens": 892,
+    "total_tokens": 3150,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1874
+  },
+  "temperature": 0,
+  "source_sha256": "ae6916b7bee93dbb90dbc40f325d610bc2d63392ca921cd73466011233733821",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T08_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅那台空调",
+            "将目标温度设为24度"
+          ],
+          "must_not": [
+            "打开非客厅的空调",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T08_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅那台空调",
+            "将目标温度设为24度"
+          ],
+          "must_not": [
+            "打开非客厅的空调",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前打开的客厅空调设定温度改为27度"
+          ],
+          "must_not": [
+            "改动其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T08_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅那台空调",
+            "将目标温度设为24度"
+          ],
+          "must_not": [
+            "打开非客厅的空调",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前打开的客厅空调设定温度改为27度"
+          ],
+          "must_not": [
+            "改动其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅空调当前设定温度",
+            "查询客厅空调当前开关状态"
+          ],
+          "must_not": [
+            "调整空调设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T08_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅那台空调",
+            "将目标温度设为24度"
+          ],
+          "must_not": [
+            "打开非客厅的空调",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前打开的客厅空调设定温度改为27度"
+          ],
+          "must_not": [
+            "改动其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅空调当前设定温度",
+            "查询客厅空调当前开关状态"
+          ],
+          "must_not": [
+            "调整空调设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅空调",
+            "保留设定温度不清除"
+          ],
+          "must_not": [
+            "清除或改动温度设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T08_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "打开客厅那台空调",
+            "将目标温度设为24度"
+          ],
+          "must_not": [
+            "打开非客厅的空调",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将此前打开的客厅空调设定温度改为27度"
+          ],
+          "must_not": [
+            "改动其他设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅空调当前设定温度",
+            "查询客厅空调当前开关状态"
+          ],
+          "must_not": [
+            "调整空调设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭客厅空调",
+            "保留设定温度不清除"
+          ],
+          "must_not": [
+            "清除或改动温度设置",
+            "改动其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询客厅空调当前开关状态"
+          ],
+          "must_not": [
+            "改动其他设备",
+            "调整空调设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

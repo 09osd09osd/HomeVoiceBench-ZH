@@ -1,0 +1,253 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "fab138e5-295a-4f46-bc84-03454273b3fc",
+  "usage": {
+    "prompt_tokens": 1849,
+    "completion_tokens": 968,
+    "total_tokens": 2817,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1337
+  },
+  "temperature": 0,
+  "source_sha256": "cc342d06c811e21c8932da2906df2b3a2c6566b2e1b511f7eb57c4ddef4da83d",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单英文练习句",
+            "只给一句",
+            "句子简短不过长"
+          ],
+          "must_not": [
+            "给出多句英文练习",
+            "给出过长句子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单英文练习句",
+            "只给一句",
+            "句子简短不过长"
+          ],
+          "must_not": [
+            "给出多句英文练习",
+            "给出过长句子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成比上一句更短的英文句子",
+            "只给一句"
+          ],
+          "must_not": [
+            "给出比上一句更长的句子",
+            "给出多句英文练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单英文练习句",
+            "只给一句",
+            "句子简短不过长"
+          ],
+          "must_not": [
+            "给出多句英文练习",
+            "给出过长句子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成比上一句更短的英文句子",
+            "只给一句"
+          ],
+          "must_not": [
+            "给出比上一句更长的句子",
+            "给出多句英文练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把练习句改为要一杯水的英文",
+            "只给一句"
+          ],
+          "must_not": [
+            "继续使用茶的句子",
+            "给出多句英文练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单英文练习句",
+            "只给一句",
+            "句子简短不过长"
+          ],
+          "must_not": [
+            "给出多句英文练习",
+            "给出过长句子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成比上一句更短的英文句子",
+            "只给一句"
+          ],
+          "must_not": [
+            "给出比上一句更长的句子",
+            "给出多句英文练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把练习句改为要一杯水的英文",
+            "只给一句"
+          ],
+          "must_not": [
+            "继续使用茶的句子",
+            "给出多句英文练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户改成了要一杯水",
+            "复述要一杯水的英文句子"
+          ],
+          "must_not": [
+            "说用户仍要茶",
+            "否认用户改过内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句简单英文练习句",
+            "只给一句",
+            "句子简短不过长"
+          ],
+          "must_not": [
+            "给出多句英文练习",
+            "给出过长句子"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "换成比上一句更短的英文句子",
+            "只给一句"
+          ],
+          "must_not": [
+            "给出比上一句更长的句子",
+            "给出多句英文练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把练习句改为要一杯水的英文",
+            "只给一句"
+          ],
+          "must_not": [
+            "继续使用茶的句子",
+            "给出多句英文练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户改成了要一杯水",
+            "复述要一杯水的英文句子"
+          ],
+          "must_not": [
+            "说用户仍要茶",
+            "否认用户改过内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "可回顾要一杯水的英文句子"
+          ],
+          "must_not": [
+            "展开长篇新内容",
+            "引入新的复杂练习"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

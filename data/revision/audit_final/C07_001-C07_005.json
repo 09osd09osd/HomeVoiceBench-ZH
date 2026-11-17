@@ -1,0 +1,246 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9a1c30e8-4d9b-4f0d-a7fa-228535d6c653",
+  "usage": {
+    "prompt_tokens": 1463,
+    "completion_tokens": 1025,
+    "total_tokens": 2488,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 951
+  },
+  "temperature": 0,
+  "source_sha256": "e4975dcba54d913e7a1b0277bb3cde800028b87b33b5f8fc406f6e1822eb345a",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C07_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对半小时内整理换季厚衣服给出具体建议",
+            "考虑衣柜上层空箱子空间不大这一限制"
+          ],
+          "must_not": [
+            "建议购买新收纳工具作为必需步骤",
+            "忽略时间或空间限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对二十分钟整理客厅玩具给出分层收纳建议",
+            "利用三层收纳架进行合理分类"
+          ],
+          "must_not": [
+            "忽略二十分钟时间限制",
+            "忽略三层收纳架结构"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "孩子容易够到的地方不放小零件",
+            "保留最喜欢的五件玩具在外面"
+          ],
+          "must_not": [
+            "把细小零件放在孩子易够到的低层",
+            "把最喜欢的五件玩具全部收进收纳架"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对十五分钟快速整理厨房台面给出建议",
+            "只使用一个抽屉和两个台面角落"
+          ],
+          "must_not": [
+            "建议增加抽屉或台面角落数量",
+            "忽略十五分钟时间限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "不购买新收纳盒",
+            "尽量使用空玻璃罐和纸袋"
+          ],
+          "must_not": [
+            "建议购买新收纳盒",
+            "忽略现有玻璃罐和纸袋"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按二十五分钟重新安排",
+            "使用一个抽屉并利用柜子下面一层空位"
+          ],
+          "must_not": [
+            "仍按十五分钟安排",
+            "忽略柜子下面空层"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对半小时整理书房桌面给出建议",
+            "使用两层文件架和两个空纸箱"
+          ],
+          "must_not": [
+            "忽略半小时时间限制",
+            "忽略文件架和纸箱"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "常用物品一眼可见",
+            "尽量少用纸箱"
+          ],
+          "must_not": [
+            "把所有东西都塞进纸箱",
+            "让常用物品不可见"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按三层文件架和二十分钟重新安排"
+          ],
+          "must_not": [
+            "仍按两层文件架安排",
+            "仍按半小时安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认三层文件架和二十分钟",
+            "按此给出先做什么的顺序"
+          ],
+          "must_not": [
+            "否认用户更正为三层和二十分钟",
+            "仍按两层或半小时安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对二十分钟整理玄关鞋柜给出安排",
+            "按四层鞋柜进行规划"
+          ],
+          "must_not": [
+            "忽略二十分钟时间限制",
+            "忽略地上常穿鞋"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "最下层不放容易掉的鞋",
+            "留一个空层放快递"
+          ],
+          "must_not": [
+            "把容易掉的鞋放在最下层",
+            "不预留快递空层"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按五层鞋柜重新安排",
+            "时间仍为二十分钟"
+          ],
+          "must_not": [
+            "仍按四层鞋柜安排",
+            "改变二十分钟时间限制"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认鞋柜为五层",
+            "确认快递空层的位置和顺序"
+          ],
+          "must_not": [
+            "否认五层更正",
+            "忽略快递空层"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话收尾总结可执行步骤"
+          ],
+          "must_not": [
+            "输出冗长多段内容",
+            "忽略此前五层和快递空层设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

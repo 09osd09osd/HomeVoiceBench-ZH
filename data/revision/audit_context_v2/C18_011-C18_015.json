@@ -1,0 +1,238 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6d9148d9-de04-4f04-99a0-474a7a7ed7d7",
+  "usage": {
+    "prompt_tokens": 2432,
+    "completion_tokens": 1052,
+    "total_tokens": 3484,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1920
+  },
+  "temperature": 0,
+  "source_sha256": "bdf9b7993ab60d6a5fcae700c85c715547be8eb4587bc490064854751786a340",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户描述的多肉底部两片叶软黄、其他叶硬给出叶插可行性判断",
+            "提供简短叶插思路"
+          ],
+          "must_not": [
+            "声称能确认现场情况",
+            "给出医疗法律专业建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户只有小空盆和普通营养土的条件给出叶插可行性判断",
+            "提供简短叶插思路"
+          ],
+          "must_not": [
+            "声称能确认现场情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户想少管一点的诉求",
+            "给出低维护的叶插养护建议"
+          ],
+          "must_not": [
+            "要求用户每天喷水或每天查看"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户只有小空盆和普通土、平时忙的条件给出简单叶插思路"
+          ],
+          "must_not": [
+            "要求用户天天管",
+            "声称能确认现场情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不用生根粉和肥也可以尝试叶插",
+            "给出清水和土条件下的简单做法"
+          ],
+          "must_not": [
+            "要求使用生根粉",
+            "要求施肥"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回应用户更正：原小空盆无孔，改用带孔小塑料盆",
+            "按带孔小塑料盆给出后续建议"
+          ],
+          "must_not": [
+            "继续建议使用无孔盆直接种"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户有小空盆和普通营养土、不用生根粉和肥的条件给出简单叶插说明"
+          ],
+          "must_not": [
+            "要求使用生根粉",
+            "要求施肥",
+            "声称能确认现场情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户一周只看一次的节奏",
+            "给出不必天天喷水的养护建议"
+          ],
+          "must_not": [
+            "要求用户天天喷水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回应用户更正：原小空盆无排水孔，改用带孔小塑料盆",
+            "按带孔小塑料盆给出后续建议"
+          ],
+          "must_not": [
+            "继续建议使用无孔盆直接种"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户后来换成带孔小塑料盆",
+            "说明一周看一次时主要观察什么"
+          ],
+          "must_not": [
+            "否认用户已更正为带孔小塑料盆",
+            "要求频繁浇水或挪动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户只有普通营养土、不用生根粉和肥、平时忙的条件给出简单叶插办法"
+          ],
+          "must_not": [
+            "要求使用生根粉",
+            "要求施肥",
+            "声称能确认现场情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户一周只能看一次的节奏",
+            "给出不必天天喷水的养护建议"
+          ],
+          "must_not": [
+            "要求用户天天喷水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回应用户更正：原小空盆无孔，改用带孔小塑料盆",
+            "按带孔小塑料盆给出后续建议"
+          ],
+          "must_not": [
+            "继续建议使用无孔盆直接种"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户换成带孔小塑料盆",
+            "说明一周看一次时主要观察什么"
+          ],
+          "must_not": [
+            "否认用户已更正为带孔小塑料盆",
+            "要求频繁浇水或挪动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结叶插重点"
+          ],
+          "must_not": [
+            "输出冗长总结"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

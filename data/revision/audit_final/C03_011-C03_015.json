@@ -1,0 +1,249 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "4333a534-2e8f-4ccc-9896-ba466edab2a4",
+  "usage": {
+    "prompt_tokens": 1395,
+    "completion_tokens": 1080,
+    "total_tokens": 2475,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 883
+  },
+  "temperature": 0,
+  "source_sha256": "6072faf62aeb49bf29e00957b6bb1538900ad68e5ff5bbfabb62b1c307f3685f",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C03_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户加班到八点、很累的情绪",
+            "以倾听/共情为主，不提供建议"
+          ],
+          "must_not": [
+            "给出任何建议或解决方案",
+            "说教或分析"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户被领导当众批评后憋闷的情绪",
+            "以倾听/共情为主，不出主意"
+          ],
+          "must_not": [
+            "给出建议或主意",
+            "说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户不想听分析谁对谁错的意愿",
+            "继续以倾听/共情回应"
+          ],
+          "must_not": [
+            "分析谁对谁错",
+            "给出建议或主意"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户家里事多、喘不过气的情绪",
+            "以倾听/共情为主，不劝、不给办法"
+          ],
+          "must_not": [
+            "劝用户",
+            "急着给办法或建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户不想听“想开点”类话语的意愿",
+            "继续以倾听/共情回应"
+          ],
+          "must_not": [
+            "说“想开点”或类似劝慰套话",
+            "给办法或建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：不是这两天，而是这一个星期都这样",
+            "回应用户越堆越多的感受"
+          ],
+          "must_not": [
+            "仍说“这两天”",
+            "给办法或建议",
+            "劝用户想开点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户心里堵得慌的情绪",
+            "以倾听/共情为主，不讲大道理"
+          ],
+          "must_not": [
+            "讲大道理",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户不想被问接下来打算怎么办的意愿",
+            "继续以倾听/共情回应"
+          ],
+          "must_not": [
+            "询问接下来打算怎么办",
+            "讲大道理或给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：不是项目搞砸，而是汇报时出了岔子，项目本身没失败",
+            "回应用户的情绪"
+          ],
+          "must_not": [
+            "仍说项目搞砸/项目失败",
+            "讲大道理或给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户刚更正的内容：是汇报出岔子，不是项目失败",
+            "回应用户情绪"
+          ],
+          "must_not": [
+            "说项目失败或项目搞砸",
+            "讲大道理或给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C03_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户孩子发烧折腾、快撑不住的情绪",
+            "以倾听/共情为主，不给建议"
+          ],
+          "must_not": [
+            "给出建议",
+            "说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户不想听“当妈都这样”类话语的意愿",
+            "继续以倾听/共情回应"
+          ],
+          "must_not": [
+            "说“当妈都这样”或类似话",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：不是一整夜，而是半夜两点到早上六点断断续续没睡成",
+            "回应用户的疲惫"
+          ],
+          "must_not": [
+            "仍说“一整夜”",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得时间是半夜两点到早上六点，不是一整夜",
+            "回应用户情绪"
+          ],
+          "must_not": [
+            "说“一整夜”",
+            "给建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短收尾",
+            "语气温和，让用户歇会儿"
+          ],
+          "must_not": [
+            "展开长篇",
+            "再次给建议或说教"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

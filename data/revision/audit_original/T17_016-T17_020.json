@@ -1,0 +1,241 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "0091f207-38d7-4686-a010-2fb97fe89243",
+  "usage": {
+    "prompt_tokens": 2019,
+    "completion_tokens": 905,
+    "total_tokens": 2924,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1635
+  },
+  "temperature": 0,
+  "source_sha256": "539202231564a02924358f2aed0b464595c193deba577c945b31307967535e7f",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T17_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答客厅二氧化碳读数",
+            "回答测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T17_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答客厅二氧化碳读数",
+            "回答测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答厨房二氧化碳读数",
+            "回答测量时间"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T17_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答客厅二氧化碳读数",
+            "回答测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答厨房二氧化碳读数",
+            "回答测量时间"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较客厅与厨房的二氧化碳读数",
+            "指出哪个房间读数更高"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T17_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答客厅二氧化碳读数",
+            "回答测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答厨房二氧化碳读数",
+            "回答测量时间"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较客厅与厨房的二氧化碳读数",
+            "指出哪个房间读数更高"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明这些读数不能完全反映现场全部情况",
+            "指出读数时效性或传感器覆盖范围等局限"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T17_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答客厅二氧化碳读数",
+            "回答测量时间",
+            "仅执行只读查询"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答厨房二氧化碳读数",
+            "回答测量时间"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较客厅与厨房的二氧化碳读数",
+            "指出哪个房间读数更高"
+          ],
+          "must_not": [
+            "调节任何设备",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明这些读数不能完全反映现场全部情况",
+            "指出读数时效性或传感器覆盖范围等局限"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "重新查询客厅二氧化碳读数",
+            "回答读数与测量时间"
+          ],
+          "must_not": [
+            "执行任何写操作或设备调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C06_003",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "弟弟误会我弄坏他模型",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261119,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C06_001-005.json"
+      "data/authoring/C06_001-005.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -928,7 +929,7 @@
     "nodes": [
       {
         "id": "U1",
-        "user_text": "我弟的飞机模型翅膀断了，他一口咬定是我碰掉的，其实我根本没进他房间。我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
+        "user_text": "我弟的飞机模型翅膀断了，他一口咬定是我昨天碰掉的，其实我昨天下午不在家，也没进他房间。我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
         "tone": "平静",
         "next_node_id": "U2",
         "clarification_branches": [],
@@ -981,9 +982,9 @@
           "asset_id": "C06_003_U1",
           "node_id": "U1",
           "status": "verified",
-          "path": "assets/audio/input/5f62d1c6ecd6414bbdd2507108dffb6b.wav",
-          "sha256": "969c32a807cb9dd2286da4ebcffee4a956df1358a626e7948991314db6868a63",
-          "duration_s": 7.68,
+          "path": "assets/audio/input/9f18b746d1fce16db65e30ad60d68ead.wav",
+          "sha256": "f4b8d4cbf2362ffa89abb9154228e069e23918e1c62490ee778be8c57d3d3956",
+          "duration_s": 10.44,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -992,9 +993,9 @@
           "seed": 42,
           "tone": "平静",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我弟的飞机模型翅膀断了，他一口咬定是我碰掉的，其实我根本没进他房间。我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
+          "transcript_gt": "我弟的飞机模型翅膀断了，他一口咬定是我昨天碰掉的，其实我昨天下午不在家，也没进他房间。我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我弟的飞机模型翅膀断了，他一口咬定是我碰掉的。其实我根本没进他房间，我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
+          "qc_asr_text": "我弟的飞机模型翅膀断了，他一口咬定是我昨天碰掉的，其实我昨天下午不在家，也没进他房间。我想跟他把误会解开，又不想显得我在推责任，该怎么开口？",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1073,7 +1074,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1542,7 +1543,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1575,24 +1576,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1727,7 +1728,89 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "针对飞机模型误会提供开口沟通建议",
+            "建议应体现澄清自己不在家、未进房间，同时不推卸责任"
+          ],
+          "must_not": [
+            "认定用户碰掉模型",
+            "建议直接对抗或推责"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "提供先安抚弟弟情绪再说事实的表达分寸",
+            "表达应避免让用户背锅"
+          ],
+          "must_not": [
+            "建议直接说“不是我”激化情绪",
+            "让用户承认是自己弄坏的"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "按更正后的“前天下午不在家”组织表达",
+            "把话说顺、可用于沟通"
+          ],
+          "must_not": [
+            "继续使用“昨天”作为不在家时间",
+            "认定用户碰掉模型"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -1736,21 +1819,22 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "可以先说：“弟，模型坏了你肯定难受，我理解。但真不是我碰的，我昨天没进你房间。我们可以一起看看是不是放的地方不稳，我也可以帮你找找怎么修。”先接住他的情绪，再说清楚自己的边界。"
+        "assistant_text": "预期要点：针对飞机模型误会提供开口沟通建议；建议应体现澄清自己不在家、未进房间，同时不推卸责任。避免：认定用户碰掉模型；建议直接对抗或推责。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "可以这样开口：“我知道你现在很心疼模型，换我也难受。我先陪你看看到底怎么断的，但我也想说清楚，昨天我没进你房间。”先安抚，再说明，不替自己认没做过的事。"
+        "assistant_text": "预期要点：提供先安抚弟弟情绪再说事实的表达分寸；表达应避免让用户背锅。避免：建议直接说“不是我”激化情绪；让用户承认是自己弄坏的。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "可以改成：“我知道你心疼模型，我先陪你看怎么断的。但前天下午我不在家，真不是我碰的。”把时间说准，语气还是先接情绪再讲事实。"
+        "assistant_text": "预期要点：按更正后的“前天下午不在家”组织表达；把话说顺、可用于沟通。避免：继续使用“昨天”作为不在家时间；认定用户碰掉模型。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -1762,7 +1846,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

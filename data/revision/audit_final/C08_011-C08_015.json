@@ -1,0 +1,237 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "bd93e2a4-c4bf-4a11-9435-1f2d27c78b5d",
+  "usage": {
+    "prompt_tokens": 1432,
+    "completion_tokens": 1016,
+    "total_tokens": 2448,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 920
+  },
+  "temperature": 0,
+  "source_sha256": "9b7692d816761ade0b75f6750bbef5c221bad2ea7209f844ec54f138435b9585",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C08_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对卧室夜间闷热且开空调干燥，给出低风险、非大改造的改善小窍门"
+          ],
+          "must_not": [
+            "推荐有安全风险或需专业施工的方案",
+            "声称已查询或控制用户设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面油污给出安全、省力的清洁办法"
+          ],
+          "must_not": [
+            "推荐强腐蚀性或高安全风险的清洁方式"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合石英石台面，避免刮花材质",
+            "避免味道太冲的清洁剂"
+          ],
+          "must_not": [
+            "推荐会刮花石英石的工具或研磨剂",
+            "推荐气味浓烈的清洁剂"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对卫生间返味给出简单、可先自查原因的办法"
+          ],
+          "must_not": [
+            "建议拆改管道等高风险操作",
+            "声称已检测用户家中情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑地漏倒水后略有好转这一线索",
+            "避免香味浓的除味剂",
+            "考虑家中有小孩的安全因素"
+          ],
+          "must_not": [
+            "推荐香味浓烈的除味剂",
+            "推荐对儿童有安全风险的化学品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "根据更正后的规律（白天家中无人回来时味道最重）调整排查思路"
+          ],
+          "must_not": [
+            "继续坚持晚上最明显这一已被更正的说法"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对衣柜潮味给出低风险处理办法"
+          ],
+          "must_not": [
+            "推荐高风险或需大改造的方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "避免需要插电的除湿机",
+            "避免味道大的樟脑丸"
+          ],
+          "must_not": [
+            "推荐插电除湿机",
+            "推荐樟脑丸等气味大的防潮用品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：对象是阳台储物柜，主要存放换季被褥"
+          ],
+          "must_not": [
+            "继续按衣柜场景回答",
+            "忽略被褥这一存放内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆当前对象是阳台储物柜",
+            "回答被褥收纳前是否需要再晒"
+          ],
+          "must_not": [
+            "误答成衣柜",
+            "否认此前已更正为阳台储物柜"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对客厅下午西晒给出不用大改造的降温办法"
+          ],
+          "must_not": [
+            "推荐需要大改造的方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "避免遮光布",
+            "满足透光但挡热的需求",
+            "考虑低成本"
+          ],
+          "must_not": [
+            "推荐遮光布",
+            "推荐高花费方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：房间是书房而非客厅",
+            "结合下午办公难受的场景"
+          ],
+          "must_not": [
+            "继续按客厅场景回答"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆当前房间是书房",
+            "回答办公桌不贴西墙时挪到哪边较好"
+          ],
+          "must_not": [
+            "误答成客厅",
+            "否认此前已更正为书房"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结书房西晒最值得先做的两件事"
+          ],
+          "must_not": [
+            "给出冗长清单",
+            "偏离书房西晒主题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

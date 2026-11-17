@@ -1,0 +1,260 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "3c908dab-9984-4fd2-b9e4-91451fbe22ea",
+  "usage": {
+    "prompt_tokens": 2209,
+    "completion_tokens": 1047,
+    "total_tokens": 3256,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1825
+  },
+  "temperature": 0,
+  "source_sha256": "eb297ade61ca7ecbf90c6889cdfd8f2b036c02c04216a61a8619ae563d7f7655",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C14_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲述",
+            "故事场景为空间站看星星",
+            "内容为睡前故事",
+            "篇幅简短"
+          ],
+          "must_not": [
+            "讲述与空间站看星星无关的故事",
+            "篇幅冗长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲述",
+            "故事场景为空间站看星星",
+            "内容为睡前故事",
+            "篇幅简短"
+          ],
+          "must_not": [
+            "讲述与空间站看星星无关的故事",
+            "篇幅冗长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入地球像蓝色弹珠的细节",
+            "保留儿子小时候这样说的设定"
+          ],
+          "must_not": [
+            "忽略新增的蓝色弹珠细节",
+            "把弹珠颜色说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲述",
+            "故事场景为空间站看星星",
+            "内容为睡前故事",
+            "篇幅简短"
+          ],
+          "must_not": [
+            "讲述与空间站看星星无关的故事",
+            "篇幅冗长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入地球像蓝色弹珠的细节",
+            "保留儿子小时候这样说的设定"
+          ],
+          "must_not": [
+            "忽略新增的蓝色弹珠细节",
+            "把弹珠颜色说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将弹珠描述更正为玻璃弹珠",
+            "不再使用蓝色弹珠的说法"
+          ],
+          "must_not": [
+            "继续保留蓝色弹珠",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲述",
+            "故事场景为空间站看星星",
+            "内容为睡前故事",
+            "篇幅简短"
+          ],
+          "must_not": [
+            "讲述与空间站看星星无关的故事",
+            "篇幅冗长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入地球像蓝色弹珠的细节",
+            "保留儿子小时候这样说的设定"
+          ],
+          "must_not": [
+            "忽略新增的蓝色弹珠细节",
+            "把弹珠颜色说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将弹珠描述更正为玻璃弹珠",
+            "不再使用蓝色弹珠的说法"
+          ],
+          "must_not": [
+            "继续保留蓝色弹珠",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答儿子说的是玻璃弹珠",
+            "继续讲述故事",
+            "可合理补充儿子在故事里说的话"
+          ],
+          "must_not": [
+            "回答成蓝色弹珠",
+            "拒绝继续讲故事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲述",
+            "故事场景为空间站看星星",
+            "内容为睡前故事",
+            "篇幅简短"
+          ],
+          "must_not": [
+            "讲述与空间站看星星无关的故事",
+            "篇幅冗长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入地球像蓝色弹珠的细节",
+            "保留儿子小时候这样说的设定"
+          ],
+          "must_not": [
+            "忽略新增的蓝色弹珠细节",
+            "把弹珠颜色说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将弹珠描述更正为玻璃弹珠",
+            "不再使用蓝色弹珠的说法"
+          ],
+          "must_not": [
+            "继续保留蓝色弹珠",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答儿子说的是玻璃弹珠",
+            "继续讲述故事",
+            "可合理补充儿子在故事里说的话"
+          ],
+          "must_not": [
+            "回答成蓝色弹珠",
+            "拒绝继续讲故事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾故事",
+            "保持睡前安抚语气"
+          ],
+          "must_not": [
+            "继续展开长篇情节",
+            "引入新的复杂设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

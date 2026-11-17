@@ -1,0 +1,257 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "48366ea2-2620-4cb7-af99-b43bb3b03fdc",
+  "usage": {
+    "prompt_tokens": 1634,
+    "completion_tokens": 1114,
+    "total_tokens": 2748,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1634
+  },
+  "temperature": 0,
+  "source_sha256": "5e9d08bbbfe4b002edb2e3bd21c80a99b7c491ffa359c69eea8cb3ec6fa62d18",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C01_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户下班挤地铁累、站了快四十分钟、腿酸",
+            "表达共情或关心",
+            "可自然追问地铁人多等细节"
+          ],
+          "must_not": [
+            "否定用户疲惫感受",
+            "编造用户未说的具体行程或数据"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户办公室空调吹得头疼、回家路上晕",
+            "给出温和的缓解建议或关心",
+            "可询问是否开窗透气"
+          ],
+          "must_not": [
+            "提供医疗诊断或用药建议",
+            "否定用户不适"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认晚上想吃清淡、不油腻",
+            "回应用户胃不舒服",
+            "给出清淡饮食建议或询问面/粥选择"
+          ],
+          "must_not": [
+            "推荐油腻或刺激性食物",
+            "忽略胃不舒服的约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户周六要加班、本来想歇一天、感到烦",
+            "表达共情",
+            "可询问加班到几点"
+          ],
+          "must_not": [
+            "否定用户情绪",
+            "提前把加班日期说成周日"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认周日早上让用户睡懒觉、不早叫",
+            "可询问早饭安排"
+          ],
+          "must_not": [
+            "安排周日早上过早叫醒用户",
+            "设置未经授权的提醒或闹钟"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受用户更正：加班是周日不是周六",
+            "更新记忆为周日加班",
+            "可指出周六可休息"
+          ],
+          "must_not": [
+            "继续坚持加班是周六",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户明天想去菜市场、冰箱空了要补菜",
+            "可询问想买什么菜"
+          ],
+          "must_not": [
+            "未经授权创建购物清单写操作或提醒",
+            "否定用户补菜需求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认想买青菜、鸡蛋、一条鱼",
+            "确认别的先不着急",
+            "可询问鱼的种类"
+          ],
+          "must_not": [
+            "擅自增加用户未提的采购项",
+            "把别的先不着急说成必须买"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认鱼买鲈鱼不是草鱼",
+            "回应用户说草鱼刺太多",
+            "可询问青菜种类"
+          ],
+          "must_not": [
+            "把鱼记成草鱼",
+            "忽略鲈鱼而非草鱼的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述要买鲈鱼不是草鱼",
+            "可一并复述青菜、鸡蛋和鲈鱼"
+          ],
+          "must_not": [
+            "复述成草鱼",
+            "遗漏鲈鱼而非草鱼的关键信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户给孩子开家长会、老师说了不少事、脑子装满",
+            "表达共情",
+            "可请用户挑重要的事说"
+          ],
+          "must_not": [
+            "否定用户感受",
+            "编造老师未说的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认下周三下午有亲子活动、家长尽量都去",
+            "可询问用户时间是否方便"
+          ],
+          "must_not": [
+            "把日期说错",
+            "擅自创建日程写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：亲子活动是下周四下午不是周三",
+            "更新记忆为下周四下午"
+          ],
+          "must_not": [
+            "继续坚持周三",
+            "忽略更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述亲子活动是下周四下午不是周三",
+            "安抚用户会帮忙记着"
+          ],
+          "must_not": [
+            "复述成周三",
+            "遗漏更正后的日期"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "可再次确认亲子活动是下周四下午",
+            "让用户休息"
+          ],
+          "must_not": [
+            "展开长篇新话题",
+            "创建未经授权的提醒或日程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

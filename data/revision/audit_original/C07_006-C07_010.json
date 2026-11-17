@@ -1,0 +1,244 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d412670e-af5e-411a-8992-2c4458e93d8b",
+  "usage": {
+    "prompt_tokens": 1956,
+    "completion_tokens": 1152,
+    "total_tokens": 3108,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1572
+  },
+  "temperature": 0,
+  "source_sha256": "1c0a2871f059d17865d1e6a6780e35746de9db2187049cae002adaceb1e94e4e",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C07_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对衣柜太小、换季衣服没地方放、只有两个收纳箱、今晚有半小时整理给出具体建议",
+            "建议应可在半小时内完成并利用现有两个收纳箱"
+          ],
+          "must_not": [
+            "要求购买新收纳工具",
+            "建议超出半小时或需要两个以上收纳箱才能完成"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对书桌杂物多、抽屉满、周末有一小时、手头有空盒子和文件夹给出整理建议",
+            "建议应利用现有空盒子和文件夹"
+          ],
+          "must_not": [
+            "要求购买新收纳用品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认方法简单、不买新东西、不把东西全倒出来",
+            "给出符合不买新东西且不全倒出来的简化整理步骤"
+          ],
+          "must_not": [
+            "建议购买新收纳用品",
+            "建议把抽屉或桌面物品全部倒出来"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对玩具满地、客厅不大、晚上20分钟、有几个塑料筐给出快速收纳建议",
+            "建议应利用现有塑料筐并在20分钟内可完成"
+          ],
+          "must_not": [
+            "要求购买新收纳容器",
+            "建议超出20分钟的大工程"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不分类太细、孩子自己能收、每个筐贴简单标记可行",
+            "给出适合孩子自己操作的简单标记和收纳方式"
+          ],
+          "must_not": [
+            "要求复杂细分分类",
+            "要求购买新收纳容器"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认时间更正为早上出门前10分钟",
+            "按10分钟调整刚才的收纳思路"
+          ],
+          "must_not": [
+            "仍按晚上20分钟安排",
+            "要求超出10分钟才能完成的步骤"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面东西多、抽屉乱、周末两小时、有空罐子和旧盒子给出整理建议",
+            "建议应利用现有空罐子和旧盒子"
+          ],
+          "must_not": [
+            "要求购买新收纳盒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认不搬来搬去太多次、不买新收纳盒、只用现有容器",
+            "给出减少搬动并使用现有罐子盒子的整理方式"
+          ],
+          "must_not": [
+            "建议购买新收纳盒",
+            "安排频繁搬动物品的步骤"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认时间更正为工作日晚上40分钟",
+            "按40分钟调整刚才的整理思路"
+          ],
+          "must_not": [
+            "仍按周末两小时安排",
+            "要求一次全部清完"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得时间已改为工作日晚上40分钟",
+            "在40分钟范围内回答先收台面还是先收抽屉"
+          ],
+          "must_not": [
+            "否认或记错为周末两小时",
+            "给出超出40分钟的安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C07_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对玄关鞋子乱、柜子塞满、周末一小时、有几个空鞋盒给出整理建议",
+            "建议应利用现有空鞋盒"
+          ],
+          "must_not": [
+            "要求购买新鞋架"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认方法简单、不把鞋全拿出来、不买新鞋架",
+            "给出符合不全拿出且不买新鞋架的简化步骤"
+          ],
+          "must_not": [
+            "建议购买新鞋架",
+            "建议把鞋全部拿出来"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认时间更正为明天早上30分钟",
+            "按30分钟调整刚才的整理思路"
+          ],
+          "must_not": [
+            "仍按周末一小时安排",
+            "要求超出30分钟才能完成的步骤"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得时间已改为明天早上30分钟",
+            "回答30分钟是否够收门口那一排"
+          ],
+          "must_not": [
+            "否认或记错为周末一小时"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话简短收尾",
+            "说明明天早上先做什么"
+          ],
+          "must_not": [
+            "长篇展开多个步骤",
+            "记错时间为周末一小时"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

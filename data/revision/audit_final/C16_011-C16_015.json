@@ -1,0 +1,244 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "1c0689ba-51d6-4f70-9893-3f3c34d1f1b4",
+  "usage": {
+    "prompt_tokens": 1488,
+    "completion_tokens": 963,
+    "total_tokens": 2451,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 976
+  },
+  "temperature": 0,
+  "source_sha256": "ae0f9f799fab9c634a76798d798878e555f75d721c40e6e6a878de320571d7be",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同意玩词语接龙",
+            "接龙规则为一次接一个词",
+            "接的词不能是食物类词"
+          ],
+          "must_not": [
+            "使用食物类词接龙",
+            "一次接多个词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同意玩词语接龙",
+            "接的词不能带数字"
+          ],
+          "must_not": [
+            "使用带数字的词接龙"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "新增规则：接的词不能用颜色词",
+            "颜色词包括红黄蓝绿等"
+          ],
+          "must_not": [
+            "使用颜色词接龙",
+            "使用带数字的词接龙"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "说3个词供用户记忆",
+            "之后询问用户刚才说的是哪几个词"
+          ],
+          "must_not": [
+            "提前泄露答案或顺序提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提问时打乱顺序，不按原顺序问"
+          ],
+          "must_not": [
+            "按原顺序提问"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为4个词",
+            "重新说4个词"
+          ],
+          "must_not": [
+            "仍按3个词执行"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "说4个词供用户记忆",
+            "之后询问用户"
+          ],
+          "must_not": [
+            "提前泄露答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提问时打乱顺序，不按原顺序"
+          ],
+          "must_not": [
+            "按原顺序提问"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为5个词",
+            "新增一个此前未出现过的词",
+            "若此前未说过水杯则加入水杯"
+          ],
+          "must_not": [
+            "仍按4个词执行",
+            "重复使用已出现过的词作为新增词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答最后定为5个词",
+            "列出这5个词"
+          ],
+          "must_not": [
+            "回答为4个词",
+            "遗漏或错列词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "说5个词供用户记忆",
+            "之后询问用户记住了几个"
+          ],
+          "must_not": [
+            "提前泄露答案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提问时不提示",
+            "不询问词排第几",
+            "随便问"
+          ],
+          "must_not": [
+            "给出提示",
+            "询问排序位置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为6个词",
+            "新增一个此前未出现过的词",
+            "若此前未说过雨伞则加入雨伞"
+          ],
+          "must_not": [
+            "仍按5个词执行",
+            "重复使用已出现过的词作为新增词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认最后是6个词",
+            "回答最初说的是5个词"
+          ],
+          "must_not": [
+            "回答最初是6个词",
+            "回答最后是5个词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话说明最后是6个词",
+            "列出这6个词"
+          ],
+          "must_not": [
+            "回答为5个词",
+            "遗漏或错列词",
+            "超过一句话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

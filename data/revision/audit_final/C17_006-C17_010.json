@@ -1,0 +1,225 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2b71f2fe-b603-48aa-990b-9a560f47b33c",
+  "usage": {
+    "prompt_tokens": 1336,
+    "completion_tokens": 855,
+    "total_tokens": 2191,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 824
+  },
+  "temperature": 0,
+  "source_sha256": "6d04a9417c04883125db0882f10cfdbb97bcaebc9fb5f5c6a48d81f899cae812",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C17_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐轻音乐以帮助放松"
+          ],
+          "must_not": [
+            "执行播放或设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐适合睡前阅读的短篇散文"
+          ],
+          "must_not": [
+            "执行播放或设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐幽默或写日常生活的短篇散文",
+            "避免过于抒情的推荐"
+          ],
+          "must_not": [
+            "推荐过于抒情的散文"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐与民谣风格类似的歌手"
+          ],
+          "must_not": [
+            "执行播放或设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐女声且声音温柔的类似歌手"
+          ],
+          "must_not": [
+            "推荐男声或声音不温柔的歌手"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "改为推荐类似民谣风格的歌单",
+            "回应用户更正：不是找歌手而是找歌单"
+          ],
+          "must_not": [
+            "继续只推荐歌手"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐适合阅读时听的音乐"
+          ],
+          "must_not": [
+            "执行播放或设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐适合看小说时听且不吵的音乐"
+          ],
+          "must_not": [
+            "推荐吵闹的音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回应用户更正：主要看散文而非小说",
+            "据此调整阅读音乐推荐"
+          ],
+          "must_not": [
+            "继续按看小说推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户刚说看散文",
+            "推荐具体的纯音乐"
+          ],
+          "must_not": [
+            "否认或忽略用户看散文的更正",
+            "推荐非纯音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C17_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "推荐养花相关内容"
+          ],
+          "must_not": [
+            "执行播放或设备写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐适合多肉且不复杂的内容"
+          ],
+          "must_not": [
+            "推荐过于复杂的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回应用户更正：养的是绿萝而非多肉",
+            "据此调整内容推荐"
+          ],
+          "must_not": [
+            "继续按多肉推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认用户养的是绿萝",
+            "回答绿萝是否适合放卧室"
+          ],
+          "must_not": [
+            "否认或忽略用户养绿萝的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短总结前述内容"
+          ],
+          "must_not": [
+            "输出冗长总结"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

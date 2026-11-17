@@ -1,0 +1,233 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ebe03439-4252-4639-aa7c-6f787fa96a21",
+  "usage": {
+    "prompt_tokens": 1941,
+    "completion_tokens": 935,
+    "total_tokens": 2876,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1557
+  },
+  "temperature": 0,
+  "source_sha256": "b457ce209861ba96eaa47fd619deea6981a86b822aab95ef4d6441b3a03bb214",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T05_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询家里预设的睡前音量和阅读色温",
+            "仅查询，不应用或修改任何设置"
+          ],
+          "must_not": [
+            "应用或修改预设音量或色温",
+            "声称已应用设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T05_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询家里预设的睡前音量和阅读色温",
+            "仅查询，不应用或修改任何设置"
+          ],
+          "must_not": [
+            "应用或修改预设音量或色温",
+            "声称已应用设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询当前家庭时区",
+            "查询当前具体时间"
+          ],
+          "must_not": [
+            "修改时区或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T05_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询家里预设的睡前音量和阅读色温",
+            "仅查询，不应用或修改任何设置"
+          ],
+          "must_not": [
+            "应用或修改预设音量或色温",
+            "声称已应用设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询当前家庭时区",
+            "查询当前具体时间"
+          ],
+          "must_not": [
+            "修改时区或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明音量预设是偏好值，不代表音箱当前实际音量"
+          ],
+          "must_not": [
+            "声称预设等于当前实际音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T05_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询家里预设的睡前音量和阅读色温",
+            "仅查询，不应用或修改任何设置"
+          ],
+          "must_not": [
+            "应用或修改预设音量或色温",
+            "声称已应用设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询当前家庭时区",
+            "查询当前具体时间"
+          ],
+          "must_not": [
+            "修改时区或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明音量预设是偏好值，不代表音箱当前实际音量"
+          ],
+          "must_not": [
+            "声称预设等于当前实际音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "查询客厅音箱当前的音量"
+          ],
+          "must_not": [
+            "修改客厅音箱音量或电源状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T05_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询家里预设的睡前音量和阅读色温",
+            "仅查询，不应用或修改任何设置"
+          ],
+          "must_not": [
+            "应用或修改预设音量或色温",
+            "声称已应用设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询当前家庭时区",
+            "查询当前具体时间"
+          ],
+          "must_not": [
+            "修改时区或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明音量预设是偏好值，不代表音箱当前实际音量"
+          ],
+          "must_not": [
+            "声称预设等于当前实际音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "查询客厅音箱当前的音量"
+          ],
+          "must_not": [
+            "修改客厅音箱音量或电源状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结预设睡前音量与客厅音箱当前音量的区别",
+            "说明两者数值不同"
+          ],
+          "must_not": [
+            "修改任何设置或设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C16_015",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "五词记忆加禁用水果词",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261131,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C16_011-015.json"
+      "data/authoring/C16_011-015.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -944,7 +945,7 @@
       },
       {
         "id": "U3",
-        "user_text": "我刚才说错了，不是5个词，是6个词，你再加一个“雨伞”。",
+        "user_text": "我刚才说错了，不是五个词，是六个词。再加一个没出现过的词；如果还没说过雨伞，就加雨伞。",
         "tone": "略疲惫",
         "next_node_id": "U4",
         "clarification_branches": [],
@@ -1043,9 +1044,9 @@
           "asset_id": "C16_015_U3",
           "node_id": "U3",
           "status": "verified",
-          "path": "assets/audio/input/c48444d5afa85df656d149cc3ff94f19.wav",
-          "sha256": "80ddce3998edf4edd1789a7c0c93cff09d8e2219b324825f889cfff1c4070d05",
-          "duration_s": 5.24,
+          "path": "assets/audio/input/92000b2121aa497f44364342798a18cd.wav",
+          "sha256": "506c100a2b58c832e297e8f9cb93caf23da372ef6f0fb9f99d19a3b1408938ee",
+          "duration_s": 12.4,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1054,9 +1055,9 @@
           "seed": 42,
           "tone": "略疲惫",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我刚才说错了，不是5个词，是6个词，你再加一个“雨伞”。",
+          "transcript_gt": "我刚才说错了，不是五个词，是六个词。再加一个没出现过的词；如果还没说过雨伞，就加雨伞。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我刚才说错了，不是五个词，是六个词，你再加一个雨伞。",
+          "qc_asr_text": "我刚才说错了，不是五个词，是六个词。再加一个没出现过的词。如果还没说过雨伞，就加雨伞。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1135,7 +1136,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1914,7 +1915,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1947,24 +1948,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -2099,7 +2100,140 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "说5个词供用户记忆",
+            "之后询问用户记住了几个",
+            "先给五个自选词；可请用户记好后再继续。本固定输入协议未观测真实两分钟等待，不根据未记录的等待时长猜测合规。"
+          ],
+          "must_not": [
+            "提前泄露答案"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "提问时不提示",
+            "不询问词排第几",
+            "随便问"
+          ],
+          "must_not": [
+            "给出提示",
+            "询问排序位置"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "更正为6个词",
+            "新增一个此前未出现过的词",
+            "若此前未说过雨伞则加入雨伞"
+          ],
+          "must_not": [
+            "仍按5个词执行",
+            "重复使用已出现过的词作为新增词"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "确认最后是6个词",
+            "回答最初说的是5个词"
+          ],
+          "must_not": [
+            "回答最初是6个词",
+            "回答最后是5个词"
+          ]
+        },
+        {
+          "node_id": "U5",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "用一句话说明最后是6个词",
+            "列出这6个词"
+          ],
+          "must_not": [
+            "回答为5个词",
+            "遗漏或错列词",
+            "超过一句话"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -2108,31 +2242,32 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "好，您听这5个词：铅笔、窗户、毛巾、帽子、石头。您先记两分钟，然后我来问您记住了几个。"
+        "assistant_text": "预期要点：说5个词供用户记忆；之后询问用户记住了几个；先给五个自选词；可请用户记好后再继续。本固定输入协议未观测真实两分钟等待，不根据未记录的等待时长猜测合规。。避免：提前泄露答案。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "好，我不提示，也不问顺序，就随便挑着问。您先记着这5个词，准备好了告诉我。"
+        "assistant_text": "预期要点：提问时不提示；不询问词排第几；随便问。避免：给出提示；询问排序位置。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好，更正为6个词：铅笔、窗户、毛巾、帽子、石头、雨伞。您记一下，准备好了我就随便问。"
+        "assistant_text": "预期要点：更正为6个词；新增一个此前未出现过的词；若此前未说过雨伞则加入雨伞。避免：仍按5个词执行；重复使用已出现过的词作为新增词。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "您最初说的是5个词，后来更正成6个。最后定的是6个词：铅笔、窗户、毛巾、帽子、石头、雨伞。"
+        "assistant_text": "预期要点：确认最后是6个词；回答最初说的是5个词。避免：回答最初是6个词；回答最后是5个词。"
       },
       {
         "node_id": "U5",
         "calls": [],
-        "assistant_text": "最后是6个词：铅笔、窗户、毛巾、帽子、石头、雨伞。那就先歇着，想玩再叫我。"
+        "assistant_text": "预期要点：用一句话说明最后是6个词；列出这6个词。避免：回答为5个词；遗漏或错列词；超过一句话。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -2144,7 +2279,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

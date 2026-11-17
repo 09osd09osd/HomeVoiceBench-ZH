@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C15_018",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "猜水果，三次提示并更正产地",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261134,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C15_016-020.json"
+      "data/authoring/C15_016-020.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -928,7 +929,7 @@
     "nodes": [
       {
         "id": "U1",
-        "user_text": "我们猜水果吧，你出题，每次给一条提示，别一下子说答案。",
+        "user_text": "我们猜水果吧，先限定是热带水果。你自选一种，每次给一条提示，别一下子说答案。",
         "tone": "自然",
         "next_node_id": "U2",
         "clarification_branches": [],
@@ -944,7 +945,7 @@
       },
       {
         "id": "U3",
-        "user_text": "更正一下，刚才说热带不对，它主要长在亚热带。",
+        "user_text": "把产地条件从热带改成亚热带，你可以重新选一种符合条件的水果，别急着说答案。",
         "tone": "自然",
         "next_node_id": null,
         "clarification_branches": [],
@@ -981,9 +982,9 @@
           "asset_id": "C15_018_U1",
           "node_id": "U1",
           "status": "verified",
-          "path": "assets/audio/input/dbca35896da4105834ec734f56445299.wav",
-          "sha256": "8d07308dd7bbced2a9f5b85c550ae09062c3ca87a52d286531c636f07683713a",
-          "duration_s": 4.72,
+          "path": "assets/audio/input/55195102df2e46d46d3a6537a075fa48.wav",
+          "sha256": "94c9a8d6f2cb169bde4f1971b031800a836ff3dc4e96255f15dfabb9252babc8",
+          "duration_s": 5.8,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -992,9 +993,9 @@
           "seed": 42,
           "tone": "自然",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我们猜水果吧，你出题，每次给一条提示，别一下子说答案。",
+          "transcript_gt": "我们猜水果吧，先限定是热带水果。你自选一种，每次给一条提示，别一下子说答案。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我们猜水果吧，你出题，每次给一条提示，别一下子说答案。",
+          "qc_asr_text": "我们猜水果吧，先限定是热带水果。你自选一种，每次给一条提示，别一下子说答案。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1027,9 +1028,9 @@
           "asset_id": "C15_018_U3",
           "node_id": "U3",
           "status": "verified",
-          "path": "assets/audio/input/1d2aacec2e51aadb09ab99caf5de67b5.wav",
-          "sha256": "6cdcb9d558e22cf4567364c06ae76d6f87f95f6a055af395489a997d94a42769",
-          "duration_s": 3.12,
+          "path": "assets/audio/input/68d94fccdcc63ffff42092f4dcb43fc6.wav",
+          "sha256": "f55c04f835e2581e269abf970503c931c5ae52af1f0bd822071a08d189158987",
+          "duration_s": 5.8,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1038,9 +1039,9 @@
           "seed": 42,
           "tone": "自然",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "更正一下，刚才说热带不对，它主要长在亚热带。",
+          "transcript_gt": "把产地条件从热带改成亚热带，你可以重新选一种符合条件的水果，别急着说答案。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "更正一下，刚才说热带不对，它主要长在亚热带。",
+          "qc_asr_text": "把产地条件从热带改成亚热带，你可以重新选一种符合条件的水果，别急着说答案。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1073,7 +1074,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1542,7 +1543,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1575,24 +1576,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1727,7 +1728,95 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "猜水果",
+            "限定热带水果",
+            "助手自选一种",
+            "每次给一条提示",
+            "不直接说答案",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给多条提示"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "再给提示",
+            "提示说明一般长在哪儿",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "直接说出谜底"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "产地条件从热带改为亚热带",
+            "可重新选一种符合亚热带条件的水果",
+            "不急着说答案",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "仍坚持热带条件"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -1736,21 +1825,22 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "好，猜一种水果：它是黄色的，弯弯的，要剥皮吃。你猜是什么？"
+        "assistant_text": "预期要点：猜水果；限定热带水果；助手自选一种；每次给一条提示；不直接说答案；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：直接说出谜底；一次给多条提示。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "它通常长在热带地区，一串一串挂在树上。现在有想法了吗？"
+        "assistant_text": "预期要点：再给提示；提示说明一般长在哪儿；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：直接说出谜底。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "明白，我记住更正了：这种水果主要长在亚热带。还要再给一条提示吗？"
+        "assistant_text": "预期要点：产地条件从热带改为亚热带；可重新选一种符合亚热带条件的水果；不急着说答案；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：直接说出谜底；仍坚持热带条件。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -1762,7 +1852,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

@@ -1,0 +1,249 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7faa70c3-1323-453c-9c13-fbf87040d79e",
+  "usage": {
+    "prompt_tokens": 1858,
+    "completion_tokens": 1017,
+    "total_tokens": 2875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1858
+  },
+  "temperature": 0,
+  "source_sha256": "1d709f971f6b66b8be61c5da3b90a66880e848442a33246fa6247eba31bda7a7",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C01_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户看到小猫蹲在花坛边",
+            "语气简短轻松，符合用户说累、只想简单听两句"
+          ],
+          "must_not": [
+            "长篇大论或追问过多",
+            "编造用户未提及的具体细节作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户晚饭后散步碰到小刘聊了几句",
+            "语气轻松简短，符合用户说累"
+          ],
+          "must_not": [
+            "长篇大论",
+            "编造用户未提及的具体细节作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户小刘学做面包并送了一个",
+            "回应用户不太爱吃甜的",
+            "保持简短，只两句左右"
+          ],
+          "must_not": [
+            "长篇大论",
+            "把用户不爱甜食说成爱吃甜食"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户超市买水果排队久、有点累",
+            "简短陪聊两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "编造用户未提及的水果或价格"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户买了苹果和橙子",
+            "回应用户说苹果8块钱一斤",
+            "保持简短"
+          ],
+          "must_not": [
+            "长篇大论",
+            "把苹果价格说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：苹果是6块钱一斤，不是8块",
+            "简短回应"
+          ],
+          "must_not": [
+            "仍说苹果8块一斤",
+            "长篇大论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户阳台浇花打翻水壶弄一地水",
+            "简短安慰两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "责备用户"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户擦了半天才弄干净",
+            "回应用户说绿萝长得不错",
+            "保持简短，用户说听着就行"
+          ],
+          "must_not": [
+            "长篇大论",
+            "把绿萝说成其他植物"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：是吊兰，不是绿萝"
+          ],
+          "must_not": [
+            "仍说绿萝",
+            "长篇大论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户养的是吊兰",
+            "回应用户说今天有点累"
+          ],
+          "must_not": [
+            "说成绿萝",
+            "长篇大论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C01_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户坐公交坐过站、多走两站",
+            "简短陪聊两句"
+          ],
+          "must_not": [
+            "长篇大论",
+            "编造用户未提及的细节作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户买了热豆浆",
+            "保持简短"
+          ],
+          "must_not": [
+            "长篇大论",
+            "把热豆浆说成其他饮品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正：买的是热牛奶，不是豆浆"
+          ],
+          "must_not": [
+            "仍说豆浆",
+            "长篇大论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得用户买的是热牛奶",
+            "回应用户说今天折腾"
+          ],
+          "must_not": [
+            "说成豆浆",
+            "长篇大论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话收尾",
+            "回应用户想安静会儿"
+          ],
+          "must_not": [
+            "超过一两句的长篇",
+            "继续追问或开启新话题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

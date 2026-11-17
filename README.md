@@ -4,18 +4,21 @@
 
 参考 [RoleCraft-ZH](https://github.com/1zhou-Wang/RoleCraft-ZH) 的场景组织与模型比较思路，重新构建家庭环境、工具沙箱和测试题。不是原仓库的官方扩展，未复用其测试题。
 
-当前记录状态：`complete`。数据集已冻结，实际运行和判官覆盖率见 [结果](docs/RESULTS.md)。冻结表示机器校验和哈希固定，不表示人工审题。
+版本：**0.3.0**。当前记录状态：`complete`。数据集已冻结，实际运行和判官覆盖率见 [结果](docs/RESULTS.md)。冻结表示机器校验和哈希固定，不表示人工审题。
 
 ## 入口
 
 - [交互讲解网页](docs/index.html)：下载后双击HTML，浏览50场景、1000题、链路图和真实语音。
 
 - [在线讲解网页](https://09osd09osd.github.io/HomeVoiceBench-ZH/docs/index.html)。
-- [完整数据和测评证据下载](https://github.com/09osd09osd/HomeVoiceBench-ZH/releases/tag/v0.2.0)。
-- [Excel总览](outputs/homevoicebench-20261117/HomeVoiceBench-ZH.xlsx)。
+- [历史 v0.2 发布](https://github.com/09osd09osd/HomeVoiceBench-ZH/releases/tag/v0.2.0)：保留原题目、录音与成绩。
+- [本地人工听音评审台](docs/LOCAL_REVIEW.md)：双击根目录的“启动人工评审.cmd”，逐题对照三组语音、工具轨迹与评分。
+- [v0.3修订说明](docs/REVISION_v0.3.md)：原始证据保留、重跑范围和新旧成绩差异。
+- [Excel总览](outputs/homevoicebench-v030-20261117/HomeVoiceBench-ZH.xlsx)。
 - [数据生成](docs/DATASET.md)、[50场景目录](docs/SCENARIOS.md)、[完整工具沙箱](docs/SANDBOX.md)、[评分标准](docs/EVALUATION.md)。
 - [字段字典](docs/FIELDS.md)、[运行复现](docs/REPRODUCIBILITY.md)、[来源与限制](docs/PROVENANCE.md)。
 - [数字与单位朗读转换](docs/SPEECH_NORMALIZATION.md)、[交付包与解压说明](docs/DELIVERY.md)。
+- [长故事实际时长与判官分歧](docs/STORY_DURATION_AUDIT.md)：覆盖全部7道预算压力题。
 - 完整示例：[工具T06_003](data/cases/T06_003.json)、[聊天C03_003](data/cases/C03_003.json)。示例在正式结果出来前固定选定。
 
 ## 三条被测链路

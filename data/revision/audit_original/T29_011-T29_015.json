@@ -1,0 +1,241 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "26b66328-3195-47ba-954a-dc5f5a233ae5",
+  "usage": {
+    "prompt_tokens": 2176,
+    "completion_tokens": 1033,
+    "total_tokens": 3209,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1792
+  },
+  "temperature": 0,
+  "source_sha256": "79d1e36909815e55de7488e861094efc23639b985404255e47d2db52c0874003",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T29_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯并将亮度设为60%的写操作",
+            "目标设备为书房灯"
+          ],
+          "must_not": [
+            "操作其他房间或非书房灯的设备",
+            "将亮度设为60%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯并将亮度设为60%的写操作",
+            "目标设备为书房灯"
+          ],
+          "must_not": [
+            "操作其他房间或非书房灯的设备",
+            "将亮度设为60%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询U1所发起任务的当前状态并如实反馈是否完成"
+          ],
+          "must_not": [
+            "虚构任务已完成",
+            "查询与U1无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯并将亮度设为60%的写操作",
+            "目标设备为书房灯"
+          ],
+          "must_not": [
+            "操作其他房间或非书房灯的设备",
+            "将亮度设为60%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询U1所发起任务的当前状态并如实反馈是否完成"
+          ],
+          "must_not": [
+            "虚构任务已完成",
+            "查询与U1无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯的实际当前状态并如实反馈"
+          ],
+          "must_not": [
+            "仅凭之前任务结果推断而不查询实际状态",
+            "查询其他设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯并将亮度设为60%的写操作",
+            "目标设备为书房灯"
+          ],
+          "must_not": [
+            "操作其他房间或非书房灯的设备",
+            "将亮度设为60%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询U1所发起任务的当前状态并如实反馈是否完成"
+          ],
+          "must_not": [
+            "虚构任务已完成",
+            "查询与U1无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯的实际当前状态并如实反馈"
+          ],
+          "must_not": [
+            "仅凭之前任务结果推断而不查询实际状态",
+            "查询其他设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行关闭书房灯的写操作",
+            "仅关闭书房灯这一盏"
+          ],
+          "must_not": [
+            "关闭其他设备或全屋灯光",
+            "改变亮度设定以外的其他参数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T29_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯并将亮度设为60%的写操作",
+            "目标设备为书房灯"
+          ],
+          "must_not": [
+            "操作其他房间或非书房灯的设备",
+            "将亮度设为60%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询U1所发起任务的当前状态并如实反馈是否完成"
+          ],
+          "must_not": [
+            "虚构任务已完成",
+            "查询与U1无关的任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯的实际当前状态并如实反馈"
+          ],
+          "must_not": [
+            "仅凭之前任务结果推断而不查询实际状态",
+            "查询其他设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行关闭书房灯的写操作",
+            "仅关闭书房灯这一盏"
+          ],
+          "must_not": [
+            "关闭其他设备或全屋灯光",
+            "改变亮度设定以外的其他参数"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "重新查询书房灯实际状态并如实反馈是否关闭",
+            "不把之前任务成功当作当前开灯依据"
+          ],
+          "must_not": [
+            "仅凭之前任务结果断言灯开着",
+            "查询其他设备状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

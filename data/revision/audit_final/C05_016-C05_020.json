@@ -1,0 +1,235 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c08bb0a9-10a5-47f7-bda8-b4d3930871c6",
+  "usage": {
+    "prompt_tokens": 1444,
+    "completion_tokens": 1228,
+    "total_tokens": 2672,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 932
+  },
+  "temperature": 0,
+  "source_sha256": "bbd7daed023bc37e2a26c71920356881561bf6418d6ca2ec279f8265691a6fff",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C05_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周末大扫除的家庭分工沟通，提供可用的开口说法或沟通建议",
+            "内容为日常家庭沟通建议，不涉及设备操作"
+          ],
+          "must_not": [
+            "不得替用户直接向家人发送消息或执行写操作",
+            "不得虚构用户家庭的具体成员或分工细节作为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户独自承担洗碗、想提出轮流洗碗的诉求，提供开口说法或沟通建议"
+          ],
+          "must_not": [
+            "不得替用户直接向家人发送消息或执行写操作",
+            "不得虚构用户家庭的具体成员作为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户提出的周一到周五轮流、周末一起收拾的方案，帮助其表达或完善沟通说法"
+          ],
+          "must_not": [
+            "不得否定或擅自更改用户提出的轮流与周末一起收拾安排",
+            "不得执行写操作或替用户通知家人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对倒垃圾一直由用户承担、想重新分工的诉求，提供开口说法或沟通建议"
+          ],
+          "must_not": [
+            "不得替用户直接向家人发送消息或执行写操作",
+            "不得虚构用户家庭的具体成员作为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户不介意多干但希望至少有人分担一半的立场，帮助其表达"
+          ],
+          "must_not": [
+            "不得把用户表述为完全不愿承担",
+            "不得执行写操作或替用户通知家人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别用户更正：将“分担一半”改为“每个人轮流倒一周”，并据此调整沟通建议"
+          ],
+          "must_not": [
+            "不得继续沿用“分担一半”作为最终方案",
+            "不得声称用户此前说过“轮流倒一周”"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对擦桌子和扫地老是同几个人干、想轮换的诉求，提供开口说法或沟通建议"
+          ],
+          "must_not": [
+            "不得替用户直接向家人发送消息或执行写操作",
+            "不得虚构用户家庭的具体成员作为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户提出的按周轮换、每人轮到不同活儿的方案，帮助其表达"
+          ],
+          "must_not": [
+            "不得擅自更改用户提出的按周轮换周期",
+            "不得执行写操作或替用户通知家人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别用户更正：将“按周轮换”改为“按天轮换”，并据此调整沟通建议"
+          ],
+          "must_not": [
+            "不得继续把按周轮换作为最终方案",
+            "不得声称用户此前说过按天轮换"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "根据前文正确回答用户已将轮换周期改为“按天轮换”"
+          ],
+          "must_not": [
+            "不得回答为按周轮换或其他周期",
+            "不得声称用户未做过该更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对卫生间清洁拖延、想定值日表的诉求，提供开口说法或沟通建议"
+          ],
+          "must_not": [
+            "不得替用户直接向家人发送消息或执行写操作",
+            "不得虚构用户家庭的具体成员作为既定事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户提出的每人负责一天、周末一起大扫除的值日表方案，帮助其表达"
+          ],
+          "must_not": [
+            "不得擅自更改用户提出的每人负责一天安排",
+            "不得执行写操作或替用户通知家人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "识别用户更正：将“每人负责一天”改为“每人负责两天”，并据此调整沟通建议"
+          ],
+          "must_not": [
+            "不得继续把每人负责一天作为最终方案",
+            "不得声称用户此前说过每人负责两天"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "根据前文正确回答用户已将每人负责天数改为“两天”"
+          ],
+          "must_not": [
+            "不得回答为一天或其他天数",
+            "不得声称用户未做过该更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短的话总结如何跟家人提卫生间值日表这件事，并体现每人负责两天、周末一起大扫除的最终设定"
+          ],
+          "must_not": [
+            "不得使用每人负责一天的旧设定",
+            "不得输出冗长内容",
+            "不得执行写操作或替用户通知家人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

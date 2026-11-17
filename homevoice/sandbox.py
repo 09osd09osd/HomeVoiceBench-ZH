@@ -9,6 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 TYPES=json.loads((ROOT/'spec/types.schema.json').read_text('utf-8'))
 CATALOG=json.loads((ROOT/'spec/sandbox.json').read_text('utf-8'))
 TOOLS={x['name']:x for x in CATALOG['tools']}
+VERSION='household_sandbox_v0.3'
 REGISTRY=Registry().with_resource(TYPES['$id'],Resource.from_contents(TYPES))
 def validate(data,schema): Draft202012Validator(schema,registry=REGISTRY,format_checker=FormatChecker()).validate(data)
 def dt(s): return datetime.fromisoformat(s)
@@ -28,6 +29,11 @@ class Sandbox:
         validate(environment,{'$ref':TYPES['$id']+'#/$defs/Fixture'})
         self.fixture=cp(environment);self.state=cp(environment['initial_state']);self.initial=cp(self.state);self.actor=cp(actor)
         self.now=dt(self.state['clock']['current_at']);self.trace=[];self.snapshots=[cp(self.state)];self.checkpoints={};self.cache={};self.attempts={};self.jobs={};self.fired=set();self.seq={}
+        self.current_node_id=None;self.current_user_turn_index=0;self.turn_ranges=[];self.turn_start=0
+    def begin_turn(self,node_id,user_turn_index=None):
+        self.current_node_id=node_id
+        self.current_user_turn_index=user_turn_index or len(self.turn_ranges)+1
+        self.turn_start=len(self.trace)
     def stamp(self):return self.now.isoformat(timespec='milliseconds')
     def new_id(self,prefix):
         self.seq[prefix]=self.seq.get(prefix,0)+1
@@ -120,6 +126,8 @@ class Sandbox:
             self.state['schedules'].append(s);return s
         if name in ('schedule_update','schedule_cancel'):
             s=self.owned('schedules',a['schedule_id'],'schedule',name)
+            if name=='schedule_cancel' and s['status']=='cancelled':return s
+            if name=='schedule_cancel' and s['status']=='completed':raise Failure('NOT_CANCELLABLE','安排已经完成，不能撤回已执行结果。')
             if s['status']!='active':raise Failure('CONFLICT','安排不是启用状态。')
             if name=='schedule_cancel':s['status']='cancelled'
             else:
@@ -133,7 +141,10 @@ class Sandbox:
             d=self.find('devices',a['device_id']);self.permit('device',d['id'],name)
             if not d['online']:raise Failure('DEVICE_OFFLINE','播放设备离线。',True)
             if d['type'] not in ('tv','speaker'):raise Failure('UNSUPPORTED_OPERATION','该设备不支持媒体播放。')
-            if any(p['device_id']==d['id'] and p['status'] in ('playing','paused') for p in self.state['playbacks']):raise Failure('CONFLICT','设备已有播放会话，请先停止旧会话。')
+            existing=[p for p in self.state['playbacks'] if p['device_id']==d['id'] and p['status'] in ('playing','paused')]
+            # Check all permissions before changing any old session.
+            for previous in existing:self.permit('playback',previous['id'],'media_control',previous['owner_id'])
+            for previous in existing:previous.update(status='stopped',updated_at=self.stamp())
             p={'id':self.new_id('PLAY'),'owner_id':self.actor['id'],'device_id':d['id'],'content_id':m['id'],'status':'playing','position_s':0,'updated_at':self.stamp()};self.state['playbacks'].append(p);return p
         if name=='media_control':
             p=self.owned('playbacks',a['playback_id'],'playback',name);d=self.find('devices',p['device_id']);self.permit('device',d['id'],name)
@@ -176,7 +187,7 @@ class Sandbox:
             else:raise
         if name in TOOLS:validate(response,TOOLS[name]['output_schema'])
         self.cache[request_id]=(identity,cp(response))
-        self.trace.append({'call':{'tool_name':name,'arguments':cp(args)},'request_id':request_id,'response':cp(response),'state_before':before,'state_after':cp(self.state)})
+        self.trace.append({'call':{'tool_name':name,'arguments':cp(args)},'request_id':request_id,'response':cp(response),'state_before':before,'state_after':cp(self.state),'node_id':self.current_node_id,'user_turn_index':self.current_user_turn_index or None})
         self.snapshots.append(cp(self.state));self.advance(self.state['clock']['advance_after_tool_call_ms'])
         return response
     def error(self,r,e):return {'request_id':r,'ok':False,'status':'failed','data':None,'error':{'code':e.code,'message':e.message,'retryable':e.retryable},'operation_id':None,'clock_time':self.stamp()}
@@ -219,4 +230,9 @@ class Sandbox:
             self.state['clock']['current_at']=self.stamp();self.snapshots.append(cp(self.state))
         self.now=target;self.state['clock']['current_at']=self.stamp()
     def end_turn(self,node_id):
+        received_node=self.current_node_id or node_id;turn_index=self.current_user_turn_index or len(self.turn_ranges)+1
+        for e in self.trace[self.turn_start:]:
+            if e.get('node_id') is None:e.update(node_id=received_node,user_turn_index=turn_index)
+        self.turn_ranges.append({'node_id':received_node,'checkpoint_node_id':node_id,'user_turn_index':turn_index,'start':self.turn_start,'end':len(self.trace)})
+        self.turn_start=len(self.trace);self.current_node_id=None;self.current_user_turn_index=0
         self.checkpoints[node_id]=cp(self.state);self.advance(self.state['clock']['advance_after_user_turn_ms'])

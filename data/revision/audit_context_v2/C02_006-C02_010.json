@@ -1,0 +1,249 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2eea78d4-358f-492d-83f7-b509cb0bb85f",
+  "usage": {
+    "prompt_tokens": 1834,
+    "completion_tokens": 860,
+    "total_tokens": 2694,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1834
+  },
+  "temperature": 0,
+  "source_sha256": "db47bc3ab5ce8cfdf859f475825e1c737e0907ecd58fa39acaea9e1a93166845",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用温柔语气陪伴",
+            "内容简短适合睡前"
+          ],
+          "must_not": [
+            "播放媒体或操作设备",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "早上问候",
+            "回应刚醒有点困",
+            "简短聊两句"
+          ],
+          "must_not": [
+            "输出过长",
+            "播放热闹内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "声音轻、语气温和",
+            "只说一两句提醒"
+          ],
+          "must_not": [
+            "说太热闹的话",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "晚上问候",
+            "回应疲惫",
+            "语气轻松不热闹"
+          ],
+          "must_not": [
+            "输出过长",
+            "播放热闹内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认记住十点半左右关灯的习惯"
+          ],
+          "must_not": [
+            "创建提醒或写操作",
+            "否认记住"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为十点四十左右关灯",
+            "不再沿用十点半"
+          ],
+          "must_not": [
+            "仍说十点半",
+            "创建提醒或写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "早上问候",
+            "简短陪伴几句"
+          ],
+          "must_not": [
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应先喝半杯温水再坐一会儿",
+            "说话简短"
+          ],
+          "must_not": [
+            "输出过多信息",
+            "否认该习惯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为大半杯温水",
+            "不再说半杯"
+          ],
+          "must_not": [
+            "仍说半杯",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆先喝大半杯温水再坐一会儿",
+            "再说一句提醒"
+          ],
+          "must_not": [
+            "说成半杯",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "晚上问候",
+            "回应疲惫",
+            "语气轻松不兴奋"
+          ],
+          "must_not": [
+            "输出过长",
+            "播放媒体"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应睡前听轻音乐",
+            "避开工作话题"
+          ],
+          "must_not": [
+            "聊工作上的事",
+            "播放媒体"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正为睡前听雨声",
+            "不再说轻音乐"
+          ],
+          "must_not": [
+            "仍说轻音乐",
+            "播放媒体"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回忆睡前听雨声",
+            "说一句放松的话"
+          ],
+          "must_not": [
+            "说成轻音乐",
+            "输出过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短收尾",
+            "适合睡前"
+          ],
+          "must_not": [
+            "输出过长",
+            "播放媒体"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

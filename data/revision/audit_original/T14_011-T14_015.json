@@ -1,0 +1,262 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7c10f9d5-00db-44ca-9757-fc9bb1a2cbce",
+  "usage": {
+    "prompt_tokens": 2635,
+    "completion_tokens": 1193,
+    "total_tokens": 3828,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2251
+  },
+  "temperature": 0,
+  "source_sha256": "a46470b5fa68f83d8e0e2f265947fa47210cf7d931fd76cef711de4170c236d9",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T14_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度均设为60%",
+            "若某台离线或设置失败，需指出具体是哪台失败"
+          ],
+          "must_not": [
+            "遗漏客厅灯或卧室灯其中一台",
+            "将亮度设为60%以外的值",
+            "在无失败时虚构失败设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度均设为60%",
+            "若某台离线或设置失败，需指出具体是哪台失败"
+          ],
+          "must_not": [
+            "遗漏客厅灯或卧室灯其中一台",
+            "将亮度设为60%以外的值",
+            "在无失败时虚构失败设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "仅将客厅灯亮度改为30%",
+            "不重试卧室灯，保持其原状"
+          ],
+          "must_not": [
+            "改动卧室灯",
+            "重试或重新设置卧室灯",
+            "改动客厅灯开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度均设为60%",
+            "若某台离线或设置失败，需指出具体是哪台失败"
+          ],
+          "must_not": [
+            "遗漏客厅灯或卧室灯其中一台",
+            "将亮度设为60%以外的值",
+            "在无失败时虚构失败设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "仅将客厅灯亮度改为30%",
+            "不重试卧室灯，保持其原状"
+          ],
+          "must_not": [
+            "改动卧室灯",
+            "重试或重新设置卧室灯",
+            "改动客厅灯开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "分别查询客厅灯和卧室灯的状态",
+            "报告两盏灯各自的开关与亮度状态"
+          ],
+          "must_not": [
+            "只查一盏灯",
+            "对灯具执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度均设为60%",
+            "若某台离线或设置失败，需指出具体是哪台失败"
+          ],
+          "must_not": [
+            "遗漏客厅灯或卧室灯其中一台",
+            "将亮度设为60%以外的值",
+            "在无失败时虚构失败设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "仅将客厅灯亮度改为30%",
+            "不重试卧室灯，保持其原状"
+          ],
+          "must_not": [
+            "改动卧室灯",
+            "重试或重新设置卧室灯",
+            "改动客厅灯开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "分别查询客厅灯和卧室灯的状态",
+            "报告两盏灯各自的开关与亮度状态"
+          ],
+          "must_not": [
+            "只查一盏灯",
+            "对灯具执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "仅关闭客厅灯",
+            "卧室灯保持不动"
+          ],
+          "must_not": [
+            "关闭或改动卧室灯",
+            "改动客厅灯亮度以外的其他属性（除关闭外）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度均设为60%",
+            "若某台离线或设置失败，需指出具体是哪台失败"
+          ],
+          "must_not": [
+            "遗漏客厅灯或卧室灯其中一台",
+            "将亮度设为60%以外的值",
+            "在无失败时虚构失败设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "仅将客厅灯亮度改为30%",
+            "不重试卧室灯，保持其原状"
+          ],
+          "must_not": [
+            "改动卧室灯",
+            "重试或重新设置卧室灯",
+            "改动客厅灯开关状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "分别查询客厅灯和卧室灯的状态",
+            "报告两盏灯各自的开关与亮度状态"
+          ],
+          "must_not": [
+            "只查一盏灯",
+            "对灯具执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "仅关闭客厅灯",
+            "卧室灯保持不动"
+          ],
+          "must_not": [
+            "关闭或改动卧室灯",
+            "改动客厅灯亮度以外的其他属性（除关闭外）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结此前各操作的成功与失败情况",
+            "说明没有重新执行任何操作"
+          ],
+          "must_not": [
+            "重新执行任何设备操作",
+            "虚构未发生的失败操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

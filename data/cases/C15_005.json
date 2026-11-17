@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C15_005",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "猜水果，记住更正后收尾",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261121,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C15_001-005.json"
+      "data/authoring/C15_001-005.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -928,7 +929,7 @@
     "nodes": [
       {
         "id": "U1",
-        "user_text": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+        "user_text": "我想猜水果，先限定外皮是黄色的。你自选一种水果，一次给一个提示，别提前说答案。",
         "tone": "平静",
         "next_node_id": "U2",
         "clarification_branches": [],
@@ -944,7 +945,7 @@
       },
       {
         "id": "U3",
-        "user_text": "我猜是橘子。对了，刚才我说外皮是黄色的，更正一下，是橙色的。",
+        "user_text": "先别揭晓。我把外皮颜色从黄色改成橙色，你可以重新选一种符合条件的水果。",
         "tone": "平静",
         "next_node_id": "U4",
         "clarification_branches": [],
@@ -952,7 +953,7 @@
       },
       {
         "id": "U4",
-        "user_text": "你还记得我改过的第一个提示吗？再给一个提示。",
+        "user_text": "你还记得我现在要求外皮是什么颜色吗？再给一个不泄底的提示。",
         "tone": "平静",
         "next_node_id": "U5",
         "clarification_branches": [],
@@ -960,7 +961,7 @@
       },
       {
         "id": "U5",
-        "user_text": "我猜是橙子。你用一句话收尾，把更正后的提示和答案简短说一下。",
+        "user_text": "现在揭晓你选的答案吧，用一句话把颜色要求和谜底一起说清楚。",
         "tone": "平静",
         "next_node_id": null,
         "clarification_branches": [],
@@ -997,9 +998,9 @@
           "asset_id": "C15_005_U1",
           "node_id": "U1",
           "status": "verified",
-          "path": "assets/audio/input/ff0f2ddfa97d800d9baa95bb6f3fc772.wav",
-          "sha256": "0b9ec544716c9cecae698b36f2c24c3006115447bd1cfdf215094a99b21b5564",
-          "duration_s": 3.76,
+          "path": "assets/audio/input/d0148ba90b2cbb30e38dace5845071ff.wav",
+          "sha256": "51933b244b7f79fd3be3177853b7ac582d313221064c4413ded1a66bc42e25c1",
+          "duration_s": 7.8,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1008,9 +1009,9 @@
           "seed": 42,
           "tone": "平静",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+          "transcript_gt": "我想猜水果，先限定外皮是黄色的。你自选一种水果，一次给一个提示，别提前说答案。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我想猜水果，你出题，一次一个提示，别提前说答案。",
+          "qc_asr_text": "我想猜水果，先限定外皮是黄色的。你自选一种水果，一次给一个提示，别提前说答案。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1043,9 +1044,9 @@
           "asset_id": "C15_005_U3",
           "node_id": "U3",
           "status": "verified",
-          "path": "assets/audio/input/015382cdb355646a45d5e2afa98cd28e.wav",
-          "sha256": "bb03747870dfc56f354acf8af134fc26d2340d8c9c34b2c800f8ced3eb2c9426",
-          "duration_s": 5.44,
+          "path": "assets/audio/input/565d21743371592470a9bdb67954e956.wav",
+          "sha256": "f7af17a159ab9f33eb3b32d4ef22068558be37eca1c6bbfdc475579d4ac6429a",
+          "duration_s": 6.32,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1054,9 +1055,9 @@
           "seed": 42,
           "tone": "平静",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我猜是橘子。对了，刚才我说外皮是黄色的，更正一下，是橙色的。",
+          "transcript_gt": "先别揭晓。我把外皮颜色从黄色改成橙色，你可以重新选一种符合条件的水果。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我猜是橘子。对了，刚才我说外皮是黄色的，更正一下，是橙色的。",
+          "qc_asr_text": "先别揭晓，我把外皮颜色从黄色改成橙色，你可以重新选一种符合条件的水果。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1066,9 +1067,9 @@
           "asset_id": "C15_005_U4",
           "node_id": "U4",
           "status": "verified",
-          "path": "assets/audio/input/fd7c223570abf2483196e467cc56b7fa.wav",
-          "sha256": "58746a074022ad7f1c1a93987910c8cea6b69a7c2bcae20a5b2407220ec937d5",
-          "duration_s": 3.72,
+          "path": "assets/audio/input/cb881b0772d2958922f2e5a111dcaac3.wav",
+          "sha256": "599725322d9da45f995c392e35a87d21d4a4aec96ac7b0f516b935cb70d3dc22",
+          "duration_s": 4.6,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1077,9 +1078,9 @@
           "seed": 42,
           "tone": "平静",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "你还记得我改过的第一个提示吗？再给一个提示。",
+          "transcript_gt": "你还记得我现在要求外皮是什么颜色吗？再给一个不泄底的提示。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "你还记得我改过的第一个提示吗？再给一个提示。",
+          "qc_asr_text": "你还记得我现在要求外皮是什么颜色吗？再给一个不泄底的提示。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1089,9 +1090,9 @@
           "asset_id": "C15_005_U5",
           "node_id": "U5",
           "status": "verified",
-          "path": "assets/audio/input/0e4ff6df8edac1f4bc86e28d804e7b12.wav",
-          "sha256": "9918606a3f278388fbdde874c02b7e4fe6bf229b3470cd71a6557111f340fff5",
-          "duration_s": 4.96,
+          "path": "assets/audio/input/ba60362fc2dbe7f73199930bfbb57a25.wav",
+          "sha256": "fc63caab8da7e40150d6601d41ce217b4892d5c46139637174b9089a51c78b67",
+          "duration_s": 5.48,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1100,9 +1101,9 @@
           "seed": 42,
           "tone": "平静",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我猜是橙子。你用一句话收尾，把更正后的提示和答案简短说一下。",
+          "transcript_gt": "现在揭晓你选的答案吧，用一句话把颜色要求和谜底一起说清楚。",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我猜是橙子。你用一句话收尾，把更正后的提示和答案简短说一下。",
+          "qc_asr_text": "现在揭晓你选的答案吧，用一句话把颜色要求和谜底一起说清楚。",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1135,7 +1136,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1914,7 +1915,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1947,24 +1948,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -2099,7 +2100,146 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "出一道水果类谜题",
+            "限定外皮为黄色",
+            "自选一种符合条件的水果",
+            "提示一次只给一个",
+            "不提前说出谜底",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "再给一个具体提示",
+            "不泄露谜底",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "提前揭晓谜底"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "将外皮颜色限定从黄色改为橙色",
+            "可重新选择一种符合橙色外皮条件的水果",
+            "不揭晓谜底",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "继续沿用黄色外皮限定",
+            "提前揭晓谜底"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "回答当前外皮颜色要求为橙色",
+            "再给一个不泄底的提示",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "回答外皮颜色为黄色",
+            "提前揭晓谜底"
+          ]
+        },
+        {
+          "node_id": "U5",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "揭晓所选谜底",
+            "用一句话同时说清橙色外皮要求和谜底",
+            "用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。"
+          ],
+          "must_not": [
+            "遗漏颜色要求",
+            "遗漏谜底"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -2108,31 +2248,32 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "好，我出个水果谜。第一个提示：它的外皮是黄色的。你猜猜看，答案我先不说。"
+        "assistant_text": "预期要点：出一道水果类谜题；限定外皮为黄色；自选一种符合条件的水果；提示一次只给一个；不提前说出谜底；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：提前泄露谜底；一次给出多个提示。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "不是香蕉。第二个提示：它是一瓣一瓣的。你继续猜，我还是不提前说答案。"
+        "assistant_text": "预期要点：再给一个具体提示；不泄露谜底；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：提前揭晓谜底。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "好，我记住了：第一个提示更正为“外皮是橙色的”。现在提示是：外皮是橙色的，一瓣一瓣的。你接着猜，答案我还是不说。"
+        "assistant_text": "预期要点：将外皮颜色限定从黄色改为橙色；可重新选择一种符合橙色外皮条件的水果；不揭晓谜底；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：继续沿用黄色外皮限定；提前揭晓谜底。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，第一个提示是“外皮是橙色的”。再给一个提示：它通常秋天成熟。你猜猜看，答案我还是不提前说。"
+        "assistant_text": "预期要点：回答当前外皮颜色要求为橙色；再给一个不泄底的提示；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：回答外皮颜色为黄色；提前揭晓谜底。"
       },
       {
         "node_id": "U5",
         "calls": [],
-        "assistant_text": "对，答案是橙子。简短收尾：外皮是橙色的，一瓣一瓣的，通常秋天成熟。"
+        "assistant_text": "预期要点：揭晓所选谜底；用一句话同时说清橙色外皮要求和谜底；用户猜测不预设对错：以助手此前实际选定答案和提示一致性判断；猜对时合理确认也可，不能把猜错说对。新的提示继续遵守当前未撤销约束。。避免：遗漏颜色要求；遗漏谜底。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -2144,7 +2285,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

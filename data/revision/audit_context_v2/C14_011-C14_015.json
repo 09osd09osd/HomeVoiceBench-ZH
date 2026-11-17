@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "44e293ea-cc48-4be2-b723-b32b3b335c68",
+  "usage": {
+    "prompt_tokens": 2370,
+    "completion_tokens": 1107,
+    "total_tokens": 3477,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1858
+  },
+  "temperature": 0,
+  "source_sha256": "cc6e99d0c4a12b16c055f6c2b3081bcd82d009268e6cebb498018ab69656d4d7",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C14_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲一个在空间站看星星的睡前故事",
+            "故事要短"
+          ],
+          "must_not": [
+            "讲与空间站看星星无关的故事",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲一个在空间站看星星的睡前故事",
+            "故事要短"
+          ],
+          "must_not": [
+            "讲与空间站看星星无关的故事",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入“地球是颗蓝色弹珠”的细节",
+            "保留用户儿子小时候总这么说的设定"
+          ],
+          "must_not": [
+            "忽略蓝色弹珠细节",
+            "把蓝色弹珠改成其他颜色或材质"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲一个在空间站看星星的睡前故事",
+            "故事要短"
+          ],
+          "must_not": [
+            "讲与空间站看星星无关的故事",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入“地球是颗蓝色弹珠”的细节",
+            "保留用户儿子小时候总这么说的设定"
+          ],
+          "must_not": [
+            "忽略蓝色弹珠细节",
+            "把蓝色弹珠改成其他颜色或材质"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把故事中的“蓝色弹珠”更正为“玻璃弹珠”",
+            "保留用户儿子小时候总这么说的设定"
+          ],
+          "must_not": [
+            "继续使用“蓝色弹珠”",
+            "把更正误解为新增另一种弹珠"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲一个在空间站看星星的睡前故事",
+            "故事要短"
+          ],
+          "must_not": [
+            "讲与空间站看星星无关的故事",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入“地球是颗蓝色弹珠”的细节",
+            "保留用户儿子小时候总这么说的设定"
+          ],
+          "must_not": [
+            "忽略蓝色弹珠细节",
+            "把蓝色弹珠改成其他颜色或材质"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把故事中的“蓝色弹珠”更正为“玻璃弹珠”",
+            "保留用户儿子小时候总这么说的设定"
+          ],
+          "must_not": [
+            "继续使用“蓝色弹珠”",
+            "把更正误解为新增另一种弹珠"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答儿子说的是“玻璃弹珠”",
+            "接着讲故事并延续儿子在故事中的内容"
+          ],
+          "must_not": [
+            "回答成“蓝色弹珠”",
+            "忽略用户要求接着讲"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以宇航员身份讲一个在空间站看星星的睡前故事",
+            "故事要短"
+          ],
+          "must_not": [
+            "讲与空间站看星星无关的故事",
+            "故事过长"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在故事中加入“地球是颗蓝色弹珠”的细节",
+            "保留用户儿子小时候总这么说的设定"
+          ],
+          "must_not": [
+            "忽略蓝色弹珠细节",
+            "把蓝色弹珠改成其他颜色或材质"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把故事中的“蓝色弹珠”更正为“玻璃弹珠”",
+            "保留用户儿子小时候总这么说的设定"
+          ],
+          "must_not": [
+            "继续使用“蓝色弹珠”",
+            "把更正误解为新增另一种弹珠"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回答儿子说的是“玻璃弹珠”",
+            "接着讲故事并延续儿子在故事中的内容"
+          ],
+          "must_not": [
+            "回答成“蓝色弹珠”",
+            "忽略用户要求接着讲"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾故事",
+            "保持睡前故事氛围"
+          ],
+          "must_not": [
+            "继续展开长篇情节",
+            "引入与故事无关的新内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

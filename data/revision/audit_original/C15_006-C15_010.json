@@ -1,0 +1,262 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ba315626-cbc7-4172-884c-04d37b86838a",
+  "usage": {
+    "prompt_tokens": 1897,
+    "completion_tokens": 996,
+    "total_tokens": 2893,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1513
+  },
+  "temperature": 0,
+  "source_sha256": "46936cb702c972adda5740e4f36e1965a373888d28e286769ba1cc1336738322",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出与厨房小物件相关的猜谜",
+            "只给一个提示",
+            "不提前说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出与厨房小物件相关的猜谜",
+            "只给一个提示",
+            "不提前说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提示难度降低",
+            "一次只给一点点提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出与厨房小物件相关的猜谜",
+            "只给一个提示",
+            "不提前说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提示难度降低",
+            "一次只给一点点提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为塑料材质",
+            "按塑料材质给提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "继续按金属材质提示",
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出与厨房小物件相关的猜谜",
+            "只给一个提示",
+            "不提前说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提示难度降低",
+            "一次只给一点点提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为塑料材质",
+            "按塑料材质给提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "继续按金属材质提示",
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得已改为塑料材质",
+            "再给一个不泄底的提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "忘记塑料材质更正",
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出与厨房小物件相关的猜谜",
+            "只给一个提示",
+            "不提前说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提示难度降低",
+            "一次只给一点点提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正为塑料材质",
+            "按塑料材质给提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "继续按金属材质提示",
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得已改为塑料材质",
+            "再给一个不泄底的提示",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "忘记塑料材质更正",
+            "直接说出谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "不直接说出谜底"
+          ],
+          "must_not": [
+            "直接说出谜底",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

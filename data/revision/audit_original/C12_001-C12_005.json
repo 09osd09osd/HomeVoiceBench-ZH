@@ -1,0 +1,248 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d4f7b312-5886-4450-9fdf-80fb515dd2d6",
+  "usage": {
+    "prompt_tokens": 1777,
+    "completion_tokens": 1059,
+    "total_tokens": 2836,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1393
+  },
+  "temperature": 0,
+  "source_sha256": "c5562227c04e0f24a4c192ab97189bb7feb461cb370ae7c71d57abedd1b95627",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户朗读的句子给出普通话/朗读方面的反馈",
+            "反馈内容与用户实际说出的句子相关"
+          ],
+          "must_not": [
+            "声称听到了用户未提供的音频细节之外无法核验的内容作为事实",
+            "偏离朗读练习给出无关建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "评价用户模拟问价的说法是否自然",
+            "给出可核验的改进建议"
+          ],
+          "must_not": [
+            "把参考中的具体改写当成唯一正确答案",
+            "引入与问价练习无关的话题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "针对用户上一轮说法的语气是否生硬给出反馈",
+            "反馈与问价场景相关"
+          ],
+          "must_not": [
+            "依赖尚未产生的助手回答之外的信息",
+            "把语气评价说成客观测量结果"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助用户组织明天上午十点开会的语音消息说法",
+            "包含时间、事项、准时提醒"
+          ],
+          "must_not": [
+            "遗漏上午十点这一时间",
+            "加入用户未要求的额外事项"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户把“请大家”换成“咱们”的想法",
+            "给出替换后的说法或评价"
+          ],
+          "must_not": [
+            "忽略用户对正式程度的顾虑",
+            "擅自改变开会时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的下午三点重新组织说法",
+            "体现对原上午十点的更正"
+          ],
+          "must_not": [
+            "仍使用上午十点",
+            "遗漏“咱们”这一用户已选定的称呼"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助用户练习说周末聚会改到周日下午两点",
+            "说法自然并包含改期信息"
+          ],
+          "must_not": [
+            "遗漏周日下午两点",
+            "加入用户未要求的聚会细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把语气调整得更随意、不像通知",
+            "保留周日下午两点这一时间"
+          ],
+          "must_not": [
+            "改变聚会改期这一核心信息",
+            "使用过于正式的公文语气"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后的下午三点半重新组织说法",
+            "体现对下午两点的更正"
+          ],
+          "must_not": [
+            "仍使用下午两点",
+            "遗漏随意语气的用户要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认最后改的时间是周日下午三点半",
+            "给出包含三点半的完整说法"
+          ],
+          "must_not": [
+            "把时间说成下午两点",
+            "遗漏完整句子的复述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助用户练习向领导口头请假",
+            "包含孩子发烧、明天请一天假"
+          ],
+          "must_not": [
+            "遗漏请假原因或请假时长",
+            "加入用户未要求的法律或医疗建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把请假说法缩短",
+            "保留原因和请假时间"
+          ],
+          "must_not": [
+            "删掉请假原因",
+            "删掉明天请一天假这一时间信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把原因改为孩子肠胃不舒服",
+            "其他信息保持不变"
+          ],
+          "must_not": [
+            "仍说孩子发烧",
+            "改变请假时长或工作安排表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认改后的原因是孩子肠胃不舒服",
+            "复述包含该原因的整句"
+          ],
+          "must_not": [
+            "把原因说回发烧",
+            "遗漏整句复述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话总结请假要点",
+            "总结简短并包含原因、请假时间、工作安排"
+          ],
+          "must_not": [
+            "遗漏孩子肠胃不舒服",
+            "遗漏明天请一天假"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

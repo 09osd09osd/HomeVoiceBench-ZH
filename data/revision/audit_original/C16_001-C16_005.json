@@ -1,0 +1,300 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "1f526787-0ad7-4da2-a7b6-348bbd24c749",
+  "usage": {
+    "prompt_tokens": 1656,
+    "completion_tokens": 1945,
+    "total_tokens": 3601,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1272
+  },
+  "temperature": 0,
+  "source_sha256": "b9c47d771b8e0d72b4164b35cdc6276e9becdf3972b7b43a9feb66f785886fca",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C16_001",
+      "issues": [
+        {
+          "kind": "ambiguous_rule",
+          "node_ids": [
+            "U1"
+          ],
+          "reason": "用户说从1开始且由助手先来，助手应先报1；参考却从2开始，既跳过了起点1，也把用户要求的“你先来”变成助手直接报2，规则起点与参考不一致。",
+          "evidence": "从1开始……你先来。 / 好啊，那从2开始。2。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认数字接龙规则：从1开始递增",
+            "助手先报数，且所报数字符合逢7及7的倍数跳过"
+          ],
+          "must_not": [
+            "跳过起点1而直接报2",
+            "把用户要求的起点1改成其他起点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_002",
+      "issues": [
+        {
+          "kind": "ambiguous_rule",
+          "node_ids": [
+            "U1",
+            "U2"
+          ],
+          "reason": "U1要求从1开始且助手先来，参考从2开始，起点错误；U2新增“数字里带7也不能说”后，参考称“刚才说了2，接下来该3”，但按U1起点1、助手先报，助手首报应为1，用户下一轮才轮到2，轮次与参考不一致。",
+          "evidence": "从1开始……你先来。 / 好啊，那从2开始。2。 / 刚才说了2，接下来该3了。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认数字接龙规则：从1开始递增",
+            "助手先报数，且所报数字符合逢7及7的倍数跳过"
+          ],
+          "must_not": [
+            "跳过起点1而直接报2",
+            "把用户要求的起点1改成其他起点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增禁用条件：数字里带7的也不能说",
+            "继续游戏时保持与已进行轮次一致，不重复或错位报数"
+          ],
+          "must_not": [
+            "把尚未由用户报出的2当作已说数字并据此跳到3",
+            "遗漏新增的带7禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_003",
+      "issues": [
+        {
+          "kind": "ambiguous_rule",
+          "node_ids": [
+            "U1",
+            "U2",
+            "U3"
+          ],
+          "reason": "U1起点为1且助手先来，参考从2开始；U2在错误轮次上继续；U3改为从5重新开始后，参考说“那我说6”，但用户说“咱们重新来”且此前规则是助手先来，重新开始后助手应先报5，而不是用户报5、助手报6。",
+          "evidence": "从1开始……你先来。 / 好啊，那从2开始。2。 / 我改一下，刚才说从1开始不对，应该从5开始。咱们重新来。 / 好，重新从5开始。那我说6。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认数字接龙规则：从1开始递增",
+            "助手先报数，且所报数字符合逢7及7的倍数跳过"
+          ],
+          "must_not": [
+            "跳过起点1而直接报2",
+            "把用户要求的起点1改成其他起点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增禁用条件：数字里带7的也不能说",
+            "继续游戏时保持与已进行轮次一致，不重复或错位报数"
+          ],
+          "must_not": [
+            "把尚未由用户报出的2当作已说数字并据此跳到3",
+            "遗漏新增的带7禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受起点更正为5并重新开始",
+            "重新开始后按原轮流规则由助手先报5"
+          ],
+          "must_not": [
+            "重新开始后让用户先报5而助手报6",
+            "忽略起点改为5的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_004",
+      "issues": [
+        {
+          "kind": "ambiguous_rule",
+          "node_ids": [
+            "U1",
+            "U2",
+            "U3"
+          ],
+          "reason": "U1起点1且助手先来，参考从2开始；U2轮次错位；U3改为从5重新开始后，参考让用户报5、助手报6，违背此前“你先来”的轮流规则。U4的复述参考本身正确，但依赖前面错误轮次。",
+          "evidence": "从1开始……你先来。 / 好啊，那从2开始。2。 / 我改一下，刚才说从1开始不对，应该从5开始。咱们重新来。 / 好，重新从5开始。那我说6。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认数字接龙规则：从1开始递增",
+            "助手先报数，且所报数字符合逢7及7的倍数跳过"
+          ],
+          "must_not": [
+            "跳过起点1而直接报2",
+            "把用户要求的起点1改成其他起点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增禁用条件：数字里带7的也不能说",
+            "继续游戏时保持与已进行轮次一致，不重复或错位报数"
+          ],
+          "must_not": [
+            "把尚未由用户报出的2当作已说数字并据此跳到3",
+            "遗漏新增的带7禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受起点更正为5并重新开始",
+            "重新开始后按原轮流规则由助手先报5"
+          ],
+          "must_not": [
+            "重新开始后让用户先报5而助手报6",
+            "忽略起点改为5的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述当前起始数字为5",
+            "复述禁用条件包括逢7和7的倍数跳过，以及数字里带7的也不能说"
+          ],
+          "must_not": [
+            "复述起始数字为1",
+            "遗漏任一禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C16_005",
+      "issues": [
+        {
+          "kind": "ambiguous_rule",
+          "node_ids": [
+            "U1",
+            "U2",
+            "U3"
+          ],
+          "reason": "U1起点1且助手先来，参考从2开始；U2轮次错位；U3改为从5重新开始后，参考让用户报5、助手报6，违背“你先来”的轮流规则。U4、U5的复述与总结内容正确，但建立在前面错误轮次上。",
+          "evidence": "从1开始……你先来。 / 好啊，那从2开始。2。 / 我改一下，刚才说从1开始不对，应该从5开始。咱们重新来。 / 好，重新从5开始。那我说6。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "确认数字接龙规则：从1开始递增",
+            "助手先报数，且所报数字符合逢7及7的倍数跳过"
+          ],
+          "must_not": [
+            "跳过起点1而直接报2",
+            "把用户要求的起点1改成其他起点"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "确认新增禁用条件：数字里带7的也不能说",
+            "继续游戏时保持与已进行轮次一致，不重复或错位报数"
+          ],
+          "must_not": [
+            "把尚未由用户报出的2当作已说数字并据此跳到3",
+            "遗漏新增的带7禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受起点更正为5并重新开始",
+            "重新开始后按原轮流规则由助手先报5"
+          ],
+          "must_not": [
+            "重新开始后让用户先报5而助手报6",
+            "忽略起点改为5的更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "复述当前起始数字为5",
+            "复述禁用条件包括逢7和7的倍数跳过，以及数字里带7的也不能说"
+          ],
+          "must_not": [
+            "复述起始数字为1",
+            "遗漏任一禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结规则时说明从5开始递增",
+            "总结规则时说明逢7和7的倍数跳过，以及数字里带7的也不能说"
+          ],
+          "must_not": [
+            "总结时把起始数字说成1",
+            "遗漏任一禁用条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

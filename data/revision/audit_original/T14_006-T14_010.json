@@ -1,0 +1,278 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "87a186a8-048f-4672-b4ca-9489f3908459",
+  "usage": {
+    "prompt_tokens": 2571,
+    "completion_tokens": 1250,
+    "total_tokens": 3821,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2187
+  },
+  "temperature": 0,
+  "source_sha256": "3eac6f5e0cbf26df07e0a5f43d42a03790ce017bd6f4b3614edfe519ff5edac6",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T14_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都调到40%",
+            "若某台设备离线，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把亮度设成40%以外的值",
+            "离线时不说明具体设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都调到40%",
+            "若某台设备离线，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把亮度设成40%以外的值",
+            "离线时不说明具体设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只把客厅灯亮度改成30%",
+            "不重试卧室灯"
+          ],
+          "must_not": [
+            "改动卧室灯",
+            "重试卧室灯",
+            "把客厅灯亮度设成30%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都调到40%",
+            "若某台设备离线，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把亮度设成40%以外的值",
+            "离线时不说明具体设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只把客厅灯亮度改成30%",
+            "不重试卧室灯"
+          ],
+          "must_not": [
+            "改动卧室灯",
+            "重试卧室灯",
+            "把客厅灯亮度设成30%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯和卧室灯两盏灯的状态",
+            "分别报告两盏灯的状态"
+          ],
+          "must_not": [
+            "只查一盏灯",
+            "对灯执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_009",
+      "issues": [
+        {
+          "kind": "reference_error",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "U3参考状态中卧室灯亮度为50%，与U1要求调到40%及U2未改动卧室灯相矛盾；同系列T14_008为40%，此处数值不一致。",
+          "evidence": "卧室灯离线，关着，亮度50%。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都调到40%",
+            "若某台设备离线，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把亮度设成40%以外的值",
+            "离线时不说明具体设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只把客厅灯亮度改成30%",
+            "不重试卧室灯"
+          ],
+          "must_not": [
+            "改动卧室灯",
+            "重试卧室灯",
+            "把客厅灯亮度设成30%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯和卧室灯两盏灯的状态",
+            "分别报告两盏灯的状态"
+          ],
+          "must_not": [
+            "只查一盏灯",
+            "对灯执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只关闭客厅灯",
+            "卧室灯保持不动"
+          ],
+          "must_not": [
+            "关闭或改动卧室灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T14_010",
+      "issues": [
+        {
+          "kind": "reference_error",
+          "node_ids": [
+            "U3"
+          ],
+          "reason": "U3参考状态中卧室灯亮度为60%，与U1要求调到40%及U2未改动卧室灯相矛盾；同系列T14_008为40%，此处数值不一致。",
+          "evidence": "卧室灯离线，关着，亮度60%。"
+        }
+      ],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "同时打开客厅灯和卧室灯",
+            "两盏灯亮度都调到40%",
+            "若某台设备离线，需指出具体是哪台"
+          ],
+          "must_not": [
+            "遗漏任一盏灯",
+            "把亮度设成40%以外的值",
+            "离线时不说明具体设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "只把客厅灯亮度改成30%",
+            "不重试卧室灯"
+          ],
+          "must_not": [
+            "改动卧室灯",
+            "重试卧室灯",
+            "把客厅灯亮度设成30%以外的值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅灯和卧室灯两盏灯的状态",
+            "分别报告两盏灯的状态"
+          ],
+          "must_not": [
+            "只查一盏灯",
+            "对灯执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只关闭客厅灯",
+            "卧室灯保持不动"
+          ],
+          "must_not": [
+            "关闭或改动卧室灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "说明哪些操作成功、哪些没做成",
+            "不重新执行任何设备操作"
+          ],
+          "must_not": [
+            "重新操作设备",
+            "遗漏成功或失败项"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

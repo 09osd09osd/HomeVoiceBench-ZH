@@ -1,0 +1,253 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "4228b997-867d-42d4-8bf2-510d3d74c045",
+  "usage": {
+    "prompt_tokens": 1410,
+    "completion_tokens": 1019,
+    "total_tokens": 2429,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 898
+  },
+  "temperature": 0,
+  "source_sha256": "4d0052cf8637eaaf7335422a2f68442dd64182162a82cbbcc9deb5aa6f9b0a9c",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C15_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道生活用品类谜题",
+            "提示一次只给一个",
+            "不提前说出谜底"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道动物类谜题",
+            "每次只给一个提示",
+            "不泄露谜底"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给一个具体提示",
+            "不泄露谜底"
+          ],
+          "must_not": [
+            "确认猫为正确答案",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道日用品类谜题",
+            "提示一次只给一个",
+            "不提前说出谜底"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给一个不笼统的具体提示",
+            "不泄露谜底"
+          ],
+          "must_not": [
+            "确认牙刷为正确答案",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将日用品使用频率限定从“每天都会用到”更正为“经常用到”"
+          ],
+          "must_not": [
+            "继续沿用“每天都会用到”作为限定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道文具类谜题",
+            "限定为放在笔袋里的文具",
+            "提示一次只给一个",
+            "不提前泄露谜底"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给一个具体提示",
+            "不泄露谜底"
+          ],
+          "must_not": [
+            "确认铅笔为正确答案",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将文具摆放位置限定从“放在笔袋里”更正为“放在书桌上”"
+          ],
+          "must_not": [
+            "继续沿用“放在笔袋里”作为限定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答文具摆放位置已改为书桌上",
+            "再给一个不泄底的提示"
+          ],
+          "must_not": [
+            "回答仍为笔袋里",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C15_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "出一道水果类谜题",
+            "限定外皮为黄色",
+            "自选一种符合条件的水果",
+            "提示一次只给一个",
+            "不提前说出谜底"
+          ],
+          "must_not": [
+            "提前泄露谜底",
+            "一次给出多个提示"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "再给一个具体提示",
+            "不泄露谜底"
+          ],
+          "must_not": [
+            "确认香蕉为正确答案",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将外皮颜色限定从黄色改为橙色",
+            "可重新选择一种符合橙色外皮条件的水果",
+            "不揭晓谜底"
+          ],
+          "must_not": [
+            "继续沿用黄色外皮限定",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答当前外皮颜色要求为橙色",
+            "再给一个不泄底的提示"
+          ],
+          "must_not": [
+            "回答外皮颜色为黄色",
+            "提前揭晓谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "揭晓所选谜底",
+            "用一句话同时说清橙色外皮要求和谜底"
+          ],
+          "must_not": [
+            "遗漏颜色要求",
+            "遗漏谜底"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

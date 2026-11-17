@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "input_modality": "audio",
   "normalizer_version": "zh_spoken_v1",
   "user_text_generator": {
@@ -17,7 +17,9 @@
     "temperature": 0,
     "enable_thinking": false,
     "answer_text_supplied": false,
-    "required_evidence": "actual input and output WAVs plus sandbox trace"
+    "required_evidence": "actual input and output WAVs plus sandbox trace",
+    "evidence_version": "source_constraints_audio_v0.3",
+    "concurrency": 32
   },
   "qwen_baselines": {
     "models": [
@@ -27,11 +29,11 @@
     "runtime": "llama.cpp b11552",
     "quantization": "Q8_0",
     "generation": {
-      "temperature": 1.0,
-      "top_p": 1.0,
+      "temperature": 1,
+      "top_p": 1,
       "top_k": 20,
-      "min_p": 0.0,
-      "presence_penalty": 2.0,
+      "min_p": 0,
+      "presence_penalty": 2,
       "seed": 42,
       "max_tokens": 512,
       "chat_template_kwargs": {
@@ -73,5 +75,11 @@
     "limitations": "fixed follow-up dialogue; cannot cover arbitrary user behavior; questions without recognized markers may follow normal route"
   },
   "timing_policy": "offline throughput only; precomputed ASR and batch TTS are reported separately; interaction time is not comparable end-to-end latency",
-  "reporting": "all 1000 cases per system in strict pass denominator; unjudged dimensions are NA; failures never become fabricated zero audio scores"
+  "reporting": "all 1000 cases per system in strict pass denominator; unjudged dimensions are NA; failures never become fabricated zero audio scores",
+  "revision_source_audit": {
+    "model": "deepseek-flash",
+    "provider": "DeepSeek official",
+    "endpoint": "https://api.deepseek.com",
+    "scope": "v0.3 source-data audit and constraint extraction; original authoring provenance retained"
+  }
 }

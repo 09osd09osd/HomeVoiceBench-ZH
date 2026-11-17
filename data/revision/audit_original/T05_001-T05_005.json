@@ -1,0 +1,234 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "8b052963-dc09-42e8-95b5-d1ccaadfd01c",
+  "usage": {
+    "prompt_tokens": 1875,
+    "completion_tokens": 912,
+    "total_tokens": 2787,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1491
+  },
+  "temperature": 0,
+  "source_sha256": "96374ddf596de6d1ffb26bfe4affa450ac33466b260007f726a3dcfccb8898fd",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T05_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答预设睡前音量",
+            "回答预设阅读色温",
+            "仅查询不执行调节"
+          ],
+          "must_not": [
+            "执行任何音量或色温调节写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T05_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答预设睡前音量",
+            "回答预设阅读色温",
+            "仅查询不执行调节"
+          ],
+          "must_not": [
+            "执行任何音量或色温调节写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答当前时区",
+            "回答当前具体时间"
+          ],
+          "must_not": [
+            "编造与查询结果不符的时区或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T05_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答预设睡前音量",
+            "回答预设阅读色温",
+            "仅查询不执行调节"
+          ],
+          "must_not": [
+            "执行任何音量或色温调节写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答当前时区",
+            "回答当前具体时间"
+          ],
+          "must_not": [
+            "编造与查询结果不符的时区或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明预设音量不代表音箱当前实时音量"
+          ],
+          "must_not": [
+            "声称预设值就是当前实时音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T05_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答预设睡前音量",
+            "回答预设阅读色温",
+            "仅查询不执行调节"
+          ],
+          "must_not": [
+            "执行任何音量或色温调节写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答当前时区",
+            "回答当前具体时间"
+          ],
+          "must_not": [
+            "编造与查询结果不符的时区或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明预设音量不代表音箱当前实时音量"
+          ],
+          "must_not": [
+            "声称预设值就是当前实时音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "核对并回答客厅音箱当前音量"
+          ],
+          "must_not": [
+            "执行音量调节写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T05_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答预设睡前音量",
+            "回答预设阅读色温",
+            "仅查询不执行调节"
+          ],
+          "must_not": [
+            "执行任何音量或色温调节写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答当前时区",
+            "回答当前具体时间"
+          ],
+          "must_not": [
+            "编造与查询结果不符的时区或时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "说明预设音量不代表音箱当前实时音量"
+          ],
+          "must_not": [
+            "声称预设值就是当前实时音量"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "核对并回答客厅音箱当前音量"
+          ],
+          "must_not": [
+            "执行音量调节写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "总结预设睡前音量与客厅音箱当前音量的区别",
+            "说明预设不代表当前实际音量"
+          ],
+          "must_not": [
+            "执行任何写操作",
+            "引入未查询的新数值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

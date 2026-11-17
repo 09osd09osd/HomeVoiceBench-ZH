@@ -1,0 +1,255 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "33cba7a8-268f-485b-ab23-0c6cf32cf4c5",
+  "usage": {
+    "prompt_tokens": 1878,
+    "completion_tokens": 1013,
+    "total_tokens": 2891,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1494
+  },
+  "temperature": 0,
+  "source_sha256": "c731094262b87d503fdf7447da270085a00213034a524701959f7866d18245fb",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C14_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以海边灯塔守护人身份讲述",
+            "内容为夜晚巡逻的小片段",
+            "语气安静温和",
+            "篇幅为几句话的短答"
+          ],
+          "must_not": [
+            "加入与睡前安静氛围明显冲突的喧闹或惊险情节",
+            "超出短答预算长篇讲述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以老茶馆掌柜身份讲述",
+            "讲述今天店里来的客人",
+            "内容轻松温和",
+            "篇幅简短"
+          ],
+          "must_not": [
+            "加入紧张或沉重情节",
+            "超出短答预算长篇讲述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "推荐一款不苦的茶",
+            "说明不要太浓或建议泡淡"
+          ],
+          "must_not": [
+            "推荐明显苦涩或浓烈的茶"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以森林小邮差身份讲述",
+            "讲述今天送信遇到的小趣事",
+            "语气温柔",
+            "篇幅为短短几句话"
+          ],
+          "must_not": [
+            "加入惊险或喧闹情节",
+            "超出短答预算长篇讲述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "角色动作放慢",
+            "不增加太多新角色"
+          ],
+          "must_not": [
+            "让角色跑得太快",
+            "引入大量新角色"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将送错的信更正为给刺猬的",
+            "明确不是给河狸的"
+          ],
+          "must_not": [
+            "继续称送错的信是给河狸的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以小烘焙屋店主身份讲述",
+            "讲述今天店里发生的一件小事",
+            "简短温和"
+          ],
+          "must_not": [
+            "加入喧闹或紧张情节",
+            "超出短答预算长篇讲述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "情节安静",
+            "客人不多",
+            "面包没有卖光并留有剩余"
+          ],
+          "must_not": [
+            "加入太多客人",
+            "说面包全部卖光"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将小圆包留给的对象更正为爷爷",
+            "明确不是留给奶奶"
+          ],
+          "must_not": [
+            "继续称小圆包是留给奶奶的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答小圆包是留给爷爷的",
+            "接着讲述后续发生的事"
+          ],
+          "must_not": [
+            "回答成留给奶奶",
+            "忽略后续情节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C14_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "以夜间小火车列车员身份讲述",
+            "讲述今晚车厢里的一件小事",
+            "语气温和",
+            "篇幅为几句话"
+          ],
+          "must_not": [
+            "加入喧闹或惊险情节",
+            "超出短答预算长篇讲述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "故事中没有争吵",
+            "氛围不热闹",
+            "乘客只有一两位"
+          ],
+          "must_not": [
+            "出现争吵情节",
+            "加入大量乘客或热闹场面"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将票的位置更正为落在座位上",
+            "明确不是夹在书里"
+          ],
+          "must_not": [
+            "继续称票夹在书里"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答票是落在座位上的",
+            "接着讲述后来车厢里的情况"
+          ],
+          "must_not": [
+            "回答成票夹在书里",
+            "忽略后续车厢情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话收尾",
+            "篇幅简短"
+          ],
+          "must_not": [
+            "展开长篇新情节",
+            "超出短答预算"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

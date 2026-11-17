@@ -1,0 +1,233 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e2453cb6-e63d-4db2-a6a2-23ff3ddfbd3d",
+  "usage": {
+    "prompt_tokens": 1403,
+    "completion_tokens": 996,
+    "total_tokens": 2399,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 891
+  },
+  "temperature": 0,
+  "source_sha256": "2a33ed0f4a7f46a7dab5163a9289beee307da4effe99ee3ad5fff3c4b67d55fb",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C08_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对卧室闷、楼下吵给出通风与降噪兼顾的舒适办法",
+            "回答为生活建议，不涉及设备写操作"
+          ],
+          "must_not": [
+            "声称已执行开窗或调设备等实际操作",
+            "要求用户购买新设备作为唯一方案"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对客厅西晒、拉窗帘太暗给出折中降温采光办法"
+          ],
+          "must_not": [
+            "声称已实际调节窗帘或设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "基于旧床单和夹子给出不买新东西的利用办法"
+          ],
+          "must_not": [
+            "要求用户购买新物品",
+            "忽略用户不想买新东西的约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对厨房台面黏糊给出简单清洁办法"
+          ],
+          "must_not": [
+            "声称已实际清洁台面"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "针对不锈钢台面给出少用洗洁精的日常办法"
+          ],
+          "must_not": [
+            "忽略不锈钢材质",
+            "要求大量使用洗洁精"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受台面材质更正为浅色人造石",
+            "按人造石台面给出相应建议"
+          ],
+          "must_not": [
+            "继续按不锈钢台面给建议",
+            "忽略用户的材质更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对衣柜潮湿和闷味、无除湿机给出办法"
+          ],
+          "must_not": [
+            "声称已实际除湿或操作设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "避免推荐香味重的防潮用品"
+          ],
+          "must_not": [
+            "推荐香味很重的防潮产品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：不是小孩而是妈妈对香味敏感",
+            "按妈妈对香味敏感、两人同住调整建议"
+          ],
+          "must_not": [
+            "继续按有小孩的情况给建议",
+            "忽略香味敏感约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确复述当前家庭情况：妈妈对香味敏感、两人同住",
+            "继续给出让衣柜干爽的办法"
+          ],
+          "must_not": [
+            "错误复述为有小孩",
+            "忽略对香味敏感的约束"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C08_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对阳台晾衣干得慢、有潮味给出简单改善办法"
+          ],
+          "must_not": [
+            "声称已实际操作晾晒或设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "考虑阳台封闭、怕灰大不敢开窗的约束"
+          ],
+          "must_not": [
+            "忽略怕灰大的顾虑"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "接受更正：阳台是半开放有纱窗",
+            "按半开放有纱窗调整建议"
+          ],
+          "must_not": [
+            "继续按完全封闭阳台给建议",
+            "忽略纱窗条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确复述阳台为半开放有纱窗",
+            "给出处理潮味的办法"
+          ],
+          "must_not": [
+            "错误复述为完全封闭",
+            "忽略潮味处理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结最关键要点"
+          ],
+          "must_not": [
+            "输出冗长多段总结",
+            "超出简短总结要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

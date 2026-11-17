@@ -1,6 +1,7 @@
 {
   "model": "Qwen/Qwen3-ASR-0.6B",
   "batch_size": 16,
+  "adaptive_max_batch_size": 16,
   "torch": "2.11.0+cu130",
   "transformers": "4.57.6",
   "cuda": "13.0",
@@ -13,14 +14,47 @@
   },
   "timing_scope": "offline_batch_inference_not_realtime_latency",
   "pilot": false,
-  "tasks": 6,
-  "wall_seconds": 3.187999999965541,
+  "allocator_cache_policy": "release_unused_after_each_batch",
+  "cuda_allocator_memory_fraction": 0.7,
+  "status": "completed",
+  "tasks": 53,
+  "completed_tasks": 53,
+  "wall_seconds": 9.640999999945052,
   "batches": [
     {
       "offset": 0,
-      "n": 6,
-      "seconds": 3.187999999965541,
-      "peak_gpu_bytes": 1811731968
+      "n": 16,
+      "seconds": 6.030999999959022,
+      "peak_gpu_bytes": 2901611520,
+      "reserved_gpu_bytes_before_release": 3042967552,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 16,
+      "n": 16,
+      "seconds": 1.5469999999040738,
+      "peak_gpu_bytes": 2799523328,
+      "reserved_gpu_bytes_before_release": 2959081472,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 32,
+      "n": 16,
+      "seconds": 1.172000000020489,
+      "peak_gpu_bytes": 2678284288,
+      "reserved_gpu_bytes_before_release": 2778726400,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 48,
+      "n": 5,
+      "seconds": 0.8599999999860302,
+      "peak_gpu_bytes": 1902303744,
+      "reserved_gpu_bytes_before_release": 2120220672,
+      "reserved_gpu_bytes_after_release": 1887436800
     }
-  ]
+  ],
+  "final_batch_size": 16,
+  "resource_retries": [],
+  "batch_adjustments": []
 }

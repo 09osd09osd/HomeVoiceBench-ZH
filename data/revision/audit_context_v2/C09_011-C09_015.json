@@ -1,0 +1,264 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "8a737d2f-bf1d-4585-8309-e8745f165980",
+  "usage": {
+    "prompt_tokens": 2062,
+    "completion_tokens": 1132,
+    "total_tokens": 3194,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1550
+  },
+  "temperature": 0,
+  "source_sha256": "5dcc386bdd4f15cfbf4865ebaa35c16936046a680a89c4c2ebeb5305bdf655f8",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C09_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六一家三口出游给出推荐",
+            "预算控制在300元以内",
+            "总时间不超过4小时"
+          ],
+          "must_not": [
+            "推荐明显超出300元预算的方案",
+            "安排超过4小时的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六一家三口出游给出推荐",
+            "预算控制在300元以内",
+            "总时间不超过4小时"
+          ],
+          "must_not": [
+            "推荐明显超出300元预算的方案",
+            "安排超过4小时的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "保留300元预算和4小时内限制",
+            "改选公交或地铁能到达的地点",
+            "不要求用户开车"
+          ],
+          "must_not": [
+            "仍推荐需要开车的方案",
+            "忽略公交或地铁可达的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六一家三口出游给出推荐",
+            "预算控制在300元以内",
+            "总时间不超过4小时"
+          ],
+          "must_not": [
+            "推荐明显超出300元预算的方案",
+            "安排超过4小时的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "保留300元预算和4小时内限制",
+            "改选公交或地铁能到达的地点",
+            "不要求用户开车"
+          ],
+          "must_not": [
+            "仍推荐需要开车的方案",
+            "忽略公交或地铁可达的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将人数更正为五口人",
+            "保留300元预算、4小时内、公交或地铁可达的限制",
+            "给出适合五口人的安排"
+          ],
+          "must_not": [
+            "仍按三口人安排",
+            "忽略人数更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六一家三口出游给出推荐",
+            "预算控制在300元以内",
+            "总时间不超过4小时"
+          ],
+          "must_not": [
+            "推荐明显超出300元预算的方案",
+            "安排超过4小时的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "保留300元预算和4小时内限制",
+            "改选公交或地铁能到达的地点",
+            "不要求用户开车"
+          ],
+          "must_not": [
+            "仍推荐需要开车的方案",
+            "忽略公交或地铁可达的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将人数更正为五口人",
+            "保留300元预算、4小时内、公交或地铁可达的限制",
+            "给出适合五口人的安排"
+          ],
+          "must_not": [
+            "仍按三口人安排",
+            "忽略人数更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答人数为五口人",
+            "回答预算为300元以内",
+            "回答不能开车、需公交或地铁可达"
+          ],
+          "must_not": [
+            "回答成三口人",
+            "回答预算错误",
+            "回答可以开车"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C09_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对周六一家三口出游给出推荐",
+            "预算控制在300元以内",
+            "总时间不超过4小时"
+          ],
+          "must_not": [
+            "推荐明显超出300元预算的方案",
+            "安排超过4小时的活动"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "保留300元预算和4小时内限制",
+            "改选公交或地铁能到达的地点",
+            "不要求用户开车"
+          ],
+          "must_not": [
+            "仍推荐需要开车的方案",
+            "忽略公交或地铁可达的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将人数更正为五口人",
+            "保留300元预算、4小时内、公交或地铁可达的限制",
+            "给出适合五口人的安排"
+          ],
+          "must_not": [
+            "仍按三口人安排",
+            "忽略人数更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答人数为五口人",
+            "回答预算为300元以内",
+            "回答不能开车、需公交或地铁可达"
+          ],
+          "must_not": [
+            "回答成三口人",
+            "回答预算错误",
+            "回答可以开车"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话总结周六安排",
+            "总结包含五口人、公交或地铁、300元以内、4小时以内"
+          ],
+          "must_not": [
+            "总结超过两句话",
+            "遗漏五口人、预算或交通方式等关键信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

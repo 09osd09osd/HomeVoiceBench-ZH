@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "1e81f8f8-2610-4f05-b33a-8adc65b65ae8",
+  "usage": {
+    "prompt_tokens": 1868,
+    "completion_tokens": 1132,
+    "total_tokens": 3000,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1484
+  },
+  "temperature": 0,
+  "source_sha256": "62c52959a6e7243c9c79e11f5a879996cd6ebb96a0ae669eee294c040501767b",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C05_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户请求，帮助把晚饭后家务分工的需求说清楚",
+            "表述聚焦具体家务事项与分工，不评价家人勤快或懒"
+          ],
+          "must_not": [
+            "对家人进行勤快/懒等人格评价"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助组织周六上午大扫除分工的说法",
+            "涵盖客厅、厨房、卫生间三项区域分给三个人"
+          ],
+          "must_not": [
+            "给人贴标签或评价谁勤快谁懒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把上午十点前完成的时间限制纳入说法",
+            "说明下午孩子写作业需要安静"
+          ],
+          "must_not": [
+            "忽略十点前完成的时间要求",
+            "忽略下午需要安静的原因"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助组织工作日接孩子和做晚饭分工的说法",
+            "体现用户工作日下班晚这一前提"
+          ],
+          "must_not": [
+            "指责家人不负责任"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "明确周二和周四赶不回来",
+            "明确其他三天晚饭由用户来做",
+            "指出接孩子在这两天需要别人帮忙"
+          ],
+          "must_not": [
+            "把周二周四说成可以做饭",
+            "遗漏接孩子需要他人帮忙"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正后表述周二、周三、周四都不行",
+            "相应调整可做饭天数为周一和周五",
+            "指出这三天接孩子需要家里其他人帮忙"
+          ],
+          "must_not": [
+            "仍保留周三可以做饭的旧说法",
+            "遗漏周三也不行这一更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助组织轮流倒垃圾值日的说法",
+            "体现每天谁值日谁负责倒垃圾的规则"
+          ],
+          "must_not": [
+            "说谁懒或评价家人"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按周轮换，一人负责一周",
+            "周末交接给下一个人"
+          ],
+          "must_not": [
+            "改成按天轮换",
+            "遗漏周末交接"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正改为每周一早上交接",
+            "保留按周轮换、一人一周、谁值日谁倒垃圾"
+          ],
+          "must_not": [
+            "仍说周末交接",
+            "遗漏周一早上交接这一更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得已改为每周一早上交接",
+            "就这一周谁先开始给出可商量的定法"
+          ],
+          "must_not": [
+            "否认或记错为周末交接",
+            "擅自指定具体某人先开始而不留商量余地"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C05_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "帮助起头组织洗衣、晾衣、叠衣分工的说法",
+            "体现把三段分开安排、不都堆给一个人"
+          ],
+          "must_not": [
+            "评价谁做得多或给家人贴标签"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "说明用户早上出门早、晾衣服不方便",
+            "说明晚上叠衣服可以由用户负责"
+          ],
+          "must_not": [
+            "把晾衣服说成用户方便负责",
+            "遗漏晚上叠衣服可负责"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "按更正说明叠衣服只负责周一和周三",
+            "保留早上出门早、晾衣服不方便",
+            "指出其他时间叠衣服需大家再分"
+          ],
+          "must_not": [
+            "仍说晚上叠衣服都可以负责",
+            "遗漏只负责周一和周三这一更正"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得叠衣服只负责周一和周三",
+            "就剩余洗衣和晾晒给出较顺的排法建议"
+          ],
+          "must_not": [
+            "记错叠衣服负责的天数",
+            "把叠衣服说成用户全周负责"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用简短的话收尾",
+            "把洗衣、晾衣、叠衣分工说清楚，含用户叠衣负责周一和周三"
+          ],
+          "must_not": [
+            "长篇展开",
+            "遗漏叠衣服只负责周一和周三",
+            "给家人贴标签"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

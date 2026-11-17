@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6f235900-7536-4656-ba63-cd5ca5e8738d",
+  "usage": {
+    "prompt_tokens": 2107,
+    "completion_tokens": 990,
+    "total_tokens": 3097,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1723
+  },
+  "temperature": 0,
+  "source_sha256": "6e2c474d8eb0eafd6dbe5bb46c2fafb37d13eb9fa02751961be2adb9f31ccfc6",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T19_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询书房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T19_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询书房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T19_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询书房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较书房与厨房两个读数",
+            "说明两读数测量时间是否相同"
+          ],
+          "must_not": [
+            "调节或操作任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T19_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询书房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较书房与厨房两个读数",
+            "说明两读数测量时间是否相同"
+          ],
+          "must_not": [
+            "调节或操作任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明这些读数不能完全反映现场全部情况",
+            "指出读数只反映测量那一刻",
+            "指出传感器只能检测有无不能识别身份"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T19_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "查询书房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "查询厨房当前是否有人",
+            "告知读数（有人/无人）",
+            "告知测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "比较书房与厨房两个读数",
+            "说明两读数测量时间是否相同"
+          ],
+          "must_not": [
+            "调节或操作任何设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明这些读数不能完全反映现场全部情况",
+            "指出读数只反映测量那一刻",
+            "指出传感器只能检测有无不能识别身份"
+          ],
+          "must_not": [
+            "声称读数能说明现场全部情况",
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "重新查询书房当前是否有人",
+            "告知新的读数（有人/无人）",
+            "告知新的测量时间"
+          ],
+          "must_not": [
+            "执行任何设备写操作或调节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

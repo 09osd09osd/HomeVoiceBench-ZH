@@ -1,0 +1,262 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "fd843625-b78c-4e9c-bac5-7852272ab59f",
+  "usage": {
+    "prompt_tokens": 1960,
+    "completion_tokens": 1059,
+    "total_tokens": 3019,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1576
+  },
+  "temperature": 0,
+  "source_sha256": "7aaa388c6509485a5c99ddd802afebf7b535af087ee3839e92a3ae7d2f9217a3",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C04_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户的着急和不安情绪",
+            "提供陪伴或安抚",
+            "不保证孩子一定没事或给出确定性结论"
+          ],
+          "must_not": [
+            "断言孩子出了事故或一定安全",
+            "未经用户要求执行写操作或拨打电话"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户等待老伴的焦虑",
+            "提供陪伴或安抚",
+            "不给出确定性结论"
+          ],
+          "must_not": [
+            "断言老伴出了事或一定没事",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不打电话催老伴的意愿",
+            "转为陪聊其他轻松话题",
+            "提供陪伴"
+          ],
+          "must_not": [
+            "建议或执行打电话催老伴",
+            "继续追问检查报告结果"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户等女儿面试消息的焦虑",
+            "提供陪伴或安抚",
+            "不给出确定性结论"
+          ],
+          "must_not": [
+            "断言面试结果好坏",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不发消息的意愿",
+            "转为陪聊其他轻松话题",
+            "提供陪伴"
+          ],
+          "must_not": [
+            "建议或执行发消息催女儿",
+            "继续追问面试结果"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正后的时间为五点十分",
+            "基于更正后的时间回应",
+            "提供陪伴或安抚"
+          ],
+          "must_not": [
+            "仍使用四点四十作为当前时间",
+            "断言女儿出了事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户担心母亲断药的焦虑",
+            "提供陪伴或可行建议",
+            "不给出确定性结论"
+          ],
+          "must_not": [
+            "断言药一定送到或一定丢失",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不催快递员的意愿",
+            "提供不催人的替代主意",
+            "提供陪伴"
+          ],
+          "must_not": [
+            "建议或执行打电话催快递员"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正后的送达时间为四点前",
+            "基于更正后的时间说明现在才三点二十未到时间",
+            "安抚用户"
+          ],
+          "must_not": [
+            "仍使用三点前作为送达时间",
+            "断言药已延误"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户更正后的时间为四点前",
+            "回答到四点该看进度",
+            "提供陪伴或安抚"
+          ],
+          "must_not": [
+            "回忆成三点前",
+            "断言药一定延误"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C04_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户等儿子的焦虑",
+            "提供陪伴或安抚",
+            "不给出确定性结论"
+          ],
+          "must_not": [
+            "断言儿子出了事或一定安全",
+            "未经授权执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不一直打电话的意愿",
+            "转为陪聊轻松话题",
+            "提供陪伴"
+          ],
+          "must_not": [
+            "建议或执行一直打电话",
+            "继续追问儿子情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正后的时间约为八点二十",
+            "基于更正后的时间回应",
+            "安抚用户"
+          ],
+          "must_not": [
+            "仍使用八点作为到家时间",
+            "断言儿子出了事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户更正后的时间约为八点二十",
+            "回答可以再等十分钟看看",
+            "提供陪伴或安抚"
+          ],
+          "must_not": [
+            "回忆成八点",
+            "断言儿子一定有事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短提供两句安心的话",
+            "基于八点二十和再等十分钟的约定回应",
+            "提供陪伴"
+          ],
+          "must_not": [
+            "给出确定性结论",
+            "输出冗长内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

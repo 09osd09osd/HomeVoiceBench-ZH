@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "4fc02b3e-953d-46d8-8bfe-9dd06c3244b3",
+  "usage": {
+    "prompt_tokens": 2136,
+    "completion_tokens": 965,
+    "total_tokens": 3101,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1752
+  },
+  "temperature": 0,
+  "source_sha256": "acbfd656b839bff427290698c85b2232e3a9a0c3a7ee9c174a3837a8f0297159",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T11_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅净化器的写操作",
+            "将客厅净化器模式设为自动"
+          ],
+          "must_not": [
+            "操作非客厅净化器的设备",
+            "更改用户未要求的其他设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T11_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅净化器的写操作",
+            "将客厅净化器模式设为自动"
+          ],
+          "must_not": [
+            "操作非客厅净化器的设备",
+            "更改用户未要求的其他设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "仅将净化器模式设为自动"
+          ],
+          "must_not": [
+            "更改净化器电源状态",
+            "更改净化器其他设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T11_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅净化器的写操作",
+            "将客厅净化器模式设为自动"
+          ],
+          "must_not": [
+            "操作非客厅净化器的设备",
+            "更改用户未要求的其他设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "仅将净化器模式设为自动"
+          ],
+          "must_not": [
+            "更改净化器电源状态",
+            "更改净化器其他设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅净化器当前模式",
+            "查询客厅净化器当前开关状态"
+          ],
+          "must_not": [
+            "更改净化器任何设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T11_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅净化器的写操作",
+            "将客厅净化器模式设为自动"
+          ],
+          "must_not": [
+            "操作非客厅净化器的设备",
+            "更改用户未要求的其他设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "仅将净化器模式设为自动"
+          ],
+          "must_not": [
+            "更改净化器电源状态",
+            "更改净化器其他设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅净化器当前开关状态",
+            "查询客厅净化器当前模式"
+          ],
+          "must_not": [
+            "更改净化器任何设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行关闭客厅净化器的写操作",
+            "保留净化器当前模式不变"
+          ],
+          "must_not": [
+            "更改净化器模式",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T11_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开客厅净化器的写操作",
+            "将客厅净化器模式设为自动"
+          ],
+          "must_not": [
+            "操作非客厅净化器的设备",
+            "更改用户未要求的其他设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "仅将净化器模式设为自动"
+          ],
+          "must_not": [
+            "更改净化器电源状态",
+            "更改净化器其他设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询客厅净化器当前模式",
+            "查询客厅净化器当前开关状态"
+          ],
+          "must_not": [
+            "调整净化器任何设置",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "执行关闭净化器的写操作",
+            "保留净化器当前模式不变"
+          ],
+          "must_not": [
+            "更改净化器模式",
+            "操作其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询净化器当前开关状态"
+          ],
+          "must_not": [
+            "操作其他设备",
+            "更改净化器任何设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c3f7b228-5449-4611-b8f8-4bb57011aaf8",
+  "usage": {
+    "prompt_tokens": 1845,
+    "completion_tokens": 1072,
+    "total_tokens": 2917,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1461
+  },
+  "temperature": 0,
+  "source_sha256": "0ec489f7b12bb9f80b7755f9f7f887185412bb0000694be5e15b8a7ed07aaff0",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C12_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对用户提供的点菜句子给出自然度反馈",
+            "指出“不要香菜”可改为“不要放香菜”等更自然说法",
+            "保持练习点菜语境的轻松口吻"
+          ],
+          "must_not": [
+            "把“不要香菜”误解为其他要求",
+            "否定用户原句的基本可理解性"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "评价“请问去火车站怎么走”是否礼貌清楚",
+            "给出可选的补充表达建议"
+          ],
+          "must_not": [
+            "把问路练习变成实际导航查询",
+            "否定用户原句的礼貌性"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "提供请对方说慢一点且说明怕听不清的表达",
+            "将新句与上一句问路句组合"
+          ],
+          "must_not": [
+            "忽略“怕听不清”这一原因",
+            "把补充句写成命令式不礼貌表达"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "评价请假句子的得体性",
+            "建议可补充请假原因"
+          ],
+          "must_not": [
+            "替用户编造具体请假原因",
+            "否定称呼或请求的清楚性"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "采用“家里有点事”作为原因",
+            "尊重用户不想说太细的意愿",
+            "组合出完整请假句"
+          ],
+          "must_not": [
+            "追问或展开具体家事细节",
+            "把原因写得更具体"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将请假时间从明天下午更正为后天上午",
+            "确认更正后的完整句子"
+          ],
+          "must_not": [
+            "继续保留明天下午",
+            "把更正误解为其他时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "评价退换衣服句子的自然度",
+            "建议补充购买时间等信息"
+          ],
+          "must_not": [
+            "把练习变成实际退换货操作",
+            "否定原句的可理解性"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入“麻烦您”“可以吗”等客气表达",
+            "组合出更客气的完整句子"
+          ],
+          "must_not": [
+            "使用强硬或命令式语气",
+            "忽略用户想客气一点的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将购买时间从昨天更正为上周六",
+            "确认更正后的完整句子"
+          ],
+          "must_not": [
+            "继续保留昨天",
+            "把上周六误写成其他时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆购买时间是上周六",
+            "复述更正后的完整客气句子"
+          ],
+          "must_not": [
+            "回答成昨天或其他时间",
+            "遗漏客气表达"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C12_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "评价自我介绍是否清楚完整",
+            "提供可选的更自然说法"
+          ],
+          "must_not": [
+            "否定用户原句的可用性",
+            "擅自更改姓名或籍贯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "加入“我喜欢打羽毛球”这一爱好",
+            "保持简洁不啰嗦",
+            "组合出完整自我介绍"
+          ],
+          "must_not": [
+            "展开过多爱好细节",
+            "忽略用户不想说太多的要求"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将籍贯从湖南更正为湖北",
+            "确认更正后的完整句子"
+          ],
+          "must_not": [
+            "继续保留湖南",
+            "把湖北误写成其他省份"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆籍贯是湖北",
+            "复述更正后的完整自我介绍"
+          ],
+          "must_not": [
+            "回答成湖南或其他地方",
+            "遗漏爱好信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短总结自我介绍",
+            "包含姓名小李、湖北人、喜欢打羽毛球"
+          ],
+          "must_not": [
+            "总结过长",
+            "遗漏籍贯或爱好",
+            "把籍贯写成湖南"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

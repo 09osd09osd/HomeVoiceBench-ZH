@@ -1,0 +1,247 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a0b352e6-c9e9-468f-b8ae-63584b6b63e7",
+  "usage": {
+    "prompt_tokens": 2117,
+    "completion_tokens": 900,
+    "total_tokens": 3017,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1733
+  },
+  "temperature": 0,
+  "source_sha256": "492130de73f21c9080279631cf28ea4f3946f7984d6838274d1e30c1717fec92",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T06_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯",
+            "将亮度设置为60%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "设置其他亮度值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯",
+            "将亮度设置为60%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "设置其他亮度值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯亮度改为40%",
+            "保持其他设置不变"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "调整其他设备或设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯",
+            "将亮度设置为60%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "设置其他亮度值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯亮度改为40%",
+            "保持其他设置不变"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "调整其他设备或设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯当前亮度",
+            "查询书房灯当前开关状态"
+          ],
+          "must_not": [
+            "调整书房灯任何设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯",
+            "将亮度设置为60%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "设置其他亮度值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯亮度改为40%",
+            "保持其他设置不变"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "调整其他设备或设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯当前亮度",
+            "查询书房灯当前开关状态"
+          ],
+          "must_not": [
+            "调整书房灯任何设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭书房灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改变亮度值",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T06_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "执行打开书房灯",
+            "将亮度设置为60%"
+          ],
+          "must_not": [
+            "调整其他设备",
+            "设置其他亮度值"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将书房灯亮度改为40%",
+            "保持其他设置不变"
+          ],
+          "must_not": [
+            "改变书房灯开关状态",
+            "调整其他设备或设置"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "查询书房灯当前亮度",
+            "查询书房灯当前开关状态"
+          ],
+          "must_not": [
+            "调整书房灯任何设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "关闭书房灯",
+            "保留亮度设置不变"
+          ],
+          "must_not": [
+            "改变亮度值",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "查询书房灯当前开关状态"
+          ],
+          "must_not": [
+            "调整书房灯任何设置",
+            "调整其他设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

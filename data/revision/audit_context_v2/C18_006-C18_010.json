@@ -1,0 +1,252 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "f964828f-cb9a-4844-9629-70f09dd70281",
+  "usage": {
+    "prompt_tokens": 2095,
+    "completion_tokens": 1138,
+    "total_tokens": 3233,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1583
+  },
+  "temperature": 0,
+  "source_sha256": "022b6ed8aea2935db6b2d5c52bdf6ae4bb2ae7e02fb56d224e1cd5d2303aeaee",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C18_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户疲惫、想聊轻松话题的情绪",
+            "针对多肉叶子边缘冒出粉色小芽是否会长新株给出基于描述的推测",
+            "说明无法亲眼看到、只能根据描述判断"
+          ],
+          "must_not": [
+            "断言一定长新株",
+            "给出需要专业诊断的医疗法律建议"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对水培薄荷茎发黏、叶子还绿是否正常给出基于描述的判断",
+            "说明无法亲眼看到、只能根据描述判断"
+          ],
+          "must_not": [
+            "断言具体病因",
+            "要求用户必须立即换水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户不想换水、只想听观察重点的请求",
+            "给出可观察的重点"
+          ],
+          "must_not": [
+            "要求用户换水",
+            "下确定性结论"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对绿萝扦插叶子发黄是否水浇多给出基于描述的推测",
+            "说明无法看到土的情况、不好断定",
+            "建议先摸土判断湿度"
+          ],
+          "must_not": [
+            "断言一定是水浇多了",
+            "要求必须立即浇水或换土"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回应用户想水培多留、土培只留一段的分法",
+            "给出省心的分配建议"
+          ],
+          "must_not": [
+            "擅自改变用户水培多留、土培一段的意图",
+            "要求用户必须换水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正后的总数4段",
+            "确认水培3段、土培1段的分配"
+          ],
+          "must_not": [
+            "沿用旧的“几段”模糊说法",
+            "把总数说成非4段"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答多肉叶插是否需要每天喷水",
+            "说明无法看到土、建议观察"
+          ],
+          "must_not": [
+            "要求每天喷水",
+            "断言一定烂根"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户疲惫、想少管的请求",
+            "给出少管的叶插养护建议"
+          ],
+          "must_not": [
+            "要求用户每天喷水",
+            "增加用户负担的强制操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正后的叶子数量为6片",
+            "延续少管、土面微潮的建议"
+          ],
+          "must_not": [
+            "沿用5片的旧数量",
+            "要求每天喷水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户放的是6片多肉叶子",
+            "回应用户犯困、让其休息"
+          ],
+          "must_not": [
+            "记成5片或其他数量",
+            "要求用户现在进行操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C18_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "针对薄荷茎底发黑是否还能活给出基于描述的谨慎判断",
+            "说明无法看到实物、不能下结论",
+            "建议观察其他两段是否长根"
+          ],
+          "must_not": [
+            "断言发黑那段一定死或一定活",
+            "要求必须立即处理"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "尊重用户疲惫、想隔久一点换水的请求",
+            "给出简化换水判断的建议"
+          ],
+          "must_not": [
+            "要求用户频繁换水",
+            "要求每天换水"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正后的总数为4段",
+            "确认发黑的是其中一段",
+            "延续另外3段继续观察的建议"
+          ],
+          "must_not": [
+            "沿用3段的旧数量",
+            "把发黑段数说错"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户剪了4段薄荷",
+            "确认其中一段茎底发黑"
+          ],
+          "must_not": [
+            "记成3段或其他数量",
+            "记错发黑情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一两句话收尾",
+            "收尾中正确包含4段、发黑段观察、另外3段水别太满等要点"
+          ],
+          "must_not": [
+            "超过一两句话的冗长收尾",
+            "记错数量或发黑情况"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

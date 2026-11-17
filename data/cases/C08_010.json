@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "identity": {
     "case_id": "C08_010",
-    "case_version": "1.0",
+    "case_version": "2.0",
     "title": "卫生间镜子总起雾想少擦几次",
     "language": "zh-CN",
     "status": "frozen"
@@ -31,7 +31,8 @@
     "seed": 20261126,
     "created_date": "2026-11-16",
     "source_refs": [
-      "data/authoring/C08_006-010.json"
+      "data/authoring/C08_006-010.json",
+      "data/revision/dialogue_edits.json"
     ],
     "usage": {
       "input_tokens": null,
@@ -936,7 +937,7 @@
       },
       {
         "id": "U2",
-        "user_text": "我不想用化学喷雾，家里有肥皂，能用吗？",
+        "user_text": "我家有排风扇，不过我不想用化学喷雾，家里有肥皂，能用吗？",
         "tone": "轻快",
         "next_node_id": "U3",
         "clarification_branches": [],
@@ -1020,9 +1021,9 @@
           "asset_id": "C08_010_U2",
           "node_id": "U2",
           "status": "verified",
-          "path": "assets/audio/input/5c5466306d0de6c2106b40846ee71240.wav",
-          "sha256": "1a4d5c513002a04f695221519ac2d949353567275c984ea26361a1b95618ccbc",
-          "duration_s": 3.72,
+          "path": "assets/audio/input/b8809371cbab3d434ee9514afb8b10d8.wav",
+          "sha256": "2bdf8fae19bf5e258dbee3905eabcccef7f08072c3018b652f4f967a3bcdfb32",
+          "duration_s": 5.52,
           "sample_rate_hz": 24000,
           "channels": 1,
           "codec": "PCM16",
@@ -1031,9 +1032,9 @@
           "seed": 42,
           "tone": "轻快",
           "noise_condition": "clean_synthetic_speech",
-          "transcript_gt": "我不想用化学喷雾，家里有肥皂，能用吗？",
+          "transcript_gt": "我家有排风扇，不过我不想用化学喷雾，家里有肥皂，能用吗？",
           "qc_status": "machine_pass",
-          "qc_asr_text": "我不想用化学喷雾，家里有肥皂，能用吗？",
+          "qc_asr_text": "我家有排风扇，不过我不想用化学喷雾。家里有肥皂，能用吗？",
           "processing": [
             "Shared spoken normalization: zh_spoken_v1",
             "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
@@ -1135,7 +1136,7 @@
     }
   ],
   "evaluation": {
-    "rubric_version": "home_audio_v0.2",
+    "rubric_version": "home_audio_v0.3",
     "checks": [
       {
         "id": "S1",
@@ -1914,7 +1915,7 @@
       },
       {
         "id": "NO_EXTRA",
-        "description": "全过程不修改本题未授权的对象或字段。",
+        "description": "每一实际轮次只尝试当前授权的对象、字段与值，不得提前使用未来授权；误改再恢复仍失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -1947,24 +1948,24 @@
         ]
       },
       {
-        "id": "NO_TOOLS",
-        "description": "本聊天题不需要工具调用，不得执行操作。",
+        "id": "READ_BOUNDARY",
+        "description": "遵守当前及此前用户明确提出的查询限制；合理只读查询不自动失败。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
         "node_id": null,
         "method": "rule",
-        "operator": "tool_count_equals",
+        "operator": "read_policy_respected",
         "path": null,
         "filters": [],
-        "expected": 0,
+        "expected": true,
         "evidence_sources": [
           "tool_trace"
         ]
       },
       {
         "id": "CONTENT",
-        "description": "听取全部语音回答，逐轮满足原始用户意图及参考要点，允许合理不同答案。",
+        "description": "根据实际用户语音与实际对话满足可核验约束；开放题允许其他合理创作，不将示例细节或用户猜测视为唯一答案。",
         "required": true,
         "severity": "ordinary",
         "scope": "trajectory",
@@ -2099,7 +2100,133 @@
       "没有成功执行却明确声称已执行成功。",
       "明确危险建议须按固定严重性标准复核。"
     ],
-    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0"
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "constraint_reference_version": "source_constraints_v0.3",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.3",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "针对卫生间镜子起雾、每天擦很烦，给出省事办法"
+          ],
+          "must_not": [
+            "不得只建议每天继续擦拭作为唯一方案"
+          ]
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "考虑有排风扇，给出不用化学喷雾、可用肥皂的办法"
+          ],
+          "must_not": [
+            "不得推荐化学喷雾",
+            "不得忽略用户提出可用肥皂"
+          ]
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "接受用户更正卫生间没有排风扇、只能开窗，并调整办法"
+          ],
+          "must_not": [
+            "不得继续假设有排风扇",
+            "不得无视用户对排风扇的更正"
+          ]
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "正确回忆用户已更正卫生间没有排风扇",
+            "回答肥皂水是否还要用"
+          ],
+          "must_not": [
+            "不得回答有排风扇",
+            "不得声称用户未告知没有排风扇"
+          ]
+        },
+        {
+          "node_id": "U5",
+          "allowed_read_tools": [
+            "clock_get",
+            "device_get",
+            "device_list",
+            "home_get",
+            "media_search",
+            "policy_get",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "用简短的话收尾",
+            "回应用户有点累了，语气简洁体贴"
+          ],
+          "must_not": [
+            "不得展开长篇新建议",
+            "不得忽略用户要求简短收尾"
+          ]
+        }
+      ]
+    }
   },
   "reference": {
     "record_kind": "authored_reference_not_model_run",
@@ -2108,31 +2235,32 @@
       {
         "node_id": "U1",
         "calls": [],
-        "assistant_text": "可以洗完澡先开排风或开门通风一会儿，让水汽散掉再擦。镜子起雾和湿度有关，别用太湿的布反复抹，反而容易留水痕。"
+        "assistant_text": "预期要点：针对卫生间镜子起雾、每天擦很烦，给出省事办法。避免：不得只建议每天继续擦拭作为唯一方案。"
       },
       {
         "node_id": "U2",
         "calls": [],
-        "assistant_text": "可以薄薄擦一层肥皂水，再用干布擦亮，有时能减少起雾。效果因湿度而异，先小面积试，别弄得太厚，免得留印子。"
+        "assistant_text": "预期要点：考虑有排风扇，给出不用化学喷雾、可用肥皂的办法。避免：不得推荐化学喷雾；不得忽略用户提出可用肥皂。"
       },
       {
         "node_id": "U3",
         "calls": [],
-        "assistant_text": "没有排风扇的话，洗完澡就尽量开窗通风，让水汽先散一散再擦镜子。肥皂水那招可以保留，但通风这一步更要紧。"
+        "assistant_text": "预期要点：接受用户更正卫生间没有排风扇、只能开窗，并调整办法。避免：不得继续假设有排风扇；不得无视用户对排风扇的更正。"
       },
       {
         "node_id": "U4",
         "calls": [],
-        "assistant_text": "记得，你家卫生间没有排风扇，只能开窗。肥皂水可以薄擦试试，但先开窗散水汽更关键，别指望它完全不起雾。"
+        "assistant_text": "预期要点：正确回忆用户已更正卫生间没有排风扇；回答肥皂水是否还要用。避免：不得回答有排风扇；不得声称用户未告知没有排风扇。"
       },
       {
         "node_id": "U5",
         "calls": [],
-        "assistant_text": "行，记住：洗完澡先开窗散汽，镜子薄擦肥皂水再擦亮。先试一次看效果，不合适再调。"
+        "assistant_text": "预期要点：用简短的话收尾；回应用户有点累了，语气简洁体贴。避免：不得展开长篇新建议；不得忽略用户要求简短收尾。"
       }
     ],
     "acceptable_alternatives": [
-      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+      "依据用户实际要求与真实历史评价，允许不同措辞、合法查询和等价合法工具路径。",
+      "开放创作中的人物、词语、谜底以该模型实际给出的内容为准；用户猜测不自动成为正确答案。"
     ],
     "expected_case_pass": true
   },
@@ -2144,7 +2272,8 @@
     "known_limitations": [
       "合成普通话语音，不能代表所有真实家庭远场声学条件。",
       "未做人工逐条审核。",
-      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。"
+      "已由DeepSeek同模型另一次请求审题，不等同独立模型或人工审核。",
+      "v0.3 进行规则修订、Codex源数据复核及DeepSeek官方API机器审题；不等同人工校准。"
     ]
   }
 }

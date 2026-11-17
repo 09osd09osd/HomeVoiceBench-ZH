@@ -1,0 +1,249 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "1fb8efde-ca00-4582-b753-90bda36cb9f5",
+  "usage": {
+    "prompt_tokens": 1855,
+    "completion_tokens": 942,
+    "total_tokens": 2797,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1343
+  },
+  "temperature": 0,
+  "source_sha256": "fb2dbee58d9f78c25119c9d16b58fa4897e72a0369c503916b794cbbd459935d",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C10_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想聊聊安排先后顺序的意图",
+            "确认不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想聊聊安排先后顺序的意图",
+            "确认不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户先轻松后难的排序偏好"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想聊聊安排先后顺序的意图",
+            "确认不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户先轻松后难的排序偏好"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为先做简单的而非先做轻松的",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作",
+            "继续沿用先做轻松的表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想聊聊安排先后顺序的意图",
+            "确认不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户先轻松后难的排序偏好"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为先做简单的而非先做轻松的",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作",
+            "继续沿用先做轻松的表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户刚才改的是先做简单的而非先做轻松的",
+            "按简单到复杂继续聊"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作",
+            "错误回忆为改的是先做轻松的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C10_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回应用户想聊聊安排先后顺序的意图",
+            "确认不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "承接用户先轻松后难的排序偏好"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "确认更正为先做简单的而非先做轻松的",
+            "区分难度与累不累"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作",
+            "继续沿用先做轻松的表述"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "正确回忆用户刚才改的是先做简单的而非先做轻松的",
+            "按简单到复杂继续聊"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作",
+            "错误回忆为改的是先做轻松的"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短收尾",
+            "确认不设提醒"
+          ],
+          "must_not": [
+            "创建提醒",
+            "执行写操作"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

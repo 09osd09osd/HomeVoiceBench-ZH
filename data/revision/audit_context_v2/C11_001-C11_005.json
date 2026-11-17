@@ -1,0 +1,227 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "353b91d2-b31d-4663-afe1-a1d6d8f7f1ad",
+  "usage": {
+    "prompt_tokens": 2038,
+    "completion_tokens": 831,
+    "total_tokens": 2869,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1526
+  },
+  "temperature": 0,
+  "source_sha256": "c255a75f0347a5f8e0174e94fae5f499dc6aea7ea7979d470573505af5af9c93",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C11_001",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用小朋友能听懂的话解释彩虹成因"
+          ],
+          "must_not": [
+            "使用过于专业或复杂的术语"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_002",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释磁铁能吸铁的原因"
+          ],
+          "must_not": [
+            "使用过于复杂的词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "避免复杂词汇",
+            "用孩子熟悉的玩具打比方"
+          ],
+          "must_not": [
+            "使用过于复杂的词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_003",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释天空为什么是蓝色"
+          ],
+          "must_not": [
+            "使用过于复杂的词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按五岁孩子理解水平解释",
+            "用孩子玩过的东西打比方"
+          ],
+          "must_not": [
+            "讲得太深"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正孩子年龄为六岁",
+            "按快上小学的理解水平解释"
+          ],
+          "must_not": [
+            "继续称孩子五岁"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_004",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释影子怎么来的"
+          ],
+          "must_not": [
+            "使用过于复杂的词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按六岁孩子理解水平解释",
+            "用恐龙打比方"
+          ],
+          "must_not": [
+            "使用过于复杂的词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正孩子年龄为七岁",
+            "说明上一年级"
+          ],
+          "must_not": [
+            "继续称孩子六岁"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得孩子七岁",
+            "用恐龙再讲一遍影子成因"
+          ],
+          "must_not": [
+            "说孩子六岁或五岁"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C11_005",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "用简单的话解释为什么会下雨"
+          ],
+          "must_not": [
+            "使用过于复杂的词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按五岁孩子理解水平解释",
+            "用水打比方"
+          ],
+          "must_not": [
+            "使用过于复杂的词"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "更正孩子年龄为六岁",
+            "说明快上小学"
+          ],
+          "must_not": [
+            "继续称孩子五岁"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答记得孩子六岁",
+            "用水打比方再讲一遍雨的形成"
+          ],
+          "must_not": [
+            "说孩子五岁"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用一句话简短总结雨的形成"
+          ],
+          "must_not": [
+            "展开长篇解释"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

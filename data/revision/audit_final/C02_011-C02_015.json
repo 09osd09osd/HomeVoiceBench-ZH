@@ -1,0 +1,234 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9789237b-bb94-4560-b599-d01febb49fa8",
+  "usage": {
+    "prompt_tokens": 1378,
+    "completion_tokens": 900,
+    "total_tokens": 2278,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 866
+  },
+  "temperature": 0,
+  "source_sha256": "a1bd3358a215c67a6a4ee4d2fa147fdbabde29bf073033055dadf9214d3e16ef",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C02_011",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕睡前轻音乐给出选曲建议",
+            "建议应体现轻柔、不吵的取向",
+            "仅讨论选择，不实际播放"
+          ],
+          "must_not": [
+            "实际播放音乐",
+            "推荐吵闹或激烈的音乐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_012",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕做早饭时听的轻松播客给出选择建议",
+            "建议时长在十分钟以内",
+            "仅讨论选择，不实际播放"
+          ],
+          "must_not": [
+            "实际播放播客",
+            "推荐超过十分钟的播客"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "在选播客建议中排除带广告的内容"
+          ],
+          "must_not": [
+            "推荐带广告的播客"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_013",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕睡前故事给出选择建议",
+            "建议时长约二十分钟左右"
+          ],
+          "must_not": [
+            "实际播放故事"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议内容温馨、不吓人"
+          ],
+          "must_not": [
+            "推荐悬疑推理类内容",
+            "推荐吓人的内容"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时长要求更正为十分钟以内"
+          ],
+          "must_not": [
+            "仍按二十分钟左右推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_014",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕本地晨间新闻的收听习惯进行讨论",
+            "不实际播放",
+            "不提供今天的新闻内容"
+          ],
+          "must_not": [
+            "实际播放新闻",
+            "提供今日具体新闻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议五分钟以内的本地新闻简报"
+          ],
+          "must_not": [
+            "推荐超过五分钟的新闻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将时长要求更正为三分钟以内"
+          ],
+          "must_not": [
+            "仍按五分钟推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记住的新闻时长为三分钟以内",
+            "确认新闻为本地新闻"
+          ],
+          "must_not": [
+            "回答成五分钟",
+            "回答成非本地新闻"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C02_015",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕可整夜播放的白噪音给出选择建议",
+            "仅讨论选择，不实际播放"
+          ],
+          "must_not": [
+            "实际播放白噪音"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议纯声音、不带旋律的白噪音，如风扇声"
+          ],
+          "must_not": [
+            "推荐带旋律的声音"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将声音偏好从风扇声改为雨声"
+          ],
+          "must_not": [
+            "仍以风扇声作为推荐"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认当前想要的是纯雨声"
+          ],
+          "must_not": [
+            "回答成风扇声",
+            "回答成带旋律的声音"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "简短回应并收尾"
+          ],
+          "must_not": [
+            "实际播放声音",
+            "长篇展开"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

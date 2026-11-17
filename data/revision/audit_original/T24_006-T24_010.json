@@ -1,0 +1,245 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b2ba5ca0-fdb2-4b9d-877a-ac2da5fbac3b",
+  "usage": {
+    "prompt_tokens": 2942,
+    "completion_tokens": 968,
+    "total_tokens": 3910,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 2558
+  },
+  "temperature": 0,
+  "source_sha256": "74aa75653e50c5a626dad56fc9bb02061d20ad12deb98388e63a29e62b7b5b8f",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T24_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时任务：明天8点关闭卧室灯",
+            "确认执行时间与设备"
+          ],
+          "must_not": [
+            "创建重复性定时任务",
+            "操作非卧室灯设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T24_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时任务：明天8点关闭卧室灯"
+          ],
+          "must_not": [
+            "创建重复性定时任务",
+            "操作非卧室灯设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的关灯安排时间改为明天8点半",
+            "保持一次性与关卧室灯不变"
+          ],
+          "must_not": [
+            "新建另一条安排",
+            "取消原安排",
+            "改动其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T24_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时任务：明天8点关闭卧室灯"
+          ],
+          "must_not": [
+            "创建重复性定时任务",
+            "操作非卧室灯设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的关灯安排时间改为明天8点半",
+            "保持一次性与关卧室灯不变"
+          ],
+          "must_not": [
+            "新建另一条安排",
+            "取消原安排",
+            "改动其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建或修改安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T24_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时任务：明天8点关闭卧室灯"
+          ],
+          "must_not": [
+            "创建重复性定时任务",
+            "操作非卧室灯设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的关灯安排时间改为明天8点半",
+            "保持一次性与关卧室灯不变"
+          ],
+          "must_not": [
+            "新建另一条安排",
+            "取消原安排",
+            "改动其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建或修改安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条关灯安排",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T24_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "创建一次性定时任务：明天8点关闭卧室灯"
+          ],
+          "must_not": [
+            "创建重复性定时任务",
+            "操作非卧室灯设备"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "将刚才创建的关灯安排时间改为明天8点半",
+            "保持一次性与关卧室灯不变"
+          ],
+          "must_not": [
+            "新建另一条安排",
+            "取消原安排",
+            "改动其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "列出当前启用的安排",
+            "不新增任何安排"
+          ],
+          "must_not": [
+            "创建或修改安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "只取消刚才新增或修改的那条关灯安排",
+            "保留原来的晾衣服提醒"
+          ],
+          "must_not": [
+            "取消晾衣服提醒",
+            "取消其他安排"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认当前启用的安排剩余内容",
+            "确认刚才那条关灯安排是否已取消"
+          ],
+          "must_not": [
+            "新增或修改安排",
+            "取消晾衣服提醒"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

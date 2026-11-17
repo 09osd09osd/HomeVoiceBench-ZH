@@ -1,0 +1,256 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2886f54f-0439-4d45-8199-6be5eda4ae59",
+  "usage": {
+    "prompt_tokens": 1535,
+    "completion_tokens": 1121,
+    "total_tokens": 2656,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 1023
+  },
+  "temperature": 0,
+  "source_sha256": "66d8c6a313dea99aed43b9339437501a6876a9c56e7ed48e5bf66d62c59a9d65",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C06_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句用户能对妈妈说的缓和关系的话",
+            "内容围绕洗碗引发的不愉快",
+            "语气适合当面表达"
+          ],
+          "must_not": [
+            "替用户发送消息或联系妈妈",
+            "编造用户未提及的家庭细节作为事实"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句向爸爸道歉/缓和的话",
+            "围绕早上说话冲了点",
+            "适合今晚回家当面说"
+          ],
+          "must_not": [
+            "替用户发送消息或联系爸爸",
+            "编造用户未提及的冲突细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "把道歉话缩短到一句",
+            "避免过度煽情",
+            "不提及具体时间，用“回头聊”之类表达"
+          ],
+          "must_not": [
+            "保留具体时间点",
+            "输出多句冗长版本",
+            "使用“对不起”以外的强制措辞要求（用户未禁止）"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句对妹妹说的缓和话",
+            "围绕昨天妹妹动东西、用户发火说话重",
+            "适合今晚说"
+          ],
+          "must_not": [
+            "替用户发送消息或联系妹妹",
+            "编造用户未提及的细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "不把错全揽在自己身上",
+            "加入让妹妹下次先问用户的表达",
+            "保持缓和语气"
+          ],
+          "must_not": [
+            "变成单方面全责道歉",
+            "省略“下次先问我”的意思"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把时间从昨天更正为前天晚上",
+            "其余内容照旧"
+          ],
+          "must_not": [
+            "继续使用“昨天”",
+            "改动用户未要求更改的其他设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句对爱人说的缓和话",
+            "围绕昨晚因孩子写作业争执、用户语气不好",
+            "表达不想让孩子觉得冷战"
+          ],
+          "must_not": [
+            "替用户发送消息或联系爱人",
+            "编造用户未提及的细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "建议等孩子睡了再说、不当着孩子面提",
+            "避免使用“对不起”三个字，换一种说法"
+          ],
+          "must_not": [
+            "出现“对不起”三字",
+            "建议当着孩子面谈"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把争执原因从写作业更正为练琴",
+            "其余设定照旧"
+          ],
+          "must_not": [
+            "继续把原因说成写作业",
+            "改动用户未要求更改的其他设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得更正后的事件是练琴",
+            "复述此前给出的那句缓和话供确认"
+          ],
+          "must_not": [
+            "说成写作业",
+            "声称用户改的是其他事情"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C06_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供一句对婆婆说的缓和话",
+            "围绕婆婆不敲门进房间、用户说了重话",
+            "适合今晚说"
+          ],
+          "must_not": [
+            "替用户发送消息或联系婆婆",
+            "编造用户未提及的细节"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "表达用户自己跟婆婆说、不让爱人传话",
+            "避免把“不欢迎”挂在嘴边"
+          ],
+          "must_not": [
+            "建议让爱人居中传话",
+            "出现“不欢迎”字样"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "把时间从“前两天”更正为“上周日”",
+            "其余设定照旧"
+          ],
+          "must_not": [
+            "继续使用“前两天”",
+            "改动用户未要求更改的其他设定"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "确认记得更正后的时间是上周日",
+            "复述此前给出的那句缓和话"
+          ],
+          "must_not": [
+            "说成前两天",
+            "声称用户改的是其他时间"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "把最后那句收短成一句能说完的话",
+            "保持缓和意图"
+          ],
+          "must_not": [
+            "输出多句冗长版本",
+            "改变用户已设定的对象和事件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

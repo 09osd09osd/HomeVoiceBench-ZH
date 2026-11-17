@@ -1,0 +1,253 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "fda3468d-8c9c-4864-9d0c-59230a368b73",
+  "usage": {
+    "prompt_tokens": 1422,
+    "completion_tokens": 1016,
+    "total_tokens": 2438,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 910
+  },
+  "temperature": 0,
+  "source_sha256": "e7f2dea10e55f278d608234157469eb0054c62d1c08931ed615c24d8963b264e",
+  "prompt_sha256": "7396a39e3b33383ec05db446999f1c73f59fcf343eb170e76a24f9cd429e48b4",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "C20_016",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "围绕森林动物主题为女儿下个月生日会提供创意建议",
+            "保持纯建议，不实际购买任何东西"
+          ],
+          "must_not": [
+            "实际下单或购买任何物品",
+            "擅自改为非森林动物主题"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_017",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "分析浅灰与米白两种客厅墙面颜色的利弊",
+            "保持纯分析，不下单"
+          ],
+          "must_not": [
+            "实际下单购买涂料或服务",
+            "只给一种颜色而不做比较分析"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "结合客厅朝北、光线一般分析颜色选择",
+            "记住并尊重妻子不喜欢冷色调这一偏好"
+          ],
+          "must_not": [
+            "推荐冷色调为主",
+            "忽略朝北采光条件",
+            "实际下单"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_018",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "为周末带儿子公园野餐列出携带物品清单",
+            "保持建议，不实际购买任何东西"
+          ],
+          "must_not": [
+            "实际购买或下单任何物品"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "针对孩子花粉敏感调整野餐方案",
+            "考虑原计划湖边公园的调整"
+          ],
+          "must_not": [
+            "忽略花粉敏感问题",
+            "实际购买"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将地点更正为河滨公园",
+            "体现河滨公园离家更近"
+          ],
+          "must_not": [
+            "继续以湖边公园为目的地",
+            "实际购买"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_019",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "提供搬家打包顺序建议",
+            "保持建议，不联系搬家公司"
+          ],
+          "must_not": [
+            "实际联系搬家公司",
+            "实际下单服务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "重点说明书籍打包方法",
+            "重点说明易碎碗碟打包方法"
+          ],
+          "must_not": [
+            "忽略书籍或易碎碗碟任一类",
+            "实际联系搬家公司"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将新家楼层更正为五楼",
+            "记住新家没有电梯"
+          ],
+          "must_not": [
+            "仍称新家在三楼",
+            "忽略无电梯条件"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答新家是五楼",
+            "确认没有电梯"
+          ],
+          "must_not": [
+            "回答三楼",
+            "遗漏无电梯信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "C20_020",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "讨论下周日在家请客做几个菜合适",
+            "保持建议，不买菜或下单"
+          ],
+          "must_not": [
+            "实际买菜或下单",
+            "实际创建采购任务"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "按六人规模考虑菜品数量",
+            "记住有两位吃素",
+            "记住菜别太辣"
+          ],
+          "must_not": [
+            "忽略素食人数",
+            "忽略辣度限制",
+            "实际买菜或下单"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "将人数更正为八人",
+            "保留两位吃素限制",
+            "保留别太辣限制"
+          ],
+          "must_not": [
+            "仍按六人准备",
+            "忽略素食或辣度限制",
+            "实际买菜或下单"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "回答按八人准备",
+            "确认两位吃素",
+            "确认别太辣"
+          ],
+          "must_not": [
+            "回答六人",
+            "遗漏素食或辣度信息"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "用几句话简短收尾并提醒重点",
+            "不再展开"
+          ],
+          "must_not": [
+            "长篇展开新内容",
+            "实际买菜或下单"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}

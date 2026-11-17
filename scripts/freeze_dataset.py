@@ -6,6 +6,7 @@ from homevoice.sandbox import validate
 schema=json.loads((ROOT/'spec/case.schema.json').read_text('utf-8'));cases=[];assets={}
 for p in sorted((ROOT/'data/cases').glob('*.json')):
     c=json.loads(p.read_text('utf-8'));validate(c,schema)
+    if c['schema_version']!='0.3.0' or 'behavior_policy' not in c['evaluation']:raise ValueError('Migrate reviewed v0.3 constraints before freezing: '+p.stem)
     if c['variants'][0]['status']!='ready':raise ValueError('Input audio pending: '+p.stem)
     for a in c['variants'][0]['audio_assets']:
         if a['status']!='verified':raise ValueError('Audio not verified')
@@ -17,7 +18,7 @@ for p in sorted((ROOT/'data/cases').glob('*.json')):
         assets[digest]={'path':a['path'],'sha256':digest,'duration_s':a['duration_s']}
     c['identity']['status']='frozen';cases.append((p,c))
 if len(cases)!=1000:raise ValueError('Expected all 1000 cases')
-manifest={'version':'0.2.0','frozen_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'meaning':'Immutable machine-validated release; human review not performed. No test-set tuning.','cases':[],'audio':list(assets.values())}
+manifest={'version':'0.3.0','supersedes':'0.2.0','frozen_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'meaning':'Source-data and rule corrections frozen before symmetric reruns and uniform audio judging; independent human calibration not performed. No model-score-based case selection.','cases':[],'audio':list(assets.values())}
 for p,c in cases:
     p.write_text(json.dumps(c,ensure_ascii=False,indent=2)+'\n','utf-8');manifest['cases'].append({'case_id':p.stem,'path':p.relative_to(ROOT).as_posix(),'file_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'canonical_sha256':hashlib.sha256(json.dumps(c,ensure_ascii=False,sort_keys=True).encode()).hexdigest()})
 (ROOT/'data/manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n','utf-8');print(json.dumps({'frozen_cases':len(cases),'unique_audio':len(assets),'audio_hours':sum(a['duration_s'] for a in assets.values())/3600}))

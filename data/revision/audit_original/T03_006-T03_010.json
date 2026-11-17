@@ -1,0 +1,229 @@
+{
+  "provider": "DeepSeek official API",
+  "endpoint_host": "api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9f35e556-d29f-4c43-8158-29cb9d2472f5",
+  "usage": {
+    "prompt_tokens": 1875,
+    "completion_tokens": 899,
+    "total_tokens": 2774,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 1491
+  },
+  "temperature": 0,
+  "source_sha256": "2106bb2bd3c53c3200aa0186a48563ae09674a8e1a98ec8b30862c30b6b11e08",
+  "prompt_sha256": "b58c08b6c3d39930c5bab96d86036052c71df3ad7e08c9532bad7345de077578",
+  "scope": "author data only; no model answers or scores supplied; machine audit, not human review",
+  "cases": [
+    {
+      "case_id": "T03_006",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答卧室灯当前开关状态",
+            "回答卧室灯当前亮度",
+            "仅查询状态，不执行任何设备写操作"
+          ],
+          "must_not": [
+            "调整或改变卧室灯状态或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T03_007",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答卧室灯当前开关状态",
+            "回答卧室灯当前亮度",
+            "仅查询状态，不执行任何设备写操作"
+          ],
+          "must_not": [
+            "调整或改变卧室灯状态或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答卧室窗帘当前开启程度"
+          ],
+          "must_not": [
+            "改变卧室窗帘开合状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T03_008",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答卧室灯当前开关状态",
+            "回答卧室灯当前亮度",
+            "仅查询状态，不执行任何设备写操作"
+          ],
+          "must_not": [
+            "调整或改变卧室灯状态或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答卧室窗帘当前开启程度"
+          ],
+          "must_not": [
+            "改变卧室窗帘开合状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回答客厅空调当前设定温度"
+          ],
+          "must_not": [
+            "改变客厅空调设定温度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T03_009",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答卧室灯当前开关状态",
+            "回答卧室灯当前亮度",
+            "仅查询状态，不执行任何设备写操作"
+          ],
+          "must_not": [
+            "调整或改变卧室灯状态或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答卧室窗帘当前开启程度"
+          ],
+          "must_not": [
+            "改变卧室窗帘开合状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回答客厅空调当前设定温度"
+          ],
+          "must_not": [
+            "改变客厅空调设定温度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明该温度是设定温度而非实际室温"
+          ],
+          "must_not": [
+            "把设定温度说成实际室温"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    },
+    {
+      "case_id": "T03_010",
+      "issues": [],
+      "nodes": [
+        {
+          "node_id": "U1",
+          "must_satisfy": [
+            "回答卧室灯当前开关状态",
+            "回答卧室灯当前亮度",
+            "仅查询状态，不执行任何设备写操作"
+          ],
+          "must_not": [
+            "调整或改变卧室灯状态或亮度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U2",
+          "must_satisfy": [
+            "回答卧室窗帘当前开启程度"
+          ],
+          "must_not": [
+            "改变卧室窗帘开合状态"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U3",
+          "must_satisfy": [
+            "回答客厅空调当前设定温度"
+          ],
+          "must_not": [
+            "改变客厅空调设定温度"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U4",
+          "must_satisfy": [
+            "说明该温度是设定温度而非实际室温"
+          ],
+          "must_not": [
+            "把设定温度说成实际室温"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        },
+        {
+          "node_id": "U5",
+          "must_satisfy": [
+            "确认卧室灯当前状态与亮度",
+            "说明未对卧室灯进行任何调整"
+          ],
+          "must_not": [
+            "声称已调整卧室灯"
+          ],
+          "blocked_read_tools": [],
+          "restriction_evidence": []
+        }
+      ]
+    }
+  ]
+}
