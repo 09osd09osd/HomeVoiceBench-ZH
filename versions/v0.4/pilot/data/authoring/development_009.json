@@ -1,0 +1,112 @@
+{
+  "source_sha256": "afdfdd68f4272b3b0060433202a54bb33acb4940bc1a27db9b6ee03140e25f87",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9f075fad-592f-4fc1-a830-e3a41ffbab8f",
+  "usage": {
+    "prompt_tokens": 765,
+    "completion_tokens": 455,
+    "total_tokens": 1220,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 637
+  },
+  "review_request_id": "c792619f-ec3b-4fc7-92a7-c94215c17c7f",
+  "review_usage": {
+    "prompt_tokens": 918,
+    "completion_tokens": 69,
+    "total_tokens": 987,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 918
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T27_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_101",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T27_101",
+        "title": "媒体进度跳转",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《星空小知识》跳到第75秒。",
+            "reference_text": "已将客厅音箱播放的《星空小知识》跳转到第75秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_102",
+        "title": "媒体进度跳转与暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《星空小知识》跳到第75秒。",
+            "reference_text": "已将客厅音箱播放的《星空小知识》跳转到第75秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "已继续播放客厅音箱上的《星空小知识》。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "已暂停客厅音箱播放的《星空小知识》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_101",
+        "title": "媒体不存在与播放失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《星空小知识》。",
+            "reference_text": "抱歉，没有找到《星空小知识》这个内容，无法在客厅音箱播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_101",
+        "title": "异步执行与状态追踪",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到85%；如果返回处理中，请准确告诉我当前状态。",
+            "reference_text": "客厅灯打开到85%的请求正在处理中。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

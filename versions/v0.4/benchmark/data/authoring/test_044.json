@@ -1,0 +1,122 @@
+{
+  "source_sha256": "c1ce148af1a9f692ad7a3160678dc259f18996427feb6bf412046edbf525a217",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "45469452-8cda-4ac2-881e-3febf771cb2f",
+  "usage": {
+    "prompt_tokens": 867,
+    "completion_tokens": 372,
+    "total_tokens": 1239,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 611
+  },
+  "review_request_id": "633ef39a-a143-46cf-8f3b-e0b2fd16fedb",
+  "review_usage": {
+    "prompt_tokens": 1047,
+    "completion_tokens": 69,
+    "total_tokens": 1116,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1047
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T13_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T13_015",
+        "title": "扫地机器人清扫书房并暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫书房，不要进入其他房间。",
+            "reference_text": "好的，已安排扫地机器人只清扫书房，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才的清扫。",
+            "reference_text": "好的，已暂停刚才的清扫任务。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_016",
+        "title": "扫地机器人只清扫客厅",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，不要进入其他房间。",
+            "reference_text": "好的，已安排扫地机器人只清扫客厅，不会进入其他房间。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_017",
+        "title": "扫地机器人清扫客厅暂停后继续",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，不要进入其他房间。",
+            "reference_text": "好的，已安排扫地机器人只清扫客厅，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才的清扫。",
+            "reference_text": "好的，已暂停刚才的清扫任务。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的清扫，区域不变。",
+            "reference_text": "好的，已继续刚才的清扫，仍然只清扫客厅。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_018",
+        "title": "扫地机器人清扫卧室并暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫卧室，不要进入其他房间。",
+            "reference_text": "好的，已安排扫地机器人只清扫卧室，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才的清扫。",
+            "reference_text": "好的，已暂停刚才的清扫任务。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,122 @@
+{
+  "source_sha256": "e79504795a1ed6bf356acbf3be304d1b1e556e2515e71effe3898ce83cf50c52",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "717df177-ef35-4290-b5e6-f71b25301ef0",
+  "usage": {
+    "prompt_tokens": 890,
+    "completion_tokens": 581,
+    "total_tokens": 1471,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 762
+  },
+  "review_request_id": "485aa78f-ab0f-4f3f-be97-801039f4b23c",
+  "review_usage": {
+    "prompt_tokens": 1119,
+    "completion_tokens": 69,
+    "total_tokens": 1188,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1119
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T01_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T01_015",
+        "title": "查询房间与书房设备及灯分布",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看书房里有哪些设备，只查询。",
+            "reference_text": "家里有客厅、卧室、书房等房间；书房里有灯和插座等设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里共有3盏灯，分别在客厅、卧室和书房。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_016",
+        "title": "查询房间与客厅设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询。",
+            "reference_text": "家里有客厅、卧室、书房等房间；客厅里有灯和插座等设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_017",
+        "title": "查询房间、客厅设备、灯分布及客厅灯参数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询。",
+            "reference_text": "家里有客厅、卧室、书房等房间；客厅里有灯和插座等设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里共有3盏灯，分别在客厅、卧室和书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅的灯能调哪些参数？",
+            "reference_text": "客厅的灯可以调亮度和色温。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_018",
+        "title": "查询房间与卧室设备及灯分布",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看卧室里有哪些设备，只查询。",
+            "reference_text": "家里有客厅、卧室、书房等房间；卧室里有灯和插座等设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里共有3盏灯，分别在客厅、卧室和书房。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

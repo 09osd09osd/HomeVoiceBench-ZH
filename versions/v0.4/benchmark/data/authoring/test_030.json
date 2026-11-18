@@ -1,0 +1,122 @@
+{
+  "source_sha256": "326f67fa9b2b79b0609e7880fe1bafa246b2dc8befcdc0d8dd50a6b21d8e60ed",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "53c121db-9176-44ff-909f-561acd35d235",
+  "usage": {
+    "prompt_tokens": 868,
+    "completion_tokens": 368,
+    "total_tokens": 1236,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 612
+  },
+  "review_request_id": "00b6dd13-7ab0-4905-bf4f-fa77b60b8358",
+  "review_usage": {
+    "prompt_tokens": 1044,
+    "completion_tokens": 69,
+    "total_tokens": 1113,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1044
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T09_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T09_015",
+        "title": "卧室窗帘分步调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到66%，其他不动。",
+            "reference_text": "好的，已把卧室窗帘打开到66%，其他设备保持不动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成46%打开。",
+            "reference_text": "好的，卧室窗帘已改为打开46%，其他不动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_016",
+        "title": "卧室窗帘单次调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到86%，其他不动。",
+            "reference_text": "好的，已把卧室窗帘打开到86%，其他设备保持不动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_017",
+        "title": "卧室窗帘调整并查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到31%，其他不动。",
+            "reference_text": "好的，已把卧室窗帘打开到31%，其他设备保持不动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成91%打开。",
+            "reference_text": "好的，卧室窗帘已改为打开91%，其他不动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "卧室窗帘当前打开比例为91%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_018",
+        "title": "卧室窗帘两次调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到51%，其他不动。",
+            "reference_text": "好的，已把卧室窗帘打开到51%，其他设备保持不动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成71%打开。",
+            "reference_text": "好的，卧室窗帘已改为打开71%，其他不动。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

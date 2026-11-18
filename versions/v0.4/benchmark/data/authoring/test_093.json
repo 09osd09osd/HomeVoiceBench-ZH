@@ -1,0 +1,122 @@
+{
+  "source_sha256": "50b3615b8bc810f6319ced4d6a989641aad6a96e358d1b09bd941124074b0416",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "499ddb6e-69d7-4cbd-ae2c-51131472c501",
+  "usage": {
+    "prompt_tokens": 875,
+    "completion_tokens": 527,
+    "total_tokens": 1402,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 619
+  },
+  "review_request_id": "ee4d2cc5-a592-40f7-aaeb-cd23f7a3e40a",
+  "review_usage": {
+    "prompt_tokens": 1053,
+    "completion_tokens": 69,
+    "total_tokens": 1122,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1053
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T27_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T27_015",
+        "title": "媒体进度与停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《小熊找月亮》跳到第60秒。",
+            "reference_text": "好的，已将客厅音箱的《小熊找月亮》跳到第60秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《小熊找月亮》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_016",
+        "title": "媒体进度与停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《星空小知识》跳到第75秒。",
+            "reference_text": "好的，已将客厅音箱的《星空小知识》跳到第75秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_017",
+        "title": "媒体进度与停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《雨后散步》跳到第30秒。",
+            "reference_text": "好的，已将客厅音箱的《雨后散步》跳到第30秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《雨后散步》。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "好的，已暂停《雨后散步》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_018",
+        "title": "媒体进度与停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《安静钢琴》跳到第45秒。",
+            "reference_text": "好的，已将客厅音箱的《安静钢琴》跳到第45秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，继续播放《安静钢琴》。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

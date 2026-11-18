@@ -1,0 +1,152 @@
+{
+  "source_sha256": "fd9f29d44cf54e63fbbea2905fd5d38cfc916054482808f9a6ff3276cd00f99e",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "20d462f8-bf08-4966-94c9-7878e6e145e9",
+  "usage": {
+    "prompt_tokens": 1179,
+    "completion_tokens": 920,
+    "total_tokens": 2099,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 923
+  },
+  "review_request_id": "72a64c6a-01dc-495a-a765-ac6648c9d5da",
+  "review_usage": {
+    "prompt_tokens": 1705,
+    "completion_tokens": 69,
+    "total_tokens": 1774,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1705
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T29_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T29_019",
+        "title": "书房灯异步开启与状态追踪",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把书房灯打开到71%；要是返回处理中，就准确说一下当前状态。",
+            "reference_text": "好的，正在将书房灯亮度设为71%。当前状态：处理中，请稍后确认。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "查询结果：刚才设置书房灯到71%的任务已完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "重新核对实际灯光状态。",
+            "reference_text": "核对结果：书房灯当前亮度为71%，已开启。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_020",
+        "title": "客厅灯异步开启与状态追踪",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到91%；如果返回处理中，请准确说当前状态。",
+            "reference_text": "好的，正在将客厅灯亮度设为91%。当前状态：处理中，请稍后确认。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "查询结果：刚才设置客厅灯到91%的任务已完成。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_004",
+        "title": "客厅灯异步取消与不可回滚",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到20%，注意报告执行状态。",
+            "reference_text": "好的，正在将客厅灯亮度设为20%。当前状态：处理中。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个执行任务；若已经完成，告诉我，别自动再关灯。",
+            "reference_text": "取消结果：任务已完成，无法取消；未执行自动关灯操作。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对任务状态和这盏灯实际状态。",
+            "reference_text": "核对结果：任务已完成；客厅灯当前为开启，亮度20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在我明确要求关闭这盏灯。",
+            "reference_text": "好的，正在关闭客厅灯。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认已经关闭，并说明取消任务是否发生了回滚。",
+            "reference_text": "确认结果：客厅灯已关闭。取消任务未发生回滚，因为任务已完成，取消未生效。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_008",
+        "title": "卧室灯异步取消与不可回滚",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室灯打开到40%，注意报告执行状态。",
+            "reference_text": "好的，正在将卧室灯亮度设为40%。当前状态：处理中。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个执行任务；若已经完成，告诉我，别自动再关灯。",
+            "reference_text": "取消结果：任务已完成，无法取消；未执行自动关灯操作。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对任务状态和这盏灯实际状态。",
+            "reference_text": "核对结果：任务已完成；卧室灯当前为开启，亮度40%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在我明确要求关闭这盏灯。",
+            "reference_text": "好的，正在关闭卧室灯。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

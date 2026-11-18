@@ -1,0 +1,112 @@
+{
+  "source_sha256": "ad5a82f33f709035e12faeb4bfe2211059896a5a67bca10c5e93650af2b0c0fd",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e655f726-abd1-405c-a2e2-4acefb91da33",
+  "usage": {
+    "prompt_tokens": 766,
+    "completion_tokens": 379,
+    "total_tokens": 1145,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 510
+  },
+  "review_request_id": "e73d14c5-be3c-471a-b4e6-7751d0987e47",
+  "review_usage": {
+    "prompt_tokens": 807,
+    "completion_tokens": 69,
+    "total_tokens": 876,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 807
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C16_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_010",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_012",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C16_009",
+        "title": "数字记忆与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "记住这个数字：143。请复述一遍。",
+            "reference_text": "好的，143。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "改成341，再复述一遍。",
+            "reference_text": "好的，341。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_010",
+        "title": "数字记忆",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "记住这个数字：265。请复述一遍。",
+            "reference_text": "好的，265。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_011",
+        "title": "数字记忆与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "记住这个数字：386。请复述一遍。",
+            "reference_text": "好的，386。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "改成683，再复述一遍。",
+            "reference_text": "好的，683。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_012",
+        "title": "数字记忆",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "记住这个数字：497。请复述一遍。",
+            "reference_text": "好的，497。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

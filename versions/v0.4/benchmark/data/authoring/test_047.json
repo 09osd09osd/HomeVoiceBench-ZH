@@ -1,0 +1,112 @@
+{
+  "source_sha256": "d3f9ae3c2150ecb44925da9390cf16d8814672df9816a842968c310efc626974",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "52753387-e045-4e9c-ac3a-a964ec27c2ef",
+  "usage": {
+    "prompt_tokens": 866,
+    "completion_tokens": 601,
+    "total_tokens": 1467,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 610
+  },
+  "review_request_id": "717223da-13b7-4b65-9438-664898e7c73e",
+  "review_usage": {
+    "prompt_tokens": 1129,
+    "completion_tokens": 69,
+    "total_tokens": 1198,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1129
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T14_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_016",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T14_013",
+        "title": "客厅和卧室灯联动调亮度并处理离线",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到26%；如果哪台离线了，告诉我具体是哪台失败了。",
+            "reference_text": "好的，正在为您打开客厅灯和卧室灯并将亮度调至26%。如果设备离线，我会告知您具体哪台失败。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成36%，卧室灯先别重试。",
+            "reference_text": "好的，正在将客厅灯亮度调整为36%，卧室灯暂不操作。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_014",
+        "title": "客厅和卧室灯联动调亮度并处理离线",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到46%；如果哪台离线了，告诉我具体是哪台失败了。",
+            "reference_text": "好的，正在为您打开客厅灯和卧室灯并将亮度调至46%。如果设备离线，我会告知您具体哪台失败。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_015",
+        "title": "客厅和卧室灯联动调亮度并处理离线",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到66%；如果哪台离线了，告诉我具体是哪台失败了。",
+            "reference_text": "好的，正在为您打开客厅灯和卧室灯并将亮度调至66%。如果设备离线，我会告知您具体哪台失败。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成36%，卧室灯先别重试。",
+            "reference_text": "好的，正在将客厅灯亮度调整为36%，卧室灯暂不操作。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_016",
+        "title": "客厅和卧室灯联动调亮度并处理离线",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到86%；如果哪台离线了，告诉我具体是哪台失败了。",
+            "reference_text": "好的，正在为您打开客厅灯和卧室灯并将亮度调至86%。如果设备离线，我会告知您具体哪台失败。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

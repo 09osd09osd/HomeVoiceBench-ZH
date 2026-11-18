@@ -1,0 +1,112 @@
+{
+  "source_sha256": "cc2dd427b13d9e48dd71a47c3992e23599e0a33065851bd3ecce39db068b173d",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7428d74e-f751-457f-914b-8cd94bf9d5fb",
+  "usage": {
+    "prompt_tokens": 786,
+    "completion_tokens": 289,
+    "total_tokens": 1075,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 530
+  },
+  "review_request_id": "39d8319e-a1b4-4362-9c39-0f45b82d4428",
+  "review_usage": {
+    "prompt_tokens": 871,
+    "completion_tokens": 69,
+    "total_tokens": 940,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 871
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T24_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_016",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T24_013",
+        "title": "客厅灯定时关闭与改期",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点自动关掉客厅灯。",
+            "reference_text": "已安排明天7点自动关闭客厅灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "已把刚才的定时关闭客厅灯改为明天7点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_014",
+        "title": "卧室灯定时关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天8点自动关掉卧室灯。",
+            "reference_text": "已安排明天8点自动关闭卧室灯。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_015",
+        "title": "书房灯定时关闭与改期",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天9点自动关掉书房灯。",
+            "reference_text": "已安排明天9点自动关闭书房灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天9点半。",
+            "reference_text": "已把刚才的定时关闭书房灯改为明天9点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_016",
+        "title": "客厅灯定时关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天10点自动关掉客厅灯。",
+            "reference_text": "已安排明天10点自动关闭客厅灯。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

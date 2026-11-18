@@ -1,0 +1,152 @@
+{
+  "source_sha256": "0d3b399f0a2c90f1cf1b3275be67144dd24d192c5d7c0ed0e6cc131f0a726f4c",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e4c3e7ab-8cd4-4a07-ade8-d1ac9667fc5c",
+  "usage": {
+    "prompt_tokens": 1145,
+    "completion_tokens": 903,
+    "total_tokens": 2048,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 1017
+  },
+  "review_request_id": "f52b2dfd-df59-4858-9f75-c2ca76401efc",
+  "review_usage": {
+    "prompt_tokens": 1654,
+    "completion_tokens": 69,
+    "total_tokens": 1723,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1654
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T01_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T01_019",
+        "title": "家庭房间与设备目录查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看书房里有哪些设备，只查询。",
+            "reference_text": "家里有客厅、卧室、书房、厨房等房间。书房里有灯和空调。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯，分别在客厅、卧室和书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "书房的灯能调哪些参数？",
+            "reference_text": "书房的灯可以调亮度和色温。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_020",
+        "title": "家庭房间与设备目录查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询。",
+            "reference_text": "家里有客厅、卧室、书房、厨房等房间。客厅里有灯、空调和电视。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里总共有3盏灯，分别在客厅、卧室和书房。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_004",
+        "title": "设备能力与可调范围查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅灯支持什么设置，可调范围是多少？",
+            "reference_text": "客厅灯支持亮度和色温调节。亮度范围1-100%，色温范围2700-6500K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "客厅灯不支持调节颜色，只能调亮度和色温。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果超出支持范围，你应该怎么处理？",
+            "reference_text": "不能擅自截断取值，应告知可调范围并请您澄清。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我只是了解一下。",
+            "reference_text": "好的，不进行调整。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "简短说一下刚才这台设备有哪些能力限制。",
+            "reference_text": "客厅灯只能调亮度和色温，亮度1-100%，色温2700-6500K，不支持调颜色。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_008",
+        "title": "设备能力与可调范围查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅空调支持什么设置，可调范围是多少？",
+            "reference_text": "客厅空调支持设定温度、风速档位和运行模式。温度范围16-30°C，风速档位1-5档，模式包括自动、制冷、制热、送风、除湿。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "客厅空调不支持调节颜色。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果超出支持范围，你应该怎么处理？",
+            "reference_text": "不能擅自截断取值，应告知可调范围并请您澄清。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "那先别调整，我只是了解一下。",
+            "reference_text": "好的，不进行调整。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

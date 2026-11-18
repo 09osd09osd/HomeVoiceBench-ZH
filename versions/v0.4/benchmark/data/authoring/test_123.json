@@ -1,0 +1,112 @@
+{
+  "source_sha256": "1f25321e5621503b12eb0a44dd9c8d5ee8cbbd46f3addbc8b9574328b986116b",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "3e37a3c7-c2cf-48f7-8b6c-dbd0bdf038ba",
+  "usage": {
+    "prompt_tokens": 798,
+    "completion_tokens": 488,
+    "total_tokens": 1286,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 542
+  },
+  "review_request_id": "d5777ffe-586e-47d6-8013-a5cc92e84c41",
+  "review_usage": {
+    "prompt_tokens": 948,
+    "completion_tokens": 69,
+    "total_tokens": 1017,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 948
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C06_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C06_010",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C06_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C06_012",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C06_009",
+        "title": "向哥哥道歉",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我刚才对哥哥说话有点急，帮我想一句道歉的话。",
+            "reference_text": "你可以说：哥，刚才我说话太急了，对不起，我不是故意冲你的。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只为语气道歉，不代表我同意她的全部意见。",
+            "reference_text": "可以这样表达：刚才我语气不好，我道歉，但这不代表我认同你的所有看法。"
+          }
+        ]
+      },
+      {
+        "case_id": "C06_010",
+        "title": "向表姐道歉",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我刚才对表姐说话有点急，帮我想一句道歉的话。",
+            "reference_text": "你可以说：表姐，刚才我说话太急了，对不起，我不是有意那样的。"
+          }
+        ]
+      },
+      {
+        "case_id": "C06_011",
+        "title": "向堂姐道歉并区分语气",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我刚才对堂姐说话有点急，帮我想一句道歉的话。",
+            "reference_text": "你可以说：堂姐，刚才我说话太急了，对不起，我不是故意冲你的。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只为语气道歉，不代表我同意她的全部意见。",
+            "reference_text": "可以这样说：刚才我语气不好，我道歉，但这不代表我认同你的所有观点。"
+          }
+        ]
+      },
+      {
+        "case_id": "C06_012",
+        "title": "向妈妈道歉",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我刚才对妈妈说话有点急，帮我想一句道歉的话。",
+            "reference_text": "你可以说：妈，刚才我说话太急了，对不起，我不是故意冲你的。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

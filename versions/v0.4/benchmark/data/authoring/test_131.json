@@ -1,0 +1,112 @@
+{
+  "source_sha256": "094ce6358f5c641e8b62aa69c2405f6f9a774b91f1c12ed8cd2f5783daeeac76",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9e29d608-83bd-44a4-a2aa-29db411c3f32",
+  "usage": {
+    "prompt_tokens": 780,
+    "completion_tokens": 595,
+    "total_tokens": 1375,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 524
+  },
+  "review_request_id": "61dfc853-0bfa-4eec-a555-b103a94847bf",
+  "review_usage": {
+    "prompt_tokens": 1037,
+    "completion_tokens": 69,
+    "total_tokens": 1106,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1037
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C08_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C08_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C08_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C08_016",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C08_013",
+        "title": "餐厅闷且窗外施工不开窗",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "餐厅有点闷，给我一个简单的改善建议。",
+            "reference_text": "可以先把餐厅门打开，让相邻房间的空气流通一下；也可以短暂开一会儿排风扇或空气循环扇，帮助换气。如果不知道当前温湿度，可以先用设备查一下再决定。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "窗外有施工噪声，我现在不想开窗。",
+            "reference_text": "明白，那就不开窗。可以试试打开餐厅门促进室内空气流通，或者用循环扇、排风扇在室内搅动空气，缓解闷感。"
+          }
+        ]
+      },
+      {
+        "case_id": "C08_014",
+        "title": "书房闷的改善建议",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房有点闷，给我一个简单的改善建议。",
+            "reference_text": "可以先把书房门打开，让空气和相邻房间流通；也可以用循环扇或排风扇在室内搅动空气。如果不知道当前温湿度，可以先用设备查一下再决定。"
+          }
+        ]
+      },
+      {
+        "case_id": "C08_015",
+        "title": "卧室闷且窗外施工不开窗",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "卧室有点闷，给我一个简单的改善建议。",
+            "reference_text": "可以先把卧室门打开，让相邻房间的空气流通一下；也可以短暂用循环扇或排风扇帮助室内空气流动。如果不知道当前温湿度，可以先用设备查一下再决定。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "窗外有施工噪声，我现在不想开窗。",
+            "reference_text": "明白，那就不开窗。可以试试打开卧室门促进室内空气流通，或者用循环扇、排风扇在室内搅动空气，缓解闷感。"
+          }
+        ]
+      },
+      {
+        "case_id": "C08_016",
+        "title": "客厅闷的改善建议",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅有点闷，给我一个简单的改善建议。",
+            "reference_text": "可以先把客厅门打开，让空气和相邻房间流通；也可以用循环扇或排风扇在室内搅动空气。如果不知道当前温湿度，可以先用设备查一下再决定。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

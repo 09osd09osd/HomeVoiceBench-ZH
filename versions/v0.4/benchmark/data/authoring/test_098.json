@@ -1,0 +1,142 @@
+{
+  "source_sha256": "cb2cd0dcdc43948b2ae0073a70ba56d007d4c5d50866e8d8840e7000c1669d96",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "f726b5dd-aad3-4ef6-a764-2f9a4ef4b48b",
+  "usage": {
+    "prompt_tokens": 1073,
+    "completion_tokens": 619,
+    "total_tokens": 1692,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 817
+  },
+  "review_request_id": "3afff879-ea15-4f82-aa37-7e0073375738",
+  "review_usage": {
+    "prompt_tokens": 1522,
+    "completion_tokens": 69,
+    "total_tokens": 1591,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1522
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T29_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T29_004",
+        "title": "客厅灯异步开启与状态核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到20%；如果还在处理中，就告诉我当前是什么状态。",
+            "reference_text": "已发起把客厅灯打开到20%的操作；当前状态为处理中，尚未确认开启成功。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "正在查询刚才那个任务的状态：目前仍在处理中，尚未完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "重新核对实际灯光状态。",
+            "reference_text": "已重新核对实际灯光状态：客厅灯当前为开启，亮度20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只关闭这盏灯。",
+            "reference_text": "已关闭客厅这盏灯，其他灯未动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_008",
+        "title": "卧室灯异步开启、核对与关闭确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室灯打开到40%；要是返回处理中，就准确说下当前状态。",
+            "reference_text": "已发起把卧室灯打开到40%的操作；当前状态为处理中，尚未确认开启成功。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "正在查询刚才那个任务的状态：目前仍在处理中，尚未完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "重新核对实际灯光状态。",
+            "reference_text": "已重新核对实际灯光状态：卧室灯当前为开启，亮度40%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只关闭这盏灯。",
+            "reference_text": "已关闭卧室这盏灯，其他灯未动。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后确认灯已关，别把上一条任务成功当成现在仍开灯。",
+            "reference_text": "已最后确认：卧室灯当前为关闭，不能把上一条任务成功当成现在仍开灯。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_009",
+        "title": "客厅灯21%异步开启与完成查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到21%；若返回处理中，请准确说当前状态。",
+            "reference_text": "已发起把客厅灯打开到21%的操作；当前状态为处理中，尚未确认开启成功。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "正在查询刚才那个任务的状态：目前仍在处理中，尚未完成。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_010",
+        "title": "卧室灯41%异步开启",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室灯打开到41%；如果返回处理中，就准确说当前状态。",
+            "reference_text": "已发起把卧室灯打开到41%的操作；当前状态为处理中，尚未确认开启成功。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

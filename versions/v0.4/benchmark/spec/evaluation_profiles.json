@@ -1,0 +1,88 @@
+{
+  "schema_version": "0.4.0",
+  "input_modality": "audio",
+  "normalizer_version": "zh_spoken_v1",
+  "user_text_generator": {
+    "model": "deepseek-v4.1-flash",
+    "role": "wording and a second same-model review; executable ground truth authored first"
+  },
+  "user_tts": {
+    "model": "qwen-audio-3.1-tts-next",
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "concurrency": 16
+  },
+  "audio_judge": {
+    "model": "qwen3.8-omni-flash",
+    "temperature": 0,
+    "enable_thinking": false,
+    "answer_text_supplied": false,
+    "required_evidence": "actual input and output WAVs plus sandbox trace",
+    "evidence_version": "core_task_quality_separate_v0.4_pilot_revision2",
+    "concurrency": 24
+  },
+  "qwen_baselines": {
+    "models": [
+      "Qwen3.5-2B",
+      "Qwen3.5-4B"
+    ],
+    "runtime": "llama.cpp b11552",
+    "quantization": "Q8_0",
+    "generation": {
+      "temperature": 0,
+      "top_p": 1,
+      "top_k": 1,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "max_tokens": 512,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "frequency_penalty": 0,
+      "repeat_penalty": 1
+    },
+    "asr": "Qwen3-ASR-0.6B",
+    "tts": "Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "tts_voice": "Vivian",
+    "context_per_slot": 8192,
+    "context_shift": false,
+    "decoding_policy": "user_requested_greedy_content_and_tools_v0.4"
+  },
+  "edge_native": {
+    "model": "EdgeInstant-Omni-2B-1106-Preview",
+    "generation": {
+      "do_sample": false,
+      "max_new_tokens": 256,
+      "seed": 42
+    },
+    "context_limit": 8192,
+    "input_sample_rate_hz": 16000,
+    "output_sample_rate_hz": 24000,
+    "external_asr": false,
+    "external_tts": false,
+    "dtype": "published mixed BF16/FP32, auto",
+    "attention": "sdpa"
+  },
+  "budget": {
+    "max_user_turns": 5,
+    "max_tool_calls": 12,
+    "max_consecutive_tool_calls": 4,
+    "max_model_calls": 30,
+    "interaction_wall_timeout_s": 300
+  },
+  "dialogue_router": {
+    "version": "fixed_purposeful_nodes_v0.4",
+    "model": null,
+    "rules": "Purposeful fixed next_node_id, no rescue turn: max_uses=0; at most five authored user turns.",
+    "limitations": "Follow-ups may refer to actual assistant content; fixed scripts do not simulate arbitrary users."
+  },
+  "timing_policy": "offline throughput only; precomputed ASR and batch TTS are reported separately; interaction time is not comparable end-to-end latency",
+  "reporting": "Independent pilot100 and benchmark1000; task pass separate from six dimension quality; no best-answer selection.",
+  "authoring_review": {
+    "provider": "DeepSeek official",
+    "configured_model": "deepseek-v4.1-flash",
+    "returned_alias": "deepseek-flash",
+    "scope": "author wording plus separate same-model review; not independent human review"
+  }
+}

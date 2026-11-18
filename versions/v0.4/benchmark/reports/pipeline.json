@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "input_asr",
+      "exit_code": 0,
+      "seconds": 108.125,
+      "log": "logs/input_asr.log"
+    },
+    {
+      "stage": "main_qwen35_2b",
+      "exit_code": 0,
+      "seconds": 1204.25,
+      "log": "logs/main_qwen35_2b.log"
+    },
+    {
+      "stage": "main_qwen35_4b",
+      "exit_code": 0,
+      "seconds": 1778.719000000041,
+      "log": "logs/main_qwen35_4b.log"
+    },
+    {
+      "stage": "main_edge_native",
+      "exit_code": 0,
+      "seconds": 3418.9220000000205,
+      "log": "logs/main_edge_native.log"
+    },
+    {
+      "stage": "baseline_tts",
+      "exit_code": 0,
+      "seconds": 4921.125,
+      "log": "logs/baseline_tts.log"
+    },
+    {
+      "stage": "output_audio_transcription",
+      "exit_code": 0,
+      "seconds": 541.5469999999041,
+      "log": "logs/output_audio_transcription.log"
+    },
+    {
+      "stage": "audio_judge",
+      "exit_code": 0,
+      "seconds": 12.969000000040978,
+      "log": "logs/audio_judge.log"
+    },
+    {
+      "stage": "semantic_review",
+      "exit_code": 0,
+      "seconds": 22.21799999999348,
+      "log": "logs/semantic_review.log"
+    },
+    {
+      "stage": "audio_numeric_checks",
+      "exit_code": 0,
+      "seconds": 34.42200000002049,
+      "log": "logs/audio_numeric_checks.log"
+    },
+    {
+      "stage": "fresh_audio_adjudication",
+      "exit_code": 0,
+      "seconds": 56.09400000004098,
+      "log": "logs/fresh_audio_adjudication.log"
+    },
+    {
+      "stage": "verified_audio_numeric_checks",
+      "exit_code": 0,
+      "seconds": 18.67099999997299,
+      "log": "logs/verified_audio_numeric_checks.log"
+    },
+    {
+      "stage": "summary",
+      "exit_code": 0,
+      "seconds": 29.15700000000652,
+      "log": "logs/summary.log"
+    },
+    {
+      "stage": "technical_acceptance",
+      "exit_code": 0,
+      "seconds": 14.0,
+      "log": "logs/technical_acceptance.log"
+    }
+  ]
+}

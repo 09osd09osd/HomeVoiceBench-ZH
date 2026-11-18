@@ -1,0 +1,418 @@
+{
+  "type": "object",
+  "description": "真实运行记录；参考答案在 case 文件中独立保存",
+  "properties": {
+    "record_kind": {
+      "type": "string",
+      "description": "仅真实运行",
+      "const": "actual_model_run"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "0.4.0",
+      "description": "新版实测记录结构版本"
+    },
+    "case_id": {
+      "type": "string",
+      "description": "用例ID"
+    },
+    "case_sha256": {
+      "type": "string",
+      "description": "运行当时完整用例的规范JSON SHA256：sort_keys=True, ensure_ascii=False 默认分隔符 UTF-8"
+    },
+    "system_id": {
+      "type": "string",
+      "description": "系统ID",
+      "enum": [
+        "qwen35_2b",
+        "qwen35_4b",
+        "edge_native"
+      ]
+    },
+    "model_id": {
+      "type": "string",
+      "description": "被测核心模型名称"
+    },
+    "input_modality": {
+      "type": "string",
+      "description": "统一语音输入",
+      "const": "audio"
+    },
+    "asr_model": {
+      "anyOf": [
+        {
+          "type": "string",
+          "description": "baseline识别模型；Edge为null"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "baseline识别模型；Edge为null"
+    },
+    "tts_model": {
+      "type": "string",
+      "description": "baseline语音合成模型或 native_talker"
+    },
+    "normalizer_version": {
+      "type": "string",
+      "description": "共享转换版本"
+    },
+    "generation": {
+      "type": "object",
+      "description": "实际生成参数；见 evaluation_profiles.json",
+      "additionalProperties": true
+    },
+    "execution": {
+      "type": "object",
+      "description": "执行证据",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "失败包括真实预算/格式问题与基础设施异常，须结合 flags 判断",
+          "enum": [
+            "completed",
+            "failed"
+          ]
+        },
+        "model_calls": {
+          "type": "integer",
+          "description": "实际推理请求数",
+          "minimum": 0
+        },
+        "tool_calls": {
+          "type": "integer",
+          "description": "实际工具调用数",
+          "minimum": 0
+        },
+        "wall_seconds": {
+          "type": "number",
+          "description": "整题交互阶段耗时"
+        },
+        "flags": {
+          "type": "array",
+          "description": "失败或截断标记，不以假分数替代",
+          "items": {
+            "type": "string",
+            "description": "标记或异常类型与说明"
+          }
+        },
+        "timing_scope": {
+          "type": "string",
+          "description": "明确计时范围"
+        },
+        "failure": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "stage/type/reason明确失败阶段和原因；预算、已执行调用、当前轮调用、音频与文字可用性、infra_candidate；正常完成为null。"
+        }
+      },
+      "required": [
+        "status",
+        "model_calls",
+        "tool_calls",
+        "wall_seconds",
+        "flags",
+        "timing_scope"
+      ],
+      "additionalProperties": false
+    },
+    "turns": {
+      "type": "array",
+      "description": "已完成交互轮次；异常发生的未完成轮可能不在此数组中",
+      "items": {
+        "type": "object",
+        "description": "实际发生的一轮用户交互，含工具循环",
+        "properties": {
+          "user_turn_index": {
+            "type": "integer",
+            "description": "从1开始，含澄清",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "node_id": {
+            "type": "string",
+            "description": "已投递预写节点，或 FALLBACK"
+          },
+          "input_variant_id": {
+            "type": "string",
+            "description": "A0：唯一语音输入变体"
+          },
+          "input_audio": {
+            "type": "string",
+            "description": "仓库相对路径；发布包解压后可访问"
+          },
+          "input_audio_sha256": {
+            "type": "string",
+            "description": "实际投递波形的 SHA256"
+          },
+          "delivered_text": {
+            "type": "null",
+            "description": "没有把题目原文作为文字投递；baseline 的识别结果另记 asr_text"
+          },
+          "asr_text": {
+            "anyOf": [
+              {
+                "type": "string",
+                "description": "baseline 实际 ASR 识别文本；原生模型为 null"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "baseline 实际 ASR 识别文本；原生模型为 null"
+          },
+          "assistant_text": {
+            "type": "string",
+            "description": "模型原始可朗读回答，不含结构化工具调用"
+          },
+          "spoken_text": {
+            "type": "string",
+            "description": "共享数字/单位规范化后的朗读文本"
+          },
+          "normalizer_version": {
+            "type": "string",
+            "description": "朗读转换版本"
+          },
+          "assistant_audio": {
+            "anyOf": [
+              {
+                "type": "object",
+                "description": "实际输出音频及溯源：path/sha256/duration_s/sample_rate_hz/model/normalizer_version/spoken_text；Edge 另含 raw_text、ended、hit_frame_budget、wall_seconds，baseline 另含 text、batch_offset、batch_seed、batch_keys、external_cloud_tts。原生音频缓存耗时不是当前调用的实时延迟。",
+                "additionalProperties": true
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "实际输出音频及溯源：path/sha256/duration_s/sample_rate_hz/model/normalizer_version/spoken_text；Edge 另含 raw_text、ended、hit_frame_budget、wall_seconds，baseline 另含 text、batch_offset、batch_seed、batch_keys、external_cloud_tts。原生音频缓存耗时不是当前调用的实时延迟。"
+          },
+          "tool_events": {
+            "type": "array",
+            "description": "本轮真实调用顺序",
+            "items": {
+              "type": "object",
+              "description": "沙箱事件：request_id、call(tool_name/arguments)、response、state_before/state_after 及逻辑时间；状态类型见 types.schema.json。",
+              "additionalProperties": true
+            }
+          },
+          "model_raw_responses": {
+            "type": "array",
+            "description": "每次推理的完整原始响应；OpenAI兼容模型保留 choices/usage/timings，原生保留 raw_output/token计数/audio_evidence/finish_reason/worker耗时",
+            "items": {
+              "type": "object",
+              "description": "供应方或本地适配器原始响应，不作为判官听音的替代",
+              "additionalProperties": true
+            }
+          },
+          "wall_seconds": {
+            "type": "number",
+            "description": "该轮交互阶段耗时；baseline 不含离线ASR和TTS；不可横向当作端到端延迟"
+          },
+          "finish_reason": {
+            "type": "string",
+            "description": "最后一次生成结束原因"
+          },
+          "routing_label": {
+            "type": "string",
+            "description": "固定路由器决策",
+            "enum": [
+              "normal",
+              "predefined_clarification",
+              "bounded_fallback"
+            ]
+          },
+          "selected_branch_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "description": "命中预定义澄清分支ID"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "命中预定义澄清分支ID"
+          }
+        },
+        "required": [
+          "user_turn_index",
+          "node_id",
+          "input_variant_id",
+          "input_audio",
+          "input_audio_sha256",
+          "delivered_text",
+          "asr_text",
+          "assistant_text",
+          "spoken_text",
+          "normalizer_version",
+          "assistant_audio",
+          "tool_events",
+          "model_raw_responses",
+          "wall_seconds",
+          "finish_reason",
+          "routing_label",
+          "selected_branch_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "rule_checks": {
+      "type": "array",
+      "description": "客观状态检查",
+      "items": {
+        "type": "object",
+        "description": "单项判定",
+        "properties": {
+          "check_id": {
+            "type": "string",
+            "description": "对应 evaluation.checks.id"
+          },
+          "passed": {
+            "type": "boolean",
+            "description": "客观规则通过与否"
+          },
+          "observed": {
+            "description": "实际观察、差异状态或违规列表"
+          },
+          "evaluator": {
+            "type": "string",
+            "description": "规则引擎版本"
+          }
+        },
+        "required": [
+          "check_id",
+          "passed",
+          "observed",
+          "evaluator"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "tool_trace": {
+      "type": "array",
+      "description": "整题完整沙箱日志，包含未完成轮内已发生的调用",
+      "items": {
+        "type": "object",
+        "description": "沙箱事件：request_id、call(tool_name/arguments)、response、state_before/state_after 及逻辑时间；状态类型见 types.schema.json。",
+        "additionalProperties": true
+      }
+    },
+    "incomplete_turn": {
+      "anyOf": [
+        {
+          "type": "object",
+          "description": "预算、格式或服务错误发生时保存的未完成轮：node_id/input_audio/input_audio_sha256/asr_text/assistant_parts_not_spoken/model_raw_responses/first_tool_event_index。未朗读文字不可作为实际音频评分。",
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "预算、格式或服务错误发生时保存的未完成轮：node_id/input_audio/input_audio_sha256/asr_text/assistant_parts_not_spoken/model_raw_responses/first_tool_event_index。未朗读文字不可作为实际音频评分。"
+    },
+    "final_state": {
+      "type": "object",
+      "description": "真实终态，见 types.schema.json 家庭状态定义",
+      "additionalProperties": true
+    },
+    "audio_judge": {
+      "anyOf": [
+        {
+          "type": "object",
+          "description": "实际听音评分记录：model/requested_model/temperature/enable_thinking/request_id/usage/prompt_sha256/audio_sha256/model_answer_text_supplied/result。result 含 dimensions、semantic_checks、critical_failures、heard_turns、task_achieved；分数是0–5整数。",
+          "additionalProperties": true
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "实际听音评分记录：model/requested_model/temperature/enable_thinking/request_id/usage/prompt_sha256/audio_sha256/model_answer_text_supplied/result。result 含 dimensions、semantic_checks、critical_failures、heard_turns、task_achieved；分数是0–5整数。"
+    },
+    "case_pass": {
+      "anyOf": [
+        {
+          "type": "boolean",
+          "description": "严格整题通过；未完成评判为null，执行失败可为false且维度分数仍未知"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "严格整题通过；未完成评判为null，执行失败可为false且维度分数仍未知"
+    },
+    "task_achieved": {
+      "anyOf": [
+        {
+          "type": "boolean",
+          "description": "判官判断用户主要目标是否达到；与严格通过率分开"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "判官判断用户主要目标是否达到；与严格通过率分开"
+    },
+    "judge_status": {
+      "type": "string",
+      "description": "scored，或没有可评分回答时的明确原因"
+    },
+    "revision": {
+      "type": "object",
+      "description": "本次执行/复用来源、各协议哈希、版本和规则变更证据。"
+    },
+    "objective_audio_checks": {
+      "type": "array",
+      "description": "基于实际WAV的独立ASR和判官听写核对闭合数字；不是音频真值或单位/语义的完全判定。",
+      "items": {
+        "type": "object"
+      }
+    },
+    "audio_fact_review_required": {
+      "type": "boolean",
+      "description": "两份听写不一致、缺少听写或通过结论与缺失数字冲突时标记复核。"
+    },
+    "case_pass_primary": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "统一语义一致性复核之前的原始听音严格通过结论，保留不覆盖。"
+    },
+    "semantic_review": {
+      "type": "object",
+      "description": "统一复核初评实际听写和工具证据的语义逻辑；不是第二次独立听音。含version/model/temperature/scope/evidence_sha256/prompt_sha256/request_id/usage/result；result为checks、critical_failures、review_notes。"
+    },
+    "audio_adjudication": {
+      "type": "object",
+      "description": "Blind fresh audio adjudication of rating/numeric conflicts; first schema-valid response, original judgments retained, not human gold."
+    }
+  },
+  "required": [
+    "record_kind",
+    "schema_version",
+    "case_id",
+    "case_sha256",
+    "system_id",
+    "model_id",
+    "input_modality",
+    "asr_model",
+    "tts_model",
+    "normalizer_version",
+    "generation",
+    "execution",
+    "turns",
+    "rule_checks",
+    "tool_trace",
+    "incomplete_turn",
+    "final_state",
+    "audio_judge",
+    "case_pass",
+    "task_achieved"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://homebench.example/spec/0.2/run.schema.json"
+}

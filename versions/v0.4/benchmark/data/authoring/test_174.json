@@ -1,0 +1,132 @@
+{
+  "source_sha256": "6f62355483484c1c161e2018cf7753b1f151129d93b8fba30fb0cbb6b5343c57",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e51d2b12-7202-4efa-b9be-e20e27a721ca",
+  "usage": {
+    "prompt_tokens": 926,
+    "completion_tokens": 746,
+    "total_tokens": 1672,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 670
+  },
+  "review_request_id": "4158a80a-13d4-49a7-b6a6-b4607ab78a53",
+  "review_usage": {
+    "prompt_tokens": 1306,
+    "completion_tokens": 69,
+    "total_tokens": 1375,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1306
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C20_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C20_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C20_017",
+        "title": "讨论打开卧室灯的含义与边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "如果我说“打开卧室灯”，通常是什么意思？我现在只是问这句话。",
+            "reference_text": "这句话通常表示请求把卧室的灯打开，让灯亮起来。但您现在只是询问含义，我不会实际去开灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我们先继续讨论，不要执行。",
+            "reference_text": "好的，我们继续讨论，我不会执行任何开灯操作。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "假设灯已经开着，再说这句话会怎样？",
+            "reference_text": "如果灯已经开着，再说“打开卧室灯”通常不会改变状态，可能只是确认或重复指令，实际不会产生新的开灯动作。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_018",
+        "title": "讨论打开书房灯的含义与边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "如果我说“打开书房灯”，通常是什么意思？我现在只是问这句话。",
+            "reference_text": "这句话通常表示请求把书房的灯打开，让灯亮起来。但您现在只是询问含义，我不会实际去开灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我们先继续讨论，不要执行。",
+            "reference_text": "好的，我们继续讨论，我不会执行任何开灯操作。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_019",
+        "title": "讨论打开客厅风扇的含义与边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "如果我说“打开客厅风扇”，通常是什么意思？我现在只是问这句话。",
+            "reference_text": "这句话通常表示请求把客厅的风扇打开，让风扇开始运转。但您现在只是询问含义，我不会实际去开风扇。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我们先继续讨论，不要执行。",
+            "reference_text": "好的，我们继续讨论，我不会执行任何开风扇操作。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "假设灯已经开着，再说这句话会怎样？",
+            "reference_text": "如果灯已经开着，再说“打开客厅风扇”通常不会影响灯的状态，风扇仍可能被请求打开，但实际不会执行。"
+          }
+        ]
+      },
+      {
+        "case_id": "C20_020",
+        "title": "讨论打开卧室窗帘的含义与边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "如果我说“打开卧室窗帘”，通常是什么意思？我现在只是问这句话。",
+            "reference_text": "这句话通常表示请求把卧室的窗帘打开，让窗帘拉开。但您现在只是询问含义，我不会实际去操作窗帘。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我们先继续讨论，不要执行。",
+            "reference_text": "好的，我们继续讨论，我不会执行任何打开窗帘的操作。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,152 @@
+{
+  "source_sha256": "6b924a47acaf9cbb606bd66d1d9fcda2f7a6a18b658640d86acc5f2b43d418f4",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "0f7e233e-1edf-4efc-a916-f7e1f2a1b583",
+  "usage": {
+    "prompt_tokens": 1174,
+    "completion_tokens": 870,
+    "total_tokens": 2044,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 918
+  },
+  "review_request_id": "a126af98-f8af-4da8-b7e7-5e83d1af1b81",
+  "review_usage": {
+    "prompt_tokens": 1651,
+    "completion_tokens": 69,
+    "total_tokens": 1720,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1651
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T15_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T15_019",
+        "title": "指代消歧与指令更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到60%。",
+            "reference_text": "请问您指的是哪一盏灯？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是书房灯，打开到71%，其他灯别动。",
+            "reference_text": "好的，已将书房灯亮度调到71%，其他灯未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "书房灯当前亮度为71%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_020",
+        "title": "指代消歧与指令更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到80%。",
+            "reference_text": "请问您指的是哪一盏灯？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到91%，其他灯别动。",
+            "reference_text": "好的，已将客厅灯亮度调到91%，其他灯未动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_004",
+        "title": "室内温度与湿度查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查询客厅的温度和湿度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅当前温度22.5℃，湿度45%，测量时间14:30。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查厨房的温度和湿度。",
+            "reference_text": "厨房当前温度24.0℃，湿度50%，测量时间14:32。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房比客厅温度高1.5℃，湿度高5%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能，读数有测量时效和传感器范围限制，不能识别人的身份，温度也不是设备设定值。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后重新查询一下客厅的同一指标。",
+            "reference_text": "客厅当前温度22.6℃，湿度46%，测量时间14:35。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_008",
+        "title": "室内温度与湿度查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查询卧室的温度和湿度，告诉我读数和测量时间，只查询。",
+            "reference_text": "卧室当前温度23.0℃，湿度48%，测量时间14:28。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查厨房的温度和湿度。",
+            "reference_text": "厨房当前温度24.0℃，湿度50%，测量时间14:30。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房比卧室温度高1.0℃，湿度高2%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能，读数有测量时效和传感器范围限制，不能识别人的身份，温度也不是设备设定值。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

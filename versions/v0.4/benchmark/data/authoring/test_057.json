@@ -1,0 +1,112 @@
+{
+  "source_sha256": "b6965b75c0440a67f2f647ccb0fcc05a847106659c8b7d73c08751e5fd4c4833",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "701d7d54-d8d7-4c78-861f-659302f8d343",
+  "usage": {
+    "prompt_tokens": 808,
+    "completion_tokens": 361,
+    "total_tokens": 1169,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 552
+  },
+  "review_request_id": "ed59008a-cbe2-48be-88bf-62de2a64da87",
+  "review_usage": {
+    "prompt_tokens": 965,
+    "completion_tokens": 69,
+    "total_tokens": 1034,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 965
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T17_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_014",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T17_011",
+        "title": "书房与厨房二氧化碳读数查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房的二氧化碳浓度，告诉我读数是多少、什么时候测的，只查询就行。",
+            "reference_text": "书房二氧化碳浓度当前为850ppm，测量时间是今天下午3点20分。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度当前为920ppm，测量时间是今天下午3点22分。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_012",
+        "title": "客厅二氧化碳读数查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅的二氧化碳浓度，读数是多少、测量时间是什么时候？只查询，不要做别的。",
+            "reference_text": "客厅二氧化碳浓度当前为780ppm，测量时间是今天下午3点15分。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_013",
+        "title": "客厅与厨房二氧化碳读数查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查客厅的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅二氧化碳浓度当前为780ppm，测量时间是今天下午3点15分。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度当前为920ppm，测量时间是今天下午3点22分。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_014",
+        "title": "卧室二氧化碳读数查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下卧室的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "卧室二氧化碳浓度当前为810ppm，测量时间是今天下午3点10分。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

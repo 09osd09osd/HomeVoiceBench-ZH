@@ -1,0 +1,112 @@
+{
+  "source_sha256": "803966eca3538cb691271f52c4f2d2b91aac2a7bada395ae92ad08f38717c2d3",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6e473f36-002a-491d-b820-1695c138f4bb",
+  "usage": {
+    "prompt_tokens": 804,
+    "completion_tokens": 471,
+    "total_tokens": 1275,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 548
+  },
+  "review_request_id": "cde705b4-110f-461d-add6-49adf57f603d",
+  "review_usage": {
+    "prompt_tokens": 937,
+    "completion_tokens": 69,
+    "total_tokens": 1006,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 937
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T18_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_016",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T18_013",
+        "title": "房间照度比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下客厅的照度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅照度读数为320勒克斯，测量时间是14:25。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的照度。",
+            "reference_text": "厨房照度读数为280勒克斯，测量时间是14:27。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_014",
+        "title": "房间照度比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下卧室的照度，告诉我读数和测量时间，只查询。",
+            "reference_text": "卧室照度读数为150勒克斯，测量时间是15:10。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_015",
+        "title": "房间照度比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下书房的照度，告诉我读数和测量时间，只查询。",
+            "reference_text": "书房照度读数为500勒克斯，测量时间是16:05。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的照度。",
+            "reference_text": "厨房照度读数为280勒克斯，测量时间是16:07。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_016",
+        "title": "房间照度比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下客厅的照度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅照度读数为320勒克斯，测量时间是17:30。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

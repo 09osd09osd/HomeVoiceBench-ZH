@@ -1,0 +1,142 @@
+{
+  "source_sha256": "0d69f71bfb304c5d8d80bcc7417f4c84ccf797731de7195007da96e6273862aa",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "78ee9fa3-0476-442d-b633-9aa107652512",
+  "usage": {
+    "prompt_tokens": 1058,
+    "completion_tokens": 784,
+    "total_tokens": 1842,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 930
+  },
+  "review_request_id": "ff930bcd-f416-46aa-80d7-9e1daaf0f11e",
+  "review_usage": {
+    "prompt_tokens": 1462,
+    "completion_tokens": 69,
+    "total_tokens": 1531,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1462
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T01_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T01_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T01_004",
+        "title": "查询家庭房间与客厅设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询。",
+            "reference_text": "根据查询结果，家里有客厅、卧室、厨房等房间；客厅里有灯和空调等设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里共有3盏灯，分别在客厅、卧室和厨房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅的灯能调哪些参数？",
+            "reference_text": "客厅的灯可以调亮度和色温。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有就说没有。",
+            "reference_text": "厨房没有空调。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_008",
+        "title": "查询家庭房间与卧室设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看卧室里有哪些设备，只查询。",
+            "reference_text": "根据查询结果，家里有客厅、卧室、厨房等房间；卧室里有灯和空调等设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里共有3盏灯，分别在客厅、卧室和厨房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "卧室的灯能调哪些参数？",
+            "reference_text": "卧室的灯可以调亮度和色温。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "厨房有空调吗？没有就说没有。",
+            "reference_text": "厨房没有空调。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "整理一下刚才查到的情况，不要操作设备。",
+            "reference_text": "刚才查到家里有客厅、卧室、厨房等房间；客厅和卧室各有灯和空调，厨房有灯但没有空调；灯可调亮度和色温。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_009",
+        "title": "查询家庭房间与客厅设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看客厅里有哪些设备，只查询。",
+            "reference_text": "根据查询结果，家里有客厅、卧室、厨房等房间；客厅里有灯和空调等设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "家里总共有几盏灯？分别在哪里？",
+            "reference_text": "家里共有3盏灯，分别在客厅、卧室和厨房。"
+          }
+        ]
+      },
+      {
+        "case_id": "T01_010",
+        "title": "查询家庭房间与卧室设备",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里有哪些房间？再看看卧室里有哪些设备，只查询。",
+            "reference_text": "根据查询结果，家里有客厅、卧室、厨房等房间；卧室里有灯和空调等设备。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

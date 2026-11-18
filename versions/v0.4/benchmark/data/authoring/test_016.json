@@ -1,0 +1,122 @@
+{
+  "source_sha256": "be5f109b0ed5e483896c823aed1e2ef3a477f16a765ed06c9dc56f760e57bb83",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c8f1deab-c9a7-4b19-93dc-27b44600062e",
+  "usage": {
+    "prompt_tokens": 887,
+    "completion_tokens": 587,
+    "total_tokens": 1474,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 631
+  },
+  "review_request_id": "55ec7b24-fbac-4816-b2ed-1741f10ddcd1",
+  "review_usage": {
+    "prompt_tokens": 1124,
+    "completion_tokens": 69,
+    "total_tokens": 1193,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1124
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T05_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T05_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T05_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T05_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T05_015",
+        "title": "家庭偏好与时间查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里的睡前音量预设是多少？客厅音箱现在的实际音量是多少？只查询，不要调整。",
+            "reference_text": "睡前音量预设是30%；客厅音箱当前实际音量是45%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用哪个时区，具体几点？",
+            "reference_text": "当前时区是东八区，时间是晚上10点15分。"
+          }
+        ]
+      },
+      {
+        "case_id": "T05_016",
+        "title": "家庭偏好与时间查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里的睡前音量预设是多少？客厅音箱现在的实际音量是多少？只查询，不要调整。",
+            "reference_text": "睡前音量预设是30%；客厅音箱当前实际音量是45%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T05_017",
+        "title": "家庭偏好与时间查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里的睡前音量预设是多少？客厅音箱现在的实际音量是多少？只查询，不要调整。",
+            "reference_text": "睡前音量预设是30%；客厅音箱当前实际音量是45%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用哪个时区，具体几点？",
+            "reference_text": "当前时区是东八区，时间是晚上10点15分。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "这个音量预设代表音箱现在的音量吗？",
+            "reference_text": "不代表，预设是偏好设置，音箱当前实际音量是45%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T05_018",
+        "title": "家庭偏好与时间查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里的睡前音量预设是多少？客厅音箱现在的实际音量是多少？只查询，不要调整。",
+            "reference_text": "睡前音量预设是30%；客厅音箱当前实际音量是45%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用哪个时区，具体几点？",
+            "reference_text": "当前时区是东八区，时间是晚上10点15分。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

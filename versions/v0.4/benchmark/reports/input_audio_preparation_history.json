@@ -1,0 +1,32 @@
+{
+  "scope": "Observed stdout from this full-run preparation; not a cold-start or end-to-end speed benchmark.",
+  "prewarm": {
+    "loaded_cases": 996,
+    "counts": {
+      "synthesized": 934,
+      "verified": 925,
+      "rejected": 0,
+      "failed": 2
+    },
+    "ready_cases": 991,
+    "wall_seconds": 958.3429999999935,
+    "source": "synthesize_inputs.py prewarm process completion output"
+  },
+  "finalizer": {
+    "counts": {
+      "synthesized": 10,
+      "verified": 10,
+      "rejected": 0,
+      "failed": 0
+    },
+    "unique_audio_required": 983,
+    "processed_this_invocation": 983,
+    "workers": 24,
+    "wall_seconds": 36.75,
+    "errors": [],
+    "ready_cases": 1000
+  },
+  "final_unique_referenced_audio": 983,
+  "formal_cases_ready": 1000,
+  "note": "Finalizer wall time includes reuse of completed prewarm/cache audio. Do not report 36.75 seconds as total generation time for all recordings."
+}

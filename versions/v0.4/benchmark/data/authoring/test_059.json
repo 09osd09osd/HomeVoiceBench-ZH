@@ -1,0 +1,152 @@
+{
+  "source_sha256": "ffb8f32837c643f808209caaf72d763ebc04fcfddde0ccf231f19c9b6cd83147",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "c34d5a39-bf83-4006-b903-02ddb1351db3",
+  "usage": {
+    "prompt_tokens": 1161,
+    "completion_tokens": 928,
+    "total_tokens": 2089,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 905
+  },
+  "review_request_id": "5d53060d-67aa-4f39-bcad-7ba96c9ceb8f",
+  "review_usage": {
+    "prompt_tokens": 1695,
+    "completion_tokens": 69,
+    "total_tokens": 1764,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1695
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T17_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T18_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T17_019",
+        "title": "书房与厨房二氧化碳浓度查询比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房的二氧化碳浓度，告诉我读数和测量时间，只查询，不要动其他设备。",
+            "reference_text": "书房二氧化碳浓度为850 ppm，测量时间是今天14:30。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度为720 ppm，测量时间是今天14:32。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才书房和厨房的读数，不要调任何设备。",
+            "reference_text": "书房850 ppm高于厨房720 ppm，书房读数比厨房高130 ppm。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_020",
+        "title": "客厅与厨房二氧化碳浓度查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查询客厅的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅二氧化碳浓度为950 ppm，测量时间是今天15:10。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度为680 ppm，测量时间是今天15:12。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_004",
+        "title": "客厅与厨房照度查询比较及读数说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查询客厅的照度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅照度为320勒克斯，测量时间是今天10:15。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的照度。",
+            "reference_text": "厨房照度为180勒克斯，测量时间是今天10:17。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "客厅照度320勒克斯高于厨房180勒克斯，客厅比厨房高140勒克斯。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能，读数有测量时效，传感器也有范围限制；存在传感器不能识别人的身份，温度也不是设备设定值。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后重新查询一下客厅的同一指标。",
+            "reference_text": "客厅照度最新读数为325勒克斯，测量时间是今天10:25。"
+          }
+        ]
+      },
+      {
+        "case_id": "T18_008",
+        "title": "卧室与厨房照度查询比较及读数说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查询卧室的照度，告诉我读数和测量时间，只查询。",
+            "reference_text": "卧室照度为250勒克斯，测量时间是今天09:40。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的照度。",
+            "reference_text": "厨房照度为150勒克斯，测量时间是今天09:42。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "卧室照度250勒克斯高于厨房150勒克斯，卧室比厨房高100勒克斯。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能，读数有测量时效，传感器也有范围限制；存在传感器不能识别人的身份，温度也不是设备设定值。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

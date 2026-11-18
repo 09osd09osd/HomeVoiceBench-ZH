@@ -1,0 +1,152 @@
+{
+  "source_sha256": "796d3d528f767ecbfb2878394d4a8969953ad1ef6e1826678a398c5c64741d1b",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ca20ffc5-8f97-492b-b51f-3d427932f34d",
+  "usage": {
+    "prompt_tokens": 1162,
+    "completion_tokens": 730,
+    "total_tokens": 1892,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 906
+  },
+  "review_request_id": "b086e483-f033-474b-9b2e-c18cd34591f2",
+  "review_usage": {
+    "prompt_tokens": 1736,
+    "completion_tokens": 69,
+    "total_tokens": 1805,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1736
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T19_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T19_019",
+        "title": "书房与厨房有人检测查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房现在有没有检测到人，读数是多少、什么时候测的，只查询。",
+            "reference_text": "已查询书房的人体传感器：检测到有人，读数为有人，测量时间以工具返回为准。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房现在有没有检测到人。",
+            "reference_text": "已查询厨房的人体传感器：检测到有人，读数为有人，测量时间以工具返回为准。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才书房和厨房的读数，不要动任何设备。",
+            "reference_text": "书房和厨房刚才都检测到有人；具体读数与测量时间以两次查询返回为准，未操作任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_020",
+        "title": "客厅与厨房有人检测查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下客厅现在有没有检测到人，读数是多少、什么时候测的，只查询。",
+            "reference_text": "已查询客厅的人体传感器：检测到有人，读数为有人，测量时间以工具返回为准。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房现在有没有检测到人。",
+            "reference_text": "已查询厨房的人体传感器：检测到有人，读数为有人，测量时间以工具返回为准。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_004",
+        "title": "带钥匙提醒的创建修改与保留",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点提醒我带钥匙。",
+            "reference_text": "已创建明天7点提醒带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "已将刚才新增的带钥匙提醒改为明天7点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排包括：明天7点半提醒带钥匙，以及原来的晾衣服提醒；未新增任何安排。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "已只取消刚才新增或修改的带钥匙提醒，原来的晾衣服提醒保留。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "现在启用的还剩原来的晾衣服提醒；刚才新增或修改的带钥匙提醒已取消。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_008",
+        "title": "给绿萝浇水提醒的创建修改与保留",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天8点提醒我给绿萝浇水。",
+            "reference_text": "已创建明天8点提醒给绿萝浇水。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天8点半。",
+            "reference_text": "已将刚才新增的给绿萝浇水提醒改为明天8点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排包括：明天8点半提醒给绿萝浇水，以及原来的晾衣服提醒；未新增任何安排。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "已只取消刚才新增或修改的给绿萝浇水提醒，原来的晾衣服提醒保留。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

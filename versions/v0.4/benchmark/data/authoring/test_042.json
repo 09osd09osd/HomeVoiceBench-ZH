@@ -1,0 +1,142 @@
+{
+  "source_sha256": "d7469d7be0d1f54dcefe4ad45550b8a4cf2820f6020fa8143af0b63d069e50ec",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d4fa05bf-8b59-469c-b2df-54b70389fb2e",
+  "usage": {
+    "prompt_tokens": 1039,
+    "completion_tokens": 696,
+    "total_tokens": 1735,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 783
+  },
+  "review_request_id": "9de2a4ef-2c5e-467b-97a1-6d484ca6db4e",
+  "review_usage": {
+    "prompt_tokens": 1355,
+    "completion_tokens": 69,
+    "total_tokens": 1424,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1355
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T13_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T13_004",
+        "title": "客厅清扫与暂停续扫回充",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，不要进入其他房间。",
+            "reference_text": "好的，已设定只清扫客厅，其他房间不会进入。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才的清扫。",
+            "reference_text": "已暂停清扫。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的清扫，区域不变。",
+            "reference_text": "已继续清扫，区域仍是客厅。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不继续扫了，让它回充。",
+            "reference_text": "好的，已停止清扫并让机器人回充。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_008",
+        "title": "卧室清扫暂停续扫回充及状态确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫卧室，不要进入其他房间。",
+            "reference_text": "好的，已设定只清扫卧室，其他房间不会进入。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才的清扫。",
+            "reference_text": "已暂停清扫。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的清扫，区域不变。",
+            "reference_text": "已继续清扫，区域仍是卧室。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不继续扫了，让它回充。",
+            "reference_text": "好的，已停止清扫并让机器人回充。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认它是否还在清扫，不要把正在返回说成已经充电。",
+            "reference_text": "它已停止清扫，正在返回充电座，还没有开始充电。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_009",
+        "title": "客厅清扫与暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，不要进入其他房间。",
+            "reference_text": "好的，已设定只清扫客厅，其他房间不会进入。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才的清扫。",
+            "reference_text": "已暂停清扫。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_010",
+        "title": "卧室清扫",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫卧室，不要进入其他房间。",
+            "reference_text": "好的，已设定只清扫卧室，其他房间不会进入。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

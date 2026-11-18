@@ -1,0 +1,152 @@
+{
+  "source_sha256": "6f023812e2d5dcd0139a456da7b6185ae0e317b59aa78a410275ddcdab9e40f2",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "0f381857-06c7-4983-9c9d-6e46737e8df1",
+  "usage": {
+    "prompt_tokens": 1165,
+    "completion_tokens": 881,
+    "total_tokens": 2046,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 909
+  },
+  "review_request_id": "1be7e733-5d52-4947-8b17-6daa97aab2dd",
+  "review_usage": {
+    "prompt_tokens": 1653,
+    "completion_tokens": 69,
+    "total_tokens": 1722,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1653
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T05_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T05_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T05_019",
+        "title": "睡前音量预设与实际音量及时区查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里的睡前音量预设是多少？客厅音箱现在的实际音量是多少？只查询，不要调整。",
+            "reference_text": "睡前音量预设是30%；客厅音箱当前实际音量是45%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用哪个时区，具体几点？",
+            "reference_text": "当前时区是东八区，时间是晚上9点30分。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "这个音量预设代表音箱现在的音量吗？",
+            "reference_text": "不代表，预设只是偏好设置，音箱实时音量可能不同。"
+          }
+        ]
+      },
+      {
+        "case_id": "T05_020",
+        "title": "睡前音量预设与实际音量及时区查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "家里的睡前音量预设是多少？客厅音箱现在的实际音量是多少？只查询，不要调整。",
+            "reference_text": "睡前音量预设是30%；客厅音箱当前实际音量是45%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "现在家里用哪个时区，具体几点？",
+            "reference_text": "当前时区是东八区，时间是晚上9点30分。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_004",
+        "title": "客厅灯开关与亮度调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅灯，并把亮度设为20%，这是亮度百分比。",
+            "reference_text": "已打开客厅灯，亮度设为20%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才设备的亮度改成80%，这是亮度百分比，其他设置不要动。",
+            "reference_text": "已将客厅灯亮度改为80%，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅灯现在的亮度和开关，不要调整。",
+            "reference_text": "客厅灯当前亮度80%，处于开启状态。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅灯关掉，保留它的亮度设置。",
+            "reference_text": "已关闭客厅灯，亮度设置保留为80%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅灯的开关，其他设备不要改。",
+            "reference_text": "客厅灯当前是关闭状态，其他设备未改动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_008",
+        "title": "卧室灯开关与亮度调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开卧室灯，并把亮度设为40%，这是亮度百分比。",
+            "reference_text": "已打开卧室灯，亮度设为40%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才设备的亮度改成60%，这是亮度百分比，其他设置不要动。",
+            "reference_text": "已将卧室灯亮度改为60%，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下卧室灯现在的亮度和开关，不要调整。",
+            "reference_text": "卧室灯当前亮度60%，处于开启状态。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把卧室灯关掉，保留它的亮度设置。",
+            "reference_text": "已关闭卧室灯，亮度设置保留为60%。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,112 @@
+{
+  "source_sha256": "8227cd381cb57654ba12161573148cb871a3d6e93c8f08819f5814e17fb68bcc",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d864d1dd-e415-45a0-958f-e15f0c6cd1db",
+  "usage": {
+    "prompt_tokens": 794,
+    "completion_tokens": 423,
+    "total_tokens": 1217,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 666
+  },
+  "review_request_id": "befddfec-879d-45a5-8a6f-6d3b60f34729",
+  "review_usage": {
+    "prompt_tokens": 883,
+    "completion_tokens": 69,
+    "total_tokens": 952,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 883
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T03_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_014",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T03_011",
+        "title": "书房灯与卧室窗帘状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "书房灯是开着的，亮度为60%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘打开了30%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_012",
+        "title": "客厅灯状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "客厅灯是开着的，亮度为80%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_013",
+        "title": "客厅灯与卧室窗帘状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "客厅灯是开着的，亮度为80%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘打开了30%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_014",
+        "title": "卧室灯状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "卧室灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "卧室灯是关着的，亮度为0%。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

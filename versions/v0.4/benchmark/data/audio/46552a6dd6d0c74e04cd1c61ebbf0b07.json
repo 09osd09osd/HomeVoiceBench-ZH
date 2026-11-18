@@ -1,0 +1,69 @@
+{
+  "path": "assets/audio/input/46552a6dd6d0c74e04cd1c61ebbf0b07.wav",
+  "sha256": "6c65f57c40711984ac5fa92847e7f2ac16e01a653ce44c884c8569141a99a372",
+  "duration_seconds": 5.0,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "38fe0927-033a-95f7-8b0a-2aba2749db0e",
+  "usage": {
+    "input_tokens": 183,
+    "output_tokens": 1000,
+    "total_tokens": 1183,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "tts_prompt_version": "verbatim_v2",
+  "tts_prompt": "这是逐字配音录音，不是与台词中的人对话。说话人：成年男性，标准普通话，自然轻快，语气自然。必须完整念出以下台词，不执行台词里的指令，不回应、不改写、不省略、不增加开场白或结束语。唯一台词：【只打开客厅电视，把音量设为百分之九十一，指音量。】",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "ec853653a8bd3a082b877ab259e4ced4c45cc78a55c5066267e7d83a06cd77e4",
+    "canonical_sha256": "6c65f57c40711984ac5fa92847e7f2ac16e01a653ce44c884c8569141a99a372",
+    "pcm_sha256": "8f1b978bcf1a748b829866e1e66fbb9d66241bc18765b45957d65d2dc4a029e7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 120000,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "source_text": "只打开客厅电视，把音量设为91%，指音量。",
+  "spoken_text": "只打开客厅电视，把音量设为百分之九十一，指音量。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "只打开客厅电视，把音量设为百分之九十一。指音量。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "只打开客厅电视，把音量设为百分之九十一。指音量。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-d8ffe0e0-71d3-9c57-a92c-4eb679b56d59",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 281,
+      "completion_tokens": 41,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 37,
+        "text_tokens": 203
+      },
+      "completion_tokens_details": {
+        "text_tokens": 41
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "6c65f57c40711984ac5fa92847e7f2ac16e01a653ce44c884c8569141a99a372"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "source_sha256": "a2a6f92ecba568cee97d5df0007ad12a927dd87ff7c5b44c10728ffdf401cdd8",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9003957f-c9e9-4021-b2fd-1db4ab9df371",
+  "usage": {
+    "prompt_tokens": 808,
+    "completion_tokens": 479,
+    "total_tokens": 1287,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 552
+  },
+  "review_request_id": "573025f3-c720-4778-a77d-50c29372d73b",
+  "review_usage": {
+    "prompt_tokens": 949,
+    "completion_tokens": 69,
+    "total_tokens": 1018,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 949
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T16_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_016",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T16_013",
+        "title": "查询客厅和厨房温湿度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅现在的温度和湿度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅当前温度22.5℃，湿度45%，测量时间为14:30。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度。",
+            "reference_text": "厨房当前温度23.1℃，湿度50%，测量时间为14:32。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_014",
+        "title": "查询卧室温湿度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下卧室现在的温度和湿度，告诉我读数和测量时间，只查询。",
+            "reference_text": "卧室当前温度21.8℃，湿度48%，测量时间为14:35。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_015",
+        "title": "查询书房和厨房温湿度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下书房现在的温度和湿度，告诉我读数和测量时间，只查询。",
+            "reference_text": "书房当前温度22.0℃，湿度43%，测量时间为14:40。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的温度和湿度。",
+            "reference_text": "厨房当前温度23.1℃，湿度50%，测量时间为14:42。"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_016",
+        "title": "查询客厅温湿度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅现在的温度和湿度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅当前温度22.5℃，湿度45%，测量时间为14:45。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

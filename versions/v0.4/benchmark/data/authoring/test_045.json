@@ -1,0 +1,152 @@
+{
+  "source_sha256": "893b36968772cb3acd73513fa9bdb11876bd7006b15ef4bc76a871d40c210855",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ab67afc3-a064-4b10-b0bc-f6a1a1cf1af2",
+  "usage": {
+    "prompt_tokens": 1165,
+    "completion_tokens": 892,
+    "total_tokens": 2057,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 909
+  },
+  "review_request_id": "0c8feda6-6cfa-4907-8351-344c5d6d4235",
+  "review_usage": {
+    "prompt_tokens": 1663,
+    "completion_tokens": 69,
+    "total_tokens": 1732,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1663
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T13_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T13_019",
+        "title": "扫地机器人书房清扫与暂停继续",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫书房，不要进入其他房间。",
+            "reference_text": "好的，已让扫地机器人只清扫书房，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才的清扫。",
+            "reference_text": "已暂停刚才的清扫。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的清扫，区域不变。",
+            "reference_text": "已继续清扫，区域仍是书房。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_020",
+        "title": "扫地机器人客厅清扫与暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，不要进入其他房间。",
+            "reference_text": "好的，已让扫地机器人只清扫客厅，不会进入其他房间。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才的清扫。",
+            "reference_text": "已暂停刚才的清扫。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_004",
+        "title": "客厅卧室灯联动与部分失败处理",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度均设为20%；若某一台离线，告诉我具体哪台失败。",
+            "reference_text": "已尝试打开客厅灯和卧室灯，亮度均设为20%。两台都在线，均成功。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成30%，卧室的先别重试。",
+            "reference_text": "已将客厅灯亮度改为30%，卧室灯未重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下这两盏灯分别是什么状态。",
+            "reference_text": "客厅灯：开启，亮度30%；卧室灯：开启，亮度20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只关闭客厅灯，卧室不动。",
+            "reference_text": "已关闭客厅灯，卧室灯保持开启。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "说明哪些操作成功、哪些没做成，别重新操作。",
+            "reference_text": "成功：打开两灯并设20%、客厅灯改30%、关闭客厅灯。没做成：无。未重新操作。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_008",
+        "title": "客厅卧室灯联动与部分失败处理",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度均设为40%；若某一台离线，告诉我具体哪台失败。",
+            "reference_text": "已尝试打开客厅灯和卧室灯，亮度均设为40%。两台都在线，均成功。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成30%，卧室的先别重试。",
+            "reference_text": "已将客厅灯亮度改为30%，卧室灯未重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下这两盏灯分别是什么状态。",
+            "reference_text": "客厅灯：开启，亮度30%；卧室灯：开启，亮度40%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只关闭客厅灯，卧室不动。",
+            "reference_text": "已关闭客厅灯，卧室灯保持开启。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

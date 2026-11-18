@@ -1,0 +1,142 @@
+{
+  "source_sha256": "9a6da25d6e410ec9c10a4a5f0c8b3a208e1cba616b53dc9d52807a1977ed6c01",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "917fa525-ce3c-45dc-b4f2-6930e3ac9016",
+  "usage": {
+    "prompt_tokens": 1045,
+    "completion_tokens": 698,
+    "total_tokens": 1743,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 789
+  },
+  "review_request_id": "c2e1312a-6c89-4866-84b0-f56ac248a34b",
+  "review_usage": {
+    "prompt_tokens": 1363,
+    "completion_tokens": 69,
+    "total_tokens": 1432,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1363
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T27_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T27_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T27_004",
+        "title": "雨后散步进度控制",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《雨后散步》跳到第30秒。",
+            "reference_text": "已把客厅音箱的《雨后散步》定位到第30秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "已继续播放刚才的内容。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "已暂停这段内容。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第60秒，先保持暂停。",
+            "reference_text": "已定位到第60秒并保持暂停。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_008",
+        "title": "安静钢琴进度与停止",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《安静钢琴》跳到第45秒。",
+            "reference_text": "已把客厅音箱的《安静钢琴》定位到第45秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "已继续播放刚才的内容。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "已暂停这段内容。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第70秒，先保持暂停。",
+            "reference_text": "已定位到第70秒并保持暂停。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "已停止这段播放，没有换别的。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_009",
+        "title": "雨后散步跳转与继续",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《雨后散步》跳到第30秒。",
+            "reference_text": "已把客厅音箱的《雨后散步》定位到第30秒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "已继续播放刚才的内容。"
+          }
+        ]
+      },
+      {
+        "case_id": "T27_010",
+        "title": "安静钢琴跳转",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在播放的《安静钢琴》跳到第45秒。",
+            "reference_text": "已把客厅音箱的《安静钢琴》定位到第45秒。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

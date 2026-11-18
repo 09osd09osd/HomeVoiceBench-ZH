@@ -1,0 +1,127 @@
+{
+  "source_sha256": "068fe95119744b0c46f217154eacc972d626e7e31dcf1786a84a506891bb1b18",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ea2a4de9-79aa-499f-9d9f-c83ec6b2e636",
+  "usage": {
+    "prompt_tokens": 876,
+    "completion_tokens": 551,
+    "total_tokens": 1427,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 748
+  },
+  "review_request_id": "d4373a7e-ab05-492a-80a4-a798ff3c35f3",
+  "review_usage": {
+    "prompt_tokens": 1104,
+    "completion_tokens": 69,
+    "total_tokens": 1173,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1104
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T24_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_104",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T24_101",
+        "title": "定时关闭客厅灯",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天10点自动关掉客厅灯。",
+            "reference_text": "好的，已为您设置明天10点自动关闭客厅灯。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_102",
+        "title": "修改并查看定时安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天10点自动关掉客厅灯。",
+            "reference_text": "好的，已设置明天10点关闭客厅灯的定时。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天10点半。",
+            "reference_text": "已将关闭客厅灯的定时改为明天10点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有：明天10点半关闭客厅灯。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_101",
+        "title": "播放故事",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《星空小知识》。",
+            "reference_text": "正在客厅音箱为您播放《星空小知识》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_104",
+        "title": "暂停继续与定位",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "暂停客厅音箱正在播放的《小熊找月亮》。",
+            "reference_text": "已暂停客厅音箱播放的《小熊找月亮》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "已继续播放刚才的内容。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "暂停一下这段内容。",
+            "reference_text": "已暂停当前播放的内容。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把这段内容定位到第80秒，先保持暂停。",
+            "reference_text": "已定位到第80秒，并保持暂停状态。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,132 @@
+{
+  "source_sha256": "75590bdbcf562dcfc89298ab280ea2ff8287da485345f7cac555a110fd96e1e7",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ba2675d3-3286-4c09-9ee0-619c107cc4fb",
+  "usage": {
+    "prompt_tokens": 986,
+    "completion_tokens": 720,
+    "total_tokens": 1706,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 858
+  },
+  "review_request_id": "ef0dc933-0193-4a48-8653-8c498e24179f",
+  "review_usage": {
+    "prompt_tokens": 1340,
+    "completion_tokens": 69,
+    "total_tokens": 1409,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1340
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T02_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T02_017",
+        "title": "客厅灯能力与范围查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅灯支持什么设置，可调范围是多少？",
+            "reference_text": "客厅灯支持开关、亮度调节，亮度范围是1%到100%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "客厅灯不支持调节颜色，只能调亮度和开关。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果超出支持范围，你应该怎么处理？",
+            "reference_text": "不能擅自截断取值，我会告知您支持的亮度范围是1%到100%，并请您确认想要的值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_018",
+        "title": "客厅空调能力与范围查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅空调支持什么设置，可调范围是多少？",
+            "reference_text": "客厅空调支持开关、设定温度、运行模式和风速档位。温度范围是16到30摄氏度，风速档位是1到5档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "客厅空调不支持调节颜色，它只能调温度、模式和风速。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_019",
+        "title": "卧室窗帘能力与范围查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下卧室窗帘支持什么设置，可调范围是多少？",
+            "reference_text": "卧室窗帘支持开关和打开比例调节，打开比例范围是0%到100%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "卧室窗帘不支持调节颜色，只能调打开比例和开关。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "如果超出支持范围，你应该怎么处理？",
+            "reference_text": "不能擅自截断取值，我会告知您支持的打开比例范围是0%到100%，并请您确认想要的值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_020",
+        "title": "书房风扇能力与范围查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下书房风扇支持什么设置，可调范围是多少？",
+            "reference_text": "书房风扇支持开关和风速档位调节，风速档位范围是1到3档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它是否支持调节颜色？只解释，不要尝试。",
+            "reference_text": "书房风扇不支持调节颜色，只能调风速档位和开关。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

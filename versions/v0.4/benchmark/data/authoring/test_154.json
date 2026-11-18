@@ -1,0 +1,142 @@
+{
+  "source_sha256": "d7b734dae016c9cf78e78651c00e66d9c681a2abd9d3f7928aebbf6cf6f268fb",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "725acd10-debc-4248-9c66-c592c2b73f5e",
+  "usage": {
+    "prompt_tokens": 1116,
+    "completion_tokens": 912,
+    "total_tokens": 2028,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 860
+  },
+  "review_request_id": "c1049d6c-9541-49aa-915d-dcd1f697ebfd",
+  "review_usage": {
+    "prompt_tokens": 1648,
+    "completion_tokens": 69,
+    "total_tokens": 1717,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1648
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C15_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C15_004",
+        "title": "口头猜谜与提示",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我给你出个谜语：红红圆脸，树上长，脆甜多汁，常说一天一个它。猜一种水果。",
+            "reference_text": "谜底是苹果。红红圆脸、长在树上、脆甜多汁，还常说“一天一个苹果”，都指向苹果。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想的答案是苹果，你猜到了吗？",
+            "reference_text": "我刚才猜的就是苹果，所以算猜到了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "现在换你出一个谜语，谜底用香蕉，但先别说谜底。",
+            "reference_text": "好，我出个谜语：弯弯像小船，皮黄肉软，剥开就能吃，常见在果盘。猜一种水果。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "我猜是香蕉，对吗？",
+            "reference_text": "对，谜底就是香蕉。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_008",
+        "title": "口头猜谜与提示",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我给你出个谜语：红红圆脸，树上长，脆甜多汁，常说一天一个它。猜一种水果。",
+            "reference_text": "谜底是苹果。红红圆脸、长在树上、脆甜多汁，还常说“一天一个苹果”，都指向苹果。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想的答案是苹果，你猜到了吗？",
+            "reference_text": "我刚才猜的就是苹果，所以算猜到了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "现在换你出一个谜语，谜底用香蕉，但先别说谜底。",
+            "reference_text": "好，我出个谜语：弯弯像小船，皮黄肉软，剥开就能吃，常见在果盘。猜一种水果。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "我猜是香蕉，对吗？",
+            "reference_text": "对，谜底就是香蕉。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "说说刚才哪条提示能帮助猜到。",
+            "reference_text": "刚才我给的“弯弯像小船”和“皮黄肉软”比较关键，能帮助联想到香蕉。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_009",
+        "title": "口头猜谜与提示",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我给你出个谜语：红红圆脸，树上长，脆甜多汁，常说一天一个它。猜一种水果。",
+            "reference_text": "谜底是苹果。红红圆脸、长在树上、脆甜多汁，还常说“一天一个苹果”，都指向苹果。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想的答案是苹果，你猜到了吗？",
+            "reference_text": "我刚才猜的就是苹果，所以算猜到了。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_010",
+        "title": "口头猜谜与提示",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我给你出个谜语：绿皮红瓤，有时还有黑籽，夏天常切开吃。猜一种水果。",
+            "reference_text": "谜底是西瓜。绿皮红瓤、有黑籽、夏天常切开吃，这些特征都符合西瓜。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

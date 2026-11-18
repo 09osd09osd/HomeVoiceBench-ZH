@@ -1,0 +1,142 @@
+{
+  "source_sha256": "3214915b29cb1668954c21a70f174c08b3caa268f3d5722a264b35a1843a9b53",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6d31684d-8031-48b4-aaa0-f228fbb1d1f1",
+  "usage": {
+    "prompt_tokens": 1093,
+    "completion_tokens": 734,
+    "total_tokens": 1827,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 837
+  },
+  "review_request_id": "26b91c59-4b65-465f-8b47-4140fe24f85d",
+  "review_usage": {
+    "prompt_tokens": 1450,
+    "completion_tokens": 69,
+    "total_tokens": 1519,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1450
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T15_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T15_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T15_004",
+        "title": "指代消歧与指令更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到20%。",
+            "reference_text": "请问要打开哪一盏灯？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到20%，其他灯别动。",
+            "reference_text": "好的，已把客厅灯打开并调到20%，其他灯保持原样。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "客厅灯当前亮度是20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在明确关掉刚才那盏灯，亮度设置保留。",
+            "reference_text": "已关闭客厅灯，亮度设置仍保留为20%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_008",
+        "title": "指代消歧与指令更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到40%。",
+            "reference_text": "请问要打开哪一盏灯？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是卧室灯，打开到40%，其他灯别动。",
+            "reference_text": "好的，已把卧室灯打开并调到40%，其他灯保持原样。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是要关灯，只查它目前亮度。",
+            "reference_text": "卧室灯当前亮度是40%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在明确关掉刚才那盏灯，亮度设置保留。",
+            "reference_text": "已关闭卧室灯，亮度设置仍保留为40%。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "总结我的澄清：最终是哪盏灯，开关与亮度各怎样？",
+            "reference_text": "最终操作的是卧室灯，目前已关闭，亮度设置保留为40%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_009",
+        "title": "指代消歧与指令更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到20%。",
+            "reference_text": "请问要打开哪一盏灯？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我刚才指的是客厅灯，打开到21%，其他灯别动。",
+            "reference_text": "好的，已把客厅灯打开并调到21%，其他灯保持原样。"
+          }
+        ]
+      },
+      {
+        "case_id": "T15_010",
+        "title": "指代消歧与指令更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到40%。",
+            "reference_text": "请问要打开哪一盏灯？"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,127 @@
+{
+  "source_sha256": "c042abb99a314f1f6ac7fd81e4e051d05b4695e87daf8501dd8245d32113c68e",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "9d9e9e5d-671b-448e-a7dc-8f41e7200f0b",
+  "usage": {
+    "prompt_tokens": 879,
+    "completion_tokens": 472,
+    "total_tokens": 1351,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 751
+  },
+  "review_request_id": "17ab505d-232a-4f93-9b71-0f70c27a8eba",
+  "review_usage": {
+    "prompt_tokens": 1200,
+    "completion_tokens": 69,
+    "total_tokens": 1269,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1200
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C14_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C14_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C15_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C16_104",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C14_101",
+        "title": "图书管理员角色扮演借海洋书",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我们假装你是图书管理员，我来借一本关于海洋的书。",
+            "reference_text": "好的，我们假装我是图书管理员。你想借一本关于海洋的书，我可以帮你找找看。"
+          }
+        ]
+      },
+      {
+        "case_id": "C14_102",
+        "title": "图书管理员角色扮演借儿童森林书",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我们假装你是图书管理员，我来借一本关于海洋的书。",
+            "reference_text": "好的，我们假装我是图书管理员。你想借一本关于海洋的书，我可以帮你找找看。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我想要适合小朋友的，内容别太难。",
+            "reference_text": "明白，要找适合小朋友、内容不太难的海洋书，我帮你按这个方向挑。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "主题改成森林，不是海洋。",
+            "reference_text": "好的，主题改成森林，不是海洋，还是按适合小朋友、内容不太难来找。"
+          }
+        ]
+      },
+      {
+        "case_id": "C15_101",
+        "title": "猜水果谜语",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我给你出个谜语：红红圆脸，树上长，脆甜多汁，常说一天一个它。猜一种水果。",
+            "reference_text": "我猜是苹果。红红圆脸、长在树上、脆甜多汁，也常听到一天一个苹果的说法。"
+          }
+        ]
+      },
+      {
+        "case_id": "C16_104",
+        "title": "数字复述与更正记忆游戏",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "记住这个数字：247。请复述一遍。",
+            "reference_text": "好的，我记住了，复述一遍：247。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "改成742，再复述一遍。",
+            "reference_text": "好的，改成742，再复述一遍：742。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "现在先别重复数字，只回答你记住了没有。",
+            "reference_text": "我记住了，这一轮不重复数字。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "刚才最后让我记住的是哪个数字？",
+            "reference_text": "刚才最后让我记住的是742。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

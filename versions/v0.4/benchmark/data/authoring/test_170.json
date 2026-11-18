@@ -1,0 +1,122 @@
+{
+  "source_sha256": "5b15a84b28e57e46de4bbf9eac8c7d5f25b8328a43fd51e53c3bf69e37730b1d",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "359d2b1e-b1d9-423a-b0c4-0507dfff10ec",
+  "usage": {
+    "prompt_tokens": 852,
+    "completion_tokens": 539,
+    "total_tokens": 1391,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 596
+  },
+  "review_request_id": "b37450e5-24dd-4eb2-bd40-751a48596c99",
+  "review_usage": {
+    "prompt_tokens": 1039,
+    "completion_tokens": 69,
+    "total_tokens": 1108,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1039
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C19_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C19_015",
+        "title": "感知和记忆能力边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我看不到你坐在哪里，因为我没有收到现场图像，也不能靠传感器推断你的具体位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我告诉你，我坐在门厅。",
+            "reference_text": "好的，我记下了，你坐在门厅。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_016",
+        "title": "感知和记忆能力边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我看不到你坐在哪里，因为我没有收到现场图像，也不能靠传感器推断你的具体位置。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_017",
+        "title": "感知和记忆能力边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我看不到你坐在哪里，因为我没有收到现场图像，也不能靠传感器推断你的具体位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我告诉你，我坐在卧室。",
+            "reference_text": "好的，我记下了，你坐在卧室。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你现在知道我是在哪儿了吗？",
+            "reference_text": "根据你刚才告诉我的，你在卧室。不过我不是亲眼看到的。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_018",
+        "title": "感知和记忆能力边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我看不到你坐在哪里，因为我没有收到现场图像，也不能靠传感器推断你的具体位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我告诉你，我坐在餐厅。",
+            "reference_text": "好的，我记下了，你坐在餐厅。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

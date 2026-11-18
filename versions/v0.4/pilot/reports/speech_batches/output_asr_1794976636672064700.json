@@ -1,0 +1,213 @@
+{
+  "model": "Qwen/Qwen3-ASR-0.6B",
+  "batch_size": 16,
+  "adaptive_max_batch_size": 16,
+  "torch": "2.11.0+cu130",
+  "transformers": "4.57.6",
+  "cuda": "13.0",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "seed": 42,
+  "generation": {
+    "max_new_tokens": 1024,
+    "language": "Chinese",
+    "purpose": "independent_output_audio_evidence"
+  },
+  "timing_scope": "offline_batch_inference_not_realtime_latency",
+  "pilot": false,
+  "allocator_cache_policy": "release_unused_after_each_batch",
+  "cuda_allocator_memory_fraction": 0.7,
+  "status": "completed",
+  "tasks": 365,
+  "completed_tasks": 365,
+  "wall_seconds": 68.34399999992456,
+  "batches": [
+    {
+      "offset": 0,
+      "n": 16,
+      "seconds": 3.843999999924563,
+      "peak_gpu_bytes": 2827389952,
+      "reserved_gpu_bytes_before_release": 2948595712,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 16,
+      "n": 16,
+      "seconds": 3.234000000054948,
+      "peak_gpu_bytes": 4383795200,
+      "reserved_gpu_bytes_before_release": 4607442944,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 32,
+      "n": 16,
+      "seconds": 1.625,
+      "peak_gpu_bytes": 2844444672,
+      "reserved_gpu_bytes_before_release": 2963275776,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 48,
+      "n": 16,
+      "seconds": 2.875,
+      "peak_gpu_bytes": 4016728576,
+      "reserved_gpu_bytes_before_release": 4236247040,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 64,
+      "n": 16,
+      "seconds": 1.562999999965541,
+      "peak_gpu_bytes": 2690228736,
+      "reserved_gpu_bytes_before_release": 2812280832,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 80,
+      "n": 16,
+      "seconds": 1.827999999979511,
+      "peak_gpu_bytes": 2986098176,
+      "reserved_gpu_bytes_before_release": 3107979264,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 96,
+      "n": 16,
+      "seconds": 2.297000000020489,
+      "peak_gpu_bytes": 3582205952,
+      "reserved_gpu_bytes_before_release": 3751804928,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 112,
+      "n": 16,
+      "seconds": 2.01500000001397,
+      "peak_gpu_bytes": 3841113088,
+      "reserved_gpu_bytes_before_release": 4011851776,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 128,
+      "n": 16,
+      "seconds": 3.062000000034459,
+      "peak_gpu_bytes": 5255808512,
+      "reserved_gpu_bytes_before_release": 5735710720,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 144,
+      "n": 16,
+      "seconds": 2.125,
+      "peak_gpu_bytes": 4441289216,
+      "reserved_gpu_bytes_before_release": 4800380928,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 160,
+      "n": 16,
+      "seconds": 1.1719999999040738,
+      "peak_gpu_bytes": 2935259648,
+      "reserved_gpu_bytes_before_release": 3047161856,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 176,
+      "n": 16,
+      "seconds": 3.922000000020489,
+      "peak_gpu_bytes": 6274341888,
+      "reserved_gpu_bytes_before_release": 6746537984,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 192,
+      "n": 16,
+      "seconds": 4.218999999924563,
+      "peak_gpu_bytes": 5676372480,
+      "reserved_gpu_bytes_before_release": 6211764224,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 208,
+      "n": 16,
+      "seconds": 2.547000000020489,
+      "peak_gpu_bytes": 4423345152,
+      "reserved_gpu_bytes_before_release": 4773117952,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 224,
+      "n": 16,
+      "seconds": 7.344000000040978,
+      "peak_gpu_bytes": 7932406272,
+      "reserved_gpu_bytes_before_release": 8524922880,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 240,
+      "n": 16,
+      "seconds": 4.672000000020489,
+      "peak_gpu_bytes": 6369518080,
+      "reserved_gpu_bytes_before_release": 6782189568,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 256,
+      "n": 16,
+      "seconds": 3.5320000000065193,
+      "peak_gpu_bytes": 5181261824,
+      "reserved_gpu_bytes_before_release": 5536481280,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 272,
+      "n": 16,
+      "seconds": 3.984000000054948,
+      "peak_gpu_bytes": 6361624576,
+      "reserved_gpu_bytes_before_release": 6931087360,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 288,
+      "n": 16,
+      "seconds": 1.577999999979511,
+      "peak_gpu_bytes": 3663533568,
+      "reserved_gpu_bytes_before_release": 3867148288,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 304,
+      "n": 16,
+      "seconds": 1.562000000034459,
+      "peak_gpu_bytes": 3317195264,
+      "reserved_gpu_bytes_before_release": 3462397952,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 320,
+      "n": 16,
+      "seconds": 4.094000000040978,
+      "peak_gpu_bytes": 5719386624,
+      "reserved_gpu_bytes_before_release": 6134169600,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 336,
+      "n": 16,
+      "seconds": 3.327999999979511,
+      "peak_gpu_bytes": 5367623168,
+      "reserved_gpu_bytes_before_release": 5733613568,
+      "reserved_gpu_bytes_after_release": 1887436800
+    },
+    {
+      "offset": 352,
+      "n": 13,
+      "seconds": 1.672000000020489,
+      "peak_gpu_bytes": 2996165120,
+      "reserved_gpu_bytes_before_release": 3122659328,
+      "reserved_gpu_bytes_after_release": 1887436800
+    }
+  ],
+  "final_batch_size": 16,
+  "resource_retries": [],
+  "batch_adjustments": []
+}

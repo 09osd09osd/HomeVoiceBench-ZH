@@ -1,0 +1,44 @@
+{
+  "status": "format_recovered",
+  "checked_at": "2026-11-18T08:47:37.318847+00:00",
+  "run": "runs/qwen35_2b/C13_011.json",
+  "reason": "Four responses did not meet the required JSON structure; none was accepted as a decision.",
+  "recovery": "Same original audio, scoring prompt, model, temperature and token budget; extra field-type reminder after four invalid responses. Maximum format attempts extended to eight uniformly for all systems.",
+  "first_valid_attempt": 5,
+  "accepted_case_pass": false,
+  "all_prior_responses_preserved": true,
+  "scoring_prompt_sha256": "95a1885164cdc5d6fa8b619d48de10c67099d57a236363ca6e5586cd612a9524",
+  "scoring_prompt_unchanged": true,
+  "requests": [
+    {
+      "path": "runs/audio_adjudication_requests/96985bb917a2bf7e94d48568a6e07d9c36fbda4624fbc485fb88db431711fd42_0.json",
+      "sha256": "d79241e35b179c9768ec3e3c6fe49a11afc9c0def04cc8e06f3a76667baa2bb1"
+    },
+    {
+      "path": "runs/audio_adjudication_requests/96985bb917a2bf7e94d48568a6e07d9c36fbda4624fbc485fb88db431711fd42_1.json",
+      "sha256": "2fcaf2f7e8fffb602c1b29a103cdd110fac7aadddf3e99f214dd0b699d5a2d84"
+    },
+    {
+      "path": "runs/audio_adjudication_requests/96985bb917a2bf7e94d48568a6e07d9c36fbda4624fbc485fb88db431711fd42_2.json",
+      "sha256": "657198ce97876390bf82f743da620cbb03bb16cec83a11357d8b0db1f2df106c"
+    },
+    {
+      "path": "runs/audio_adjudication_requests/96985bb917a2bf7e94d48568a6e07d9c36fbda4624fbc485fb88db431711fd42_3.json",
+      "sha256": "65c0e79e89bce4496ba193a1c1c649168462b306da5e7e168d6d4c23542d16a8"
+    },
+    {
+      "path": "runs/audio_adjudication_requests/96985bb917a2bf7e94d48568a6e07d9c36fbda4624fbc485fb88db431711fd42_4.json",
+      "sha256": "62fb4b6259024b42a5a91f4e4b099559b9de9b149ec9f4f615890d3a13864470"
+    }
+  ],
+  "auxiliary_stream_failure_preserved": "reports/scoring_schedule_attempts/followup_format_failure.json",
+  "remaining_reviews_recovered_by": "normal pipeline semantic_review and fresh_audio_adjudication stages",
+  "regression_tests": {
+    "first_valid_failure_retained_without_extra_API_calls": true,
+    "invalid_responses_preserved": true,
+    "cached_result_reused_without_new_call": true,
+    "objective_failure_not_overridden": true
+  },
+  "complete_pipeline_acceptance": "passed",
+  "final_batch_recovery_verified_at": "2026-11-18T08:57:21.498573+00:00"
+}

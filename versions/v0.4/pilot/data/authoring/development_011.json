@@ -1,0 +1,122 @@
+{
+  "source_sha256": "7b8ddc2ae303a001fddd05bb1677599177344e1e0b604acd0c2a2f8e2e58f28f",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2aabf93f-4659-4424-8d8a-1aac575cd9dc",
+  "usage": {
+    "prompt_tokens": 821,
+    "completion_tokens": 552,
+    "total_tokens": 1373,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 693
+  },
+  "review_request_id": "39280fa6-3ebb-487a-93f1-d1a3dbc5f31e",
+  "review_usage": {
+    "prompt_tokens": 1056,
+    "completion_tokens": 69,
+    "total_tokens": 1125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1056
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C02_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C03_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C04_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C04_102",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C02_102",
+        "title": "午睡前轻松陪聊",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我准备午睡了，跟我说两句轻松的话吧。",
+            "reference_text": "好的，午睡前放松一下，愿你休息得舒服。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我喜欢安静一点，别讲笑话。",
+            "reference_text": "明白，那就安安静静的，不讲笑话。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "下午其实不用出门，不用催我定闹钟。",
+            "reference_text": "好的，下午不用出门，我不会提定闹钟的事。"
+          }
+        ]
+      },
+      {
+        "case_id": "C03_101",
+        "title": "疲惫时想听安慰",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今天忙了一整天，觉得有点累，想听一句安慰。",
+            "reference_text": "忙了一整天确实辛苦，先让自己歇一歇吧。"
+          }
+        ]
+      },
+      {
+        "case_id": "C04_101",
+        "title": "等同学回复有点担心",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我在等同学回复，有点担心，陪我说两句。",
+            "reference_text": "等待的时候担心很正常，我陪你聊两句，先别太着急。"
+          }
+        ]
+      },
+      {
+        "case_id": "C04_102",
+        "title": "等普通消息不升级担心",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我在等同学回复，有点担心，陪我说两句。",
+            "reference_text": "等待的时候担心很正常，我陪你聊两句，先别太着急。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只是普通消息，不是紧急情况。",
+            "reference_text": "明白，是普通消息，不是紧急情况，我们按平常心等就好。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我不想一直猜他为什么没回复。",
+            "reference_text": "那就不去猜原因，先做点别的分散一下注意力。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

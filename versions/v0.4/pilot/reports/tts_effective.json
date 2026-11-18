@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "batch_size": 12,
+  "adaptive_max_batch_size": 32,
+  "torch": "2.11.0+cu130",
+  "transformers": "4.57.3",
+  "cuda": "13.0",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "seed": 42,
+  "generation": {
+    "do_sample": true,
+    "repetition_penalty": 1.05,
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 50,
+    "subtalker_dosample": true,
+    "subtalker_temperature": 0.9,
+    "subtalker_top_p": 1.0,
+    "subtalker_top_k": 50,
+    "max_new_tokens": 1024
+  },
+  "timing_scope": "offline_batch_inference_not_realtime_latency",
+  "pilot": false,
+  "allocator_cache_policy": "release_unused_after_each_batch",
+  "cuda_allocator_memory_fraction": 0.7
+}

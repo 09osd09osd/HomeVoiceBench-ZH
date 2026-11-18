@@ -1,0 +1,132 @@
+{
+  "source_sha256": "3aeb26afaeef135b7c14eb472332f80d9881de3af7fc5470cd8694b6f82254ae",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b93d1669-379b-4c8c-a904-626ad9e77c86",
+  "usage": {
+    "prompt_tokens": 991,
+    "completion_tokens": 707,
+    "total_tokens": 1698,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 735
+  },
+  "review_request_id": "7de5a7d9-9bb7-4fe9-bfcb-a0fd391242a7",
+  "review_usage": {
+    "prompt_tokens": 1332,
+    "completion_tokens": 69,
+    "total_tokens": 1401,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1332
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T22_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T22_017",
+        "title": "每日重复提醒调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每天7点提醒我带钥匙。",
+            "reference_text": "好的，已设置从下次起每天7点提醒带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为7点半。",
+            "reference_text": "好的，已把每天带钥匙的提醒时间改为7点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有：每天7点半提醒带钥匙。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_018",
+        "title": "每周多日重复提醒调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五8点提醒我给绿萝浇水。",
+            "reference_text": "好的，已设置从下次起每周一、三、五8点提醒给绿萝浇水。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为8点半。",
+            "reference_text": "好的，已把每周一、三、五给绿萝浇水的提醒时间改为8点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_019",
+        "title": "每日重复提醒调整与查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每天9点提醒我收阳台毛巾。",
+            "reference_text": "好的，已设置从下次起每天9点提醒收阳台毛巾。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为9点半。",
+            "reference_text": "好的，已把每天收阳台毛巾的提醒时间改为9点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排有：每天9点半提醒收阳台毛巾。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_020",
+        "title": "每周多日重复提醒调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五10点提醒我整理书包。",
+            "reference_text": "好的，已设置从下次起每周一、三、五10点提醒整理书包。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为10点半。",
+            "reference_text": "好的，已把每周一、三、五整理书包的提醒时间改为10点半。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

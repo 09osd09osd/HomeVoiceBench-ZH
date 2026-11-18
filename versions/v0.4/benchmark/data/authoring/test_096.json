@@ -1,0 +1,112 @@
+{
+  "source_sha256": "c6c6d49f620f379813f74b299594bb41d660dc9250104e8ef014cb0a08cbc3e7",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7bafe6d1-079f-4b94-9c2c-ce47b4196f81",
+  "usage": {
+    "prompt_tokens": 810,
+    "completion_tokens": 425,
+    "total_tokens": 1235,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 554
+  },
+  "review_request_id": "c9b68ec4-b2ac-4e12-85aa-d761858a1e8b",
+  "review_usage": {
+    "prompt_tokens": 897,
+    "completion_tokens": 69,
+    "total_tokens": 966,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 897
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T28_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T28_016",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T28_013",
+        "title": "媒体不存在与播放失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我找一下《不存在的蓝色月球》这段音乐，有的话就播放，没有就直接告诉我。",
+            "reference_text": "好的，我查一下。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《雨后散步》，先不要播放。",
+            "reference_text": "好的，我只搜索不播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_014",
+        "title": "媒体不存在与播放失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《安静钢琴》。",
+            "reference_text": "好的，我尝试在客厅音箱播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_015",
+        "title": "媒体不存在与播放失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "找一下《不存在的蓝色月球》这段音乐，有就播放，没有就直接告诉我。",
+            "reference_text": "好的，我查一下。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那只搜索《小熊找月亮》，先不要播放。",
+            "reference_text": "好的，我只搜索不播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T28_016",
+        "title": "媒体不存在与播放失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《星空小知识》。",
+            "reference_text": "好的，我尝试在客厅音箱播放。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

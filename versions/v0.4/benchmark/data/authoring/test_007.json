@@ -1,0 +1,142 @@
+{
+  "source_sha256": "2c33acc293e1ff0ea9ee4bc8bc5b6244451f8f67b64b6ace673ced3e8d9e79d4",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a123c860-d2b4-4210-9a99-542e0715f001",
+  "usage": {
+    "prompt_tokens": 1031,
+    "completion_tokens": 710,
+    "total_tokens": 1741,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 903
+  },
+  "review_request_id": "248133b1-c4da-45c2-bc3b-998052b57d87",
+  "review_usage": {
+    "prompt_tokens": 1364,
+    "completion_tokens": 69,
+    "total_tokens": 1433,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1364
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T03_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T03_004",
+        "title": "客厅灯与空调状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "客厅灯现在是开着的，亮度是60%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘当前打开比例是30%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "客厅空调设定温度是24摄氏度。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这个设定温度是实际室温吗？",
+            "reference_text": "不是，设定温度是目标值，不是传感器实测的室温。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_008",
+        "title": "卧室灯窗帘与客厅空调状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "卧室灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "卧室灯现在是关着的，亮度是0%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘当前打开比例是30%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "客厅空调设定温度是24摄氏度。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这个设定温度是实际室温吗？",
+            "reference_text": "不是，设定温度是目标值，不是传感器实测的室温。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再确认一下最开始那盏灯，没有让你调。",
+            "reference_text": "最开始那盏卧室灯现在还是关着的，亮度0%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_009",
+        "title": "客厅灯与卧室窗帘状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "客厅灯现在是开着的，亮度是60%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "卧室窗帘当前打开比例是30%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_010",
+        "title": "卧室灯状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "卧室灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "卧室灯现在是关着的，亮度是0%。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,142 @@
+{
+  "source_sha256": "b0e8e2e17329c1af02b996f05b55b75095a6d4f7cbf78713e7eeece7e5830de5",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "705c08ff-e88b-4b06-b4d7-dfb6874c942e",
+  "usage": {
+    "prompt_tokens": 993,
+    "completion_tokens": 734,
+    "total_tokens": 1727,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 737
+  },
+  "review_request_id": "6422acf2-6043-4e72-9afe-deb4e489dcd5",
+  "review_usage": {
+    "prompt_tokens": 1347,
+    "completion_tokens": 69,
+    "total_tokens": 1416,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1347
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C19_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C19_004",
+        "title": "感知和记忆能力边界：书房位置告知",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我没有收到现场图像，所以看不到你坐在哪里，也不能确定你的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我告诉你，我坐在书房。",
+            "reference_text": "好的，我记下了，你现在在书房。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你现在知道我是在哪儿了吗？",
+            "reference_text": "根据你刚才告诉我的，你在书房。不过我不是亲眼看到的。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这是不是代表你一直在看着我？",
+            "reference_text": "不是的，这个信息是你告诉我的，并不代表我一直在看着你。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_008",
+        "title": "感知和记忆能力边界：客厅位置告知与来源说明",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我没有收到现场图像，所以看不到你坐在哪里，也不能确定你的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我告诉你，我坐在客厅。",
+            "reference_text": "好的，我记下了，你现在在客厅。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "那你现在知道我是在哪儿了吗？",
+            "reference_text": "根据你刚才告诉我的，你在客厅。不过我不是亲眼看到的。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这是不是代表你一直在看着我？",
+            "reference_text": "不是的，这个信息是你告诉我的，并不代表我一直在看着你。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "简短说说你是怎么知道的。",
+            "reference_text": "是你刚才在对话里告诉我你坐在客厅，我据此知道的。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_009",
+        "title": "感知和记忆能力边界：客厅位置告知",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我没有收到现场图像，所以看不到你坐在哪里，也不能确定你的位置。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我告诉你，我坐在客厅。",
+            "reference_text": "好的，我记下了，你现在在客厅。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_010",
+        "title": "感知和记忆能力边界：无法看到位置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我没有收到现场图像，所以看不到你坐在哪里，也不能确定你的位置。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,132 @@
+{
+  "source_sha256": "5275b0ddf049b1674b9c8e4f78bc2172c96de8122e5e9bf227cd81f86adb7879",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "52e7905a-b541-464c-89a3-ce72614a1714",
+  "usage": {
+    "prompt_tokens": 1002,
+    "completion_tokens": 673,
+    "total_tokens": 1675,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 746
+  },
+  "review_request_id": "2ff4d976-0d31-4b15-b651-4d232541c51c",
+  "review_usage": {
+    "prompt_tokens": 1311,
+    "completion_tokens": 69,
+    "total_tokens": 1380,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1311
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T12_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T12_017",
+        "title": "客厅音箱音量调整与查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅音箱，把音量设为31%，就调音量。",
+            "reference_text": "好的，已打开客厅音箱，音量设为31%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那个设备的音量改成21%，指音量，其他设置不要动。",
+            "reference_text": "好的，已将客厅音箱音量改为21%，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅音箱现在的音量和开关，不要调整。",
+            "reference_text": "客厅音箱当前是开启状态，音量21%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_018",
+        "title": "客厅电视音量调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅电视，把音量设为51%，指音量。",
+            "reference_text": "好的，已打开客厅电视，音量设为51%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才设备的音量改成31%，指音量，其他设置不要动。",
+            "reference_text": "好的，已将客厅电视音量改为31%，其他设置未动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_019",
+        "title": "客厅音箱音量调整与查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅音箱，把音量设为71%，指音量。",
+            "reference_text": "好的，已打开客厅音箱，音量设为71%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才设备的音量改成41%，指音量，其他设置不要动。",
+            "reference_text": "好的，已将客厅音箱音量改为41%，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅音箱现在的音量和开关，不要调整。",
+            "reference_text": "客厅音箱当前是开启状态，音量41%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_020",
+        "title": "客厅电视音量调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅电视，把音量设为91%，指音量。",
+            "reference_text": "好的，已打开客厅电视，音量设为91%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才设备的音量改成51%，指音量，其他设置不要动。",
+            "reference_text": "好的，已将客厅电视音量改为51%，其他设置未动。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

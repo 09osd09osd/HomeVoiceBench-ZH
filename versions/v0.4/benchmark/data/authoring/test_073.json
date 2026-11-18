@@ -1,0 +1,152 @@
+{
+  "source_sha256": "d32b62e36ee4d9511332631eb541ea0a241d0810d0c09091c9a61d852512fbd9",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ccc94046-2ab2-45fe-b354-06b3e598080f",
+  "usage": {
+    "prompt_tokens": 1173,
+    "completion_tokens": 911,
+    "total_tokens": 2084,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 917
+  },
+  "review_request_id": "c8427606-af4a-47cd-a5af-5c0471fca806",
+  "review_usage": {
+    "prompt_tokens": 1690,
+    "completion_tokens": 69,
+    "total_tokens": 1759,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1690
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T21_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T22_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T21_019",
+        "title": "家庭闹钟设置与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天9点的闹钟，内容是收阳台毛巾。",
+            "reference_text": "好的，我尝试在卧室音箱设置明天9点的闹钟，内容为收阳台毛巾。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天9点半。",
+            "reference_text": "好的，我尝试将刚才那条闹钟改为明天9点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "好的，我查询一下当前启用的安排。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_020",
+        "title": "家庭闹钟设置与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天10点的闹钟，内容是整理书包。",
+            "reference_text": "好的，我尝试在卧室音箱设置明天10点的闹钟，内容为整理书包。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天10点半。",
+            "reference_text": "好的，我尝试将刚才那条闹钟改为明天10点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_004",
+        "title": "每日每周重复安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每天7点提醒我带钥匙。",
+            "reference_text": "好的，我尝试设置从下一次开始每天7点提醒带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为7点半。",
+            "reference_text": "好的，我尝试将重复日期不变，时间改为7点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "好的，我查询一下当前启用的安排。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，我尝试只取消刚才新增或修改的那条，保留原来的晾衣服提醒。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "好的，我查询当前启用的安排，并确认刚才那条是否已取消。"
+          }
+        ]
+      },
+      {
+        "case_id": "T22_008",
+        "title": "每日每周重复安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "从下一次开始，每周一、三、五8点提醒我给绿萝浇水。",
+            "reference_text": "好的，我尝试设置从下一次开始每周一、三、五8点提醒给绿萝浇水。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "重复的日期不变，只把时间改为8点半。",
+            "reference_text": "好的，我尝试将重复日期不变，时间改为8点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "好的，我查询一下当前启用的安排。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，我尝试只取消刚才新增或修改的那条，保留原来的晾衣服提醒。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

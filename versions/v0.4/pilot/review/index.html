@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HomeVoiceBench · 本地人工评审</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="core.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<header class="app-header">
+  <a class="brand" href="#"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 14v-3a8 8 0 0 1 16 0v3M4 12H2v8h5v-8H4Zm16 0h2v8h-5v-8h3Z"/></svg></span><span>HomeVoiceBench<small>本地人工评审</small></span></a>
+  <div class="source-indicator"><select id="dataset-version" aria-label="选择数据版本"><option value="pilot">v0.4 · 开发验证 100 题</option></select><span class="status-dot"></span><span id="source-label">正在连接本地数据</span></div>
+  <div class="header-actions"><button id="open-folder" class="button secondary">选择数据目录</button><button id="export-json" class="button secondary" disabled>导出评审 JSON</button><button id="export-csv" class="button secondary" disabled>导出 CSV</button><button id="import-notes" class="button icon-button" title="导入之前的人工评审记录" aria-label="导入人工评审记录">导入</button></div>
+</header>
+<div id="connection-error" class="notice error hidden" role="alert"></div>
+<section id="welcome" class="welcome hidden">
+  <div class="eyebrow">LOCAL AUDIO REVIEW</div><h1>选一道题，把每一轮听清楚。</h1><p>读取本机数据，逐轮对比实验组与两条基线。问题、声音、工具结果和评分依据放在一起。</p>
+  <button id="welcome-open" class="button primary large">选择 HomeVoiceBench-ZH 文件夹</button>
+  <p class="muted">请选择包含 data、runs、reports、assets 的根目录。也可双击项目中的「启动人工评审.cmd」自动打开。</p>
+</section>
+<div id="workspace" class="workspace hidden">
+  <aside class="sidebar" aria-label="题目筛选与列表">
+    <div class="sidebar-top"><div class="eyebrow">评审队列</div><div class="queue-count"><strong id="total-count">—</strong><span>道题</span><span id="review-progress" class="muted"></span></div>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="题号、标题或问题关键词" aria-label="搜索题号、标题或问题"></label>
+      <div id="category-filter" class="segmented" aria-label="类别筛选"><button data-category="all" class="selected">全部</button><button data-category="tool">工具</button><button data-category="chat">聊天</button></div>
+      <label class="field-label" for="scene-filter">家庭场景</label><select id="scene-filter"><option value="all">全部 50 个场景</option></select>
+      <div class="filter-pair"><div><label class="field-label" for="turn-filter">预设轮数</label><select id="turn-filter"><option value="all">全部轮数</option><option value="1">1 轮</option><option value="2">2 轮</option><option value="3">3 轮</option><option value="4">4 轮</option><option value="5">5 轮</option></select></div><div><label class="field-label" for="review-filter">人工进度</label><select id="review-filter"><option value="all">全部</option><option value="todo">尚未听完</option><option value="done">已听完</option><option value="flag">需复核</option></select></div></div>
+      <label class="field-label" for="result-filter">模型表现</label><select id="result-filter"><option value="all">全部结果</option><option value="disagreement">三组通过结论不同</option><option value="edge_pass">实验组严格通过</option><option value="edge_fail">实验组未通过</option><option value="rating_disputed">初判与复核曾有分歧</option><option value="any_failed">任一系统执行失败</option><option value="any_unjudged">任一系统没有听音评分</option></select>
+      <div class="list-controls"><span id="match-count">—</span><select id="sort" aria-label="题目排序"><option value="id">按题号</option><option value="edge_low">实验组低分优先</option><option value="difference">三组分差优先</option></select></div>
+    </div>
+    <div id="case-list" class="case-list" aria-label="题目列表"></div>
+    <div class="list-pagination"><button id="list-prev" aria-label="题目列表上一页">←</button><span id="list-page"></span><button id="list-next" aria-label="题目列表下一页">→</button></div>
+    <div class="legend"><i class="dot green"></i>通过 <i class="dot red"></i>未通过 <i class="dot grey"></i>缺失 · 顺序为 实验 / 2B / 4B</div>
+  </aside>
+  <main id="main" class="main" aria-busy="false">
+    <div id="case-heading"></div><div id="model-summary" class="model-grid summary-grid"></div>
+    <div class="content-toolbar"><nav id="tabs" class="tabs" aria-label="评审内容"><button data-tab="compare" class="active">逐轮试听</button><button data-tab="judge">判官评分</button><button data-tab="tools">工具轨迹</button><button data-tab="expected">标准与预期</button><button data-tab="notes">人工记录</button></nav><label class="speed-label">播放速度 <select id="speed" aria-label="播放速度"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label></div>
+    <div id="content" class="content"></div>
+    <footer class="review-footer">评分来自原始测评记录；人工标记单独保存在当前浏览器，可随时导出备份。<span>Alt + ← / → 切换题目</span></footer>
+  </main>
+</div>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+<input id="folder-fallback" type="file" webkitdirectory multiple hidden><input id="import-file" type="file" accept="application/json,.json" hidden>
+</body></html>

@@ -1,0 +1,112 @@
+{
+  "source_sha256": "ee060e9da16967350946a6f0d383bfe3a6b18f4fd93d186a81f783a56f930c30",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "fd13c967-c4e2-4244-a01a-d60c09d6271f",
+  "usage": {
+    "prompt_tokens": 866,
+    "completion_tokens": 567,
+    "total_tokens": 1433,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 610
+  },
+  "review_request_id": "d73c88ed-38d2-4b11-9420-857679190e0f",
+  "review_usage": {
+    "prompt_tokens": 1095,
+    "completion_tokens": 69,
+    "total_tokens": 1164,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1095
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T14_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_010",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_012",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T14_009",
+        "title": "多设备联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到21%；要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯和卧室灯已尝试打开并设为21%亮度。根据结果，客厅灯成功，卧室灯离线失败。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成31%，卧室灯先别重试。",
+            "reference_text": "已将客厅灯亮度调整为31%，卧室灯未重试。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_010",
+        "title": "多设备联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到41%；要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯和卧室灯已尝试打开并设为41%亮度。根据结果，客厅灯成功，卧室灯离线失败。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_011",
+        "title": "多设备联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到61%；要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯和卧室灯已尝试打开并设为61%亮度。根据结果，客厅灯成功，卧室灯离线失败。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成31%，卧室灯先别重试。",
+            "reference_text": "已将客厅灯亮度调整为31%，卧室灯未重试。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_012",
+        "title": "多设备联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都调到81%；要是哪台离线了，告诉我具体是哪台。",
+            "reference_text": "客厅灯和卧室灯已尝试打开并设为81%亮度。根据结果，客厅灯成功，卧室灯离线失败。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

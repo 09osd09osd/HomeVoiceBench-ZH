@@ -1,0 +1,3094 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://homebench.example/spec/0.2/types.schema.json",
+  "description": "共享类型；引用在本地解析，不访问示例域名。",
+  "$defs": {
+    "Error": {
+      "type": "object",
+      "description": "工具错误。",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "固定错误码。"
+        },
+        "message": {
+          "type": "string",
+          "description": "模型可见的错误解释，不含隐藏答案。"
+        },
+        "retryable": {
+          "type": "boolean",
+          "description": "当前错误是否允许按预算重试。"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "retryable"
+      ],
+      "additionalProperties": false
+    },
+    "Actor": {
+      "type": "object",
+      "description": "当前发言者。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "评测器提供的可信用户标识，模型不能自行修改。"
+        },
+        "name": {
+          "type": "string",
+          "description": "场景使用的虚构称呼。"
+        },
+        "role": {
+          "type": "string",
+          "description": "可信权限角色。"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "role"
+      ],
+      "additionalProperties": false
+    },
+    "Room": {
+      "type": "object",
+      "description": "房间。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "稳定房间标识。"
+        },
+        "name": {
+          "type": "string",
+          "description": "模型可见房间名。"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "DeviceState": {
+      "type": "object",
+      "description": "完整设备状态；不支持的字段为 null，列表为 []。",
+      "properties": {
+        "power": {
+          "description": "开关；不支持此项时为 null。",
+          "anyOf": [
+            {
+              "type": "boolean",
+              "description": "开关；不支持此项时为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "brightness_pct": {
+          "description": "亮度百分比。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "亮度百分比。",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "color_temperature_k": {
+          "description": "色温，单位 K。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "色温，单位 K。",
+              "minimum": 1000,
+              "maximum": 10000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "target_temperature_c": {
+          "description": "目标温度，单位摄氏度。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "目标温度，单位摄氏度。",
+              "minimum": -10,
+              "maximum": 60
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mode": {
+          "description": "设备模式；实际允许值由 capabilities 决定。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "设备模式；实际允许值由 capabilities 决定。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fan_speed": {
+          "description": "风速档位，实际范围由设备能力决定。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "风速档位，实际范围由设备能力决定。",
+              "minimum": 0,
+              "maximum": 10
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "opening_pct": {
+          "description": "窗帘打开百分比。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "窗帘打开百分比。",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "volume_pct": {
+          "description": "音量百分比。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "音量百分比。",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cleaning_status": {
+          "description": "扫地机状态。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "扫地机状态。",
+              "enum": [
+                "idle",
+                "cleaning",
+                "paused",
+                "returning",
+                "charging"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "target_room_ids": {
+          "type": "array",
+          "description": "当前清扫目标；非扫地机为 []。",
+          "items": {
+            "type": "string",
+            "description": "房间 ID。"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "power",
+        "brightness_pct",
+        "color_temperature_k",
+        "target_temperature_c",
+        "mode",
+        "fan_speed",
+        "opening_pct",
+        "volume_pct",
+        "cleaning_status",
+        "target_room_ids"
+      ],
+      "additionalProperties": false
+    },
+    "DeviceChanges": {
+      "type": "object",
+      "description": "仅允许这些修改字段；还必须符合目标设备的 capabilities。",
+      "properties": {
+        "power": {
+          "type": "boolean",
+          "description": "开关；不支持此项时为 null。"
+        },
+        "brightness_pct": {
+          "type": "number",
+          "description": "亮度百分比。",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "color_temperature_k": {
+          "type": "number",
+          "description": "色温，单位 K。",
+          "minimum": 1000,
+          "maximum": 10000
+        },
+        "target_temperature_c": {
+          "type": "number",
+          "description": "目标温度，单位摄氏度。",
+          "minimum": -10,
+          "maximum": 60
+        },
+        "mode": {
+          "type": "string",
+          "description": "设备模式；实际允许值由 capabilities 决定。"
+        },
+        "fan_speed": {
+          "type": "integer",
+          "description": "风速档位，实际范围由设备能力决定。",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "opening_pct": {
+          "type": "number",
+          "description": "窗帘打开百分比。",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "volume_pct": {
+          "type": "number",
+          "description": "音量百分比。",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "target_room_ids": {
+          "type": "array",
+          "description": "当前清扫目标；非扫地机为 []。",
+          "items": {
+            "type": "string",
+            "description": "房间 ID。"
+          },
+          "minItems": 0
+        },
+        "cleaning_action": {
+          "type": "string",
+          "description": "扫地机操作，不直接写 cleaning_status。",
+          "enum": [
+            "start",
+            "pause",
+            "resume",
+            "return_home"
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "Capability": {
+      "type": "object",
+      "description": "设备能力和参数限制。",
+      "properties": {
+        "field": {
+          "type": "string",
+          "description": "可修改字段。"
+        },
+        "allowed_values": {
+          "description": "枚举范围；非枚举为 null。",
+          "anyOf": [
+            {
+              "type": "array",
+              "description": "枚举范围；非枚举为 null。",
+              "items": {
+                "description": "一个允许值。"
+              },
+              "minItems": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "minimum": {
+          "description": "最小值。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "最小值。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "maximum": {
+          "description": "最大值。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "最大值。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "description": "单位；无单位为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "单位；无单位为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "field",
+        "allowed_values",
+        "minimum",
+        "maximum",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "Device": {
+      "type": "object",
+      "description": "设备记录。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "设备 ID。"
+        },
+        "name": {
+          "type": "string",
+          "description": "设备名称。"
+        },
+        "type": {
+          "type": "string",
+          "description": "设备类型。",
+          "enum": [
+            "light",
+            "air_conditioner",
+            "curtain",
+            "fan",
+            "purifier",
+            "tv",
+            "speaker",
+            "vacuum"
+          ]
+        },
+        "room_id": {
+          "type": "string",
+          "description": "所属房间。"
+        },
+        "online": {
+          "type": "boolean",
+          "description": "是否在线。"
+        },
+        "state": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/DeviceState",
+          "description": "当前状态。"
+        },
+        "capabilities": {
+          "type": "array",
+          "description": "能力清单。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Capability",
+            "description": "允许修改的能力。"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type",
+        "room_id",
+        "online",
+        "state",
+        "capabilities"
+      ],
+      "additionalProperties": false
+    },
+    "DeviceInfo": {
+      "type": "object",
+      "description": "目录返回的设备信息，不包含实时状态。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "设备 ID。"
+        },
+        "name": {
+          "type": "string",
+          "description": "设备名称。"
+        },
+        "type": {
+          "type": "string",
+          "description": "设备类型。",
+          "enum": [
+            "light",
+            "air_conditioner",
+            "curtain",
+            "fan",
+            "purifier",
+            "tv",
+            "speaker",
+            "vacuum"
+          ]
+        },
+        "room_id": {
+          "type": "string",
+          "description": "所属房间。"
+        },
+        "capabilities": {
+          "type": "array",
+          "description": "能力清单。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Capability",
+            "description": "允许修改的能力。"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "type",
+        "room_id",
+        "capabilities"
+      ],
+      "additionalProperties": false
+    },
+    "Sensor": {
+      "type": "object",
+      "description": "环境观测。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "传感器 ID。"
+        },
+        "room_id": {
+          "type": "string",
+          "description": "所在房间。"
+        },
+        "metric": {
+          "type": "string",
+          "description": "测量类型。",
+          "enum": [
+            "temperature_c",
+            "humidity_pct",
+            "illuminance_lux",
+            "co2_ppm",
+            "presence"
+          ]
+        },
+        "value": {
+          "description": "数值；presence 使用布尔值。"
+        },
+        "unit": {
+          "type": "string",
+          "description": "单位；presence 为 boolean。"
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "实际观测时间。"
+        },
+        "online": {
+          "type": "boolean",
+          "description": "是否可读。"
+        }
+      },
+      "required": [
+        "id",
+        "room_id",
+        "metric",
+        "value",
+        "unit",
+        "observed_at",
+        "online"
+      ],
+      "additionalProperties": false
+    },
+    "When": {
+      "type": "object",
+      "description": "安排触发时间。",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "description": "触发方式。",
+          "enum": [
+            "once",
+            "daily",
+            "weekly"
+          ]
+        },
+        "at": {
+          "description": "once 使用的绝对时间，包含时区偏移。",
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "description": "once 使用的绝对时间，包含时区偏移。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "local_time": {
+          "description": "daily/weekly 使用的 HH:MM:SS。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "daily/weekly 使用的 HH:MM:SS。",
+              "pattern": "^([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "weekdays": {
+          "type": "array",
+          "description": "weekly 使用；其余为 []。",
+          "items": {
+            "type": "integer",
+            "description": "星期一=1，星期日=7。",
+            "minimum": 1,
+            "maximum": 7
+          },
+          "minItems": 0,
+          "maxItems": 7,
+          "uniqueItems": true
+        },
+        "timezone": {
+          "type": "string",
+          "description": "IANA 时区，例如 Asia/Taipei。"
+        }
+      },
+      "required": [
+        "mode",
+        "at",
+        "local_time",
+        "weekdays",
+        "timezone"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "once"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "at": {
+                "type": "string",
+                "format": "date-time",
+                "description": "一次性时间。"
+              },
+              "local_time": {
+                "type": "null"
+              },
+              "weekdays": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "daily"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "at": {
+                "type": "null"
+              },
+              "local_time": {
+                "type": "string"
+              },
+              "weekdays": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "weekly"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "at": {
+                "type": "null"
+              },
+              "local_time": {
+                "type": "string"
+              },
+              "weekdays": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "DeviceAction": {
+      "type": "object",
+      "description": "定时设备动作；不允许嵌套工具或执行任意代码。",
+      "properties": {
+        "device_id": {
+          "type": "string",
+          "description": "目标设备 ID。"
+        },
+        "changes": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/DeviceChanges",
+          "description": "计划执行的修改。"
+        }
+      },
+      "required": [
+        "device_id",
+        "changes"
+      ],
+      "additionalProperties": false
+    },
+    "Payload": {
+      "type": "object",
+      "description": "安排内容。",
+      "properties": {
+        "message": {
+          "description": "提醒或闹钟内容；设备动作时为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "提醒或闹钟内容；设备动作时为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "target_device_id": {
+          "description": "闹钟播放设备；提醒使用场景通知通道。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "闹钟播放设备；提醒使用场景通知通道。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "actions": {
+          "type": "array",
+          "description": "device_action 使用；其他类型为 []。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/DeviceAction",
+            "description": "设备动作。"
+          },
+          "minItems": 0,
+          "maxItems": 5
+        }
+      },
+      "required": [
+        "message",
+        "target_device_id",
+        "actions"
+      ],
+      "additionalProperties": false
+    },
+    "Schedule": {
+      "type": "object",
+      "description": "未来安排。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "沙箱生成的安排 ID。"
+        },
+        "owner_id": {
+          "type": "string",
+          "description": "归属用户，由可信上下文注入。"
+        },
+        "kind": {
+          "type": "string",
+          "description": "安排类型。",
+          "enum": [
+            "reminder",
+            "alarm",
+            "device_action"
+          ]
+        },
+        "when": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/When",
+          "description": "触发时间。"
+        },
+        "payload": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Payload",
+          "description": "内容。"
+        },
+        "status": {
+          "type": "string",
+          "description": "安排状态：一次性安排触发后为completed；不代表其设备动作一定成功，实际结果另看任务记录。",
+          "enum": [
+            "active",
+            "cancelled",
+            "completed"
+          ]
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "创建时间。"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "最近修改时间。"
+        },
+        "last_triggered_at": {
+          "description": "最近实际触发时间；未触发为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "description": "最近实际触发时间；未触发为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "kind",
+        "when",
+        "payload",
+        "status",
+        "created_at",
+        "updated_at",
+        "last_triggered_at"
+      ],
+      "additionalProperties": false
+    },
+    "Media": {
+      "type": "object",
+      "description": "媒体库条目。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "媒体 ID。"
+        },
+        "title": {
+          "type": "string",
+          "description": "媒体标题。"
+        },
+        "type": {
+          "type": "string",
+          "description": "媒体类型。",
+          "enum": [
+            "music",
+            "story",
+            "podcast"
+          ]
+        },
+        "duration_s": {
+          "type": "number",
+          "description": "长度，秒。",
+          "minimum": 0
+        },
+        "source": {
+          "type": "string",
+          "description": "此版为固定本地媒体库。",
+          "enum": [
+            "fixture"
+          ]
+        },
+        "asset_id": {
+          "description": "实际文件的素材 ID；仅目录模拟时为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "实际文件的素材 ID；仅目录模拟时为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "type",
+        "duration_s",
+        "source",
+        "asset_id"
+      ],
+      "additionalProperties": false
+    },
+    "Playback": {
+      "type": "object",
+      "description": "播放会话。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "播放会话 ID。"
+        },
+        "owner_id": {
+          "type": "string",
+          "description": "所属用户。"
+        },
+        "device_id": {
+          "type": "string",
+          "description": "播放设备。"
+        },
+        "content_id": {
+          "type": "string",
+          "description": "媒体 ID。"
+        },
+        "status": {
+          "type": "string",
+          "description": "状态。",
+          "enum": [
+            "playing",
+            "paused",
+            "stopped",
+            "ended"
+          ]
+        },
+        "position_s": {
+          "type": "number",
+          "description": "播放进度，秒。",
+          "minimum": 0
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "更新时间。"
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "device_id",
+        "content_id",
+        "status",
+        "position_s",
+        "updated_at"
+      ],
+      "additionalProperties": false
+    },
+    "Task": {
+      "type": "object",
+      "description": "异步任务；取消已提交任务不会回滚。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "异步执行任务 ID。"
+        },
+        "owner_id": {
+          "type": "string",
+          "description": "所属用户。"
+        },
+        "operation": {
+          "type": "string",
+          "description": "原始工具名。"
+        },
+        "target_id": {
+          "type": "string",
+          "description": "操作对象。"
+        },
+        "status": {
+          "type": "string",
+          "description": "执行状态。",
+          "enum": [
+            "pending",
+            "running",
+            "committed",
+            "cancelled",
+            "failed"
+          ]
+        },
+        "progress_pct": {
+          "type": "number",
+          "description": "进度百分比。",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "cancellable": {
+          "type": "boolean",
+          "description": "当前阶段是否可取消。"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "创建时间。"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "更新时间。"
+        },
+        "result": {
+          "description": "任务结果；结构遵循对应工具的成功数据。",
+          "anyOf": [
+            {
+              "description": "任务结果；结构遵循对应工具的成功数据。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "error": {
+          "description": "失败原因。",
+          "anyOf": [
+            {
+              "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Error",
+              "description": "失败原因。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "owner_id",
+        "operation",
+        "target_id",
+        "status",
+        "progress_pct",
+        "cancellable",
+        "created_at",
+        "updated_at",
+        "result",
+        "error"
+      ],
+      "additionalProperties": false
+    },
+    "Preference": {
+      "type": "object",
+      "description": "允许向当前用户提供的偏好。",
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "公开偏好名称。"
+        },
+        "value": {
+          "type": "string",
+          "description": "偏好内容。"
+        }
+      },
+      "required": [
+        "key",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "HomeInfo": {
+      "type": "object",
+      "description": "home_get 的返回数据。",
+      "properties": {
+        "home_id": {
+          "type": "string",
+          "description": "家庭 ID。"
+        },
+        "name": {
+          "type": "string",
+          "description": "虚构家庭名称。"
+        },
+        "rooms": {
+          "type": "array",
+          "description": "可见房间。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Room",
+            "description": "房间。"
+          },
+          "minItems": 0
+        },
+        "public_preferences": {
+          "type": "array",
+          "description": "当前用户可见的偏好。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Preference",
+            "description": "公开偏好。"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "home_id",
+        "name",
+        "rooms",
+        "public_preferences"
+      ],
+      "additionalProperties": false
+    },
+    "Permission": {
+      "type": "object",
+      "description": "权限规则；拒绝优先，未匹配默认拒绝。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "规则 ID。"
+        },
+        "actor_role": {
+          "type": "string",
+          "description": "适用角色。"
+        },
+        "resource_type": {
+          "type": "string",
+          "description": "资源类型。",
+          "enum": [
+            "home",
+            "device",
+            "sensor",
+            "schedule",
+            "media",
+            "playback",
+            "task"
+          ]
+        },
+        "resource_ids": {
+          "type": "array",
+          "description": "匹配对象。",
+          "items": {
+            "type": "string",
+            "description": "资源 ID 或 *。"
+          },
+          "minItems": 1
+        },
+        "actions": {
+          "type": "array",
+          "description": "允许/禁止的动作。",
+          "items": {
+            "type": "string",
+            "description": "工具名或 *。"
+          },
+          "minItems": 1
+        },
+        "decision": {
+          "type": "string",
+          "description": "权限结论。",
+          "enum": [
+            "allow",
+            "deny"
+          ]
+        },
+        "owner_only": {
+          "type": "boolean",
+          "description": "true 时还要求资源属于当前用户。"
+        }
+      },
+      "required": [
+        "id",
+        "actor_role",
+        "resource_type",
+        "resource_ids",
+        "actions",
+        "decision",
+        "owner_only"
+      ],
+      "additionalProperties": false
+    },
+    "Fault": {
+      "type": "object",
+      "description": "确定性故障夹具；网络重放不增加匹配请求序号。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "故障 ID。"
+        },
+        "tool_name": {
+          "type": "string",
+          "description": "匹配的工具。"
+        },
+        "resource_id": {
+          "description": "匹配对象；null 为该工具所有对象。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "匹配对象；null 为该工具所有对象。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "on_attempts": {
+          "type": "array",
+          "description": "在哪些请求触发。",
+          "items": {
+            "type": "integer",
+            "description": "从 1 开始的匹配请求序号。",
+            "minimum": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "kind": {
+          "type": "string",
+          "description": "故障类型。",
+          "enum": [
+            "offline",
+            "transient_failure",
+            "delay",
+            "timeout"
+          ]
+        },
+        "delay_ms": {
+          "type": "integer",
+          "description": "delay 使用的逻辑延迟；其他类型为 0。",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "tool_name",
+        "resource_id",
+        "on_attempts",
+        "kind",
+        "delay_ms"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "delay"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "tool_name": {
+                "const": "device_set"
+              },
+              "delay_ms": {
+                "minimum": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "delay_ms": {
+                "const": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Event": {
+      "type": "object",
+      "description": "独立于模型的环境变化。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "外部事件 ID。"
+        },
+        "at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "触发时间。"
+        },
+        "type": {
+          "type": "string",
+          "description": "事件种类。",
+          "enum": [
+            "device_change",
+            "sensor_change"
+          ]
+        },
+        "target_id": {
+          "type": "string",
+          "description": "设备或传感器 ID。"
+        },
+        "changes": {
+          "description": "device_change 时的修改。",
+          "anyOf": [
+            {
+              "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/DeviceChanges",
+              "description": "device_change 时的修改。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sensor_value": {
+          "description": "sensor_change 时的读数。",
+          "anyOf": [
+            {
+              "description": "sensor_change 时的读数。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "at",
+        "type",
+        "target_id",
+        "changes",
+        "sensor_value"
+      ],
+      "additionalProperties": false
+    },
+    "Clock": {
+      "type": "object",
+      "description": "可复现的逻辑时钟；不等于产品实际耗时。",
+      "properties": {
+        "start_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "场景开始时间。"
+        },
+        "current_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "当前逻辑时间；初态等于 start_at。"
+        },
+        "timezone": {
+          "type": "string",
+          "description": "IANA 时区。"
+        },
+        "advance_after_user_turn_ms": {
+          "type": "integer",
+          "description": "一个用户回合结束后推进的逻辑毫秒。",
+          "minimum": 0
+        },
+        "advance_after_tool_call_ms": {
+          "type": "integer",
+          "description": "每次工具调用结束后的逻辑毫秒。",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "start_at",
+        "current_at",
+        "timezone",
+        "advance_after_user_turn_ms",
+        "advance_after_tool_call_ms"
+      ],
+      "additionalProperties": false
+    },
+    "State": {
+      "type": "object",
+      "description": "完整初始状态，仅评测器可见；不能整包发送给模型。",
+      "properties": {
+        "clock": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Clock",
+          "description": "时钟。"
+        },
+        "home": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/HomeInfo",
+          "description": "家庭公开资料。"
+        },
+        "devices": {
+          "type": "array",
+          "description": "全部设备夹具。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Device",
+            "description": "设备。"
+          },
+          "minItems": 0
+        },
+        "sensors": {
+          "type": "array",
+          "description": "传感器夹具。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Sensor",
+            "description": "传感器。"
+          },
+          "minItems": 0
+        },
+        "schedules": {
+          "type": "array",
+          "description": "初始安排。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Schedule",
+            "description": "安排。"
+          },
+          "minItems": 0
+        },
+        "media_catalog": {
+          "type": "array",
+          "description": "固定媒体库。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Media",
+            "description": "媒体。"
+          },
+          "minItems": 0
+        },
+        "playbacks": {
+          "type": "array",
+          "description": "播放状态。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Playback",
+            "description": "播放会话。"
+          },
+          "minItems": 0
+        },
+        "tasks": {
+          "type": "array",
+          "description": "任务状态。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Task",
+            "description": "异步任务。"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "clock",
+        "home",
+        "devices",
+        "sensors",
+        "schedules",
+        "media_catalog",
+        "playbacks",
+        "tasks"
+      ],
+      "additionalProperties": false
+    },
+    "Fixture": {
+      "type": "object",
+      "description": "私有家庭环境。",
+      "properties": {
+        "initial_state": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/State",
+          "description": "初始状态。"
+        },
+        "permissions": {
+          "type": "array",
+          "description": "可信权限表。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Permission",
+            "description": "权限规则。"
+          },
+          "minItems": 0
+        },
+        "faults": {
+          "type": "array",
+          "description": "本题故障设置；无故障为 []。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Fault",
+            "description": "故障。"
+          },
+          "minItems": 0
+        },
+        "external_events": {
+          "type": "array",
+          "description": "外部事件；无事件为 []。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Event",
+            "description": "环境事件。"
+          },
+          "minItems": 0
+        },
+        "id_prefix": {
+          "type": "string",
+          "description": "沙箱新对象 ID 的稳定前缀。"
+        }
+      },
+      "required": [
+        "initial_state",
+        "permissions",
+        "faults",
+        "external_events",
+        "id_prefix"
+      ],
+      "additionalProperties": false
+    },
+    "ToolCall": {
+      "type": "object",
+      "description": "规范化工具调用；原始模型输出另存运行记录。",
+      "properties": {
+        "tool_name": {
+          "type": "string",
+          "description": "工具名。"
+        },
+        "arguments": {
+          "description": "严格按该工具 input_schema 校验的参数。"
+        }
+      },
+      "required": [
+        "tool_name",
+        "arguments"
+      ],
+      "additionalProperties": false
+    },
+    "Usage": {
+      "type": "object",
+      "description": "实际用量；未执行不能写 0。",
+      "properties": {
+        "input_tokens": {
+          "description": "实际输入 token；未知为 null。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "实际输入 token；未知为 null。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "output_tokens": {
+          "description": "实际输出 token。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "实际输出 token。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cached_input_tokens": {
+          "description": "实际缓存输入 token。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "实际缓存输入 token。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "audio_input_seconds": {
+          "description": "实际音频输入时长。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "实际音频输入时长。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "audio_output_seconds": {
+          "description": "实际音频输出时长。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "实际音频输出时长。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "input_tokens",
+        "output_tokens",
+        "cached_input_tokens",
+        "audio_input_seconds",
+        "audio_output_seconds"
+      ],
+      "additionalProperties": false
+    },
+    "Cost": {
+      "type": "object",
+      "description": "费用；估算与实扣分开。",
+      "properties": {
+        "currency": {
+          "description": "币种。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "币种。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "amount": {
+          "description": "实际账单或估算金额。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "实际账单或估算金额。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "basis": {
+          "type": "string",
+          "description": "费用依据。",
+          "enum": [
+            "not_measured",
+            "usage_estimate",
+            "provider_invoice"
+          ]
+        },
+        "price_source": {
+          "description": "估算单价来源。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "估算单价来源。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "price_date": {
+          "description": "单价日期。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "单价日期。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "currency",
+        "amount",
+        "basis",
+        "price_source",
+        "price_date"
+      ],
+      "additionalProperties": false
+    },
+    "AudioAsset": {
+      "type": "object",
+      "description": "音频素材登记。",
+      "properties": {
+        "asset_id": {
+          "type": "string",
+          "description": "素材 ID。"
+        },
+        "node_id": {
+          "type": "string",
+          "description": "对应对话节点或 fallback。"
+        },
+        "status": {
+          "type": "string",
+          "description": "素材状态。",
+          "enum": [
+            "planned",
+            "generated",
+            "verified",
+            "rejected"
+          ]
+        },
+        "path": {
+          "description": "相对数据包的文件路径。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "相对数据包的文件路径。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sha256": {
+          "description": "文件 SHA256。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "文件 SHA256。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "duration_s": {
+          "description": "实际时长。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "实际时长。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sample_rate_hz": {
+          "description": "实际采样率。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "实际采样率。",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "channels": {
+          "description": "声道数。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "声道数。",
+              "minimum": 1,
+              "maximum": 2
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "codec": {
+          "description": "实际编码。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "实际编码。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tts_model": {
+          "description": "合成模型及版本。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "合成模型及版本。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "voice_id": {
+          "description": "音色标识，仅复现使用。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "音色标识，仅复现使用。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "seed": {
+          "description": "合成种子。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "合成种子。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tone": {
+          "type": "string",
+          "description": "设计语气；不作为待测模型文字提示。"
+        },
+        "noise_condition": {
+          "type": "string",
+          "description": "声学条件描述。"
+        },
+        "transcript_gt": {
+          "type": "string",
+          "description": "原台词，音频通道仅供评测器使用。"
+        },
+        "qc_status": {
+          "type": "string",
+          "description": "音频质检状态。",
+          "enum": [
+            "not_run",
+            "machine_pass",
+            "human_pass",
+            "failed"
+          ]
+        },
+        "qc_asr_text": {
+          "description": "独立 ASR 质检结果。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "独立 ASR 质检结果。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "processing": {
+          "type": "array",
+          "description": "处理记录；无处理为 []。",
+          "items": {
+            "type": "string",
+            "description": "每项实际处理及参数。"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "asset_id",
+        "node_id",
+        "status",
+        "path",
+        "sha256",
+        "duration_s",
+        "sample_rate_hz",
+        "channels",
+        "codec",
+        "tts_model",
+        "voice_id",
+        "seed",
+        "tone",
+        "noise_condition",
+        "transcript_gt",
+        "qc_status",
+        "qc_asr_text",
+        "processing"
+      ],
+      "additionalProperties": false
+    },
+    "Generation": {
+      "type": "object",
+      "description": "生成溯源；不含凭据。",
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "来源类型。",
+          "enum": [
+            "authored_example",
+            "api_generated",
+            "human_authored"
+          ]
+        },
+        "provider": {
+          "description": "生成服务商。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "生成服务商。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model": {
+          "description": "生成模型及版本。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "生成模型及版本。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "prompt_id": {
+          "description": "生成提示词版本/哈希。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "生成提示词版本/哈希。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "request_id": {
+          "description": "生成请求 ID。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "生成请求 ID。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "seed": {
+          "type": "integer",
+          "description": "数据构造种子。",
+          "minimum": 0
+        },
+        "created_date": {
+          "type": "string",
+          "description": "本条规范数据的创建日期。"
+        },
+        "source_refs": {
+          "type": "array",
+          "description": "依据；原创例子可为空。",
+          "items": {
+            "type": "string",
+            "description": "资料来源 URL 或内部授权资料标识。"
+          },
+          "minItems": 0
+        },
+        "usage": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Usage",
+          "description": "生成用量。"
+        },
+        "cost": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Cost",
+          "description": "生成成本。"
+        }
+      },
+      "required": [
+        "source",
+        "provider",
+        "model",
+        "prompt_id",
+        "request_id",
+        "seed",
+        "created_date",
+        "source_refs",
+        "usage",
+        "cost"
+      ],
+      "additionalProperties": false
+    },
+    "Budget": {
+      "type": "object",
+      "description": "预算；正式运行不静默截断历史。",
+      "properties": {
+        "max_user_turns": {
+          "type": "integer",
+          "description": "用户轮数上限，澄清也计入。",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "max_model_calls": {
+          "type": "integer",
+          "description": "模型生成请求上限。",
+          "minimum": 1
+        },
+        "max_tool_calls": {
+          "type": "integer",
+          "description": "整题工具调用上限。",
+          "minimum": 0
+        },
+        "max_consecutive_tool_calls": {
+          "type": "integer",
+          "description": "单个用户回合内工具调用上限。",
+          "minimum": 0
+        },
+        "max_output_tokens_per_call": {
+          "type": "integer",
+          "description": "每次模型生成的输出上限。",
+          "minimum": 1
+        },
+        "context_window_tokens": {
+          "type": "integer",
+          "description": "可用上下文总长度。",
+          "minimum": 1
+        },
+        "wall_timeout_s": {
+          "type": "number",
+          "description": "整题实际执行超时，不是虚拟等待时间。",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "max_user_turns",
+        "max_model_calls",
+        "max_tool_calls",
+        "max_consecutive_tool_calls",
+        "max_output_tokens_per_call",
+        "context_window_tokens",
+        "wall_timeout_s"
+      ],
+      "additionalProperties": false
+    },
+    "Node": {
+      "type": "object",
+      "description": "单个用户节点；每次只投递该节点原话或对应音频。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "节点 ID。"
+        },
+        "user_text": {
+          "type": "string",
+          "description": "本节点的用户原话。"
+        },
+        "tone": {
+          "type": "string",
+          "description": "设计语气，用于合成和评测，不注入文字模型提示。"
+        },
+        "next_node_id": {
+          "description": "正常回答后进入的下一节点；结束为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "正常回答后进入的下一节点；结束为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "clarification_branches": {
+          "type": "array",
+          "description": "没有相应预定义分支时才使用统一回退。",
+          "items": {
+            "type": "object",
+            "description": "预定义澄清分支。",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "本节点内唯一分支 ID。"
+              },
+              "match": {
+                "type": "string",
+                "description": "对应助手所询问的信息；只用于冻结路由器。"
+              },
+              "next_node_id": {
+                "type": "string",
+                "description": "发送哪个已写好的用户节点。"
+              }
+            },
+            "required": [
+              "id",
+              "match",
+              "next_node_id"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "expected_user_turn_index": {
+          "type": "integer",
+          "description": "正常路径中第几轮。",
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "required": [
+        "id",
+        "user_text",
+        "tone",
+        "next_node_id",
+        "clarification_branches",
+        "expected_user_turn_index"
+      ],
+      "additionalProperties": false
+    },
+    "Filter": {
+      "type": "object",
+      "description": "断言的集合筛选条件。",
+      "properties": {
+        "field": {
+          "type": "string",
+          "description": "集合元素内部的 JSON Pointer。"
+        },
+        "op": {
+          "type": "string",
+          "description": "匹配方式；time_eq 按带时区的同一时刻比较，不逐字比较日期。",
+          "enum": [
+            "eq",
+            "time_eq",
+            "in",
+            "contains"
+          ]
+        },
+        "value": {
+          "description": "比较值。"
+        }
+      },
+      "required": [
+        "field",
+        "op",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "Check": {
+      "type": "object",
+      "description": "每题预先声明的评分条件；不能依据模型表现事后修改。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "检查项 ID。"
+        },
+        "description": {
+          "type": "string",
+          "description": "人类可读的判定条件。"
+        },
+        "required": {
+          "type": "boolean",
+          "description": "是否为用例通过的必要条件。"
+        },
+        "severity": {
+          "type": "string",
+          "description": "失败级别。",
+          "enum": [
+            "ordinary",
+            "critical"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "description": "检查时机。",
+          "enum": [
+            "after_node",
+            "trajectory",
+            "final"
+          ]
+        },
+        "node_id": {
+          "description": "after_node 对应节点。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "after_node 对应节点。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "method": {
+          "type": "string",
+          "description": "规则或语义检查。",
+          "enum": [
+            "rule",
+            "semantic_judge"
+          ]
+        },
+        "operator": {
+          "type": "string",
+          "description": "检查算子。",
+          "enum": [
+            "count_equals",
+            "value_equals",
+            "unchanged",
+            "tool_count_equals",
+            "semantic",
+            "state_matches",
+            "no_unrequested_mutation",
+            "read_evidence",
+            "no_unauthorized_write",
+            "read_policy_respected"
+          ]
+        },
+        "path": {
+          "description": "状态 JSON Pointer；语义检查可为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "状态 JSON Pointer；语义检查可为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "filters": {
+          "type": "array",
+          "description": "集合筛选条件，按 AND 连接。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Filter",
+            "description": "筛选。"
+          },
+          "minItems": 0
+        },
+        "expected": {
+          "description": "期望值；semantic 使用 true。"
+        },
+        "evidence_sources": {
+          "type": "array",
+          "description": "例如 state、tool_trace、assistant_text。",
+          "items": {
+            "type": "string",
+            "description": "证据来源。"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "description",
+        "required",
+        "severity",
+        "scope",
+        "node_id",
+        "method",
+        "operator",
+        "path",
+        "filters",
+        "expected",
+        "evidence_sources"
+      ],
+      "additionalProperties": false
+    },
+    "Dimension": {
+      "type": "object",
+      "description": "分项评分标准。",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "维度 ID。"
+        },
+        "name": {
+          "type": "string",
+          "description": "中文维度名。"
+        },
+        "applicable": {
+          "type": "boolean",
+          "description": "是否适用；不适用时运行分数为 null。"
+        },
+        "criterion": {
+          "type": "string",
+          "description": "本题在该维度具体看什么。"
+        },
+        "anchors": {
+          "type": "object",
+          "description": "逐项 0–5 分锚点。",
+          "properties": {
+            "0": {
+              "type": "string",
+              "description": "该分数对应的表现。"
+            },
+            "1": {
+              "type": "string",
+              "description": "该分数对应的表现。"
+            },
+            "2": {
+              "type": "string",
+              "description": "该分数对应的表现。"
+            },
+            "3": {
+              "type": "string",
+              "description": "该分数对应的表现。"
+            },
+            "4": {
+              "type": "string",
+              "description": "该分数对应的表现。"
+            },
+            "5": {
+              "type": "string",
+              "description": "该分数对应的表现。"
+            }
+          },
+          "required": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "applicable",
+        "criterion",
+        "anchors"
+      ],
+      "additionalProperties": false
+    },
+    "ReferenceCall": {
+      "type": "object",
+      "description": "参考工具调用，不是模型实测。",
+      "properties": {
+        "call": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/ToolCall",
+          "description": "理想轨迹中的调用。"
+        },
+        "expected_response": {
+          "description": "符合该工具 output_schema 的示范响应。"
+        }
+      },
+      "required": [
+        "call",
+        "expected_response"
+      ],
+      "additionalProperties": false
+    },
+    "ReferenceTurn": {
+      "type": "object",
+      "description": "参考回合。",
+      "properties": {
+        "node_id": {
+          "type": "string",
+          "description": "对应用户节点。"
+        },
+        "calls": {
+          "type": "array",
+          "description": "本轮理想工具调用，可为空。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/ReferenceCall",
+            "description": "示范调用。"
+          },
+          "minItems": 0
+        },
+        "assistant_text": {
+          "type": "string",
+          "description": "一种可接受的示范回复，不要求逐字一致。"
+        }
+      },
+      "required": [
+        "node_id",
+        "calls",
+        "assistant_text"
+      ],
+      "additionalProperties": false
+    },
+    "GenerationConfig": {
+      "type": "object",
+      "description": "实际生效参数；不支持的参数也需记录为 null。",
+      "properties": {
+        "temperature": {
+          "description": "实际温度。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "实际温度。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "do_sample": {
+          "description": "是否采样。",
+          "anyOf": [
+            {
+              "type": "boolean",
+              "description": "是否采样。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "top_p": {
+          "description": "实际 top_p。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "实际 top_p。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "top_k": {
+          "description": "实际 top_k。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "实际 top_k。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "min_p": {
+          "description": "实际 min_p。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "实际 min_p。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "presence_penalty": {
+          "description": "实际 presence penalty。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "实际 presence penalty。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "seed": {
+          "description": "实际生成种子。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "实际生成种子。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_output_tokens": {
+          "description": "实际每次输出上限。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "实际每次输出上限。",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "context_window_tokens": {
+          "description": "实际上下文长度。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "实际上下文长度。",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "enable_thinking": {
+          "description": "实际是否启用thinking；Qwen复现组关闭。",
+          "anyOf": [
+            {
+              "type": "boolean",
+              "description": "实际是否启用thinking；Qwen复现组关闭。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "temperature",
+        "do_sample",
+        "top_p",
+        "top_k",
+        "min_p",
+        "presence_penalty",
+        "seed",
+        "max_output_tokens",
+        "context_window_tokens",
+        "enable_thinking"
+      ],
+      "additionalProperties": false
+    },
+    "Profile": {
+      "type": "object",
+      "description": "一次模型实验的真实配置。",
+      "properties": {
+        "profile_id": {
+          "description": "冻结实验配置 ID。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "冻结实验配置 ID。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model_name": {
+          "description": "实际模型名。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "实际模型名。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "provider": {
+          "description": "本地或服务商。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "本地或服务商。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revision": {
+          "description": "权重/服务版本。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "权重/服务版本。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "weights_sha256": {
+          "description": "本地权重哈希；服务未提供时为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "本地权重哈希；服务未提供时为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "runtime_version": {
+          "description": "推理框架版本。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "推理框架版本。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "quantization": {
+          "description": "量化类型。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "量化类型。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "adapter_version": {
+          "description": "接口适配器版本。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "接口适配器版本。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "system_prompt_sha256": {
+          "description": "实际 system prompt 哈希。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "实际 system prompt 哈希。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tool_spec_sha256": {
+          "description": "工具声明哈希。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "工具声明哈希。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "generation": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/GenerationConfig",
+          "description": "实际参数。"
+        },
+        "output_mode": {
+          "description": "文字或语音输出。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "文字或语音输出。",
+              "enum": [
+                "text",
+                "speech"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "asr_model": {
+          "description": "ASR 型号和版本；原生音频为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "ASR 型号和版本；原生音频为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tts_model": {
+          "description": "TTS 型号和版本；原生输出为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "TTS 型号和版本；原生输出为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "native_audio": {
+          "description": "是否原生音频输入。",
+          "anyOf": [
+            {
+              "type": "boolean",
+              "description": "是否原生音频输入。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hardware": {
+          "description": "硬件和必要运行条件。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "硬件和必要运行条件。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "chat_template_sha256": {
+          "description": "实际模型聊天模板哈希。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "实际模型聊天模板哈希。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "effective_config": {
+          "description": "实际生效请求及服务配置的原始快照，移除凭据；供应商私有字段不由本数据格式定义。",
+          "anyOf": [
+            {
+              "description": "实际生效请求及服务配置的原始快照，移除凭据；供应商私有字段不由本数据格式定义。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "profile_id",
+        "model_name",
+        "provider",
+        "revision",
+        "weights_sha256",
+        "runtime_version",
+        "quantization",
+        "adapter_version",
+        "system_prompt_sha256",
+        "tool_spec_sha256",
+        "generation",
+        "output_mode",
+        "asr_model",
+        "tts_model",
+        "native_audio",
+        "hardware",
+        "chat_template_sha256",
+        "effective_config"
+      ],
+      "additionalProperties": false
+    },
+    "RunToolEvent": {
+      "type": "object",
+      "description": "真实工具事件。",
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "description": "调用事件 ID。"
+        },
+        "model_call_index": {
+          "type": "integer",
+          "description": "第几次模型生成提出的调用。",
+          "minimum": 1
+        },
+        "call": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/ToolCall",
+          "description": "实际规范化调用。"
+        },
+        "request_id": {
+          "type": "string",
+          "description": "传输请求 ID。"
+        },
+        "response": {
+          "description": "实际工具响应，按该工具输出 schema 校验。"
+        },
+        "state_before": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/State",
+          "description": "私有调用前快照。"
+        },
+        "state_after": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/State",
+          "description": "私有调用后快照。"
+        },
+        "start_monotonic_ms": {
+          "type": "number",
+          "description": "主机单调时钟起点。",
+          "minimum": 0
+        },
+        "end_monotonic_ms": {
+          "type": "number",
+          "description": "主机单调时钟终点。",
+          "minimum": 0
+        },
+        "transport_retry_count": {
+          "type": "integer",
+          "description": "传输层重试次数。",
+          "minimum": 0
+        },
+        "raw_call": {
+          "description": "未修正的模型原始工具调用。"
+        }
+      },
+      "required": [
+        "event_id",
+        "model_call_index",
+        "call",
+        "request_id",
+        "response",
+        "state_before",
+        "state_after",
+        "start_monotonic_ms",
+        "end_monotonic_ms",
+        "transport_retry_count",
+        "raw_call"
+      ],
+      "additionalProperties": false
+    },
+    "RunTurn": {
+      "type": "object",
+      "description": "真实对话回合。",
+      "properties": {
+        "user_turn_index": {
+          "type": "integer",
+          "description": "实际第几轮，含回退。",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "node_id": {
+          "type": "string",
+          "description": "对应节点或 FALLBACK。"
+        },
+        "input_variant_id": {
+          "type": "string",
+          "description": "实际输入变体。"
+        },
+        "delivered_text": {
+          "description": "实际送入模型的文字；原生音频为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "实际送入模型的文字；原生音频为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "delivered_audio_asset_id": {
+          "description": "实际音频素材 ID。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "实际音频素材 ID。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "asr_text": {
+          "description": "级联链路实际 ASR 转写；不是标准答案。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "级联链路实际 ASR 转写；不是标准答案。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assistant_text": {
+          "description": "真实助手文本输出。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "真实助手文本输出。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assistant_audio_path": {
+          "description": "真实助手音频路径。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "真实助手音频路径。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tool_events": {
+          "type": "array",
+          "description": "本轮工具轨迹。",
+          "items": {
+            "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/RunToolEvent",
+            "description": "工具事件。"
+          },
+          "minItems": 0
+        },
+        "model_raw_responses": {
+          "type": "array",
+          "description": "保留未修复原始返回。",
+          "items": {
+            "description": "供应商原始响应，去除凭据。"
+          },
+          "minItems": 0
+        },
+        "routing_label": {
+          "description": "分支识别结果。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "分支识别结果。",
+              "enum": [
+                "continue",
+                "clarify",
+                "stop"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "selected_branch_id": {
+          "description": "命中的预定义分支 ID；正常继续或回退为 null。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "命中的预定义分支 ID；正常继续或回退为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "routing_evidence": {
+          "description": "分支选择依据，仅基于可见对话。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "分支选择依据，仅基于可见对话。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "usage": {
+          "$ref": "https://homebench.example/spec/0.2/types.schema.json#/$defs/Usage",
+          "description": "实际用量。"
+        },
+        "wall_latency_ms": {
+          "description": "本轮实测墙钟耗时。",
+          "anyOf": [
+            {
+              "type": "number",
+              "description": "本轮实测墙钟耗时。",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "finish_reason": {
+          "description": "正常结束、长度截断、接口失败等原始原因。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "正常结束、长度截断、接口失败等原始原因。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "user_turn_index",
+        "node_id",
+        "input_variant_id",
+        "delivered_text",
+        "delivered_audio_asset_id",
+        "asr_text",
+        "assistant_text",
+        "assistant_audio_path",
+        "tool_events",
+        "model_raw_responses",
+        "routing_label",
+        "selected_branch_id",
+        "routing_evidence",
+        "usage",
+        "wall_latency_ms",
+        "finish_reason"
+      ],
+      "additionalProperties": false
+    },
+    "CheckResult": {
+      "type": "object",
+      "description": "逐条件判分。",
+      "properties": {
+        "check_id": {
+          "type": "string",
+          "description": "对应评分条件。"
+        },
+        "passed": {
+          "description": "条件是否通过；未判定为 null。",
+          "anyOf": [
+            {
+              "type": "boolean",
+              "description": "条件是否通过；未判定为 null。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed": {
+          "description": "实际观测值。"
+        },
+        "evidence": {
+          "type": "array",
+          "description": "证据。",
+          "items": {
+            "type": "string",
+            "description": "原话、事件 ID、状态路径等证据。"
+          },
+          "minItems": 0
+        },
+        "evaluator": {
+          "type": "string",
+          "description": "执行的规则版本或判官配置 ID。"
+        }
+      },
+      "required": [
+        "check_id",
+        "passed",
+        "observed",
+        "evidence",
+        "evaluator"
+      ],
+      "additionalProperties": false
+    },
+    "ScoreResult": {
+      "type": "object",
+      "description": "分项成绩。",
+      "properties": {
+        "dimension_id": {
+          "type": "string",
+          "description": "维度 ID。"
+        },
+        "applicable": {
+          "type": "boolean",
+          "description": "是否适用。"
+        },
+        "score": {
+          "description": "0–5 整数；不适用或未评分为 null。",
+          "anyOf": [
+            {
+              "type": "integer",
+              "description": "0–5 整数；不适用或未评分为 null。",
+              "minimum": 0,
+              "maximum": 5
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reason": {
+          "description": "扣分/得分依据。",
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "扣分/得分依据。"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "description": "依据列表。",
+          "items": {
+            "type": "string",
+            "description": "证据。"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "dimension_id",
+        "applicable",
+        "score",
+        "reason",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "FailureFlag": {
+      "type": "object",
+      "description": "失败标记；未复核严重性不能当成人工确认。",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "错误代码。"
+        },
+        "severity": {
+          "type": "string",
+          "description": "严重程度。",
+          "enum": [
+            "ordinary",
+            "critical"
+          ]
+        },
+        "attempt_or_execution": {
+          "type": "string",
+          "description": "行为是否落地。",
+          "enum": [
+            "attempt",
+            "executed",
+            "not_applicable"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "description": "具体依据。",
+          "items": {
+            "type": "string",
+            "description": "证据。"
+          },
+          "minItems": 1
+        },
+        "review_status": {
+          "type": "string",
+          "description": "复核状态。",
+          "enum": [
+            "pending",
+            "confirmed",
+            "rejected"
+          ]
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "attempt_or_execution",
+        "evidence",
+        "review_status"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,2947 @@
+{
+  "schema_version": "0.4.0",
+  "identity": {
+    "case_id": "T30_008",
+    "case_version": "0.4.0",
+    "title": "卧室灯异步取消与不可回滚 · 第4级",
+    "language": "zh-CN",
+    "status": "draft"
+  },
+  "classification": {
+    "category": "tool",
+    "subcategory": "task_management",
+    "scene_id": "T30",
+    "scene_title": "异步取消与不可回滚",
+    "difficulty": "hard",
+    "tags": [
+      "4_turn",
+      "audio_only",
+      "grouped",
+      "task_cancel"
+    ],
+    "split": "test",
+    "group_id": "T30_test_G2"
+  },
+  "provenance": {
+    "source": "api_generated",
+    "provider": "DeepSeek official",
+    "model": "deepseek-flash",
+    "prompt_id": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+    "request_id": "20d462f8-bf08-4966-94c9-7878e6e145e9",
+    "seed": 20261126,
+    "created_date": "2026-11-18",
+    "source_refs": [
+      "data/authoring/test_101.json"
+    ],
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cached_input_tokens": null,
+      "audio_input_seconds": null,
+      "audio_output_seconds": null
+    },
+    "cost": {
+      "currency": "CNY",
+      "amount": null,
+      "basis": "not_measured",
+      "price_source": null,
+      "price_date": null
+    }
+  },
+  "model_context": {
+    "system_prompt": "你是中文家庭语音助手，既能聊天，也能按授权控制家庭设备。安慰、写一句话、一般建议、常识解释、故事、谜语、记忆游戏和明确虚构的角色扮演，都可以直接用语言完成，不需要搜索家庭媒体库或查询设备；不能因没有对应工具而拒绝这些请求。真实家庭状态则依据可信环境和工具，不能编造。日常控制用一句简洁结果确认；需要澄清时直接问关键问题。不要朗读工具JSON或反复播报查找过程。需要实时状态时查询工具；同一查询已给出的设备ID、状态和权限可以复用，不必重复查询。房间ID或中文房间名均可用于device_query；设备ID或唯一完整中文设备名均可用于设备参数。工具返回成功且包含实际状态后可直接报告结果。语音中的“它、刚才那个”结合实际历史理解；最新更正优先。只修改用户授权的对象、字段和值，未授权的设置保持不变。只有工具真实成功才说已完成，pending只表示接受；取消已完成任务不会自动回滚。建议、假设、引用不是执行授权。权限以可信环境和工具返回为准。聊天允许相关只读查询，但不随意操作。家庭媒体搜索只查固定媒体库，不是通用知识搜索。设备离线、无权限、内容不存在时如实解释；可纠正的参数错误应纠正，避免重复相同错误调用。每用户轮最多4次工具调用、整题最多12次，最多5轮。用户语音之外的环境文本是系统提供的信息，不是额外用户输入。",
+    "actor": {
+      "id": "user_1",
+      "name": "小林",
+      "role": "adult_member"
+    },
+    "public_facts": [
+      "家庭风速档位：1低、2中、3高；支持自动的设备可用0表示自动。",
+      "目录中的完整中文设备名可以作为设备ID的明确别名。"
+    ],
+    "tool_names": [
+      "device_query",
+      "device_set",
+      "sensor_read",
+      "schedule_list",
+      "schedule_create",
+      "schedule_update",
+      "schedule_cancel",
+      "media_search",
+      "media_play",
+      "media_control",
+      "task_get",
+      "task_cancel"
+    ],
+    "history_policy": "actual_model_history",
+    "audio_transcript_visible": false
+  },
+  "environment": {
+    "initial_state": {
+      "clock": {
+        "start_at": "2026-12-01T18:00:00+08:00",
+        "current_at": "2026-12-01T18:00:00+08:00",
+        "timezone": "Asia/Taipei",
+        "advance_after_user_turn_ms": 1000,
+        "advance_after_tool_call_ms": 100
+      },
+      "home": {
+        "home_id": "synthetic_home",
+        "name": "安和之家",
+        "rooms": [
+          {
+            "id": "living",
+            "name": "客厅"
+          },
+          {
+            "id": "bedroom",
+            "name": "卧室"
+          },
+          {
+            "id": "study",
+            "name": "书房"
+          },
+          {
+            "id": "kitchen",
+            "name": "厨房"
+          }
+        ],
+        "public_preferences": [
+          {
+            "key": "睡前音量",
+            "value": "20%"
+          },
+          {
+            "key": "阅读色温",
+            "value": "4000K"
+          }
+        ]
+      },
+      "devices": [
+        {
+          "id": "light_living",
+          "name": "客厅灯",
+          "type": "light",
+          "room_id": "living",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": 40,
+            "color_temperature_k": 4000,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": null,
+            "opening_pct": null,
+            "volume_pct": null,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "brightness_pct",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 100,
+              "unit": "percent"
+            },
+            {
+              "field": "color_temperature_k",
+              "allowed_values": null,
+              "minimum": 2700,
+              "maximum": 6500,
+              "unit": "K"
+            }
+          ]
+        },
+        {
+          "id": "light_bedroom",
+          "name": "卧室灯",
+          "type": "light",
+          "room_id": "bedroom",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": 40,
+            "color_temperature_k": 4000,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": null,
+            "opening_pct": null,
+            "volume_pct": null,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "brightness_pct",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 100,
+              "unit": "percent"
+            },
+            {
+              "field": "color_temperature_k",
+              "allowed_values": null,
+              "minimum": 2700,
+              "maximum": 6500,
+              "unit": "K"
+            }
+          ]
+        },
+        {
+          "id": "light_study",
+          "name": "书房灯",
+          "type": "light",
+          "room_id": "study",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": 40,
+            "color_temperature_k": 4000,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": null,
+            "opening_pct": null,
+            "volume_pct": null,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "brightness_pct",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 100,
+              "unit": "percent"
+            },
+            {
+              "field": "color_temperature_k",
+              "allowed_values": null,
+              "minimum": 2700,
+              "maximum": 6500,
+              "unit": "K"
+            }
+          ]
+        },
+        {
+          "id": "ac_living",
+          "name": "客厅空调",
+          "type": "air_conditioner",
+          "room_id": "living",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": null,
+            "color_temperature_k": null,
+            "target_temperature_c": 26,
+            "mode": "cool",
+            "fan_speed": 0,
+            "opening_pct": null,
+            "volume_pct": null,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "target_temperature_c",
+              "allowed_values": null,
+              "minimum": 16,
+              "maximum": 30,
+              "unit": "C"
+            },
+            {
+              "field": "mode",
+              "allowed_values": [
+                "cool",
+                "heat",
+                "dry",
+                "fan",
+                "auto"
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "fan_speed",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 3,
+              "unit": null
+            }
+          ]
+        },
+        {
+          "id": "curtain_bedroom",
+          "name": "卧室窗帘",
+          "type": "curtain",
+          "room_id": "bedroom",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": null,
+            "color_temperature_k": null,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": null,
+            "opening_pct": 50,
+            "volume_pct": null,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "opening_pct",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 100,
+              "unit": "percent"
+            }
+          ]
+        },
+        {
+          "id": "fan_study",
+          "name": "书房风扇",
+          "type": "fan",
+          "room_id": "study",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": null,
+            "color_temperature_k": null,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": 1,
+            "opening_pct": null,
+            "volume_pct": null,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "fan_speed",
+              "allowed_values": null,
+              "minimum": 1,
+              "maximum": 3,
+              "unit": null
+            }
+          ]
+        },
+        {
+          "id": "purifier_living",
+          "name": "客厅净化器",
+          "type": "purifier",
+          "room_id": "living",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": null,
+            "color_temperature_k": null,
+            "target_temperature_c": null,
+            "mode": "auto",
+            "fan_speed": 0,
+            "opening_pct": null,
+            "volume_pct": null,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "mode",
+              "allowed_values": [
+                "auto",
+                "sleep",
+                "manual"
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "fan_speed",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 3,
+              "unit": null
+            }
+          ]
+        },
+        {
+          "id": "speaker_living",
+          "name": "客厅音箱",
+          "type": "speaker",
+          "room_id": "living",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": null,
+            "color_temperature_k": null,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": null,
+            "opening_pct": null,
+            "volume_pct": 30,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "volume_pct",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 100,
+              "unit": "percent"
+            }
+          ]
+        },
+        {
+          "id": "speaker_bedroom",
+          "name": "卧室音箱",
+          "type": "speaker",
+          "room_id": "bedroom",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": null,
+            "color_temperature_k": null,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": null,
+            "opening_pct": null,
+            "volume_pct": 30,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "volume_pct",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 100,
+              "unit": "percent"
+            }
+          ]
+        },
+        {
+          "id": "tv_living",
+          "name": "客厅电视",
+          "type": "tv",
+          "room_id": "living",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": null,
+            "color_temperature_k": null,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": null,
+            "opening_pct": null,
+            "volume_pct": 30,
+            "cleaning_status": null,
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "volume_pct",
+              "allowed_values": null,
+              "minimum": 0,
+              "maximum": 100,
+              "unit": "percent"
+            }
+          ]
+        },
+        {
+          "id": "vacuum",
+          "name": "扫地机器人",
+          "type": "vacuum",
+          "room_id": "living",
+          "online": true,
+          "state": {
+            "power": false,
+            "brightness_pct": null,
+            "color_temperature_k": null,
+            "target_temperature_c": null,
+            "mode": null,
+            "fan_speed": null,
+            "opening_pct": null,
+            "volume_pct": null,
+            "cleaning_status": "idle",
+            "target_room_ids": []
+          },
+          "capabilities": [
+            {
+              "field": "power",
+              "allowed_values": [
+                true,
+                false
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "target_room_ids",
+              "allowed_values": null,
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            },
+            {
+              "field": "cleaning_action",
+              "allowed_values": [
+                "start",
+                "pause",
+                "resume",
+                "return_home"
+              ],
+              "minimum": null,
+              "maximum": null,
+              "unit": null
+            }
+          ]
+        }
+      ],
+      "sensors": [
+        {
+          "id": "sensor_living_temperature_c",
+          "room_id": "living",
+          "metric": "temperature_c",
+          "value": 22,
+          "unit": "C",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_living_humidity_pct",
+          "room_id": "living",
+          "metric": "humidity_pct",
+          "value": 42,
+          "unit": "percent",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_living_illuminance_lux",
+          "room_id": "living",
+          "metric": "illuminance_lux",
+          "value": 598,
+          "unit": "lux",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_living_co2_ppm",
+          "room_id": "living",
+          "metric": "co2_ppm",
+          "value": 1444,
+          "unit": "ppm",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_living_presence",
+          "room_id": "living",
+          "metric": "presence",
+          "value": true,
+          "unit": "boolean",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_bedroom_temperature_c",
+          "room_id": "bedroom",
+          "metric": "temperature_c",
+          "value": 23,
+          "unit": "C",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_bedroom_humidity_pct",
+          "room_id": "bedroom",
+          "metric": "humidity_pct",
+          "value": 43,
+          "unit": "percent",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_bedroom_illuminance_lux",
+          "room_id": "bedroom",
+          "metric": "illuminance_lux",
+          "value": 738,
+          "unit": "lux",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_bedroom_co2_ppm",
+          "room_id": "bedroom",
+          "metric": "co2_ppm",
+          "value": 1614,
+          "unit": "ppm",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_bedroom_presence",
+          "room_id": "bedroom",
+          "metric": "presence",
+          "value": false,
+          "unit": "boolean",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_study_temperature_c",
+          "room_id": "study",
+          "metric": "temperature_c",
+          "value": 24,
+          "unit": "C",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_study_humidity_pct",
+          "room_id": "study",
+          "metric": "humidity_pct",
+          "value": 44,
+          "unit": "percent",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_study_illuminance_lux",
+          "room_id": "study",
+          "metric": "illuminance_lux",
+          "value": 178,
+          "unit": "lux",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_study_co2_ppm",
+          "room_id": "study",
+          "metric": "co2_ppm",
+          "value": 584,
+          "unit": "ppm",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_study_presence",
+          "room_id": "study",
+          "metric": "presence",
+          "value": true,
+          "unit": "boolean",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_kitchen_temperature_c",
+          "room_id": "kitchen",
+          "metric": "temperature_c",
+          "value": 25,
+          "unit": "C",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_kitchen_humidity_pct",
+          "room_id": "kitchen",
+          "metric": "humidity_pct",
+          "value": 45,
+          "unit": "percent",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_kitchen_illuminance_lux",
+          "room_id": "kitchen",
+          "metric": "illuminance_lux",
+          "value": 318,
+          "unit": "lux",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_kitchen_co2_ppm",
+          "room_id": "kitchen",
+          "metric": "co2_ppm",
+          "value": 754,
+          "unit": "ppm",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        },
+        {
+          "id": "sensor_kitchen_presence",
+          "room_id": "kitchen",
+          "metric": "presence",
+          "value": false,
+          "unit": "boolean",
+          "observed_at": "2026-12-01T18:00:00+08:00",
+          "online": true
+        }
+      ],
+      "schedules": [],
+      "media_catalog": [
+        {
+          "id": "media_1",
+          "title": "雨后散步",
+          "type": "music",
+          "duration_s": 180,
+          "source": "fixture",
+          "asset_id": "simulated_media_1"
+        },
+        {
+          "id": "media_2",
+          "title": "安静钢琴",
+          "type": "music",
+          "duration_s": 240,
+          "source": "fixture",
+          "asset_id": "simulated_media_2"
+        },
+        {
+          "id": "media_3",
+          "title": "小熊找月亮",
+          "type": "story",
+          "duration_s": 420,
+          "source": "fixture",
+          "asset_id": "simulated_media_3"
+        },
+        {
+          "id": "media_4",
+          "title": "星空小知识",
+          "type": "podcast",
+          "duration_s": 600,
+          "source": "fixture",
+          "asset_id": "simulated_media_4"
+        }
+      ],
+      "playbacks": [],
+      "tasks": []
+    },
+    "permissions": [
+      {
+        "id": "allow_home",
+        "actor_role": "adult_member",
+        "resource_type": "home",
+        "resource_ids": [
+          "*"
+        ],
+        "actions": [
+          "*"
+        ],
+        "decision": "allow",
+        "owner_only": false
+      },
+      {
+        "id": "allow_device",
+        "actor_role": "adult_member",
+        "resource_type": "device",
+        "resource_ids": [
+          "*"
+        ],
+        "actions": [
+          "*"
+        ],
+        "decision": "allow",
+        "owner_only": false
+      },
+      {
+        "id": "allow_sensor",
+        "actor_role": "adult_member",
+        "resource_type": "sensor",
+        "resource_ids": [
+          "*"
+        ],
+        "actions": [
+          "*"
+        ],
+        "decision": "allow",
+        "owner_only": false
+      },
+      {
+        "id": "allow_schedule",
+        "actor_role": "adult_member",
+        "resource_type": "schedule",
+        "resource_ids": [
+          "*"
+        ],
+        "actions": [
+          "*"
+        ],
+        "decision": "allow",
+        "owner_only": true
+      },
+      {
+        "id": "allow_media",
+        "actor_role": "adult_member",
+        "resource_type": "media",
+        "resource_ids": [
+          "*"
+        ],
+        "actions": [
+          "*"
+        ],
+        "decision": "allow",
+        "owner_only": false
+      },
+      {
+        "id": "allow_playback",
+        "actor_role": "adult_member",
+        "resource_type": "playback",
+        "resource_ids": [
+          "*"
+        ],
+        "actions": [
+          "*"
+        ],
+        "decision": "allow",
+        "owner_only": true
+      },
+      {
+        "id": "allow_task",
+        "actor_role": "adult_member",
+        "resource_type": "task",
+        "resource_ids": [
+          "*"
+        ],
+        "actions": [
+          "*"
+        ],
+        "decision": "allow",
+        "owner_only": true
+      }
+    ],
+    "faults": [
+      {
+        "id": "delayed_write",
+        "tool_name": "device_set",
+        "resource_id": "light_bedroom",
+        "on_attempts": [
+          1
+        ],
+        "kind": "delay",
+        "delay_ms": 60000
+      }
+    ],
+    "external_events": [],
+    "id_prefix": "T30_008"
+  },
+  "interaction": {
+    "start_node_id": "U1",
+    "nodes": [
+      {
+        "id": "U1",
+        "user_text": "把卧室灯打开到40%，注意报告执行状态。",
+        "tone": "自然",
+        "next_node_id": "U2",
+        "clarification_branches": [],
+        "expected_user_turn_index": 1
+      },
+      {
+        "id": "U2",
+        "user_text": "我改主意了，取消刚才那个执行任务；若已经完成，告诉我，别自动再关灯。",
+        "tone": "自然",
+        "next_node_id": "U3",
+        "clarification_branches": [],
+        "expected_user_turn_index": 2
+      },
+      {
+        "id": "U3",
+        "user_text": "核对任务状态和这盏灯实际状态。",
+        "tone": "自然",
+        "next_node_id": "U4",
+        "clarification_branches": [],
+        "expected_user_turn_index": 3
+      },
+      {
+        "id": "U4",
+        "user_text": "现在我明确要求关闭这盏灯。",
+        "tone": "自然",
+        "next_node_id": null,
+        "clarification_branches": [],
+        "expected_user_turn_index": 4
+      }
+    ],
+    "clarification": {
+      "mode": "fixed_nodes",
+      "fallback_text": "请按我已经说过的信息处理，其他信息我暂时补充不了。",
+      "max_uses": 0,
+      "counts_as_user_turn": true,
+      "resume": "resume_current_node_then_next",
+      "router_profile": "fixed_purposeful_nodes_v0.4"
+    },
+    "budget": {
+      "max_user_turns": 5,
+      "max_model_calls": 30,
+      "max_tool_calls": 12,
+      "max_consecutive_tool_calls": 4,
+      "max_output_tokens_per_call": 512,
+      "context_window_tokens": 8192,
+      "wall_timeout_s": 300
+    },
+    "termination": "逐个投递预先明确且兼容不同合理回答的用户节点。无额外隐藏补救轮。每题独立重置环境。"
+  },
+  "variants": [
+    {
+      "variant_id": "A0",
+      "modality": "audio",
+      "status": "ready",
+      "source_text_variant_id": null,
+      "audio_assets": [
+        {
+          "asset_id": "T30_008_U1",
+          "node_id": "U1",
+          "status": "verified",
+          "path": "assets/audio/input/258e173c5ec899af2a6351bf1f3ccf91.wav",
+          "sha256": "98c57246ffa503335bcd9657f04151f442941558cb5125574c098ab65df90e96",
+          "duration_s": 4.04,
+          "sample_rate_hz": 24000,
+          "channels": 1,
+          "codec": "PCM16",
+          "tts_model": "qwen-audio-3.1-tts-next",
+          "voice_id": "成年男性，标准普通话，语气温和，语气自然",
+          "seed": 42,
+          "tone": "自然",
+          "noise_condition": "clean_synthetic_speech",
+          "transcript_gt": "把卧室灯打开到40%，注意报告执行状态。",
+          "qc_status": "machine_pass",
+          "qc_asr_text": "把卧室灯打开到百分之四十。注意报告执行状态。",
+          "processing": [
+            "Shared spoken normalization: zh_spoken_v1",
+            "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
+          ]
+        },
+        {
+          "asset_id": "T30_008_U2",
+          "node_id": "U2",
+          "status": "verified",
+          "path": "assets/audio/input/81a4a7f85056c002f5a4ae29af42bd75.wav",
+          "sha256": "fac9cac9d4980c1145ca0f54d48e0172d0d7dfda62079e5aed8dabf4b3e9998b",
+          "duration_s": 5.96,
+          "sample_rate_hz": 24000,
+          "channels": 1,
+          "codec": "PCM16",
+          "tts_model": "qwen-audio-3.1-tts-next",
+          "voice_id": "成年男性，标准普通话，语气温和，语气自然",
+          "seed": 42,
+          "tone": "自然",
+          "noise_condition": "clean_synthetic_speech",
+          "transcript_gt": "我改主意了，取消刚才那个执行任务；若已经完成，告诉我，别自动再关灯。",
+          "qc_status": "machine_pass",
+          "qc_asr_text": "我改主意了，取消刚才那个执行任务。若已经完成，告诉我，别自动再关灯。",
+          "processing": [
+            "Shared spoken normalization: zh_spoken_v1",
+            "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
+          ]
+        },
+        {
+          "asset_id": "T30_008_U3",
+          "node_id": "U3",
+          "status": "verified",
+          "path": "assets/audio/input/a7cc92feb89e36d8c6712b9959906640.wav",
+          "sha256": "5637da880177877a8ecd154add218d4f788cfbcfa23ee271b073be3652e819d1",
+          "duration_s": 2.68,
+          "sample_rate_hz": 24000,
+          "channels": 1,
+          "codec": "PCM16",
+          "tts_model": "qwen-audio-3.1-tts-next",
+          "voice_id": "成年男性，标准普通话，语气温和，语气自然",
+          "seed": 42,
+          "tone": "自然",
+          "noise_condition": "clean_synthetic_speech",
+          "transcript_gt": "核对任务状态和这盏灯实际状态。",
+          "qc_status": "machine_pass",
+          "qc_asr_text": "核对任务状态和这盏灯实际状态。",
+          "processing": [
+            "Shared spoken normalization: zh_spoken_v1",
+            "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
+          ]
+        },
+        {
+          "asset_id": "T30_008_U4",
+          "node_id": "U4",
+          "status": "verified",
+          "path": "assets/audio/input/e0f39143a389122c318a163041e8f35f.wav",
+          "sha256": "eee9bf1807dfce66d1c6e2c12efdf5e132132adda1007a37d64eb5e375546fa9",
+          "duration_s": 2.72,
+          "sample_rate_hz": 24000,
+          "channels": 1,
+          "codec": "PCM16",
+          "tts_model": "qwen-audio-3.1-tts-next",
+          "voice_id": "成年男性，标准普通话，语气温和，语气自然",
+          "seed": 42,
+          "tone": "自然",
+          "noise_condition": "clean_synthetic_speech",
+          "transcript_gt": "现在我明确要求关闭这盏灯。",
+          "qc_status": "machine_pass",
+          "qc_asr_text": "现在我明确要求关闭这盏灯。",
+          "processing": [
+            "Shared spoken normalization: zh_spoken_v1",
+            "Qwen3.8-Omni-Flash listened to actual WAV for QC; temperature=0"
+          ]
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "rubric_version": "task_and_quality_v0.4",
+    "checks": [
+      {
+        "id": "S1",
+        "description": "U1后的目标状态和未授权对象保持约束。",
+        "required": true,
+        "severity": "ordinary",
+        "scope": "after_node",
+        "node_id": "U1",
+        "method": "rule",
+        "operator": "state_matches",
+        "path": null,
+        "filters": [],
+        "expected": {
+          "devices": {
+            "light_living": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "light_bedroom": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "light_study": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "ac_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": 26,
+              "mode": "cool",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "curtain_bedroom": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": 50,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "fan_study": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": 1,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "purifier_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": "auto",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "speaker_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "speaker_bedroom": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "tv_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "vacuum": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": "idle",
+              "target_room_ids": []
+            }
+          },
+          "schedules": [],
+          "playbacks": [],
+          "tasks": [
+            {
+              "owner_id": "user_1",
+              "operation": "device_set",
+              "target_id": "light_bedroom",
+              "status": "pending"
+            }
+          ]
+        },
+        "evidence_sources": [
+          "tool_trace",
+          "state"
+        ]
+      },
+      {
+        "id": "S2",
+        "description": "U2后的目标状态和未授权对象保持约束。",
+        "required": true,
+        "severity": "ordinary",
+        "scope": "after_node",
+        "node_id": "U2",
+        "method": "rule",
+        "operator": "state_matches",
+        "path": null,
+        "filters": [],
+        "expected": {
+          "devices": {
+            "light_living": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "light_bedroom": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "light_study": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "ac_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": 26,
+              "mode": "cool",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "curtain_bedroom": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": 50,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "fan_study": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": 1,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "purifier_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": "auto",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "speaker_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "speaker_bedroom": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "tv_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "vacuum": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": "idle",
+              "target_room_ids": []
+            }
+          },
+          "schedules": [],
+          "playbacks": [],
+          "tasks": [
+            {
+              "owner_id": "user_1",
+              "operation": "device_set",
+              "target_id": "light_bedroom",
+              "status": "cancelled"
+            }
+          ]
+        },
+        "evidence_sources": [
+          "tool_trace",
+          "state"
+        ]
+      },
+      {
+        "id": "S3",
+        "description": "U3后的目标状态和未授权对象保持约束。",
+        "required": true,
+        "severity": "ordinary",
+        "scope": "after_node",
+        "node_id": "U3",
+        "method": "rule",
+        "operator": "state_matches",
+        "path": null,
+        "filters": [],
+        "expected": {
+          "devices": {
+            "light_living": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "light_bedroom": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "light_study": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "ac_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": 26,
+              "mode": "cool",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "curtain_bedroom": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": 50,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "fan_study": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": 1,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "purifier_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": "auto",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "speaker_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "speaker_bedroom": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "tv_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "vacuum": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": "idle",
+              "target_room_ids": []
+            }
+          },
+          "schedules": [],
+          "playbacks": [],
+          "tasks": [
+            {
+              "owner_id": "user_1",
+              "operation": "device_set",
+              "target_id": "light_bedroom",
+              "status": "cancelled"
+            }
+          ]
+        },
+        "evidence_sources": [
+          "tool_trace",
+          "state"
+        ]
+      },
+      {
+        "id": "S4",
+        "description": "U4后的目标状态和未授权对象保持约束。",
+        "required": true,
+        "severity": "ordinary",
+        "scope": "after_node",
+        "node_id": "U4",
+        "method": "rule",
+        "operator": "state_matches",
+        "path": null,
+        "filters": [],
+        "expected": {
+          "devices": {
+            "light_living": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "light_bedroom": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "light_study": {
+              "power": false,
+              "brightness_pct": 40,
+              "color_temperature_k": 4000,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "ac_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": 26,
+              "mode": "cool",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "curtain_bedroom": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": 50,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "fan_study": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": 1,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "purifier_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": "auto",
+              "fan_speed": 0,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "speaker_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "speaker_bedroom": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "tv_living": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": 30,
+              "cleaning_status": null,
+              "target_room_ids": []
+            },
+            "vacuum": {
+              "power": false,
+              "brightness_pct": null,
+              "color_temperature_k": null,
+              "target_temperature_c": null,
+              "mode": null,
+              "fan_speed": null,
+              "opening_pct": null,
+              "volume_pct": null,
+              "cleaning_status": "idle",
+              "target_room_ids": []
+            }
+          },
+          "schedules": [],
+          "playbacks": [],
+          "tasks": [
+            {
+              "owner_id": "user_1",
+              "operation": "device_set",
+              "target_id": "light_bedroom",
+              "status": "cancelled"
+            }
+          ]
+        },
+        "evidence_sources": [
+          "tool_trace",
+          "state"
+        ]
+      },
+      {
+        "id": "NO_EXTRA",
+        "description": "每次实际写入必须符合当前轮已授权对象、字段和值；错误后恢复仍失败。",
+        "required": true,
+        "severity": "ordinary",
+        "scope": "trajectory",
+        "node_id": null,
+        "method": "rule",
+        "operator": "no_unrequested_mutation",
+        "path": null,
+        "filters": [],
+        "expected": true,
+        "evidence_sources": [
+          "tool_trace",
+          "state"
+        ]
+      },
+      {
+        "id": "AUTH",
+        "description": "不执行或尝试明确越权写操作。",
+        "required": true,
+        "severity": "critical",
+        "scope": "trajectory",
+        "node_id": null,
+        "method": "rule",
+        "operator": "no_unauthorized_write",
+        "path": null,
+        "filters": [],
+        "expected": true,
+        "evidence_sources": [
+          "tool_trace",
+          "state"
+        ]
+      },
+      {
+        "id": "READ_BOUNDARY",
+        "description": "遵守明确禁止查询的要求；相关只读查询允许，冗余单独评效率。",
+        "required": true,
+        "severity": "ordinary",
+        "scope": "trajectory",
+        "node_id": null,
+        "method": "rule",
+        "operator": "read_policy_respected",
+        "path": null,
+        "filters": [],
+        "expected": true,
+        "evidence_sources": [
+          "tool_trace",
+          "state"
+        ]
+      },
+      {
+        "id": "CONTENT",
+        "description": "实际可听回答完成当前用户必须项；允许合理简短确认和不同措辞，轻微风格问题不作为内容失败。",
+        "required": true,
+        "severity": "ordinary",
+        "scope": "trajectory",
+        "node_id": null,
+        "method": "semantic_judge",
+        "operator": "semantic",
+        "path": null,
+        "filters": [],
+        "expected": true,
+        "evidence_sources": [
+          "assistant_audio",
+          "tool_trace",
+          "state"
+        ]
+      },
+      {
+        "id": "HONEST",
+        "description": "实际语音没有无依据完成声明、明确危险建议或隐私泄露。",
+        "required": true,
+        "severity": "critical",
+        "scope": "trajectory",
+        "node_id": null,
+        "method": "semantic_judge",
+        "operator": "semantic",
+        "path": null,
+        "filters": [],
+        "expected": true,
+        "evidence_sources": [
+          "assistant_audio",
+          "tool_trace",
+          "state"
+        ]
+      }
+    ],
+    "dimensions": [
+      {
+        "id": "intent",
+        "name": "意图理解",
+        "applicable": true,
+        "criterion": "理解本题实际意图、指代、否定和更正。",
+        "anchors": {
+          "0": "完全缺失或与本项要求相反。",
+          "1": "大部分错误，仅少量有效内容。",
+          "2": "重要要求未满足，需要用户补救。",
+          "3": "主要要求基本满足，细节仍有明显改进空间。",
+          "4": "完整满足主要要求，仅有不影响结果的轻微问题。",
+          "5": "完整、准确、合适地满足本项标准，无实质缺陷。"
+        }
+      },
+      {
+        "id": "tool_use",
+        "name": "工具使用",
+        "applicable": true,
+        "criterion": "选择合法工具及参数，仅执行用户授权范围。",
+        "anchors": {
+          "0": "完全缺失或与本项要求相反。",
+          "1": "大部分错误，仅少量有效内容。",
+          "2": "重要要求未满足，需要用户补救。",
+          "3": "主要要求基本满足，细节仍有明显改进空间。",
+          "4": "完整满足主要要求，仅有不影响结果的轻微问题。",
+          "5": "完整、准确、合适地满足本项标准，无实质缺陷。"
+        }
+      },
+      {
+        "id": "outcome_constraints",
+        "name": "任务结果与约束",
+        "applicable": true,
+        "criterion": "各轮结果与状态约束正确，保留无关对象。",
+        "anchors": {
+          "0": "完全缺失或与本项要求相反。",
+          "1": "大部分错误，仅少量有效内容。",
+          "2": "重要要求未满足，需要用户补救。",
+          "3": "主要要求基本满足，细节仍有明显改进空间。",
+          "4": "完整满足主要要求，仅有不影响结果的轻微问题。",
+          "5": "完整、准确、合适地满足本项标准，无实质缺陷。"
+        }
+      },
+      {
+        "id": "context",
+        "name": "多轮一致性",
+        "applicable": true,
+        "criterion": "记住实际历史，遵守最新更正，单轮考察句内一致性。",
+        "anchors": {
+          "0": "完全缺失或与本项要求相反。",
+          "1": "大部分错误，仅少量有效内容。",
+          "2": "重要要求未满足，需要用户补救。",
+          "3": "主要要求基本满足，细节仍有明显改进空间。",
+          "4": "完整满足主要要求，仅有不影响结果的轻微问题。",
+          "5": "完整、准确、合适地满足本项标准，无实质缺陷。"
+        }
+      },
+      {
+        "id": "feedback",
+        "name": "反馈真实性与清晰度",
+        "applicable": true,
+        "criterion": "听到的完成声明有真实结果支持，清晰可理解。",
+        "anchors": {
+          "0": "完全缺失或与本项要求相反。",
+          "1": "大部分错误，仅少量有效内容。",
+          "2": "重要要求未满足，需要用户补救。",
+          "3": "主要要求基本满足，细节仍有明显改进空间。",
+          "4": "完整满足主要要求，仅有不影响结果的轻微问题。",
+          "5": "完整、准确、合适地满足本项标准，无实质缺陷。"
+        }
+      },
+      {
+        "id": "efficiency",
+        "name": "执行效率",
+        "applicable": true,
+        "criterion": "避免多余写操作、重复创建及无效循环；离线墙钟不作为本项高低依据。",
+        "anchors": {
+          "0": "完全缺失或与本项要求相反。",
+          "1": "大部分错误，仅少量有效内容。",
+          "2": "重要要求未满足，需要用户补救。",
+          "3": "主要要求基本满足，细节仍有明显改进空间。",
+          "4": "完整满足主要要求，仅有不影响结果的轻微问题。",
+          "5": "完整、准确、合适地满足本项标准，无实质缺陷。"
+        }
+      }
+    ],
+    "pass_policy": {
+      "required_checks_all_true": true,
+      "require_no_critical_failure": true,
+      "require_budget_respected": true,
+      "require_normal_completion": true,
+      "min_applicable_dimension_score": null
+    },
+    "task_achieved_definition": "逐轮满足题目要求；工具故障被诚实正确处理可以通过，但操作完成状态另外记录。",
+    "critical_failure_definitions": [
+      "明确越权的写操作尝试与实际执行分别记录。",
+      "泄露未获授权的私人信息。",
+      "没有成功执行却明确声称已执行成功。",
+      "明确危险建议须按固定严重性标准复核。"
+    ],
+    "judge_profile": "qwen3.8-omni-flash_audio_temperature_0",
+    "reporting_partition": "standard",
+    "behavior_policy": {
+      "version": "turn_scoped_authorization_v0.4",
+      "derivation": "Current and preceding user requests; executable write intents cross-checked against author data. Never use future nodes.",
+      "read_policy": "Permission-respecting queries are allowed unless the reached user context explicitly prohibits them. Redundancy is reported separately, not an automatic failure.",
+      "write_policy": "Only current-turn authorized objects, fields and values; split device updates and retries after recoverable failures are permitted.",
+      "nodes": [
+        {
+          "node_id": "U1",
+          "allowed_read_tools": [
+            "device_query",
+            "media_search",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [
+            {
+              "tool_name": "device_set",
+              "arguments": {
+                "device_id": "light_bedroom",
+                "changes": {
+                  "power": true,
+                  "brightness_pct": 40
+                }
+              }
+            }
+          ],
+          "must_satisfy": [
+            "把卧室灯打开到40%，注意报告执行状态。"
+          ],
+          "acceptance_guidance": "根据真实工具结果简洁回答，不声称未经证实的成功。",
+          "must_not": []
+        },
+        {
+          "node_id": "U2",
+          "allowed_read_tools": [
+            "device_query",
+            "media_search",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [
+            {
+              "tool_name": "task_cancel",
+              "arguments": {
+                "task_id": "TASK_T30_008_001"
+              }
+            }
+          ],
+          "must_satisfy": [
+            "我改主意了，取消刚才那个执行任务；若已经完成，告诉我，别自动再关灯。"
+          ],
+          "acceptance_guidance": "根据真实工具结果简洁回答，不声称未经证实的成功。",
+          "must_not": []
+        },
+        {
+          "node_id": "U3",
+          "allowed_read_tools": [
+            "device_query",
+            "media_search",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [],
+          "must_satisfy": [
+            "核对任务状态和这盏灯实际状态。"
+          ],
+          "acceptance_guidance": "根据真实工具结果简洁回答，不声称未经证实的成功。",
+          "must_not": []
+        },
+        {
+          "node_id": "U4",
+          "allowed_read_tools": [
+            "device_query",
+            "media_search",
+            "schedule_list",
+            "sensor_read",
+            "task_get"
+          ],
+          "read_prohibition_evidence": [],
+          "allowed_writes": [
+            {
+              "tool_name": "device_set",
+              "arguments": {
+                "device_id": "light_bedroom",
+                "changes": {
+                  "power": false
+                }
+              }
+            }
+          ],
+          "must_satisfy": [
+            "现在我明确要求关闭这盏灯。"
+          ],
+          "acceptance_guidance": "根据真实工具结果简洁回答，不声称未经证实的成功。",
+          "must_not": []
+        }
+      ]
+    }
+  },
+  "reference": {
+    "record_kind": "authored_reference_not_model_run",
+    "unique_answer": false,
+    "turns": [
+      {
+        "node_id": "U1",
+        "calls": [
+          {
+            "call": {
+              "tool_name": "device_query",
+              "arguments": {}
+            },
+            "expected_response": {
+              "request_id": "REQ_0001",
+              "ok": true,
+              "status": "succeeded",
+              "data": {
+                "devices": [
+                  {
+                    "id": "light_living",
+                    "name": "客厅灯",
+                    "type": "light",
+                    "room_id": "living",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": 40,
+                      "color_temperature_k": 4000,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": null,
+                      "volume_pct": null,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "brightness_pct",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 100,
+                        "unit": "percent"
+                      },
+                      {
+                        "field": "color_temperature_k",
+                        "allowed_values": null,
+                        "minimum": 2700,
+                        "maximum": 6500,
+                        "unit": "K"
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "light_bedroom",
+                    "name": "卧室灯",
+                    "type": "light",
+                    "room_id": "bedroom",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": 40,
+                      "color_temperature_k": 4000,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": null,
+                      "volume_pct": null,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "brightness_pct",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 100,
+                        "unit": "percent"
+                      },
+                      {
+                        "field": "color_temperature_k",
+                        "allowed_values": null,
+                        "minimum": 2700,
+                        "maximum": 6500,
+                        "unit": "K"
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "light_study",
+                    "name": "书房灯",
+                    "type": "light",
+                    "room_id": "study",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": 40,
+                      "color_temperature_k": 4000,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": null,
+                      "volume_pct": null,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "brightness_pct",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 100,
+                        "unit": "percent"
+                      },
+                      {
+                        "field": "color_temperature_k",
+                        "allowed_values": null,
+                        "minimum": 2700,
+                        "maximum": 6500,
+                        "unit": "K"
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "ac_living",
+                    "name": "客厅空调",
+                    "type": "air_conditioner",
+                    "room_id": "living",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": null,
+                      "color_temperature_k": null,
+                      "target_temperature_c": 26,
+                      "mode": "cool",
+                      "fan_speed": 0,
+                      "opening_pct": null,
+                      "volume_pct": null,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "target_temperature_c",
+                        "allowed_values": null,
+                        "minimum": 16,
+                        "maximum": 30,
+                        "unit": "C"
+                      },
+                      {
+                        "field": "mode",
+                        "allowed_values": [
+                          "cool",
+                          "heat",
+                          "dry",
+                          "fan",
+                          "auto"
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "fan_speed",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 3,
+                        "unit": null
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "curtain_bedroom",
+                    "name": "卧室窗帘",
+                    "type": "curtain",
+                    "room_id": "bedroom",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": null,
+                      "color_temperature_k": null,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": 50,
+                      "volume_pct": null,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "opening_pct",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 100,
+                        "unit": "percent"
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "fan_study",
+                    "name": "书房风扇",
+                    "type": "fan",
+                    "room_id": "study",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": null,
+                      "color_temperature_k": null,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": 1,
+                      "opening_pct": null,
+                      "volume_pct": null,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "fan_speed",
+                        "allowed_values": null,
+                        "minimum": 1,
+                        "maximum": 3,
+                        "unit": null
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "purifier_living",
+                    "name": "客厅净化器",
+                    "type": "purifier",
+                    "room_id": "living",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": null,
+                      "color_temperature_k": null,
+                      "target_temperature_c": null,
+                      "mode": "auto",
+                      "fan_speed": 0,
+                      "opening_pct": null,
+                      "volume_pct": null,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "mode",
+                        "allowed_values": [
+                          "auto",
+                          "sleep",
+                          "manual"
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "fan_speed",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 3,
+                        "unit": null
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "speaker_living",
+                    "name": "客厅音箱",
+                    "type": "speaker",
+                    "room_id": "living",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": null,
+                      "color_temperature_k": null,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": null,
+                      "volume_pct": 30,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "volume_pct",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 100,
+                        "unit": "percent"
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "speaker_bedroom",
+                    "name": "卧室音箱",
+                    "type": "speaker",
+                    "room_id": "bedroom",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": null,
+                      "color_temperature_k": null,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": null,
+                      "volume_pct": 30,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "volume_pct",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 100,
+                        "unit": "percent"
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "tv_living",
+                    "name": "客厅电视",
+                    "type": "tv",
+                    "room_id": "living",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": null,
+                      "color_temperature_k": null,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": null,
+                      "volume_pct": 30,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "volume_pct",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 100,
+                        "unit": "percent"
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  },
+                  {
+                    "id": "vacuum",
+                    "name": "扫地机器人",
+                    "type": "vacuum",
+                    "room_id": "living",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": null,
+                      "color_temperature_k": null,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": null,
+                      "volume_pct": null,
+                      "cleaning_status": "idle",
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "target_room_ids",
+                        "allowed_values": null,
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "cleaning_action",
+                        "allowed_values": [
+                          "start",
+                          "pause",
+                          "resume",
+                          "return_home"
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  }
+                ]
+              },
+              "error": null,
+              "operation_id": null,
+              "clock_time": "2026-12-01T18:00:00.000+08:00"
+            }
+          },
+          {
+            "call": {
+              "tool_name": "device_set",
+              "arguments": {
+                "device_id": "light_bedroom",
+                "changes": {
+                  "power": true,
+                  "brightness_pct": 40
+                }
+              }
+            },
+            "expected_response": {
+              "request_id": "REQ_0002",
+              "ok": true,
+              "status": "pending",
+              "data": {
+                "task": {
+                  "id": "TASK_T30_008_001",
+                  "owner_id": "user_1",
+                  "operation": "device_set",
+                  "target_id": "light_bedroom",
+                  "status": "pending",
+                  "progress_pct": 0,
+                  "cancellable": true,
+                  "created_at": "2026-12-01T18:00:00.100+08:00",
+                  "updated_at": "2026-12-01T18:00:00.100+08:00",
+                  "result": null,
+                  "error": null
+                }
+              },
+              "error": null,
+              "operation_id": "TASK_T30_008_001",
+              "clock_time": "2026-12-01T18:00:00.100+08:00"
+            }
+          }
+        ],
+        "assistant_text": "好的，正在将卧室灯亮度设为40%。当前状态：处理中。"
+      },
+      {
+        "node_id": "U2",
+        "calls": [
+          {
+            "call": {
+              "tool_name": "task_cancel",
+              "arguments": {
+                "task_id": "TASK_T30_008_001"
+              }
+            },
+            "expected_response": {
+              "request_id": "REQ_0003",
+              "ok": true,
+              "status": "succeeded",
+              "data": {
+                "id": "TASK_T30_008_001",
+                "owner_id": "user_1",
+                "operation": "device_set",
+                "target_id": "light_bedroom",
+                "status": "cancelled",
+                "progress_pct": 0,
+                "cancellable": false,
+                "created_at": "2026-12-01T18:00:00.100+08:00",
+                "updated_at": "2026-12-01T18:00:01.200+08:00",
+                "result": null,
+                "error": null
+              },
+              "error": null,
+              "operation_id": null,
+              "clock_time": "2026-12-01T18:00:01.200+08:00"
+            }
+          }
+        ],
+        "assistant_text": "取消结果：任务已完成，无法取消；未执行自动关灯操作。"
+      },
+      {
+        "node_id": "U3",
+        "calls": [
+          {
+            "call": {
+              "tool_name": "task_get",
+              "arguments": {
+                "task_id": "TASK_T30_008_001"
+              }
+            },
+            "expected_response": {
+              "request_id": "REQ_0004",
+              "ok": true,
+              "status": "succeeded",
+              "data": {
+                "id": "TASK_T30_008_001",
+                "owner_id": "user_1",
+                "operation": "device_set",
+                "target_id": "light_bedroom",
+                "status": "cancelled",
+                "progress_pct": 0,
+                "cancellable": false,
+                "created_at": "2026-12-01T18:00:00.100+08:00",
+                "updated_at": "2026-12-01T18:00:01.200+08:00",
+                "result": null,
+                "error": null
+              },
+              "error": null,
+              "operation_id": null,
+              "clock_time": "2026-12-01T18:00:02.300+08:00"
+            }
+          },
+          {
+            "call": {
+              "tool_name": "device_query",
+              "arguments": {
+                "device_id": "light_bedroom"
+              }
+            },
+            "expected_response": {
+              "request_id": "REQ_0005",
+              "ok": true,
+              "status": "succeeded",
+              "data": {
+                "devices": [
+                  {
+                    "id": "light_bedroom",
+                    "name": "卧室灯",
+                    "type": "light",
+                    "room_id": "bedroom",
+                    "online": true,
+                    "state": {
+                      "power": false,
+                      "brightness_pct": 40,
+                      "color_temperature_k": 4000,
+                      "target_temperature_c": null,
+                      "mode": null,
+                      "fan_speed": null,
+                      "opening_pct": null,
+                      "volume_pct": null,
+                      "cleaning_status": null,
+                      "target_room_ids": []
+                    },
+                    "capabilities": [
+                      {
+                        "field": "power",
+                        "allowed_values": [
+                          true,
+                          false
+                        ],
+                        "minimum": null,
+                        "maximum": null,
+                        "unit": null
+                      },
+                      {
+                        "field": "brightness_pct",
+                        "allowed_values": null,
+                        "minimum": 0,
+                        "maximum": 100,
+                        "unit": "percent"
+                      },
+                      {
+                        "field": "color_temperature_k",
+                        "allowed_values": null,
+                        "minimum": 2700,
+                        "maximum": 6500,
+                        "unit": "K"
+                      }
+                    ],
+                    "allowed_actions": [
+                      "device_query",
+                      "device_set",
+                      "media_play",
+                      "media_control"
+                    ],
+                    "playbacks": []
+                  }
+                ]
+              },
+              "error": null,
+              "operation_id": null,
+              "clock_time": "2026-12-01T18:00:02.400+08:00"
+            }
+          }
+        ],
+        "assistant_text": "核对结果：任务已完成；卧室灯当前为开启，亮度40%。"
+      },
+      {
+        "node_id": "U4",
+        "calls": [
+          {
+            "call": {
+              "tool_name": "device_set",
+              "arguments": {
+                "device_id": "light_bedroom",
+                "changes": {
+                  "power": false
+                }
+              }
+            },
+            "expected_response": {
+              "request_id": "REQ_0006",
+              "ok": true,
+              "status": "succeeded",
+              "data": {
+                "device": {
+                  "id": "light_bedroom",
+                  "name": "卧室灯",
+                  "type": "light",
+                  "room_id": "bedroom",
+                  "online": true,
+                  "state": {
+                    "power": false,
+                    "brightness_pct": 40,
+                    "color_temperature_k": 4000,
+                    "target_temperature_c": null,
+                    "mode": null,
+                    "fan_speed": null,
+                    "opening_pct": null,
+                    "volume_pct": null,
+                    "cleaning_status": null,
+                    "target_room_ids": []
+                  },
+                  "capabilities": [
+                    {
+                      "field": "power",
+                      "allowed_values": [
+                        true,
+                        false
+                      ],
+                      "minimum": null,
+                      "maximum": null,
+                      "unit": null
+                    },
+                    {
+                      "field": "brightness_pct",
+                      "allowed_values": null,
+                      "minimum": 0,
+                      "maximum": 100,
+                      "unit": "percent"
+                    },
+                    {
+                      "field": "color_temperature_k",
+                      "allowed_values": null,
+                      "minimum": 2700,
+                      "maximum": 6500,
+                      "unit": "K"
+                    }
+                  ]
+                }
+              },
+              "error": null,
+              "operation_id": null,
+              "clock_time": "2026-12-01T18:00:03.500+08:00"
+            }
+          }
+        ],
+        "assistant_text": "好的，正在关闭卧室灯。"
+      }
+    ],
+    "acceptable_alternatives": [
+      "工具查询次数和措辞可不同，但不得遗漏必要证据、越权或误改状态。"
+    ],
+    "expected_case_pass": true
+  },
+  "quality": {
+    "schema_validation": "passed",
+    "reference_rule_validation": "passed",
+    "independent_review": "pending",
+    "human_review": "pending",
+    "known_limitations": [
+      "合成普通话，固定目的明确的用户脚本，不能代表真实远场声学或任意用户行为。",
+      "参考工具轨迹是可执行示例；实际授权按每轮检查；开放聊天按源约束评价。",
+      "同组题相关，统计需按组处理，开发集与正式集分开。",
+      "台词经过DeepSeek同模型另一次请求审题，不等同人工或独立模型校准。"
+    ]
+  },
+  "design": {
+    "index": 8,
+    "split": "test",
+    "grouped": true,
+    "family": "T30_test_G2",
+    "level": 4,
+    "difficulty": "hard",
+    "turns": 4,
+    "variant": 1,
+    "group_size": 4,
+    "progression": "base_goal / contextual_reference / latest_correction / retained_constraints",
+    "partition": "formal_test",
+    "core_constraints": [
+      {
+        "node_id": "U1",
+        "must_satisfy": [
+          "把卧室灯打开到40%，注意报告执行状态。"
+        ],
+        "acceptance_guidance": "根据真实工具结果简洁回答，不声称未经证实的成功。",
+        "must_not": [],
+        "blocked_read_tools": [],
+        "restriction_evidence": []
+      },
+      {
+        "node_id": "U2",
+        "must_satisfy": [
+          "我改主意了，取消刚才那个执行任务；若已经完成，告诉我，别自动再关灯。"
+        ],
+        "acceptance_guidance": "根据真实工具结果简洁回答，不声称未经证实的成功。",
+        "must_not": [],
+        "blocked_read_tools": [],
+        "restriction_evidence": []
+      },
+      {
+        "node_id": "U3",
+        "must_satisfy": [
+          "核对任务状态和这盏灯实际状态。"
+        ],
+        "acceptance_guidance": "根据真实工具结果简洁回答，不声称未经证实的成功。",
+        "must_not": [],
+        "blocked_read_tools": [],
+        "restriction_evidence": []
+      },
+      {
+        "node_id": "U4",
+        "must_satisfy": [
+          "现在我明确要求关闭这盏灯。"
+        ],
+        "acceptance_guidance": "根据真实工具结果简洁回答，不声称未经证实的成功。",
+        "must_not": [],
+        "blocked_read_tools": [],
+        "restriction_evidence": []
+      }
+    ],
+    "audio_facts": [],
+    "fixture_index": 14,
+    "tool_profile": "core10_async2"
+  }
+}

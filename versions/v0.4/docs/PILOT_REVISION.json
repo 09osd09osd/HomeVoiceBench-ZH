@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-18T04:15:58.191128+00:00",
+  "archived_initial_protocol": "pilot_history/initial_protocol",
+  "reason": [
+    "Balanced chat/control system prompt; same prompt for all systems",
+    "Separate user requirements from illustrative acceptance guidance",
+    "Preserve ambiguity during authoring; never append assistant clarification to user text",
+    "Judge negative constraints by actual contradiction, not absence of repetition",
+    "Record explicit failure metadata for output/empty-response budgets"
+  ],
+  "not_changed": [
+    "greedy decoding",
+    "difficulty proportions",
+    "sandbox state and write authorization",
+    "all systems get every development case"
+  ],
+  "asset_reuse": [
+    "content-addressed verified user WAV when text/voice match",
+    "ASR keyed by actual audio SHA256",
+    "baseline TTS keyed by exact text and unchanged speech config"
+  ],
+  "selection_policy": "No answer cherry-picking; initial development outputs preserved, all three systems rerun under final protocol.",
+  "semantic_validation_followup": {
+    "uniform_review": "All audible primary decisions, pass and fail, by same Qwen3.8 at temperature zero, blind to model and primary labels/reasons",
+    "evidence": "actual heard transcripts, source user requests and tool logs; not second independent listening",
+    "disagreement": "retain both and mark pending adjudication",
+    "regression_result": "3/4 targeted agent-reviewed counterexamples; not a human gold set",
+    "release_gate": "not passed; formal 1000-case inference not started"
+  }
+}

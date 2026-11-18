@@ -1,0 +1,28 @@
+{
+  "status": "recovered_by_final_batch",
+  "phase": "overlap",
+  "pid": 31032,
+  "workers": 8,
+  "started_at_unix": 1794981125.7939374,
+  "counts": {
+    "review_agreed": 2407,
+    "audio_not_required": 2407,
+    "review_disputed": 181,
+    "audio_adjudicated": 181
+  },
+  "errors": [
+    "Expecting value: line 1 column 2 (char 1)"
+  ],
+  "scope": "Unchanged fixed prompts and first-valid-response policy; scheduling only. Maximum 24 primary plus 8 follow-up requests.",
+  "in_flight": 1,
+  "observed_run_files": 3000,
+  "heartbeat": 1794991391.1227689,
+  "recovered_at": "2026-11-18T08:57:21.498573+00:00",
+  "original_failure_preserved": "reports/scoring_schedule_attempts/followup_format_failure.json",
+  "recovery": {
+    "semantic_review_errors": [],
+    "audio_adjudication_errors": [],
+    "final_acceptance": "passed",
+    "historical_errors_retained": true
+  }
+}

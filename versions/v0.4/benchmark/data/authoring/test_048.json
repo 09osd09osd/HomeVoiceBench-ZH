@@ -1,0 +1,132 @@
+{
+  "source_sha256": "c5dc6e5b7cf88b82a24c4c3dac77829bf04cb7aed0dcd25cef20cfee4ed70e9c",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "725fba77-5808-46e3-b7c4-f9141dd10273",
+  "usage": {
+    "prompt_tokens": 1044,
+    "completion_tokens": 815,
+    "total_tokens": 1859,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 788
+  },
+  "review_request_id": "6e2d1fdf-1744-4ac4-a632-d7bd41d3fec5",
+  "review_usage": {
+    "prompt_tokens": 1493,
+    "completion_tokens": 69,
+    "total_tokens": 1562,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1493
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T14_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T14_017",
+        "title": "客厅卧室灯联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都设成31%；要是有一台离线，告诉我具体是哪台失败了。",
+            "reference_text": "好的，我这就把客厅灯和卧室灯都打开，亮度设到31%。如果有一台离线，我会告诉你具体是哪台失败。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯的亮度改成41%，卧室灯先别重试。",
+            "reference_text": "好的，我只把客厅灯亮度调到41%，卧室灯先不重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下这两盏灯分别是什么状态。",
+            "reference_text": "客厅灯和卧室灯的状态我查一下，稍等。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_018",
+        "title": "客厅卧室灯联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都设成51%；要是有一台离线，告诉我具体是哪台失败了。",
+            "reference_text": "好的，我这就把客厅灯和卧室灯都打开，亮度设到51%。如果有一台离线，我会告诉你具体是哪台失败。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯的亮度改成41%，卧室灯先别重试。",
+            "reference_text": "好的，我只把客厅灯亮度调到41%，卧室灯先不重试。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_019",
+        "title": "客厅卧室灯联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都设成71%；要是有一台离线，告诉我具体是哪台失败了。",
+            "reference_text": "好的，我这就把客厅灯和卧室灯都打开，亮度设到71%。如果有一台离线，我会告诉你具体是哪台失败。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯的亮度改成41%，卧室灯先别重试。",
+            "reference_text": "好的，我只把客厅灯亮度调到41%，卧室灯先不重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下这两盏灯分别是什么状态。",
+            "reference_text": "客厅灯和卧室灯的状态我查一下，稍等。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_020",
+        "title": "客厅卧室灯联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度都设成91%；要是有一台离线，告诉我具体是哪台失败了。",
+            "reference_text": "好的，我这就把客厅灯和卧室灯都打开，亮度设到91%。如果有一台离线，我会告诉你具体是哪台失败。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯的亮度改成41%，卧室灯先别重试。",
+            "reference_text": "好的，我只把客厅灯亮度调到41%，卧室灯先不重试。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

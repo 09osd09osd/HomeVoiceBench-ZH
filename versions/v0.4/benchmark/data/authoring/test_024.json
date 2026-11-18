@@ -1,0 +1,152 @@
+{
+  "source_sha256": "e098aa3f0944baf337e4b0b1f4a07a2dc048088be0cabbfa89edc7515b277dc0",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7971e42f-d88b-4a62-8ed7-d8b6dfad8b4d",
+  "usage": {
+    "prompt_tokens": 1228,
+    "completion_tokens": 896,
+    "total_tokens": 2124,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 972
+  },
+  "review_request_id": "56e5c4ab-3342-492c-8b45-f3e00cb3418e",
+  "review_usage": {
+    "prompt_tokens": 1730,
+    "completion_tokens": 69,
+    "total_tokens": 1799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1730
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T07_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T08_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T08_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T07_019",
+        "title": "书房灯色温调节与核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开书房灯，色温调到4300K。",
+            "reference_text": "已打开书房灯，色温设为4300K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那盏灯的色温改成4000K，其他设置都别动。",
+            "reference_text": "已将书房灯色温改为4000K，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我看看书房灯现在的色温和开关状态，别调整。",
+            "reference_text": "书房灯当前色温4000K，处于开启状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_020",
+        "title": "客厅灯色温范围确认与调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想把客厅灯色温设成9000K，先看看支不支持，不支持就告诉我范围，别改。",
+            "reference_text": "客厅灯色温最高支持6500K，9000K超出范围，设备保持原样。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那把刚才那盏客厅灯的色温改成3500K，其他设置不要动。",
+            "reference_text": "已将客厅灯色温设为3500K，其他设置未动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T08_004",
+        "title": "客厅空调温度设定与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开客厅空调，设定温度调到22摄氏度。",
+            "reference_text": "已打开客厅空调，设定温度为22摄氏度。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那台空调的设定温度改成25摄氏度，其他设置不要动。",
+            "reference_text": "已将客厅空调设定温度改为25摄氏度，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅空调现在的设定温度和开关，别调整。",
+            "reference_text": "客厅空调当前设定温度25摄氏度，处于开启状态。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅空调关掉，设定温度保留。",
+            "reference_text": "已关闭客厅空调，设定温度保持不变。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅空调的开关状态，其他设备不要改。",
+            "reference_text": "客厅空调当前处于关闭状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T08_008",
+        "title": "客厅空调温度设定与关闭",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开客厅空调，设定温度调到23摄氏度。",
+            "reference_text": "已打开客厅空调，设定温度为23摄氏度。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把刚才那台空调的设定温度改成26摄氏度，其他设置不要动。",
+            "reference_text": "已将客厅空调设定温度改为26摄氏度，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅空调现在的设定温度和开关，别调整。",
+            "reference_text": "客厅空调当前设定温度26摄氏度，处于开启状态。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅空调关掉，设定温度保留。",
+            "reference_text": "已关闭客厅空调，设定温度保持不变。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

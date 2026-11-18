@@ -1,0 +1,9189 @@
+{
+  "benchmark": "HomeVoiceBench-ZH",
+  "version": "0.4.0",
+  "generated_at": "2026-11-18T08:57:07.177850+00:00",
+  "evaluation_status": "complete",
+  "dataset": {
+    "cases": 1000,
+    "tool_cases": 600,
+    "chat_cases": 400,
+    "scenes": 50,
+    "normal_user_turns": 2150,
+    "turn_distribution": {
+      "1": 300,
+      "2": 400,
+      "3": 200,
+      "4": 50,
+      "5": 50
+    },
+    "audio_ready_cases": 1000,
+    "referenced_verified_unique_audio": 983,
+    "referenced_unique_audio_seconds": 3875.04,
+    "normalizer_version": "zh_spoken_v1",
+    "human_review": "not_performed",
+    "input_type": "synthetic_clean_mandarin_audio"
+  },
+  "systems": [
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned": 1000,
+      "run_count": 1000,
+      "decided_count": 1000,
+      "judged_count": 890,
+      "passed_count": 366,
+      "strict_pass_rate": 0.366,
+      "observed_pass_rate": 0.366,
+      "dimension_mean": {
+        "relevance": 3.6920980926430516,
+        "truthfulness": 4.397820163487738,
+        "context": 3.737078651685393,
+        "adaptation": 3.795640326975477,
+        "clarity": 4.6348773841961854,
+        "naturalness": 4.013623978201635,
+        "intent": 3.2523900573613767,
+        "tool_use": 2.5583173996175907,
+        "outcome_constraints": 2.1950286806883366,
+        "feedback": 3.497131931166348,
+        "efficiency": 3.305927342256214
+      },
+      "overall_dimension_mean": 3.4844569288389513,
+      "execution_failures": 123,
+      "critical_failure_count": 75,
+      "critical_failure_rate_among_judged": 0.08426966292134831
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned": 600,
+      "run_count": 600,
+      "decided_count": 600,
+      "judged_count": 523,
+      "passed_count": 168,
+      "strict_pass_rate": 0.28,
+      "observed_pass_rate": 0.28,
+      "dimension_mean": {
+        "intent": 3.2523900573613767,
+        "tool_use": 2.5583173996175907,
+        "outcome_constraints": 2.1950286806883366,
+        "context": 3.7533460803059273,
+        "feedback": 3.497131931166348,
+        "efficiency": 3.305927342256214
+      },
+      "overall_dimension_mean": 3.0936902485659656,
+      "execution_failures": 78,
+      "critical_failure_count": 47,
+      "critical_failure_rate_among_judged": 0.08986615678776291
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "judged_count": 367,
+      "passed_count": 198,
+      "strict_pass_rate": 0.495,
+      "observed_pass_rate": 0.495,
+      "dimension_mean": {
+        "relevance": 3.6920980926430516,
+        "truthfulness": 4.397820163487738,
+        "context": 3.7138964577656677,
+        "adaptation": 3.795640326975477,
+        "clarity": 4.6348773841961854,
+        "naturalness": 4.013623978201635
+      },
+      "overall_dimension_mean": 4.041326067211625,
+      "execution_failures": 45,
+      "critical_failure_count": 28,
+      "critical_failure_rate_among_judged": 0.07629427792915532
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned": 1000,
+      "run_count": 1000,
+      "decided_count": 1000,
+      "judged_count": 736,
+      "passed_count": 352,
+      "strict_pass_rate": 0.352,
+      "observed_pass_rate": 0.352,
+      "dimension_mean": {
+        "relevance": 3.811111111111111,
+        "truthfulness": 4.285185185185185,
+        "context": 4.199728260869565,
+        "adaptation": 3.922222222222222,
+        "clarity": 4.37037037037037,
+        "naturalness": 3.811111111111111,
+        "intent": 3.8991416309012874,
+        "tool_use": 3.4141630901287554,
+        "outcome_constraints": 3.296137339055794,
+        "feedback": 3.3433476394849784,
+        "efficiency": 3.832618025751073
+      },
+      "overall_dimension_mean": 3.811820652173913,
+      "execution_failures": 309,
+      "critical_failure_count": 152,
+      "critical_failure_rate_among_judged": 0.20652173913043478
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned": 600,
+      "run_count": 600,
+      "decided_count": 600,
+      "judged_count": 466,
+      "passed_count": 198,
+      "strict_pass_rate": 0.33,
+      "observed_pass_rate": 0.33,
+      "dimension_mean": {
+        "intent": 3.8991416309012874,
+        "tool_use": 3.4141630901287554,
+        "outcome_constraints": 3.296137339055794,
+        "context": 4.379828326180258,
+        "feedback": 3.3433476394849784,
+        "efficiency": 3.832618025751073
+      },
+      "overall_dimension_mean": 3.694206008583691,
+      "execution_failures": 163,
+      "critical_failure_count": 120,
+      "critical_failure_rate_among_judged": 0.2575107296137339
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "judged_count": 270,
+      "passed_count": 154,
+      "strict_pass_rate": 0.385,
+      "observed_pass_rate": 0.385,
+      "dimension_mean": {
+        "relevance": 3.811111111111111,
+        "truthfulness": 4.285185185185185,
+        "context": 3.888888888888889,
+        "adaptation": 3.922222222222222,
+        "clarity": 4.37037037037037,
+        "naturalness": 3.811111111111111
+      },
+      "overall_dimension_mean": 4.014814814814815,
+      "execution_failures": 146,
+      "critical_failure_count": 32,
+      "critical_failure_rate_among_judged": 0.11851851851851852
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned": 1000,
+      "run_count": 1000,
+      "decided_count": 1000,
+      "judged_count": 987,
+      "passed_count": 720,
+      "strict_pass_rate": 0.72,
+      "observed_pass_rate": 0.72,
+      "dimension_mean": {
+        "relevance": 4.58,
+        "truthfulness": 4.6925,
+        "context": 4.599797365754813,
+        "adaptation": 4.6325,
+        "clarity": 4.3975,
+        "naturalness": 4.3025,
+        "intent": 4.34412265758092,
+        "tool_use": 3.8790459965928448,
+        "outcome_constraints": 3.839863713798978,
+        "feedback": 4.09710391822828,
+        "efficiency": 4.17206132879046
+      },
+      "overall_dimension_mean": 4.308848362039852,
+      "execution_failures": 32,
+      "critical_failure_count": 61,
+      "critical_failure_rate_among_judged": 0.06180344478216818
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned": 600,
+      "run_count": 600,
+      "decided_count": 600,
+      "judged_count": 587,
+      "passed_count": 410,
+      "strict_pass_rate": 0.6833333333333333,
+      "observed_pass_rate": 0.6833333333333333,
+      "dimension_mean": {
+        "intent": 4.34412265758092,
+        "tool_use": 3.8790459965928448,
+        "outcome_constraints": 3.839863713798978,
+        "context": 4.5775127768313455,
+        "feedback": 4.09710391822828,
+        "efficiency": 4.17206132879046
+      },
+      "overall_dimension_mean": 4.1516183986371376,
+      "execution_failures": 27,
+      "critical_failure_count": 43,
+      "critical_failure_rate_among_judged": 0.07325383304940375
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "judged_count": 400,
+      "passed_count": 310,
+      "strict_pass_rate": 0.775,
+      "observed_pass_rate": 0.775,
+      "dimension_mean": {
+        "relevance": 4.58,
+        "truthfulness": 4.6925,
+        "context": 4.6325,
+        "adaptation": 4.6325,
+        "clarity": 4.3975,
+        "naturalness": 4.3025
+      },
+      "overall_dimension_mean": 4.539583333333334,
+      "execution_failures": 5,
+      "critical_failure_count": 18,
+      "critical_failure_rate_among_judged": 0.045
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_2b",
+      "category": "all",
+      "pass_rate_difference": 0.014,
+      "cluster_bootstrap_95_ci": [
+        -0.056,
+        0.085
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_2b",
+      "category": "tool",
+      "pass_rate_difference": -0.05,
+      "cluster_bootstrap_95_ci": [
+        -0.15166666666666667,
+        0.045
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_2b",
+      "category": "chat",
+      "pass_rate_difference": 0.11,
+      "cluster_bootstrap_95_ci": [
+        0.0175,
+        0.205
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_4b",
+      "category": "all",
+      "pass_rate_difference": -0.354,
+      "cluster_bootstrap_95_ci": [
+        -0.456,
+        -0.253
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_4b",
+      "category": "tool",
+      "pass_rate_difference": -0.4033333333333333,
+      "cluster_bootstrap_95_ci": [
+        -0.55,
+        -0.26166666666666666
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "edge_native",
+      "system_b": "qwen35_4b",
+      "category": "chat",
+      "pass_rate_difference": -0.28,
+      "cluster_bootstrap_95_ci": [
+        -0.3925,
+        -0.1725
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "qwen35_4b",
+      "system_b": "qwen35_2b",
+      "category": "all",
+      "pass_rate_difference": 0.368,
+      "cluster_bootstrap_95_ci": [
+        0.264,
+        0.474
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "qwen35_4b",
+      "system_b": "qwen35_2b",
+      "category": "tool",
+      "pass_rate_difference": 0.35333333333333333,
+      "cluster_bootstrap_95_ci": [
+        0.20166666666666666,
+        0.515
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    },
+    {
+      "system_a": "qwen35_4b",
+      "system_b": "qwen35_2b",
+      "category": "chat",
+      "pass_rate_difference": 0.39,
+      "cluster_bootstrap_95_ci": [
+        0.27,
+        0.5125
+      ],
+      "cluster_unit": "scene",
+      "stratification": "tool/chat",
+      "replicates": 2000,
+      "seed": 42
+    }
+  ],
+  "api_usage": {
+    "deepseek-flash": {
+      "requests": 350,
+      "prompt_tokens": 370131,
+      "completion_tokens": 117945,
+      "reported_total_tokens": 488076
+    },
+    "qwen-audio-3.1-tts-next": {
+      "requests": 1025,
+      "prompt_tokens": 173284,
+      "completion_tokens": 742344,
+      "reported_total_tokens": 915628
+    },
+    "qwen3.8-omni-flash": {
+      "requests": 8195,
+      "prompt_tokens": 63148574,
+      "completion_tokens": 5515393,
+      "reported_total_tokens": 68663967
+    }
+  },
+  "usage_caveat": "Contains authoring, reviews, pilots, regeneration, input QC and response judging; provider pricing/billing may differ. Requests are ledger entries, not unique case costs.",
+  "limitations": [
+    "Synthetic clean speech, four instructed adult voices; no real-room noise or far-field generalization claim.",
+    "Fixed purposeful user nodes, no hidden rescue turns. Groups share cumulative prefixes; development and test have separate IDs/families but share scenario templates.",
+    "Same-model authoring review is not independent human review.",
+    "One seed, one model audio judge; confidence intervals cover scene sampling, not all model/judge uncertainty.",
+    "Reference-compatible backbones differ in precision and runtime from native Edge; results compare complete deployed systems.",
+    "Offline ASR/TTS caching and batching mean interaction timings are not end-to-end real-time latency."
+  ],
+  "split": "test",
+  "judge_evidence_version": "core_task_quality_separate_v0.4_pilot_revision2",
+  "judge_prompt_sha256": "3df7d08e591faf24ddcf4f7c704a55a753feb53170d41c4ec0f51a7d6f80769d",
+  "by_planned_user_turns": [
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 1,
+      "planned": 300,
+      "run_count": 300,
+      "decided_count": 300,
+      "passed_count": 138,
+      "strict_pass_rate": 0.46
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 2,
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "passed_count": 145,
+      "strict_pass_rate": 0.3625
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 3,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 59,
+      "strict_pass_rate": 0.295
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 4,
+      "planned": 50,
+      "run_count": 50,
+      "decided_count": 50,
+      "passed_count": 14,
+      "strict_pass_rate": 0.28
+    },
+    {
+      "system_id": "edge_native",
+      "category": "all",
+      "planned_user_turns": 5,
+      "planned": 50,
+      "run_count": 50,
+      "decided_count": 50,
+      "passed_count": 10,
+      "strict_pass_rate": 0.2
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 1,
+      "planned": 180,
+      "run_count": 180,
+      "decided_count": 180,
+      "passed_count": 57,
+      "strict_pass_rate": 0.31666666666666665
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 2,
+      "planned": 240,
+      "run_count": 240,
+      "decided_count": 240,
+      "passed_count": 66,
+      "strict_pass_rate": 0.275
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 3,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 32,
+      "strict_pass_rate": 0.26666666666666666
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 4,
+      "planned": 30,
+      "run_count": 30,
+      "decided_count": 30,
+      "passed_count": 6,
+      "strict_pass_rate": 0.2
+    },
+    {
+      "system_id": "edge_native",
+      "category": "tool",
+      "planned_user_turns": 5,
+      "planned": 30,
+      "run_count": 30,
+      "decided_count": 30,
+      "passed_count": 7,
+      "strict_pass_rate": 0.23333333333333334
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 1,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 81,
+      "strict_pass_rate": 0.675
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 2,
+      "planned": 160,
+      "run_count": 160,
+      "decided_count": 160,
+      "passed_count": 79,
+      "strict_pass_rate": 0.49375
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 3,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 27,
+      "strict_pass_rate": 0.3375
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 4,
+      "planned": 20,
+      "run_count": 20,
+      "decided_count": 20,
+      "passed_count": 8,
+      "strict_pass_rate": 0.4
+    },
+    {
+      "system_id": "edge_native",
+      "category": "chat",
+      "planned_user_turns": 5,
+      "planned": 20,
+      "run_count": 20,
+      "decided_count": 20,
+      "passed_count": 3,
+      "strict_pass_rate": 0.15
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 1,
+      "planned": 300,
+      "run_count": 300,
+      "decided_count": 300,
+      "passed_count": 119,
+      "strict_pass_rate": 0.39666666666666667
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 2,
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "passed_count": 148,
+      "strict_pass_rate": 0.37
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 3,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 62,
+      "strict_pass_rate": 0.31
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 4,
+      "planned": 50,
+      "run_count": 50,
+      "decided_count": 50,
+      "passed_count": 14,
+      "strict_pass_rate": 0.28
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "all",
+      "planned_user_turns": 5,
+      "planned": 50,
+      "run_count": 50,
+      "decided_count": 50,
+      "passed_count": 9,
+      "strict_pass_rate": 0.18
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 1,
+      "planned": 180,
+      "run_count": 180,
+      "decided_count": 180,
+      "passed_count": 61,
+      "strict_pass_rate": 0.3388888888888889
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 2,
+      "planned": 240,
+      "run_count": 240,
+      "decided_count": 240,
+      "passed_count": 83,
+      "strict_pass_rate": 0.3458333333333333
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 3,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 39,
+      "strict_pass_rate": 0.325
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 4,
+      "planned": 30,
+      "run_count": 30,
+      "decided_count": 30,
+      "passed_count": 7,
+      "strict_pass_rate": 0.23333333333333334
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "tool",
+      "planned_user_turns": 5,
+      "planned": 30,
+      "run_count": 30,
+      "decided_count": 30,
+      "passed_count": 8,
+      "strict_pass_rate": 0.26666666666666666
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 1,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 58,
+      "strict_pass_rate": 0.48333333333333334
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 2,
+      "planned": 160,
+      "run_count": 160,
+      "decided_count": 160,
+      "passed_count": 65,
+      "strict_pass_rate": 0.40625
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 3,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 23,
+      "strict_pass_rate": 0.2875
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 4,
+      "planned": 20,
+      "run_count": 20,
+      "decided_count": 20,
+      "passed_count": 7,
+      "strict_pass_rate": 0.35
+    },
+    {
+      "system_id": "qwen35_2b",
+      "category": "chat",
+      "planned_user_turns": 5,
+      "planned": 20,
+      "run_count": 20,
+      "decided_count": 20,
+      "passed_count": 1,
+      "strict_pass_rate": 0.05
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 1,
+      "planned": 300,
+      "run_count": 300,
+      "decided_count": 300,
+      "passed_count": 231,
+      "strict_pass_rate": 0.77
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 2,
+      "planned": 400,
+      "run_count": 400,
+      "decided_count": 400,
+      "passed_count": 291,
+      "strict_pass_rate": 0.7275
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 3,
+      "planned": 200,
+      "run_count": 200,
+      "decided_count": 200,
+      "passed_count": 140,
+      "strict_pass_rate": 0.7
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 4,
+      "planned": 50,
+      "run_count": 50,
+      "decided_count": 50,
+      "passed_count": 30,
+      "strict_pass_rate": 0.6
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "all",
+      "planned_user_turns": 5,
+      "planned": 50,
+      "run_count": 50,
+      "decided_count": 50,
+      "passed_count": 28,
+      "strict_pass_rate": 0.56
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 1,
+      "planned": 180,
+      "run_count": 180,
+      "decided_count": 180,
+      "passed_count": 121,
+      "strict_pass_rate": 0.6722222222222223
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 2,
+      "planned": 240,
+      "run_count": 240,
+      "decided_count": 240,
+      "passed_count": 169,
+      "strict_pass_rate": 0.7041666666666667
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 3,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 81,
+      "strict_pass_rate": 0.675
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 4,
+      "planned": 30,
+      "run_count": 30,
+      "decided_count": 30,
+      "passed_count": 19,
+      "strict_pass_rate": 0.6333333333333333
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "tool",
+      "planned_user_turns": 5,
+      "planned": 30,
+      "run_count": 30,
+      "decided_count": 30,
+      "passed_count": 20,
+      "strict_pass_rate": 0.6666666666666666
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 1,
+      "planned": 120,
+      "run_count": 120,
+      "decided_count": 120,
+      "passed_count": 110,
+      "strict_pass_rate": 0.9166666666666666
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 2,
+      "planned": 160,
+      "run_count": 160,
+      "decided_count": 160,
+      "passed_count": 122,
+      "strict_pass_rate": 0.7625
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 3,
+      "planned": 80,
+      "run_count": 80,
+      "decided_count": 80,
+      "passed_count": 59,
+      "strict_pass_rate": 0.7375
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 4,
+      "planned": 20,
+      "run_count": 20,
+      "decided_count": 20,
+      "passed_count": 11,
+      "strict_pass_rate": 0.55
+    },
+    {
+      "system_id": "qwen35_4b",
+      "category": "chat",
+      "planned_user_turns": 5,
+      "planned": 20,
+      "run_count": 20,
+      "decided_count": 20,
+      "passed_count": 8,
+      "strict_pass_rate": 0.4
+    }
+  ],
+  "by_reporting_partition": [
+    {
+      "system_id": "edge_native",
+      "partition": "standard",
+      "category": "all",
+      "planned": 1000,
+      "decided_count": 1000,
+      "passed_count": 366,
+      "strict_pass_rate": 0.366
+    },
+    {
+      "system_id": "edge_native",
+      "partition": "standard",
+      "category": "tool",
+      "planned": 600,
+      "decided_count": 600,
+      "passed_count": 168,
+      "strict_pass_rate": 0.28
+    },
+    {
+      "system_id": "edge_native",
+      "partition": "standard",
+      "category": "chat",
+      "planned": 400,
+      "decided_count": 400,
+      "passed_count": 198,
+      "strict_pass_rate": 0.495
+    },
+    {
+      "system_id": "qwen35_2b",
+      "partition": "standard",
+      "category": "all",
+      "planned": 1000,
+      "decided_count": 1000,
+      "passed_count": 352,
+      "strict_pass_rate": 0.352
+    },
+    {
+      "system_id": "qwen35_2b",
+      "partition": "standard",
+      "category": "tool",
+      "planned": 600,
+      "decided_count": 600,
+      "passed_count": 198,
+      "strict_pass_rate": 0.33
+    },
+    {
+      "system_id": "qwen35_2b",
+      "partition": "standard",
+      "category": "chat",
+      "planned": 400,
+      "decided_count": 400,
+      "passed_count": 154,
+      "strict_pass_rate": 0.385
+    },
+    {
+      "system_id": "qwen35_4b",
+      "partition": "standard",
+      "category": "all",
+      "planned": 1000,
+      "decided_count": 1000,
+      "passed_count": 720,
+      "strict_pass_rate": 0.72
+    },
+    {
+      "system_id": "qwen35_4b",
+      "partition": "standard",
+      "category": "tool",
+      "planned": 600,
+      "decided_count": 600,
+      "passed_count": 410,
+      "strict_pass_rate": 0.6833333333333333
+    },
+    {
+      "system_id": "qwen35_4b",
+      "partition": "standard",
+      "category": "chat",
+      "planned": 400,
+      "decided_count": 400,
+      "passed_count": 310,
+      "strict_pass_rate": 0.775
+    }
+  ],
+  "revision": {
+    "previous_version": "0.3.0",
+    "old_results_preserved": true,
+    "reused_old_model_runs": 0,
+    "all_three_greedy": true,
+    "core_tools": 10,
+    "extension_tools": 2,
+    "task_quality_separate": true,
+    "source_machine_audit": "DeepSeek official API; independent human calibration not performed"
+  },
+  "budget_stress_case_ids": [],
+  "by_difficulty": [
+    {
+      "system_id": "edge_native",
+      "difficulty": "easy",
+      "planned": 600,
+      "decided": 600,
+      "passed": 246,
+      "pass_rate": 0.41
+    },
+    {
+      "system_id": "edge_native",
+      "difficulty": "medium",
+      "planned": 300,
+      "decided": 300,
+      "passed": 96,
+      "pass_rate": 0.32
+    },
+    {
+      "system_id": "edge_native",
+      "difficulty": "hard",
+      "planned": 100,
+      "decided": 100,
+      "passed": 24,
+      "pass_rate": 0.24
+    },
+    {
+      "system_id": "qwen35_2b",
+      "difficulty": "easy",
+      "planned": 600,
+      "decided": 600,
+      "passed": 232,
+      "pass_rate": 0.38666666666666666
+    },
+    {
+      "system_id": "qwen35_2b",
+      "difficulty": "medium",
+      "planned": 300,
+      "decided": 300,
+      "passed": 97,
+      "pass_rate": 0.3233333333333333
+    },
+    {
+      "system_id": "qwen35_2b",
+      "difficulty": "hard",
+      "planned": 100,
+      "decided": 100,
+      "passed": 23,
+      "pass_rate": 0.23
+    },
+    {
+      "system_id": "qwen35_4b",
+      "difficulty": "easy",
+      "planned": 600,
+      "decided": 600,
+      "passed": 448,
+      "pass_rate": 0.7466666666666667
+    },
+    {
+      "system_id": "qwen35_4b",
+      "difficulty": "medium",
+      "planned": 300,
+      "decided": 300,
+      "passed": 214,
+      "pass_rate": 0.7133333333333334
+    },
+    {
+      "system_id": "qwen35_4b",
+      "difficulty": "hard",
+      "planned": 100,
+      "decided": 100,
+      "passed": 58,
+      "pass_rate": 0.58
+    }
+  ],
+  "group_progression": [
+    {
+      "system_id": "edge_native",
+      "family": "C01_test_G1",
+      "results": [
+        {
+          "case_id": "C01_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C01_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C01_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C01_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C01_test_G2",
+      "results": [
+        {
+          "case_id": "C01_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C01_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C01_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C01_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C02_test_G1",
+      "results": [
+        {
+          "case_id": "C02_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C02_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C02_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C02_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C02_test_G2",
+      "results": [
+        {
+          "case_id": "C02_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C02_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C02_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C02_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C03_test_G1",
+      "results": [
+        {
+          "case_id": "C03_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C03_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C03_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C03_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C03_test_G2",
+      "results": [
+        {
+          "case_id": "C03_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C03_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C03_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C03_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C04_test_G1",
+      "results": [
+        {
+          "case_id": "C04_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C04_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C04_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C04_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C04_test_G2",
+      "results": [
+        {
+          "case_id": "C04_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C04_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C04_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C04_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C05_test_G1",
+      "results": [
+        {
+          "case_id": "C05_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C05_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C05_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C05_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C05_test_G2",
+      "results": [
+        {
+          "case_id": "C05_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C05_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C05_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C05_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C06_test_G1",
+      "results": [
+        {
+          "case_id": "C06_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C06_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C06_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C06_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C06_test_G2",
+      "results": [
+        {
+          "case_id": "C06_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C06_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C06_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C06_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C07_test_G1",
+      "results": [
+        {
+          "case_id": "C07_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C07_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C07_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C07_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C07_test_G2",
+      "results": [
+        {
+          "case_id": "C07_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C07_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C07_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C07_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C08_test_G1",
+      "results": [
+        {
+          "case_id": "C08_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C08_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C08_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C08_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C08_test_G2",
+      "results": [
+        {
+          "case_id": "C08_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C08_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C08_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C08_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C09_test_G1",
+      "results": [
+        {
+          "case_id": "C09_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C09_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C09_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C09_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C09_test_G2",
+      "results": [
+        {
+          "case_id": "C09_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C09_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C09_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C09_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C10_test_G1",
+      "results": [
+        {
+          "case_id": "C10_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C10_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C10_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C10_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C10_test_G2",
+      "results": [
+        {
+          "case_id": "C10_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C10_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C10_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C10_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C11_test_G1",
+      "results": [
+        {
+          "case_id": "C11_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C11_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C11_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C11_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C11_test_G2",
+      "results": [
+        {
+          "case_id": "C11_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C11_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C11_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C11_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C12_test_G1",
+      "results": [
+        {
+          "case_id": "C12_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C12_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C12_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C12_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C12_test_G2",
+      "results": [
+        {
+          "case_id": "C12_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C12_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C12_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C12_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C13_test_G1",
+      "results": [
+        {
+          "case_id": "C13_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C13_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C13_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C13_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C13_test_G2",
+      "results": [
+        {
+          "case_id": "C13_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C13_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C13_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C13_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C14_test_G1",
+      "results": [
+        {
+          "case_id": "C14_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C14_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C14_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C14_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C14_test_G2",
+      "results": [
+        {
+          "case_id": "C14_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C14_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C14_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C14_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C15_test_G1",
+      "results": [
+        {
+          "case_id": "C15_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C15_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C15_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C15_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C15_test_G2",
+      "results": [
+        {
+          "case_id": "C15_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C15_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C15_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C15_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C16_test_G1",
+      "results": [
+        {
+          "case_id": "C16_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C16_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C16_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C16_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C16_test_G2",
+      "results": [
+        {
+          "case_id": "C16_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C16_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C16_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C16_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C17_test_G1",
+      "results": [
+        {
+          "case_id": "C17_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C17_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C17_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C17_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C17_test_G2",
+      "results": [
+        {
+          "case_id": "C17_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C17_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C17_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C17_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C18_test_G1",
+      "results": [
+        {
+          "case_id": "C18_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C18_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C18_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C18_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C18_test_G2",
+      "results": [
+        {
+          "case_id": "C18_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C18_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C18_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C18_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C19_test_G1",
+      "results": [
+        {
+          "case_id": "C19_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C19_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C19_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C19_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C19_test_G2",
+      "results": [
+        {
+          "case_id": "C19_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C19_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C19_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C19_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C20_test_G1",
+      "results": [
+        {
+          "case_id": "C20_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C20_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C20_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C20_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "C20_test_G2",
+      "results": [
+        {
+          "case_id": "C20_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C20_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C20_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C20_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T01_test_G1",
+      "results": [
+        {
+          "case_id": "T01_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T01_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T01_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T01_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T01_test_G2",
+      "results": [
+        {
+          "case_id": "T01_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T01_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T01_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T01_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T02_test_G1",
+      "results": [
+        {
+          "case_id": "T02_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T02_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T02_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T02_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T02_test_G2",
+      "results": [
+        {
+          "case_id": "T02_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T02_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T02_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T02_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T03_test_G1",
+      "results": [
+        {
+          "case_id": "T03_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T03_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T03_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T03_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T03_test_G2",
+      "results": [
+        {
+          "case_id": "T03_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T03_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T03_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T03_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T04_test_G1",
+      "results": [
+        {
+          "case_id": "T04_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T04_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T04_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T04_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T04_test_G2",
+      "results": [
+        {
+          "case_id": "T04_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T04_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T04_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T04_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T05_test_G1",
+      "results": [
+        {
+          "case_id": "T05_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T05_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T05_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T05_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T05_test_G2",
+      "results": [
+        {
+          "case_id": "T05_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T05_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T05_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T05_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T06_test_G1",
+      "results": [
+        {
+          "case_id": "T06_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T06_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T06_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T06_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T06_test_G2",
+      "results": [
+        {
+          "case_id": "T06_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T06_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T06_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T06_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T07_test_G1",
+      "results": [
+        {
+          "case_id": "T07_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T07_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T07_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T07_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T07_test_G2",
+      "results": [
+        {
+          "case_id": "T07_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T07_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T07_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T07_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T08_test_G1",
+      "results": [
+        {
+          "case_id": "T08_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T08_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T08_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T08_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T08_test_G2",
+      "results": [
+        {
+          "case_id": "T08_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T08_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T08_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T08_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T09_test_G1",
+      "results": [
+        {
+          "case_id": "T09_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T09_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T09_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T09_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T09_test_G2",
+      "results": [
+        {
+          "case_id": "T09_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T09_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T09_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T09_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T10_test_G1",
+      "results": [
+        {
+          "case_id": "T10_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T10_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T10_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T10_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T10_test_G2",
+      "results": [
+        {
+          "case_id": "T10_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T10_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T10_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T10_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T11_test_G1",
+      "results": [
+        {
+          "case_id": "T11_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T11_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T11_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T11_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T11_test_G2",
+      "results": [
+        {
+          "case_id": "T11_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T11_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T11_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T11_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T12_test_G1",
+      "results": [
+        {
+          "case_id": "T12_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T12_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T12_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T12_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T12_test_G2",
+      "results": [
+        {
+          "case_id": "T12_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T12_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T12_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T12_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T13_test_G1",
+      "results": [
+        {
+          "case_id": "T13_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T13_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T13_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T13_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T13_test_G2",
+      "results": [
+        {
+          "case_id": "T13_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T13_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T13_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T13_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T14_test_G1",
+      "results": [
+        {
+          "case_id": "T14_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T14_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T14_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T14_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T14_test_G2",
+      "results": [
+        {
+          "case_id": "T14_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T14_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T14_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T14_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T15_test_G1",
+      "results": [
+        {
+          "case_id": "T15_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T15_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T15_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T15_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T15_test_G2",
+      "results": [
+        {
+          "case_id": "T15_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T15_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T15_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T15_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T16_test_G1",
+      "results": [
+        {
+          "case_id": "T16_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T16_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T16_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T16_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T16_test_G2",
+      "results": [
+        {
+          "case_id": "T16_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T16_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T16_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T16_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T17_test_G1",
+      "results": [
+        {
+          "case_id": "T17_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T17_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T17_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T17_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T17_test_G2",
+      "results": [
+        {
+          "case_id": "T17_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T17_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T17_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T17_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T18_test_G1",
+      "results": [
+        {
+          "case_id": "T18_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T18_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T18_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T18_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T18_test_G2",
+      "results": [
+        {
+          "case_id": "T18_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T18_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T18_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T18_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T19_test_G1",
+      "results": [
+        {
+          "case_id": "T19_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T19_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T19_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T19_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T19_test_G2",
+      "results": [
+        {
+          "case_id": "T19_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T19_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T19_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T19_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T20_test_G1",
+      "results": [
+        {
+          "case_id": "T20_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T20_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T20_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T20_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T20_test_G2",
+      "results": [
+        {
+          "case_id": "T20_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T20_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T20_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T20_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T21_test_G1",
+      "results": [
+        {
+          "case_id": "T21_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T21_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T21_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T21_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T21_test_G2",
+      "results": [
+        {
+          "case_id": "T21_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T21_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T21_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T21_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T22_test_G1",
+      "results": [
+        {
+          "case_id": "T22_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T22_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T22_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T22_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T22_test_G2",
+      "results": [
+        {
+          "case_id": "T22_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T22_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T22_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T22_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T23_test_G1",
+      "results": [
+        {
+          "case_id": "T23_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T23_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T23_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T23_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T23_test_G2",
+      "results": [
+        {
+          "case_id": "T23_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T23_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T23_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T23_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T24_test_G1",
+      "results": [
+        {
+          "case_id": "T24_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T24_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T24_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T24_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T24_test_G2",
+      "results": [
+        {
+          "case_id": "T24_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T24_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T24_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T24_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T25_test_G1",
+      "results": [
+        {
+          "case_id": "T25_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T25_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T25_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T25_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T25_test_G2",
+      "results": [
+        {
+          "case_id": "T25_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T25_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T25_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T25_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T26_test_G1",
+      "results": [
+        {
+          "case_id": "T26_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T26_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T26_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T26_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T26_test_G2",
+      "results": [
+        {
+          "case_id": "T26_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T26_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T26_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T26_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T27_test_G1",
+      "results": [
+        {
+          "case_id": "T27_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T27_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T27_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T27_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T27_test_G2",
+      "results": [
+        {
+          "case_id": "T27_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T27_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T27_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T27_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T28_test_G1",
+      "results": [
+        {
+          "case_id": "T28_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T28_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T28_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T28_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T28_test_G2",
+      "results": [
+        {
+          "case_id": "T28_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T28_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T28_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T28_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T29_test_G1",
+      "results": [
+        {
+          "case_id": "T29_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T29_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T29_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T29_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T29_test_G2",
+      "results": [
+        {
+          "case_id": "T29_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T29_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T29_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T29_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T30_test_G1",
+      "results": [
+        {
+          "case_id": "T30_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T30_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T30_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T30_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "edge_native",
+      "family": "T30_test_G2",
+      "results": [
+        {
+          "case_id": "T30_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T30_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T30_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T30_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C01_test_G1",
+      "results": [
+        {
+          "case_id": "C01_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C01_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C01_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C01_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C01_test_G2",
+      "results": [
+        {
+          "case_id": "C01_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C01_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C01_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C01_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C02_test_G1",
+      "results": [
+        {
+          "case_id": "C02_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C02_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C02_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C02_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C02_test_G2",
+      "results": [
+        {
+          "case_id": "C02_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C02_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C02_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C02_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C03_test_G1",
+      "results": [
+        {
+          "case_id": "C03_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C03_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C03_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C03_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C03_test_G2",
+      "results": [
+        {
+          "case_id": "C03_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C03_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C03_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C03_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C04_test_G1",
+      "results": [
+        {
+          "case_id": "C04_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C04_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C04_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C04_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C04_test_G2",
+      "results": [
+        {
+          "case_id": "C04_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C04_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C04_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C04_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C05_test_G1",
+      "results": [
+        {
+          "case_id": "C05_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C05_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C05_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C05_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C05_test_G2",
+      "results": [
+        {
+          "case_id": "C05_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C05_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C05_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C05_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C06_test_G1",
+      "results": [
+        {
+          "case_id": "C06_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C06_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C06_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C06_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C06_test_G2",
+      "results": [
+        {
+          "case_id": "C06_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C06_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C06_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C06_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C07_test_G1",
+      "results": [
+        {
+          "case_id": "C07_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C07_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C07_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C07_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C07_test_G2",
+      "results": [
+        {
+          "case_id": "C07_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C07_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C07_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C07_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C08_test_G1",
+      "results": [
+        {
+          "case_id": "C08_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C08_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C08_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C08_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C08_test_G2",
+      "results": [
+        {
+          "case_id": "C08_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C08_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C08_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C08_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C09_test_G1",
+      "results": [
+        {
+          "case_id": "C09_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C09_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C09_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C09_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C09_test_G2",
+      "results": [
+        {
+          "case_id": "C09_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C09_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C09_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C09_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C10_test_G1",
+      "results": [
+        {
+          "case_id": "C10_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C10_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C10_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C10_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C10_test_G2",
+      "results": [
+        {
+          "case_id": "C10_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C10_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C10_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C10_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C11_test_G1",
+      "results": [
+        {
+          "case_id": "C11_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C11_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C11_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C11_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C11_test_G2",
+      "results": [
+        {
+          "case_id": "C11_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C11_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C11_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C11_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C12_test_G1",
+      "results": [
+        {
+          "case_id": "C12_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C12_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C12_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C12_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C12_test_G2",
+      "results": [
+        {
+          "case_id": "C12_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C12_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C12_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C12_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C13_test_G1",
+      "results": [
+        {
+          "case_id": "C13_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C13_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C13_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C13_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C13_test_G2",
+      "results": [
+        {
+          "case_id": "C13_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C13_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C13_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C13_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C14_test_G1",
+      "results": [
+        {
+          "case_id": "C14_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C14_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C14_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C14_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C14_test_G2",
+      "results": [
+        {
+          "case_id": "C14_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C14_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C14_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C14_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C15_test_G1",
+      "results": [
+        {
+          "case_id": "C15_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C15_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C15_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C15_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C15_test_G2",
+      "results": [
+        {
+          "case_id": "C15_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C15_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C15_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C15_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C16_test_G1",
+      "results": [
+        {
+          "case_id": "C16_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C16_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C16_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C16_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C16_test_G2",
+      "results": [
+        {
+          "case_id": "C16_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C16_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C16_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C16_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C17_test_G1",
+      "results": [
+        {
+          "case_id": "C17_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C17_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C17_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C17_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C17_test_G2",
+      "results": [
+        {
+          "case_id": "C17_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C17_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C17_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C17_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C18_test_G1",
+      "results": [
+        {
+          "case_id": "C18_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C18_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C18_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C18_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C18_test_G2",
+      "results": [
+        {
+          "case_id": "C18_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C18_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C18_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C18_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C19_test_G1",
+      "results": [
+        {
+          "case_id": "C19_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C19_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C19_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C19_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C19_test_G2",
+      "results": [
+        {
+          "case_id": "C19_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C19_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C19_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C19_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C20_test_G1",
+      "results": [
+        {
+          "case_id": "C20_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C20_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C20_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C20_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "C20_test_G2",
+      "results": [
+        {
+          "case_id": "C20_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C20_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C20_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C20_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T01_test_G1",
+      "results": [
+        {
+          "case_id": "T01_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T01_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T01_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T01_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T01_test_G2",
+      "results": [
+        {
+          "case_id": "T01_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T01_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T01_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T01_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T02_test_G1",
+      "results": [
+        {
+          "case_id": "T02_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T02_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T02_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T02_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T02_test_G2",
+      "results": [
+        {
+          "case_id": "T02_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T02_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T02_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T02_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T03_test_G1",
+      "results": [
+        {
+          "case_id": "T03_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T03_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T03_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T03_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T03_test_G2",
+      "results": [
+        {
+          "case_id": "T03_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T03_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T03_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T03_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T04_test_G1",
+      "results": [
+        {
+          "case_id": "T04_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T04_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T04_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T04_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T04_test_G2",
+      "results": [
+        {
+          "case_id": "T04_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T04_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T04_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T04_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T05_test_G1",
+      "results": [
+        {
+          "case_id": "T05_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T05_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T05_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T05_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T05_test_G2",
+      "results": [
+        {
+          "case_id": "T05_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T05_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T05_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T05_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T06_test_G1",
+      "results": [
+        {
+          "case_id": "T06_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T06_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T06_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T06_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T06_test_G2",
+      "results": [
+        {
+          "case_id": "T06_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T06_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T06_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T06_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T07_test_G1",
+      "results": [
+        {
+          "case_id": "T07_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T07_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T07_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T07_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T07_test_G2",
+      "results": [
+        {
+          "case_id": "T07_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T07_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T07_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T07_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T08_test_G1",
+      "results": [
+        {
+          "case_id": "T08_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T08_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T08_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T08_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T08_test_G2",
+      "results": [
+        {
+          "case_id": "T08_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T08_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T08_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T08_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T09_test_G1",
+      "results": [
+        {
+          "case_id": "T09_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T09_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T09_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T09_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T09_test_G2",
+      "results": [
+        {
+          "case_id": "T09_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T09_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T09_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T09_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T10_test_G1",
+      "results": [
+        {
+          "case_id": "T10_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T10_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T10_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T10_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T10_test_G2",
+      "results": [
+        {
+          "case_id": "T10_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T10_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T10_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T10_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T11_test_G1",
+      "results": [
+        {
+          "case_id": "T11_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T11_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T11_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T11_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T11_test_G2",
+      "results": [
+        {
+          "case_id": "T11_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T11_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T11_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T11_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T12_test_G1",
+      "results": [
+        {
+          "case_id": "T12_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T12_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T12_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T12_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T12_test_G2",
+      "results": [
+        {
+          "case_id": "T12_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T12_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T12_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T12_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T13_test_G1",
+      "results": [
+        {
+          "case_id": "T13_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T13_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T13_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T13_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T13_test_G2",
+      "results": [
+        {
+          "case_id": "T13_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T13_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T13_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T13_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T14_test_G1",
+      "results": [
+        {
+          "case_id": "T14_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T14_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T14_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T14_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T14_test_G2",
+      "results": [
+        {
+          "case_id": "T14_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T14_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T14_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T14_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T15_test_G1",
+      "results": [
+        {
+          "case_id": "T15_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T15_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T15_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T15_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T15_test_G2",
+      "results": [
+        {
+          "case_id": "T15_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T15_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T15_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T15_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T16_test_G1",
+      "results": [
+        {
+          "case_id": "T16_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T16_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T16_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T16_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T16_test_G2",
+      "results": [
+        {
+          "case_id": "T16_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T16_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T16_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T16_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T17_test_G1",
+      "results": [
+        {
+          "case_id": "T17_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T17_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T17_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T17_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T17_test_G2",
+      "results": [
+        {
+          "case_id": "T17_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T17_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T17_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T17_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T18_test_G1",
+      "results": [
+        {
+          "case_id": "T18_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T18_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T18_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T18_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T18_test_G2",
+      "results": [
+        {
+          "case_id": "T18_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T18_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T18_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T18_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T19_test_G1",
+      "results": [
+        {
+          "case_id": "T19_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T19_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T19_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T19_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T19_test_G2",
+      "results": [
+        {
+          "case_id": "T19_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T19_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T19_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T19_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T20_test_G1",
+      "results": [
+        {
+          "case_id": "T20_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T20_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T20_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T20_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T20_test_G2",
+      "results": [
+        {
+          "case_id": "T20_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T20_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T20_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T20_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T21_test_G1",
+      "results": [
+        {
+          "case_id": "T21_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T21_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T21_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T21_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T21_test_G2",
+      "results": [
+        {
+          "case_id": "T21_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T21_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T21_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T21_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T22_test_G1",
+      "results": [
+        {
+          "case_id": "T22_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T22_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T22_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T22_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T22_test_G2",
+      "results": [
+        {
+          "case_id": "T22_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T22_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T22_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T22_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T23_test_G1",
+      "results": [
+        {
+          "case_id": "T23_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T23_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T23_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T23_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T23_test_G2",
+      "results": [
+        {
+          "case_id": "T23_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T23_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T23_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T23_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T24_test_G1",
+      "results": [
+        {
+          "case_id": "T24_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T24_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T24_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T24_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T24_test_G2",
+      "results": [
+        {
+          "case_id": "T24_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T24_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T24_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T24_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T25_test_G1",
+      "results": [
+        {
+          "case_id": "T25_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T25_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T25_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T25_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T25_test_G2",
+      "results": [
+        {
+          "case_id": "T25_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T25_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T25_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T25_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T26_test_G1",
+      "results": [
+        {
+          "case_id": "T26_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T26_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T26_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T26_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T26_test_G2",
+      "results": [
+        {
+          "case_id": "T26_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T26_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T26_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T26_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T27_test_G1",
+      "results": [
+        {
+          "case_id": "T27_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T27_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T27_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T27_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T27_test_G2",
+      "results": [
+        {
+          "case_id": "T27_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T27_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T27_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T27_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T28_test_G1",
+      "results": [
+        {
+          "case_id": "T28_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T28_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T28_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T28_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T28_test_G2",
+      "results": [
+        {
+          "case_id": "T28_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T28_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T28_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T28_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T29_test_G1",
+      "results": [
+        {
+          "case_id": "T29_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T29_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T29_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T29_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T29_test_G2",
+      "results": [
+        {
+          "case_id": "T29_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T29_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T29_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T29_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T30_test_G1",
+      "results": [
+        {
+          "case_id": "T30_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T30_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T30_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T30_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_2b",
+      "family": "T30_test_G2",
+      "results": [
+        {
+          "case_id": "T30_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T30_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T30_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T30_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C01_test_G1",
+      "results": [
+        {
+          "case_id": "C01_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C01_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C01_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C01_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C01_test_G2",
+      "results": [
+        {
+          "case_id": "C01_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C01_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C01_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C01_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C02_test_G1",
+      "results": [
+        {
+          "case_id": "C02_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C02_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C02_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C02_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C02_test_G2",
+      "results": [
+        {
+          "case_id": "C02_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C02_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C02_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C02_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C03_test_G1",
+      "results": [
+        {
+          "case_id": "C03_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C03_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C03_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C03_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C03_test_G2",
+      "results": [
+        {
+          "case_id": "C03_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C03_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C03_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C03_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C04_test_G1",
+      "results": [
+        {
+          "case_id": "C04_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C04_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C04_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C04_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C04_test_G2",
+      "results": [
+        {
+          "case_id": "C04_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C04_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C04_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C04_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C05_test_G1",
+      "results": [
+        {
+          "case_id": "C05_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C05_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C05_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C05_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C05_test_G2",
+      "results": [
+        {
+          "case_id": "C05_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C05_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C05_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C05_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C06_test_G1",
+      "results": [
+        {
+          "case_id": "C06_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C06_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C06_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C06_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C06_test_G2",
+      "results": [
+        {
+          "case_id": "C06_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C06_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C06_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C06_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C07_test_G1",
+      "results": [
+        {
+          "case_id": "C07_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C07_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C07_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C07_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C07_test_G2",
+      "results": [
+        {
+          "case_id": "C07_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C07_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C07_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C07_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C08_test_G1",
+      "results": [
+        {
+          "case_id": "C08_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C08_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C08_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C08_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C08_test_G2",
+      "results": [
+        {
+          "case_id": "C08_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C08_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C08_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C08_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C09_test_G1",
+      "results": [
+        {
+          "case_id": "C09_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C09_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C09_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C09_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C09_test_G2",
+      "results": [
+        {
+          "case_id": "C09_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C09_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C09_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C09_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C10_test_G1",
+      "results": [
+        {
+          "case_id": "C10_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C10_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C10_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C10_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C10_test_G2",
+      "results": [
+        {
+          "case_id": "C10_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C10_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C10_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C10_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C11_test_G1",
+      "results": [
+        {
+          "case_id": "C11_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C11_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C11_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C11_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C11_test_G2",
+      "results": [
+        {
+          "case_id": "C11_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C11_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C11_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C11_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C12_test_G1",
+      "results": [
+        {
+          "case_id": "C12_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C12_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C12_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C12_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C12_test_G2",
+      "results": [
+        {
+          "case_id": "C12_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C12_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C12_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C12_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C13_test_G1",
+      "results": [
+        {
+          "case_id": "C13_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C13_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C13_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C13_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C13_test_G2",
+      "results": [
+        {
+          "case_id": "C13_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C13_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C13_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C13_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C14_test_G1",
+      "results": [
+        {
+          "case_id": "C14_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C14_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C14_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C14_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C14_test_G2",
+      "results": [
+        {
+          "case_id": "C14_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C14_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C14_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C14_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C15_test_G1",
+      "results": [
+        {
+          "case_id": "C15_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C15_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C15_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C15_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C15_test_G2",
+      "results": [
+        {
+          "case_id": "C15_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C15_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C15_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C15_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C16_test_G1",
+      "results": [
+        {
+          "case_id": "C16_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C16_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C16_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C16_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C16_test_G2",
+      "results": [
+        {
+          "case_id": "C16_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C16_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C16_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C16_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C17_test_G1",
+      "results": [
+        {
+          "case_id": "C17_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C17_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C17_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C17_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C17_test_G2",
+      "results": [
+        {
+          "case_id": "C17_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C17_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C17_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C17_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 4
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C18_test_G1",
+      "results": [
+        {
+          "case_id": "C18_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C18_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C18_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C18_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C18_test_G2",
+      "results": [
+        {
+          "case_id": "C18_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C18_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C18_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C18_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C19_test_G1",
+      "results": [
+        {
+          "case_id": "C19_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C19_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C19_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C19_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C19_test_G2",
+      "results": [
+        {
+          "case_id": "C19_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "C19_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C19_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "C19_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C20_test_G1",
+      "results": [
+        {
+          "case_id": "C20_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C20_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "C20_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C20_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "C20_test_G2",
+      "results": [
+        {
+          "case_id": "C20_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "C20_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "C20_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "C20_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T01_test_G1",
+      "results": [
+        {
+          "case_id": "T01_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T01_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T01_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T01_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T01_test_G2",
+      "results": [
+        {
+          "case_id": "T01_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T01_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T01_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T01_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T02_test_G1",
+      "results": [
+        {
+          "case_id": "T02_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T02_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T02_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T02_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T02_test_G2",
+      "results": [
+        {
+          "case_id": "T02_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T02_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T02_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T02_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T03_test_G1",
+      "results": [
+        {
+          "case_id": "T03_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T03_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T03_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T03_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T03_test_G2",
+      "results": [
+        {
+          "case_id": "T03_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T03_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T03_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T03_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T04_test_G1",
+      "results": [
+        {
+          "case_id": "T04_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T04_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T04_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T04_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T04_test_G2",
+      "results": [
+        {
+          "case_id": "T04_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T04_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T04_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T04_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T05_test_G1",
+      "results": [
+        {
+          "case_id": "T05_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T05_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T05_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T05_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T05_test_G2",
+      "results": [
+        {
+          "case_id": "T05_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T05_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T05_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T05_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T06_test_G1",
+      "results": [
+        {
+          "case_id": "T06_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T06_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T06_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T06_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T06_test_G2",
+      "results": [
+        {
+          "case_id": "T06_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T06_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T06_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T06_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 3
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T07_test_G1",
+      "results": [
+        {
+          "case_id": "T07_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T07_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T07_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T07_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T07_test_G2",
+      "results": [
+        {
+          "case_id": "T07_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T07_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T07_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T07_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T08_test_G1",
+      "results": [
+        {
+          "case_id": "T08_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T08_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T08_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T08_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T08_test_G2",
+      "results": [
+        {
+          "case_id": "T08_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T08_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T08_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T08_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T09_test_G1",
+      "results": [
+        {
+          "case_id": "T09_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T09_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T09_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T09_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T09_test_G2",
+      "results": [
+        {
+          "case_id": "T09_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T09_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T09_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T09_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 2
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T10_test_G1",
+      "results": [
+        {
+          "case_id": "T10_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T10_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T10_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T10_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T10_test_G2",
+      "results": [
+        {
+          "case_id": "T10_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T10_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T10_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T10_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T11_test_G1",
+      "results": [
+        {
+          "case_id": "T11_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T11_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T11_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T11_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T11_test_G2",
+      "results": [
+        {
+          "case_id": "T11_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T11_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T11_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T11_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T12_test_G1",
+      "results": [
+        {
+          "case_id": "T12_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T12_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T12_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T12_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T12_test_G2",
+      "results": [
+        {
+          "case_id": "T12_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T12_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T12_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T12_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T13_test_G1",
+      "results": [
+        {
+          "case_id": "T13_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T13_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T13_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T13_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T13_test_G2",
+      "results": [
+        {
+          "case_id": "T13_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T13_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T13_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T13_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T14_test_G1",
+      "results": [
+        {
+          "case_id": "T14_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T14_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T14_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T14_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T14_test_G2",
+      "results": [
+        {
+          "case_id": "T14_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T14_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T14_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T14_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T15_test_G1",
+      "results": [
+        {
+          "case_id": "T15_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T15_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T15_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T15_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T15_test_G2",
+      "results": [
+        {
+          "case_id": "T15_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T15_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T15_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T15_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T16_test_G1",
+      "results": [
+        {
+          "case_id": "T16_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T16_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T16_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T16_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T16_test_G2",
+      "results": [
+        {
+          "case_id": "T16_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T16_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T16_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T16_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T17_test_G1",
+      "results": [
+        {
+          "case_id": "T17_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T17_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T17_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T17_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T17_test_G2",
+      "results": [
+        {
+          "case_id": "T17_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T17_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T17_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T17_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T18_test_G1",
+      "results": [
+        {
+          "case_id": "T18_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T18_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T18_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T18_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T18_test_G2",
+      "results": [
+        {
+          "case_id": "T18_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T18_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T18_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T18_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T19_test_G1",
+      "results": [
+        {
+          "case_id": "T19_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T19_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T19_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T19_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T19_test_G2",
+      "results": [
+        {
+          "case_id": "T19_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T19_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T19_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T19_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T20_test_G1",
+      "results": [
+        {
+          "case_id": "T20_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T20_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T20_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T20_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T20_test_G2",
+      "results": [
+        {
+          "case_id": "T20_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T20_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T20_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T20_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T21_test_G1",
+      "results": [
+        {
+          "case_id": "T21_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T21_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T21_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T21_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T21_test_G2",
+      "results": [
+        {
+          "case_id": "T21_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T21_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T21_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T21_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T22_test_G1",
+      "results": [
+        {
+          "case_id": "T22_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T22_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T22_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T22_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T22_test_G2",
+      "results": [
+        {
+          "case_id": "T22_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T22_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T22_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T22_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T23_test_G1",
+      "results": [
+        {
+          "case_id": "T23_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T23_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T23_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T23_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T23_test_G2",
+      "results": [
+        {
+          "case_id": "T23_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T23_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T23_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T23_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T24_test_G1",
+      "results": [
+        {
+          "case_id": "T24_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T24_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T24_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T24_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T24_test_G2",
+      "results": [
+        {
+          "case_id": "T24_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T24_006",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T24_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T24_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T25_test_G1",
+      "results": [
+        {
+          "case_id": "T25_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T25_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T25_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T25_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T25_test_G2",
+      "results": [
+        {
+          "case_id": "T25_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T25_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T25_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T25_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T26_test_G1",
+      "results": [
+        {
+          "case_id": "T26_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T26_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T26_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T26_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T26_test_G2",
+      "results": [
+        {
+          "case_id": "T26_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T26_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T26_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T26_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T27_test_G1",
+      "results": [
+        {
+          "case_id": "T27_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T27_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T27_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T27_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T27_test_G2",
+      "results": [
+        {
+          "case_id": "T27_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T27_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T27_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T27_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T28_test_G1",
+      "results": [
+        {
+          "case_id": "T28_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T28_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T28_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T28_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T28_test_G2",
+      "results": [
+        {
+          "case_id": "T28_005",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T28_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T28_007",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T28_008",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T29_test_G1",
+      "results": [
+        {
+          "case_id": "T29_001",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T29_002",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T29_003",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T29_004",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T29_test_G2",
+      "results": [
+        {
+          "case_id": "T29_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T29_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T29_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T29_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T30_test_G1",
+      "results": [
+        {
+          "case_id": "T30_001",
+          "level": 1,
+          "passed": false
+        },
+        {
+          "case_id": "T30_002",
+          "level": 2,
+          "passed": false
+        },
+        {
+          "case_id": "T30_003",
+          "level": 3,
+          "passed": false
+        },
+        {
+          "case_id": "T30_004",
+          "level": 4,
+          "passed": false
+        }
+      ],
+      "first_failed_level": 1
+    },
+    {
+      "system_id": "qwen35_4b",
+      "family": "T30_test_G2",
+      "results": [
+        {
+          "case_id": "T30_005",
+          "level": 1,
+          "passed": true
+        },
+        {
+          "case_id": "T30_006",
+          "level": 2,
+          "passed": true
+        },
+        {
+          "case_id": "T30_007",
+          "level": 3,
+          "passed": true
+        },
+        {
+          "case_id": "T30_008",
+          "level": 4,
+          "passed": true
+        }
+      ],
+      "first_failed_level": null
+    }
+  ],
+  "semantic_consistency_review": {
+    "model": "qwen3.8-omni-flash",
+    "temperature": 0,
+    "scope": "uniform review of every audible primary decision using its actual heard transcript, user requirements and tool evidence; not a second independent audio listening",
+    "primary_results_preserved": true,
+    "systems": [
+      {
+        "system_id": "edge_native",
+        "primary_passed": 362,
+        "review_proposed_passed": 395,
+        "agreed_passed": 343,
+        "disputed": 71,
+        "pass_to_fail_disagreements": 19,
+        "fail_to_pass_disagreements": 52,
+        "unresolved_pass_rate_bounds": [
+          0.366,
+          0.366
+        ],
+        "final_passed": 366,
+        "audio_adjudicated": 71,
+        "unresolved_disputes": 0
+      },
+      {
+        "system_id": "qwen35_2b",
+        "primary_passed": 350,
+        "review_proposed_passed": 353,
+        "agreed_passed": 324,
+        "disputed": 55,
+        "pass_to_fail_disagreements": 26,
+        "fail_to_pass_disagreements": 29,
+        "unresolved_pass_rate_bounds": [
+          0.352,
+          0.352
+        ],
+        "final_passed": 352,
+        "audio_adjudicated": 56,
+        "unresolved_disputes": 0
+      },
+      {
+        "system_id": "qwen35_4b",
+        "primary_passed": 720,
+        "review_proposed_passed": 718,
+        "agreed_passed": 691,
+        "disputed": 56,
+        "pass_to_fail_disagreements": 29,
+        "fail_to_pass_disagreements": 27,
+        "unresolved_pass_rate_bounds": [
+          0.72,
+          0.72
+        ],
+        "final_passed": 720,
+        "audio_adjudicated": 56,
+        "unresolved_disputes": 0
+      }
+    ],
+    "final_policy": "When primary and review disagree or numeric evidence needs review: one blinded fresh audio adjudication. Objective failures remain failures; first schema-valid result, no best-score selection."
+  }
+}

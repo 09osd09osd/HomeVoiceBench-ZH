@@ -1,0 +1,112 @@
+{
+  "source_sha256": "303b4df1a908f7f525c4cefd91d48d9c9ae0820d1acaee4f726bd25269366133",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "f265f4c1-b0a5-4b76-8baf-b2dd62f0a8c1",
+  "usage": {
+    "prompt_tokens": 820,
+    "completion_tokens": 312,
+    "total_tokens": 1132,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 564
+  },
+  "review_request_id": "db622c21-a753-48de-b680-941ffd985a24",
+  "review_usage": {
+    "prompt_tokens": 926,
+    "completion_tokens": 69,
+    "total_tokens": 995,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 926
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T06_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_010",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T06_012",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T06_009",
+        "title": "客厅灯开关与亮度调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅灯，把亮度调到21%。",
+            "reference_text": "客厅灯已打开，亮度设为21%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那盏灯的亮度改成81%，别的设置都别动。",
+            "reference_text": "已将刚才那盏灯的亮度调整为81%，其他设置未改动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_010",
+        "title": "卧室灯开关与亮度设定",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开卧室灯，亮度设成41%。",
+            "reference_text": "卧室灯已打开，亮度设为41%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_011",
+        "title": "书房灯开关与亮度调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开书房灯，把亮度调到61%。",
+            "reference_text": "书房灯已打开，亮度设为61%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那盏灯的亮度改成41%，其他设置不要动。",
+            "reference_text": "已将刚才那盏灯的亮度调整为41%，其他设置未改动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T06_012",
+        "title": "客厅灯开关与亮度设定",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅灯，亮度设成81%。",
+            "reference_text": "客厅灯已打开，亮度设为81%。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

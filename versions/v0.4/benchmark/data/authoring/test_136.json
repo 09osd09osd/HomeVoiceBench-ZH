@@ -1,0 +1,152 @@
+{
+  "source_sha256": "b079479d5cef4c962c547094160d39271b3fd3e3c8e33b06aab8228421781eb8",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "92323e21-52cb-4ba5-be60-4de984ce82fe",
+  "usage": {
+    "prompt_tokens": 1048,
+    "completion_tokens": 677,
+    "total_tokens": 1725,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 792
+  },
+  "review_request_id": "98ac490a-279c-42bf-b54f-644ad4e79481",
+  "review_usage": {
+    "prompt_tokens": 1569,
+    "completion_tokens": 69,
+    "total_tokens": 1638,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1569
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C09_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C09_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C09_019",
+        "title": "家庭周末活动规划",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "周末想在家跟家人玩一会儿，推荐一个不用花钱的活动。",
+            "reference_text": "可以试试家庭故事接龙：每人轮流说一句，把故事编下去，不用花钱，在家就能玩。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "参与的是两个成年人和一个小朋友。",
+            "reference_text": "那就按两个大人和一个小朋友来安排，故事接龙、猜谜或一起搭积木都合适，小朋友也能参与。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我们只有40分钟，不是整个下午。",
+            "reference_text": "40分钟可以玩一轮短版故事接龙，再留几分钟收尾，时间够用，不会拖成整个下午。"
+          }
+        ]
+      },
+      {
+        "case_id": "C09_020",
+        "title": "家庭周末活动规划",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "周末想在家跟家人玩一会儿，推荐一个不用花钱的活动。",
+            "reference_text": "可以试试家庭猜谜或故事接龙，不用花钱，在家就能一起玩。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "参与的是两个成年人和一个小朋友。",
+            "reference_text": "两个大人加一个小朋友，可以玩轮流编故事或简单桌游，规则别太复杂，小朋友也能跟上。"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_004",
+        "title": "晚间任务安排与取舍",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚要洗杯子和整理书包，帮我排一下先后顺序。",
+            "reference_text": "可以先整理书包，再洗杯子；这样先把明早要用的东西收好，后面再处理杯子。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我先要出门十分钟，回来再做。",
+            "reference_text": "可以，那就等你回来后再开始，不急着现在做。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "书包明早要用，优先整理书包。",
+            "reference_text": "明白，回来后先整理书包，再洗杯子。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只帮我讨论，不要创建提醒。",
+            "reference_text": "好，只讨论顺序，不创建提醒或定时任务。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在简单复述一下顺序。",
+            "reference_text": "顺序是：你出门回来后先整理书包，再洗杯子；只讨论，不设提醒。"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_008",
+        "title": "晚间任务安排与取舍",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚要洗杯子和整理背包，帮我排一下先后顺序。",
+            "reference_text": "可以先整理背包，再洗杯子；先把明早要用的东西收好，后面再处理杯子。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我先要出门十分钟，回来再做。",
+            "reference_text": "可以，等你回来后再做，不要求现在开始。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "背包明早要用，优先整理背包。",
+            "reference_text": "明白，回来后先整理背包，再洗杯子。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只帮我讨论，不要创建提醒。",
+            "reference_text": "好，只讨论顺序，不创建提醒或定时任务。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

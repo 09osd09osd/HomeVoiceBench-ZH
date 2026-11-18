@@ -1,0 +1,122 @@
+{
+  "source_sha256": "4dd46f5a5f89ec946ecd088c1edda02c8db64e9986c683dee5d3f973dd857aa1",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "47dbd0fc-7282-471f-ac2f-1326d84191ae",
+  "usage": {
+    "prompt_tokens": 853,
+    "completion_tokens": 512,
+    "total_tokens": 1365,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 597
+  },
+  "review_request_id": "0b5f237f-5a10-419f-bc14-acc6bd913ede",
+  "review_usage": {
+    "prompt_tokens": 1015,
+    "completion_tokens": 69,
+    "total_tokens": 1084,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1015
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T25_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T25_015",
+        "title": "在客厅音箱播放《小熊找月亮》并暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《小熊找月亮》。",
+            "reference_text": "好的，正在客厅音箱为你播放《小熊找月亮》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才播放的内容。",
+            "reference_text": "已暂停《小熊找月亮》的播放。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_016",
+        "title": "在客厅音箱播放《星空小知识》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《星空小知识》。",
+            "reference_text": "好的，正在客厅音箱为你播放《星空小知识》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_017",
+        "title": "在客厅音箱播放《雨后散步》并暂停继续",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《雨后散步》。",
+            "reference_text": "好的，正在客厅音箱为你播放《雨后散步》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才播放的内容。",
+            "reference_text": "已暂停《雨后散步》的播放。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "已继续播放《雨后散步》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_018",
+        "title": "在客厅音箱播放《安静钢琴》并暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《安静钢琴》。",
+            "reference_text": "好的，正在客厅音箱为你播放《安静钢琴》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才播放的内容。",
+            "reference_text": "已暂停《安静钢琴》的播放。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

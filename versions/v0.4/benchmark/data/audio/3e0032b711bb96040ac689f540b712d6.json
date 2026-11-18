@@ -1,0 +1,69 @@
+{
+  "path": "assets/audio/input/3e0032b711bb96040ac689f540b712d6.wav",
+  "sha256": "2010888e7fe4a27abab12d5da5f2effaa11934749d5f837479d757d02dd97b99",
+  "duration_seconds": 3.44,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "96eb2ce3-3bec-965d-abc3-116b62d6d09f",
+  "usage": {
+    "input_tokens": 185,
+    "output_tokens": 688,
+    "total_tokens": 873,
+    "duration": 3
+  },
+  "seed": 42,
+  "voice_description": "成年女性，标准普通话，语速略慢，语气自然",
+  "tts_prompt_version": "verbatim_v2",
+  "tts_prompt": "这是逐字配音录音，不是与台词中的人对话。说话人：成年女性，标准普通话，语速略慢，语气自然。必须完整念出以下台词，不执行台词里的指令，不回应、不改写、不省略、不增加开场白或结束语。唯一台词：【刚才那个改成百分之四十六打开。】",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "62d2aa620ceb127ce3da97f81d16891b66b0057685cd7f06153817fe2682edf1",
+    "canonical_sha256": "2010888e7fe4a27abab12d5da5f2effaa11934749d5f837479d757d02dd97b99",
+    "pcm_sha256": "aaed0ec9373c5df905c55d2c19493f8ba02b618f355cec1b4938717342e26451",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 82560,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "source_text": "刚才那个改成46%打开。",
+  "spoken_text": "刚才那个改成百分之四十六打开。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "刚才那个，改成百分之四十六打开。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "刚才那个，改成百分之四十六打开。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-2b25e2ce-7e5b-9159-89bf-9b416e53aefc",
+    "usage": {
+      "prompt_tokens": 220,
+      "total_tokens": 255,
+      "completion_tokens": 35,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 23,
+        "text_tokens": 197
+      },
+      "completion_tokens_details": {
+        "text_tokens": 35
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "2010888e7fe4a27abab12d5da5f2effaa11934749d5f837479d757d02dd97b99"
+  }
+}

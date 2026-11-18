@@ -1,0 +1,152 @@
+{
+  "source_sha256": "6f8a2b0f1ecc1d716a5ab528413b6b61b9535a373f938d60ead75f3410216a5e",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "cd42879f-f5dd-4bd7-9a18-d66b9026a233",
+  "usage": {
+    "prompt_tokens": 1080,
+    "completion_tokens": 847,
+    "total_tokens": 1927,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 824
+  },
+  "review_request_id": "6d2d8852-aae1-40ec-af55-6b5d89973726",
+  "review_usage": {
+    "prompt_tokens": 1533,
+    "completion_tokens": 69,
+    "total_tokens": 1602,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1533
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C11_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C11_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C11_019",
+        "title": "给孩子解释镜面反射",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "给六岁小朋友解释一下，为什么镜子里能看到自己。",
+            "reference_text": "因为光照到你身上，又弹到镜子上，镜子再把光弹回你的眼睛，你就看到自己啦。镜子里没有另一个真人。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再简单一点，少用专业词。",
+            "reference_text": "光照到你，再跳到镜子上，又跳回你眼睛里，你就看见自己了。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "可以用一个小比喻，不要把比喻当成真实原因。",
+            "reference_text": "光就像一个小球，碰到镜子会弹回来，弹进你眼睛，你就看到自己了。这只是比喻，真实原因是光被镜面反射。"
+          }
+        ]
+      },
+      {
+        "case_id": "C11_020",
+        "title": "给孩子解释冰块浮水",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "给六岁小朋友解释一下，为什么冰块会浮在水上。",
+            "reference_text": "冰比同样大小的水轻一些，所以水能把它托起来，冰块就浮在水上啦。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再简单一点，少用专业词。",
+            "reference_text": "冰比水轻，水就把冰托起来，所以冰块浮在水上。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_004",
+        "title": "口头语言练习与纠错：公园",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把“我昨天去公园玩了”这句话说得自然一点，意思别变。",
+            "reference_text": "我昨天去公园玩了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "不要增加我没提到的事情。",
+            "reference_text": "好的，还是只说你去公园玩，不添加别的。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "时间改成上周日。",
+            "reference_text": "我上周日去公园玩了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "再短一点，适合口头说。",
+            "reference_text": "上周日我去公园玩了。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在只说最终那句话。",
+            "reference_text": "上周日我去公园玩了。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_008",
+        "title": "口头语言练习与纠错：图书馆",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把“我昨天去图书馆玩了”这句话说得自然一点，意思别变。",
+            "reference_text": "我昨天去图书馆玩了。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "不要增加我没提到的事情。",
+            "reference_text": "好的，还是只说你去图书馆玩，不添加别的。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "时间改成上周六。",
+            "reference_text": "我上周六去图书馆玩了。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "再短一点，适合口头说。",
+            "reference_text": "上周六我去图书馆玩了。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,132 @@
+{
+  "source_sha256": "71adf1498e5d4b7e4979b33ef63d93af0da74541ed634369abb1f4b0301fbdce",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7fc393d1-4061-4e13-ab88-90f08611e931",
+  "usage": {
+    "prompt_tokens": 934,
+    "completion_tokens": 733,
+    "total_tokens": 1667,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 806
+  },
+  "review_request_id": "75b28263-6110-4237-bc64-cf13c41105da",
+  "review_usage": {
+    "prompt_tokens": 1337,
+    "completion_tokens": 69,
+    "total_tokens": 1406,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1337
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C11_104",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C12_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C13_101",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C11_104",
+        "title": "给孩子解释冰块浮在水上的原理",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "给六岁小朋友解释一下，为什么冰块会浮在水上。",
+            "reference_text": "冰块浮在水上，是因为同样大小的一块冰，比同样大小的水要轻一些。轻的东西就容易浮起来。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再简单一点，少用专业词。",
+            "reference_text": "冰块里的小颗粒排得松一些，同样大小就比水轻，所以能浮起来。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "可以用一个小比喻，不要把比喻当成真实原因。",
+            "reference_text": "可以比喻成：冰块像松松的棉花团，同样大小比水轻，就浮起来了。但真实原因是冰的密度比水小。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "孩子问是不是所有东西冻住都会变轻。",
+            "reference_text": "不是所有东西冻住都会变轻。水冻成冰，同样大小会轻一点；但别的物质不一定。要看同样大小比轻重，不能只看重量。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后用一句话回答最初的问题。",
+            "reference_text": "冰块比同样大小的水轻，所以会浮在水上。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_101",
+        "title": "把句子说得自然一点",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把“我昨天去图书馆玩了”这句话说得自然一点，意思别变。",
+            "reference_text": "可以说：“昨天我去图书馆玩了。”或者保留原句也可以，意思没变。"
+          }
+        ]
+      },
+      {
+        "case_id": "C12_102",
+        "title": "改时间并保持原意",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把“我昨天去图书馆玩了”这句话说得自然一点，意思别变。",
+            "reference_text": "可以说：“昨天我去图书馆玩了。”或者保留原句也可以，意思没变。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "不要增加我没提到的事情。",
+            "reference_text": "好的，只改说法，不添加其他内容。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "时间改成上周六。",
+            "reference_text": "可以说：“上周六我去图书馆玩了。”"
+          }
+        ]
+      },
+      {
+        "case_id": "C13_101",
+        "title": "小松鼠找帽子睡前故事",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "讲一个小松鼠找帽子的小故事，简短一点，不要吓人。",
+            "reference_text": "小松鼠的帽子被风吹到了草丛边。它跳过去捡起来，拍拍灰，戴好帽子，开心地回家了。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

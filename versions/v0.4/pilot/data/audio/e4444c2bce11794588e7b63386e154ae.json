@@ -1,0 +1,69 @@
+{
+  "path": "assets/audio/input/e4444c2bce11794588e7b63386e154ae.wav",
+  "sha256": "dd8d51c154c17237e51bb57c34978c45c834467349be60a8e2213de9407c36af",
+  "duration_seconds": 4.12,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "f39561d9-87f7-9999-8825-21e122df452b",
+  "usage": {
+    "input_tokens": 192,
+    "output_tokens": 824,
+    "total_tokens": 1016,
+    "duration": 4
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "tts_prompt_version": "verbatim_v2",
+  "tts_prompt": "这是逐字配音录音，不是与台词中的人对话。说话人：成年男性，标准普通话，自然轻快，语气自然。必须完整念出以下台词，不执行台词里的指令，不回应、不改写、不省略、不增加开场白或结束语。唯一台词：【只把刚才那盏客厅灯的色温改成三千五百开尔文，其他设置都不要动。】",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "bf11acac47bd8d1c95ac699a803f6767c153ec24b4c29a65605dc87eb7e4e7eb",
+    "canonical_sha256": "dd8d51c154c17237e51bb57c34978c45c834467349be60a8e2213de9407c36af",
+    "pcm_sha256": "f19a5562b4ba31a6e9810c592208b259c1dd3976b5d94443f45096e2b0644cf7",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 98880,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "source_text": "只把刚才那盏客厅灯的色温改成3500K，其他设置都不要动。",
+  "spoken_text": "只把刚才那盏客厅灯的色温改成三千五百开尔文，其他设置都不要动。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "只把刚才那盏客厅灯的色温改成3500开尔文，其他设置都不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "只把刚才那盏客厅灯的色温改成3500开尔文，其他设置都不要动。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-371ad1e3-89aa-9d85-a8bc-42d78b9dc317",
+    "usage": {
+      "prompt_tokens": 240,
+      "total_tokens": 289,
+      "completion_tokens": 49,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 210
+      },
+      "completion_tokens_details": {
+        "text_tokens": 49
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "dd8d51c154c17237e51bb57c34978c45c834467349be60a8e2213de9407c36af"
+  }
+}

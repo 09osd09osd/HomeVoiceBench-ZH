@@ -1,0 +1,112 @@
+{
+  "source_sha256": "938e5f081d52f41d9f43ddcf13308ad9fa898a23928cb3f2e0404744cca1cd72",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e7d8496f-d641-4136-b20e-7a2109fcd54d",
+  "usage": {
+    "prompt_tokens": 824,
+    "completion_tokens": 406,
+    "total_tokens": 1230,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 568
+  },
+  "review_request_id": "b94413b2-26f5-4ccc-8c7e-1008b241580f",
+  "review_usage": {
+    "prompt_tokens": 1026,
+    "completion_tokens": 69,
+    "total_tokens": 1095,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1026
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T29_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T29_014",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T29_011",
+        "title": "书房灯异步开启",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把书房灯打开到61%；如果还在处理中，就告诉我当前状态。",
+            "reference_text": "好的，已将书房灯亮度调到61%。若任务返回处理中，我会如实告诉你当前状态，不会说已经完成。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "我查一下刚才那个任务的状态；如果还在处理中，我会如实告诉你，不会说已经完成。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_012",
+        "title": "客厅灯异步开启",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到81%；如果返回处理中，请准确说当前状态。",
+            "reference_text": "好的，已把客厅灯亮度调到81%。如果任务返回处理中，我会准确说明当前状态，不声称已经成功。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_013",
+        "title": "客厅灯异步开启与查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到26%；如果还在处理中，就如实说当前状态。",
+            "reference_text": "好的，已把客厅灯亮度调到26%。如果返回处理中，我会如实说明当前状态，不声称已经完成。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "我查一下刚才那个任务的状态；如果还在处理中，我会如实告诉你，不会说已经完成。"
+          }
+        ]
+      },
+      {
+        "case_id": "T29_014",
+        "title": "卧室灯异步开启",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室灯打开到46%；如果返回处理中，请准确说当前状态。",
+            "reference_text": "好的，已把卧室灯亮度调到46%。如果任务返回处理中，我会准确说明当前状态，不声称已经成功。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

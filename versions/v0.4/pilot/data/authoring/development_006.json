@@ -1,0 +1,112 @@
+{
+  "source_sha256": "d4d54e4fd1ca86903b6de4c656ad3b3ad1a316370da3d0c112fcc4d0daf4d66a",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "5a0c7367-9fd7-46a2-a191-b31b84ef3547",
+  "usage": {
+    "prompt_tokens": 777,
+    "completion_tokens": 369,
+    "total_tokens": 1146,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 649
+  },
+  "review_request_id": "a5e19896-1e01-4ffe-867f-f1870e084246",
+  "review_usage": {
+    "prompt_tokens": 977,
+    "completion_tokens": 69,
+    "total_tokens": 1046,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 977
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T18_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_101",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T18_101",
+        "title": "查询客厅照度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下客厅现在的照度，告诉我读数和测量时间，只查询，不要动其他设备。",
+            "reference_text": "已查询客厅照度，读数与测量时间以工具返回为准，未操作任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_101",
+        "title": "查询客厅是否有人",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅有没有检测到有人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "已查询客厅是否检测到有人，读数与测量时间以工具返回为准。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_102",
+        "title": "比较客厅和厨房是否有人",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "先查一下客厅有没有检测到有人，告诉我读数和测量时间，只查询。",
+            "reference_text": "已查询客厅是否检测到有人，读数与测量时间以工具返回为准。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房有没有检测到有人，同样告诉我读数和测量时间。",
+            "reference_text": "已查询厨房是否检测到有人，读数与测量时间以工具返回为准。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "把刚才客厅和厨房这两个房间的读数比较一下，不要调任何设备。",
+            "reference_text": "已根据刚才两个房间的查询结果进行比较，未调整任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_101",
+        "title": "创建明天整理书包提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天10点提醒我整理书包。",
+            "reference_text": "已创建明天10点整理书包的提醒，具体以工具返回为准。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

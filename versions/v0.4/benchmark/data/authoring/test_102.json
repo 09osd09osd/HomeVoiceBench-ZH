@@ -1,0 +1,112 @@
+{
+  "source_sha256": "a6c758d78bf2c9a50ee5fc818e7a93879a3b5181328b2fe3b6626fb003df741a",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e1e7854d-a04f-4a4e-b78e-df47213e714e",
+  "usage": {
+    "prompt_tokens": 832,
+    "completion_tokens": 487,
+    "total_tokens": 1319,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 576
+  },
+  "review_request_id": "cb65d1ab-38ce-410a-a266-b362de3e233e",
+  "review_usage": {
+    "prompt_tokens": 981,
+    "completion_tokens": 69,
+    "total_tokens": 1050,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 981
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T30_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_010",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_012",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T30_009",
+        "title": "客厅灯亮度调整与取消",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到21%，注意报告执行状态。",
+            "reference_text": "正在将客厅灯亮度调整为21%，请稍候。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个执行任务；若已经完成，告诉我，别自动再关灯。",
+            "reference_text": "已尝试取消，但任务可能已完成，请确认客厅灯当前状态。不会自动关灯。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_010",
+        "title": "卧室灯亮度调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室灯打开到41%，注意报告执行状态。",
+            "reference_text": "正在将卧室灯亮度调整为41%，请稍候。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_011",
+        "title": "书房灯亮度调整与取消",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把书房灯打开到61%，注意报告执行状态。",
+            "reference_text": "正在将书房灯亮度调整为61%，请稍候。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个执行任务；若已经完成，告诉我，别自动再关灯。",
+            "reference_text": "已尝试取消，但任务可能已完成，请确认书房灯当前状态。不会自动关灯。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_012",
+        "title": "客厅灯亮度调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到81%，注意报告执行状态。",
+            "reference_text": "正在将客厅灯亮度调整为81%，请稍候。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

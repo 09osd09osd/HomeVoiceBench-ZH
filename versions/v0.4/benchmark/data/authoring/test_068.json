@@ -1,0 +1,112 @@
+{
+  "source_sha256": "9b9f690e8bcdb54ae31ce16f1909fd7f9a38e54c624366a6ef36de37b4169444",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "3c794899-2d31-43b9-89ae-d6525b4a7f07",
+  "usage": {
+    "prompt_tokens": 787,
+    "completion_tokens": 420,
+    "total_tokens": 1207,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 531
+  },
+  "review_request_id": "b737e97f-cb29-46a8-b0ca-95293f709e5f",
+  "review_usage": {
+    "prompt_tokens": 869,
+    "completion_tokens": 69,
+    "total_tokens": 938,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 869
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T20_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T20_016",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T20_013",
+        "title": "一次性提醒的创建与修改",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点提醒我带钥匙。",
+            "reference_text": "好的，已为你设置明天7点的提醒：带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "已将提醒时间改为明天7点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_014",
+        "title": "一次性提醒的创建",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天8点提醒我给绿萝浇水。",
+            "reference_text": "好的，已设置明天8点给绿萝浇水的提醒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_015",
+        "title": "一次性提醒的创建与修改",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天9点提醒我收阳台毛巾。",
+            "reference_text": "好的，已设置明天9点收阳台毛巾的提醒。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天9点半。",
+            "reference_text": "已将提醒时间改为明天9点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T20_016",
+        "title": "一次性提醒的创建",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天10点提醒我整理书包。",
+            "reference_text": "好的，已设置明天10点整理书包的提醒。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,112 @@
+{
+  "source_sha256": "11cada906c876857527f3a262a9279597335c299377a63c1be41eb8dcb087610",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e714dcc5-25bb-4292-8fa7-3e187f12eb8b",
+  "usage": {
+    "prompt_tokens": 780,
+    "completion_tokens": 446,
+    "total_tokens": 1226,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 524
+  },
+  "review_request_id": "3fdfcc51-5043-485b-b24f-f20167456bba",
+  "review_usage": {
+    "prompt_tokens": 888,
+    "completion_tokens": 69,
+    "total_tokens": 957,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 888
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C19_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_012",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_014",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C19_011",
+        "title": "感知位置与接收告知",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我看不到。我没有收到现场图像，不能确定你坐在哪里，也不会靠传感器猜你的身份。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我告诉你，我坐在厨房。",
+            "reference_text": "好的，我记下了：你现在坐在厨房。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_012",
+        "title": "无法看到位置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我看不到。我没有收到现场图像，不能确定你坐在哪里，也不会靠传感器猜你的身份。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_013",
+        "title": "感知位置与接收阳台告知",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我看不到。我没有收到现场图像，不能确定你坐在哪里，也不会靠传感器猜你的身份。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我告诉你，我坐在阳台。",
+            "reference_text": "好的，我记下了：你现在坐在阳台。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_014",
+        "title": "无法看到位置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我看不到。我没有收到现场图像，不能确定你坐在哪里，也不会靠传感器猜你的身份。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

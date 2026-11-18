@@ -1,0 +1,122 @@
+{
+  "source_sha256": "e6798df19f207375c30b73ecc3d82501cfd2b63851e09937813d06a9f154bc57",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "0e6c4b62-5109-4ee9-bea1-8b16b00615bc",
+  "usage": {
+    "prompt_tokens": 855,
+    "completion_tokens": 669,
+    "total_tokens": 1524,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 599
+  },
+  "review_request_id": "2cbafeb8-ea0c-45fb-b780-5c9f4090f032",
+  "review_usage": {
+    "prompt_tokens": 1172,
+    "completion_tokens": 69,
+    "total_tokens": 1241,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1172
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C07_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C07_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C07_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C07_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C07_015",
+        "title": "五分钟整理桌面并只整理信件",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "桌面有点乱，给我一个五分钟能做完的整理步骤。",
+            "reference_text": "先把桌面上的东西归成三堆：要留的、要扔的、待定的，然后把要扔的立刻丢进垃圾桶。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先只整理信件，其他东西别管。",
+            "reference_text": "好，那你就只把信件集中起来，按要保留和可丢弃分成两摞，其他物品先不动。"
+          }
+        ]
+      },
+      {
+        "case_id": "C07_016",
+        "title": "五分钟整理桌面",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "桌面有点乱，给我一个五分钟能做完的整理步骤。",
+            "reference_text": "先把桌面上的东西归成三堆：要留的、要扔的、待定的，然后把要扔的立刻丢进垃圾桶。"
+          }
+        ]
+      },
+      {
+        "case_id": "C07_017",
+        "title": "五分钟整理桌面、只整理纸张并保留票据",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "桌面有点乱，给我一个五分钟能做完的整理步骤。",
+            "reference_text": "先把桌面上的东西归成三堆：要留的、要扔的、待定的，然后把要扔的立刻丢进垃圾桶。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先只整理纸张，其他东西别管。",
+            "reference_text": "好，那你就只把纸张集中起来，按要保留和可丢弃分成两摞，其他物品先不动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我想保留票据，不要建议全扔掉。",
+            "reference_text": "明白，票据都留着，只把确定没用的废纸丢掉，票据单独收好。"
+          }
+        ]
+      },
+      {
+        "case_id": "C07_018",
+        "title": "五分钟整理桌面并只整理杂志",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "桌面有点乱，给我一个五分钟能做完的整理步骤。",
+            "reference_text": "先把桌面上的东西归成三堆：要留的、要扔的、待定的，然后把要扔的立刻丢进垃圾桶。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先只整理杂志，其他东西别管。",
+            "reference_text": "好，那你就只把杂志集中起来，按要保留和可丢弃分成两摞，其他物品先不动。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

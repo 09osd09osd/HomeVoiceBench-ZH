@@ -1,0 +1,152 @@
+{
+  "source_sha256": "cd94575e8d8201047342a2141b82b1f15ad1d921182b93185399f5bfef6ebbb4",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "85be1777-49b6-4b0c-b208-7080de6b963e",
+  "usage": {
+    "prompt_tokens": 1108,
+    "completion_tokens": 805,
+    "total_tokens": 1913,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 852
+  },
+  "review_request_id": "9f6386f8-f704-4b76-ba24-71922b1e67a8",
+  "review_usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 69,
+    "total_tokens": 1590,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1521
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T09_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T10_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T10_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T09_019",
+        "title": "卧室窗帘打开比例调整与查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到71%，其他不动。",
+            "reference_text": "好的，已将卧室窗帘打开到71%，其他设备保持不变。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成51%打开。",
+            "reference_text": "好的，已将卧室窗帘打开比例调整为51%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "卧室窗帘当前打开比例为51%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_020",
+        "title": "卧室窗帘打开比例调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到91%，其他不动。",
+            "reference_text": "好的，已将卧室窗帘打开到91%，其他设备保持不变。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成31%打开。",
+            "reference_text": "好的，已将卧室窗帘打开比例调整为31%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T10_004",
+        "title": "书房风扇档位调整与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开书房风扇，调到二档。",
+            "reference_text": "好的，已打开书房风扇并调到二档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把它改成三档。",
+            "reference_text": "好的，已将书房风扇调到三档。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "只关掉它，风速档位保持不变。",
+            "reference_text": "好的，已关掉书房风扇，风速档位保持三档不变。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在打开它，风速还是刚才的档位。",
+            "reference_text": "好的，已重新打开书房风扇，风速仍为三档。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "它最后设置的是几档？只查询。",
+            "reference_text": "书房风扇最后设置的是三档。"
+          }
+        ]
+      },
+      {
+        "case_id": "T10_008",
+        "title": "书房风扇档位调整与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开书房风扇，调到二档。",
+            "reference_text": "好的，已打开书房风扇并调到二档。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "把它改成三档。",
+            "reference_text": "好的，已将书房风扇调到三档。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "只关掉它，风速档位保持不变。",
+            "reference_text": "好的，已关掉书房风扇，风速档位保持三档不变。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "现在打开它，风速还是刚才的档位。",
+            "reference_text": "好的，已重新打开书房风扇，风速仍为三档。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

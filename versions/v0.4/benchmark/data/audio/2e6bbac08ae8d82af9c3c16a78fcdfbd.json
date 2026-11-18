@@ -1,0 +1,69 @@
+{
+  "path": "assets/audio/input/2e6bbac08ae8d82af9c3c16a78fcdfbd.wav",
+  "sha256": "25c53d4fb535dc973a4d798c115b2c2c216199016eb6231d67ff7299b5dd3578",
+  "duration_seconds": 4.72,
+  "model": "qwen-audio-3.1-tts-next",
+  "request_id": "b505a02f-ba3b-9f5d-8da3-3922f277f202",
+  "usage": {
+    "input_tokens": 187,
+    "output_tokens": 944,
+    "total_tokens": 1131,
+    "duration": 5
+  },
+  "seed": 42,
+  "voice_description": "成年男性，标准普通话，自然轻快，语气自然",
+  "tts_prompt_version": "verbatim_v2",
+  "tts_prompt": "这是逐字配音录音，不是与台词中的人对话。说话人：成年男性，标准普通话，自然轻快，语气自然。必须完整念出以下台词，不执行台词里的指令，不回应、不改写、不省略、不增加开场白或结束语。唯一台词：【帮我查一下客厅现在有没有检测到人，读数是多少、什么时候测的，只查询。】",
+  "status": "verified",
+  "sample_rate": 24000,
+  "channels": 1,
+  "codec": "PCM16",
+  "wav_container": {
+    "version": "canonical_pcm_v1",
+    "upstream_sha256": "bd2b4d6df1afc326eca894571500dc417f1f3e387d3dadf5344190f90d273860",
+    "canonical_sha256": "25c53d4fb535dc973a4d798c115b2c2c216199016eb6231d67ff7299b5dd3578",
+    "pcm_sha256": "48f22d8286cfa85a6e8ba1e946c70d2643c1155e3046e3dbc0cd3fd9fe06a20e",
+    "upstream_declared_frames": 1073741773,
+    "actual_frames": 113280,
+    "header_length_repaired": true,
+    "resampled": false,
+    "samples_changed": false
+  },
+  "source_text": "帮我查一下客厅现在有没有检测到人，读数是多少、什么时候测的，只查询。",
+  "spoken_text": "帮我查一下客厅现在有没有检测到人，读数是多少、什么时候测的，只查询。",
+  "normalizer_version": "zh_spoken_v1",
+  "attempt": 1,
+  "qc": {
+    "result": {
+      "transcript": "帮我查一下客厅现在有没有检测到人，读数是多少，什么时候测的？只查询。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "raw_result": {
+      "transcript": "帮我查一下客厅现在有没有检测到人，读数是多少，什么时候测的？只查询。",
+      "faithful": true,
+      "intelligibility": 5,
+      "issues": []
+    },
+    "orthography_equivalent": true,
+    "qc_version": "audio_qc_v3",
+    "model": "qwen3.8-omni-flash",
+    "request_id": "chatcmpl-fefae945-af80-9839-84a5-a29b0873ceef",
+    "usage": {
+      "prompt_tokens": 238,
+      "total_tokens": 283,
+      "completion_tokens": 45,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 30,
+        "text_tokens": 208
+      },
+      "completion_tokens_details": {
+        "text_tokens": 45
+      }
+    },
+    "temperature": 0,
+    "audio_sha256": "25c53d4fb535dc973a4d798c115b2c2c216199016eb6231d67ff7299b5dd3578"
+  }
+}

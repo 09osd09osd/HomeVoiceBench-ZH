@@ -1,0 +1,140 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "batch_size": 12,
+  "adaptive_max_batch_size": 24,
+  "torch": "2.11.0+cu130",
+  "transformers": "4.57.3",
+  "cuda": "13.0",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "seed": 42,
+  "generation": {
+    "do_sample": true,
+    "repetition_penalty": 1.05,
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 50,
+    "subtalker_dosample": true,
+    "subtalker_temperature": 0.9,
+    "subtalker_top_p": 1.0,
+    "subtalker_top_k": 50,
+    "max_new_tokens": 1024
+  },
+  "timing_scope": "offline_batch_inference_not_realtime_latency",
+  "pilot": false,
+  "allocator_cache_policy": "release_unused_after_each_batch",
+  "cuda_allocator_memory_fraction": 0.7,
+  "status": "completed",
+  "tasks": 225,
+  "completed_tasks": 225,
+  "wall_seconds": 468.6720000000205,
+  "batches": [
+    {
+      "offset": 0,
+      "n": 12,
+      "seconds": 7.906000000075437,
+      "peak_gpu_bytes": 3247946752,
+      "reserved_gpu_bytes_before_release": 4404019200,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 12,
+      "n": 12,
+      "seconds": 9.233999999938533,
+      "peak_gpu_bytes": 3683644928,
+      "reserved_gpu_bytes_before_release": 5354029056,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 24,
+      "n": 24,
+      "seconds": 11.327999999979511,
+      "peak_gpu_bytes": 5699511808,
+      "reserved_gpu_bytes_before_release": 9865003008,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 48,
+      "n": 24,
+      "seconds": 15.452999999979511,
+      "peak_gpu_bytes": 7028909568,
+      "reserved_gpu_bytes_before_release": 12937330688,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 72,
+      "n": 24,
+      "seconds": 19.390999999945052,
+      "peak_gpu_bytes": 8151282176,
+      "reserved_gpu_bytes_before_release": 15065939968,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 96,
+      "n": 24,
+      "seconds": 27.594000000040978,
+      "peak_gpu_bytes": 10684532224,
+      "reserved_gpu_bytes_before_release": 12075401216,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 120,
+      "n": 24,
+      "seconds": 29.18799999996554,
+      "peak_gpu_bytes": 10891688448,
+      "reserved_gpu_bytes_before_release": 12314476544,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 144,
+      "n": 24,
+      "seconds": 45.18700000003446,
+      "peak_gpu_bytes": 14632259584,
+      "reserved_gpu_bytes_before_release": 16494100480,
+      "reserved_gpu_bytes_after_release": 2292187136
+    },
+    {
+      "offset": 168,
+      "n": 24,
+      "seconds": 48.75,
+      "peak_gpu_bytes": 14637618688,
+      "reserved_gpu_bytes_before_release": 16523460608,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 192,
+      "n": 23,
+      "seconds": 70.64099999994505,
+      "peak_gpu_bytes": 14125634048,
+      "reserved_gpu_bytes_before_release": 15978201088,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 215,
+      "n": 9,
+      "seconds": 84.39000000001397,
+      "peak_gpu_bytes": 7248062976,
+      "reserved_gpu_bytes_before_release": 17523802112,
+      "reserved_gpu_bytes_after_release": 2290089984
+    },
+    {
+      "offset": 224,
+      "n": 1,
+      "seconds": 99.15600000007544,
+      "peak_gpu_bytes": 2731578368,
+      "reserved_gpu_bytes_before_release": 3676307456,
+      "reserved_gpu_bytes_after_release": 2290089984
+    }
+  ],
+  "final_batch_size": 24,
+  "resource_retries": [],
+  "batch_adjustments": [
+    {
+      "offset": 24,
+      "from": 12,
+      "to": 24,
+      "reason": "two_or_more_successful_batches_and_measured_gpu_headroom",
+      "previous_peak_gpu_bytes": 3683644928
+    }
+  ]
+}

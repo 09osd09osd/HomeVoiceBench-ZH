@@ -1,0 +1,112 @@
+{
+  "source_sha256": "ad6672be007536194c43a09d9c7a7a249ea4309398bf31858f6330b9e4e3e828",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "086b4b00-30a9-46ff-bdc0-2af8c5bf9fd5",
+  "usage": {
+    "prompt_tokens": 735,
+    "completion_tokens": 532,
+    "total_tokens": 1267,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 607
+  },
+  "review_request_id": "2a4edae5-3aba-4749-b099-0790e749d866",
+  "review_usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 69,
+    "total_tokens": 1033,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 964
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C08_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C09_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C09_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C10_101",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C08_101",
+        "title": "书房闷热改善建议",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房有点闷，给我一个简单的改善建议。",
+            "reference_text": "可以开窗通风几分钟，或者把门打开让空气对流；如果室外空气不好，就用风扇促进室内空气循环。"
+          }
+        ]
+      },
+      {
+        "case_id": "C09_101",
+        "title": "家庭周末免费活动推荐",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "假日想在家跟家人玩一会儿，推荐一个不用花钱的活动。",
+            "reference_text": "可以试试家庭故事接龙：每人轮流说一句，一起编一个有趣的故事，不用任何道具，在家就能玩。"
+          }
+        ]
+      },
+      {
+        "case_id": "C09_102",
+        "title": "家庭周末免费活动适配人数与时长",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "假日想在家跟家人玩一会儿，推荐一个不用花钱的活动。",
+            "reference_text": "可以试试家庭故事接龙：每人轮流说一句，一起编一个有趣的故事，不用任何道具，在家就能玩。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "参与的是两个成年人和一个小朋友。",
+            "reference_text": "那可以玩“词语接龙”或“你画我猜”，两个大人和一个小朋友都能参与，小朋友可以画简单的东西让大家猜。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我们只有半小时，不是整个下午。",
+            "reference_text": "半小时的话，可以玩几轮“你画我猜”或者“快速问答”，设定每轮几分钟，时间刚好够用。"
+          }
+        ]
+      },
+      {
+        "case_id": "C10_101",
+        "title": "晚间任务排序",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "今晚要洗杯子和整理背包，帮我排一下先后顺序。",
+            "reference_text": "可以先洗杯子，因为洗完后需要晾干；趁晾杯子的时候整理背包，这样时间利用更合理。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

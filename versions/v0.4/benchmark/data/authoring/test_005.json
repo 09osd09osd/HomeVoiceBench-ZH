@@ -1,0 +1,112 @@
+{
+  "source_sha256": "f80aeabf02e62bc7b0549152f8e01b73a964cc5b80fcd8211d1b7501f1874872",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ebc77723-1c12-4ac9-ad4b-61f3cea461ef",
+  "usage": {
+    "prompt_tokens": 814,
+    "completion_tokens": 514,
+    "total_tokens": 1328,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 686
+  },
+  "review_request_id": "c0b83358-2b4d-4d49-a09d-32f04879dcc6",
+  "review_usage": {
+    "prompt_tokens": 990,
+    "completion_tokens": 69,
+    "total_tokens": 1059,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 990
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T02_013",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_014",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T02_016",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T02_013",
+        "title": "客厅灯支持设置与颜色调节",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯支持哪些设置？可调范围是多少？",
+            "reference_text": "客厅灯支持开关、亮度调节和色温调节。亮度可调范围是1%到100%，色温可调范围是2700K到6500K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它能调颜色吗？只说明一下，别操作。",
+            "reference_text": "客厅灯不支持颜色调节，只能调节亮度和色温。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_014",
+        "title": "客厅空调支持设置与范围",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅空调支持什么设置？可调范围是多少？",
+            "reference_text": "客厅空调支持开关、设定温度、运行模式和风速档位。设定温度范围是16°C到30°C，风速档位有自动、低、中、高四档。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_015",
+        "title": "卧室窗帘支持设置与颜色调节",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "卧室窗帘支持哪些设置？可调范围是多少？",
+            "reference_text": "卧室窗帘支持开关和打开比例调节，打开比例范围是0%到100%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "它支持调颜色吗？只解释，不要尝试。",
+            "reference_text": "卧室窗帘不支持颜色调节，只能调节打开比例。"
+          }
+        ]
+      },
+      {
+        "case_id": "T02_016",
+        "title": "书房风扇支持设置与范围",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房风扇支持什么设置？可调范围是多少？",
+            "reference_text": "书房风扇支持开关和风速档位调节，风速档位有1到5档。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

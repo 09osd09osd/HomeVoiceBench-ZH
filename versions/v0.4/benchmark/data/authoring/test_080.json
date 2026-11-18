@@ -1,0 +1,152 @@
+{
+  "source_sha256": "dc0f88c461cbe5ceb061519f12d0c07a222999c044dffc8ea68d66db93ae2c3f",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b4b773e1-26ca-4516-945e-233904bbb417",
+  "usage": {
+    "prompt_tokens": 1164,
+    "completion_tokens": 649,
+    "total_tokens": 1813,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 908
+  },
+  "review_request_id": "cae863c6-f7f8-45ab-b834-7b3b81dec8e2",
+  "review_usage": {
+    "prompt_tokens": 1657,
+    "completion_tokens": 69,
+    "total_tokens": 1726,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1657
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T23_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T24_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T23_019",
+        "title": "延后并修改收毛巾提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天9点的收阳台毛巾提醒延后半小时，其他提醒别动。",
+            "reference_text": "已把明天9点的收阳台毛巾提醒延后到9点半，其他提醒未改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天10点整。",
+            "reference_text": "已把刚才那条收阳台毛巾提醒改为明天10点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排已列出，未新增任何安排。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_020",
+        "title": "延后并修改整理书包提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天10点的整理书包提醒延后半小时，其他提醒别动。",
+            "reference_text": "已把明天10点的整理书包提醒延后到10点半，其他提醒未改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天11点整。",
+            "reference_text": "已把刚才那条整理书包提醒改为明天11点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_004",
+        "title": "定时关客厅灯并撤销修改",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天7点自动关掉客厅灯。",
+            "reference_text": "已安排明天7点自动关闭客厅灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "已把刚才那条客厅关灯安排改为明天7点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排已列出，未新增任何安排。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "已只取消刚才新增或修改的那条安排，原来的晾衣服提醒保留。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "当前启用的安排已列出，刚才那条客厅关灯安排已取消。"
+          }
+        ]
+      },
+      {
+        "case_id": "T24_008",
+        "title": "定时关卧室灯并撤销修改",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "明天8点自动关掉卧室灯。",
+            "reference_text": "已安排明天8点自动关闭卧室灯。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天8点半。",
+            "reference_text": "已把刚才那条卧室关灯安排改为明天8点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "当前启用的安排已列出，未新增任何安排。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "已只取消刚才新增或修改的那条安排，原来的晾衣服提醒保留。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

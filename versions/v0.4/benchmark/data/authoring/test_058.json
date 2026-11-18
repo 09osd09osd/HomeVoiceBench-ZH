@@ -1,0 +1,122 @@
+{
+  "source_sha256": "b971fe1a868df432fb8b2bf2b53da6a36ad1d6e7033cf7ea88c4b265079dbda2",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "fe74993d-baad-4190-85e3-bb9cd7e0703f",
+  "usage": {
+    "prompt_tokens": 893,
+    "completion_tokens": 596,
+    "total_tokens": 1489,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 637
+  },
+  "review_request_id": "d7984654-1800-4050-bb72-9c90ac375553",
+  "review_usage": {
+    "prompt_tokens": 1137,
+    "completion_tokens": 69,
+    "total_tokens": 1206,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1137
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T17_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T17_015",
+        "title": "查询书房与厨房二氧化碳浓度及读数时效",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下书房的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "书房二氧化碳浓度读数约为850ppm，测量时间约为2分钟前。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度读数约为720ppm，测量时间约为1分钟前。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_016",
+        "title": "查询客厅二氧化碳浓度及读数时效",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅二氧化碳浓度读数约为780ppm，测量时间约为3分钟前。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_017",
+        "title": "查询客厅与厨房二氧化碳浓度并比较",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下客厅的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅二氧化碳浓度读数约为780ppm，测量时间约为3分钟前。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度读数约为720ppm，测量时间约为1分钟前。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "客厅读数约780ppm，厨房约720ppm，客厅比厨房高约60ppm。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_018",
+        "title": "查询卧室与厨房二氧化碳浓度及读数时效",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查一下卧室的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "卧室二氧化碳浓度读数约为900ppm，测量时间约为4分钟前。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度读数约为720ppm，测量时间约为1分钟前。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

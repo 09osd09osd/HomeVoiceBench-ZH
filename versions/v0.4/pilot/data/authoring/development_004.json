@@ -1,0 +1,122 @@
+{
+  "source_sha256": "f9dce4825b626abe9d128592c2e11eaf48328bf5ca3ff463a532717719abe746",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "4d2ebcc0-12a5-4b4c-b887-66d0e510bb88",
+  "usage": {
+    "prompt_tokens": 897,
+    "completion_tokens": 575,
+    "total_tokens": 1472,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 769
+  },
+  "review_request_id": "ac1dd32a-e5ec-4920-8571-dedaea5f011c",
+  "review_usage": {
+    "prompt_tokens": 1158,
+    "completion_tokens": 69,
+    "total_tokens": 1227,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1158
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T12_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T13_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T14_102",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T12_102",
+        "title": "电视与音箱音量",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅电视，音量调到85%。",
+            "reference_text": "客厅电视已打开，音量设为85%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那台设备的音量改成45%，其他设置别动。",
+            "reference_text": "已将电视音量调整为45%，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅电视现在的音量和开关状态，不要调整。",
+            "reference_text": "客厅电视当前处于开启状态，音量为45%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T13_101",
+        "title": "扫地机器人区域与控制",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "让扫地机器人只清扫客厅，不要进入其他房间。",
+            "reference_text": "已设置扫地机器人仅清扫客厅，不进入其他房间。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_101",
+        "title": "多设备联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度均设为85%；如果某一台离线，告诉我具体哪台失败。",
+            "reference_text": "客厅灯和卧室灯均已打开，亮度设为85%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T14_102",
+        "title": "多设备联动与部分失败",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯和卧室灯都打开，亮度均设为85%；如果某一台离线，告诉我具体哪台失败。",
+            "reference_text": "客厅灯和卧室灯均已打开，亮度设为85%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯亮度改成35%，卧室灯先别重试。",
+            "reference_text": "客厅灯亮度已改为35%，卧室灯未重试。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下这两盏灯分别是什么状态。",
+            "reference_text": "客厅灯开启，亮度35%；卧室灯开启，亮度85%。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

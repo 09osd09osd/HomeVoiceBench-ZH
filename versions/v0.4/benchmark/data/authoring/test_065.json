@@ -1,0 +1,122 @@
+{
+  "source_sha256": "fddc44c4db3930b2b415599f49c050069d7cb754d5e6f6136de9649a673a9d5e",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e215dc87-69bf-43c1-9e46-ed562e23bc9d",
+  "usage": {
+    "prompt_tokens": 907,
+    "completion_tokens": 633,
+    "total_tokens": 1540,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 651
+  },
+  "review_request_id": "4572a3c0-e3c3-4cdb-8307-abb113bf87f0",
+  "review_usage": {
+    "prompt_tokens": 1188,
+    "completion_tokens": 69,
+    "total_tokens": 1257,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1188
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T19_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T19_015",
+        "title": "查询书房和厨房是否检测到有人",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房现在检测到有人吗？告诉我读数和测量时间，只查询。",
+            "reference_text": "书房当前检测到有人，读数为有人，测量时间稍后提供。仅查询，未操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房是否检测到有人。",
+            "reference_text": "厨房当前检测到有人，读数为有人。仅查询，未操作设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_016",
+        "title": "查询客厅是否检测到有人",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅现在检测到有人吗？告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅当前检测到有人，读数为有人，测量时间稍后提供。仅查询，未操作设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_017",
+        "title": "查询客厅和厨房是否检测到有人并比较读数",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅现在检测到有人吗？告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅当前检测到有人，读数为有人，测量时间稍后提供。仅查询，未操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房是否检测到有人。",
+            "reference_text": "厨房当前检测到有人，读数为有人。仅查询，未操作设备。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较刚才客厅和厨房的读数，不要调任何设备。",
+            "reference_text": "客厅和厨房都检测到有人，读数相同。未操作任何设备。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_018",
+        "title": "查询卧室和厨房是否检测到有人",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "卧室现在检测到有人吗？告诉我读数和测量时间，只查询。",
+            "reference_text": "卧室当前检测到有人，读数为有人，测量时间稍后提供。仅查询，未操作设备。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房是否检测到有人。",
+            "reference_text": "厨房当前检测到有人，读数为有人。仅查询，未操作设备。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

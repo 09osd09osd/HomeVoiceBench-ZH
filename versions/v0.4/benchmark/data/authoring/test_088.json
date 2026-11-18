@@ -1,0 +1,112 @@
+{
+  "source_sha256": "a8e9f6006036d8c07fc21d8b9f54c2514d9fe3070a9ec7e00ee7f9c8a2744dff",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "bdd60bef-ad4b-457e-ab72-d2afc9cc7139",
+  "usage": {
+    "prompt_tokens": 780,
+    "completion_tokens": 443,
+    "total_tokens": 1223,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 524
+  },
+  "review_request_id": "9794ddde-6adf-411e-af05-aea4c306aae6",
+  "review_usage": {
+    "prompt_tokens": 889,
+    "completion_tokens": 69,
+    "total_tokens": 958,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 889
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T26_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_010",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T26_012",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T26_009",
+        "title": "暂停与继续播放《雨后散步》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅音箱正在放的《雨后散步》暂停一下。",
+            "reference_text": "好的，已暂停客厅音箱播放的《雨后散步》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已继续播放刚才暂停的《雨后散步》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_010",
+        "title": "暂停播放《安静钢琴》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅音箱在放《安静钢琴》，帮我暂停。",
+            "reference_text": "好的，已暂停客厅音箱播放的《安静钢琴》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_011",
+        "title": "暂停与继续播放《小熊找月亮》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "暂停客厅音箱正在播放的《小熊找月亮》。",
+            "reference_text": "好的，已暂停客厅音箱播放的《小熊找月亮》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "好的，已继续播放刚才暂停的《小熊找月亮》。"
+          }
+        ]
+      },
+      {
+        "case_id": "T26_012",
+        "title": "暂停播放《星空小知识》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我把客厅音箱正在放的《星空小知识》暂停。",
+            "reference_text": "好的，已暂停客厅音箱播放的《星空小知识》。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,112 @@
+{
+  "source_sha256": "399ccb3209cd9590ea3bcba8470ce9d583b3568bc0d7c627473a191fd3fe755b",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "7aa20016-3569-42eb-b01f-610a63f27c94",
+  "usage": {
+    "prompt_tokens": 825,
+    "completion_tokens": 386,
+    "total_tokens": 1211,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 697
+  },
+  "review_request_id": "ad0294ab-4c3b-44ad-bcdb-391e20f1078f",
+  "review_usage": {
+    "prompt_tokens": 1042,
+    "completion_tokens": 69,
+    "total_tokens": 1111,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1042
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T07_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T08_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_101",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T07_101",
+        "title": "客厅灯色温上限确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想把客厅灯色温设为9000K，先帮我确认支不支持；如果不支持，就只告诉我范围，灯保持原样别改。",
+            "reference_text": "客厅灯色温不支持9000K，最高只能到6500K，当前设置保持不变。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_102",
+        "title": "客厅灯色温调整与核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想把客厅灯色温设为9000K，先帮我确认支不支持；如果不支持，就只告诉我范围，灯保持原样别改。",
+            "reference_text": "客厅灯色温不支持9000K，最高只能到6500K，当前设置保持不变。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那盏客厅灯的色温改成3500K，其他设置都不要动。",
+            "reference_text": "已将客厅灯色温设为3500K，其他设置未改动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下客厅灯现在的色温和开关状态，不要调整。",
+            "reference_text": "客厅灯当前色温为3500K，处于开启状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T08_101",
+        "title": "客厅空调设定温度",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅空调，并把设定温度调到25摄氏度，其他不动。",
+            "reference_text": "已打开客厅空调，设定温度调整为25摄氏度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_101",
+        "title": "卧室窗帘打开比例",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到85%，其他设备都不要动。",
+            "reference_text": "已将卧室窗帘打开到85%，其他设备未改动。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

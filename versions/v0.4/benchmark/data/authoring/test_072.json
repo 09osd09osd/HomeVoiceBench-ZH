@@ -1,0 +1,122 @@
+{
+  "source_sha256": "0ccfc32d86238900bbb1b248536fcdadbccea6c84dfe7588bd537b52936c1b86",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "34832efe-a7c6-4bc0-9675-0e139a7f1a4e",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 584,
+    "total_tokens": 1482,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 642
+  },
+  "review_request_id": "101a9712-1997-43e1-9ea5-7641188e0847",
+  "review_usage": {
+    "prompt_tokens": 1130,
+    "completion_tokens": 69,
+    "total_tokens": 1199,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1130
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T21_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T21_015",
+        "title": "家庭闹钟设置与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天9点的闹钟，内容是收阳台毛巾。",
+            "reference_text": "好的，我在卧室音箱上设置明天9点的闹钟，提醒你收阳台毛巾。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天9点半。",
+            "reference_text": "好的，我把刚才的闹钟改到明天9点半。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_016",
+        "title": "家庭闹钟设置与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天10点的闹钟，内容是整理书包。",
+            "reference_text": "好的，我在卧室音箱上设置明天10点的闹钟，提醒你整理书包。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_017",
+        "title": "家庭闹钟设置与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天7点的闹钟，内容是带钥匙。",
+            "reference_text": "好的，我在卧室音箱上设置明天7点的闹钟，提醒你带钥匙。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，我把刚才的闹钟改到明天7点半。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "好的，我列出你当前启用的安排，不新增任何内容。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_018",
+        "title": "家庭闹钟设置与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设明天8点的闹钟，内容是给绿萝浇水。",
+            "reference_text": "好的，我在卧室音箱上设置明天8点的闹钟，提醒你给绿萝浇水。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天8点半。",
+            "reference_text": "好的，我把刚才的闹钟改到明天8点半。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

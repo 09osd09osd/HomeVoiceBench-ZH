@@ -1,0 +1,110 @@
+{
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T09_102",
+        "title": "窗帘开合与比例",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到85%，其他不动。",
+            "reference_text": "已把卧室窗帘打开到85%，其他设备未动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成25%打开。",
+            "reference_text": "已将卧室窗帘打开比例改为25%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "卧室窗帘当前打开比例为25%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T10_101",
+        "title": "风扇档位与暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开书房风扇，调到二档。",
+            "reference_text": "已打开书房风扇并调到二档。"
+          }
+        ]
+      },
+      {
+        "case_id": "T11_104",
+        "title": "净化器模式与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅净化器，并把模式设为自动模式。",
+            "reference_text": "已打开客厅净化器，并将模式设为自动模式。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才设备的模式改成自动模式，其他设置不要动。",
+            "reference_text": "已将客厅净化器模式设为自动模式，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅净化器现在的模式和开关，不要调整。",
+            "reference_text": "客厅净化器当前为开启状态，模式为自动模式。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅净化器关掉，保留它的模式设置。",
+            "reference_text": "已关闭客厅净化器，模式设置保留为自动模式。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅净化器的开关，其他设备不要改。",
+            "reference_text": "客厅净化器当前为关闭状态，其他设备未改。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_101",
+        "title": "电视与音箱音量",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅电视，并把音量设为85%。",
+            "reference_text": "已打开客厅电视，并将音量设为85%。"
+          }
+        ]
+      }
+    ]
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T09_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T10_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T11_104",
+        "valid": false,
+        "issues": [
+          "U1用户台词将“mode设为auto模式（sleep=睡眠，manual=手动，auto=自动）”简化为“模式设为自动模式”，丢失了参数名mode及枚举值映射信息",
+          "U2用户台词将“mode改成auto模式（sleep=睡眠，manual=手动，auto=自动）”简化为“模式改成自动模式”，丢失了参数名mode及枚举值映射信息",
+          "U3用户台词将“核对mode和开关”简化为“模式和开关”，丢失参数名mode"
+        ]
+      },
+      {
+        "case_id": "T12_101",
+        "valid": false,
+        "issues": [
+          "U1用户台词将“volume_pct设为85%，指音量”简化为“音量设为85%”，丢失了参数名volume_pct"
+        ]
+      }
+    ]
+  }
+}

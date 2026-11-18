@@ -1,0 +1,142 @@
+{
+  "source_sha256": "c492f72f503ef4f88a3eec8de7aeb5dcdcc844598070110e386301c95a266162",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "cee8ea5b-3b4e-4356-b66e-9510750cba61",
+  "usage": {
+    "prompt_tokens": 1006,
+    "completion_tokens": 645,
+    "total_tokens": 1651,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 750
+  },
+  "review_request_id": "28421f58-c685-47be-b675-3046688ed4cd",
+  "review_usage": {
+    "prompt_tokens": 1272,
+    "completion_tokens": 69,
+    "total_tokens": 1341,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1272
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T25_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T25_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T25_004",
+        "title": "播放《雨后散步》并控制播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《雨后散步》。",
+            "reference_text": "好的，正在客厅音箱为你播放《雨后散步》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才播放的内容。",
+            "reference_text": "已暂停当前播放的内容。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "已继续播放刚才的内容。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "跳到第30秒。",
+            "reference_text": "已跳转到第30秒。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_008",
+        "title": "播放《安静钢琴》并控制播放",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《安静钢琴》。",
+            "reference_text": "好的，正在客厅音箱为你播放《安静钢琴》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才播放的内容。",
+            "reference_text": "已暂停当前播放的内容。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "继续刚才的内容。",
+            "reference_text": "已继续播放刚才的内容。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "跳到第45秒。",
+            "reference_text": "已跳转到第45秒。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在停止这段播放，不要换别的。",
+            "reference_text": "已停止当前播放，没有切换其他内容。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_009",
+        "title": "播放《雨后散步》并暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《雨后散步》。",
+            "reference_text": "好的，正在客厅音箱为你播放《雨后散步》。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "暂停刚才播放的内容。",
+            "reference_text": "已暂停当前播放的内容。"
+          }
+        ]
+      },
+      {
+        "case_id": "T25_010",
+        "title": "播放《安静钢琴》",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在客厅音箱播放《安静钢琴》。",
+            "reference_text": "好的，正在客厅音箱为你播放《安静钢琴》。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

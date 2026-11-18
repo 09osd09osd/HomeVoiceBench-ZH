@@ -1,0 +1,142 @@
+{
+  "source_sha256": "a7a8b7be003c14df514e33dadc20b6ffcb3e71cb6e3b08b3ffa573d71b9ce288",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "ebd212f9-e6bb-418f-9b20-1ee21a904fc4",
+  "usage": {
+    "prompt_tokens": 1029,
+    "completion_tokens": 684,
+    "total_tokens": 1713,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 773
+  },
+  "review_request_id": "a5769af6-ad3d-4538-83c8-e190d83d3314",
+  "review_usage": {
+    "prompt_tokens": 1335,
+    "completion_tokens": 69,
+    "total_tokens": 1404,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1335
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T09_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T09_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T09_004",
+        "title": "卧室窗帘比例调节与查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到20%，其他别动。",
+            "reference_text": "好的，已把卧室窗帘打开到20%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成80%打开。",
+            "reference_text": "好的，已把卧室窗帘打开到80%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "卧室窗帘当前打开比例是80%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只把卧室窗帘完全关上。",
+            "reference_text": "好的，已把卧室窗帘完全关上。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_008",
+        "title": "卧室窗帘比例调节、查询与确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到40%，其他不动。",
+            "reference_text": "好的，已把卧室窗帘打开到40%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成60%打开。",
+            "reference_text": "好的，已把卧室窗帘打开到60%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "卧室窗帘当前打开比例是60%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只把卧室窗帘完全关上。",
+            "reference_text": "好的，已把卧室窗帘完全关上。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再确认一次窗帘开合比例。",
+            "reference_text": "卧室窗帘当前打开比例是0%，已完全关闭。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_009",
+        "title": "卧室窗帘精细比例调节",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到21%，其他不动。",
+            "reference_text": "好的，已把卧室窗帘打开到21%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成81%打开。",
+            "reference_text": "好的，已把卧室窗帘打开到81%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T09_010",
+        "title": "卧室窗帘单次比例设置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到41%，其他不动。",
+            "reference_text": "好的，已把卧室窗帘打开到41%。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

@@ -1,0 +1,127 @@
+{
+  "source_sha256": "5790bb2948bfc4621af8fcff718a6a7f1703f7e7ff4780d0ef081accaa157e61",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "b4a3c667-1f01-4595-b251-964a73d75c40",
+  "usage": {
+    "prompt_tokens": 863,
+    "completion_tokens": 693,
+    "total_tokens": 1556,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 735
+  },
+  "review_request_id": "eb5d53a2-6af0-4f79-8bf7-9275d06dad6a",
+  "review_usage": {
+    "prompt_tokens": 1234,
+    "completion_tokens": 69,
+    "total_tokens": 1303,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1234
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C05_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C06_104",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C07_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C07_102",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C05_101",
+        "title": "家务分工协商",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天比较累，想跟家人商量一下，洗菜和扫地怎么分工比较好？帮我说一句。",
+            "reference_text": "可以说：“我今天有点累，咱们商量下分工吧，比如我来洗菜，你来扫地，或者换着来，行吗？”"
+          }
+        ]
+      },
+      {
+        "case_id": "C06_104",
+        "title": "家庭误会与修复对话",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我刚才对姐姐说话有点急，帮我想一句道歉的话。",
+            "reference_text": "可以说：“姐，刚才我说话有点急，对不起，我不是故意的。”"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只为语气道歉，不代表我同意她的全部意见。",
+            "reference_text": "可以补充：“我为刚才的语气道歉，但有些看法我还是保留自己的意见。”"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "其实是妹妹，不是姐姐。",
+            "reference_text": "可以说：“妹，刚才我说话有点急，对不起，我不是故意的。”"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不要保证以后永远不会有分歧。",
+            "reference_text": "可以这样说：“我为刚才的语气道歉，以后我会注意方式，但咱们有不同想法也正常。”"
+          }
+        ]
+      },
+      {
+        "case_id": "C07_101",
+        "title": "整理收纳与物品取舍",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "桌面有点乱，给我一个五分钟能做完的整理步骤。",
+            "reference_text": "可以先把桌面上的杂物集中到一边，再把不需要的包装和废纸扔进垃圾桶，最后把剩下的东西按常用和不常用分开放好。"
+          }
+        ]
+      },
+      {
+        "case_id": "C07_102",
+        "title": "整理收纳与物品取舍",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "桌面有点乱，给我一个五分钟能做完的整理步骤。",
+            "reference_text": "可以先把桌面上的杂物集中到一边，再把不需要的包装和废纸扔进垃圾桶，最后把剩下的东西按常用和不常用分开放好。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先只整理纸张，其他东西别管。",
+            "reference_text": "好的，那就只把桌上的纸张归拢到一起，按大小或用途叠好，其他物品先不动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我想保留票据，不要建议全扔掉。",
+            "reference_text": "明白，票据都保留，可以单独放进一个文件夹或信封里，只把没用的废纸和包装扔掉。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

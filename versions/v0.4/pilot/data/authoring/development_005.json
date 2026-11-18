@@ -1,0 +1,127 @@
+{
+  "source_sha256": "b75103d068e21a9ef12b689fdc6494002044833b9e0c493509786c0ad536e3a1",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e4074c28-c058-4190-ba7c-59519cd53de7",
+  "usage": {
+    "prompt_tokens": 911,
+    "completion_tokens": 604,
+    "total_tokens": 1515,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 783
+  },
+  "review_request_id": "b739504a-bd86-4130-9fe0-31215637b71e",
+  "review_usage": {
+    "prompt_tokens": 1192,
+    "completion_tokens": 69,
+    "total_tokens": 1261,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1192
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T15_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T16_104",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T17_102",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T15_101",
+        "title": "指代消歧与指令更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把灯打开到80%。",
+            "reference_text": "请问您要打开哪一盏灯？"
+          }
+        ]
+      },
+      {
+        "case_id": "T16_104",
+        "title": "室内温度与湿度查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查询书房的温度和湿度，告诉我读数和测量时间，只查询。",
+            "reference_text": "书房当前温度22.5℃，湿度45%，测量时间为10:30。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查厨房的温度和湿度。",
+            "reference_text": "厨房当前温度24.0℃，湿度50%，测量时间为10:32。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房比书房温度高1.5℃，湿度高5%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能，读数有时效性和传感器范围限制，不能识别人的身份，温度也不是设备设定值。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_101",
+        "title": "空气二氧化碳与读数时效",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查询客厅的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅二氧化碳浓度为650ppm，测量时间为10:35。"
+          }
+        ]
+      },
+      {
+        "case_id": "T17_102",
+        "title": "空气二氧化碳与读数时效",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "查询客厅的二氧化碳浓度，告诉我读数和测量时间，只查询。",
+            "reference_text": "客厅二氧化碳浓度为650ppm，测量时间为10:35。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查厨房的二氧化碳浓度。",
+            "reference_text": "厨房二氧化碳浓度为720ppm，测量时间为10:37。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较刚才两个房间的读数，不要调任何设备。",
+            "reference_text": "厨房比客厅二氧化碳浓度高70ppm。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

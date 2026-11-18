@@ -1,0 +1,112 @@
+{
+  "source_sha256": "bbf4725c3383d385aa659f51220fb1bbd0e9d24593910e2e09fc93e7d2927ec0",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "3eb4e776-0404-4908-b7a8-a0283ec4d5e8",
+  "usage": {
+    "prompt_tokens": 775,
+    "completion_tokens": 479,
+    "total_tokens": 1254,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 647
+  },
+  "review_request_id": "f3720a49-169d-46b3-9efa-634020143c5d",
+  "review_usage": {
+    "prompt_tokens": 951,
+    "completion_tokens": 69,
+    "total_tokens": 1020,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 951
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C17_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C17_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C18_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C19_101",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C17_101",
+        "title": "阅读方向建议",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想开始读一些轻松的故事，给我一个选择方向。",
+            "reference_text": "可以从温馨治愈的短篇故事集开始，篇幅短、压力小，适合轻松入门。"
+          }
+        ]
+      },
+      {
+        "case_id": "C17_102",
+        "title": "校园非恐怖阅读偏好",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我想开始读一些轻松的故事，给我一个选择方向。",
+            "reference_text": "可以从温馨治愈的短篇故事集开始，篇幅短、压力小，适合轻松入门。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我更喜欢校园题材，不喜欢恐怖故事。",
+            "reference_text": "好的，记住您偏好校园题材，并且不要恐怖故事。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "先推荐一种类型就好，不必列书单。",
+            "reference_text": "推荐校园日常轻喜剧类型，轻松有趣，不涉及恐怖元素。"
+          }
+        ]
+      },
+      {
+        "case_id": "C18_101",
+        "title": "吊兰叶子发黄观察",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我家吊兰有一片叶子发黄，可以先观察什么？",
+            "reference_text": "可以先观察浇水频率和盆土干湿，以及光照是否过强或过弱，不要仅凭一片黄叶就确定病因。"
+          }
+        ]
+      },
+      {
+        "case_id": "C19_101",
+        "title": "位置感知边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "你现在能看到我坐在哪里吗？",
+            "reference_text": "我无法看到您，因为没有收到现场图像，也不能通过传感器确定您的具体位置。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

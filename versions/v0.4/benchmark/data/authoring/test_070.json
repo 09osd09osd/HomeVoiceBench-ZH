@@ -1,0 +1,142 @@
+{
+  "source_sha256": "d50b9c120c82cbf1c130ad6436548215713d00d0c1d324c627b15b5d3c5167b2",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "657eb21a-427a-4650-9c53-21c14ca2fc2f",
+  "usage": {
+    "prompt_tokens": 1086,
+    "completion_tokens": 885,
+    "total_tokens": 1971,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 830
+  },
+  "review_request_id": "46a39afa-99d4-4be9-a331-b8fe070c6e88",
+  "review_usage": {
+    "prompt_tokens": 1591,
+    "completion_tokens": 69,
+    "total_tokens": 1660,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1591
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T21_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T21_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T21_004",
+        "title": "卧室音箱闹钟设置与更正",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设一个明天7点的闹钟，内容是带钥匙。",
+            "reference_text": "好的，已尝试在卧室音箱设置明天7点的闹钟，内容为带钥匙。请确认是否设置成功。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已尝试将刚才那条闹钟改为明天7点半。请确认是否修改成功。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "好的，正在为您列出当前启用的安排，不会新增任何内容。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已尝试只取消刚才新增或修改的那条闹钟，原来的晾衣服提醒保留。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_008",
+        "title": "卧室音箱闹钟设置与更正及确认",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设一个明天8点的闹钟，内容是给绿萝浇水。",
+            "reference_text": "好的，已尝试在卧室音箱设置明天8点的闹钟，内容为给绿萝浇水。请确认是否设置成功。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天8点半。",
+            "reference_text": "好的，已尝试将刚才那条闹钟改为明天8点半。请确认是否修改成功。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "好的，正在为您列出当前启用的安排，不会新增任何内容。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "只取消刚才新增或修改的那条，原来的晾衣服提醒留着。",
+            "reference_text": "好的，已尝试只取消刚才新增或修改的那条闹钟，原来的晾衣服提醒保留。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "确认现在启用的还剩什么，以及刚才那条是否已取消。",
+            "reference_text": "好的，正在为您确认当前启用的安排，并核实刚才那条闹钟是否已取消。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_009",
+        "title": "卧室音箱闹钟设置与更正简化版",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设一个明天7点的闹钟，内容是带钥匙。",
+            "reference_text": "好的，已尝试在卧室音箱设置明天7点的闹钟，内容为带钥匙。请确认是否设置成功。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天7点半。",
+            "reference_text": "好的，已尝试将刚才那条闹钟改为明天7点半。请确认是否修改成功。"
+          }
+        ]
+      },
+      {
+        "case_id": "T21_010",
+        "title": "卧室音箱闹钟设置",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "在卧室音箱设一个明天8点的闹钟，内容是给绿萝浇水。",
+            "reference_text": "好的，已尝试在卧室音箱设置明天8点的闹钟，内容为给绿萝浇水。请确认是否设置成功。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

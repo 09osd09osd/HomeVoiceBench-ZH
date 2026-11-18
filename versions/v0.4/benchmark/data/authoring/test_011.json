@@ -1,0 +1,112 @@
+{
+  "source_sha256": "21b947078f97402dd9c86b1d51f6b7141456dca0c9934373195635866fe58168",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "2e18b121-dba7-4c1c-b383-f2b921decd6d",
+  "usage": {
+    "prompt_tokens": 804,
+    "completion_tokens": 436,
+    "total_tokens": 1240,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 676
+  },
+  "review_request_id": "1d4328a5-906c-42f3-8394-1636cf4ec523",
+  "review_usage": {
+    "prompt_tokens": 904,
+    "completion_tokens": 69,
+    "total_tokens": 973,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 904
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T04_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T04_010",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T04_011",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T04_012",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T04_009",
+        "title": "客厅灯亮度修改权限与查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我能改客厅灯的亮度吗？先核对权限。",
+            "reference_text": "好的，我先核对权限。当前你的账号没有修改客厅灯亮度的权限。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那请告诉我客厅灯现在的亮度，只查询。",
+            "reference_text": "客厅灯当前亮度为60%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T04_010",
+        "title": "卧室灯亮度修改权限核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我能改卧室灯的亮度吗？先核对权限。",
+            "reference_text": "已核对权限，你可以修改卧室灯的亮度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T04_011",
+        "title": "书房灯亮度修改权限与查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我能改书房灯的亮度吗？先核对权限。",
+            "reference_text": "已核对权限，你可以修改书房灯的亮度。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "那请告诉我书房灯现在的亮度，只查询。",
+            "reference_text": "书房灯当前亮度为45%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T04_012",
+        "title": "客厅灯亮度修改权限核对",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我能改客厅灯的亮度吗？先核对权限。",
+            "reference_text": "已核对权限，你可以修改客厅灯的亮度。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

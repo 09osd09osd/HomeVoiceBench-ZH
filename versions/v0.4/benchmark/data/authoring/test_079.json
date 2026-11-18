@@ -1,0 +1,122 @@
+{
+  "source_sha256": "8f78dd1ec526d480dfdc6fc855d3f887761c948a0d78bfad272fff197dbf2839",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a75693df-d50a-4cb0-aff5-2ae2ab68e212",
+  "usage": {
+    "prompt_tokens": 913,
+    "completion_tokens": 630,
+    "total_tokens": 1543,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 657
+  },
+  "review_request_id": "de271b32-3b51-4e3c-b550-96f6324613d3",
+  "review_usage": {
+    "prompt_tokens": 1191,
+    "completion_tokens": 69,
+    "total_tokens": 1260,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1191
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T23_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T23_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T23_015",
+        "title": "延后收阳台毛巾提醒并修改时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天9点的收阳台毛巾提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已将明天9点的收阳台毛巾提醒延后到9点半，其他提醒未改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天10点整。",
+            "reference_text": "好的，已将刚才那条收阳台毛巾提醒改为明天10点整。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_016",
+        "title": "延后整理书包提醒",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天10点的整理书包提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已将明天10点的整理书包提醒延后到10点半，其他提醒未改动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_017",
+        "title": "延后带钥匙提醒并修改时间及列出安排",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天7点的带钥匙提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已将明天7点的带钥匙提醒延后到7点半，其他提醒未改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天8点整。",
+            "reference_text": "好的，已将刚才那条带钥匙提醒改为明天8点整。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "列一下我当前启用的安排，别新增。",
+            "reference_text": "您当前启用的安排有：明天8点的带钥匙提醒，以及……（其他安排）。未新增任何安排。"
+          }
+        ]
+      },
+      {
+        "case_id": "T23_018",
+        "title": "延后给绿萝浇水提醒并修改时间",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把明天8点的给绿萝浇水提醒延后半小时，其他提醒别动。",
+            "reference_text": "好的，已将明天8点的给绿萝浇水提醒延后到8点半，其他提醒未改动。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那条安排改为明天9点整。",
+            "reference_text": "好的，已将刚才那条给绿萝浇水提醒改为明天9点整。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

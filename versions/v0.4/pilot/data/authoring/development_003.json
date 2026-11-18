@@ -1,0 +1,132 @@
+{
+  "source_sha256": "ffe35f9db2bab11bc8d565c4a5e9d5b0930711fba778d4ee204e43c5574ccbd9",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6679a633-139b-4536-9e52-46639671a819",
+  "usage": {
+    "prompt_tokens": 1201,
+    "completion_tokens": 657,
+    "total_tokens": 1858,
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 305
+  },
+  "review_request_id": "95b3ac3d-c790-418d-86d1-e7ab4ca40535",
+  "review_usage": {
+    "prompt_tokens": 1293,
+    "completion_tokens": 69,
+    "total_tokens": 1362,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 653
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T09_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T10_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T11_104",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_101",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T09_102",
+        "title": "窗帘开合与比例",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室窗帘打开到85%，其他不动。",
+            "reference_text": "好的，已将卧室窗帘打开至85%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "刚才那个改成25%打开。",
+            "reference_text": "已将卧室窗帘开合比例调整为25%。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "查一下它现在打开了多少。",
+            "reference_text": "当前卧室窗帘打开比例为25%。"
+          }
+        ]
+      },
+      {
+        "case_id": "T10_101",
+        "title": "风扇档位与暂停",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "打开书房风扇，调到二档。",
+            "reference_text": "好的，已打开书房风扇并调到二档。"
+          }
+        ]
+      },
+      {
+        "case_id": "T11_104",
+        "title": "净化器模式与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅净化器，并把mode设为auto模式（sleep=睡眠，manual=手动，auto=自动）。",
+            "reference_text": "好的，已打开客厅净化器，并将mode设为auto模式。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才设备的mode改成auto模式（sleep=睡眠，manual=手动，auto=自动），其他设置不要动。",
+            "reference_text": "已将客厅净化器的mode改为auto模式，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅净化器现在的mode和开关，不要调整。",
+            "reference_text": "客厅净化器当前mode为auto模式，开关状态为打开。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅净化器关掉，保留它的mode设置。",
+            "reference_text": "已关闭客厅净化器，mode设置保留不变。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅净化器的开关，其他设备不要改。",
+            "reference_text": "客厅净化器当前开关状态为关闭。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_101",
+        "title": "电视与音箱音量",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅电视，并把volume_pct设为85%，指音量。",
+            "reference_text": "好的，已打开客厅电视，并将volume_pct设为85%。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 2
+}

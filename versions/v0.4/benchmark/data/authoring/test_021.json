@@ -1,0 +1,142 @@
+{
+  "source_sha256": "9099f6ab3b8778d37efd36e843a49cc0678d0b85fd443f892b10fd6be0e1510c",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d66e930a-db46-4b25-86e4-6d2abe5b6216",
+  "usage": {
+    "prompt_tokens": 1124,
+    "completion_tokens": 585,
+    "total_tokens": 1709,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 868
+  },
+  "review_request_id": "68d00e5d-d086-4376-98e9-7277c688fa5a",
+  "review_usage": {
+    "prompt_tokens": 1541,
+    "completion_tokens": 69,
+    "total_tokens": 1610,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1541
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T07_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T07_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T07_004",
+        "title": "客厅灯色温与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅灯，把它的色温设成2700K。",
+            "reference_text": "已只打开客厅灯，色温设为2700K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯的色温改成5000K，其他设置别动。",
+            "reference_text": "已只把客厅灯色温改为5000K，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅灯现在的色温和开关状态，不要调整。",
+            "reference_text": "客厅灯当前为开，色温5000K，未做调整。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅灯关掉，色温设置保留。",
+            "reference_text": "已关闭客厅灯，色温设置保留。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_008",
+        "title": "卧室灯色温与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开卧室灯，把色温设成3500K。",
+            "reference_text": "已只打开卧室灯，色温设为3500K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把卧室灯的色温改成4500K，其他设置不要动。",
+            "reference_text": "已只把卧室灯色温改为4500K，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下卧室灯现在的色温和开关，不要调整。",
+            "reference_text": "卧室灯当前为开，色温4500K，未做调整。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把卧室灯关掉，保留它的色温设置。",
+            "reference_text": "已关闭卧室灯，色温设置保留。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下卧室灯的开关，其他设备不要改。",
+            "reference_text": "卧室灯当前为关，其他设备未改。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_009",
+        "title": "客厅灯色温调整",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅灯，并把色温调到2700K。",
+            "reference_text": "已只打开客厅灯，色温设为2700K。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把客厅灯的色温改成5000K，其他设置不要动。",
+            "reference_text": "已只把客厅灯色温改为5000K，其他设置未动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T07_010",
+        "title": "卧室灯色温开启",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开卧室灯，把色温设成3500K。",
+            "reference_text": "已只打开卧室灯，色温设为3500K。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

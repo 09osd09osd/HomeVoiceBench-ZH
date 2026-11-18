@@ -1,0 +1,42 @@
+{
+  "system": "qwen35_4b",
+  "probes": [
+    {
+      "workers": 4,
+      "wall_seconds": 6.625,
+      "cases": [
+        "T01_101",
+        "T02_101",
+        "T01_103",
+        "T02_102",
+        "C01_101",
+        "C01_103"
+      ],
+      "infrastructure_errors": 0,
+      "execution_failures": 0,
+      "model_calls": 15,
+      "tool_calls": 3,
+      "cached_speech_caveat": false
+    },
+    {
+      "workers": 8,
+      "wall_seconds": 7.563000000081956,
+      "cases": [
+        "T01_101",
+        "T02_101",
+        "T01_103",
+        "T02_102",
+        "C01_101",
+        "C01_103"
+      ],
+      "infrastructure_errors": 0,
+      "execution_failures": 0,
+      "model_calls": 15,
+      "tool_calls": 3,
+      "cached_speech_caveat": false
+    }
+  ],
+  "selected_workers": 4,
+  "speed_ratio_4_over_8": 0.8759751421298702,
+  "scope": "offline pipeline throughput; same frozen six-case set, small diagnostic sample. Edge second probe can reuse speech WAV; this ratio is not native end-to-end speedup."
+}

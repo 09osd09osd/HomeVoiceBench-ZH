@@ -1,0 +1,122 @@
+{
+  "source_sha256": "7763c091d5a9b6706e674157473adc765dcdb3bd7b7099e2d2cfb9390e628bdf",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "d27dac5c-cdaa-4b8a-b019-47841b6c9709",
+  "usage": {
+    "prompt_tokens": 875,
+    "completion_tokens": 527,
+    "total_tokens": 1402,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 747
+  },
+  "review_request_id": "04cdd68b-5f76-4ecb-85f9-b51886e31d3a",
+  "review_usage": {
+    "prompt_tokens": 1050,
+    "completion_tokens": 69,
+    "total_tokens": 1119,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1050
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T03_015",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_016",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T03_018",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T03_015",
+        "title": "书房灯与卧室窗帘状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "好的，我查一下书房灯的状态。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "好的，我查一下卧室窗帘的打开比例。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_016",
+        "title": "客厅灯状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "好的，我查一下客厅灯的状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_017",
+        "title": "客厅灯、卧室窗帘与空调温度查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "客厅灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "好的，我查一下客厅灯的状态。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "好的，我查一下卧室窗帘的打开比例。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "客厅空调的设定温度是多少？",
+            "reference_text": "好的，我查一下客厅空调的设定温度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T03_018",
+        "title": "卧室灯与卧室窗帘状态查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "卧室灯现在开着吗？亮度是多少？只查状态。",
+            "reference_text": "好的，我查一下卧室灯的状态。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下卧室窗帘开了多少。",
+            "reference_text": "好的，我查一下卧室窗帘的打开比例。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

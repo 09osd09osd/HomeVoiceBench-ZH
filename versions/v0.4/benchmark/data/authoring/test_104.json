@@ -1,0 +1,132 @@
+{
+  "source_sha256": "7742fd739ba5e5ff65ab285486352c1163368168b86735f62746156d3fe98b3a",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "6244863f-ef40-4229-ab56-6606772c9511",
+  "usage": {
+    "prompt_tokens": 1030,
+    "completion_tokens": 619,
+    "total_tokens": 1649,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 774
+  },
+  "review_request_id": "914d61b7-d2ea-4ac5-9b56-7a569edfc71b",
+  "review_usage": {
+    "prompt_tokens": 1469,
+    "completion_tokens": 69,
+    "total_tokens": 1538,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1469
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T30_017",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_018",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_020",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T30_017",
+        "title": "客厅灯调至31%并取消",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到31%，记得告诉我执行得怎么样。",
+            "reference_text": "已尝试把客厅灯调到31%，正在确认执行结果。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个执行任务；要是已经完成就告诉我，别自动再关灯。",
+            "reference_text": "已处理取消请求：若任务尚未完成则取消；若已完成，我不会自动关灯，并会告知你。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下任务状态，还有这盏客厅灯现在的实际状态。",
+            "reference_text": "任务状态和客厅灯实际状态需以查询结果为准：请确认任务是否已取消或完成，以及客厅灯当前亮度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_018",
+        "title": "卧室灯调至51%并取消",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把卧室灯打开到51%，记得告诉我执行得怎么样。",
+            "reference_text": "已尝试把卧室灯调到51%，正在确认执行结果。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个执行任务；要是已经完成就告诉我，别自动再关灯。",
+            "reference_text": "已处理取消请求：若任务尚未完成则取消；若已完成，我不会自动关灯，并会告知你。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_019",
+        "title": "书房灯调至71%并取消",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把书房灯打开到71%，记得告诉我执行得怎么样。",
+            "reference_text": "已尝试把书房灯调到71%，正在确认执行结果。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个执行任务；要是已经完成就告诉我，别自动再关灯。",
+            "reference_text": "已处理取消请求：若任务尚未完成则取消；若已完成，我不会自动关灯，并会告知你。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "帮我核对一下任务状态，还有这盏书房灯现在的实际状态。",
+            "reference_text": "任务状态和书房灯实际状态需以查询结果为准：请确认任务是否已取消或完成，以及书房灯当前亮度。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_020",
+        "title": "客厅灯调至91%并取消",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到91%，记得告诉我执行得怎么样。",
+            "reference_text": "已尝试把客厅灯调到91%，正在确认执行结果。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "我改主意了，取消刚才那个执行任务；要是已经完成就告诉我，别自动再关灯。",
+            "reference_text": "已处理取消请求：若任务尚未完成则取消；若已完成，我不会自动关灯，并会告知你。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

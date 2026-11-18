@@ -1,0 +1,152 @@
+{
+  "source_sha256": "b359bb29d895151b5be8a45be937366de23782689e256107911f0f612e950130",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "85196882-23eb-45d6-a157-5f46ee20da57",
+  "usage": {
+    "prompt_tokens": 1077,
+    "completion_tokens": 944,
+    "total_tokens": 2021,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 821
+  },
+  "review_request_id": "19a36a00-aed2-4bf8-8758-6f84a3b0f743",
+  "review_usage": {
+    "prompt_tokens": 1629,
+    "completion_tokens": 69,
+    "total_tokens": 1698,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1629
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C05_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C05_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C06_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C06_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C05_019",
+        "title": "商量收玩具和叠衣服的分工",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天比较累，想跟家人商量一下收玩具和叠衣服的分工，帮我说一句吧。",
+            "reference_text": "我今天有点累，想和你商量下收玩具和叠衣服的分工，可以吗？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "语气温和些，不要责怪对方。",
+            "reference_text": "我今天有点累，想和你商量下收玩具和叠衣服的分工，我们一起看看怎么分比较合适，好吗？"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我愿意叠衣服，想请对方收玩具。",
+            "reference_text": "我今天有点累，想和你商量下，我来叠衣服，你收玩具，可以吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C05_020",
+        "title": "商量扫地和擦桌子的分工",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天比较累，想跟家人商量扫地和擦桌子的分工，帮我说一句吧。",
+            "reference_text": "我今天有点累，想和你商量下扫地和擦桌子的分工，可以吗？"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "语气温和些，不要责怪对方。",
+            "reference_text": "我今天有点累，想和你商量下扫地和擦桌子的分工，我们一起看看怎么分比较合适，好吗？"
+          }
+        ]
+      },
+      {
+        "case_id": "C06_004",
+        "title": "向妹妹为语气道歉并保留意见边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我刚才对姐姐说话有点急，帮我想一句道歉的话。",
+            "reference_text": "刚才我说话有点急，对不起，语气不太好。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只为语气道歉，不代表我同意她的全部意见。",
+            "reference_text": "刚才我说话有点急，对不起，语气不太好，但我还是保留我的看法。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "其实是妹妹，不是姐姐。",
+            "reference_text": "刚才我对妹妹说话有点急，对不起，语气不太好，但我还是保留我的看法。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不要保证以后永远不会有分歧。",
+            "reference_text": "刚才我对妹妹说话有点急，对不起，语气不太好，但我还是保留我的看法，以后有分歧也正常。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "现在给我最终那句话。",
+            "reference_text": "妹妹，刚才我说话有点急，对不起，语气不太好，但我还是保留我的看法。"
+          }
+        ]
+      },
+      {
+        "case_id": "C06_008",
+        "title": "向弟弟为语气道歉并保留意见边界",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我刚才对哥哥说话有点急，帮我想一句道歉的话。",
+            "reference_text": "刚才我说话有点急，对不起，语气不太好。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只为语气道歉，不代表我同意她的全部意见。",
+            "reference_text": "刚才我说话有点急，对不起，语气不太好，但我还是保留我的看法。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "其实是弟弟，不是哥哥。",
+            "reference_text": "刚才我对弟弟说话有点急，对不起，语气不太好，但我还是保留我的看法。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不要保证以后永远不会有分歧。",
+            "reference_text": "刚才我对弟弟说话有点急，对不起，语气不太好，但我还是保留我的看法，以后有分歧也正常。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

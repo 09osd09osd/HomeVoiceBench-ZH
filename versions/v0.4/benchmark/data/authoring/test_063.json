@@ -1,0 +1,142 @@
+{
+  "source_sha256": "543790e9603e22610bbf8077bbc29677ae74adab2db9818d1d75bc0adbf30315",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "71a7cbc1-2d56-407c-a36f-33130e066d8f",
+  "usage": {
+    "prompt_tokens": 1092,
+    "completion_tokens": 878,
+    "total_tokens": 1970,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 836
+  },
+  "review_request_id": "df922df1-e6e0-4103-ad4e-1c49845fd323",
+  "review_usage": {
+    "prompt_tokens": 1590,
+    "completion_tokens": 69,
+    "total_tokens": 1659,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1590
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T19_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_008",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_009",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T19_010",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T19_004",
+        "title": "客厅与厨房在场检测查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下客厅现在有没有检测到人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "客厅当前检测到有人，读数为有人，测量时间是今天14:30。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房现在有没有检测到人。",
+            "reference_text": "厨房当前未检测到有人，读数为无人，测量时间是今天14:32。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才客厅和厨房的读数，别动任何设备。",
+            "reference_text": "客厅检测到有人，厨房未检测到有人；客厅测量时间14:30，厨房测量时间14:32。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。读数有时效性，传感器覆盖范围有限，且只能判断有无人员，无法识别身份。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_008",
+        "title": "卧室与厨房在场检测查询及复测",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下卧室现在有没有检测到人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "卧室当前检测到有人，读数为有人，测量时间是今天15:10。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房现在有没有检测到人。",
+            "reference_text": "厨房当前未检测到有人，读数为无人，测量时间是今天15:12。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "比较一下刚才卧室和厨房的读数，别动任何设备。",
+            "reference_text": "卧室检测到有人，厨房未检测到有人；卧室测量时间15:10，厨房测量时间15:12。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "这些读数能说明现在现场的全部情况吗？",
+            "reference_text": "不能完全说明。读数有时效性，传感器覆盖范围有限，且只能判断有无人员，无法识别身份。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "最后再查一下卧室的同一指标。",
+            "reference_text": "卧室当前检测到有人，读数为有人，测量时间是今天15:15。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_009",
+        "title": "客厅与厨房在场检测查询（简版）",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下客厅现在有没有检测到人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "客厅当前检测到有人，读数为有人，测量时间是今天16:00。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "再查一下厨房现在有没有检测到人。",
+            "reference_text": "厨房当前未检测到有人，读数为无人，测量时间是今天16:02。"
+          }
+        ]
+      },
+      {
+        "case_id": "T19_010",
+        "title": "卧室在场检测查询",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "帮我查一下卧室现在有没有检测到人，告诉我读数和测量时间，只查询就行。",
+            "reference_text": "卧室当前检测到有人，读数为有人，测量时间是今天16:20。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

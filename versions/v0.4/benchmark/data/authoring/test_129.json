@@ -1,0 +1,152 @@
+{
+  "source_sha256": "57e00b4c4e2d086631174b28e20e9bf1ffa8493f7b42527e337ac76cc656f6fb",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "e6856a41-0bb0-4e51-9c30-08e5b5cb0446",
+  "usage": {
+    "prompt_tokens": 1061,
+    "completion_tokens": 1078,
+    "total_tokens": 2139,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 805
+  },
+  "review_request_id": "3bd6d8d1-8d08-4ae4-a254-ca5d827ae2ad",
+  "review_usage": {
+    "prompt_tokens": 1745,
+    "completion_tokens": 69,
+    "total_tokens": 1814,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1745
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "C07_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C07_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C08_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C08_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "C07_019",
+        "title": "五分钟桌面整理与信件取舍",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "桌面有点乱，给我一个五分钟能做完的整理步骤。",
+            "reference_text": "先把桌面所有物品集中到一边，再按“保留、待定、丢弃”分成三堆，最后把保留的物品放回固定位置。全程五分钟，不需要买新收纳工具。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先只整理信件，其他东西别管。",
+            "reference_text": "好，只整理信件：把桌面上的信件全部收拢，按需要保留和可以丢弃分成两摞，其他物品先不动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我想保留明信片，不要建议全扔掉。",
+            "reference_text": "明白，明信片单独保留，不丢弃；只把不需要的信件处理掉，明信片可以放回固定位置。"
+          }
+        ]
+      },
+      {
+        "case_id": "C07_020",
+        "title": "五分钟桌面整理与卡片限定",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "桌面有点乱，给我一个五分钟能做完的整理步骤。",
+            "reference_text": "先把桌面所有物品集中到一边，再按“保留、待定、丢弃”分成三堆，最后把保留的物品放回固定位置。全程五分钟，不需要买新收纳工具。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "先只整理卡片，其他东西别管。",
+            "reference_text": "好，只整理卡片：把桌面上的卡片全部收拢，按需要保留和可以丢弃分成两摞，其他物品先不动。"
+          }
+        ]
+      },
+      {
+        "case_id": "C08_004",
+        "title": "卧室闷热改善建议（不控制设备）",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "卧室有点闷，给我一个简单的改善建议。",
+            "reference_text": "可以先把卧室门打开，让空气对流一会儿；如果室内外温差不大，也可以把风扇对着墙角吹，帮助空气循环。我不知道你房间现在的温湿度，所以先不给具体读数。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "窗外有施工噪声，我现在不想开窗。",
+            "reference_text": "明白，不开窗。那可以先把卧室门打开，形成室内空气对流；或者用风扇对着墙角吹，促进空气循环。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我只是在问建议，先不要控制任何设备。",
+            "reference_text": "好的，我只给建议，不操作任何设备。你可以自己决定要不要开门或开风扇。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不用推荐购买新东西。",
+            "reference_text": "没问题，不推荐购买新东西。就用现有的门和风扇来改善空气流通。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "帮我选一个现在能做的小办法。",
+            "reference_text": "建议你现在先把卧室门打开，保持空气对流；如果觉得不够，再把风扇对着墙角吹，帮助室内空气循环。"
+          }
+        ]
+      },
+      {
+        "case_id": "C08_008",
+        "title": "书房闷热改善建议（不控制设备）",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "书房有点闷，给我一个简单的改善建议。",
+            "reference_text": "可以先把书房门打开，让空气对流一会儿；如果室内外温差不大，也可以把风扇对着墙角吹，帮助空气循环。我不知道你房间现在的温湿度，所以先不给具体读数。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "窗外有施工噪声，我现在不想开窗。",
+            "reference_text": "明白，不开窗。那可以先把书房门打开，形成室内空气对流；或者用风扇对着墙角吹，促进空气循环。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "我只是在问建议，先不要控制任何设备。",
+            "reference_text": "好的，我只给建议，不操作任何设备。你可以自己决定要不要开门或开风扇。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "不用推荐购买新东西。",
+            "reference_text": "没问题，不推荐购买新东西。就用现有的门和风扇来改善空气流通。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

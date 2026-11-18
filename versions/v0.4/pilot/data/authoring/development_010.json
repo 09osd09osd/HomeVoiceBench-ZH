@@ -1,0 +1,132 @@
+{
+  "source_sha256": "2f7ec71d498c392fc99c1b643e37824e450234f360d3ce4238170274782be803",
+  "prompt_sha256": "65a5fcf97a1c105e19b6abfeb6ac1e04ce6e5c5773b047a87d8bed59edc15e78",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "a00f6d2e-c390-42ba-9999-ac662c55531e",
+  "usage": {
+    "prompt_tokens": 915,
+    "completion_tokens": 662,
+    "total_tokens": 1577,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 787
+  },
+  "review_request_id": "a764c95b-e587-4484-9f0d-f7cc5590d143",
+  "review_usage": {
+    "prompt_tokens": 1246,
+    "completion_tokens": 69,
+    "total_tokens": 1315,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1246
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T29_102",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T30_101",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C01_104",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "C02_101",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T29_102",
+        "title": "异步执行与状态追踪",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到85%；如果返回处理中，请准确说当前状态。",
+            "reference_text": "好的，正在为您打开客厅灯到85%。当前状态：处理中。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "查一下刚才那个任务现在完成了吗？",
+            "reference_text": "您刚才的任务（客厅灯打开到85%）目前仍在处理中，尚未完成。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "重新核对实际灯光状态。",
+            "reference_text": "已重新核对：客厅灯当前亮度为85%，状态为已开启。"
+          }
+        ]
+      },
+      {
+        "case_id": "T30_101",
+        "title": "异步取消与不可回滚",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "把客厅灯打开到85%，注意报告执行状态。",
+            "reference_text": "好的，正在为您打开客厅灯到85%。当前状态：处理中。"
+          }
+        ]
+      },
+      {
+        "case_id": "C01_104",
+        "title": "回家后的日常分享",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我今天把一直拖着的书桌收拾好了，想跟你分享一下。",
+            "reference_text": "真为你高兴！收拾好书桌一定很有成就感吧。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "最开心的是终于找到了小时候的照片。",
+            "reference_text": "找到小时候的照片，那种惊喜一定特别美好。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "不是毕业照，是小时候跟家人的合照。",
+            "reference_text": "原来是童年时和家人的合照，那一定很珍贵。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "我只想聊聊这些回忆，先不要给整理建议。",
+            "reference_text": "明白，我就陪你聊聊这些回忆，不提整理建议。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "用一句温暖的话回应我今天的小成就。",
+            "reference_text": "收拾好书桌又找回珍贵回忆，今天真是充实又温暖的一天。"
+          }
+        ]
+      },
+      {
+        "case_id": "C02_101",
+        "title": "晨间和睡前轻松陪聊",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "我准备午睡了，跟我说两句轻松的话吧。",
+            "reference_text": "午睡时间到啦，放松心情，好好休息吧。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

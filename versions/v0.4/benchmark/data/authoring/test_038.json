@@ -1,0 +1,152 @@
+{
+  "source_sha256": "8ad46abd8cf3b438529c97085a406f18bb70a64beaae4a203adf43b50c0b4217",
+  "prompt_sha256": "68c75b42630705c6d9608caa883964edb54a91a0e15bcdff64ec9ce27ac859a2",
+  "provider": "DeepSeek official",
+  "requested_model": "deepseek-v4.1-flash",
+  "returned_model": "deepseek-flash",
+  "request_id": "f348cc9a-5691-4498-801c-ecb8b333e248",
+  "usage": {
+    "prompt_tokens": 1182,
+    "completion_tokens": 640,
+    "total_tokens": 1822,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 926
+  },
+  "review_request_id": "189d060f-848f-4243-926b-af7064214dad",
+  "review_usage": {
+    "prompt_tokens": 1662,
+    "completion_tokens": 69,
+    "total_tokens": 1731,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1662
+  },
+  "review": {
+    "cases": [
+      {
+        "case_id": "T11_019",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T11_020",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_004",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "case_id": "T12_008",
+        "valid": true,
+        "issues": []
+      }
+    ]
+  },
+  "generated": {
+    "cases": [
+      {
+        "case_id": "T11_019",
+        "title": "客厅净化器模式与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅净化器，把运行模式设为自动模式。",
+            "reference_text": "已打开客厅净化器，运行模式设为自动模式。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那台净化器的运行模式改成自动模式，其他设置别动。",
+            "reference_text": "已将刚才那台净化器的运行模式改为自动模式，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅净化器现在的运行模式和开关，不要调整。",
+            "reference_text": "客厅净化器当前处于开启状态，运行模式为自动模式。"
+          }
+        ]
+      },
+      {
+        "case_id": "T11_020",
+        "title": "客厅净化器模式与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅净化器，把运行模式设为睡眠模式。",
+            "reference_text": "已打开客厅净化器，运行模式设为睡眠模式。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那台净化器的运行模式改成自动模式，其他设置别动。",
+            "reference_text": "已将刚才那台净化器的运行模式改为自动模式，其他设置未动。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_004",
+        "title": "客厅音箱音量与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅音箱，把音量设成20%。",
+            "reference_text": "已打开客厅音箱，音量设为20%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那台音箱的音量改成10%，其他设置别动。",
+            "reference_text": "已将刚才那台音箱的音量改为10%，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅音箱现在的音量和开关，不要调整。",
+            "reference_text": "客厅音箱当前处于开启状态，音量为10%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅音箱关掉，音量设置保留。",
+            "reference_text": "已关闭客厅音箱，音量设置保留。"
+          },
+          {
+            "node_id": "U5",
+            "user_text": "再查一下客厅音箱的开关，其他设备不要改。",
+            "reference_text": "客厅音箱当前处于关闭状态。"
+          }
+        ]
+      },
+      {
+        "case_id": "T12_008",
+        "title": "客厅电视音量与开关",
+        "nodes": [
+          {
+            "node_id": "U1",
+            "user_text": "只打开客厅电视，把音量设成40%。",
+            "reference_text": "已打开客厅电视，音量设为40%。"
+          },
+          {
+            "node_id": "U2",
+            "user_text": "只把刚才那台电视的音量改成20%，其他设置别动。",
+            "reference_text": "已将刚才那台电视的音量改为20%，其他设置未动。"
+          },
+          {
+            "node_id": "U3",
+            "user_text": "核对一下客厅电视现在的音量和开关，不要调整。",
+            "reference_text": "客厅电视当前处于开启状态，音量为20%。"
+          },
+          {
+            "node_id": "U4",
+            "user_text": "把客厅电视关掉，音量设置保留。",
+            "reference_text": "已关闭客厅电视，音量设置保留。"
+          }
+        ]
+      }
+    ]
+  },
+  "attempts": 1
+}

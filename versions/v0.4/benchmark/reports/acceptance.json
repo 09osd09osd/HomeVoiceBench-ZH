@@ -1,0 +1,49 @@
+{
+  "version": "0.4.0",
+  "split": "test",
+  "checked_at": "2026-11-18T08:57:21.498573+00:00",
+  "status": "passed",
+  "checks": [
+    "frozen case SHA256",
+    "exact three-system coverage",
+    "audio input and output SHA256",
+    "greedy parameters",
+    "current audio-judge evidence",
+    "uniform semantic consistency review",
+    "no unresolved infrastructure errors",
+    "numeric audio disagreement review",
+    "separate task vs quality decisions"
+  ],
+  "not_claimed": [
+    "independent human rating calibration",
+    "target pass rate attained",
+    "real-time interactive latency"
+  ],
+  "cases": 1000,
+  "unique_audio_files_verified": 4296,
+  "systems": {
+    "edge_native": {
+      "runs": 1000,
+      "passed": 366,
+      "execution_failed": 123
+    },
+    "qwen35_2b": {
+      "runs": 1000,
+      "passed": 352,
+      "execution_failed": 309
+    },
+    "qwen35_4b": {
+      "runs": 1000,
+      "passed": 720,
+      "execution_failed": 32
+    }
+  },
+  "errors": [],
+  "scoring_policy": "objective_rules_plus_audio_judge_with_blinded_audio_adjudication",
+  "human_calibration_performed": false,
+  "diagnostic_counterexample_status": "needs_attention",
+  "warnings": [
+    "No independent human calibration; final judgments remain same-model automated ratings.",
+    "Earlier agent-reviewed counterexamples were not all matched. They are diagnostics, not independent human gold or a claim of calibrated judge accuracy."
+  ]
+}
