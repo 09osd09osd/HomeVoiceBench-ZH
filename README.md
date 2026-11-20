@@ -1,5 +1,17 @@
 # HomeVoiceBench-ZH
 
+[HomeChat-1K-ZH 家庭聊天专题](versions/v0.5/README.md)收录 800 道聊天与 200 道轻工具题，最长 15 轮。五条语音链路共用同一套录音，可配对比较轮数与线索位置。
+
+家庭聊天专题的离线手册可按模型和轮次查看日常对话六维、适用的多轮专项、逐项理由、原声与沙箱回执。[交互讲解和评分案例](versions/v0.5/docs/index.html) · [听评覆盖与配对结果](versions/v0.5/reports/quality_summary.json)
+
+[家庭交互 v0.4 正式报告](versions/v0.4/docs/FINAL_REPORT.md)收录上一版 1,000 题的三组语音测评结果。
+
+## 多轮语音专题 v0.6
+
+[HomeVoiceBench-MT v0.6.0](versions/v0.6-mt/README.md)：家居 + 儿童两个场景、每段 10 轮、5 条语音链路、判官听音评分。含[交互讲解网页](versions/v0.6-mt/docs/index.html)、[本地人工听音评审台](versions/v0.6-mt/docs/LOCAL_REVIEW.md)与[Excel 总览](versions/v0.6-mt/outputs/HomeVoiceBench-MT.xlsx)。
+
+## v0.3 根目录归档
+
 中文家庭语音交互基准：**50个场景、1,000道题，每题最多5轮用户语音**。600道工具题测听懂后是否正确执行，400道聊天题测连贯、诚实、自然的交流。
 
 

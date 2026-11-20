@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HomeVoiceBench-MT · 本地人工听音评审台</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header>
+  <div class="title">HomeVoiceBench-MT <span>v0.6.0 · 人工听音评审台</span></div>
+  <div class="tools">
+    <span id="progress" class="muted"></span>
+    <button id="exportJson">导出评审 JSON</button>
+    <button id="exportCsv">导出 CSV</button>
+    <label class="muted"><input type="checkbox" id="onlyTodo"> 只看未听</label>
+  </div>
+</header>
+<div class="layout">
+  <aside>
+    <input id="search" placeholder="搜索编号 / 话题 / 用户话术">
+    <select id="scenario"><option value="">全部场景</option><option value="home">家居</option><option value="child">儿童</option></select>
+    <div id="list"></div>
+  </aside>
+  <main>
+    <div id="meta" class="meta"></div>
+    <div id="turns"></div>
+    <div id="notes" class="notes">
+      <label>本题人工备注 <textarea id="noteText" placeholder="记录听感、问题、是否同意判官……"></textarea></label>
+      <div class="flags">
+        <label><input type="checkbox" id="heard"> 已听完</label>
+        <label><input type="checkbox" id="review"> 需复核</label>
+        <label><input type="checkbox" id="agreeEdge"> 同意 edge 原判</label>
+        <label><input type="checkbox" id="agreeCascade"> 同意级联原判</label>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="app.js"></script>
+</body></html>
